@@ -1,0 +1,82 @@
+
+{"mode": "cycle", "size": 12, "block": "Arabic", "cps": [1580, 1581, 1667, 1668, 1880, 42887, 64370, 64374, 65181, 65185, 126466, 126471], "chars": "\u062c\u062d\u0683\u0684\u0758\ua787\ufb72\ufb76\ufe9d\ufea1\ud83b\ude02\ud83b\ude07"}
+{"mode": "cycle", "size": 12, "block": "Arabic", "cps": [1580, 1581, 1667, 1668, 1880, 42887, 64370, 64374, 65181, 65185, 126466, 126471], "chars": "\u062c\u062d\u0683\u0684\u0758\ua787\ufb72\ufb76\ufe9d\ufea1\ud83b\ude02\ud83b\ude07"}
+{"mode": "cycle", "size": 12, "block": "Sundanese Supplement", "cps": [7361, 7362, 8853, 8855, 8859, 8860, 9673, 11570, 11609, 66639, 119109, 119220], "chars": "\u1cc1\u1cc2\u2295\u2297\u229b\u229c\u25c9\u2d32\u2d59\ud801\udc4f\ud834\udd45\ud834\uddb4"}
+{"mode": "cycle", "size": 10, "block": "Latin-1 Supplement", "cps": [180, 697, 900, 1523, 68154, 68176, 69456, 69506, 69507, 69510], "chars": "\u00b4\u02b9\u0384\u05f3\ud802\ude3a\ud802\ude50\ud803\udf50\ud803\udf82\ud803\udf83\ud803\udf86"}
+{"mode": "cycle", "size": 10, "block": "Unified Canadian Aboriginal Syllabics", "cps": [5200, 5203, 5204, 5476, 5668, 5669, 5670, 5680, 5681, 5682], "chars": "\u1450\u1453\u1454\u1564\u1624\u1625\u1626\u1630\u1631\u1632"}
+{"mode": "cycle", "size": 9, "block": "Myanmar", "cps": [4096, 4112, 4113, 4122, 4124, 4127, 4216, 43620, 43633], "chars": "\u1000\u1010\u1011\u101a\u101c\u101f\u1078\uaa64\uaa71"}
+{"mode": "cycle", "size": 8, "block": "Spacing Modifier Letters", "cps": [698, 1524, 7379, 12318, 12319, 69508, 69509, 69511], "chars": "\u02ba\u05f4\u1cd3\u301e\u301f\ud803\udf84\ud803\udf85\ud803\udf87"}
+{"mode": "cycle", "size": 8, "block": "Arabic", "cps": [1579, 1658, 1661, 1663, 64350, 64354, 65177, 126486], "chars": "\u062b\u067a\u067d\u067f\ufb5e\ufb62\ufe99\ud83b\ude16"}
+{"mode": "cycle", "size": 8, "block": "Malayalam", "cps": [3360, 4125, 6709, 6725, 7088, 70044, 73548, 120472], "chars": "\u0d20\u101d\u1a35\u1a45\u1bb0\ud804\udd9c\ud807\udf4c\ud835\ude98"}
+{"mode": "cycle", "size": 8, "block": "Arabic", "cps": [1579, 1658, 1661, 1663, 64350, 64354, 65177, 126486], "chars": "\u062b\u067a\u067d\u067f\ufb5e\ufb62\ufe99\ud83b\ude16"}
+{"mode": "ramp", "size": 3, "block": "Arabic", "cps": [1598, 1597, 1574], "chars": "\u063e\u063d\u0626"}
+{"mode": "ramp", "size": 3, "block": "Arabic Supplement", "cps": [1901, 1918, 1917], "chars": "\u076d\u077e\u077d"}
+{"mode": "ramp", "size": 3, "block": "Lao", "cps": [3794, 3796, 3797], "chars": "\u0ed2\u0ed4\u0ed5"}
+{"mode": "ramp", "size": 3, "block": "Hangul Jamo", "cps": [4436, 4366, 4542], "chars": "\u1154\u110e\u11be"}
+{"mode": "ramp", "size": 3, "block": "Myanmar", "cps": [4164, 4174, 4108], "chars": "\u1044\u104e\u100c"}
+{"mode": "ramp", "size": 3, "block": "Unified Canadian Aboriginal Syllabics", "cps": [5358, 5415, 5228], "chars": "\u14ee\u1527\u146c"}
+{"mode": "ramp", "size": 3, "block": "Unified Canadian Aboriginal Syllabics", "cps": [5167, 5178, 5179], "chars": "\u142f\u143a\u143b"}
+{"mode": "ramp", "size": 3, "block": "Unified Canadian Aboriginal Syllabics", "cps": [5169, 5180, 5181], "chars": "\u1431\u143c\u143d"}
+{"mode": "ramp", "size": 3, "block": "Runic", "cps": [5838, 5864, 5872], "chars": "\u16ce\u16e8\u16f0"}
+{"mode": "ramp", "size": 3, "block": "Runic", "cps": [5878, 5815, 5816], "chars": "\u16f6\u16b7\u16b8"}
+{"mode": "ramp", "size": 3, "block": "Khmer", "cps": [6109, 6072, 6078], "chars": "\u17dd\u17b8\u17be"}
+{"mode": "ramp", "size": 3, "block": "Khmer", "cps": [6035, 6023, 6105], "chars": "\u1793\u1787\u17d9"}
+{"mode": "ramp", "size": 3, "block": "Mongolian", "cps": [6294, 6230, 6227], "chars": "\u1896\u1856\u1853"}
+{"mode": "ramp", "size": 3, "block": "Arrows", "cps": [8620, 8603, 8655], "chars": "\u21ac\u219b\u21cf"}
+{"mode": "ramp", "size": 3, "block": "Latin Extended Additional", "cps": [7807, 7924, 7806], "chars": "\u1e7f\u1ef4\u1e7e"}
+{"mode": "ramp", "size": 3, "block": "Georgian Extended", "cps": [7312, 7313, 7347], "chars": "\u1c90\u1c91\u1cb3"}
+{"mode": "ramp", "size": 3, "block": "Batak", "cps": [7129, 7130, 7128], "chars": "\u1bd9\u1bda\u1bd8"}
+{"mode": "ramp", "size": 3, "block": "Batak", "cps": [7112, 7105, 7104], "chars": "\u1bc8\u1bc1\u1bc0"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8827, 8876, 8873], "chars": "\u227b\u22ac\u22a9"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8910, 8744, 8897], "chars": "\u22ce\u2228\u22c1"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8880, 8828, 8926], "chars": "\u22b0\u227c\u22de"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8881, 8829, 8927], "chars": "\u22b1\u227d\u22df"}
+{"mode": "ramp", "size": 3, "block": "Miscellaneous Technical", "cps": [9041, 9057, 9042], "chars": "\u2351\u2361\u2352"}
+{"mode": "ramp", "size": 3, "block": "Miscellaneous Symbols", "cps": [9840, 9769, 9752], "chars": "\u2670\u2629\u2618"}
+{"mode": "ramp", "size": 3, "block": "Miscellaneous Symbols", "cps": [9915, 9807, 9941], "chars": "\u26bb\u264f\u26d5"}
+{"mode": "ramp", "size": 3, "block": "Miscellaneous Technical", "cps": [8964, 8995, 9169], "chars": "\u2304\u2323\u23d1"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8881, 8829, 8927], "chars": "\u22b1\u227d\u22df"}
+{"mode": "ramp", "size": 3, "block": "Mathematical Operators", "cps": [8880, 8828, 8926], "chars": "\u22b0\u227c\u22de"}
+{"mode": "ramp", "size": 3, "block": "Dingbats", "cps": [10143, 10172, 10141], "chars": "\u279f\u27bc\u279d"}
+{"mode": "ramp", "size": 3, "block": "Dingbats", "cps": [10039, 10026, 10006], "chars": "\u2737\u272a\u2716"}
+{"mode": "ramp", "size": 3, "block": "Dingbats", "cps": [10098, 10088, 10092], "chars": "\u2772\u2768\u276c"}
+{"mode": "ramp", "size": 3, "block": "Dingbats", "cps": [10151, 10038, 10035], "chars": "\u27a7\u2736\u2733"}
+{"mode": "cycle", "size": 8, "block": "Malayalam", "cps": [3360, 4125, 6709, 6725, 7088, 70044, 73548, 120472], "chars": "\u0d20\u101d\u1a35\u1a45\u1bb0\ud804\udd9c\ud807\udf4c\ud835\ude98"}
+{"mode": "cycle", "size": 8, "block": "Greek Extended", "cps": [7936, 7937, 7938, 7939, 7940, 7941, 8048, 8049], "chars": "\u1f00\u1f01\u1f02\u1f03\u1f04\u1f05\u1f70\u1f71"}
+{"mode": "cycle", "size": 3, "block": "Arabic", "cps": [1688, 1689, 1681], "chars": "\u0698\u0699\u0691", "role_hint": "foliage_wind_same_cell", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Duplicate saved Arabic foliage wind same-cell foreground cycle; normalized from earlier ramp save"}
+{"mode": "ramp", "size": 3, "block": "Bengali", "cps": [2557, 2553, 2534], "chars": "\u09fd\u09f9\u09e6"}
+{"mode": "ramp", "size": 3, "block": "Bengali", "cps": [2467, 2455, 2454], "chars": "\u09a3\u0997\u0996"}
+{"mode": "ramp", "size": 3, "block": "Gujarati", "cps": [2757, 2815, 2760], "chars": "\u0ac5\u0aff\u0ac8"}
+{"mode": "ramp", "size": 3, "block": "Lao", "cps": [3794, 3796, 3797], "chars": "\u0ed2\u0ed4\u0ed5"}
+{"mode": "cycle", "size": 3, "block": "Thai Character Sara Ai", "cps": [3652, 3651, 3650], "chars": "ไใโ", "role_hint": "foliage_grass_wind", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Thai foliage/grass same-cell foreground cycle"}
+{"mode": "cycle", "size": 3, "block": "Canadian Syllabics Ojibway", "cps": [6359, 6360, 6358], "chars": "ᣗᣘᣖ", "role_hint": "foliage_grass_wind", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Canadian Syllabics Extended foliage/grass same-cell foreground cycle"}
+{"mode": "cycle", "size": 6, "block": "Arabic Letter", "cps": [1579, 1658, 1661, 1663, 64350, 64354], "chars": "ثٺٽٿﭞﭢ", "role_hint": "foliage_wind_same_cell", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic foliage wind same-cell cycle; operator pasted sz8 but visible paste has 6 codepoints"}
+{"mode": "cycle", "size": 3, "block": "Arabic Letter", "cps": [1688, 1689, 1681], "chars": "ژڙڑ", "role_hint": "foliage_wind_same_cell", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic foliage wind same-cell foreground cycle"}
+{"mode": "cycle", "size": 3, "block": "Arabic Letter Kashmiri", "cps": [1568, 1609, 1740], "chars": "ؠىی", "role_hint": "foliage_grass_wind", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic grass/foliage same-cell foreground cycle"}
+{"mode": "cycle", "size": 3, "block": "Arabic-Indic Digit", "cps": [1640, 1784, 1781], "chars": "٨۸۵", "role_hint": "fire_torch_smoke", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic/Extended Arabic-Indic fire/torch/smoke"}
+{"mode": "ramp", "size": 3, "block": "Arabic Letter Farsi Yeh With Two Dots", "cps": [1598, 1597, 1574], "chars": "ؾؽئ", "role_hint": "fire_torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic fire/torch/smoke"}
+{"mode": "ramp", "size": 3, "block": "Arabic Letter Seen With Two Dots Vertically", "cps": [1901, 1918, 1917], "chars": "ݭݾݽ", "role_hint": "fire_torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic Supplement fire/torch/smoke"}
+{"mode": "ramp", "size": 3, "block": "Lao Digit", "cps": [3794, 3796, 3797], "chars": "໒໔໕", "role_hint": "fire_torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Lao fire/torch/smoke"}
+{"mode": "ramp", "size": 3, "block": "Georgian Mtavruli Capital Letter", "cps": [7312, 7313, 7347], "chars": "ᲐᲑᲳ", "role_hint": "fire_torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Georgian Extended fire/torch/smoke"}
+{"mode": "ramp", "size": 3, "block": "Curly Logical", "cps": [8911, 8743, 8896], "chars": "⋏∧⋀", "role_hint": "torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Math smoke specifically on torch"}
+{"mode": "cycle", "size": 3, "block": "Combining Anticlockwise Arrow", "cps": [8404, 8405, 8417], "chars": "⃔⃕⃡", "role_hint": "torch_smoke_same_cell", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Combining-mark smoke specifically on torch"}
+{"mode": "ramp", "size": 3, "block": "Mongolian Letter Ali Gali", "cps": [6294, 6230, 6227], "chars": "ᢖᡖᡓ", "role_hint": "torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Mongolian smoke on torch"}
+{"mode": "ramp", "size": 3, "block": "Khmer Sign", "cps": [6109, 6072, 6078], "chars": "៝ីើ", "role_hint": "torch_smoke", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Khmer smoke on torch"}
+{"mode": "cycle", "size": 3, "block": "Batak Letter Simalungun", "cps": [7112, 7105, 7104], "chars": "ᯈᯁᯀ", "role_hint": "torch_smoke_moving", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Batak smoke on torch while moving"}
+{"mode": "ramp", "size": 3, "block": "Down", "cps": [8964, 8995, 9169], "chars": "⌄⌣⏑", "role_hint": "flying_insect_or_bird", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Flying insect/bird wing cycle"}
+{"mode": "ramp", "size": 3, "block": "Modifier Letter Small", "cps": [7515, 7525, 7456], "chars": "ᵛᵥᴠ", "role_hint": "flying_insect_or_bird", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Modifier-letter flying insect/bird"}
+{"mode": "ramp", "size": 3, "block": "Latin Small Letter V With Dot", "cps": [7807, 7924, 7806], "chars": "ṿỴṾ", "role_hint": "flying_insect_or_bird", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Latin flying insect/bird"}
+{"mode": "ramp", "size": 3, "block": "Curly Logical", "cps": [8910, 8744, 8897], "chars": "⋎∨⋁", "role_hint": "flying_insect_or_bird", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Math flying insect/bird"}
+{"mode": "cycle", "size": 3, "block": "Nko Letter", "cps": [2022, 2018, 2023], "chars": "ߦߢߧ", "role_hint": "flying_insect_or_bird", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "NKo flying insect/bird anim"}
+{"mode": "cycle", "size": 3, "block": "Myanmar Digit", "cps": [4164, 4174, 4108], "chars": "၄၎ဌ", "role_hint": "actor_walk_left_facing_east", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Myanmar actor/sprite moving left while facing east"}
+{"mode": "cycle", "size": 3, "block": "Hangul Choseong", "cps": [4436, 4366, 4542], "chars": "ᅔᄎᆾ", "role_hint": "actor_walk_north_south", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Hangul walk two-cycle facing north/south; reconstructed from saved browser row beginning with operator pasted ᅔ"}
+{"mode": "cycle", "size": 3, "block": "Canadian Syllabics", "cps": [5536, 5334, 5315], "chars": "ᖠᓖᓃ", "role_hint": "gun_cocking", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Canadian Syllabics gun cocking"}
+{"mode": "cycle", "size": 3, "block": "Canadian Syllabics", "cps": [5381, 5364, 5357], "chars": "ᔅᓴᓭ", "role_hint": "actor_walk_right_left", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Canadian Syllabics actor/sprite walk right/left"}
+{"mode": "cycle", "size": 3, "block": "Canadian Syllabics", "cps": [5383, 5361, 5359], "chars": "ᔇᓱᓯ", "role_hint": "actor_walk_right_left", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Canadian Syllabics actor/sprite walk right/left"}
+{"mode": "cycle", "size": 3, "block": "Batak Letter Simalungun", "cps": [7129, 7130, 7128], "chars": "ᯙᯚᯘ", "role_hint": "wave_break_left_or_flying_bird", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "Batak wave break left / flying bird"}
+{"mode": "ramp", "size": 3, "block": "Light Left Tortoise Shell Bracket", "cps": [10098, 10088, 10092], "chars": "❲❨❬", "role_hint": "fish_swim_sideways", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Dingbats fish swimming sideways"}
+{"mode": "ramp", "size": 3, "block": "Rightwards Arrow With", "cps": [8620, 8603, 8655], "chars": "↬↛⇏", "role_hint": "fish_swim_sideways", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arrows fish swimming sideways"}
+{"mode": "ramp", "size": 3, "block": "Arabic Letter", "cps": [1576, 1659, 1662], "chars": "بٻپ", "role_hint": "cave_icicle", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "Arabic cave icicle"}
+{"mode": "topo", "size": 7, "block": "Cherokee", "cps": [5078, 43942, 101558, 66690, 1997, 6129, 7028], "chars": "\u13d6\uaba6\ud823\udcb6\ud801\udc82\u07cd\u17f1\u1b74"}
+{"mode": "cycle", "size": 4, "block": "Music Symbols BMP", "cps": [9833, 9834, 9835, 9836], "chars": "♩♪♫♬", "role_hint": "rain_musical_note_droplet_ripple", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "BMP musical-note rain replacement family; same-cell fg droplet/ripple cycle"}
+{"mode": "ramp", "size": 3, "block": "Music Symbols BMP", "cps": [9833, 9834, 9835], "chars": "♩♪♫", "role_hint": "rain_musical_note_droplet_ripple", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "BMP musical-note rain ramp; 𝄞 remains SMP/second-atlas only"}
