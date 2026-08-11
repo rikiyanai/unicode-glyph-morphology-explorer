@@ -25,8 +25,8 @@ Controls:
     0                clear the length filter (all lengths)
     space            pause / resume animation
     + / -            faster / slower
-    s                save the family you're looking at to tracked saved_families.jsonl
-                     (feeds `glyph_audit.py export-candidates --from saved`)
+    This standalone viewer is read-only; source-repository family saving and
+    export commands are intentionally not included in its user surface.
     w                toggle raw vs normalized rendering
     q or Esc         quit
 """
@@ -164,9 +164,6 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
     which = "raw"
     fps = 4.0
     len_filter = 0          # 0 = all lengths; 1-9 = only families of that size
-    saved_note = ""
-    saved_note_until = 0.0
-    saved_path = gf.SAVED_FAMILIES
     last = time.monotonic()
     stdscr.timeout(60)
 
@@ -203,10 +200,9 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
         stdscr.erase()
         safe(stdscr, 0, 1, "Glyph Families — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
-        note = "  " + saved_note if time.monotonic() < saved_note_until else ""
         safe(stdscr, 1, 1, f"{len(fams)} shown  {lf}  "
-                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}"
-                           + note, cset["dim"])
+                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}",
+             cset["dim"])
 
         # list pane
         for row in range(list_h):
@@ -245,7 +241,7 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
                 safe(stdscr, 7 + gy, dx, "".join("██" if v else "  " for v in gr), cset["ink"])
 
         safe(stdscr, h - 1, 1,
-             "[jk]sel [PgUp/Dn]page [m]axis [1-9]len [0]all [s]ave "
+             "[jk]sel [PgUp/Dn]page [m]axis [1-9]len [0]all "
              "[space]pause [+/-]speed [w]raw/norm [q]uit",
              cset["dim"])
         stdscr.refresh()
@@ -284,20 +280,6 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
             fps = max(1.0, fps - 1)
         elif ch == ord("w"):
             which = "norm" if which == "raw" else "raw"
-        elif ch == ord("s"):
-            if fams:
-                f = fams[sel]
-                rec = {"mode": f["mode"], "size": f["size"], "block": f["block"],
-                       "cps": [int(c.cps[i]) for i in f["members"]],
-                       "chars": "".join(chr(int(c.cps[i])) for i in f["members"])}
-                try:
-                    saved_path.parent.mkdir(parents=True, exist_ok=True)
-                    with open(saved_path, "a") as fh:
-                        fh.write(json.dumps(rec) + "\n")
-                    saved_note = f"SAVED {rec['chars'][:10]} -> {saved_path.relative_to(gf.REPO_ROOT)}"
-                except OSError as exc:
-                    saved_note = f"save failed: {exc}"
-                saved_note_until = time.monotonic() + 2.5
 
 
 def main() -> int:
