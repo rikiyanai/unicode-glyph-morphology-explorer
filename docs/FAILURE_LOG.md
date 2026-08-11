@@ -15,3 +15,12 @@
 - Added a real terminal recording linked from the README.
 - Public visibility remains a separate user approval; private execution and
   attribution packaging are verified.
+
+## P0C-02 · 2026-08-12 — acceptance re-audit retained both TUI recordings
+
+- Intended product: interactive Unicode morphology and discovered-family
+  browsing with visible navigation and no tracked save authority.
+- Direct execution, source inspection, and frame review agree with that scope.
+  Both recordings show the real curses interfaces and visible state changes.
+- Highest supported stage remains **Verified, not Accepted**. Riki's personal
+  judgment and any visibility decision remain open.
