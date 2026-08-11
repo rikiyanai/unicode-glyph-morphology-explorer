@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import hashlib
+import json
 import subprocess
 import sys
 import unittest
@@ -38,6 +40,38 @@ class MorphologyContract(unittest.TestCase):
         self.assertEqual(entry.cp, 0x25A0)
         self.assertFalse(entry.blank)
         self.assertTrue(entry.metrics)
+
+    def test_font_license_package_covers_every_pinned_font(self) -> None:
+        metadata_path = ROOT / "docs" / "licenses" / "FONT-METADATA.json"
+        metadata = json.loads(metadata_path.read_text())
+        self.assertEqual(set(metadata), {path.name for path in (ROOT / "assets" / "fonts").iterdir()})
+        for name, row in metadata.items():
+            font = ROOT / "assets" / "fonts" / name
+            self.assertEqual(hashlib.sha256(font.read_bytes()).hexdigest(), row["sha256"])
+            self.assertTrue(row["copyright"])
+            self.assertTrue(row["license_description"])
+        for license_name in (
+            "OFL-1.1.txt",
+            "APACHE-2.0.txt",
+            "ARPHIC-PUBLIC-LICENSE.txt",
+            "UNIFONT-LICENSE.txt",
+        ):
+            self.assertGreater((ROOT / "docs" / "licenses" / license_name).stat().st_size, 500)
+
+    def test_family_viewer_has_no_tracked_save_surface(self) -> None:
+        source = (ROOT / "scripts" / "glyph_families_viewer.py").read_text()
+        self.assertNotIn('elif ch == ord("s")', source)
+        self.assertNotIn("open(saved_path", source)
+        self.assertIn("standalone viewer is read-only", source)
+
+    def test_family_wrapper_fails_visibly_without_tty(self) -> None:
+        result = subprocess.run(
+            [str(ROOT / "run-families.sh")],
+            text=True,
+            capture_output=True,
+        )
+        self.assertEqual(result.returncode, 69)
+        self.assertIn("requires a real TTY", result.stderr)
 
 
 if __name__ == "__main__":
