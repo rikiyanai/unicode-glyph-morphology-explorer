@@ -45,4 +45,6 @@ material, caches, and unrelated assets.
 
 The repository is private. The bundled font identities, copyright metadata,
 license mapping, and license texts are recorded in
-[docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`.
+[docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`. Exact
+source-code identities and the family viewer's deliberate read-only delta are
+recorded in [docs/code-provenance.md](docs/code-provenance.md).
