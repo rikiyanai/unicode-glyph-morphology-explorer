@@ -1,6 +1,6 @@
 # Unicode Glyph Morphology Explorer
 
-Private standalone extraction of the Y9-2 terminal tools for browsing Unicode
+Standalone extraction of the Y9-2 terminal tools for browsing Unicode
 glyphs by rendered morphology. The browser uses a pinned eight-font chain and
 the same 16×16 shape analysis vocabulary as the source catalog tooling.
 
@@ -43,8 +43,8 @@ includes the selected saved-family registry and exact pinned font chain. It
 excludes the engine, compiler outputs, runtime, paper drafts, agent/process
 material, caches, and unrelated assets.
 
-The repository is private. The bundled font identities, copyright metadata,
-license mapping, and license texts are recorded in
+The bundled font identities, copyright metadata, license mapping, and license
+texts are recorded in
 [docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`. Exact
 source-code identities and the family viewer's deliberate read-only delta are
 recorded in [docs/code-provenance.md](docs/code-provenance.md).

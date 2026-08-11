@@ -70,3 +70,11 @@
 - The successor gate hashes all nine packaged owners and requires every source
   identity in the provenance document. The derived viewer still carries its
   distinct packaged hash and explicit read-only-hardening rationale.
+
+## P0C-02 · 2026-08-12 — README front page carried redundant visibility wording
+
+- The README still opened with `Private standalone` and later repeated that the
+  repository is private. That metadata is true repository state, but it is not
+  useful front-page product copy and distracts from the two real TUI recordings.
+- The successor removes that wording from README prose while keeping font
+  license, source-code provenance, and exact recording evidence links intact.
