@@ -1,10 +1,8 @@
 # Font attribution, licensing, and provenance
 
-The font chain was copied from private source repository
-`rikiyanai/asciicker-Y9-2` at observed commit
-`242ecba44f76ed1120dadf06653fd6de47017b7f`.
+The bundled font chain was copied from `rikiyanai/asciicker-Y9-2` at observed commit `242ecba44f76ed1120dadf06653fd6de47017b7f` and is pinned by SHA-256.
 
-`scripts/fl4482_font_chain.py` fail-closes on these SHA-256 identities:
+The font-chain module checks these identities before use:
 
 | Font | SHA-256 | License |
 | --- | --- | --- |
@@ -17,19 +15,13 @@ The font chain was copied from private source repository
 | `Roboto-Medium.ttf` | `8559132c89ad51d8a2ba5b171887a44a7ba93776e205f553573de228e64b45f8` | Apache-2.0 |
 | `unifont_upper-17.0.04.otf` | `adce94bc065675242e9d65d8cc4c250de9471041f0c0f22deb9d14086d9f59ea` | dual OFL-1.1 or GPL-2.0-or-later with GNU font embedding exception |
 
-The exact embedded copyright, vendor, license-description, and license-URL
-fields are preserved in `docs/licenses/FONT-METADATA.json`.
+The exact embedded copyright, vendor, license-description, and license-URL fields are preserved in `docs/licenses/FONT-METADATA.json`.
 
 License texts:
 
-- `docs/licenses/OFL-1.1.txt` — official SIL OFL text distributed by Noto and
-  Unifont.
+- `docs/licenses/OFL-1.1.txt` — official SIL OFL text distributed by Noto and Unifont.
 - `docs/licenses/APACHE-2.0.txt` — official Roboto license text.
-- `docs/licenses/ARPHIC-PUBLIC-LICENSE.txt` — verbatim license description
-  embedded in the bundled BabelStone Han font.
-- `docs/licenses/UNIFONT-LICENSE.txt` — official Unifont GPL/font-exception
-  license text; Unifont may alternatively be used under OFL-1.1.
+- `docs/licenses/ARPHIC-PUBLIC-LICENSE.txt` — license description embedded in the bundled BabelStone Han font.
+- `docs/licenses/UNIFONT-LICENSE.txt` — official Unifont GPL/font-exception license text; Unifont may alternatively be used under OFL-1.1.
 
-No font file has been modified or renamed. Public visibility still requires a
-separate user decision, but the private package no longer has a missing-license
-artifact gap.
+No bundled font file was modified or renamed. The repository includes the corresponding license material for the published font set.
