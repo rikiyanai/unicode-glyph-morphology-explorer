@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Canonical FL-4482 offline font-chain discovery and one-cell rasterization.
+"""Pinned offline font-chain discovery and one-cell rasterization.
 
 This module is the sole owner of font priority, font hashes, cmap selection,
 and 16x16 raster normalization. Diagnostic browsers may consume this module;
@@ -21,8 +21,8 @@ FONT_DIR = ROOT / "assets/fonts"
 CELL_PX = 16
 INK_THRESHOLD = 96
 
-# FL-4482: ordered, content-addressed compiler inputs. Ambient system fonts and
-# newly dropped files are not admission inputs until this list is amended.
+# Ordered, content-addressed compiler inputs. Ambient system fonts and newly
+# dropped files are not used until this list is amended.
 PINNED_FONT_CHAIN: tuple[tuple[str, str, bool], ...] = (
     ("unifont-17.0.04.otf", "d1f664a9753b9c6b7ff357128749e32b5d3eee90c7c03618363fabd43a39b5b7", True),
     ("BabelStoneHan.ttf", "d8bb747b3fdccd84a60bd0aa56bb90937270d0bd15f1101cd8f2a5a3709dd0a3", False),
@@ -45,10 +45,10 @@ def discover_font_chain() -> list[Path]:
     for name, expected, _pixel in PINNED_FONT_CHAIN:
         path = FONT_DIR / name
         if not path.is_file():
-            raise SystemExit(f"missing pinned FL-4482 font: {path.relative_to(ROOT)}")
+            raise SystemExit(f"missing pinned font: {path.relative_to(ROOT)}")
         observed = sha256_file(path)
         if observed != expected:
-            raise SystemExit(f"FL-4482 font hash mismatch for {name}: {observed} != {expected}")
+            raise SystemExit(f"pinned font hash mismatch for {name}: {observed} != {expected}")
         paths.append(path)
     return paths
 
