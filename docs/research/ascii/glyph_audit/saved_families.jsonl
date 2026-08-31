@@ -80,3 +80,18 @@
 {"mode": "topo", "size": 7, "block": "Cherokee", "cps": [5078, 43942, 101558, 66690, 1997, 6129, 7028], "chars": "\u13d6\uaba6\ud823\udcb6\ud801\udc82\u07cd\u17f1\u1b74"}
 {"mode": "cycle", "size": 4, "block": "Music Symbols BMP", "cps": [9833, 9834, 9835, 9836], "chars": "♩♪♫♬", "role_hint": "rain_musical_note_droplet_ripple", "animation_semantics": "same_cell_fg_glyph_cycle", "source": "operator_2026_07_06_godot_goal_intake", "note": "BMP musical-note rain replacement family; same-cell fg droplet/ripple cycle"}
 {"mode": "ramp", "size": 3, "block": "Music Symbols BMP", "cps": [9833, 9834, 9835], "chars": "♩♪♫", "role_hint": "rain_musical_note_droplet_ripple", "animation_semantics": "ordered_same_cell_fg_glyph_ramp", "source": "operator_2026_07_06_godot_goal_intake", "note": "BMP musical-note rain ramp; 𝄞 remains SMP/second-atlas only"}
+{"mode": "cycle", "size": 14, "block": "Latin-1 Supplement", "cps": [204, 205, 206, 207, 296, 300, 304, 314, 463, 522, 938, 1031, 7726, 8152], "chars": "\u00cc\u00cd\u00ce\u00cf\u0128\u012c\u0130\u013a\u01cf\u020a\u03aa\u0407\u1e2e\u1fd8"}
+{"mode": "cycle", "size": 12, "block": "Latin-1 Supplement", "cps": [221, 374, 376, 939, 7922, 7926, 8025, 8027, 8029, 8168, 8170, 8171], "chars": "\u00dd\u0176\u0178\u03ab\u1ef2\u1ef6\u1f59\u1f5b\u1f5d\u1fe8\u1fea\u1feb"}
+{"mode": "cycle", "size": 11, "block": "Arabic", "cps": [1579, 1658, 1661, 1663, 64350, 64352, 64354, 65177, 65179, 126486, 126518], "chars": "\u062b\u067a\u067d\u067f\ufb5e\ufb60\ufb62\ufe99\ufe9b\ud83b\ude16\ud83b\ude36"}
+{"mode": "cycle", "size": 9, "block": "Latin-1 Supplement", "cps": [235, 277, 519, 1105, 1239, 7954, 7955, 7956, 7957], "chars": "\u00eb\u0115\u0207\u0451\u04d7\u1f12\u1f13\u1f14\u1f15"}
+{"mode": "cycle", "size": 9, "block": "Latin-1 Supplement", "cps": [251, 468, 558, 7803, 8016, 8017, 8058, 8059, 42943], "chars": "\u00fb\u01d4\u022e\u1e7b\u1f50\u1f51\u1f7a\u1f7b\ua7bf"}
+{"mode": "cycle", "size": 8, "block": "Basic Latin", "cps": [89, 590, 933, 1198, 42220, 65905, 94019, 120248], "chars": "Y\u024e\u03a5\u04ae\ua4ec\ud800\udd71\ud81b\udf43\ud835\uddb8"}
+{"mode": "cycle", "size": 8, "block": "Basic Latin", "cps": [115, 1109, 42801, 43946, 66371, 71368, 72161, 120268], "chars": "s\u0455\ua731\uabaa\ud800\udf43\ud805\udec8\ud806\udde1\ud835\uddcc"}
+{"mode": "cycle", "size": 8, "block": "Latin-1 Supplement", "cps": [244, 466, 555, 561, 8000, 8001, 8056, 8057], "chars": "\u00f4\u01d2\u022b\u0231\u1f40\u1f41\u1f78\u1f79"}
+{"mode": "cycle", "size": 8, "block": "Latin Extended-B", "cps": [439, 658, 659, 1248, 1249, 72666, 94011, 94012], "chars": "\u01b7\u0292\u0293\u04e0\u04e1\ud806\udfda\ud81b\udf3b\ud81b\udf3c"}
+{"mode": "cycle", "size": 8, "block": "Greek Extended", "cps": [8040, 8041, 8042, 8043, 8044, 8045, 8186, 8187], "chars": "\u1f68\u1f69\u1f6a\u1f6b\u1f6c\u1f6d\u1ffa\u1ffb"}
+{"mode": "cycle", "size": 8, "block": "Mathematical Operators", "cps": [8750, 8755, 10766, 10774, 10775, 10776, 10777, 10778], "chars": "\u222e\u2233\u2a0e\u2a16\u2a17\u2a18\u2a19\u2a1a"}
+{"mode": "stroke", "size": 6, "block": "CJK Strokes", "cps": [12736, 12737, 12738, 12739, 12740, 12741], "chars": "\u31c0\u31c1\u31c2\u31c3\u31c4\u31c5"}
+{"mode": "stroke", "size": 6, "block": "Katakana", "cps": [12494, 12501, 12492, 12513, 12521, 12527], "chars": "\u30ce\u30d5\u30cc\u30e1\u30e9\u30ef"}
+{"mode": "stroke", "size": 6, "block": "CJK Strokes", "cps": [12746, 12747, 12748, 12749, 12750, 12751], "chars": "\u31ca\u31cb\u31cc\u31cd\u31ce\u31cf"}
+{"mode": "cycle", "size": 6, "block": "Cherokee", "cps": [5075, 42567, 66594, 66711, 66973, 124954], "chars": "\u13d3\ua647\ud801\udc22\ud801\udc97\ud801\udd9d\ud83a\udc1a"}

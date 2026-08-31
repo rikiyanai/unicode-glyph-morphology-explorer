@@ -1,5 +1,22 @@
 # Failure Log
 
+## 2026-08-31 — public provenance and family-registry reconciliation
+
+- **Observed mismatch:** After fast-forwarding local `main` to remote `1307328`,
+  the contract test still required source/package SHA-256 rows that the
+  public-cleanup commit intentionally removed from `docs/code-provenance.md`.
+- **Fix:** The test now checks that every packaged owner, the original extraction
+  revision, and the read-only hardening statement are documented, without
+  reintroducing the removed public hash table.
+- **Registry evidence:** The current Y9-2 source checkout at observed revision
+  `54f0c8b2c256fd41d6dcb9e1b369d8b41235e31e` contained 15 additional dirty-tree
+  rows beyond the standalone's 81 nonblank rows. They were copied into the
+  standalone registry with the source-artifact caveat; twelve are `cycle` rows
+  and three are retained `stroke` evidence outside the current viewer axes.
+- **Verification:** The registry parses as 96 nonblank JSONL rows, its 15-row
+  tail matches the observed source artifact, and `python3 -m unittest discover
+  -s tests -v` passes all eight tests.
+
 ## P0C-02 · 2026-08-11 — standalone extraction created
 
 - The source checkout was treated as read-only.

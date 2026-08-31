@@ -17,5 +17,11 @@ Type "m"
 Sleep 2s
 Type "4"
 Sleep 2s
+Type "+"
+Sleep 2s
+Type " "
+Sleep 1s
+Type " "
+Sleep 2s
 Type "q"
 Sleep 2s

@@ -25,11 +25,19 @@ Controls are shown in the browser footer. `q` exits without changing tracked fil
 
 ![Animate and filter morphology families](docs/glyph-families-viewer.gif)
 
+The recording shows live family animation, selection, morphology-axis switching, length filtering, speed control, and pause/resume; its source is [docs/recordings/glyph-families-viewer.tape](docs/recordings/glyph-families-viewer.tape).
+
 ```sh
 ./run-families.sh
 ```
 
 The first run builds a local ignored feature cache under `.run/`. The family viewer is read-only. Use `j`/`k` to select, `m` to change the morphology axis, `1`–`9` to filter by family length, and `q` to exit.
+
+## Current family registry
+
+The tracked review registry contains 96 nonblank family records. Fifteen additional records are now carried from the current Y9-2 source artifact: twelve `cycle` records covering Latin-1 Supplement, Arabic, Basic Latin, Latin Extended-B, Greek Extended, Mathematical Operators, and Cherokee, plus three `stroke` records covering CJK Strokes and Katakana.
+
+The `cycle` records use the existing family-discovery vocabulary. The three `stroke` records are preserved as source evidence; `stroke` is not claimed as a current interactive axis in `glyph_families_viewer.py`. The full registry is in [docs/research/ascii/glyph_audit/saved_families.jsonl](docs/research/ascii/glyph_audit/saved_families.jsonl), with the extraction and source-artifact boundary documented in [docs/code-provenance.md](docs/code-provenance.md).
 
 ## Included data
 
