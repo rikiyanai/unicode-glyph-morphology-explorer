@@ -10,12 +10,25 @@ families are computed on launch (slower).
 Run:
     python3 scripts/glyph_audit.py families --json   # build catalog once
     python3 scripts/glyph_families_viewer.py
+    python3 scripts/glyph_families_viewer.py --saved  # replay your reviewed families
+    python3 scripts/glyph_families_viewer.py --foliage-strokes
+        # review real stroked glyph sets for tree outer/mid/interior roles
+    python3 scripts/glyph_families_viewer.py --mode cycle  # browse every discovered cycle
     python3 scripts/glyph_families_viewer.py --block Arrows
+    python3 scripts/glyph_families_viewer.py --mode distract
+        # every glyph ranked by DISTRACTION weight, alphanumerics flagged
+    python3 scripts/glyph_families_viewer.py --mode combo
+        # the authored 2-3 cell combination dictionary, each beside its mirror
+    python3 scripts/glyph_families_viewer.py --mode dir8 --dump
+        # text dump of the groups; no TTY needed (headless verification)
 
 Axes (top legend, switch with m):
-    ALL  ROTATE(spin)  DENSITY(ramp)  FILL  CYCLE  STRUCT(topo)
+    ALL  ROTATE(spin)  DIR8  DENSITY(ramp)  FILL  CYCLE  MIRROR  STRUCT(topo)
+    DISTRACT  COMBO
 Rotation is its own axis; CYCLE holds animation cycles of every length (3..16),
-filterable by length so each band is browsable on its own.
+filterable by length so each band is browsable on its own. DISTRACT and COMBO are
+authored/derived review screens rather than discovery output, so they are selected
+with --mode and replace the family source for that run.
 
 Controls:
     up/down or j/k   select family
@@ -51,13 +64,23 @@ import glyph_audit as ga  # noqa: E402
 N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
-MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo"]
+MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
+         "distract", "combo"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
 # rotation orbits (up to 8 frames); mirror = left/right chirality pairs.
+# distract = every glyph ranked by DISTRACTION weight; combo = the authored
+# combination dictionary. Those last two are not discovery output, so they replace
+# the family source for the run rather than filtering it.
 AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
-              "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT"}
+              "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
+              "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBO"}
+# Axes whose row order carries meaning (ranking / authored file order) and must
+# therefore survive the list pane's size sort.
+ORDERED_MODES = {"distract", "combo"}
+# The authored combination dictionary (offsets + codepoints + generated mirrors).
+COMBINATIONS = gf.REPO_ROOT / "assets" / "glyphs" / "authored" / "glyph_combinations.v1.json"
 # the original four are REQUIRED for a usable catalog; topo is optional (present
 # only when the catalog was built after the global topology cache existed), so a
 # pre-topo catalog stays valid and simply shows no topo families.
@@ -112,6 +135,239 @@ def load_families(c: ga.Corpus, block: str | None) -> list[dict]:
     return ga.collect_families(c, block=block)
 
 
+def load_saved_families(c: ga.Corpus, block: str | None) -> list[dict]:
+    """Load the durable operator-reviewed sequences in their saved order.
+
+    The discovery catalog remains the owner of *new* candidate families.  This
+    reader only replays JSONL records the reviewer explicitly saved, so the
+    ``--saved`` screen cannot be diluted by regenerated catalog output.
+    """
+    if not gf.SAVED_FAMILIES.exists():
+        return []
+    families: list[dict] = []
+    try:
+        lines = gf.SAVED_FAMILIES.read_text().splitlines()
+    except OSError:
+        return []
+    for line in lines:
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+            cps = [int(cp) for cp in record["cps"]]
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError):
+            continue
+        members = [c.i(cp) for cp in cps]
+        if len(members) < 2 or any(member is None for member in members):
+            continue
+        name = str(record.get("block", ""))
+        if block and block.upper() not in name.upper():
+            continue
+        families.append({
+            "mode": str(record.get("mode", "cycle")),
+            "members": members,
+            "block": name,
+            "size": len(members),
+            "role_hint": str(record.get("role_hint", "")),
+            "note": str(record.get("note", "")),
+        })
+    return families
+
+
+def load_foliage_stroke_families(c: ga.Corpus) -> list[dict]:
+    """Load review-only real-glyph sets for non-uniform tree foliage.
+
+    These are deliberately not similarity clusters. Each sequence is selected
+    for a distinct visible tree role, so reviewers can judge stroke language
+    rather than inherit the uniform Katakana texture from the retired canopy
+    palette. The atlas and runtime pools remain unchanged.
+    """
+    candidates = (
+        ("CJK Strokes", "outer_leaf_sweep", "thin directional leaf contours",
+         (0x31C0, 0x31C1, 0x31C2, 0x31C3, 0x31C4, 0x31C5)),
+        ("CJK Strokes", "outer_leaf_hook", "hooked leaf-edge contour variation",
+         (0x31CA, 0x31CB, 0x31CC, 0x31CD, 0x31CE, 0x31CF)),
+        ("CJK Strokes", "twig_and_vein", "short branch and vein strokes",
+         (0x31D0, 0x31D1, 0x31D2, 0x31D3, 0x31D4, 0x31D5)),
+        ("CJK Strokes", "outer_leaf_fork", "forked and split leaf-edge strokes",
+         (0x31D6, 0x31D7, 0x31D8, 0x31D9, 0x31DA, 0x31DB, 0x31DC, 0x31DD)),
+        ("CJK Strokes", "outer_leaf_turn", "long turning strokes for wind-facing edges",
+         (0x31DE, 0x31DF, 0x31E0, 0x31E1, 0x31E2, 0x31E3)),
+        ("CJK Radicals Supplement", "grass_radical_marks", "radical-scale grass and moss marks",
+         (0x2E80, 0x2E81, 0x2E82, 0x2E83, 0x2E84, 0x2E85)),
+        ("Hiragana", "outer_leaf_curve", "curved, sparse outer-leaf silhouettes",
+         (0x3057, 0x3064, 0x305D, 0x306E, 0x308B, 0x308C)),
+        ("Katakana", "outer_leaf_angle", "angular outer-leaf silhouettes",
+         (0x30CE, 0x30D5, 0x30CC, 0x30E1, 0x30E9, 0x30EF)),
+        ("Hangul Compatibility Jamo", "outer_leaf_chevron", "chevron and fork leaf outlines",
+         (0x3145, 0x3148, 0x314A, 0x314B, 0x314C, 0x314D, 0x314E)),
+        ("Arabic", "outer_leaf_calligraphic", "flowing, tapered outer-leaf strokes",
+         (0x062C, 0x062D, 0x062E, 0x0633, 0x0634, 0x0635, 0x0636)),
+        ("Arabic", "mid_canopy_calligraphic", "linked curved mid-canopy marks",
+         (0x0639, 0x063A, 0x0641, 0x0642, 0x0646, 0x0647, 0x0648)),
+        ("CJK Radicals", "mid_canopy_branch", "branching mid-canopy marks",
+         (0x5DDD, 0x6728, 0x6797, 0x68EE)),
+        ("CJK Unified Ideographs", "dense_canopy_mass", "dense interior foliage and occlusion",
+         (0x8349, 0x6797, 0x68EE, 0x8449, 0x8449)),
+        ("CJK Unified Ideographs", "dense_canopy_crosshatch", "high-stroke-count interior leaf mass",
+         (0x8449, 0x8449, 0x85C1, 0x85CD, 0x85EA, 0x8607)),
+        ("CJK Radicals", "ground_tuft_and_moss", "grass, moss, and root-base accents",
+         (0x5C71, 0x5DDD, 0x8349, 0x6728)),
+    )
+    families: list[dict] = []
+    for block, role, note, cps in candidates:
+        members = [c.i(cp) for cp in cps]
+        members = [member for member in members if member is not None]
+        if len(members) >= 2:
+            families.append({
+                "mode": "stroke", "members": members, "block": block,
+                "size": len(members), "role_hint": role, "note": note,
+            })
+    return families
+
+
+def load_distraction_families(c: ga.Corpus, block: str | None,
+                              limit: int = 0) -> list[dict]:
+    """Every glyph in scope as a one-glyph row, ranked most-distracting first.
+
+    This is a ranking screen, not a similarity family: the point is to see which
+    glyphs pull the eye out of the line art before they are admitted to a
+    vocabulary. The alphanumeric hard flag is surfaced on every row, because the
+    design source treats it as a category difference rather than a degree — see
+    glyph_features.distraction_components for the cited tutorial passages.
+    """
+    allow = ga.block_allow(c, block)
+    rows = ga.rank_distraction(c, allow)
+    if limit:
+        rows = rows[:limit]
+    families: list[dict] = []
+    for rank, r in enumerate(rows, 1):
+        flag = "ALNUM" if r["alnum"] else "-"
+        if r["alnum"] and r["whitelisted"]:
+            flag = "ALNUM(kept)"
+        elif r["alnum"] and r["marginal"]:
+            flag = "ALNUM(marginal)"
+        families.append({
+            "mode": "distract",
+            "members": [r["index"]],
+            "block": r["block"],
+            "size": 1,
+            "role_hint": f"#{rank}  weight {r['weight']:.3f}  {flag}",
+            "note": (f"ink {r['density']:.3f}  ncomp {r['ncomp']}  "
+                     f"family median {r['family_median_density']:.3f}"),
+            "distract": r,
+        })
+    return families
+
+
+def _combo_bitmap(c: ga.Corpus, cells: list[dict], cols: int, rows: int):
+    """Composite ink bitmap for one combination, on the REAL cell grid.
+
+    Each cell's glyph is pasted at its (col, row) offset using the same rasterized
+    ``c.raw`` grid the single-glyph pane draws, so a combination is shown in the
+    atlas rasterization rather than as a re-drawn approximation. Returns
+    (bitmap, missing_codepoints)."""
+    import numpy as np
+    bm = np.zeros((rows * N, cols * N), np.uint8)
+    missing: list[int] = []
+    for d in cells:
+        i = c.i(int(d["cp"]))
+        if i is None:
+            missing.append(int(d["cp"]))
+            continue
+        col, row = int(d["col"]), int(d["row"])
+        bm[row * N:(row + 1) * N, col * N:(col + 1) * N] = c.raw[i].reshape(N, N)
+    return bm, missing
+
+
+def _bitmap_rows(bm) -> list[str]:
+    """One character per pixel — combinations are several cells wide, so the
+    two-character ink used by the single-glyph pane would not fit beside a mirror."""
+    return ["".join("█" if v else " " for v in row) for row in bm]
+
+
+def load_combination_families(c: ga.Corpus) -> list[dict]:
+    """Load the authored combination dictionary in file order.
+
+    Each entry carries the composite bitmap of the combination and of its
+    horizontal mirror, so the viewer can show the pair side by side. The mirror
+    cells are stored in the file (generated from glyph_audit.find_mirror pairs);
+    this reader does not re-derive them — scripts/tests owns that check.
+    """
+    if not COMBINATIONS.exists():
+        return []
+    try:
+        doc = json.loads(COMBINATIONS.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        sys.stderr.write(f"bad combination dictionary {COMBINATIONS}: {exc}\n")
+        return []
+    families: list[dict] = []
+    for cb in doc.get("combinations", []):
+        cells = cb.get("cells") or []
+        mcells = (cb.get("mirror") or {}).get("cells") or []
+        if not cells:
+            continue
+        cols, rows = int(cb.get("cols", 1)), int(cb.get("rows", 1))
+        bm, missing = _combo_bitmap(c, cells, cols, rows)
+        mbm, mmissing = _combo_bitmap(c, mcells, cols, rows) if mcells else (bm, [])
+        members = [c.i(int(d["cp"])) for d in cells]
+        members = [m for m in members if m is not None]
+        families.append({
+            "mode": "combo",
+            "members": members,
+            "block": "authored",
+            "size": len(cells),
+            "role_hint": str(cb.get("id", "")),
+            "note": str(cb.get("label", "")),
+            "combo": {
+                "id": str(cb.get("id", "")),
+                "label": str(cb.get("label", "")),
+                "note": str(cb.get("note", "")),
+                "source": str(cb.get("source", doc.get("source", ""))),
+                "chars": "".join(str(d.get("char", "")) for d in cells),
+                "mirror_chars": "".join(str(d.get("char", "")) for d in mcells),
+                "self_symmetric": bool((cb.get("mirror") or {}).get("self_symmetric")),
+                "rows": _bitmap_rows(bm),
+                "mirror_rows": _bitmap_rows(mbm),
+                "missing": missing + mmissing,
+            },
+        })
+    return families
+
+
+def dump_families(c: ga.Corpus, fams: list[dict], mode: str) -> None:
+    """Print the groups as text so they can be verified without a TTY.
+
+    The curses screen is the review surface, but every axis must also be readable
+    from a pipe: that is what makes a change to dir8/distract/combo checkable in a
+    test or a report."""
+    from collections import Counter
+    counts = Counter(f["mode"] for f in fams)
+    # Honour the selected axis exactly as the curses list pane does: `--mode dir8
+    # --dump` must print the dir8 groups, not the whole catalog.
+    shown = fams if mode == "all" else [f for f in fams if f["mode"] == mode]
+    print(f"# glyph_families_viewer --dump   mode={mode}   families={len(shown)}"
+          f"   (loaded {len(fams)})")
+    print("# axes: " + ", ".join(f"{k}:{v}" for k, v in sorted(counts.items())))
+    for n, f in enumerate(shown, 1):
+        members = " ".join(f"U+{int(c.cps[i]):04X}({chr(int(c.cps[i]))})"
+                           for i in f["members"])
+        head = (f"#{n:4} [{f['mode']:8}] size={f['size']:<3} [{f['block']}]")
+        role = f.get("role_hint", "")
+        print(f"{head}  {role}  {members}".rstrip())
+        combo = f.get("combo")
+        if combo:
+            print(f"       {combo['id']}: {combo['chars']}  mirror {combo['mirror_chars']}"
+                  + ("  (self-symmetric)" if combo["self_symmetric"] else ""))
+            print(f"       source: {combo['source']}")
+            if combo["missing"]:
+                print("       MISSING from cache: "
+                      + " ".join(f"U+{cp:04X}" for cp in combo["missing"]))
+            gap = "   "
+            for a, b in zip(combo["rows"], combo["mirror_rows"]):
+                print(f"       |{a}|{gap}|{b}|")
+
+
 def init_colors() -> dict[str, int]:
     curses.start_color()
     try:
@@ -122,6 +378,7 @@ def init_colors() -> dict[str, int]:
         "hud": (252, -1), "dim": (240, -1), "sel": (16, 252), "ink": (231, -1),
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
+        "distract": (203, -1), "combo": (114, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -129,6 +386,7 @@ def init_colors() -> dict[str, int]:
         "ramp": (curses.COLOR_GREEN, -1),
         "fill": (curses.COLOR_YELLOW, -1), "cycle": (curses.COLOR_CYAN, -1),
         "mirror": (curses.COLOR_BLUE, -1), "topo": (curses.COLOR_RED, -1),
+        "distract": (curses.COLOR_RED, -1), "combo": (curses.COLOR_GREEN, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -150,13 +408,13 @@ def safe(win, y, x, text, attr=0):
         pass
 
 
-def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
+def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_only: bool) -> None:
     curses.curs_set(0)
     stdscr.keypad(True)
     cset = init_colors()
     from collections import Counter
     axis_counts = Counter(f["mode"] for f in fams_all)
-    mode_idx = 0
+    mode_idx = MODES.index(initial_mode)
     sel = 0
     top = 0
     frame = 0
@@ -172,6 +430,10 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
         fs = fams_all if m == "all" else [f for f in fams_all if f["mode"] == m]
         if len_filter:
             fs = [f for f in fs if f["size"] == len_filter]
+        if m in ORDERED_MODES:
+            # ranking order (distract) and authored file order (combo) ARE the
+            # information; a size sort would destroy them.
+            return fs
         # sort by size so multiple lengths group together (cycles of 3,4,..16
         # become visible bands); rotation/structure read by length too
         return sorted(fs, key=lambda f: (f["mode"], -f["size"]))
@@ -198,11 +460,13 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
             top = sel - list_h + 1
 
         stdscr.erase()
-        safe(stdscr, 0, 1, "Glyph Families — axes: " + legend(), cset["hud"] | curses.A_BOLD)
+        scope = "SAVED" if saved_only else ("FOLIAGE STROKES" if all(
+            f["mode"] == "stroke" for f in fams_all) else "DISCOVERED")
+        safe(stdscr, 0, 1, f"Glyph Families ({scope}) — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
         safe(stdscr, 1, 1, f"{len(fams)} shown  {lf}  "
-                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}",
-             cset["dim"])
+                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}"
+                           , cset["dim"])
 
         # list pane
         for row in range(list_h):
@@ -226,19 +490,53 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict]) -> None:
         if fams:
             f = fams[sel]
             members = f["members"]
-            fr = frame % len(members)
-            mi = members[fr]
-            cp = int(c.cps[mi])
             dx = list_w + 3
+            avail = max(0, w - dx - 1)
             safe(stdscr, 3, dx, f"{f['mode'].upper()}  size {f['size']}  [{f['block']}]",
                  cset.get(f["mode"], cset["hud"]) | curses.A_BOLD)
-            safe(stdscr, 4, dx, "frame " + " ".join(
-                (f"[{chr(int(c.cps[i]))}]" if k == fr else f" {chr(int(c.cps[i]))} ")
-                for k, i in enumerate(members[:16])), cset["hud"])
-            safe(stdscr, 5, dx, f"U+{cp:04X}  {c.names[mi]}", cset["dim"])
-            grid = getattr(c, which)[mi].reshape(N, N)
-            for gy, gr in enumerate(grid):
-                safe(stdscr, 7 + gy, dx, "".join("██" if v else "  " for v in gr), cset["ink"])
+            combo = f.get("combo")
+            if combo:
+                # A combination is a multi-cell picture, so the pane shows the whole
+                # composite next to its horizontal mirror rather than one animating
+                # glyph. Side by side when the pane is wide enough, stacked when not.
+                safe(stdscr, 4, dx, f"{combo['chars']}   mirror {combo['mirror_chars']}"
+                     + ("   (self-symmetric)" if combo["self_symmetric"] else ""),
+                     cset["hud"])
+                safe(stdscr, 5, dx, combo["note"][:avail], cset["dim"])
+                safe(stdscr, 6, dx, f"source: {combo['source']}"[:avail], cset["dim"])
+                main_rows, mir_rows = combo["rows"], combo["mirror_rows"]
+                cw = len(main_rows[0]) if main_rows else 0
+                if cw and cw * 2 + 4 <= avail:
+                    safe(stdscr, 7, dx, "ORIGINAL".ljust(cw + 4) + "MIRROR", cset["dim"])
+                    for gy, (a, b) in enumerate(zip(main_rows, mir_rows)):
+                        safe(stdscr, 8 + gy, dx, a, cset["ink"])
+                        safe(stdscr, 8 + gy, dx + cw + 4, b, cset["ink"])
+                else:
+                    safe(stdscr, 7, dx, "ORIGINAL", cset["dim"])
+                    for gy, a in enumerate(main_rows):
+                        safe(stdscr, 8 + gy, dx, a, cset["ink"])
+                    y0 = 9 + len(main_rows)
+                    safe(stdscr, y0 - 1, dx, "MIRROR", cset["dim"])
+                    for gy, b in enumerate(mir_rows):
+                        safe(stdscr, y0 + gy, dx, b, cset["ink"])
+            elif members:
+                fr = frame % len(members)
+                mi = members[fr]
+                cp = int(c.cps[mi])
+                safe(stdscr, 4, dx, "frame " + " ".join(
+                    (f"[{chr(int(c.cps[i]))}]" if k == fr else f" {chr(int(c.cps[i]))} ")
+                    for k, i in enumerate(members[:16])), cset["hud"])
+                safe(stdscr, 5, dx, f"U+{cp:04X}  {c.names[mi]}", cset["dim"])
+                role_hint = f.get("role_hint", "")
+                if role_hint:
+                    safe(stdscr, 6, dx, f"role: {role_hint}", cset["dim"])
+                note = f.get("note", "")
+                if note:
+                    safe(stdscr, 7, dx, note[:avail], cset["dim"])
+                grid = getattr(c, which)[mi].reshape(N, N)
+                for gy, gr in enumerate(grid):
+                    safe(stdscr, 8 + gy, dx,
+                         "".join("██" if v else "  " for v in gr), cset["ink"])
 
         safe(stdscr, h - 1, 1,
              "[jk]sel [PgUp/Dn]page [m]axis [1-9]len [0]all "
@@ -287,16 +585,51 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--block", type=str, default=None, help="scope to a block-name substring")
+    ap.add_argument("--saved", action="store_true",
+                    help="replay only the tracked operator-reviewed saved_families registry")
+    ap.add_argument("--foliage-strokes", action="store_true",
+                    help="review actual stroked glyph sets for tree foliage; no atlas or runtime mutation")
+    ap.add_argument("--mode", choices=MODES[1:], default="all",
+                    help="open on one animation axis; use 'cycle' for all discovered "
+                         "cycles, 'distract' for the DISTRACTION ranking, 'combo' for "
+                         "the authored combination dictionary")
+    ap.add_argument("--dump", action="store_true",
+                    help="print the groups as text and exit; no TTY required, so the "
+                         "selected axis can be verified from a pipe or a test")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="distract: keep only the top N rows (0 = all)")
     args = ap.parse_args()
     c = ga.Corpus()
-    fams = load_families(c, args.block)
+    if args.saved and args.foliage_strokes:
+        ap.error("--saved and --foliage-strokes select different review sources")
+    if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo"):
+        ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
+                 f"combined with --saved / --foliage-strokes")
+    if args.foliage_strokes:
+        fams = load_foliage_stroke_families(c)
+        initial_mode = "stroke"
+    elif args.mode == "distract":
+        fams = load_distraction_families(c, args.block, args.limit)
+        initial_mode = "distract"
+    elif args.mode == "combo":
+        fams = load_combination_families(c)
+        initial_mode = "combo"
+    else:
+        fams = load_saved_families(c, args.block) if args.saved else load_families(c, args.block)
+        initial_mode = args.mode
     if not fams:
-        print("no families found.", file=sys.stderr)
+        source = {"distract": "ranked glyphs", "combo": "combinations"}.get(
+            args.mode, "saved families" if args.saved else "families")
+        print(f"no {source} found.", file=sys.stderr)
         return 1
+    if args.dump:
+        dump_families(c, fams, initial_mode)
+        return 0
     if not sys.stdout.isatty():
-        print(f"{len(fams)} families (needs an interactive TTY to view).", file=sys.stderr)
+        print(f"{len(fams)} families (needs an interactive TTY to view, or --dump).",
+              file=sys.stderr)
         return 2
-    curses.wrapper(run, c, fams)
+    curses.wrapper(run, c, fams, initial_mode, args.saved)
     return 0
 
 

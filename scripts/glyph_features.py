@@ -17,6 +17,10 @@ Descriptors per glyph:
     orient       8-bin undirected gradient-orientation histogram (flow)
     d4           crc32 of the D4-canonical norm (rotation/reflection orbit key)
 
+Derived ranking metric (computed on demand, not cached):
+    distract     DISTRACTION weight — how strongly a glyph pulls the reader's eye
+                 away from the line art (see ``distraction_components``)
+
 Cache (regenerable; lives under the gitignored .run/):
     .run/glyph_audit/glyph_features.npz    numeric arrays, parallel to cps[]
     .run/glyph_audit/glyph_features.meta.json   cps/names/fonts/blocks
@@ -177,6 +181,123 @@ def d4_canonical_crc(g: np.ndarray) -> int:
                 best = cand
         a = np.rot90(a)
     return int(zlib.crc32(best))
+
+
+# ---------------------------------------------------------------------------
+# DISTRACTION metric (FL-4512 glyph vocabulary authoring)
+# ---------------------------------------------------------------------------
+# DESIGN SOURCE — Stone Story RPG tutorials, archived under
+# articles/2026-09-07-stone-story-video-transcripts-media/:
+#
+#   5sFVVQcUWVE captions 07:54-08:42 — putting an alphanumeric "in the middle of
+#   the art ... affects a different part of the brain", "that's where the eye's
+#   gonna be drawn to first", "I find that it's usually an unwanted distraction",
+#   and "it's gonna be a distraction most of the time".
+#
+#   o5v-NS9o4yc transcript 22:21-23:55 — "an alpha numerical is going to activate
+#   a different part of the brain that deals with language recognition ... a very
+#   demanding and immersion breaking effect"; the author's kept set is named at
+#   23:55-24:06 ("o upper and lower case, v, t, l, seven") and the marginal set at
+#   24:37-24:52 ("these three are kind of ... on the edge where it's like
+#   sometimes useful but rarely", plus "x is okay ... good for some patterns").
+#
+# The metric is a RANKING aid for authoring a glyph vocabulary. It is offline
+# tooling only: nothing here is read by the runtime, the atlas, or the compiler.
+
+#: Alphanumerics the source keeps in the line-art vocabulary (o5v-NS9o4yc 23:55).
+DISTRACT_WHITELIST = frozenset("oOvTl7")
+#: "sometimes useful but rarely" (o5v-NS9o4yc 24:37-24:52).
+DISTRACT_MARGINAL = frozenset("ucCx")
+
+#: Component weights; they sum to 1.0 so a weight is always in [0, 1].
+#: The alphanumeric flag is deliberately given more than half the total, which
+#: makes it STRICTLY dominant: no combination of ink, stroke count and contrast
+#: can lift a non-alphanumeric mark above even the quietest letter. That is the
+#: ordering the source asks for — it treats an alphanumeric as a different kind
+#: of mark ("activate a different part of the brain that deals with language
+#: recognition"), not as a heavier one — and it is what makes a ranking usable
+#: for authoring: every alphanumeric sorts above every line-art mark, and the
+#: remaining terms order the glyphs within each of those two groups.
+DISTRACT_WEIGHTS = {"alnum": 0.55, "ink": 0.25, "ncomp": 0.10, "contrast": 0.10}
+#: Ink density that saturates the density term (a half-lit cell reads as solid).
+DISTRACT_INK_FULL = 0.50
+#: Component count that saturates the stroke-count term.
+DISTRACT_NCOMP_FULL = 6.0
+
+
+def is_alphanumeric(cp: int) -> bool:
+    """Hard alphanumeric flag: ASCII letters/digits, plus any Unicode letter
+    (category L*) or decimal digit (category Nd).
+
+    This is the flag the source treats categorically — an alphanumeric "is going
+    to activate a different part of the brain that deals with language
+    recognition" (o5v-NS9o4yc 23:05-23:12), so it is not a matter of degree."""
+    ch = chr(cp)
+    if ch.isascii() and (ch.isalpha() or ch.isdigit()):
+        return True
+    cat = unicodedata.category(ch)
+    return cat.startswith("L") or cat == "Nd"
+
+
+def distraction_components(cp: int, ink: int, ncomp: int,
+                           family_median_density: float, cell: int = N) -> dict:
+    """DISTRACTION weight for one glyph, plus every component that produced it.
+
+    Components (see the DESIGN SOURCE block above):
+      alnum     hard flag — 1.0 for a Unicode letter / decimal digit, else 0.0.
+                Weighted above 0.5, so it strictly dominates the other three.
+      ink       ink density (lit pixels / cell area), saturating at
+                DISTRACT_INK_FULL: a heavy mark shouts louder than a light one.
+      ncomp     connected-component (stroke/part) count of the NORMALIZED mask,
+                saturating at DISTRACT_NCOMP_FULL: many disjoint parts read as
+                busy detail rather than as one line-art mark.
+      contrast  proxy for local contrast — how much HEAVIER the glyph is than its
+                family's median density, as a fraction of that median, clamped at
+                zero below it. The excess is one-sided on purpose: a mark heavier
+                than the field around it advances and catches the eye, while a
+                lighter one recedes into the field rather than competing with it.
+                (A symmetric |difference| would score a lone period nearly as high
+                as a hash, which inverts the ranking this metric exists to give.)
+
+    ``family_median_density`` is the median ink density of the cohort the glyph is
+    ranked inside (its Unicode block, or an explicitly supplied candidate family).
+
+    Returns a dict with each raw component, each weighted term, the total
+    ``weight`` in [0, 1], and the two source-named authoring flags
+    (``whitelisted`` / ``marginal``)."""
+    area = float(cell * cell)
+    density = float(ink) / area
+    alnum = 1.0 if is_alphanumeric(cp) else 0.0
+    ink_term = min(1.0, density / DISTRACT_INK_FULL)
+    ncomp_term = min(1.0, max(0.0, float(ncomp) - 1.0) / DISTRACT_NCOMP_FULL)
+    floor = max(float(family_median_density), 1.0 / area)
+    contrast = max(0.0, density - float(family_median_density)) / floor
+    contrast_term = min(1.0, contrast)
+    w = DISTRACT_WEIGHTS
+    weight = (w["alnum"] * alnum + w["ink"] * ink_term
+              + w["ncomp"] * ncomp_term + w["contrast"] * contrast_term)
+    ch = chr(cp)
+    return {
+        "cp": int(cp),
+        "char": ch,
+        "alnum": bool(alnum),
+        "density": density,
+        "ncomp": int(ncomp),
+        "family_median_density": float(family_median_density),
+        "alnum_term": w["alnum"] * alnum,
+        "ink_term": w["ink"] * ink_term,
+        "ncomp_term": w["ncomp"] * ncomp_term,
+        "contrast_term": w["contrast"] * contrast_term,
+        "weight": weight,
+        "whitelisted": ch in DISTRACT_WHITELIST,
+        "marginal": ch in DISTRACT_MARGINAL,
+    }
+
+
+def distraction_weight(cp: int, ink: int, ncomp: int,
+                       family_median_density: float, cell: int = N) -> float:
+    """Scalar DISTRACTION weight in [0, 1]; see ``distraction_components``."""
+    return distraction_components(cp, ink, ncomp, family_median_density, cell)["weight"]
 
 
 def grid_from_scorer(scorer: GlyphScorer, cp: int) -> np.ndarray:

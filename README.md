@@ -35,8 +35,9 @@ Controls are shown in the browser footer. `q` exits without changing tracked fil
 ![Animate and filter morphology families](docs/glyph-families-viewer.gif)
 
 The family viewer shows reviewed glyph sequences as animated shape families.
-You can switch morphology axes, filter by family length, change speed, and
-pause on a specific sequence.
+You can switch morphology axes, filter by family length, change speed, pause on
+a specific sequence, review distraction ranking, and inspect authored
+multi-cell combinations beside their mirrors.
 
 ```sh
 ./run-families.sh
@@ -53,15 +54,35 @@ Mathematical Operators, and Cherokee, plus three `stroke` records covering CJK
 Strokes and Katakana.
 
 The `cycle` records use the viewer's existing family vocabulary. The three
-`stroke` records are kept as source data; `stroke` is not currently an
-interactive axis in `glyph_families_viewer.py`. The full registry is in
+`stroke` records are also visible through the viewer's stroke review surface.
+The full registry is in
 [docs/research/ascii/glyph_audit/saved_families.jsonl](docs/research/ascii/glyph_audit/saved_families.jsonl),
 with source boundaries documented in [docs/code-provenance.md](docs/code-provenance.md).
+
+## Glyph combinations
+
+The package includes the authored Stone Story combination seed dictionary at
+`assets/glyphs/authored/glyph_combinations.v1.json`. The viewer can render those
+seeds with:
+
+```sh
+python3 scripts/glyph_families_viewer.py --mode combo --dump
+```
+
+For broader review, `scripts/glyph_combo_candidates.py` enumerates every
+connected two- and three-cell arrangement over the source-named useful
+non-alphanumeric line-art alphabet. It reports 25,088 candidates before any
+manual art selection:
+
+```sh
+python3 scripts/glyph_combo_candidates.py --limit 20
+```
 
 ## Included data
 
 The repository includes the morphology browser, the read-only family viewer, the
-selected saved-family registry, and the pinned font chain used for rendering. It
-does not include the full Asciicker engine or runtime.
+selected saved-family registry, the glyph combination review data, the candidate
+enumerator, and the pinned font chain used for rendering. It does not include
+the full Asciicker engine or runtime.
 
 Font identities, copyright metadata, license mapping, and license texts are recorded in [docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`. Source-code identities are recorded in [docs/code-provenance.md](docs/code-provenance.md).

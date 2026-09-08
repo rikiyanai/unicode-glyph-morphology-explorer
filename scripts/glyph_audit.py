@@ -17,6 +17,13 @@ discovery operators described in the design:
     anim     animate a glyph sequence in place — WATCH a spinner/ramp/cycle move
              (anim --spin N / --ramp N / --cycle N / --fill N pulls a family)
     families list ALL families across every mode (--json caches for the viewer)
+    distract rank glyphs by DISTRACTION weight — how strongly a glyph pulls the
+             reader's eye out of the line art (hard alphanumeric flag + ink
+             density + stroke count + contrast against the family median); see
+             glyph_features.distraction_components for the design source
+    consume  families restricted to ATLAS-ADMITTED glyphs, addressed by glyph_id;
+             carries the DIRECTED axes (dir8 groups, mirror pairs) and the
+             per-glyph distraction column
     validate check the known hand-found examples fall out
 
 The animated viewer over all families is scripts/glyph_families_viewer.py.
@@ -779,16 +786,45 @@ def _radial_profile_key(grid2d: np.ndarray, rings: int = 4, levels: int = 5) -> 
 # and SPARSE, so we exclude these blocks and cap ink density for dir8.
 _DIR8_DENSE_BLOCK_PREFIXES = ("CJK", "Hangul", "Tangut", "Yi ", "Egyptian Hieroglyphs")
 
+# ALLOWLIST EXCEPTION to the prefix rule above. "CJK" as a blanket prefix also
+# swallows "CJK Strokes" (U+31C0-U+31EF), which is NOT a dense ideograph block: it
+# encodes the individual single strokes an ideograph is built from — exactly the
+# sparse, strongly directed marks dir8 exists to group (leaf sweep, hook, fork,
+# turn). Those are the canopy glyphs the runtime already elects by wind heading
+# (glyph_ids 764-779), and they are registered as review families in
+# scripts/glyph_families_viewer.py::load_foliage_stroke_families. The dense CJK
+# ideograph blocks ("CJK Unified Ideographs", "CJK Compatibility Ideographs",
+# "CJK Radicals ...") keep the exclusion. Exact block names only — a prefix here
+# would re-admit the dense blocks the rule above is meant to reject.
+_DIR8_SPARSE_BLOCK_EXCEPTIONS = ("CJK Strokes",)
+
+# Ink-density window for a "simple, sparse mark".
+_DIR8_INK_MIN = 0.04
+_DIR8_INK_MAX = 0.34
+# Lower floor for the allowlisted stroke blocks ONLY. A CJK stroke is one pen
+# movement, so the thinnest members sit under the general floor: measured on the
+# unifont-17.0.04 16x16 raster, U+31C0 (CJK STROKE T) is 0.035 and U+31D4 (CJK
+# STROKE D) is 0.023, while every other U+31C0-U+31E3 member is already inside
+# the general window. Without this floor those two drop out of dir8 and the
+# leaf-sweep orbit loses frames. The 0.34 ceiling is unchanged — it is what keeps
+# a genuinely dense glyph out, and no member of this block reaches it.
+_DIR8_INK_MIN_SPARSE_EXCEPTION = 0.02
+
 
 def _dir8_simple(c: Corpus, i: int) -> bool:
     """True if glyph i is a simple, sparse mark eligible for directional grouping:
     not in a dense ideograph block, and ink density in a mid window (not a near-
-    empty dot, not a solid block)."""
+    empty dot, not a solid block).
+
+    Blocks named in ``_DIR8_SPARSE_BLOCK_EXCEPTIONS`` survive the dense-prefix
+    rejection and use the lower ``_DIR8_INK_MIN_SPARSE_EXCEPTION`` floor."""
     b = c.blocks[i]
-    if any(b.startswith(p) for p in _DIR8_DENSE_BLOCK_PREFIXES):
+    sparse_exception = b in _DIR8_SPARSE_BLOCK_EXCEPTIONS
+    if not sparse_exception and any(b.startswith(p) for p in _DIR8_DENSE_BLOCK_PREFIXES):
         return False
     frac = float(c.ink[i]) / float(N * N)
-    return 0.04 <= frac <= 0.34
+    lo = _DIR8_INK_MIN_SPARSE_EXCEPTION if sparse_exception else _DIR8_INK_MIN
+    return lo <= frac <= _DIR8_INK_MAX
 
 
 def find_directional(c: Corpus, min_frames: int = 4, min_mag: float = 0.12,
@@ -888,6 +924,120 @@ def find_mirror(c: Corpus, allow: set[int] | None = None) -> list[list[int]]:
         seen.add(pair)
         out.append([pair[0], pair[1]])
     return out
+
+
+# ---------------------------------------------------------------------------
+# DISTRACTION ranking
+# ---------------------------------------------------------------------------
+# The metric itself, and its design source (the Stone Story tutorials on
+# alphanumerics as "an unwanted distraction"), live in
+# glyph_features.distraction_components. This layer only supplies the corpus-side
+# operands: the normalized-mask part count and the family median ink density.
+def norm_ncomp(c: Corpus, i: int) -> int:
+    """Connected-component count of the NORMALIZED mask, memoised per corpus.
+
+    ``c.ncomp`` is counted on the RAW grid; the distraction metric is defined on
+    the normalized mask so a glyph's part count does not change with its size or
+    position in the cell."""
+    cache = getattr(c, "_norm_ncomp_cache", None)
+    if cache is None:
+        cache = {}
+        setattr(c, "_norm_ncomp_cache", cache)
+    v = cache.get(i)
+    if v is None:
+        v = gf.n_components(c.norm[i].reshape(N, N))
+        cache[i] = v
+    return v
+
+
+def _median(values: list[float]) -> float:
+    if not values:
+        return 0.0
+    s = sorted(values)
+    m = len(s) // 2
+    return s[m] if len(s) % 2 else 0.5 * (s[m - 1] + s[m])
+
+
+def family_median_density(c: Corpus, members: list[int]) -> float:
+    """Median ink density over a candidate family — the contrast reference."""
+    return _median([float(c.ink[i]) / float(N * N) for i in members])
+
+
+def block_median_density(c: Corpus, block: str) -> float:
+    """Median ink density of a Unicode block, memoised per corpus. This is the
+    default contrast cohort when a glyph is ranked on its own rather than inside
+    an authored family."""
+    cache = getattr(c, "_block_density_cache", None)
+    if cache is None:
+        cache = {}
+        setattr(c, "_block_density_cache", cache)
+    v = cache.get(block)
+    if v is None:
+        v = family_median_density(c, [i for i in range(c.count) if c.blocks[i] == block])
+        cache[block] = v
+    return v
+
+
+def distraction_row(c: Corpus, i: int, family_median: float | None = None) -> dict:
+    """Full distraction record for corpus row i (see glyph_features)."""
+    if family_median is None:
+        family_median = block_median_density(c, c.blocks[i])
+    row = gf.distraction_components(int(c.cps[i]), int(c.ink[i]), norm_ncomp(c, i),
+                                    family_median)
+    row["index"] = i
+    row["block"] = c.blocks[i]
+    row["name"] = c.names[i]
+    return row
+
+
+def rank_distraction(c: Corpus, allow: set[int] | None = None) -> list[dict]:
+    """Every glyph ranked most-distracting first; ties broken by codepoint."""
+    rows = [distraction_row(c, i) for i in range(c.count)
+            if allow is None or i in allow]
+    rows.sort(key=lambda r: (-r["weight"], r["cp"]))
+    return rows
+
+
+def _distract_flags(row: dict) -> str:
+    """One-column authoring marker: the alphanumeric hard flag first."""
+    if not row["alnum"]:
+        return "   "
+    if row["whitelisted"]:
+        return "A+ "        # alphanumeric, but on the source's kept list
+    if row["marginal"]:
+        return "A~ "        # alphanumeric, "sometimes useful but rarely"
+    return "A! "            # alphanumeric, no exemption
+
+
+def cmd_distract(c: Corpus, args) -> int:
+    allow = block_allow(c, args.block)
+    rows = rank_distraction(c, allow)
+    if not rows:
+        sys.stderr.write("  no glyphs in scope (check --block against the cache)\n")
+        return 1
+    alnum = sum(1 for r in rows if r["alnum"])
+    print(f"\n{len(rows)} glyphs ranked by DISTRACTION weight   alphanumeric: {alnum}"
+          + (f"   block~='{args.block}'" if args.block else ""))
+    print("  weight = " + " + ".join(f"{k}*{v}" for k, v in gf.DISTRACT_WEIGHTS.items())
+          + "   flags: A!=alphanumeric  A+=kept set  A~=marginal set\n")
+
+    def show(title, subset):
+        print(f"  {title}")
+        for n, r in enumerate(subset, 1):
+            print(f"   {n:3} {_distract_flags(r)}{r['weight']:.3f}  U+{r['cp']:04X} "
+                  f"{r['char']}  ink={r['density']:.3f} ncomp={r['ncomp']} "
+                  f"[{r['block']}] {r['name'][:34]}")
+        print()
+
+    show(f"TOP {args.limit} (most distracting)", rows[:args.limit])
+    show(f"BOTTOM {args.limit} (quietest)", rows[-args.limit:][::-1])
+    if args.json:
+        out = gf.CACHE_DIR / "distraction.json"
+        out.write_text(json.dumps({"schema": 1, "block": args.block,
+                                   "weights": gf.DISTRACT_WEIGHTS,
+                                   "count": len(rows), "rows": rows}, indent=2) + "\n")
+        print(f"wrote {out}")
+    return 0
 
 
 # ---------------------------------------------------------------------------
@@ -1207,6 +1357,13 @@ def load_admitted() -> dict[int, int]:
     return gid_of
 
 
+# Axes exported by `consume`, in emission order. dir8 (directed 8-way groups) and
+# mirror (left/right chirality pairs) are here so the runtime/compiler side can read
+# a DIRECTED group by glyph id — previously the only glyph_id-addressed export
+# carried the undirected axes alone.
+CONSUME_MODES = ("ramp", "cycle", "spin", "dir8", "mirror", "topo")
+
+
 def cmd_consume(c: Corpus, args) -> int:
     gid_of = load_admitted()
     allow = {c.i(cp) for cp in gid_of if c.i(cp) is not None}
@@ -1218,11 +1375,29 @@ def cmd_consume(c: Corpus, args) -> int:
         members = [m for m in members if m is not None]
         if not (2 <= len(members) <= MAX_FAMILY):
             return
-        fams.append({"mode": mode,
-                     "cps": [int(c.cps[i]) for i in members],
-                     "glyph_ids": [gid_of[int(c.cps[i])] for i in members],
-                     "chars": "".join(chr(int(c.cps[i])) for i in members),
-                     "blocks": sorted({c.blocks[i] for i in members})})
+        # DISTRACTION per member, contrast-referenced against THIS family's own
+        # median density (the cohort the glyph would actually be drawn among).
+        fam_median = family_median_density(c, members)
+        drows = [distraction_row(c, i, fam_median) for i in members]
+        entry = {"mode": mode,
+                 "cps": [int(c.cps[i]) for i in members],
+                 "glyph_ids": [gid_of[int(c.cps[i])] for i in members],
+                 "chars": "".join(chr(int(c.cps[i])) for i in members),
+                 "blocks": sorted({c.blocks[i] for i in members}),
+                 "distract": [round(r["weight"], 4) for r in drows],
+                 "distract_max": round(max(r["weight"] for r in drows), 4),
+                 "distract_alnum": [bool(r["alnum"]) for r in drows]}
+        if mode == "dir8":
+            # dir8 members are emitted in compass order by find_directional, so the
+            # heading of member k is the k-th occupied bin. Name it explicitly so a
+            # consumer reading by glyph_id knows which direction slot each id owns.
+            entry["dir8"] = [_DIR8_NAMES[_ink_centroid_heading(
+                c.norm[i].reshape(N, N))[1]] for i in members]
+        if mode == "mirror":
+            # find_mirror emits [left, right]; name the pair roles for the same reason.
+            entry["mirror"] = {"left": entry["glyph_ids"][0],
+                               "right": entry["glyph_ids"][1]}
+        fams.append(entry)
 
     for g in sorted([x for x in find_ramps(c, 3, 0.60, 1.2, allow) if len(x) <= MAX_FAMILY],
                     key=len)[:args.per_mode]:
@@ -1232,6 +1407,13 @@ def cmd_consume(c: Corpus, args) -> int:
         emit("cycle", g)
     for g in find_spins(c, 3, allow)[:args.per_mode]:
         emit("spin", g)
+    # dir8 and mirror are the DIRECTED axes. They were previously missing from the
+    # only glyph_id-addressed export, so a directed group could be discovered but
+    # never read back by glyph id on the runtime/compiler side.
+    for g in find_directional(c, min_frames=4, allow=allow)[:args.per_mode]:
+        emit("dir8", g)
+    for g in find_mirror(c, allow)[:args.per_mode]:
+        emit("mirror", g)
     try:
         for ci in find_topo_families(c, allow=allow)[:args.per_mode]:
             emit("topo", ci)
@@ -1242,13 +1424,24 @@ def cmd_consume(c: Corpus, args) -> int:
     for f in fams:
         counts[f["mode"]] += 1
     print("renderable families  (" + ", ".join(f"{m}:{counts[m]}" for m in
-          ("ramp", "cycle", "spin", "topo")) + ")\n")
+          CONSUME_MODES) + ")\n")
     for n, f in enumerate(fams[:args.limit], 1):
         gids = " ".join(str(g) for g in f["glyph_ids"][:10])
-        print(f"#{n:3} [{f['mode']:5}] {f['chars'][:14]:14}  glyph_ids: {gids}")
+        extra = ""
+        if f["mode"] == "dir8":
+            extra = "  dir8: " + " ".join(f["dir8"])
+        elif f["mode"] == "mirror":
+            extra = f"  mirror: {f['mirror']['left']}<->{f['mirror']['right']}"
+        alnum = "!" if any(f["distract_alnum"]) else " "
+        print(f"#{n:3} [{f['mode']:6}] {f['chars'][:14]:14} "
+              f"distract={f['distract_max']:.3f}{alnum} glyph_ids: {gids}{extra}")
     if args.json:
         out = gf.CACHE_DIR / "consume_proposal.json"
-        out.write_text(json.dumps({"schema": 1, "admitted": len(gid_of),
+        # schema 2 adds the directed axes (dir8 groups, mirror pairs) and the
+        # per-glyph distraction column; schema 1 had ramp/cycle/spin/topo only.
+        out.write_text(json.dumps({"schema": 2, "admitted": len(gid_of),
+                                   "modes": list(CONSUME_MODES),
+                                   "distract_weights": gf.DISTRACT_WEIGHTS,
                                    "families": fams}, indent=2) + "\n")
         print(f"\nwrote dry-run proposal: {out}")
         print("  (Step 2 — reseed material_rendering_profiles.v1.json — is gated; "
@@ -1488,6 +1681,14 @@ def main() -> int:
     p.add_argument("--validate", action="store_true",
                    help="Phase-3 gate: assert global topo families are cross-script")
 
+    p = sub.add_parser("distract", help="rank glyphs by DISTRACTION weight "
+                                        "(alphanumeric flag + ink + strokes + contrast)")
+    p.add_argument("--block", type=str, default=None, help="scope to a block-name substring")
+    p.add_argument("--limit", type=int, default=10,
+                   help="rows shown at each end of the ranking")
+    p.add_argument("--json", action="store_true",
+                   help="write .run/glyph_audit/distraction.json")
+
     p = sub.add_parser("consume", help="Phase 1: families restricted to ATLAS-ADMITTED "
                                        "glyphs (directly renderable) + dry-run proposal")
     p.add_argument("--per-mode", type=int, default=200, dest="per_mode")
@@ -1517,7 +1718,7 @@ def main() -> int:
         "similar": cmd_similar, "ramp": cmd_ramp, "fill": cmd_fill,
         "cycle": cmd_cycle, "spin": cmd_spin, "anim": cmd_anim, "morph": cmd_morph,
         "families": cmd_families, "validate": cmd_validate, "consume": cmd_consume,
-        "export-candidates": cmd_export_candidates,
+        "distract": cmd_distract, "export-candidates": cmd_export_candidates,
     }[args.cmd](c, args)
 
 
