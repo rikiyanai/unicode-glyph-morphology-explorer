@@ -14,10 +14,13 @@ run_plate="$repo_dir/.run/glyph_audit/runs_beside_w8_plate.json"
 run_lineart="$repo_dir/.run/glyph_audit/runs_beside_w8_lineart.json"
 run_rtl="$repo_dir/.run/glyph_audit/runs_beside_w8_rtl.json"
 run_cjk="$repo_dir/.run/glyph_audit/runs_beside_w16_cjk.json"
+run_stacked_lineart="$repo_dir/.run/glyph_audit/runs_stacked_w8_lineart.json"
+run_stacked_cjk="$repo_dir/.run/glyph_audit/runs_stacked_w16_cjk.json"
 seam_stacked_w8="$repo_dir/.run/glyph_audit/seam_pairs_stacked_w8.json"
 seam_beside_w8="$repo_dir/.run/glyph_audit/seam_pairs_beside_w8.json"
 seam_stacked_w16="$repo_dir/.run/glyph_audit/seam_pairs_stacked_w16.json"
 seam_beside_w16="$repo_dir/.run/glyph_audit/seam_pairs_beside_w16.json"
+rebuild_gallery=0
 
 command -v python3 >/dev/null 2>&1 || {
   echo "python3 is required" >&2
@@ -43,35 +46,53 @@ if [ ! -f "$cell_cache" ] || [ ! -f "$cell_meta" ] || ! python3 -c 'import json,
 fi
 if [ ! -f "$mine_json" ]; then
   python3 "$repo_dir/scripts/glyph_combo_mine.py" --json >/dev/null
+  rebuild_gallery=1
 fi
 if [ ! -f "$seam_stacked_w8" ]; then
   python3 "$repo_dir/scripts/glyph_seam_index.py" --relation stacked --width 8 --stroke-like --exclude-alnum --max-pairs 20000 --keep 300
+  rebuild_gallery=1
 fi
 if [ ! -f "$seam_beside_w8" ]; then
   python3 "$repo_dir/scripts/glyph_seam_index.py" --relation beside --width 8 --stroke-like --exclude-alnum --max-pairs 20000 --keep 300
+  rebuild_gallery=1
 fi
 if [ ! -f "$seam_stacked_w16" ]; then
   python3 "$repo_dir/scripts/glyph_seam_index.py" --relation stacked --width 16 --stroke-like --max-pairs 20000 --keep 300
+  rebuild_gallery=1
 fi
 if [ ! -f "$seam_beside_w16" ]; then
   python3 "$repo_dir/scripts/glyph_seam_index.py" --relation beside --width 16 --stroke-like --max-pairs 20000 --keep 300
+  rebuild_gallery=1
 fi
 if [ ! -f "$run_accept" ]; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --chars '_.-´`\|/(o)‾' --length 4 --per-start 0 --no-dsm --max-score 100000 --keep 100000 --json --tag accept --limit 0
+  rebuild_gallery=1
 fi
 if [ ! -f "$run_plate" ]; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --plate --length 4 --per-start 400 --budget 3000000 --max-score 40000 --keep 20000 --json --tag plate --limit 0
+  rebuild_gallery=1
 fi
 if [ ! -f "$run_lineart" ]; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --line-like --exclude-alnum --length 3 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
+  rebuild_gallery=1
 fi
 if [ ! -f "$run_rtl" ]; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --blocks "Arabic,Hebrew,Syriac,Thaana" --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag rtl --limit 25
+  rebuild_gallery=1
 fi
 if [ ! -f "$run_cjk" ]; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
+  rebuild_gallery=1
 fi
-if [ ! -f "$combo_json" ] || [ ! -f "$combo_html" ]; then
+if [ ! -f "$run_stacked_lineart" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 8 --line-like --exclude-alnum --length 3 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
+  rebuild_gallery=1
+fi
+if [ ! -f "$run_stacked_cjk" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
+  rebuild_gallery=1
+fi
+if [ ! -f "$combo_json" ] || [ ! -f "$combo_html" ] || [ "$rebuild_gallery" -eq 1 ]; then
   python3 "$repo_dir/scripts/glyph_combo_gallery.py"
 fi
 echo "combo gallery: $combo_html" >&2

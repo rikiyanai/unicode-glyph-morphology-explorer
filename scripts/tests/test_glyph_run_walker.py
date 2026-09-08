@@ -55,7 +55,7 @@ def cache():
 
 
 def _walk(chars: str, length: int) -> dict[str, dict]:
-    a = argparse.Namespace(width=8, plate=False, chars=chars, line_like=False, blocks=None, exclude_alnum=False,
+    a = argparse.Namespace(width=8, relation="beside", plate=False, chars=chars, line_like=False, blocks=None, exclude_alnum=False,
                            length=length, jaccard=0.5, max_gap=4, step_h=5, step_dy=8.0, turn_max=45.0,
                            per_node=24, per_start=0, budget=200000, max_score=100000, no_dsm=True)
     rows = grw.run_walker(a)

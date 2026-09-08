@@ -89,9 +89,10 @@ python3 scripts/glyph_combo_candidates.py --limit 20
 Stone Story tutorial plates. `scripts/glyph_seam_index.py` finds measured
 adjacent-cell pairs across the standalone font-chain repertoire.
 `scripts/glyph_run_walker.py` then walks those seam relations into
-variable-length runs, so examples such as `_.-´`, `` `-._ ``, `\|/`, `(‾)`,
-`/‾\`, and `\_/` can be reviewed as run families rather than fixed two- or
-three-cell tuples.
+variable-length beside and stacked runs, so examples such as `_.-´`,
+`` `-._ ``, `\|/`, `(‾)`, `/‾\`, `\_/`, `|` over `|`, CJK stroke chains, and
+Arabic joining-form runs can be reviewed as run families rather than fixed two-
+or three-cell tuples.
 
 The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:

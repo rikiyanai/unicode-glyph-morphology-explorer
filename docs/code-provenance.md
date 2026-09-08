@@ -75,8 +75,12 @@ first interactive launch and then opens the read-only viewer.
 
 The run-walker refresh adds the packaged Stone Story tutorial plates, the
 `glyph_combo_mine.py` usage counter, the whole-repertoire `glyph_seam_index.py`
-pair index, and `glyph_run_walker.py` for variable-length beside runs. These
-remain offline exploration tools; no Asciicker runtime source is packaged.
+pair index, and `glyph_run_walker.py` for variable-length beside and stacked runs. The
+2026-09-08 follow-up sync imports the relation-aware stacked-run walker from
+`rikiyanai/asciicker-Y9-2` through
+`24dc777cf9ab4a99b3020c4438dd228b9cd486d2`, while preserving the standalone
+viewer hardening and packaged Stone Story plate paths. These remain offline
+exploration tools; no Asciicker runtime source is packaged.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).

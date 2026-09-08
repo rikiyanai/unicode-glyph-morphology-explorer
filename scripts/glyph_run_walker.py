@@ -10,7 +10,9 @@ plates (glyph_combo_mine.py) are used ONLY as acceptance falsifiers: the walker
 must rediscover the stair step, the rotation triple and the bracketed orb from
 the graph; it never weights by them.
 
-EDGE RULES (beside runs; each produces (A, B) edges from cache-v2 buckets)
+EDGE RULES (each produces (A, B) edges from cache-v2 buckets; stated for
+beside runs — --relation stacked transposes every role: "altitude" becomes
+the column centroid (drift), "short" means narrow, "end" means left/right end)
 
     contact   A and B share ink rows and the extent gap (A's right margin +
               B's left margin) <= max_gap; edge-band Jaccard lowers the cost
@@ -74,6 +76,48 @@ OUT_DIR = gcf.CACHE_DIR
 CELL_H = 16
 
 
+class Axis:
+    """Feature roles for one run direction.
+
+    beside  : cells go left->right; "along" = columns, "cross" = rows;
+              the coherence property is altitude (row centroid).
+    stacked : cells go top->bottom; "along" = rows, "cross" = columns;
+              the coherence property is the column centroid (drift).
+    """
+
+    def __init__(self, z, relation: str):
+        self.relation = relation
+        if relation == "beside":
+            self.a0, self.a1 = z["ink_left"].astype(int), z["ink_right"].astype(int)
+            self.along_len = z["cell_w"].astype(int)
+            self.c0, self.c1 = z["ink_top"].astype(int), z["ink_bottom"].astype(int)
+            self.cen = z["cen_row"]
+            self.band_exit, self.band_entry = z["band_right"], z["band_left"]
+        elif relation == "stacked":
+            self.a0, self.a1 = z["ink_top"].astype(int), z["ink_bottom"].astype(int)
+            self.along_len = np.full(len(z["cp"]), CELL_H, dtype=int)
+            self.c0, self.c1 = z["ink_left"].astype(int), z["ink_right"].astype(int)
+            self.cen = z["cen_col"]
+            self.band_exit, self.band_entry = z["band_bottom"], z["band_top"]
+        else:
+            raise ValueError(relation)
+        self.dom = z["dom_deg"]
+        self.cross_size = self.c1 - self.c0 + 1
+
+    def profile_name(self, profile: str) -> str:
+        if self.relation == "beside":
+            return profile
+        return {
+            "flat": "straight",
+            "rising": "drift-left",
+            "falling": "drift-right",
+            "cap": "bow-left",
+            "cup": "bow-right",
+            "wave": "wave",
+            "point": "point",
+        }.get(profile, profile)
+
+
 # ---------------------------------------------------------------------------
 # Selection
 # ---------------------------------------------------------------------------
@@ -96,39 +140,41 @@ def _axial(d: float) -> float:
     return min(d, 180.0 - d)
 
 
-def build_edges(z, idx: np.ndarray, *, jacc: float, max_gap: int, step_h: int, step_dy: float,
-                turn_max: float, per_node: int) -> dict[int, list[tuple[int, str, float]]]:
-    """Return adjacency: a -> [(b, rule, cost)], best ``per_node`` per node."""
-    cen = z["cen_row"]
-    dom = z["dom_deg"]
-    top, bot = z["ink_top"].astype(int), z["ink_bottom"].astype(int)
-    left, right = z["ink_left"].astype(int), z["ink_right"].astype(int)
-    w = z["cell_w"].astype(int)
-    band_r, band_l = z["band_right"], z["band_left"]
-    height = bot - top + 1
+def build_edges(z, idx: np.ndarray, *, relation: str = "beside", jacc: float, max_gap: int, step_h: int,
+                step_dy: float, turn_max: float, per_node: int) -> dict[int, list[tuple[int, str, float]]]:
+    """Return adjacency: a -> [(b, rule, cost)], ``per_node`` best per node per rule."""
+    ax = Axis(z, relation)
+    cen, dom = ax.cen, ax.dom
+    a0, a1, along = ax.a0, ax.a1, ax.along_len
+    c0, c1 = ax.c0, ax.c1
+    size = ax.cross_size
     idx_list = [int(i) for i in idx]
     adj: dict[int, list[tuple[int, str, float]]] = defaultdict(list)
 
-    # contact: shared rows + extent gap <= max_gap; bucket B by left margin
-    by_leftm: dict[int, list[int]] = defaultdict(list)
+    def share_cross(a: int, b: int) -> bool:
+        return min(c1[a], c1[b]) >= max(c0[a], c0[b])
+
+    # contact: shared cross-axis extent + along-axis extent gap <= max_gap
+    by_entry: dict[int, list[int]] = defaultdict(list)
     for i in idx_list:
-        by_leftm[int(left[i])].append(i)
+        by_entry[int(a0[i])].append(i)
     for a in idx_list:
-        ra = int(w[a] - 1 - right[a])
+        ra = int(along[a] - 1 - a1[a])
         for lm in range(0, max_gap - ra + 1):
-            for b in by_leftm.get(lm, ()):
-                if b == a or min(bot[a], bot[b]) < max(top[a], top[b]):
+            for b in by_entry.get(lm, ()):
+                if b == a or not share_cross(a, b):
                     continue
                 gap = ra + lm
-                j = gsi.jaccard(int(band_r[a]), int(band_l[b])) if band_r[a] and band_l[b] else 0.0
+                j = (gsi.jaccard(int(ax.band_exit[a]), int(ax.band_entry[b]))
+                     if ax.band_exit[a] and ax.band_entry[b] else 0.0)
                 adj[a].append((b, "contact", gap + (1.0 - j)))
 
     # repeat: a glyph after itself is always a candidate run
     for a in idx_list:
         adj[a].append((a, "repeat", 0.5))
 
-    # step: short marks bucketed by rounded altitude
-    short = [i for i in idx_list if height[i] <= step_h]
+    # step: short cross-axis marks bucketed by rounded centroid
+    short = [i for i in idx_list if size[i] <= step_h]
     by_alt: dict[int, list[int]] = defaultdict(list)
     for i in short:
         by_alt[int(round(float(cen[i])))].append(i)
@@ -140,8 +186,8 @@ def build_edges(z, idx: np.ndarray, *, jacc: float, max_gap: int, step_h: int, s
                 if dy <= step_dy and b != a:
                     adj[a].append((b, "step", 0.5))       # any step in range; consistency is scored on the run
 
-    # turn: oriented glyphs sharing rows, bucketed by 15-degree orientation bins
-    oriented = [i for i in idx_list if not np.isnan(dom[i]) and height[i] >= 4]
+    # turn: oriented glyphs sharing cross-axis extent, bucketed by 15-degree orientation bins
+    oriented = [i for i in idx_list if not np.isnan(dom[i]) and size[i] >= 4]
     by_bin: dict[int, list[int]] = defaultdict(list)
     for i in oriented:
         by_bin[int(dom[i] // 15) % 12].append(i)
@@ -153,28 +199,26 @@ def build_edges(z, idx: np.ndarray, *, jacc: float, max_gap: int, step_h: int, s
                 if b == a:
                     continue
                 dth = _axial(float(dom[b]) - float(dom[a]))
-                if dth > turn_max:
-                    continue
-                if min(bot[a], bot[b]) < max(top[a], top[b]):      # no shared rows
+                if dth > turn_max or not share_cross(a, b):
                     continue
                 adj[a].append((b, "turn", 1.0 + dth / turn_max))
 
-    # end: a short mark riding on the END of a taller glyph without sharing rows
-    # (the ‾ over the top of ( and ) in ( ‾ ); the _ under a bracket is contact)
-    tall = [i for i in idx_list if height[i] > step_h]
+    # end: a short mark riding on the cross-axis end of a bigger glyph without sharing cross extent
     for a in idx_list:
         for b in idx_list:
-            if a == b:
+            if a == b or share_cross(a, b):
                 continue
-            if min(bot[a], bot[b]) >= max(top[a], top[b]):
-                continue                                    # shared rows: contact's job
-            if height[a] <= step_h and height[b] <= step_h:
-                continue                                    # both short: step's job
-            t, sh = (a, b) if height[a] > step_h else (b, a)
-            if height[t] <= step_h:
+            if size[a] <= step_h and size[b] <= step_h:
                 continue
-            dist = min(abs(int(top[sh]) - int(top[t])), abs(int(bot[sh]) - int(bot[t])),
-                       abs(int(top[sh]) - int(bot[t])), abs(int(bot[sh]) - int(top[t])))
+            t, sh = (a, b) if size[a] > step_h else (b, a)
+            if size[t] <= step_h:
+                continue
+            dist = min(
+                abs(int(c0[sh]) - int(c0[t])),
+                abs(int(c1[sh]) - int(c1[t])),
+                abs(int(c0[sh]) - int(c1[t])),
+                abs(int(c1[sh]) - int(c0[t])),
+            )
             if dist <= max_gap:
                 adj[a].append((b, "end", 1.0 + dist / max(max_gap, 1)))
 
@@ -230,10 +274,11 @@ def coherent(alts: list[float], oris: list[float | None], rules: list[str]) -> b
 
 
 def walk(z, adj, starts: list[int], length: int, per_start: int,
-         budget: int = 4000) -> list[list[tuple[int, str, float]]]:
+         budget: int = 4000, relation: str = "beside") -> list[list[tuple[int, str, float]]]:
     """Breadth-first over coherent paths from each start, at most ``budget``
     expansions per start; keep the ``per_start`` best by mean edge cost, longer first."""
-    cen, dom = z["cen_row"], z["dom_deg"]
+    ax = Axis(z, relation)
+    cen, dom = ax.cen, ax.dom
 
     def alt(i: int) -> float:
         return float(cen[i])
@@ -290,15 +335,23 @@ def walk(z, adj, starts: list[int], length: int, per_start: int,
 # ---------------------------------------------------------------------------
 # Scoring, collapsing, packing
 # ---------------------------------------------------------------------------
-def pack_run(z, meta, rasters: gsi.Rasters, path, width, with_dsm: bool = True) -> dict | None:
+def pack_run(z, meta, rasters: gsi.Rasters, path, width, with_dsm: bool = True,
+             relation: str = "beside") -> dict | None:
+    ax = Axis(z, relation)
     cps = [int(z["cp"][i]) for i, _, _ in path]
     grids = [rasters.grid(cp) for cp in cps]
     if any(g.shape[1] != width for g in grids):
         return None
-    cells = [(i, 0, g) for i, g in enumerate(grids)]
-    comp = gcp.grid_composite(cells, len(grids), 1)
-    pairs = [gcp.pair_features(a, b, "beside") for a, b in zip(grids, grids[1:])]
-    alts = [float(np.nonzero(g)[0].mean()) for g in grids]
+    if relation == "beside":
+        cells = [(i, 0, g) for i, g in enumerate(grids)]
+        cols, rows_n = len(grids), 1
+    else:
+        cells = [(0, i, g) for i, g in enumerate(grids)]
+        cols, rows_n = 1, len(grids)
+    comp = gcp.grid_composite(cells, cols, rows_n)
+    pairs = [gcp.pair_features(a, b, relation) for a, b in zip(grids, grids[1:])]
+    axis_idx = 0 if relation == "beside" else 1
+    alts = [float(np.nonzero(g)[axis_idx].mean()) for g in grids]
     oris = [gcf.dominant_orientation_deg(g) for g in grids]
     gaps = [p["seam"]["min"] for p in pairs]
     rough_alt = float(np.abs(np.diff(alts, n=2)).sum()) if len(alts) >= 3 else 0.0
@@ -307,13 +360,16 @@ def pack_run(z, meta, rasters: gsi.Rasters, path, width, with_dsm: bool = True) 
     worst_gap = max([g for g in gaps if g is not None], default=0)
     cont = gcp.cross_cell_continuity(comp) if with_dsm else {"dsm": None}
     chars = "".join(chr(c) for c in cps)
-    profile = gcm.profile_class(alts)
+    profile = ax.profile_name(gcm.profile_class(alts))
+    tag = f"{relation}_w{width}"
     return {
-        "id": "run_beside_w%d_%s" % (width, "_".join(f"{c:04X}" for c in cps)),
-        "shape": f"runs_beside_w{width}",
-        "chars": chars, "mirror": "", "cols": len(cps), "rows_n": 1,
+        "id": f"run_{tag}_" + "_".join(f"{c:04X}" for c in cps),
+        "shape": f"runs_{tag}",
+        "relation": relation,
+        "chars": chars, "mirror": "", "cols": cols, "rows_n": rows_n,
         "rows": ["".join("#" if v else "." for v in r) for r in comp],
-        "lattice": [chars], "mirror_lattice": ["(not derived)"],
+        "lattice": [chars] if relation == "beside" else list(chars),
+        "mirror_lattice": ["(not derived)"],
         "rules": [r for _, r, _ in path[1:]],
         "profile": profile,
         "altitude": [round(a, 2) for a in alts],
@@ -327,7 +383,11 @@ def pack_run(z, meta, rasters: gsi.Rasters, path, width, with_dsm: bool = True) 
         "names": [unicodedata.name(chr(c), "") for c in cps],
         "blocks": [meta["blocks"][int(z["block"][i])] for i, _, _ in path],
         "tags": [gsi.tags_for(c) for c in cps],
-        "cells": [{"col": i, "row": 0, "cp": c, "char": chr(c)} for i, c in enumerate(cps)],
+        "cells": (
+            [{"col": i, "row": 0, "cp": c, "char": chr(c)} for i, c in enumerate(cps)]
+            if relation == "beside"
+            else [{"col": 0, "row": i, "cp": c, "char": chr(c)} for i, c in enumerate(cps)]
+        ),
         "family": None, "members": [],
     }
 
@@ -362,17 +422,17 @@ def run_walker(a) -> list[dict]:
     blocks = [b for b in a.blocks.split(",")] if a.blocks else None
     idx = select(z, meta, a.width, a.line_like, blocks, a.exclude_alnum, a.plate, a.chars)
     t0 = time.perf_counter()
-    adj = build_edges(z, idx, jacc=a.jaccard, max_gap=a.max_gap, step_h=a.step_h, step_dy=a.step_dy,
-                      turn_max=a.turn_max, per_node=a.per_node)
+    adj = build_edges(z, idx, relation=a.relation, jacc=a.jaccard, max_gap=a.max_gap, step_h=a.step_h,
+                      step_dy=a.step_dy, turn_max=a.turn_max, per_node=a.per_node)
     n_edges = sum(len(v) for v in adj.values())
     print(f"{len(idx)} glyphs, {n_edges:,} edges ({time.perf_counter() - t0:.1f}s)", flush=True)
-    paths = walk(z, adj, [int(i) for i in idx], a.length, a.per_start, a.budget)
+    paths = walk(z, adj, [int(i) for i in idx], a.length, a.per_start, a.budget, a.relation)
     print(f"{len(paths):,} coherent paths of length 2..{a.length}", flush=True)
     rasters = gsi.Rasters()
     rows = []
     t0 = time.perf_counter()
     for n, p in enumerate(paths[:a.max_score]):
-        r = pack_run(z, meta, rasters, p, a.width, with_dsm=not a.no_dsm)
+        r = pack_run(z, meta, rasters, p, a.width, with_dsm=not a.no_dsm, relation=a.relation)
         if r:
             rows.append(r)
         if n and n % 5000 == 0:
@@ -385,6 +445,8 @@ def run_walker(a) -> list[dict]:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--width", type=int, choices=(8, 16), default=8)
+    ap.add_argument("--relation", choices=("beside", "stacked"), default="beside",
+                    help="beside = horizontal runs (altitude profile); stacked = vertical runs (drift profile)")
     ap.add_argument("--plate", action="store_true", help="the plate alphabet + whitelist only (acceptance run)")
     ap.add_argument("--chars", type=str, default=None, help="explicit glyph set (overrides every other selection)")
     ap.add_argument("--line-like", action="store_true")
@@ -402,7 +464,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--budget", type=int, default=200000, help="edge expansions per start node")
     ap.add_argument("--max-score", type=int, default=40000)
     ap.add_argument("--keep", type=int, default=400)
-    ap.add_argument("--json", action="store_true", help="write .run/glyph_audit/runs_beside_w<width>[_<tag>].json")
+    ap.add_argument("--json", action="store_true", help="write .run/glyph_audit/runs_<relation>_w<width>[_<tag>].json")
     ap.add_argument("--tag", type=str, default="")
     ap.add_argument("--limit", type=int, default=40)
     a = ap.parse_args(argv)
@@ -411,7 +473,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"  {r['chars']!r:12} {r['profile']:8} score {r['score']:<6} gaps {r['gaps']!s:14} "
               f"ori {r['orientation']!s:28} rules {'/'.join(r['rules'])}  x{len(r['members'])}  {' / '.join(dict.fromkeys(r['blocks']))}")
     if a.json:
-        out = OUT_DIR / f"runs_beside_w{a.width}{('_' + a.tag) if a.tag else ''}.json"
+        out = OUT_DIR / f"runs_{a.relation}_w{a.width}{('_' + a.tag) if a.tag else ''}.json"
         out.write_text(json.dumps({"schema": "fl4512.glyph_runs.v1", "width": a.width, "args": vars(a),
                                    "rows": rows[:a.keep]}, ensure_ascii=False))
         print(f"wrote {out}: {min(a.keep, len(rows))} rows")
