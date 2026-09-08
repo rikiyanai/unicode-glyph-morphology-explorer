@@ -54,7 +54,7 @@ Usage:
     python3 scripts/glyph_cell_features.py --chars '|!│'            # table
     python3 scripts/glyph_cell_features.py --chars '|!' --json      # full dicts
     python3 scripts/glyph_cell_features.py --chars '|!' --raster    # ASCII dump
-    python3 scripts/glyph_cell_features.py --build                  # admitted/cacheable repertoire
+    python3 scripts/glyph_cell_features.py --build                  # cacheable repertoire
 """
 
 from __future__ import annotations
@@ -75,7 +75,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
-from glyph_morphology_browser import GlyphScorer  # noqa: E402
+from glyph_morphology_browser import BLOCKS, GlyphScorer, find_block_for_cp  # noqa: E402
 
 SIDES = ("top", "bottom", "left", "right")
 CANVAS_PX = 16
@@ -442,6 +442,9 @@ CELL_CACHE_NPZ = CACHE_DIR / "glyph_cell_features.npz"
 CELL_CACHE_META = CACHE_DIR / "glyph_cell_features.meta.json"
 
 
+BAND = 3
+
+
 def _mask(vec: list[bool]) -> int:
     return sum(1 << i for i, v in enumerate(vec) if v)
 
@@ -464,10 +467,16 @@ def build_cache(scorer: GlyphScorer, cps: list[int], progress: bool = True) -> d
         "terminal": np.zeros(n, np.bool_), "floating": np.zeros(n, np.bool_),
         "mask_top": np.zeros(n, np.uint16), "mask_bottom": np.zeros(n, np.uint16),
         "mask_left": np.zeros(n, np.uint16), "mask_right": np.zeros(n, np.uint16),
+        # 3-pixel edge BANDS (union of the three rows/columns nearest each side):
+        # the port descriptor for glyphs that stop short of the edge (| ! , ' .).
+        "band_top": np.zeros(n, np.uint16), "band_bottom": np.zeros(n, np.uint16),
+        "band_left": np.zeros(n, np.uint16), "band_right": np.zeros(n, np.uint16),
+        "block": np.zeros(n, np.int16),
         "dom_deg": np.full(n, np.nan, np.float32),
         "orient_hist": np.zeros((n, ORIENT_BINS), np.float32),
     }
     aiss8, aiss16, idx8, idx16 = [], [], [], []
+    block_index: dict[str, int] = {}
     for k, cp in enumerate(cps):
         if progress and k % 5000 == 0:
             print(f"  {k}/{n}", flush=True)
@@ -491,6 +500,13 @@ def build_cache(scorer: GlyphScorer, cps: list[int], progress: bool = True) -> d
         occ = contact_occupancy(g)
         for side in SIDES:
             cols[f"mask_{side}"][k] = _mask(occ[side])
+        cols["band_top"][k] = _mask(list(g[:BAND, :].any(axis=0)))
+        cols["band_bottom"][k] = _mask(list(g[-BAND:, :].any(axis=0)))
+        cols["band_left"][k] = _mask(list(g[:, :BAND].any(axis=1)))
+        cols["band_right"][k] = _mask(list(g[:, -BAND:].any(axis=1)))
+        bi = find_block_for_cp(cp)
+        bname = BLOCKS[bi][2] if bi is not None else "?"
+        cols["block"][k] = block_index.setdefault(bname, len(block_index))
         d = dominant_orientation_deg(g)
         cols["dom_deg"][k] = np.nan if d is None else d
         cols["orient_hist"][k] = orientation_hist(g)
@@ -504,7 +520,8 @@ def build_cache(scorer: GlyphScorer, cps: list[int], progress: bool = True) -> d
     cols["aiss16_idx"] = np.asarray(idx16, np.int32)
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     np.savez_compressed(CELL_CACHE_NPZ, **cols)
-    meta = {"schema": 1, "count": n, "font": scorer.font_names[0], "cell_h": CANVAS_PX,
+    meta = {"schema": 2, "count": n, "font": scorer.font_names[0], "cell_h": CANVAS_PX, "band": BAND,
+            "blocks": sorted(block_index, key=block_index.get),
             "native": int(cols["native"].sum()), "w8": len(idx8), "w16": len(idx16),
             "note": "as-positioned cell features; see glyph_cell_features.py; stability marks not cached"}
     CELL_CACHE_META.write_text(json.dumps(meta, indent=1))
@@ -524,9 +541,9 @@ def _cps_for_build(scorer: GlyphScorer, want_all: bool) -> list[int]:
         return cps
     import glyph_audit as ga
     admitted = set(int(c) for c in ga.load_admitted())
-    if not admitted:
-        return cps
-    return [cp for cp in cps if cp in admitted]
+    if admitted:
+        return [cp for cp in cps if cp in admitted]
+    return cps
 
 
 # ---------------------------------------------------------------------------

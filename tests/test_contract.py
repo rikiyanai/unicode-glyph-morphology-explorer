@@ -101,11 +101,20 @@ class MorphologyContract(unittest.TestCase):
             "scripts/glyph_cell_pairs.py",
             "scripts/glyph_combo_candidates.py",
             "scripts/glyph_combo_gallery.py",
+            "scripts/glyph_combo_mine.py",
+            "scripts/glyph_run_walker.py",
+            "scripts/glyph_seam_index.py",
             "scripts/glyph_families_viewer.py",
             "scripts/glyph_features.py",
             "scripts/glyph_morphology_browser.py",
             "scripts/glyph_skeleton.py",
             "assets/glyphs/authored/glyph_combinations.v1.json",
+            "assets/glyphs/authored/stone_story_tutorial_plates/01-sacrificial-pit-layers.txt",
+            "assets/glyphs/authored/stone_story_tutorial_plates/02-poison-adept-walk-cycle.txt",
+            "assets/glyphs/authored/stone_story_tutorial_plates/03-styles-fonts-alphabet.txt",
+            "assets/glyphs/authored/stone_story_tutorial_plates/04-lines-materials-antialiasing.txt",
+            "assets/glyphs/authored/stone_story_tutorial_plates/05-depth-dithering-shadows.txt",
+            "assets/glyphs/authored/stone_story_tutorial_plates/06-animation-subtractive.txt",
             "docs/research/ascii/glyph_audit/saved_families.jsonl",
         )
         provenance = (ROOT / "docs" / "code-provenance.md").read_text()
@@ -124,6 +133,14 @@ class MorphologyContract(unittest.TestCase):
         n = len(USEFUL_LINE_GLYPHS)
         self.assertEqual(len(rows), len(SHAPES[2]) * n**2 + len(SHAPES[3]) * n**3)
         self.assertEqual(len(rows), 148016)
+
+    def test_stone_story_usage_miner_uses_packaged_plates(self) -> None:
+        from glyph_combo_mine import PLATE_DIR, mine
+
+        self.assertTrue(str(PLATE_DIR).endswith("assets/glyphs/authored/stone_story_tutorial_plates"))
+        result = mine(min_count=3, max_run=6, measure=False)
+        self.assertEqual(len(result["plates"]), 6)
+        self.assertGreaterEqual(len(result["families"]), 700)
 
     def test_family_wrapper_fails_visibly_without_tty(self) -> None:
         result = subprocess.run(

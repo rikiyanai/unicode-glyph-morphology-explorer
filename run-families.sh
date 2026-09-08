@@ -5,8 +5,19 @@ repo_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
 cache="$repo_dir/.run/glyph_audit/glyph_features.npz"
 catalog="$repo_dir/.run/glyph_audit/families.jsonl"
 cell_cache="$repo_dir/.run/glyph_audit/glyph_cell_features.npz"
+cell_meta="$repo_dir/.run/glyph_audit/glyph_cell_features.meta.json"
 combo_json="$repo_dir/.run/glyph_audit/glyph_combo_measured.json"
 combo_html="$repo_dir/.run/glyph_audit/glyph_combo_gallery.html"
+mine_json="$repo_dir/.run/glyph_audit/mined_combos.json"
+run_accept="$repo_dir/.run/glyph_audit/runs_beside_w8_accept.json"
+run_plate="$repo_dir/.run/glyph_audit/runs_beside_w8_plate.json"
+run_lineart="$repo_dir/.run/glyph_audit/runs_beside_w8_lineart.json"
+run_rtl="$repo_dir/.run/glyph_audit/runs_beside_w8_rtl.json"
+run_cjk="$repo_dir/.run/glyph_audit/runs_beside_w16_cjk.json"
+seam_stacked_w8="$repo_dir/.run/glyph_audit/seam_pairs_stacked_w8.json"
+seam_beside_w8="$repo_dir/.run/glyph_audit/seam_pairs_beside_w8.json"
+seam_stacked_w16="$repo_dir/.run/glyph_audit/seam_pairs_stacked_w16.json"
+seam_beside_w16="$repo_dir/.run/glyph_audit/seam_pairs_beside_w16.json"
 
 command -v python3 >/dev/null 2>&1 || {
   echo "python3 is required" >&2
@@ -27,8 +38,38 @@ fi
 if [ ! -f "$catalog" ]; then
   python3 "$repo_dir/scripts/glyph_audit.py" families --json >/dev/null
 fi
-if [ ! -f "$cell_cache" ]; then
+if [ ! -f "$cell_cache" ] || [ ! -f "$cell_meta" ] || ! python3 -c 'import json, sys; meta=json.load(open(sys.argv[1])); raise SystemExit(0 if int(meta.get("schema", 0)) >= 2 else 1)' "$cell_meta"; then
   python3 "$repo_dir/scripts/glyph_cell_features.py" --build
+fi
+if [ ! -f "$mine_json" ]; then
+  python3 "$repo_dir/scripts/glyph_combo_mine.py" --json >/dev/null
+fi
+if [ ! -f "$seam_stacked_w8" ]; then
+  python3 "$repo_dir/scripts/glyph_seam_index.py" --relation stacked --width 8 --stroke-like --exclude-alnum --max-pairs 20000 --keep 300
+fi
+if [ ! -f "$seam_beside_w8" ]; then
+  python3 "$repo_dir/scripts/glyph_seam_index.py" --relation beside --width 8 --stroke-like --exclude-alnum --max-pairs 20000 --keep 300
+fi
+if [ ! -f "$seam_stacked_w16" ]; then
+  python3 "$repo_dir/scripts/glyph_seam_index.py" --relation stacked --width 16 --stroke-like --max-pairs 20000 --keep 300
+fi
+if [ ! -f "$seam_beside_w16" ]; then
+  python3 "$repo_dir/scripts/glyph_seam_index.py" --relation beside --width 16 --stroke-like --max-pairs 20000 --keep 300
+fi
+if [ ! -f "$run_accept" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --chars '_.-´`\|/(o)‾' --length 4 --per-start 0 --no-dsm --max-score 100000 --keep 100000 --json --tag accept --limit 0
+fi
+if [ ! -f "$run_plate" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --plate --length 4 --per-start 400 --budget 3000000 --max-score 40000 --keep 20000 --json --tag plate --limit 0
+fi
+if [ ! -f "$run_lineart" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --line-like --exclude-alnum --length 3 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
+fi
+if [ ! -f "$run_rtl" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --blocks "Arabic,Hebrew,Syriac,Thaana" --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag rtl --limit 25
+fi
+if [ ! -f "$run_cjk" ]; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
 fi
 if [ ! -f "$combo_json" ] || [ ! -f "$combo_html" ]; then
   python3 "$repo_dir/scripts/glyph_combo_gallery.py"

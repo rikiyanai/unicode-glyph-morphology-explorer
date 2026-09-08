@@ -37,7 +37,8 @@ Controls are shown in the browser footer. `q` exits without changing tracked fil
 The family viewer shows reviewed glyph sequences as animated shape families.
 You can switch morphology axes, filter by family length, change speed, pause on
 a specific sequence, review distraction ranking, inspect authored multi-cell
-combinations beside their mirrors, and browse measured seam candidates.
+combinations beside their mirrors, browse measured seam candidates, and inspect
+geometry-discovered glyph runs.
 
 ```sh
 ./run-families.sh
@@ -45,9 +46,11 @@ combinations beside their mirrors, and browse measured seam candidates.
 
 The first run builds local ignored caches under `.run/`: the morphology feature
 cache, the discovered-family catalog, the cell-feature cache for the standalone
-font-chain repertoire, and the measured combination gallery. After that, the
-same command opens the read-only viewer directly. Use `j`/`k` to select, `m` to
-change the morphology axis, `1`–`9` to filter by family length, and `q` to exit.
+font-chain repertoire, mined Stone Story tutorial-plate usage, seam-pair
+indexes, geometry-discovered run indexes, and the measured combination gallery.
+After that, the same command opens the read-only viewer directly. Use `j`/`k`
+to select, `m` to change the morphology axis, `1`–`9` to filter by family
+length, and `q` to exit.
 
 ## Current family registry
 
@@ -81,6 +84,14 @@ candidates before any manual art selection:
 ```sh
 python3 scripts/glyph_combo_candidates.py --limit 20
 ```
+
+`scripts/glyph_combo_mine.py` counts recurring combinations in the packaged
+Stone Story tutorial plates. `scripts/glyph_seam_index.py` finds measured
+adjacent-cell pairs across the standalone font-chain repertoire.
+`scripts/glyph_run_walker.py` then walks those seam relations into
+variable-length runs, so examples such as `_.-´`, `` `-._ ``, `\|/`, `(‾)`,
+`/‾\`, and `\_/` can be reviewed as run families rather than fixed two- or
+three-cell tuples.
 
 The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:

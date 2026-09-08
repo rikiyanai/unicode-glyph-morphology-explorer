@@ -1,0 +1,62 @@
+	3.		Different styles of text art
+
+			 ▄▄▄ ▄▄▄
+			█████████    Block
+			 ▀█████▀
+			   ▀█▀
+
+			 .oo.oo.
+			d8888888b    Filled
+			'8888888'
+			  '888'
+			    '
+			 .-. .-.
+			(   '   )    Line
+			 `.   .´
+			   `:´
+			 ┌─┐ ┌─┐
+			┌┘ └┬┘ └┐
+			╘╕     ╒╛    Box Drawing
+			 ╘═╕ ╒═╛
+			   ╘╤╛
+
+
+
+
+
+
+
+	4.		Fonts
+
+			- Mono-spaced
+
+			- 1:1 VS 1:2  (16:29)
+
+			- Courier, Verdana, FixedSys
+
+			- Custom font
+
+
+
+
+
+
+
+
+	5.		Alphabet for Line art
+
+
+
+			Basic / classic
+
+			` ~ ! ^ ( ) - _ + = ; : ' " , . \ / | < > [ ] { }
+
+
+			Extended, preserves style
+
+			´ ‾ ¡ ·
+
+
+			Alphanumericals
+
+			o O v V T L 7 U c C x X 

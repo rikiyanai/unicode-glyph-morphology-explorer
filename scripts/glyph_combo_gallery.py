@@ -138,6 +138,25 @@ def build_data(per_shape: int) -> dict:
     counts = {}
     for r in rows:
         counts[r["shape"]] = counts.get(r["shape"], 0) + 1
+    # Discovered pairs from the whole-repertoire seam index (glyph_seam_index.py),
+    # one shape per (relation, width) file. Their mirror is not derived.
+    for f in sorted(OUT.parent.glob("seam_pairs_*.json")) + sorted(OUT.parent.glob("runs_*.json")) + [OUT.parent / "mined_combos.json"]:
+        try:
+            d = json.loads(f.read_text())
+        except (OSError, json.JSONDecodeError):
+            continue
+        drows = [r for r in (d.get("rows") or d.get("families") or []) if "rows" in r]
+        if not drows:
+            continue
+        by: dict[str, list[dict]] = {}
+        for r in drows:
+            r.setdefault("mirror_rows", r["rows"])
+            r.setdefault("mirror_cells", r["cells"])
+            r.setdefault("port", None)
+            by.setdefault(r["shape"], []).append(r)
+        for shape, lst in by.items():
+            packed_shapes[shape] = lst[:per_shape]
+            counts[shape] = int(d.get("selection", {}).get("joined", len(lst)))
     return {
         "font": scorer.font_names[0],
         "cell": [8, 16],

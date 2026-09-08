@@ -18,8 +18,8 @@ Run:
     python3 scripts/glyph_families_viewer.py --mode distract
         # every glyph ranked by DISTRACTION weight, alphanumerics flagged
     python3 scripts/glyph_families_viewer.py --mode combo
-    python3 scripts/glyph_families_viewer.py --mode seam
-        # measured candidates, ranked by continuity
+    python3 scripts/glyph_families_viewer.py --mode seam   # measured candidates, mined usage, and runs
+        # the authored 2-3 cell combination dictionary, each beside its mirror
     python3 scripts/glyph_families_viewer.py --mode dir8 --dump
         # text dump of the groups; no TTY needed (headless verification)
 
@@ -29,8 +29,9 @@ Axes (top legend, switch with m):
 Rotation is its own axis; CYCLE holds animation cycles of every length (3..16),
 filterable by length so each band is browsable on its own. With no --mode, ALL
 loads discovered families plus the local review surfaces: foliage stroke sets,
-authored combinations, and measured seam candidates. DISTRACT is intentionally
-explicit because it is a one-glyph ranking over the whole corpus, not a family list.
+authored combinations, mined usage, measured seam candidates, and discovered
+runs. DISTRACT is intentionally explicit because it is a one-glyph ranking over
+the whole corpus, not a family list.
 
 Controls:
     up/down or j/k   select family
@@ -41,7 +42,7 @@ Controls:
     space            pause / resume animation
     + / -            faster / slower
     This standalone viewer is read-only; source-repository family saving and
-    export commands are intentionally not included in its user surface.
+    runtime handoff stay in the Asciicker workspace.
     w                toggle raw vs normalized rendering
     q or Esc         quit
 """
@@ -343,6 +344,21 @@ def load_combination_families(c: ga.Corpus) -> list[dict]:
 
 
 
+def _half_block_rows(rows: list[str]) -> list[str]:
+    """Pack two raster rows per text row with half blocks, so an 8x16 cell shows
+    as 8x8 text cells and the terminal's ~1:2 cell restores the true 1:2 pixel
+    aspect. One char per pixel row would stretch every glyph 2x vertically (the
+    tilde read as an N)."""
+    out = []
+    for y in range(0, len(rows), 2):
+        top = rows[y]
+        bot = rows[y + 1] if y + 1 < len(rows) else "." * len(top)
+        out.append("".join(
+            "\u2588" if t == "#" and b == "#" else "\u2580" if t == "#" else "\u2584" if b == "#" else " "
+            for t, b in zip(top, bot)))
+    return out
+
+
 def _seam_family(c: ga.Corpus, rec: dict, role: str, block: str, note: str, source: str) -> dict:
     """One measured combination as a viewer family.
 
@@ -355,8 +371,8 @@ def _seam_family(c: ga.Corpus, rec: dict, role: str, block: str, note: str, sour
     lattice = rec.get("lattice") or ["".join(str(d.get("char", "")) for d in cells)]
     mlattice = rec.get("mirror_lattice") or ["".join(str(d.get("char", "")) for d in mcells)]
     chars, mchars = " / ".join(lattice), " / ".join(mlattice)
-    rows = [r.replace("#", "\u2588").replace(".", " ") for r in rec["rows"]]
-    mrows = [r.replace("#", "\u2588").replace(".", " ") for r in rec.get("mirror_rows") or rec["rows"]]
+    rows = _half_block_rows(rec["rows"])
+    mrows = _half_block_rows(rec.get("mirror_rows") or rec["rows"])
     return {
         "mode": "seam", "members": members, "block": block, "size": len(cells),
         "role_hint": f"{role}  {chars}", "note": note,
@@ -398,7 +414,17 @@ def load_seam_families(c: ga.Corpus, limit: int = 0) -> list[dict]:
         for n, r in enumerate(rows, 1):
             if limit and n > limit:
                 break
-            note = f"D_SM {r['dsm']}   gaps {r['gaps']}   port {r['port']}   distract {r['distract']}"
+            if r["shape"].startswith("mined_"):
+                mem = "  ".join(f"{m['chars']}\u00d7{m['count']}" for m in r.get("members", [])[:4])
+                note = (f"USED {r['count']}\u00d7 in the author's plates   {r.get('profile', '')}   "
+                        f"orient {r.get('orientation')}   gaps {r.get('gaps')}   D_SM {r.get('dsm')}   [{mem}]")
+            elif r["shape"].startswith("runs_"):
+                note = (f"{r.get('profile', '')}   rules {'/'.join(r.get('rules', []))}   score {r.get('score')}   "
+                        f"gaps {r.get('gaps')}   orient {r.get('orientation')}   D_SM {r.get('dsm')}   "
+                        f"x{len(r.get('members', []))}   " + " / ".join(dict.fromkeys(r.get("blocks") or [])))
+            else:
+                note = (f"D_SM {r['dsm']}   gaps {r['gaps']}   port {r['port']}   orient {r.get('orientation')}   "
+                        f"distract {r['distract']}   " + " / ".join(r.get("blocks") or []))
             fams.append(_seam_family(c, r, f"#{n} of {d['counts'][shape]}  {shape}", shape, note,
                                      " / ".join(r["names"])))
     return fams
@@ -410,8 +436,8 @@ def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> l
     It keeps the discovered morphology families as the base, then adds the
     curated/review families that a glyph-tooling user expects to reach by
     pressing ``m`` instead of relaunching: foliage strokes, authored combos, and
-    measured seam candidates. Distraction is excluded because it is a complete
-    one-glyph ranking, not a family corpus.
+    measured seam/run candidates. Distraction is excluded because it is a
+    complete one-glyph ranking, not a family corpus.
     """
     fams = load_families(c, block)
     if block:
@@ -552,9 +578,10 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             f["mode"] == "stroke" for f in fams_all) else "DISCOVERY+REVIEW")
         safe(stdscr, 0, 1, f"Glyph Families ({scope}) — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
+        note = ""
         safe(stdscr, 1, 1, f"{len(fams)} shown  {lf}  "
-                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}",
-             cset["dim"])
+                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}"
+                           + note, cset["dim"])
 
         # list pane
         for row in range(list_h):
@@ -666,7 +693,6 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             fps = max(1.0, fps - 1)
         elif ch == ord("w"):
             which = "norm" if which == "raw" else "raw"
-
 
 def main() -> int:
     locale.setlocale(locale.LC_ALL, "")

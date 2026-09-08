@@ -24,6 +24,9 @@ The extracted package includes these source owners:
 - `scripts/glyph_audit.py`
 - `scripts/glyph_combo_candidates.py`
 - `scripts/glyph_combo_gallery.py`
+- `scripts/glyph_combo_mine.py`
+- `scripts/glyph_run_walker.py`
+- `scripts/glyph_seam_index.py`
 - `scripts/glyph_cell_features.py`
 - `scripts/glyph_cell_pairs.py`
 - `scripts/glyph_families_viewer.py`
@@ -31,6 +34,12 @@ The extracted package includes these source owners:
 - `scripts/glyph_morphology_browser.py`
 - `scripts/glyph_skeleton.py`
 - `assets/glyphs/authored/glyph_combinations.v1.json`
+- `assets/glyphs/authored/stone_story_tutorial_plates/01-sacrificial-pit-layers.txt`
+- `assets/glyphs/authored/stone_story_tutorial_plates/02-poison-adept-walk-cycle.txt`
+- `assets/glyphs/authored/stone_story_tutorial_plates/03-styles-fonts-alphabet.txt`
+- `assets/glyphs/authored/stone_story_tutorial_plates/04-lines-materials-antialiasing.txt`
+- `assets/glyphs/authored/stone_story_tutorial_plates/05-depth-dithering-shadows.txt`
+- `assets/glyphs/authored/stone_story_tutorial_plates/06-animation-subtractive.txt`
 - `docs/research/ascii/glyph_audit/saved_families.jsonl`
 
 The family viewer differs from its source copy through deliberate read-only hardening:
@@ -63,6 +72,11 @@ The seam-analysis refresh adds as-positioned cell features, pair/composite seam
 measurement, the measured HTML combination gallery, and `glyph_families_viewer`
 `--mode seam`. The standalone `./run-families.sh` command builds those caches on
 first interactive launch and then opens the read-only viewer.
+
+The run-walker refresh adds the packaged Stone Story tutorial plates, the
+`glyph_combo_mine.py` usage counter, the whole-repertoire `glyph_seam_index.py`
+pair index, and `glyph_run_walker.py` for variable-length beside runs. These
+remain offline exploration tools; no Asciicker runtime source is packaged.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).
