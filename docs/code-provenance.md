@@ -7,6 +7,13 @@ The glyph-family tooling was refreshed from `rikiyanai/asciicker-Y9-2` commit
 `90d2f5edab212a9a1ecb9ec5d7161066047c7810`, then the standalone viewer's
 read-only hardening was re-applied.
 
+The 2026-09-08 seam-analysis refresh imports committed source from
+`rikiyanai/asciicker-Y9-2` through `7a87dcd0dbfa99520803794e6ab46046a744b2ee`
+plus the same checkout's observed working-tree corrections for the U+00B4
+stair-step glyph and cell-feature cache builder. The
+standalone wrapper keeps generated caches under `.run/` and does not package the
+Asciicker runtime.
+
 ## Packaged owners
 
 The extracted package includes these source owners:
@@ -16,6 +23,9 @@ The extracted package includes these source owners:
 - `scripts/generate_glyph_shape_catalog.py`
 - `scripts/glyph_audit.py`
 - `scripts/glyph_combo_candidates.py`
+- `scripts/glyph_combo_gallery.py`
+- `scripts/glyph_cell_features.py`
+- `scripts/glyph_cell_pairs.py`
 - `scripts/glyph_families_viewer.py`
 - `scripts/glyph_features.py`
 - `scripts/glyph_morphology_browser.py`
@@ -48,6 +58,11 @@ algorithms.
 The 2026-09-08 refresh adds the CJK Strokes dir8 exception, the distraction
 metric, the authored combination dictionary, and the exhaustive useful
 combination candidate enumerator. These are offline review tools only.
+
+The seam-analysis refresh adds as-positioned cell features, pair/composite seam
+measurement, the measured HTML combination gallery, and `glyph_families_viewer`
+`--mode seam`. The standalone `./run-families.sh` command builds those caches on
+first interactive launch and then opens the read-only viewer.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).

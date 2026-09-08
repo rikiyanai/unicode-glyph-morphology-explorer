@@ -36,8 +36,11 @@ def test_seeded_short_combinations_are_present_in_the_exhaustive_surface():
 
 def test_horizontal_mirror_reflects_offsets_and_codepoints():
     rows = gcc.enumerate_candidates(c=None, max_size=3, max_distraction=1.0)
-    row = next(r for r in rows if r["shape"] == "line_h" and r["chars"] == "/('")
-    assert row["mirror_chars"] == "`)\\"
+    # Skill §4.2: the acute accent mirrors the backtick; the apostrophe is its own mirror.
+    row = next(r for r in rows if r["shape"] == "line_h" and r["chars"] == "/(`")
+    assert row["mirror_chars"] == "\u00b4)\\"
+    tick = next(r for r in rows if r["shape"] == "line_h" and r["chars"] == "/('")
+    assert tick["mirror_chars"] == "')\\"
     assert [(c["col"], c["row"]) for c in row["mirror"]["cells"]] == [(0, 0), (1, 0), (2, 0)]
 
 

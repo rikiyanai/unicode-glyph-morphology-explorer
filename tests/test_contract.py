@@ -97,7 +97,10 @@ class MorphologyContract(unittest.TestCase):
             "scripts/fl4482_font_chain.py",
             "scripts/generate_glyph_shape_catalog.py",
             "scripts/glyph_audit.py",
+            "scripts/glyph_cell_features.py",
+            "scripts/glyph_cell_pairs.py",
             "scripts/glyph_combo_candidates.py",
+            "scripts/glyph_combo_gallery.py",
             "scripts/glyph_families_viewer.py",
             "scripts/glyph_features.py",
             "scripts/glyph_morphology_browser.py",
@@ -111,6 +114,7 @@ class MorphologyContract(unittest.TestCase):
             self.assertIn(relative, provenance, relative)
         self.assertIn("242ecba44f76ed1120dadf06653fd6de47017b7f", provenance)
         self.assertIn("90d2f5edab212a9a1ecb9ec5d7161066047c7810", provenance)
+        self.assertIn("7a87dcd0dbfa99520803794e6ab46046a744b2ee", provenance)
         self.assertIn("read-only hardening", provenance)
 
     def test_combination_candidate_surface_is_exhaustive_for_two_and_three_cells(self) -> None:
@@ -119,7 +123,7 @@ class MorphologyContract(unittest.TestCase):
         rows = enumerate_candidates(c=None, max_size=3, max_distraction=1.0)
         n = len(USEFUL_LINE_GLYPHS)
         self.assertEqual(len(rows), len(SHAPES[2]) * n**2 + len(SHAPES[3]) * n**3)
-        self.assertEqual(len(rows), 25088)
+        self.assertEqual(len(rows), 148016)
 
     def test_family_wrapper_fails_visibly_without_tty(self) -> None:
         result = subprocess.run(

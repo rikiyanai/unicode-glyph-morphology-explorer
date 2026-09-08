@@ -18,17 +18,19 @@ Run:
     python3 scripts/glyph_families_viewer.py --mode distract
         # every glyph ranked by DISTRACTION weight, alphanumerics flagged
     python3 scripts/glyph_families_viewer.py --mode combo
-        # the authored 2-3 cell combination dictionary, each beside its mirror
+    python3 scripts/glyph_families_viewer.py --mode seam
+        # measured candidates, ranked by continuity
     python3 scripts/glyph_families_viewer.py --mode dir8 --dump
         # text dump of the groups; no TTY needed (headless verification)
 
 Axes (top legend, switch with m):
     ALL  ROTATE(spin)  DIR8  DENSITY(ramp)  FILL  CYCLE  MIRROR  STRUCT(topo)
-    DISTRACT  COMBO
+    FOLIAGE STROKES  DISTRACT  COMBO  SEAM
 Rotation is its own axis; CYCLE holds animation cycles of every length (3..16),
-filterable by length so each band is browsable on its own. DISTRACT and COMBO are
-authored/derived review screens rather than discovery output, so they are selected
-with --mode and replace the family source for that run.
+filterable by length so each band is browsable on its own. With no --mode, ALL
+loads discovered families plus the local review surfaces: foliage stroke sets,
+authored combinations, and measured seam candidates. DISTRACT is intentionally
+explicit because it is a one-glyph ranking over the whole corpus, not a family list.
 
 Controls:
     up/down or j/k   select family
@@ -65,20 +67,25 @@ N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
 MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
-         "distract", "combo"]
+         "distract", "combo", "seam"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
 # rotation orbits (up to 8 frames); mirror = left/right chirality pairs.
 # distract = every glyph ranked by DISTRACTION weight; combo = the authored
-# combination dictionary. Those last two are not discovery output, so they replace
-# the family source for the run rather than filtering it.
+# combination dictionary; seam = MEASURED candidate combinations ranked by the
+# xu-2017 continuity distance of their composite raster (glyph_combo_gallery.py).
+# combo, seam, and stroke are included in the default standalone ALL view; distract
+# remains an explicit replacement source because it is not a family list.
 AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
               "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
-              "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBO"}
+              "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBO",
+              "seam": "SEAM"}
 # Axes whose row order carries meaning (ranking / authored file order) and must
 # therefore survive the list pane's size sort.
-ORDERED_MODES = {"distract", "combo"}
+ORDERED_MODES = {"distract", "combo", "seam"}
+# Measured candidate data written by scripts/glyph_combo_gallery.py.
+MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 # The authored combination dictionary (offsets + codepoints + generated mirrors).
 COMBINATIONS = gf.REPO_ROOT / "assets" / "glyphs" / "authored" / "glyph_combinations.v1.json"
 # the original four are REQUIRED for a usable catalog; topo is optional (present
@@ -335,6 +342,86 @@ def load_combination_families(c: ga.Corpus) -> list[dict]:
     return families
 
 
+
+def _seam_family(c: ga.Corpus, rec: dict, role: str, block: str, note: str, source: str) -> dict:
+    """One measured combination as a viewer family.
+
+    The composite rows come from the measured data itself (cells cropped to
+    their real 8- or 16-px width), so a beside seam is drawn touching, unlike
+    the authored ``combo`` path which pastes 16-px canvases. The label shows the
+    glyphs on their lattice in reading order, so a corner reads as two rows."""
+    cells, mcells = rec["cells"], rec.get("mirror_cells") or rec["cells"]
+    members = [m for m in (c.i(int(d["cp"])) for d in cells) if m is not None]
+    lattice = rec.get("lattice") or ["".join(str(d.get("char", "")) for d in cells)]
+    mlattice = rec.get("mirror_lattice") or ["".join(str(d.get("char", "")) for d in mcells)]
+    chars, mchars = " / ".join(lattice), " / ".join(mlattice)
+    rows = [r.replace("#", "\u2588").replace(".", " ") for r in rec["rows"]]
+    mrows = [r.replace("#", "\u2588").replace(".", " ") for r in rec.get("mirror_rows") or rec["rows"]]
+    return {
+        "mode": "seam", "members": members, "block": block, "size": len(cells),
+        "role_hint": f"{role}  {chars}", "note": note,
+        "combo": {"id": role, "label": note, "note": note, "source": source,
+                  "chars": chars, "mirror_chars": mchars, "self_symmetric": chars == mchars,
+                  "rows": rows, "mirror_rows": mrows, "missing": []},
+    }
+
+
+def load_seam_families(c: ga.Corpus, limit: int = 0) -> list[dict]:
+    """MEASURED candidate combinations, ranked by continuity (lower DSM first).
+
+    Source: .run/glyph_audit/glyph_combo_measured.json from glyph_combo_gallery.py
+    (built here when missing; ~7 s). Order: the anti-aliasing family stacked over
+    ``|`` (ranked by distance from a continuous bar), then every candidate whose
+    seams all have a 0 px gap, then the top rows per lattice shape. Numbers are
+    measured on the composite raster; see glyph_cell_pairs.py."""
+    if not MEASURED.exists():
+        import glyph_combo_gallery as gcg
+        sys.stderr.write("measuring combinations (first run)...\n")
+        gcg.main([])
+    try:
+        d = json.loads(MEASURED.read_text())
+    except (OSError, json.JSONDecodeError) as exc:
+        sys.stderr.write(f"bad measured data {MEASURED}: {exc}\n")
+        return []
+    fams: list[dict] = []
+    ref = d["study_ref"]
+    for n, s in enumerate(d["study"], 1):
+        note = (f"gap {s['gap_min']} px   D_SM vs \u2502\u2502 {s['dsm_box']}   vs straight stroke {s['dsm_stroke']}"
+                f"   (\u2502 over \u2502: gap {ref['gap_min']} px, D_SM 0; lower = reads more as one stroke)")
+        fams.append(_seam_family(c, s, f"study #{n}  {s['char']} over |", "over |", note,
+                                 "anti-aliasing family stacked over |, ranked by DSM vs a continuous bar"))
+    for n, r in enumerate(d["connected"], 1):
+        note = f"CONNECTED  D_SM {r['dsm']}   gaps {r['gaps']}   port {r['port']}   distract {r['distract']}"
+        fams.append(_seam_family(c, r, f"connected #{n}  {r['shape']}", "0 px seams", note,
+                                 " / ".join(r["names"])))
+    for shape, rows in d["shapes"].items():
+        for n, r in enumerate(rows, 1):
+            if limit and n > limit:
+                break
+            note = f"D_SM {r['dsm']}   gaps {r['gaps']}   port {r['port']}   distract {r['distract']}"
+            fams.append(_seam_family(c, r, f"#{n} of {d['counts'][shape]}  {shape}", shape, note,
+                                     " / ".join(r["names"])))
+    return fams
+
+
+def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> list[dict]:
+    """The one-command standalone browser surface.
+
+    It keeps the discovered morphology families as the base, then adds the
+    curated/review families that a glyph-tooling user expects to reach by
+    pressing ``m`` instead of relaunching: foliage strokes, authored combos, and
+    measured seam candidates. Distraction is excluded because it is a complete
+    one-glyph ranking, not a family corpus.
+    """
+    fams = load_families(c, block)
+    if block:
+        return fams
+    fams.extend(load_foliage_stroke_families(c))
+    fams.extend(load_combination_families(c))
+    fams.extend(load_seam_families(c, seam_limit))
+    return fams
+
+
 def dump_families(c: ga.Corpus, fams: list[dict], mode: str) -> None:
     """Print the groups as text so they can be verified without a TTY.
 
@@ -378,7 +465,7 @@ def init_colors() -> dict[str, int]:
         "hud": (252, -1), "dim": (240, -1), "sel": (16, 252), "ink": (231, -1),
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
-        "distract": (203, -1), "combo": (114, -1),
+        "distract": (203, -1), "combo": (114, -1), "seam": (214, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -387,6 +474,7 @@ def init_colors() -> dict[str, int]:
         "fill": (curses.COLOR_YELLOW, -1), "cycle": (curses.COLOR_CYAN, -1),
         "mirror": (curses.COLOR_BLUE, -1), "topo": (curses.COLOR_RED, -1),
         "distract": (curses.COLOR_RED, -1), "combo": (curses.COLOR_GREEN, -1),
+        "seam": (curses.COLOR_YELLOW, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -461,12 +549,12 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
 
         stdscr.erase()
         scope = "SAVED" if saved_only else ("FOLIAGE STROKES" if all(
-            f["mode"] == "stroke" for f in fams_all) else "DISCOVERED")
+            f["mode"] == "stroke" for f in fams_all) else "DISCOVERY+REVIEW")
         safe(stdscr, 0, 1, f"Glyph Families ({scope}) — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
         safe(stdscr, 1, 1, f"{len(fams)} shown  {lf}  "
-                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}"
-                           , cset["dim"])
+                           f"fps={fps:.0f} {'PAUSED' if paused else 'PLAY'}  render={which}",
+             cset["dim"])
 
         # list pane
         for row in range(list_h):
@@ -592,17 +680,18 @@ def main() -> int:
     ap.add_argument("--mode", choices=MODES[1:], default="all",
                     help="open on one animation axis; use 'cycle' for all discovered "
                          "cycles, 'distract' for the DISTRACTION ranking, 'combo' for "
-                         "the authored combination dictionary")
+                         "the authored combination dictionary, 'seam' for measured "
+                         "candidates ranked by continuity")
     ap.add_argument("--dump", action="store_true",
                     help="print the groups as text and exit; no TTY required, so the "
                          "selected axis can be verified from a pipe or a test")
     ap.add_argument("--limit", type=int, default=0,
-                    help="distract: keep only the top N rows (0 = all)")
+                    help="distract / seam: keep only the top N rows (per shape for seam; 0 = all)")
     args = ap.parse_args()
     c = ga.Corpus()
     if args.saved and args.foliage_strokes:
         ap.error("--saved and --foliage-strokes select different review sources")
-    if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo"):
+    if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "seam"):
         ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
                  f"combined with --saved / --foliage-strokes")
     if args.foliage_strokes:
@@ -614,16 +703,26 @@ def main() -> int:
     elif args.mode == "combo":
         fams = load_combination_families(c)
         initial_mode = "combo"
+    elif args.mode == "seam":
+        fams = load_seam_families(c, args.limit)
+        initial_mode = "seam"
     else:
-        fams = load_saved_families(c, args.block) if args.saved else load_families(c, args.block)
+        fams = load_saved_families(c, args.block) if args.saved else load_default_families(c, args.block, args.limit)
         initial_mode = args.mode
     if not fams:
-        source = {"distract": "ranked glyphs", "combo": "combinations"}.get(
+        source = {"distract": "ranked glyphs", "combo": "combinations",
+                  "seam": "measured combinations"}.get(
             args.mode, "saved families" if args.saved else "families")
         print(f"no {source} found.", file=sys.stderr)
         return 1
     if args.dump:
-        dump_families(c, fams, initial_mode)
+        try:
+            dump_families(c, fams, initial_mode)
+        except BrokenPipeError:
+            try:
+                sys.stdout.close()
+            except OSError:
+                pass
         return 0
     if not sys.stdout.isatty():
         print(f"{len(fams)} families (needs an interactive TTY to view, or --dump).",

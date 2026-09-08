@@ -1,3 +1,5 @@
 fonttools
 numpy
 Pillow
+scikit-image
+scipy

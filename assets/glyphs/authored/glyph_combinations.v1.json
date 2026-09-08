@@ -11,7 +11,7 @@
     {
       "id": "stair_step_rising",
       "label": "stair step rising",
-      "note": "The stair-step exercise, read left to right and climbing: underscore, dot, hyphen, apostrophe. Named as a practice pattern at o5v-NS9o4yc 30:01.",
+      "note": "The stair-step exercise, read left to right and climbing: underscore, dot, hyphen, acute accent (U+00B4). The tutorial page plates it as _.-´ (PAGE §6); the apostrophe U+0027 is a different glyph with a different role (skill §4.1) and was replaced here on 2026-09-08. Named as a practice pattern at o5v-NS9o4yc 30:01.",
       "source": "o5v-NS9o4yc 27:56-31:40; 5sFVVQcUWVE 11:55-12:09",
       "cols": 4,
       "rows": 1,
@@ -37,8 +37,8 @@
         {
           "col": 3,
           "row": 0,
-          "cp": 39,
-          "char": "'"
+          "cp": 180,
+          "char": "´"
         }
       ],
       "mirror": {
@@ -48,9 +48,9 @@
           {
             "col": 0,
             "row": 0,
-            "cp": 39,
-            "char": "'",
-            "cp_source": "identity"
+            "cp": 96,
+            "char": "`",
+            "cp_source": "find_mirror"
           },
           {
             "col": 1,
@@ -79,7 +79,7 @@
     {
       "id": "stair_step_falling",
       "label": "stair step falling",
-      "note": "The same stair step run the other way around (o5v-NS9o4yc 30:08).",
+      "note": "The stair-step exercise mirrored: backtick (U+0060, the acute accent's mirror partner), hyphen, dot, underscore. Typed as the mirror of _.-´ per o5v-NS9o4yc 30:08.",
       "source": "o5v-NS9o4yc 27:56-31:40; 5sFVVQcUWVE 11:55-12:09",
       "cols": 4,
       "rows": 1,
@@ -87,8 +87,8 @@
         {
           "col": 0,
           "row": 0,
-          "cp": 39,
-          "char": "'"
+          "cp": 96,
+          "char": "`"
         },
         {
           "col": 1,
@@ -137,9 +137,9 @@
           {
             "col": 3,
             "row": 0,
-            "cp": 39,
-            "char": "'",
-            "cp_source": "identity"
+            "cp": 180,
+            "char": "´",
+            "cp_source": "find_mirror"
           }
         ]
       }
@@ -147,7 +147,7 @@
     {
       "id": "slope_rising_short",
       "label": "short rising slope .-'",
-      "note": "The three-cell rising slope; a shallower angle than the four-cell stair step (o5v-NS9o4yc 30:18-30:26).",
+      "note": "The short slope: dot, hyphen, acute accent (U+00B4). A shallower climb than the four-cell stair step; the apostrophe U+0027 was replaced by the plate's acute on 2026-09-08.",
       "source": "o5v-NS9o4yc 27:56-31:40; 5sFVVQcUWVE 11:55-12:09",
       "cols": 3,
       "rows": 1,
@@ -167,8 +167,8 @@
         {
           "col": 2,
           "row": 0,
-          "cp": 39,
-          "char": "'"
+          "cp": 180,
+          "char": "´"
         }
       ],
       "mirror": {
@@ -178,9 +178,9 @@
           {
             "col": 0,
             "row": 0,
-            "cp": 39,
-            "char": "'",
-            "cp_source": "identity"
+            "cp": 96,
+            "char": "`",
+            "cp_source": "find_mirror"
           },
           {
             "col": 1,
@@ -202,7 +202,7 @@
     {
       "id": "slope_falling_short",
       "label": "short falling slope '-.",
-      "note": "The three-cell falling slope, the mirror exercise named at o5v-NS9o4yc 31:12.",
+      "note": "The short slope mirrored: backtick (U+0060), hyphen, dot.",
       "source": "o5v-NS9o4yc 27:56-31:40; 5sFVVQcUWVE 11:55-12:09",
       "cols": 3,
       "rows": 1,
@@ -210,8 +210,8 @@
         {
           "col": 0,
           "row": 0,
-          "cp": 39,
-          "char": "'"
+          "cp": 96,
+          "char": "`"
         },
         {
           "col": 1,
@@ -247,9 +247,9 @@
           {
             "col": 2,
             "row": 0,
-            "cp": 39,
-            "char": "'",
-            "cp_source": "identity"
+            "cp": 180,
+            "char": "´",
+            "cp_source": "find_mirror"
           }
         ]
       }
