@@ -79,8 +79,10 @@ pair index, and `glyph_run_walker.py` for variable-length beside and stacked run
 2026-09-08 follow-up sync imports the relation-aware stacked-run walker from
 `rikiyanai/asciicker-Y9-2` through
 `24dc777cf9ab4a99b3020c4438dd228b9cd486d2`, while preserving the standalone
-viewer hardening and packaged Stone Story plate paths. These remain offline
-exploration tools; no Asciicker runtime source is packaged.
+viewer hardening and packaged Stone Story plate paths. A later same-day wrapper
+fix keeps each run file as a separate gallery section and rebuilds stale length-3
+Unicode/Kana/CJK/Arabic run caches to length 4. These remain offline exploration
+tools; no Asciicker runtime source is packaged.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).

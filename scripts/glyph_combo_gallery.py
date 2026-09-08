@@ -134,6 +134,26 @@ def build_data(per_shape: int) -> dict:
             "mirror_lattice": lattice_text(r["mirror"]["cells"], r["cols"], r["rows"]),
         }
 
+    def limit_with_length_diversity(items: list[dict], limit: int) -> list[dict]:
+        if limit <= 0 or len(items) <= limit:
+            return items
+        by_len: dict[int, list[dict]] = {}
+        for item in items:
+            by_len.setdefault(len(item.get("cells") or []), []).append(item)
+        quota = max(1, limit // max(len(by_len), 1))
+        out: list[dict] = []
+        seen: set[int] = set()
+        for length in sorted(by_len, reverse=True):
+            for item in by_len[length][:quota]:
+                out.append(item)
+                seen.add(id(item))
+        for item in items:
+            if len(out) >= limit:
+                break
+            if id(item) not in seen:
+                out.append(item)
+        return out[:limit]
+
     packed_shapes = {k: [pack(r) for r in v] for k, v in by_shape.items()}
     counts = {}
     for r in rows:
@@ -148,15 +168,20 @@ def build_data(per_shape: int) -> dict:
         drows = [r for r in (d.get("rows") or d.get("families") or []) if "rows" in r]
         if not drows:
             continue
+        file_shape = f.stem if f.name.startswith("runs_") else None
         by: dict[str, list[dict]] = {}
-        for r in drows:
+        for src in drows:
+            r = dict(src)
+            if file_shape:
+                r["shape"] = file_shape
+                r["source_file"] = f.name
             r.setdefault("mirror_rows", r["rows"])
             r.setdefault("mirror_cells", r["cells"])
             r.setdefault("port", None)
             by.setdefault(r["shape"], []).append(r)
         for shape, lst in by.items():
-            packed_shapes[shape] = lst[:per_shape]
-            counts[shape] = int(d.get("selection", {}).get("joined", len(lst)))
+            packed_shapes[shape] = limit_with_length_diversity(lst, per_shape) if file_shape else lst[:per_shape]
+            counts[shape] = len(drows) if file_shape else int(d.get("selection", {}).get("joined", len(lst)))
     return {
         "font": scorer.font_names[0],
         "cell": [8, 16],

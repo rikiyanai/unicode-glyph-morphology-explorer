@@ -408,8 +408,35 @@ def collapse(rows: list[dict]) -> list[dict]:
         o = [x for x in r["orientation"] if x is not None]
         d_ori = tuple(int(round(_axial(b - a) / 30.0)) for a, b in zip(o, o[1:]))
         r["family"] = f"{r['profile']}|alt{d_alt}|ori{d_ori}|n{len(r['altitude'])}"
-    out.sort(key=lambda r: (r["score"], r["dsm"] if r["dsm"] is not None else 99.0, -len(r["altitude"])))
+    out.sort(key=lambda r: (r["score"], -len(r["altitude"]), r["dsm"] if r["dsm"] is not None else 99.0))
     return out
+
+
+def keep_with_length_diversity(rows: list[dict], keep: int) -> list[dict]:
+    """Keep the best rows while preserving visible 2/3/4-cell examples.
+
+    A pure score sort is useful for ranking but bad for browsing: scripts with
+    many perfect two- or three-cell continuations can crowd out longer runs
+    even though length is the point of the run walker.
+    """
+    if keep <= 0 or len(rows) <= keep:
+        return rows
+    by_len: dict[int, list[dict]] = defaultdict(list)
+    for r in rows:
+        by_len[len(r["altitude"])].append(r)
+    quota = max(1, keep // max(len(by_len), 1))
+    picked: list[dict] = []
+    seen: set[int] = set()
+    for length in sorted(by_len, reverse=True):
+        for r in by_len[length][:quota]:
+            picked.append(r)
+            seen.add(id(r))
+    for r in rows:
+        if len(picked) >= keep:
+            break
+        if id(r) not in seen:
+            picked.append(r)
+    return picked[:keep]
 
 
 # ---------------------------------------------------------------------------
@@ -475,7 +502,7 @@ def main(argv: list[str] | None = None) -> int:
     if a.json:
         out = OUT_DIR / f"runs_{a.relation}_w{a.width}{('_' + a.tag) if a.tag else ''}.json"
         out.write_text(json.dumps({"schema": "fl4512.glyph_runs.v1", "width": a.width, "args": vars(a),
-                                   "rows": rows[:a.keep]}, ensure_ascii=False))
+                                   "rows": keep_with_length_diversity(rows, a.keep)}, ensure_ascii=False))
         print(f"wrote {out}: {min(a.keep, len(rows))} rows")
     return 0
 

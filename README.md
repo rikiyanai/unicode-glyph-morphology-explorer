@@ -47,7 +47,8 @@ geometry-discovered glyph runs.
 The first run builds local ignored caches under `.run/`: the morphology feature
 cache, the discovered-family catalog, the cell-feature cache for the standalone
 font-chain repertoire, mined Stone Story tutorial-plate usage, seam-pair
-indexes, geometry-discovered run indexes, and the measured combination gallery.
+indexes, geometry-discovered run indexes up to length 4, and the measured
+combination gallery.
 After that, the same command opens the read-only viewer directly. Use `j`/`k`
 to select, `m` to change the morphology axis, `1`–`9` to filter by family
 length, and `q` to exit.
@@ -89,7 +90,8 @@ python3 scripts/glyph_combo_candidates.py --limit 20
 Stone Story tutorial plates. `scripts/glyph_seam_index.py` finds measured
 adjacent-cell pairs across the standalone font-chain repertoire.
 `scripts/glyph_run_walker.py` then walks those seam relations into
-variable-length beside and stacked runs, so examples such as `_.-´`,
+variable-length beside and stacked runs. The one-command defaults build length-4
+Unicode/Kana/CJK/Arabic review buckets, so examples such as `_.-´`,
 `` `-._ ``, `\|/`, `(‾)`, `/‾\`, `\_/`, `|` over `|`, CJK stroke chains, and
 Arabic joining-form runs can be reviewed as run families rather than fixed two-
 or three-cell tuples.

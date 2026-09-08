@@ -30,6 +30,31 @@ python3 -c 'import numpy; import fontTools; import scipy; import skimage; from P
   echo "NumPy, Pillow, fonttools, scipy, and scikit-image are required; install requirements.txt" >&2
   exit 69
 }
+
+run_json_current() {
+  python3 - "$1" "$2" "$3" "$4" "$5" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+path, relation, width, tag, min_length = sys.argv[1], sys.argv[2], int(sys.argv[3]), sys.argv[4], int(sys.argv[5])
+try:
+    d = json.loads(Path(path).read_text())
+except (OSError, json.JSONDecodeError):
+    raise SystemExit(1)
+args = d.get("args") or {}
+rows = d.get("rows") or []
+ok = (
+    bool(rows)
+    and str(args.get("relation", "beside")) == relation
+    and int(args.get("width", d.get("width", 0))) == width
+    and str(args.get("tag", "")) == tag
+    and int(args.get("length", 0)) >= min_length
+)
+raise SystemExit(0 if ok else 1)
+PY
+}
+
 if [ ! -t 0 ] || [ ! -t 1 ]; then
   echo "interactive family browsing requires a real TTY" >&2
   exit 69
@@ -64,32 +89,32 @@ if [ ! -f "$seam_beside_w16" ]; then
   python3 "$repo_dir/scripts/glyph_seam_index.py" --relation beside --width 16 --stroke-like --max-pairs 20000 --keep 300
   rebuild_gallery=1
 fi
-if [ ! -f "$run_accept" ]; then
+if ! run_json_current "$run_accept" beside 8 accept 4; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --chars '_.-´`\|/(o)‾' --length 4 --per-start 0 --no-dsm --max-score 100000 --keep 100000 --json --tag accept --limit 0
   rebuild_gallery=1
 fi
-if [ ! -f "$run_plate" ]; then
+if ! run_json_current "$run_plate" beside 8 plate 4; then
   python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --plate --length 4 --per-start 400 --budget 3000000 --max-score 40000 --keep 20000 --json --tag plate --limit 0
   rebuild_gallery=1
 fi
-if [ ! -f "$run_lineart" ]; then
-  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --line-like --exclude-alnum --length 3 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
+if ! run_json_current "$run_lineart" beside 8 lineart 4; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --line-like --exclude-alnum --length 4 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
   rebuild_gallery=1
 fi
-if [ ! -f "$run_rtl" ]; then
-  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --blocks "Arabic,Hebrew,Syriac,Thaana" --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag rtl --limit 25
+if ! run_json_current "$run_rtl" beside 8 rtl 4; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 8 --blocks "Arabic,Hebrew,Syriac,Thaana" --length 4 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag rtl --limit 25
   rebuild_gallery=1
 fi
-if [ ! -f "$run_cjk" ]; then
-  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
+if ! run_json_current "$run_cjk" beside 16 cjk 4; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 4 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
   rebuild_gallery=1
 fi
-if [ ! -f "$run_stacked_lineart" ]; then
-  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 8 --line-like --exclude-alnum --length 3 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
+if ! run_json_current "$run_stacked_lineart" stacked 8 lineart 4; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 8 --line-like --exclude-alnum --length 4 --per-node 8 --per-start 8 --budget 3000 --max-score 30000 --keep 600 --json --tag lineart --limit 25
   rebuild_gallery=1
 fi
-if [ ! -f "$run_stacked_cjk" ]; then
-  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 3 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
+if ! run_json_current "$run_stacked_cjk" stacked 16 cjk 4; then
+  python3 "$repo_dir/scripts/glyph_run_walker.py" --relation stacked --width 16 --blocks "CJK Strokes,Box Drawing,Hiragana,Katakana,Kangxi Radicals" --exclude-alnum --length 4 --per-node 12 --per-start 12 --budget 5000 --max-score 30000 --keep 600 --json --tag cjk --limit 25
   rebuild_gallery=1
 fi
 if [ ! -f "$combo_json" ] || [ ! -f "$combo_html" ] || [ "$rebuild_gallery" -eq 1 ]; then
