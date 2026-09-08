@@ -133,6 +133,38 @@ class MorphologyContract(unittest.TestCase):
         n = len(USEFUL_LINE_GLYPHS)
         self.assertEqual(len(rows), len(SHAPES[2]) * n**2 + len(SHAPES[3]) * n**3)
         self.assertEqual(len(rows), 148016)
+        self.assertEqual(n, 29)
+
+    def test_combo_mode_remains_the_full_review_surface(self) -> None:
+        result = subprocess.run(
+            [
+                sys.executable,
+                str(ROOT / "scripts" / "glyph_families_viewer.py"),
+                "--mode",
+                "combo",
+                "--dump",
+                "--limit",
+                "80",
+            ],
+            check=True,
+            text=True,
+            capture_output=True,
+        )
+        self.assertIn("mode=combo", result.stdout)
+        self.assertIn("[authored]", result.stdout)
+        self.assertIn("families=", result.stdout)
+        first = result.stdout.splitlines()[0]
+        count = int(first.split("families=", 1)[1].split()[0])
+        self.assertGreater(count, 100)
+
+    def test_documentation_rejects_stale_combo_count_and_runtime_metric_confusion(self) -> None:
+        readme = (ROOT / "README.md").read_text()
+        provenance = (ROOT / "docs" / "code-provenance.md").read_text()
+        failure_log = (ROOT / "docs" / "FAILURE_LOG.md").read_text()
+        combined = "\n".join((readme, provenance, failure_log))
+        self.assertIn("25 basic marks plus 4 extended marks", combined)
+        self.assertIn("candidate-transition diagnostic", combined)
+        self.assertNotIn("33 tutorial", combined)
 
     def test_stone_story_usage_miner_uses_packaged_plates(self) -> None:
         from glyph_combo_mine import PLATE_DIR, mine

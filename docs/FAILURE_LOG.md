@@ -1,5 +1,22 @@
 # Failure Log
 
+## 2026-09-08 — D42.8 review sync kept standalone combination browser broad
+
+- The Asciicker FL-4512 D42.8 review corrected three claims that matter to this
+  standalone viewer: the Stone Story tutorial alphabet is 25 basic marks plus 4
+  extended marks, not a 33-glyph set; Asciicker runtime `combo_hits` counts
+  candidate transition evaluations, not selected/rendered combination usage; and
+  viewer-facing Unicode run review should stay separate from runtime proof
+  counters.
+- The standalone package already kept `COMBOS` as the full useful-combination
+  review surface: authored seeds, mined tutorial-plate runs, measured seam pairs,
+  and generated Unicode/Kana/CJK/Arabic run buckets. The sync records that
+  contract and adds a regression so `--mode combo --dump` continues to load the
+  broad surface instead of only the nine authored rows.
+- Highest supported stage remains **Verified** for the standalone viewer:
+  generated `.run/` caches are local review artifacts, while runtime contour
+  rendering proof remains in the Asciicker repository.
+
 ## 2026-08-31 — public provenance and family-registry reconciliation
 
 - **Observed mismatch:** After fast-forwarding local `main` to remote `1307328`,

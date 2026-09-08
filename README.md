@@ -112,6 +112,11 @@ Unicode/Kana/CJK/Arabic review buckets, so examples such as `_.-´`,
 Arabic joining-form runs can be reviewed as run families rather than fixed two-
 or three-cell tuples.
 
+The standalone viewer treats those combinations as visual exploration data, not
+runtime proof counters. In particular, Asciicker runtime `combo_hits` values are
+candidate-transition diagnostics; they are not selected or rendered combination
+usage counts.
+
 The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:
 

@@ -90,5 +90,11 @@ mined tutorial-plate usage, measured seam pairs, and generated Unicode run
 buckets. The direct Python entrypoint opens on `COMBOS` first when launched
 without arguments.
 
+The 2026-09-08 D42.8 review sync keeps that standalone browser contract intact.
+It records the Stone Story tutorial alphabet as 25 basic marks plus 4 extended
+marks, and treats runtime `combo_hits` from Asciicker's seam-DP harness as a
+candidate-transition diagnostic rather than selected or rendered run usage.
+That runtime metric is not packaged as an explorer surface.
+
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).
