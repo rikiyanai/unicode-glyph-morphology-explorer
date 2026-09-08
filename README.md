@@ -37,8 +37,8 @@ Controls are shown in the browser footer. `q` exits without changing tracked fil
 The family viewer shows reviewed glyph sequences as animated shape families.
 You can switch morphology axes, filter by family length, change speed, pause on
 a specific sequence, review distraction ranking, inspect authored multi-cell
-combinations beside their mirrors, browse measured seam candidates, and inspect
-geometry-discovered glyph runs.
+seeds beside their mirrors, and browse measured useful-combination candidates
+from mined usage, seam pairs, and geometry-discovered Unicode runs.
 
 ```sh
 ./run-families.sh
@@ -52,6 +52,15 @@ combination gallery.
 After that, the same command opens the read-only viewer directly. Use `j`/`k`
 to select, `m` to change the morphology axis, `1`–`9` to filter by family
 length, and `q` to exit.
+
+The direct Python entrypoint uses the same loaded family set. With no arguments
+it opens on the `COMBOS` axis first, while `--mode all` starts on the mixed
+all-family list:
+
+```sh
+python3 scripts/glyph_families_viewer.py
+python3 scripts/glyph_families_viewer.py --mode all
+```
 
 ## Current family registry
 
@@ -77,6 +86,13 @@ seeds with:
 python3 scripts/glyph_families_viewer.py --mode combo --dump
 ```
 
+That `combo` mode is the full useful-combination browser. For just the nine
+authored seed rows:
+
+```sh
+python3 scripts/glyph_families_viewer.py --mode authored --dump
+```
+
 For broader review, `scripts/glyph_combo_candidates.py` enumerates every
 connected two- and three-cell arrangement over the full Stone Story plate
 line-art alphabet: 25 basic marks plus 4 extended marks. It reports 148,016
@@ -100,7 +116,7 @@ The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:
 
 ```sh
-./run-families.sh --mode seam
+./run-families.sh --mode combo
 ```
 
 ## Included data

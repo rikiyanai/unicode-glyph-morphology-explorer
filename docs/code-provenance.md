@@ -84,5 +84,11 @@ fix keeps each run file as a separate gallery section and rebuilds stale length-
 Unicode/Kana/CJK/Arabic run caches to length 4. These remain offline exploration
 tools; no Asciicker runtime source is packaged.
 
+The family-viewer UI now reserves `AUTHORED` for the nine seed combinations and
+uses `COMBOS` for the complete useful-combination review surface: authored seeds,
+mined tutorial-plate usage, measured seam pairs, and generated Unicode run
+buckets. The direct Python entrypoint opens on `COMBOS` first when launched
+without arguments.
+
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).
