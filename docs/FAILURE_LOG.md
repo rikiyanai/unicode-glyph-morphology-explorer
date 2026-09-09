@@ -119,3 +119,17 @@
   useful front-page product copy and distracts from the two real TUI recordings.
 - The successor removes that wording from README prose while keeping font
   license, source-code provenance, and exact recording evidence links intact.
+
+## P0C-02 · 2026-09-08 — Godot profile boundary was under-documented
+
+- Review of the D42.10 Asciicker handoff found that this standalone package
+  could be read as a direct runtime proof surface, even though its combo/seam
+  data is measured on the pinned 8×16 half-width / 16×16 full-width terminal
+  profile.
+- Current Asciicker Godot native-terminal work targets a taller profile: 16×32
+  half-width cells, with full-width glyphs retaining intact 32×32 masks across
+  two adjacent tall cells. Orthographic and perspective rendering also remain
+  separate runtime proof conditions.
+- README and code provenance now state that standalone families, seam gaps,
+  D_SM radii, altitude bands, and run offsets are exploration evidence only
+  until rebased in cell units for the Godot profile and checked per projection.

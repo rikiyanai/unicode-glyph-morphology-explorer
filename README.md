@@ -7,8 +7,10 @@ It exists because codepoint names and script blocks are the wrong search tool
 when you are building ASCII/Unicode visual effects. Sometimes you need “a thin
 vertical stroke,” “a dense block,” “a diagonal ramp,” or “a family of related
 shapes.” This repo renders glyphs through a pinned eight-font chain and compares
-their 16×16 silhouettes by density, orientation, topology, and related visual
-features.
+their silhouettes by density, orientation, topology, and related visual
+features. The base morphology browser keeps the historical 16×16 raster, while
+the combination/seam tools measure as-positioned terminal cells: 8×16 for
+half-width glyphs and 16×16 for full-width glyphs.
 
 Use it to browse candidate glyphs, inspect why they group together, and keep a
 small reviewed registry of useful morphology families for ASCII-renderer work.
@@ -116,6 +118,16 @@ The standalone viewer treats those combinations as visual exploration data, not
 runtime proof counters. In particular, Asciicker runtime `combo_hits` values are
 candidate-transition diagnostics; they are not selected or rendered combination
 usage counts.
+
+The measurement profile matters. These standalone combo and seam artifacts are
+8×16 half-width / 16×16 full-width exploration data from the pinned font chain.
+Current Asciicker Godot native-terminal work uses a tall 16×32 half-width cell;
+full-width glyphs retain intact 32×32 masks across two adjacent tall cells.
+Before a family, seam threshold, D_SM radius, altitude rule, or run offset is
+used by that renderer, it must be rebased in cell units for the Godot profile.
+Orthographic and perspective rendering also remain separate proof conditions,
+so this repo can identify candidate families but cannot certify either
+projection's runtime election.
 
 The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:

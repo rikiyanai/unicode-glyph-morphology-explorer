@@ -110,5 +110,15 @@ runtime contour-selection experiment, while this standalone package owns glyph
 and combination exploration. The only added artifact here is the static combo
 gallery snapshot generated from the standalone explorer data.
 
+The D42.10 doc-hygiene follow-up also records the measurement boundary between
+this repository and the current Godot target. Standalone combo/seam data is
+measured on the pinned font-chain terminal profile: 8×16 half-width cells and
+16×16 full-width cells. The Godot native terminal now targets 16×32 half-width
+cells, with intact 32×32 full-width masks spanning two adjacent tall cells, and
+keeps orthographic and perspective election/proof conditions separate. Therefore
+standalone families are candidate-discovery evidence only; runtime thresholds,
+D_SM radii, altitude bands, and run offsets require a cell-unit rebase before
+Godot consumption.
+
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).

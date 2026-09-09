@@ -15,6 +15,11 @@ for repository review, sharing, and provenance.
   files at the time of generation.
 - The generator reported 148,016 measured two- and three-cell plate-alphabet
   candidates before adding whole-repertoire seam and run buckets.
+- The snapshot is measured on the standalone terminal profile: 8×16 half-width
+  cells and 16×16 full-width cells. Asciicker's current Godot native-terminal
+  target is 16×32 for half-width glyphs, with full-width glyphs spanning two
+  tall cells as intact 32×32 masks; orthographic and perspective runtime proof
+  remain separate from this review artifact.
 
 Verify the snapshot with:
 

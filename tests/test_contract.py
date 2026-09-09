@@ -185,6 +185,17 @@ class MorphologyContract(unittest.TestCase):
         self.assertIn("candidate-transition diagnostic", combined)
         self.assertNotIn("33 tutorial", combined)
 
+    def test_documentation_declares_godot_profile_boundary(self) -> None:
+        readme = (ROOT / "README.md").read_text()
+        provenance = (ROOT / "docs" / "code-provenance.md").read_text()
+        artifact_index = (ROOT / "docs" / "artifacts" / "README.md").read_text()
+        combined = "\n".join((readme, provenance, artifact_index))
+        self.assertIn("8×16 half-width", combined)
+        self.assertIn("16×32 half-width", combined)
+        self.assertIn("32×32 full-width", combined)
+        self.assertIn("cell-unit rebase", combined)
+        self.assertIn("Orthographic and perspective", combined)
+
     def test_stone_story_usage_miner_uses_packaged_plates(self) -> None:
         from glyph_combo_mine import PLATE_DIR, mine
 
