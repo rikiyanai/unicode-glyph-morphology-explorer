@@ -42,6 +42,14 @@ The extracted package includes these source owners:
 - `assets/glyphs/authored/stone_story_tutorial_plates/06-animation-subtractive.txt`
 - `docs/research/ascii/glyph_audit/saved_families.jsonl`
 
+## Packaged review artifacts
+
+- `docs/artifacts/glyph_combo_gallery.html`
+- `docs/artifacts/SHA256SUMS`
+
+These are generated review snapshots, not source owners. The canonical local
+working outputs remain ignored under `.run/glyph_audit/`.
+
 The family viewer differs from its source copy through deliberate read-only hardening:
 the standalone removes the key that appended a selected family to
 the tracked `saved_families.jsonl` registry. Rendering, navigation, animation,
@@ -95,6 +103,12 @@ It records the Stone Story tutorial alphabet as 25 basic marks plus 4 extended
 marks, and treats runtime `combo_hits` from Asciicker's seam-DP harness as a
 candidate-transition diagnostic rather than selected or rendered run usage.
 That runtime metric is not packaged as an explorer surface.
+
+The later D42.10 review sync did not import Asciicker runtime Pieta media or the
+prototype pack-v2 font routing into this repository. Those artifacts prove the
+runtime contour-selection experiment, while this standalone package owns glyph
+and combination exploration. The only added artifact here is the static combo
+gallery snapshot generated from the standalone explorer data.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).

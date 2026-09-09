@@ -124,11 +124,15 @@ too. To jump straight to it:
 ./run-families.sh --mode combo
 ```
 
+A committed snapshot of the generated HTML review sheet is available at
+[docs/artifacts/glyph_combo_gallery.html](docs/artifacts/glyph_combo_gallery.html).
+Regenerate the working copy with `python3 scripts/glyph_combo_gallery.py`.
+
 ## Included data
 
 The repository includes the morphology browser, the read-only family viewer, the
 selected saved-family registry, the glyph combination review data, the candidate
-enumerator, and the pinned font chain used for rendering. It does not include
-the full Asciicker engine or runtime.
+enumerator, a committed combination-gallery snapshot, and the pinned font chain
+used for rendering. It does not include the full Asciicker engine or runtime.
 
 Font identities, copyright metadata, license mapping, and license texts are recorded in [docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`. Source-code identities are recorded in [docs/code-provenance.md](docs/code-provenance.md).

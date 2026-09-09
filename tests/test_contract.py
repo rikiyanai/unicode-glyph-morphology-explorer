@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import unittest
@@ -125,6 +126,24 @@ class MorphologyContract(unittest.TestCase):
         self.assertIn("90d2f5edab212a9a1ecb9ec5d7161066047c7810", provenance)
         self.assertIn("7a87dcd0dbfa99520803794e6ab46046a744b2ee", provenance)
         self.assertIn("read-only hardening", provenance)
+
+    def test_packaged_combo_gallery_snapshot_is_current_review_artifact(self) -> None:
+        html = ROOT / "docs" / "artifacts" / "glyph_combo_gallery.html"
+        checksums = ROOT / "docs" / "artifacts" / "SHA256SUMS"
+        index = ROOT / "docs" / "artifacts" / "README.md"
+        self.assertTrue(html.is_file())
+        self.assertTrue(checksums.is_file())
+        self.assertTrue(index.is_file())
+        text = html.read_text()
+        self.assertIn("<title>Seam Ledger</title>", text)
+        self.assertIn('"total": 148016', text)
+        self.assertIn('"runs_beside_w16_cjk": 600', text)
+        self.assertIn('"runs_stacked_w16_cjk": 600', text)
+        self.assertIn('"runs_beside_w8_rtl": 600', text)
+        checksum_text = checksums.read_text()
+        expected = re.search(r"^([0-9a-f]{64})  glyph_combo_gallery\.html$", checksum_text, re.M)
+        self.assertIsNotNone(expected)
+        self.assertEqual(hashlib.sha256(html.read_bytes()).hexdigest(), expected.group(1))
 
     def test_combination_candidate_surface_is_exhaustive_for_two_and_three_cells(self) -> None:
         from glyph_combo_candidates import SHAPES, USEFUL_LINE_GLYPHS, enumerate_candidates

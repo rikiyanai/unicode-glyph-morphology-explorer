@@ -13,9 +13,16 @@
   and generated Unicode/Kana/CJK/Arabic run buckets. The sync records that
   contract and adds a regression so `--mode combo --dump` continues to load the
   broad surface instead of only the nine authored rows.
+- A follow-up review of the D42.10 Asciicker handoff found no standalone source
+  sync required: the six new Asciicker commits changed prototype runtime
+  contour-selection code, runtime proof media, and runtime pack-v2 font routing.
+  This repository owns visual glyph exploration, so it now commits only the
+  missing standalone artifact: `docs/artifacts/glyph_combo_gallery.html`, a
+  static snapshot of the generated combo gallery, plus its checksum.
 - Highest supported stage remains **Verified** for the standalone viewer:
-  generated `.run/` caches are local review artifacts, while runtime contour
-  rendering proof remains in the Asciicker repository.
+  `.run/` caches are local rebuild artifacts, the committed gallery is a review
+  snapshot, and runtime contour rendering proof remains in the Asciicker
+  repository.
 
 ## 2026-08-31 — public provenance and family-registry reconciliation
 
