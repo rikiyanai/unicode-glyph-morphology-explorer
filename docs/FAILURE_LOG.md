@@ -133,3 +133,44 @@
 - README and code provenance now state that standalone families, seam gaps,
   D_SM radii, altitude bands, and run offsets are exploration evidence only
   until rebased in cell units for the Godot profile and checked per projection.
+
+## 2026-09-26 — ascii-art-authoring skill has no route for proportional Shift_JIS art
+
+- **Observed gap:** the `ascii-art-authoring` skill (canonical copy:
+  `claude-skills-private` `c8c39d5`) excludes proportional-font art outright
+  (`SKILL.md:23-24`). Its fixed-grid rules are cell aspect, cell anisotropy,
+  empty-cell anti-aliasing, and the 12-letter whitelist. Its combination data
+  is the nine Stone Story rows in
+  `assets/glyphs/authored/glyph_combinations.v1.json`. None of these covers
+  the outline-first Shift_JIS idioms (`(⌒ ⌒ヽ _ノ ゝ__ノ ／￣ ＼＿ -―-`)
+  seen on the AAHub page 爆発・煙
+  (<https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f>).
+- **Measured, 180 posts, Saitamaar 16 px:**
+  - Only 14.7 % of non-space glyphs have a grid-exact advance, and no post
+    reaches 90 %.
+  - 85 % of indents are off the 8 px grid.
+  - The page has zero adjacent half-width spaces (the BBS whitespace-collapse
+    rule).
+  - Re-flowing the text onto an 8/16 px grid keeps 12.5 % of vertically
+    aligned pairs. Snapping to 8 px columns stacks 59 % of glyphs into
+    shared columns.
+  - 64.5 % of non-space glyphs are fine-dot tone, yet median ink is 2.4 %.
+  - The page is bimodal: 30 posts are outline-dominant and 32 are
+    tone-dominant.
+- **Consequences:**
+  - The page is a valid *style* reference for Xu, FL-4512, and unicasso.
+  - It is a valid *raster-level* evaluation set only for its outline subset,
+    rendered in its own font.
+  - It is never valid as a text-cell ground truth, and a fixed-width glyph
+    subset is not a viable restriction.
+- The glyph repository's `glyph_combinations.v1.json` is a derived copy,
+  byte-identical to Y9-2 `6372a431f`. Y9-2 HEAD differs only in its `owner`
+  field. The Y9-2 project copy of the skill is a stale fork of the canonical
+  copy.
+- **Durable owner:** `docs/research/ascii/sjis_aa_skill_audit/` holds the
+  audit (`README.md`), the measurement script, and its byte-stable JSON
+  output. The input set is identified by SHA-256; no art text is
+  redistributed beyond two three-line excerpts cited to the AAHub URL.
+- **Stage:** audit only. No skill file, combination data, or viewer code was
+  changed. The prioritised skill changes (P1–P7) are proposals awaiting an
+  owner decision.
