@@ -174,3 +174,30 @@
 - **Stage:** audit only. No skill file, combination data, or viewer code was
   changed. The prioritised skill changes (P1–P7) are proposals awaiting an
   owner decision.
+
+### Owner decision · 2026-09-26 — one canonical skill copy
+
+- **User directive:** the ascii-art-authoring skill must exist as a single
+  tracked copy in the private Claude skills repository. Every other agent
+  harness (Codex, generic agents, project checkouts) reaches it by symlink,
+  never by a copied fork.
+- **Measured starting state:**
+  - The Codex and generic-agent skill roots are already whole-directory
+    symlinks to the Claude skills root. They resolve to the canonical copy,
+    and a byte comparison found no difference.
+  - The only fork is the Y9-2 project copy under `.claude/skills/`. It is a
+    tracked, stale `SKILL.md` without `references/`. Because Claude loads
+    project skills alongside global ones, it can shadow the canonical copy
+    inside Y9-2.
+- **Action:** replace the Y9-2 fork with a tracked symlink to the canonical
+  skill directory. Y9-2's `.gitignore` re-include must drop its trailing
+  slash so that the symlink is tracked rather than ignored. Paths in Y9-2
+  documents that cite `.claude/skills/ascii-art-authoring/SKILL.md` still
+  resolve, but their historical line numbers refer to the old fork.
+- **Falsifier:**
+  - after the change, Y9-2's `.claude/skills/ascii-art-authoring` is a
+    symlink;
+  - `git ls-files -s` records mode 120000 for it;
+  - reading its `SKILL.md` gives bytes identical to the canonical copy.
+- **P1–P7 remain proposals.** Any accepted edit lands only in the canonical
+  copy.
