@@ -201,3 +201,40 @@
   - reading its `SKILL.md` gives bytes identical to the canonical copy.
 - **P1–P7 remain proposals.** Any accepted edit lands only in the canonical
   copy.
+
+### Operator correction · 2026-09-27 — the audit misframed grid principles as fixed-grid-only
+
+- **Contradiction:** the audit (gap 2) listed cell aspect, cell anisotropy,
+  anti-aliasing by empty cells and mirroring as rules that "do not hold" for
+  proportional Shift_JIS art. The operator rejected this, and the art
+  supports the rejection:
+  - Stroke glyphs on that page are still anisotropic marks inside a
+    line-height × advance box.
+  - Edges are still softened by leaving tone and space rather than filling.
+  - Symmetric forms are still mirrored with paired glyphs (`／`/`＼`, `（`/`）`,
+    `ヽ`/`ﾉ`).
+  - What changes is the placement lattice: per-glyph advances and
+    half/full-width space mixes instead of one uniform cell.
+- **Error class:** the audit took a medium-specific mechanism (a uniform
+  cell grid) for the principle it implements (glyph shape, orientation and
+  negative space carrying form). The parent session relayed the claim
+  without checking it.
+- **Decision:** the skill keeps one set of core authoring principles, stated
+  independently of the medium. It gains an addendum for proportional fonts
+  and typesetting. The addendum covers:
+  - per-glyph advance lattices (e.g. MS PGothic / Saitamaar units);
+  - the space-collapse law (no adjacent U+0020, no leading U+0020);
+  - half/full-width space mixing for sub-cell placement;
+  - line pitch;
+  - Shift_JIS stroke idioms (`⌒ヽ`, `_ノ`, `ゝ__ノ`, `／￣`/`￣＼`, `-―-`);
+  - using `i`, `l` and `|` as stroke shapes rather than letters.
+
+  The audit's P1 ("scoped route plus new §15") is re-scoped to this
+  structure. Nothing in the core sections is removed or restated as
+  fixed-grid-only.
+- **Cross-repo implication:** the screenshot-to-text converter decodes the
+  same medium. Its proportional decoder already enforces the space-collapse
+  law and the advance lattice. The idioms above are candidate multi-glyph
+  priors, recorded in the converter's failure log.
+- **Stage:** decision logged. No skill edit yet; the edit lands only in the
+  canonical copy in the private skills repository.
