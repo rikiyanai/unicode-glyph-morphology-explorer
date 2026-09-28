@@ -69,7 +69,7 @@ N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
 MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
-         "distract", "combo", "authored"]
+         "distract", "combo", "authored", "sjis"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
@@ -80,14 +80,17 @@ MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stro
 AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
               "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
               "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBOS",
-              "authored": "AUTHORED"}
+              "authored": "AUTHORED", "sjis": "SJIS CORPUS"}
 # Axes whose row order carries meaning (ranking / authored file order) and must
 # therefore survive the list pane's size sort.
-ORDERED_MODES = {"distract", "combo", "authored"}
+ORDERED_MODES = {"distract", "combo", "authored", "sjis"}
 # Measured candidate data written by scripts/glyph_combo_gallery.py.
 MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 # The authored combination dictionary (offsets + codepoints + generated mirrors).
 COMBINATIONS = gf.REPO_ROOT / "assets" / "glyphs" / "authored" / "glyph_combinations.v1.json"
+# Corpus-derived Shift_JIS AA combinations (AAHub training slugs), written and
+# rendered by scripts/sjis_corpus_combos.py. Tracked, so no build step is needed.
+SJIS_CORPUS = gf.REPO_ROOT / "assets" / "glyphs" / "corpus" / "aahub_aa003_train.sjis_combos.v1.json"
 # the original four are REQUIRED for a usable catalog; topo is optional (present
 # only when the catalog was built after the global topology cache existed), so a
 # pre-topo catalog stays valid and simply shows no topo families.
@@ -429,6 +432,60 @@ def load_seam_families(c: ga.Corpus, limit: int = 0) -> list[dict]:
     return fams
 
 
+SJIS_CATEGORY_LABEL = {"idiom": "15.5 idiom", "bigram": "touching pair", "trigram": "touching triple",
+                       "stack": "vertical stack", "band": "tone band"}
+
+
+def load_sjis_corpus_families(c: ga.Corpus, limit: int = 0, mode: str = "sjis") -> list[dict]:
+    """Corpus-derived proportional Shift_JIS combinations, in category and rank order.
+
+    Rows are pre-rendered in Saitamaar 16 px on the font's advance lattice by
+    scripts/sjis_corpus_combos.py, so a combination is drawn at its true pixel
+    offsets rather than on the 8/16 px terminal cell grid. Counts are over the
+    AAHub training slugs of the pinned archive snapshot named in the file."""
+    if not SJIS_CORPUS.exists():
+        return []
+    try:
+        d = json.loads(SJIS_CORPUS.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        sys.stderr.write(f"bad SJIS corpus data {SJIS_CORPUS}: {exc}\n")
+        return []
+    source = (f"AAHub train, archive {d['archive_commit'][:7]}, {d['slugs']} slugs / {d['pages']} pages, "
+              f"{d['font']} {d['px']} px")
+    seen: dict[str, int] = {}
+    fams: list[dict] = []
+    for v in d.get("viewable", []):
+        cat = v["category"]
+        seen[cat] = seen.get(cat, 0) + 1
+        if limit and seen[cat] > limit:
+            continue
+        chars = " / ".join(v["lattice"])
+        mchars = " / ".join(v["mirror_lattice"])
+        bits = [f"n={v['count']:,}"]
+        if v.get("pooled_n") is not None:
+            bits.append(f"with mirror {v['pooled_n']:,}")
+        if v.get("pages") is not None:
+            bits.append(f"{v['pages']:,} pages / {v['slugs']} slugs")
+        if v.get("dx_px") is not None:
+            bits.append(f"centre offset {v['dx_px']:+d} px")
+        if not v.get("mirror_exact", True):
+            bits.append("mirror approximate (glyph without a 15.5 partner)")
+        bits.append("x px " + ",".join(f"{x:g}" for x in v["offsets_px"]))
+        note = f"{SJIS_CATEGORY_LABEL.get(cat, cat).upper()}   " + "   ".join(bits)
+        members = [m for m in (c.i(ord(ch)) for ch in "".join(v["lattice"]) if ch not in " \u3000")
+                   if m is not None]
+        fams.append({
+            "mode": mode, "members": members, "block": f"sjis {cat}", "size": len("".join(v["lattice"])),
+            "role_hint": f"#{v.get('rank', seen[cat])} {cat}  {chars}", "note": note,
+            "combo": {"id": f"sjis_{cat}_{v.get('rank', seen[cat])}", "label": note, "note": note,
+                      "source": source, "chars": chars, "mirror_chars": mchars,
+                      "self_symmetric": chars == mchars,
+                      "rows": _half_block_rows(v["rows"]), "mirror_rows": _half_block_rows(v["mirror_rows"]),
+                      "missing": []},
+        })
+    return fams
+
+
 def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> list[dict]:
     """The one-command standalone browser surface.
 
@@ -444,6 +501,7 @@ def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> l
     fams.extend(load_foliage_stroke_families(c))
     fams.extend(load_combination_families(c, mode="authored"))
     fams.extend(load_seam_families(c, seam_limit))
+    fams.extend(load_sjis_corpus_families(c, seam_limit))
     return fams
 
 
@@ -490,7 +548,7 @@ def init_colors() -> dict[str, int]:
         "hud": (252, -1), "dim": (240, -1), "sel": (16, 252), "ink": (231, -1),
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
-        "distract": (203, -1), "combo": (214, -1), "authored": (114, -1),
+        "distract": (203, -1), "combo": (214, -1), "authored": (114, -1), "sjis": (177, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -499,7 +557,7 @@ def init_colors() -> dict[str, int]:
         "fill": (curses.COLOR_YELLOW, -1), "cycle": (curses.COLOR_CYAN, -1),
         "mirror": (curses.COLOR_BLUE, -1), "topo": (curses.COLOR_RED, -1),
         "distract": (curses.COLOR_RED, -1), "combo": (curses.COLOR_YELLOW, -1),
-        "authored": (curses.COLOR_GREEN, -1),
+        "authored": (curses.COLOR_GREEN, -1), "sjis": (curses.COLOR_MAGENTA, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -708,7 +766,8 @@ def main() -> int:
                     help="open on one animation axis; use 'cycle' for all discovered "
                          "cycles, 'distract' for the DISTRACTION ranking, 'combo' for "
                          "the useful-combination browser, 'authored' for the nine seed "
-                         "combinations, or legacy 'seam' as an alias for combo")
+                         "combinations, 'sjis' for corpus-derived Shift_JIS AA combinations, "
+                         "or legacy 'seam' as an alias for combo")
     ap.add_argument("--dump", action="store_true",
                     help="print the groups as text and exit; no TTY required, so the "
                          "selected axis can be verified from a pipe or a test")
@@ -718,7 +777,7 @@ def main() -> int:
     c = ga.Corpus()
     if args.saved and args.foliage_strokes:
         ap.error("--saved and --foliage-strokes select different review sources")
-    if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "authored", "seam"):
+    if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "authored", "seam", "sjis"):
         ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
                  f"combined with --saved / --foliage-strokes")
     if args.foliage_strokes:
@@ -733,13 +792,18 @@ def main() -> int:
     elif args.mode in ("combo", "seam"):
         fams = load_combination_families(c, mode="combo")
         fams.extend(load_seam_families(c, args.limit))
+        fams.extend(load_sjis_corpus_families(c, args.limit, mode="combo"))
         initial_mode = "combo"
+    elif args.mode == "sjis":
+        fams = load_sjis_corpus_families(c, args.limit)
+        initial_mode = "sjis"
     else:
         fams = load_saved_families(c, args.block) if args.saved else load_default_families(c, args.block, args.limit)
         initial_mode = "combo" if not mode_requested and not args.dump and not args.saved else args.mode
     if not fams:
         source = {"distract": "ranked glyphs", "combo": "combinations",
-                  "authored": "authored combinations", "seam": "measured combinations"}.get(
+                  "authored": "authored combinations", "seam": "measured combinations",
+                  "sjis": "SJIS corpus combinations"}.get(
             args.mode, "saved families" if args.saved else "families")
         print(f"no {source} found.", file=sys.stderr)
         return 1

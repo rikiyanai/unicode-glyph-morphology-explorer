@@ -140,6 +140,25 @@ A committed snapshot of the generated HTML review sheet is available at
 [docs/artifacts/glyph_combo_gallery.html](docs/artifacts/glyph_combo_gallery.html).
 Regenerate the working copy with `python3 scripts/glyph_combo_gallery.py`.
 
+### Shift_JIS AA combinations from the AAHub corpus
+
+`./run-families.sh --mode sjis` opens combinations counted over the AAHub
+training slugs (23,363 pages) and drawn in Saitamaar 16 px at their true pixel
+offsets, each beside its mirror. The categories are:
+
+- the stroke idioms from ascii-art-authoring section 15.5;
+- touching stroke pairs and triples;
+- vertical stacks whose centres lie within 3 px;
+- tone bands.
+
+`--mode combo` includes them too. The data file is tracked, so no build step
+runs. Regenerating it needs the private archive and the font:
+
+```sh
+python3 scripts/sjis_corpus_combos.py ARCHIVE SPLIT.json Saitamaar-Regular.ttf \
+    --out assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json
+```
+
 ## Included data
 
 The repository includes the morphology browser, the read-only family viewer, the

@@ -26,6 +26,7 @@ The extracted package includes these source owners:
 - `scripts/glyph_combo_gallery.py`
 - `scripts/glyph_combo_mine.py`
 - `scripts/glyph_run_walker.py`
+- `scripts/sjis_corpus_combos.py`
 - `scripts/glyph_seam_index.py`
 - `scripts/glyph_cell_features.py`
 - `scripts/glyph_cell_pairs.py`
@@ -34,6 +35,7 @@ The extracted package includes these source owners:
 - `scripts/glyph_morphology_browser.py`
 - `scripts/glyph_skeleton.py`
 - `assets/glyphs/authored/glyph_combinations.v1.json`
+- `assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json`
 - `assets/glyphs/authored/stone_story_tutorial_plates/01-sacrificial-pit-layers.txt`
 - `assets/glyphs/authored/stone_story_tutorial_plates/02-poison-adept-walk-cycle.txt`
 - `assets/glyphs/authored/stone_story_tutorial_plates/03-styles-fonts-alphabet.txt`
@@ -122,3 +124,15 @@ Godot consumption.
 
 Font identities and licenses are recorded separately in
 [font-provenance.md](font-provenance.md).
+
+## Corpus-derived Shift_JIS combinations (2026-09-27)
+
+`scripts/sjis_corpus_combos.py` is new code in this repository, not an import.
+It scales `docs/research/ascii/sjis_aa_skill_audit/aa_slug_stats.py` from one
+AAHub page to every training slug of the private ascii-art-archive snapshot
+`3687cc564d3f542a3aaaea98b351713b360599f4`. The screenshot converter's
+`data/aahub_split.json` (sha256 `d61d856f…a8d500`) decides which slugs are
+training. `assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json` is its
+output. It holds counts, and rows rendered in Saitamaar (font sha256
+`8f8c9b6e…35890`); no archive text is copied into it beyond combinations of
+at most three glyphs and band samples of at most 12.

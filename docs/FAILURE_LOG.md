@@ -238,3 +238,59 @@
   priors, recorded in the converter's failure log.
 - **Stage:** decision logged. No skill edit yet; the edit lands only in the
   canonical copy in the private skills repository.
+
+### 2026-09-27 — corpus-wide Shift_JIS combination extraction, viewable as `--mode sjis`
+
+- **Request:** operator asked for combination and pattern extraction from the
+  AAHub corpus, guided by ascii-art-authoring section 15, logged here and
+  viewable in the glyph viewer. Before this entry the only Shift_JIS
+  measurement was the one-page `bakuhatsu_kemuri_stats.json`, and the
+  viewer did not load it.
+- **Producer:** `scripts/sjis_corpus_combos.py` (new). It reads Git blobs of
+  the private ascii-art-archive at `3687cc5` (AA-003). Slugs come from the
+  converter split `data/aahub_split.json` (sha256 `d61d856f…a8d500`),
+  training partition only, and held-out slugs are never opened. Coverage:
+  114 slugs, 23,363 pages, 457,065 lines, 86 s on one core. Rendering uses
+  Saitamaar 16 px on a 17 px pitch (font sha256 `8f8c9b6e…35890`).
+- **Output (durable):** `assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json`
+  (sha256 `61b0537d…58f8258`, 996,272 bytes). It holds:
+  - top-300 counts for idioms, bigrams, trigrams and stacks (each also as an
+    outline-only list), plus bands and space spellings;
+  - per-slug top bigrams and page tags;
+  - 435 rendered entries (36 idioms, 120 bigrams, 120 trigrams, 120 stacks,
+    39 bands), each with its 15.5 mirror.
+
+  One-glyph repeats (`//`, `＿＿`, `|/|`) stay counted but are not rendered
+  as combinations.
+- **Viewer:** `glyph_families_viewer.py --mode sjis` (new axis, 435
+  families), also included in `--mode combo` (1,718 families). Test:
+  `scripts/tests/test_sjis_corpus_combos.py` (6 pass).
+- **Findings (measured):**
+  - The 15.5 idioms are not specific to smoke pages. `⌒ヽ` appears
+    6,788× on 3,904 pages in 112/114 slugs. `／￣` appears 7,222× (112
+    slugs), `＼＿` 7,165×, `_ノ` 6,474× (113), `｀ヽ` 14,348× (113), `彡`
+    14,752× (112), `从` 5,619× (108), `／￣＼` 676× and `＼＿／` 540×.
+    `ゝ__ノ` is rare: 39× in 10 slugs.
+  - Whitespace law (15.4): near zero, not zero. There are 147 adjacent
+    U+0020 pairs and 78 line-leading U+0020 in 457,065 lines (0.03% /
+    0.02%). The skill's "zero violations" is from one page of 3,214 lines.
+  - Most common interior space spellings: `F h` 15.5%, `FF` 12.1%,
+    `FF h` 7.2%, `FFF` 6.5%, `h F h` 4.5%.
+  - Tone dominates raw counts: `::` makes up 2.0 M of the bigrams. The
+    outline-only lists and bands separate the two, as 15.7 separates
+    outline from declared tone.
+  - Page tags: 6,542 outline, 5,728 tone, 11,093 mixed.
+  - Top outline stacks with distinct glyphs: `l` over `|`, `i` over `|`,
+    `｜` over `|`, and `￣` over `＿` (the 4.2 occlusion complement,
+    5,949× at 0 px).
+  - `ﾆ` (140k), `二` (103k) and `ニ` are among the most frequent glyphs and
+    are used as hatching. They were added to the stroke set (15.6).
+- **Proposals, not applied:**
+  - (a) Skill 15.4.1 and 15.5 could cite these corpus counts in place of
+    the one-page numbers. Edits land only in the canonical skill copy.
+  - (b) The converter's bigram/stroke-idiom prior hypothesis (converter
+    FL, 2026-09-27 note item 2) can be built from the same training-only
+    counts. The converter remains the owner of that prior.
+- **Stage:** Implemented and Executed. The dataset and viewer axis are
+  Verified by tests and `--dump`. There is no interactive TTY review by
+  the operator yet, so not Accepted.
