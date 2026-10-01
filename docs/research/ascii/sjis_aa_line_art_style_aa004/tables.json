@@ -1,0 +1,421 @@
+{
+ "inputs": {
+  "results_sha256": "816d9166fd42cce2d1675cafe242c4ecfdc164de1bf4e63efd0234251028203b",
+  "sample_content_sha256": "d4b0d2f4813a42b85a0e0a96e4e02329213b32fe7141abb1fb834364cc1a4ac2"
+ },
+ "group_weighted": {
+  "2ch": {
+   "line_minimal": 0.4194,
+   "line_plus_tone": 0.1872,
+   "tone_dominant": 0.1302,
+   "dense_filled": 0.2528,
+   "text": 0.0104,
+   "line_minimal_or_line_plus_tone": 0.6066,
+   "outline_dominant": 0.3013,
+   "sampled": 13909,
+   "art_pieces": 81744,
+   "broad_ink<=0.05_blank>=0.5": 0.8703,
+   "broad_ink<=0.05_blank>=0.6": 0.6584
+  },
+  "ALL": {
+   "line_minimal": 0.3063,
+   "line_plus_tone": 0.2625,
+   "tone_dominant": 0.159,
+   "dense_filled": 0.2688,
+   "text": 0.0034,
+   "line_minimal_or_line_plus_tone": 0.5688,
+   "outline_dominant": 0.2031,
+   "sampled": 54127,
+   "art_pieces": 806288,
+   "broad_ink<=0.05_blank>=0.5": 0.8783,
+   "broad_ink<=0.05_blank>=0.6": 0.6293
+  },
+  "generic": {
+   "line_minimal": 0.3524,
+   "line_plus_tone": 0.1895,
+   "tone_dominant": 0.1493,
+   "dense_filled": 0.3035,
+   "text": 0.0053,
+   "line_minimal_or_line_plus_tone": 0.5419,
+   "outline_dominant": 0.2906,
+   "sampled": 18235,
+   "art_pieces": 48367,
+   "broad_ink<=0.05_blank>=0.5": 0.7703,
+   "broad_ink<=0.05_blank>=0.6": 0.6117
+  },
+  "other": {
+   "line_minimal": 0.4072,
+   "line_plus_tone": 0.2241,
+   "tone_dominant": 0.1101,
+   "dense_filled": 0.2504,
+   "text": 0.0081,
+   "line_minimal_or_line_plus_tone": 0.6313,
+   "outline_dominant": 0.2986,
+   "sampled": 3040,
+   "art_pieces": 12127,
+   "broad_ink<=0.05_blank>=0.5": 0.8804,
+   "broad_ink<=0.05_blank>=0.6": 0.6775
+  },
+  "works": {
+   "line_minimal": 0.2871,
+   "line_plus_tone": 0.2778,
+   "tone_dominant": 0.1642,
+   "dense_filled": 0.2686,
+   "text": 0.0023,
+   "line_minimal_or_line_plus_tone": 0.5649,
+   "outline_dominant": 0.1829,
+   "sampled": 18943,
+   "art_pieces": 664050,
+   "broad_ink<=0.05_blank>=0.5": 0.8871,
+   "broad_ink<=0.05_blank>=0.6": 0.6261
+  }
+ },
+ "stratum_ci": {
+  "2ch": {
+   "n": 1801,
+   "line_minimal": 0.3815,
+   "wilson95": [
+    0.3593,
+    0.4041
+   ]
+  },
+  "2ch/VIPRPG": {
+   "n": 542,
+   "line_minimal": 0.2638,
+   "wilson95": [
+    0.2285,
+    0.3025
+   ]
+  },
+  "2ch/なんJ関連AA": {
+   "n": 767,
+   "line_minimal": 0.5437,
+   "wilson95": [
+    0.5083,
+    0.5786
+   ]
+  },
+  "2ch/やる夫スレオリジナル": {
+   "n": 1907,
+   "line_minimal": 0.2575,
+   "wilson95": [
+    0.2383,
+    0.2776
+   ]
+  },
+  "2ch/やる夫派生": {
+   "n": 1841,
+   "line_minimal": 0.4438,
+   "wilson95": [
+    0.4212,
+    0.4666
+   ]
+  },
+  "2ch/ショボーン派生": {
+   "n": 1899,
+   "line_minimal": 0.2638,
+   "wilson95": [
+    0.2445,
+    0.2841
+   ]
+  },
+  "2ch/ダディクール": {
+   "n": 1096,
+   "line_minimal": 0.4088,
+   "wilson95": [
+    0.38,
+    0.4381
+   ]
+  },
+  "2ch/ドクオ": {
+   "n": 546,
+   "line_minimal": 0.5403,
+   "wilson95": [
+    0.4984,
+    0.5817
+   ]
+  },
+  "2ch/モナー派生": {
+   "n": 1881,
+   "line_minimal": 0.4487,
+   "wilson95": [
+    0.4263,
+    0.4713
+   ]
+  },
+  "2ch/元ネタ有り": {
+   "n": 1405,
+   "line_minimal": 0.4733,
+   "wilson95": [
+    0.4473,
+    0.4995
+   ]
+  },
+  "2ch/新ジャンルシリーズ": {
+   "n": 86,
+   "line_minimal": 0.3372,
+   "wilson95": [
+    0.2462,
+    0.4422
+   ]
+  },
+  "2ch/無関係シリーズ": {
+   "n": 138,
+   "line_minimal": 0.7101,
+   "wilson95": [
+    0.6296,
+    0.7793
+   ]
+  },
+  "A・0・記号": {
+   "n": 1829,
+   "line_minimal": 0.2624,
+   "wilson95": [
+    0.2428,
+    0.2831
+   ]
+  },
+  "あ行": {
+   "n": 1695,
+   "line_minimal": 0.2643,
+   "wilson95": [
+    0.2439,
+    0.2858
+   ]
+  },
+  "か行": {
+   "n": 1749,
+   "line_minimal": 0.267,
+   "wilson95": [
+    0.2468,
+    0.2882
+   ]
+  },
+  "さ行": {
+   "n": 1744,
+   "line_minimal": 0.2901,
+   "wilson95": [
+    0.2693,
+    0.3119
+   ]
+  },
+  "た行": {
+   "n": 1763,
+   "line_minimal": 0.2921,
+   "wilson95": [
+    0.2714,
+    0.3138
+   ]
+  },
+  "な行": {
+   "n": 1702,
+   "line_minimal": 0.2491,
+   "wilson95": [
+    0.2292,
+    0.2702
+   ]
+  },
+  "は行": {
+   "n": 1741,
+   "line_minimal": 0.3469,
+   "wilson95": [
+    0.3249,
+    0.3696
+   ]
+  },
+  "ま行": {
+   "n": 1861,
+   "line_minimal": 0.2724,
+   "wilson95": [
+    0.2527,
+    0.2931
+   ]
+  },
+  "や行": {
+   "n": 1678,
+   "line_minimal": 0.3522,
+   "wilson95": [
+    0.3297,
+    0.3754
+   ]
+  },
+  "ら行": {
+   "n": 1757,
+   "line_minimal": 0.2715,
+   "wilson95": [
+    0.2512,
+    0.2928
+   ]
+  },
+  "わ・を・ん": {
+   "n": 1424,
+   "line_minimal": 0.1903,
+   "wilson95": [
+    0.1708,
+    0.2115
+   ]
+  },
+  "企業・ご当地キャラクター": {
+   "n": 1496,
+   "line_minimal": 0.5007,
+   "wilson95": [
+    0.4754,
+    0.526
+   ]
+  },
+  "原典不明人物": {
+   "n": 44,
+   "line_minimal": 0.2955,
+   "wilson95": [
+    0.1816,
+    0.4422
+   ]
+  },
+  "実在人物パロディ": {
+   "n": 1500,
+   "line_minimal": 0.358,
+   "wilson95": [
+    0.3341,
+    0.3826
+   ]
+  },
+  "汎用AA/エフェクト": {
+   "n": 1943,
+   "line_minimal": 0.5147,
+   "wilson95": [
+    0.4924,
+    0.5368
+   ]
+  },
+  "汎用AA/乗り物・メカ": {
+   "n": 1646,
+   "line_minimal": 0.4241,
+   "wilson95": [
+    0.4004,
+    0.4481
+   ]
+  },
+  "汎用AA/人間・モブ": {
+   "n": 1890,
+   "line_minimal": 0.2831,
+   "wilson95": [
+    0.2632,
+    0.3038
+   ]
+  },
+  "汎用AA/伝承・伝説・空想の生物": {
+   "n": 1287,
+   "line_minimal": 0.3862,
+   "wilson95": [
+    0.3599,
+    0.4131
+   ]
+  },
+  "汎用AA/体": {
+   "n": 1962,
+   "line_minimal": 0.3807,
+   "wilson95": [
+    0.3595,
+    0.4024
+   ]
+  },
+  "汎用AA/動植物": {
+   "n": 1696,
+   "line_minimal": 0.283,
+   "wilson95": [
+    0.2621,
+    0.3049
+   ]
+  },
+  "汎用AA/地図": {
+   "n": 881,
+   "line_minimal": 0.5789,
+   "wilson95": [
+    0.546,
+    0.6111
+   ]
+  },
+  "汎用AA/小道具": {
+   "n": 1676,
+   "line_minimal": 0.3872,
+   "wilson95": [
+    0.3642,
+    0.4108
+   ]
+  },
+  "汎用AA/文字": {
+   "n": 1539,
+   "line_minimal": 0.3496,
+   "wilson95": [
+    0.3262,
+    0.3737
+   ]
+  },
+  "汎用AA/背景・風景": {
+   "n": 1985,
+   "line_minimal": 0.2025,
+   "wilson95": [
+    0.1854,
+    0.2208
+   ]
+  },
+  "汎用AA/衣装": {
+   "n": 199,
+   "line_minimal": 0.2362,
+   "wilson95": [
+    0.1825,
+    0.2998
+   ]
+  },
+  "汎用AA/軍事": {
+   "n": 1531,
+   "line_minimal": 0.4402,
+   "wilson95": [
+    0.4155,
+    0.4652
+   ]
+  }
+ },
+ "per_class_unweighted_sample": {
+  "line_minimal": {
+   "sampled": 18801,
+   "ink_share_median": 0.0243,
+   "envelope_blank_median": 0.7141,
+   "tone_share_median": 0.0656,
+   "outline_share_median": 0.5867,
+   "contour_idioms_per_100_median": 1.5625
+  },
+  "line_plus_tone": {
+   "sampled": 11790,
+   "ink_share_median": 0.0253,
+   "envelope_blank_median": 0.6762,
+   "tone_share_median": 0.4015,
+   "outline_share_median": 0.3684,
+   "contour_idioms_per_100_median": 0.9736
+  },
+  "tone_dominant": {
+   "sampled": 7373,
+   "ink_share_median": 0.0295,
+   "envelope_blank_median": 0.5817,
+   "tone_share_median": 0.6996,
+   "outline_share_median": 0.1922,
+   "contour_idioms_per_100_median": 0.3863
+  },
+  "dense_filled": {
+   "sampled": 15653,
+   "ink_share_median": 0.0404,
+   "envelope_blank_median": 0.5417,
+   "tone_share_median": 0.2,
+   "outline_share_median": 0.4667,
+   "contour_idioms_per_100_median": 0.6601
+  },
+  "text": {
+   "sampled": 510,
+   "ink_share_median": 0.0439,
+   "envelope_blank_median": 0.4165,
+   "tone_share_median": 0.0,
+   "outline_share_median": 0.6093,
+   "contour_idioms_per_100_median": 0.0
+  }
+ }
+}
