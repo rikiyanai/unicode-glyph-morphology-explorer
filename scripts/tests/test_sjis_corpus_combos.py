@@ -9,7 +9,10 @@
 #   - every rendered combination carries '#'/'.' rows for itself and its mirror;
 #   - the 15.5 mirror table maps as the skill states and is an involution
 #     on the swap pairs;
-#   - `glyph_families_viewer.py --mode sjis --dump` shows every rendered entry.
+#   - `glyph_families_viewer.py --mode sjis --dump` shows every rendered entry;
+#   - the AA-004 file (MLT crawl, train keys) keeps the AA-003 keys, pins its
+#     inputs, carries bounded page/slug coverage, and `--corpus aa004` loads it;
+#   - Accumulator coverage counts distinct pages and slugs (no font needed).
 # Nothing here is a runtime claim. The file is offline review data.
 #
 # Run with:
@@ -62,6 +65,113 @@ class TrackedDataset(unittest.TestCase):
             self.assertTrue(scc.is_outline(e["g"]), e["g"])
 
 
+DATA4 = ROOT / "assets/glyphs/corpus/aahub_aa004_train.sjis_combos.v1.json"
+
+
+class TrackedDatasetAA004(unittest.TestCase):
+    """AA-004: AAHub MLT crawl, train keys of the converter's aahub_mlt_split.json."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.d = json.loads(DATA4.read_text(encoding="utf-8"))
+        cls.d3 = json.loads(DATA.read_text(encoding="utf-8"))
+
+    def test_identities_are_pinned_and_training_only(self) -> None:
+        d = self.d
+        self.assertEqual(d["schema"], "sjis_corpus_combos.v1")
+        self.assertEqual(d["corpus"], "AA-004")
+        self.assertEqual(d["archive_commit"], "f498eb30678c753a2867f0a97ecc22561f54543e")
+        self.assertEqual(d["index_sha256"], "c7a350815c979cf133692057d1a2cdee64371d38c24feb95bebb01acd14d01f9")
+        self.assertEqual(d["split_sha256"], "983848da35bab64d91b59de02bb0d8c0998edfa0ec942d5588b7a485b6b52347")
+        self.assertEqual(d["font_sha256"], self.d3["font_sha256"], "same font as AA-003")
+        self.assertEqual(d["partition"], "train")
+        self.assertEqual((d["slugs"], d["mlt_pages"]), (10559, 10559))
+        self.assertEqual((d["pages"], d["pieces"]), (905073, 905073))
+        self.assertEqual(d["held_out_slugs_excluded"], 3422)
+        self.assertEqual(len(d["per_slug"]), d["slugs"])
+        self.assertEqual(sum(s["pages"] for s in d["per_slug"].values()), d["pages"])
+
+    def test_schema_keys_match_aa003(self) -> None:
+        # The viewer and the Y9-2 compiler read the AA-003 keys; AA-004 only adds,
+        # except that its input is pinned by index_sha256 (no MANIFEST.tsv).
+        self.assertEqual(set(self.d3) - set(self.d), {"manifest_sha256"})
+        for cat in ("idioms", "bigrams_outline", "stacks_outline", "top_glyphs"):
+            self.assertLessEqual(set(self.d3[cat][0]), set(self.d[cat][0]), cat)
+
+    def test_no_undecoded_character_references(self) -> None:
+        d = self.d
+        # A decoded '&amp;' is a real '&'; AA-003 keeps '&' below 0.0063 per line
+        # (it is not in its top 300; '#' at rank 183 has 2,886 in 457,065 lines).
+        amp = {g["g"]: g["n"] for g in d["top_glyphs"]}.get("&", 0)
+        self.assertLess(amp / d["lines"], 0.01)
+        for cat in ("idioms", "bigrams", "trigrams", "bigrams_outline", "trigrams_outline"):
+            for e in d[cat]:
+                self.assertNotIn("&#", e["g"], (cat, e["g"]))
+        for e in d["stacks"]:
+            self.assertNotIn("&", (e["upper"], e["lower"]), e)
+
+    def test_coverage_is_bounded_by_counts(self) -> None:
+        d = self.d
+        for cat in ("bigrams", "bigrams_outline", "stacks", "stacks_outline"):
+            for e in d[cat]:
+                self.assertLessEqual(e["slugs"], e["pages"], (cat, e))
+                self.assertLessEqual(e["pages"], min(e["n"], d["pages"]), (cat, e))
+                self.assertLessEqual(e["slugs"], d["slugs"], (cat, e))
+
+    def test_rendered_entries_have_rows_and_mirrors(self) -> None:
+        self.assertEqual({v["category"] for v in self.d["viewable"]},
+                         {"idiom", "bigram", "trigram", "stack", "band"})
+        for v in self.d["viewable"]:
+            for key in ("rows", "mirror_rows"):
+                self.assertTrue(all(set(r) <= {"#", "."} for r in v[key]), v["key"])
+                self.assertTrue(any("#" in r for r in v[key]), (v["key"], key))
+
+
+class _FlatMetrics:
+    """Every glyph 8 px wide: enough for centres() without a font."""
+
+    def adv(self, ch: str) -> float:
+        return 8.0
+
+
+class AccumulatorCoverage(unittest.TestCase):
+    def test_pages_and_slugs_count_distinct_occurrences(self) -> None:
+        acc = scc.Accumulator(_FlatMetrics(), coverage=True)
+        acc.add_page("s1", "／￣／￣\n＼＿\n")
+        acc.add_page("s1", "／￣\n")
+        acc.end_slug("s1")
+        acc.add_page("s2", "abc\n")
+        acc.end_slug("s2")
+        self.assertEqual(acc.bigrams["／￣"], 3)
+        self.assertEqual(acc.bigram_pages["／￣"], 2)
+        self.assertEqual(acc.bigram_slugs["／￣"], 1)
+        # ／ over ＼ at 0 px on page 1 only
+        self.assertEqual(acc.stacks[("／", "＼", 0)], 1)
+        self.assertEqual((acc.stack_pages[("／", "＼", 0)], acc.stack_slugs[("／", "＼", 0)]), (1, 1))
+        self.assertEqual(acc.slug_pages, {"s1": 2, "s2": 1})
+        self.assertEqual((acc.pages, acc.lines_total, acc.single_line_pages), (3, 4, 2))
+        self.assertEqual(acc.slug_top_bigrams["s1"][0], ("／￣", 3))
+
+    def test_aa004_piece_text_decodes_character_references(self) -> None:
+        stored = "／&#8201;￣&#9617;&#x2588;\n＼＿&#65374;\n"
+        text = scc.piece_text(stored)
+        self.assertEqual(text, "／ ￣░█\n＼＿～\n")
+        acc = scc.Accumulator(_FlatMetrics(), coverage=True)
+        acc.add_page("k", text)
+        acc.end_slug("k")
+        self.assertEqual(acc.glyphs[" "], 1)
+        self.assertEqual((acc.glyphs["&"], acc.glyphs["#"], acc.glyphs[";"]), (0, 0, 0))
+        counted = list(acc.bigrams) + list(acc.trigrams) + [k for s in acc.stacks for k in s[:2]]
+        self.assertFalse(any(ch in g for g in counted for ch in "&#;"), counted)
+
+    def test_coverage_off_leaves_counters_empty(self) -> None:
+        acc = scc.Accumulator(_FlatMetrics())
+        acc.add_page("s", "／￣\n＼＿\n")
+        acc.end_slug("s")
+        self.assertEqual(acc.bigrams["／￣"], 1)
+        self.assertFalse(acc.bigram_pages or acc.stack_pages)
+
+
 class MirrorTable(unittest.TestCase):
     def test_skill_swap_pairs(self) -> None:
         self.assertEqual(scc.mirror("⌒ヽ"), ("ノ⌒", True))
@@ -82,6 +192,23 @@ class ViewerLoader(unittest.TestCase):
                               "--mode", "sjis", "--dump"], capture_output=True, text=True, check=True).stdout
         self.assertIn(f"families={n}", out)
         self.assertIn("⌒ヽ  mirror ノ⌒", out)
+
+    def test_corpus_flag_selects_aa004(self) -> None:
+        n = len(json.loads(DATA4.read_text(encoding="utf-8"))["viewable"])
+        out = subprocess.run([sys.executable, str(ROOT / "scripts/glyph_families_viewer.py"),
+                              "--mode", "sjis", "--corpus", "aa004", "--dump"],
+                             capture_output=True, text=True, check=True).stdout
+        self.assertIn(f"families={n}", out)
+        self.assertIn("source: AA-004 AAHub train, archive f498eb3, 10,559 MLT pages / 905,073 pieces", out)
+
+
+class CompareScript(unittest.TestCase):
+    def test_compare_prints_three_tables(self) -> None:
+        out = subprocess.run([sys.executable, str(ROOT / "scripts/sjis_corpus_compare.py"), str(DATA), str(DATA4),
+                              "--top", "3"], capture_output=True, text=True, check=True).stdout
+        for cat in ("idioms", "bigrams_outline", "stacks_outline"):
+            self.assertIn(f"#### {cat}", out)
+        self.assertIn("AA-004: 10,559 slugs, 905,073 pages", out)
 
 
 if __name__ == "__main__":

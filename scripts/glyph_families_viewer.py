@@ -90,7 +90,11 @@ MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 COMBINATIONS = gf.REPO_ROOT / "assets" / "glyphs" / "authored" / "glyph_combinations.v1.json"
 # Corpus-derived Shift_JIS AA combinations (AAHub training slugs), written and
 # rendered by scripts/sjis_corpus_combos.py. Tracked, so no build step is needed.
-SJIS_CORPUS = gf.REPO_ROOT / "assets" / "glyphs" / "corpus" / "aahub_aa003_train.sjis_combos.v1.json"
+SJIS_CORPORA = {
+    "aa003": gf.REPO_ROOT / "assets" / "glyphs" / "corpus" / "aahub_aa003_train.sjis_combos.v1.json",
+    "aa004": gf.REPO_ROOT / "assets" / "glyphs" / "corpus" / "aahub_aa004_train.sjis_combos.v1.json",
+}
+SJIS_CORPUS = SJIS_CORPORA["aa003"]
 # the original four are REQUIRED for a usable catalog; topo is optional (present
 # only when the catalog was built after the global topology cache existed), so a
 # pre-topo catalog stays valid and simply shows no topo families.
@@ -436,22 +440,31 @@ SJIS_CATEGORY_LABEL = {"idiom": "15.5 idiom", "bigram": "touching pair", "trigra
                        "stack": "vertical stack", "band": "tone band"}
 
 
-def load_sjis_corpus_families(c: ga.Corpus, limit: int = 0, mode: str = "sjis") -> list[dict]:
+def load_sjis_corpus_families(c: ga.Corpus, limit: int = 0, mode: str = "sjis",
+                              corpus: str = "aa003") -> list[dict]:
     """Corpus-derived proportional Shift_JIS combinations, in category and rank order.
 
     Rows are pre-rendered in Saitamaar 16 px on the font's advance lattice by
     scripts/sjis_corpus_combos.py, so a combination is drawn at its true pixel
     offsets rather than on the 8/16 px terminal cell grid. Counts are over the
-    AAHub training slugs of the pinned archive snapshot named in the file."""
-    if not SJIS_CORPUS.exists():
+    AAHub training slugs of the pinned archive snapshot named in the file.
+    corpus selects the dataset: aa003 (slug pages, default) or aa004 (MLT pages)."""
+    path = SJIS_CORPORA[corpus]
+    if not path.exists():
         return []
     try:
-        d = json.loads(SJIS_CORPUS.read_text(encoding="utf-8"))
+        d = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
-        sys.stderr.write(f"bad SJIS corpus data {SJIS_CORPUS}: {exc}\n")
+        sys.stderr.write(f"bad SJIS corpus data {path}: {exc}\n")
         return []
-    source = (f"AAHub train, archive {d['archive_commit'][:7]}, {d['slugs']} slugs / {d['pages']} pages, "
-              f"{d['font']} {d['px']} px")
+    units = d.get("unit_labels", {"slug": "slugs", "page": "pages"})
+    if "unit_labels" in d:
+        source = (f"{d.get('corpus', '')} AAHub train, archive {d['archive_commit'][:7]}, "
+                  f"{d['slugs']:,} {units['slug']} / {d['pages']:,} {units['page']}, "
+                  f"{d['font']} {d['px']} px")
+    else:
+        source = (f"AAHub train, archive {d['archive_commit'][:7]}, {d['slugs']} slugs / {d['pages']} pages, "
+                  f"{d['font']} {d['px']} px")
     seen: dict[str, int] = {}
     fams: list[dict] = []
     for v in d.get("viewable", []):
@@ -465,7 +478,7 @@ def load_sjis_corpus_families(c: ga.Corpus, limit: int = 0, mode: str = "sjis") 
         if v.get("pooled_n") is not None:
             bits.append(f"with mirror {v['pooled_n']:,}")
         if v.get("pages") is not None:
-            bits.append(f"{v['pages']:,} pages / {v['slugs']} slugs")
+            bits.append(f"{v['pages']:,} {units['page']} / {v['slugs']} {units['slug']}")
         if v.get("dx_px") is not None:
             bits.append(f"centre offset {v['dx_px']:+d} px")
         if not v.get("mirror_exact", True):
@@ -773,6 +786,9 @@ def main() -> int:
                          "selected axis can be verified from a pipe or a test")
     ap.add_argument("--limit", type=int, default=0,
                     help="distract / combo: keep only the top N rows (per measured shape for combo; 0 = all)")
+    ap.add_argument("--corpus", choices=sorted(SJIS_CORPORA), default="aa003",
+                    help="SJIS corpus dataset for --mode sjis / combo: aa003 (AAHub slug pages, default) "
+                         "or aa004 (AAHub MLT crawl, train keys)")
     args = ap.parse_args()
     c = ga.Corpus()
     if args.saved and args.foliage_strokes:
@@ -792,10 +808,10 @@ def main() -> int:
     elif args.mode in ("combo", "seam"):
         fams = load_combination_families(c, mode="combo")
         fams.extend(load_seam_families(c, args.limit))
-        fams.extend(load_sjis_corpus_families(c, args.limit, mode="combo"))
+        fams.extend(load_sjis_corpus_families(c, args.limit, mode="combo", corpus=args.corpus))
         initial_mode = "combo"
     elif args.mode == "sjis":
-        fams = load_sjis_corpus_families(c, args.limit)
+        fams = load_sjis_corpus_families(c, args.limit, corpus=args.corpus)
         initial_mode = "sjis"
     else:
         fams = load_saved_families(c, args.block) if args.saved else load_default_families(c, args.block, args.limit)

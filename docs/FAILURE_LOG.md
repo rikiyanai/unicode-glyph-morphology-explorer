@@ -294,3 +294,193 @@
 - **Stage:** Implemented and Executed. The dataset and viewer axis are
   Verified by tests and `--dump`. There is no interactive TTY review by
   the operator yet, so not Accepted.
+
+### 2026-09-30 — Shift_JIS combinations over the AA-004 MLT crawl (TRAIN keys), `--corpus aa004`
+
+- **Request:** measure the same section-15 combinations over the AA-004
+  AAHub MLT crawl, train partition only, and make the result viewable.
+  Comparison is counts only; style analysis belongs to another lane.
+- **Producer:** `scripts/sjis_corpus_combos.py --corpus aa004`. The counting
+  loop moved into an `Accumulator` class that is fed one page at a time;
+  per-slug bigrams are reduced to their top 8 when the slug ends. AA-003
+  stays the default mode.
+- **Command:**
+  `python3 scripts/sjis_corpus_combos.py ~/Projects/ascii-art-archive
+  ~/Projects/screenshot-of-ascii-art-to-txt-converter/data/aahub_mlt_split.json
+  ~/Projects/screenshot-of-ascii-art-to-txt-converter/fonts/Saitamaar-Regular.ttf
+  --corpus aa004 --out assets/glyphs/corpus/aahub_aa004_train.sjis_combos.v1.json`
+- **Inputs:**
+  - Archive: Git blobs at `f498eb30678c753a2867f0a97ecc22561f54543e`, read
+    from `collections/aahub-mlt/index.jsonl` and `<kk>/<key>.json.gz`.
+  - `index.jsonl` sha256 `c7a35081…4d01f9`. The script checks this hash
+    against the split's `index_sha256` and stops on a mismatch.
+  - Split: `aahub_mlt_split.json` sha256 `983848da…b52347`, `train_keys`
+    only. The script checks that train and held-out are disjoint, that
+    together they make up the whole index, and that the per-key piece
+    counts match the index. Held-out keys are never read.
+  - Font: the converter's `fonts/Saitamaar-Regular.ttf` (sha256
+    `8f8c9b6e…35890`), the same file that rendered the AA-003 dataset. It
+    was kept so that the two datasets are comparable and AA-003 stays byte
+    for byte reproducible.
+    - The archive's `collections/aahub/Saitamaar.ttf` (sha256
+      `592bf6be…3a28`, FontForge build) is the font that reproduces AAHub's
+      PNGs pixel for pixel. The coordinator verified this.
+    - `Saitamaar-Regular.ttf` is a ttfautohint build of the same design. It
+      has the same cmap (10,125 code points) and the same advances. 130
+      glyphs, all rare accented Latin or Cyrillic, render differently, by at
+      most 12 px at 16 px bilevel (coordinator measurement).
+    - With the archive font, the AA-003 rerun differs from the tracked file
+      in `font_sha256` and in some rendered rows. The run summary was
+      identical: pages, lines, page tags and whitespace law. The full diff
+      of counts was not checked.
+- **Defect found and fixed in this entry (rework 1):**
+  - The first AA-004 output (sha256 `93b7379d…6daa`, never committed)
+    counted pieces exactly as stored.
+  - About 3 % of stored pieces keep numeric HTML character references:
+    `&#8201;` thin space, `&#8198;`, `&#8202;`, `&#9617;` ░, `&#x2588;` █,
+    `&#65374;` ～, and others. AAHub's viewer decodes these references, and
+    AA-003's text contains the decoded characters: there is no literal `&#`
+    in any of the 32,950 AA-003 files (coordinator check).
+  - As a result, `&#` appeared as outline bigram rank 29 (795,260 times),
+    `&` was counted 799,326 times and `#` 850,794 times, and `;` was
+    inflated.
+  - Fix: the aa004 mode now decodes every piece with
+    `piece_text(v) = html.unescape(v)` before any counting or rendering.
+    This is the converter's piece definition (`scripts/mlt_pairs.py
+    piece_text`, converter `4c194a3`).
+  - A new test checks that a piece containing `&#8201;` counts U+2009 and
+    never counts `&`, `#` or `;`. A dataset test checks that no idiom or
+    bigram contains `&#`.
+- **Output (durable):** `assets/glyphs/corpus/aahub_aa004_train.sjis_combos.v1.json`
+  - sha256 `58ad158ab82a2c622509e3df3e3e5448eb46c1ce6a8f7e40f907b5ea2c8965c8`,
+    5,419,148 bytes.
+  - `input_set_sha256` `2b185251…21789` over the 10,559 gz blobs. This value
+    is unchanged from the first output: the blobs are the same, and only
+    the decoding changed.
+  - The output also has a new `piece_text` field.
+  - Same schema as AA-003, with these differences:
+    - `manifest_sha256` is replaced by `index_sha256`.
+    - Added fields: `corpus`, `collection`, `split_schema`, `units`,
+      `unit_labels`, `mlt_pages`, `pieces`, `single_line_pieces` and
+      `coverage`.
+    - Bigram and stack entries carry `pages` and `slugs`: the number of
+      distinct pages and slugs that contain the combination.
+  - Units: slug = MLT page (index key); page = one `aa[]` piece. Section
+    headers are included: 98,757 pieces have one line.
+- **Counts:** 10,559 MLT pages, 905,073 pieces, 18,743,835 lines,
+  1,007,823,607 glyphs (7,950 distinct). Held-out keys excluded: 3,422.
+  Page tags: 213,639 outline, 265,579 tone, 425,794 mixed, 61 empty.
+  - After decoding, `&` is not in the top 300 glyphs, and `#` is 55,540
+    (2.96 per 1,000 lines; AA-003 6.31).
+  - Decoded characters that now appear: U+2009 47,926, U+2006 67,280,
+    U+200A 37,445, `░` 78,631, `█` 101,415.
+  - A scan of the idiom, bigram, trigram and stack lists and of the
+    rendered keys found no `&`, `&#` or digit-`;` artifact.
+  Whitespace law: 22,151 adjacent U+0020 pairs and 11,321 line-leading
+  U+0020. The top space spellings match AA-003 within 0.6 points: `F h`
+  15.7 %, `FF` 12.3 %, `FF h` 7.8 %, `FFF` 6.6 %, `h F h` 4.8 %.
+- **Runtime:** the corrected run took 3,707 s wall time (3,089 s user) in a
+  single process, with peak RSS 523 MB. The first run took 4,383 s.
+- **Checks:**
+  - AA-003 is byte-identical after the refactor and after the rework. The
+    command was rerun into a scratch path with the pinned font; the result
+    had sha256 `61b0537d…58f8258` and `cmp` reported no difference from the
+    tracked file.
+  - The run reported 905,073 pieces, which equals the split's train piece
+    count.
+  - `python3 -m pytest scripts/tests/test_sjis_corpus_combos.py -q`:
+    16 passed. The new tests cover the AA-004 identities and counts, the
+    AA-003 key superset, coverage bounds, the absence of undecoded
+    references, `piece_text` decoding, the viewer `--corpus aa004` dump,
+    the compare script, and Accumulator coverage with a font-free stub.
+  - `--mode sjis --corpus aa004 --dump` gave 435 families.
+    `--mode combo --corpus aa004 --dump` gave 1,718.
+- **Viewer:** `./run-families.sh --mode sjis --corpus aa004`. `--corpus`
+  also applies to `--mode combo`. The default is `aa003`, and the default
+  output is unchanged.
+- **Comparison:** `scripts/sjis_corpus_compare.py A.json B.json` (new) prints
+  count, rate per 1,000 lines, pages/slugs and rank per file.
+  - AA-003 has no bigram or stack coverage in its tracked file. For this
+    comparison, AA-003 was rerun with `--coverage` into a scratch file
+    (sha256 `a5d285ae…70c34`). Its counts are identical to the tracked
+    file.
+  - In the tables, AA-003 "slugs" are its 114 slugs and AA-004 "slugs" are
+    its 10,559 MLT pages.
+  - Rows show n (rate per 1,000 lines; pages / slugs).
+  - **Idioms (top 8 by AA-004 rank; rank in brackets).**
+
+    | idiom | AA-004 | AA-003 |
+    |---|---|---|
+    | `::` [1/1] | 53,211,301 (2,838.9; 549,634 / 9,884) | 1,095,013 (2,395.8; 12,076 / 113) |
+    | `:.` [2/2] | 18,521,357 (988.1; 422,692 / 9,515) | 359,111 (785.7; 8,772 / 113) |
+    | `.:` [3/3] | 17,708,768 (944.8; 395,763 / 9,422) | 351,710 (769.5; 8,323 / 113) |
+    | `;;` [4/4] | 3,987,537 (212.7; 140,976 / 7,824) | 119,323 (261.1; 4,307 / 113) |
+    | `,,` [5/5] | 1,557,356 (83.1; 301,378 / 9,005) | 57,030 (124.8; 8,819 / 113) |
+    | `_,` [6/6] | 1,282,616 (68.4; 427,142 / 9,782) | 34,116 (74.6; 10,479 / 113) |
+    | `'´` [7/7] | 724,745 (38.7; 271,472 / 8,972) | 16,445 (36.0; 6,055 / 113) |
+    | `｀ヽ` [8/9] | 689,829 (36.8; 303,001 / 9,140) | 14,348 (31.4; 6,578 / 113) |
+
+    Outline idioms in AA-004:
+    - `⌒ヽ`: 289,610 (181,747 pieces / 8,556 pages)
+    - `／￣`: 309,005 (8,492 pages)
+    - `＼＿`: 343,140 (8,430 pages)
+    - `_ノ`: 294,110 (8,723 pages)
+    - `／￣＼`: 26,787 (4,627 pages)
+    - `＼＿／`: 21,076 (4,376 pages)
+    - `ゝ__ノ`: 755 (471 pages)
+
+    Largest idiom rank move (AA-003→AA-004): `从` 17→11. All other 35
+    idioms move by at most 2 ranks, for example `⌒ヽ` 14→16 and `／￣`
+    12→14.
+  - **Outline bigrams (top 8 by AA-004 rank).**
+
+    | bigram | AA-004 | AA-003 |
+    |---|---|---|
+    | `//` [1/1] | 8,428,910 (449.7; 393,770 / 9,649) | 176,126 (385.3; 8,327 / 113) |
+    | `i:` [2/5] | 6,931,536 (369.8; 274,487 / 8,751) | 106,623 (233.3; 4,963 / 112) |
+    | `:i` [3/6] | 6,727,185 (358.9; 276,437 / 8,787) | 103,251 (225.9; 4,893 / 112) |
+    | `ﾆﾆ` [4/9] | 4,470,125 (238.5; 196,151 / 7,956) | 69,928 (153.0; 4,422 / 112) |
+    | `__` [5/4] | 4,008,881 (213.9; 619,124 / 10,225) | 110,194 (241.1; 15,683 / 113) |
+    | `ニニ` [6/13] | 3,856,325 (205.7; 130,583 / 7,317) | 54,753 (119.8; 2,888 / 109) |
+    | `\|:` [7/8] | 3,632,581 (193.8; 406,921 / 9,472) | 77,190 (168.9; 7,807 / 113) |
+    | `/:` [8/14] | 3,358,722 (179.2; 468,700 / 9,596) | 52,935 (115.8; 8,317 / 112) |
+
+    `＿＿` falls from 2 to 11 and `￣￣` from 3 to 12. Their rates fall from
+    267.4 and 249.6 to 135.4 and 131.5 per 1,000 lines.
+
+    The top 8 outline bigrams are unchanged by decoding.
+
+    Largest moves within the top 50 of either list:
+    - Rose: `ニﾆ` 83→37, `:{` 68→46, `{:` 53→34, `}:` 58→39, `/|` 67→50,
+      `:!` 64→49.
+    - Fell: `|＿` 37→119, `_|` 35→83, `|_` 39→84, `――` 23→42, `-'` 50→68,
+      `──` 18→35.
+  - **Outline stacks (top 8 by AA-004 rank).**
+
+    | stack | AA-004 | AA-003 |
+    |---|---|---|
+    | `\|` over `\|` +0 [1/1] | 7,578,106 (404.3; 555,707 / 10,072) | 314,066 (687.1; 13,994 / 114) |
+    | `/` over `/` +0 [2/2] | 2,200,912 (117.4; 210,087 / 8,777) | 52,788 (115.5; 4,544 / 113) |
+    | `i` over `i` +0 [3/3] | 1,756,323 (93.7; 147,943 / 7,939) | 39,877 (87.3; 3,210 / 112) |
+    | `\|` over `\|` +1 [4/5] | 955,477 (51.0; 270,602 / 9,064) | 24,976 (54.6; 6,108 / 113) |
+    | `/` over `/` +1 [5/7] | 941,424 (50.2; 169,369 / 8,456) | 18,638 (40.8; 3,435 / 111) |
+    | `l` over `l` +0 [6/4] | 930,832 (49.7; 169,572 / 8,304) | 29,379 (64.3; 3,861 / 113) |
+    | `/` over `/` −1 [7/8] | 853,038 (45.5; 138,703 / 8,274) | 16,684 (36.5; 2,807 / 112) |
+    | `i` over `i` +1 [8/13] | 847,744 (45.2; 107,269 / 7,518) | 13,603 (29.8; 2,046 / 111) |
+
+    These stack counts are 0.2–0.6 % higher than in the first, undecoded
+    output. The cause was not measured.
+
+    Largest moves within the top 50 of either list:
+    - Rose: `ニ` over `ニ` −1 px 106→47 and +1 px 88→48; `ﾆ` over `ﾆ`
+      +2 px 50→27, −3 px 61→40, −1 px 58→38, +3 px 54→36.
+    - Fell: `□` over `□` 46→280, `￣` over `＿` +0 44→164, `＿` over `＿`
+      45→144, `┃` over `┃` 47→141, `│` over `│` 26→84, `=` over `=` 42→77.
+  - The full tables can be reproduced by running
+    `python3 scripts/sjis_corpus_compare.py <aa003 --coverage output>
+    assets/glyphs/corpus/aahub_aa004_train.sjis_combos.v1.json --top 8 --moves 6`.
+    The output sha256 is `88e6e7a1…ee06`.
+- **Stage:** Implemented and Executed. The dataset, the viewer selection and
+  the comparison are Verified by tests and `--dump`. The operator has not
+  reviewed them in an interactive TTY, so not Accepted. The Y9-2 compiler
+  still pins only the AA-003 file.
