@@ -159,11 +159,53 @@ python3 scripts/sjis_corpus_combos.py ARCHIVE SPLIT.json Saitamaar-Regular.ttf \
     --out assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json
 ```
 
+### Browse combinations in source context
+
+The standalone viewer also has a curated source-context axis. It keeps exact
+multi-row source passages, paired-artifact provenance, annotation scope, and
+interpretation limits beside the combination vocabulary:
+
+```sh
+python3 scripts/glyph_families_viewer.py --mode context --dump
+./run-families.sh --mode context
+```
+
+`--mode combo` includes these context records alongside authored seeds,
+measured candidates, and the selected AAHub corpus. Use `[` / `]` in the
+interactive viewer to scroll a selected context record; `--dump` prints all
+source rows and provenance without opening a TTY.
+
+The terminal pane is **textual context, not a native Saitamaar rendering**:
+terminal column widths do not preserve its proportional advances. Use the
+record's paired native PNG together with these exact rows before judging glyph
+fit, joins or negative shapes. Text-only candidates remain text-only.
+
+The tracked records are source evidence, not universal glyph meanings or
+runtime proof. T#7 keeps its three separately boxed operator regions (branch
+marks, falling marks, and root/patchy-ground marks) distinct. S#424 (the statue
+page, not church C) preserves
+the whole-piece `yes` verdict while stating that there are no region rectangles;
+its local punctuation reading is not a region-level approval. C#126 and C#99
+retain source rows and reconstruction/observation status. C#135 is explicitly
+text-only because no paired native PNG was located; the repeated `人_` record
+is also raw-text-only and its subject meaning remains unassigned.
+
+Hand evidence preserves open spaces and ordered turntable frame records. Its
+interior fold/joint comparison is a drawn analogy only, not a proven
+mathematical suggestive-contour or ridge family. The frame review is a static
+ordered construction-study frame inspection, not playback of the original AAHub
+drawing or current MAIN. Contextual `focus length` counts codepoints in a quoted
+form, not its pixel width or the full multi-row construction's extent. The historical old-typist
+20-glyph / 38-degree limitation is not presented as current MAIN behavior.
+Likewise, AA-003 and AA-004 counts for `/⌒ヽ` are kept separate from the
+bounded source example and are not semantic labels.
+
 ## Included data
 
 The repository includes the morphology browser, the read-only family viewer, the
-selected saved-family registry, the glyph combination review data, the candidate
-enumerator, a committed combination-gallery snapshot, and the pinned font chain
-used for rendering. It does not include the full Asciicker engine or runtime.
+selected saved-family registry, glyph-combination and contextual-source review
+data, the candidate enumerator, a committed combination-gallery snapshot, and
+the pinned font chain used for rendering. It does not include the full Asciicker
+engine or runtime.
 
 Font identities, copyright metadata, license mapping, and license texts are recorded in [docs/font-provenance.md](docs/font-provenance.md) and `docs/licenses/`. Source-code identities are recorded in [docs/code-provenance.md](docs/code-provenance.md).

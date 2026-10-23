@@ -1,0 +1,492 @@
+{
+  "schema": "glyph_morphology.contextual_combo_evidence.v1",
+  "version": 1,
+  "title": "Context-rich source records for multi-row glyph constructions",
+  "scope": "Curated read-only evidence for browsing source-art context beside glyph-combination candidates. No atlas, renderer, runtime vocabulary, or source artwork is changed.",
+  "claim_boundaries": [
+    "A construction record is not a universal glyph meaning or one-glyph lookup.",
+    "Corpus frequency, drawn analogy, operator annotation, source-content reconstruction, mathematical family, and historical implementation limit are distinct evidence types.",
+    "AAHub occurrence counts describe their pinned corpus and unit; they do not prove meaning, quality, intent, or runtime use.",
+    "The historical old-typist 20-glyph / 38-degree constraints do not describe current MAIN and do not constrain these source examples."
+  ],
+  "families": [
+    {
+      "id": "t7-texture-defined-regions",
+      "title": "T#7 — branch texture, falling marks, and separate root/ground region",
+      "pattern_family": "texture-defined-boundaries",
+      "focus_forms": ["メｿ", "ヾ", "从", "从 ゝ,,"],
+      "provenance": {
+        "source_id": "9636c2401facd04b90778f4bfea720c3:7",
+        "text_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-remake-20261015/sources/tree-007.txt",
+        "image_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-remake-20261015/sources/tree-007.png",
+        "annotation_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-remake-20261015/sources/tree-007-note.json",
+        "source_image_sha256": "068b66a8af0ff1ad9b847aa58a8b8a69184bc1fefdc1df8f401fc77a717488bc",
+        "source_text_sha256_file": "09f6297f7e7964af8259defb2f22e5a82bf26ae367d2ce334c00d3bd1e7a58d8",
+        "source_text_sha256_utf8_rstrip_lf": "3d63cfb4f2d103ecb6b44198b5d34206b602f15e6077fa0d446d470e328471ea",
+        "inspected_artifacts": ["paired native PNG", "paired TXT", "operator region-note JSON"],
+        "operator_verdict": "yes for the whole tree piece",
+        "operator_note": "",
+        "annotation_status": "three separately boxed operator regions; labels and row spans are preserved below"
+      },
+      "passages": [
+        {
+          "id": "t7-branch-leaf-r2",
+          "line_start": 3,
+          "operator_region": "r2",
+          "operator_label": "minimal glyphs showing branches going up into leaf",
+          "operator_rect_px": {"x": 13, "y": 51, "w": 61, "h": 71},
+          "operator_excerpt_rows": [
+            "2: ヾ ; ;\";;/\" ;",
+            "3:  \"i \"; ;ヾ; ;",
+            "4: i;, メｿ　ヾ; ",
+            "5: i;, |ｿ　　 \"",
+            "6: l;: |"
+          ],
+          "rows": [
+            "ヾ ; ;\";;/\" ; ;ヾ　;ヾ \"\"",
+            "; \"i \"; ;ヾ; ;ヾ; ;ﾒヾ　　　　　　　　　ﾞ　　　　　　　　⊂⊃",
+            "ii;, メｿ　ヾ; ;ゞ　\"　　　ﾞ",
+            "|i;, |ｿ　　 \"\"　　　　　　　　　　　　　　　　　　　　　　　ﾞ",
+            "Il;: |"
+          ]
+        },
+        {
+          "id": "t7-falling-leaves-r3",
+          "line_start": 2,
+          "operator_region": "r3",
+          "operator_label": "falling leaves , good ",
+          "operator_rect_px": {"x": 127, "y": 61, "w": 158, "h": 64},
+          "operator_excerpt_rows": [
+            "2: \"\"",
+            "3: 　　　　　　　　　ﾞ　　　　　　",
+            "4: 　　ﾞ",
+            "5: 　　　　　　　　　　　　　　　"
+          ],
+          "rows": [
+            "\"ゞ ; ; ; ゞ ; ;ヾ ; ; ヾ ;ゞ　　　　　⊂⊃",
+            "ヾ ; ;\";;/\" ; ;ヾ　;ヾ \"\"",
+            "; \"i \"; ;ヾ; ;ヾ; ;ﾒヾ　　　　　　　　　ﾞ　　　　　　　　⊂⊃",
+            "ii;, メｿ　ヾ; ;ゞ　\"　　　ﾞ"
+          ]
+        },
+        {
+          "id": "t7-root-ground-r1",
+          "line_start": 8,
+          "operator_region": "r1",
+          "operator_label": "root plus patchy grass, good",
+          "operator_rect_px": {"x": 15, "y": 141, "w": 325, "h": 103},
+          "operator_excerpt_rows": [
+            "7: ｉ;: |　 ﾞ",
+            "8: !;; |",
+            "9: Ｉ;; |",
+            "10: 从 ゝ,,",
+            "11: \"\"\"\"",
+            "12: 　　　''\"\"\" \"\"''\"\"\"''　　''\"\"\"\"\"\"''　　''\"\"\" \"\"\"\"''"
+          ],
+          "rows": [
+            "!ｉ;: |　 ﾞ",
+            "|!;; |",
+            "IＩ;; |",
+            "从 ゝ,,",
+            "\"\"\"\"",
+            "　　　''\"\"\" \"\"''\"\"\"''　　''\"\"\"\"\"\"''　　''\"\"\" \"\"\"\"''"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The exact native page and operator region boxes keep branch marks, falling marks, and root/patchy-ground marks separate. This is a texture-defined boundary in one drawing, not one generic tone field.",
+        "drawn_analogy": "The operator uses local words branches, leaf, falling leaves, root, and grass; no analogy beyond those region labels is added.",
+        "mathematical_family": "Not assigned; no mathematical contour or ridge family was tested.",
+        "historical_implementation_limit": "This is source-art evidence only. It does not establish current MAIN behavior or an implementation alphabet."
+      }
+    },
+    {
+      "id": "c424-bounded-punctuation-pockets",
+      "title": "S#424 — bounded dot/colon cues in a whole-piece yes-marked reference",
+      "pattern_family": "bounded-punctuation-in-local-form",
+      "focus_forms": [".", ":", "人", "川"],
+      "provenance": {
+        "source_id": "61c3c2f5b2de9783de0981411fba022c:424",
+        "text_path": "/Users/r/Projects/trueff-shallot/.cache/qual/aahub/61c3c2f5-424.txt",
+        "image_path": "/Users/r/Projects/trueff-shallot/.cache/qual/aahub/61c3c2f5-424.png",
+        "verdict_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/verdicts.jsonl",
+        "source_image_sha256": "e66ec2f6809321fabd98d92f289fdfdb40fd2da7411335cbe65cada9f0f2bdfa",
+        "source_text_sha256_file": "cc54d067d709b448d6f911be068e9b1f4a53e26913757e4072673cb20765ac02",
+        "source_text_sha256_utf8_rstrip_lf": "14ba64ca98e6c35f857b3b8dbb762f01ec3904b3faf52fcaea3a240c2ce64fb1",
+        "inspected_artifacts": ["paired native PNG", "paired TXT", "whole-piece verdict record"],
+        "operator_verdict": "yes for the whole piece (page index424), not the full AAHub page",
+        "operator_note": "",
+        "operator_rects": [],
+        "annotation_status": "no region rectangles or region-level operator labels"
+      },
+      "passages": [
+        {
+          "id": "c424-body-and-fold-context",
+          "line_start": 5,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "　　　　　　　　　　　　　　,'.: :: .,' 　 　 人　　 ｀l 　 |",
+            "　　　　　　 　 　 　 　 　 ,.: .::　l=-‐ ´ 　 ｀ ｰミl 　 !",
+            "　　　　　　　　　　 　 　 .l:::: :. ;'　＿ 　　　＿｀ l 　ﾊ",
+            "　　　　　　　　　　　　　 ｌ::::::::｜\u0060＝'ヽ　'´＝'　! :: :..',",
+            "　　　　　　　　　　 　 　 ! :: : ｜　 　.::}　 　 　 .! :: ::｜",
+            "　　　　 　 　 　 　 　 　 l :: ::　ﾄ､.　　::し 　 　 /:! :: ::ﾊ",
+            "　　　　　　　　 　 　 　 ,' :: ::　川:. 、 ｀-´ 　.ｲ ::ｌ :: ::　',",
+            "　　　　　　　 　 　 　 ./　:: :. ,' ｌ l ::::... - :::: 　| :::| :: ::　ﾍ",
+            "　　　　　　　　 　 　 / 　 :: :.l　!ﾘ::::::::::'　　　 ｌ　::! :: :　　ゝ、",
+            "　　　　　　　　 　 ／.　　 :　:!: ;'ヽ::　　　　 ｲ,! 　:! : :. 　 　 ＼",
+            "　　 　 　 　 　 ／.:　:　　 :　:l il ::.、｀ - - ' / } .::.|　 ::.　 : :　　＼",
+            "　　　　　　 .／ .:　.::　　　:　,'.: ゝ、｀ｰ - イ / .:　|　 :::　 :.:.　　　 ヽ",
+            "　　　　　　/　.:　 .::　:. 　 :: l:i　::　ﾄ､: : : ... ｲ　::.　!　 :::.　::　　　 　 ﾍ",
+            "　　 　 　 /　.:　 .::　 .:　　:: l:l . :: ﾉ:. ヽ イ.:人　:..｜　::::　:　　　　　　',",
+            "　 　 　 ./　.:　 .::　　:: 　 ::: |:l　::（::::.　　.::　　ヽ :. l 　 ::: .:　 :　　 : .　 ｌ"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Small dot/colon-like punctuation groups sit within longer face, garment, and fold boundaries; the paired raster shows their local bounded role among open paper/face areas.",
+        "drawn_analogy": "Any face, garment, or fold reading here is a local visual observation, not a region label supplied by the operator.",
+        "mathematical_family": "Not assigned; punctuation has not been proven to be a mathematical contour or ridge.",
+        "historical_implementation_limit": "Whole-piece yes does not mean each dot/colon cue was individually approved, nor does it establish a runtime rule."
+      }
+    },
+    {
+      "id": "c126-framed-punctuation-and-y-turn",
+      "title": "C#126 — punctuation handoff and asymmetric Y-crown opening",
+      "pattern_family": "contextual-joins-and-caps",
+      "focus_forms": ["∨／:x=ﾐ", "Ｙ＾Ｖ"],
+      "provenance": {
+        "source_id": "C#126",
+        "text_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-walk-pan-20261015/sources/reference-126.txt",
+        "image_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-walk-pan-20261015/sources/reference-126.png",
+        "construction_record_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/source/screenshot-constructions-20261016.json",
+        "archive_piece_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+        "archive_piece_index": 126,
+        "source_image_sha256": "013f3ffe3c682d7347b70d713a44e98219347a63d9e82a3ae8e5d2aa5cac902f",
+        "source_text_sha256_file": "eb928ed632f74a4bdc414d13aca76337a74f644a1fe06f53e43b9578b6834c17",
+        "archive_piece_text_sha256_utf8_rstrip_lf": "6479c022ef410d4f4fedeb894c62bb611bfe70c0d59ab7abbc5cf78ca3f48d00",
+        "inspected_artifacts": ["paired PNG", "paired TXT", "screenshot-construction record"],
+        "annotation_status": "no operator-region annotation located",
+        "construction_record_status": "source-content correspondence checked against reconstructed full drawing; not original-pixel identity"
+      },
+      "passages": [
+        {
+          "id": "c126-punctuation-handoff",
+          "line_start": 5,
+          "source_record_lines": [5, 7],
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "::::::/:/ﾍ ∧j{::::i{/^ヽ :/:/　 .:.|:::|::/∧: : : ＼ |: ‘,　 / :／::::: : \u0060、.:｀、: : :",
+            ":::/:/　 ‘,:∧:::j[　　 |/:/　 .:.:.|: :|:::::::∧:://　＼: :∨／:x=ﾐ.:.:/.:.\u0060、.:｀、: :",
+            "/:/　　　|::j{:::j{　 　 |:::|: /＾Y:|: :|Ｙ＾Ｖ', :| | 　 |:ﾞi,／.:.:./　　∨.:.:.: \u0060、.:｀、"
+          ]
+        },
+        {
+          "id": "c126-y-crown-opening",
+          "line_start": 6,
+          "source_record_lines": [6, 10],
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            ":::/:/　 ‘,:∧:::j[　　 |/:/　 .:.:.|: :|:::::::∧:://　＼: :∨／:x=ﾐ.:.:/.:.\u0060、.:｀、: :",
+            "/:/　　　|::j{:::j{　 　 |:::|: /＾Y:|: :|Ｙ＾Ｖ', :| | 　 |:ﾞi,／.:.:./　　∨.:.:.: \u0060、.:｀、",
+            ":/ 　 　 ,ﾞ:j{:::j{ヽ　　l: :|: l　 |::|: :|:|　 | |:::| |　　| ﾞi,::‘i,::|　　　|::::::::::: \u0060、",
+            "∧. 　 / j{:::j{:::::::＼|: :|: |　 |::|: :|:|　｜|:::| |__／: ﾞi,: ^i,ﾞ，　 /::::／: : :.\u0060、",
+            "/∧／::/::::j{⌒Ｖ::::|.:.:|‐Ｌ,,_|::|: :|:|_,,,｣: |:::|／:ｘ=ミﾞi, :‘i,:ゝ-'／: : : : :　 \u0060、"
+          ]
+        },
+        {
+          "id": "c126-light-paper-and-tone-context",
+          "line_start": 16,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            ":/:: :　 '⌒ヽ, 　^,|｀ﾆ=ｰー--|----ー=ﾆ´:|:::: : ／＾|.: ﾞi,.:. ‘i, : ∨∧",
+            ": : : 　 　 　 　 . :|: : :／⌒ヽ.:|: :|::/⌒ヽ:::|:::|:::://　　|.:.:ﾞi,.:.:.‘i,.:.:.∨∧",
+            ": :　 : ｉ: .　　　　　 . :|　　　 | |: :| |　 　 | :|:::|:::|:| 　　 | : ﾞi,: : ‘i,: : ∨∧",
+            ": 　 :.j{: : : .　　　　　　　 . : | |: :| |　　　|:::|:::l: :|:|　　　|.:. ﾞi,.:.: ‘i,.:.:.:∨/",
+            ":　.:::j{ 　 : |: .　　　　　　　 :| |: :| l　 　 .l: :|:::|: :|:l.　 　 |.:.:.ﾞi,.:.:.:‘i,.:.:. ∨"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "In this one page, punctuation, a V/oblique turn, and asymmetric fullwidth Ｙ＾Ｖ occur within longer architectural boundaries. A broad diagonal paper passage interrupts the surrounding punctuation field. The source construction record preserves exact x=ﾐ.",
+        "drawn_analogy": "Handoff, opening, and head are reconstruction notes attached to source context, not artist approval or universal semantic labels.",
+        "mathematical_family": "Not assigned; no contour or ridge proof is claimed. The open lighting passage is not demonstrated principal-highlight or terminator extraction.",
+        "historical_implementation_limit": "This contextual reconstruction does not certify runtime election or current MAIN behavior."
+      }
+    },
+    {
+      "id": "c99-receding-joined-pairs",
+      "title": "C#99 — repeated opposing joins with row returns",
+      "pattern_family": "multirow-perspective-join",
+      "focus_forms": ["|レi", "iヽ!|", "|／"],
+      "provenance": {
+        "source_id": "C#99",
+        "text_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-walk-pan-20261015/sources/reference-99.txt",
+        "image_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/church-graveyard-walk-pan-20261015/sources/reference-99.png",
+        "construction_record_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/source/native-combinations-20261016.json",
+        "source_image_sha256": "da10249c950cfca8cb2c4b866d4cc0b14a11cf553b455a704fa3167dd1bf9ef8",
+        "source_text_sha256_file": "8223877e8388a0f95217792a7ac397c790483ad4afcad71f768ccc2d1ef9b047",
+        "source_text_sha256_utf8_rstrip_lf": "892574271ff98029ffcc136d8fdd1e3f52082236d52b6265eb45cb23626dbbe9",
+        "inspected_artifacts": ["paired PNG", "paired TXT", "native construction catalog"],
+        "annotation_status": "agent-observed; parent raw-text validated; not operator approval"
+      },
+      "passages": [
+        {
+          "id": "c99-rows-45-51",
+          "line_start": 45,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣||~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060~\u0060||￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣",
+            "　　　　　　　　　　　　　　　 　 　　 　 　　 　 |レi　　　　　　　　　　 　iヽ!|",
+            "￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣||＿_.|／　　　　　　　 　 　 　 ＼|.＿|| ￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣",
+            "　　　　　　　　　　　　　　　 　　 　　 　 |レi　　　　　　　　　　　 　 　 　 　iヽ!|",
+            "￣￣￣￣￣￣￣￣￣￣￣￣￣||＿_.|／\u3000\u3000\u3000\u3000\u3000\u3000 \u3000 \u3000 \u3000 \u3000 \u3000 \u3000\u3000 \u3000＼|.＿||　￣￣￣￣￣￣￣￣￣￣￣￣￣",
+            "　　　　　　　　　　　　　　　　　 　 |レi　　　　　　　　　　　　 　　 　 　 　 　 　 iヽ!|",
+            "　　　　　　　　　　　　　　　　　 　 |／　　　　　　 　 　 　 　　 　 　 　　　 　 　 ＼|"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Three repeated pairs recede across rows while intervening boundary rows return and narrow the aisle. The construction is local to this source page.",
+        "drawn_analogy": "The catalog calls this opposing bent pew sides; it is not a generic wall-reveal rule.",
+        "mathematical_family": "Not assigned; the repeated text pattern is not a mathematical contour-family result.",
+        "historical_implementation_limit": "A repeated row construction is source evidence, not proof of a runtime combination counter or selected renderer motif."
+      }
+    },
+    {
+      "id": "hand-open-interiors-across-ordered-views",
+      "title": "Hand — open interior marks and changing joins across four ordered views",
+      "pattern_family": "protected-open-interiors-and-contextual-joins",
+      "focus_forms": ["人", "ノ）", "⌒", "ｰ､"],
+      "provenance": {
+        "source_id": "aahub/te-ude-03/resK-154",
+        "text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/te-ude-03/resK-154.txt",
+        "image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/te-ude-03/resK-154.png",
+        "source_image_sha256": "7fe886db10995bbc145b8b6b655ed75a1f62a23805644986f0a15c664df771cd",
+        "source_text_sha256_file": "c3ed70a2c0238a6057d0a34a30aeaa09ece6d68fbe9a95a90d6aa8df5c296a1d",
+        "turntable_gif_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand.gif",
+        "frame_records_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/frames.json",
+        "construction_record_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/construction.json",
+        "turntable_gif_sha256": "6f19809887fcdb5f96528f0276893abb890ac43bad3d989b87030ffd0acc30ec",
+        "frame_records_sha256": "f87a5fdde589fea4ee8a4705f745696ab4f93619571a414cd8f1b0e129ebe682",
+        "construction_sha256": "2022dff700b045add29867397a0bcd89b53428f21958ad12585e64c0b9301bc2",
+        "inspected_artifacts": ["paired native PNG", "paired TXT", "ordered static source-frame PNGs", "frame glyph records", "construction study"],
+        "frame_count": 96,
+        "frame_review_method": "ordered static review of frame indices 0, 24, 48, and 72; not normal-speed playback",
+        "protected_voids_from_study": ["inter-finger webs", "thumb/palm recess"],
+        "relationships_from_study": ["finger joints belong to their own fingers", "thumb fold belongs to thumb/palm", "wrist continues from palm"],
+        "study_status": "construction study, not operator approval"
+      },
+      "passages": [
+        {
+          "id": "hand-source-page",
+          "line_start": 1,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "　　　　　　　　 　 　 　 　 　 　 /　 　 |　　 .|　 　　|",
+            "　　　　　　　　　　　　　　　　　| 　 　 |　　 .|　　 　|",
+            "　　　　　　　　　 　 　 　 　 　｜ー　｜ 　 l ー-　 l",
+            "\u3000\u3000\u3000\u3000\u3000\u3000 \u3000\u3000\u3000\u3000/⌒ヽ\u3000\u3000\u3000|\u3000 \u3000\u3000|\u3000\u3000 l\u3000 \u3000 \u3000l",
+            "　　　　　　　　　 　l　　　l 　 　|　 　 ｜ 　|　　　　|",
+            "　　　　　　　 　 　 |　　　l　　　| ｰ- 　| 　 l　　 -　l",
+            "　　　　 　 　 　 　 |　 -‐|　　　 |　　　 |　 | 　　 　 |　 　 /⌒ヽ",
+            "　　　 　　　　　　　| 　 　l　　　 |　　　 |　 |　 　 　 l　　 | 　 　ヽ",
+            "　　　　　　 　 　 　 l 　　 _!　　　|　　　 !__,! ‐ 　一 |　　 l 　 　 ヽ、",
+            "　　　　　　 　 /⌒ヽl 　‐　＼　　|, 　　 .　. 　　 　　l　 　 〉-‐　　l",
+            "　　　　　 　　 l〉 　 ）ヽ、　 　ヽノ 　　　　　　　　 　ヽ、　|　　 　 |",
+            "　　 　　　　　/　　人　ヽ、　　　　　 　　　　 　　 　 　ヽノ 　 　　|",
+            "\u3000 \u3000 \u3000 \u3000 \u3000 l \u3000\u3000 \u3000ヽ、＼, \u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000.\u3000／\u3000ノ/\u3000\u3000\u3000\u3000\u3000 l",
+            "　　　　　　 　ヽ　　ノ　＼,/　　 　 　 .Y´ \u0060､　　　 　 　 　 　 ヽ 　l",
+            "　　　　　 　　　＼　　　 /　　 　 　 　 i　　ﾉ　 　 　 　 　 　 　 　 |",
+            "　　　　　　　　　　ヽ、 　 　 　 ／　　 ゝﾍ'　l　　　　　　　　　 　 |",
+            "　　　　　　　　　　　ヽ、　　／　　　/　　 　 |　　 　　　　　　　　l",
+            "　　　　　　　　　　　　ヽ、　　　　　　　　　　l　　　　　　　　　　/",
+            "\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000\u3000ヽ、\u3000 \u3000\u3000\u3000 \u3000 \u3000 \u3000 | \u3000\u3000\u3000\u3000\u3000\u3000 \u3000\u3000/",
+            "　　　　　　　　　　　　　　ヽ　　　　　　　　 　l　　　　　　　　/"
+          ]
+        },
+        {
+          "id": "hand-turntable-frame-000",
+          "frame_index": 0,
+          "angle_deg": 0,
+          "view_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/view-000.png",
+          "glyph_row_start": 3,
+          "glyph_rows": [",､/ｌ,､", "ｌ|||||", "ノ）|||｀||-|", "|||||､|||", "|ｌ|｀⌒|ｌ|,､", "|｀´,,|/´/"]
+        },
+        {
+          "id": "hand-turntable-frame-024",
+          "frame_index": 24,
+          "angle_deg": 90,
+          "view_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/view-024.png",
+          "glyph_row_start": 3,
+          "glyph_rows": [",､､", "＼＼", "（ｰ､｀(ヽ", "｀＼｀）|", "⌒ヽ｀|", "＼|"]
+        },
+        {
+          "id": "hand-turntable-frame-048",
+          "frame_index": 48,
+          "angle_deg": 180,
+          "view_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/view-048.png",
+          "glyph_row_start": 4,
+          "glyph_rows": ["ｰ,/ヽ", "|ｰノ⌒ｰ､", "|||ｰ|||,､", "＿|-､⌒|)）", "ヽ＼|)||,|"]
+        },
+        {
+          "id": "hand-turntable-frame-072",
+          "frame_index": 72,
+          "angle_deg": 270,
+          "view_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-analyses/cloud-session-20261012-turntables/aahub-turntables/v3/hand/view-072.png",
+          "glyph_row_start": 3,
+          "glyph_rows": ["_ノ､", "／'ノ", "／,-", "|/", "|,（", "||||"]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The source and four ordered glyph-record samples show open spaces between fingers, thumb/palm relationships, and changing local joins as the hand turns.",
+        "drawn_analogy": "Interior marks may read as fold- or joint-like in this drawing. This is a drawn analogy only.",
+        "mathematical_family": "Not established. These marks are not proven mathematical suggestive contours or ridges.",
+        "historical_implementation_limit": "Old-typist 20-glyph / 38-degree restrictions are historical and do not describe current MAIN. Frame inspection here is not playback, and this record does not establish runtime behavior."
+      }
+    },
+    {
+      "id": "c135-shared-y-supports-and-cap-variants",
+      "title": "C#135 — repeated shared Y supports and changed cap endings",
+      "pattern_family": "multirow-shared-strokes-and-contextual-caps",
+      "focus_forms": ["Y＾Y＾Y", "Y⌒Y", "f⌒ヽ", "f⌒Y", "f⌒i"],
+      "provenance": {
+        "source_id": "C#135",
+        "archive_piece_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+        "archive_piece_index": 135,
+        "text_path": "/Users/r/Projects/trueff-shallot/.cache/qual/aahub/2f0353dc-135.txt",
+        "construction_record_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/source/native-combinations-20261016.json",
+        "source_text_sha256_file": "85f4e02c517bb5440f55f279c21ba0d466ad060087e57581d4797d7f9d2c4123",
+        "archive_piece_text_sha256_utf8_rstrip_lf": "ebc26dbc9e1afd9040b9848c5c5660e1734b93c1df91cca7bb472539257c3118",
+        "paired_native_png": null,
+        "native_image_status": "no paired original native PNG located",
+        "inspected_artifacts": ["exact archived text", "native construction catalog"],
+        "annotation_status": "parent raw-text validated; not operator approval"
+      },
+      "passages": [
+        {
+          "id": "c135-cap-ending-variants",
+          "line_start": 12,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　 　 |__|　　 　 　 　 .|　　　　　　　　-=ミ　　　　　f⌒ヽ|_ノ　　　_,,..　-=≦",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　 　 {__}　　 　 　 　 .|　　　　　／　　　　 ＼　　　{ﾆﾆﾆ}is｡s≦　　　　 :|　　 ,ィ=ミ",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　__|__|_　　　_,,. -= |　　　 ,.ｲ=x/⌒ヽ.Y´ 圦　　 |　　:|　 |　　x=x　　 Ｙ^Y　|:::::::|",
+            "　　　　　　　　　　　　　　　　　　　i　　　　　　　 |　jI斗r≦　　 f⌒Y 　 ./ |　 | |　　 | |　 |　:.　.::|　　:|　 |＾i　|:::::|　　::|: : |　|:::::::|",
+            "　　　　　　　　　　　　　　　　　　 八　　 　　 ｡o≦　　　　　　_Lﾆｌ二|　 |　|　 | |　　 | |　 |　 Ⅵ |　　:|　 |: l　|:::::|　　.:|__,,| └=''",
+            "　　　　　　　　　　　　　　　 　　 f⌒i｡o≦　　　　　_,,...　-=≦　|　|　:|　 |　|__,,l└‐= '　￣　　:|　|　　:|　 |_」:└=　　　|　 ＿",
+            "　　　　　　　　　　　　　　　_｡si(////)is｡_,,..　-=≦　,.ｨ=x=行刈　|　:|　 |　_　　　,ィ=ミ　//⌒Y :|　　:|　 l　ィ=ミ､　　 |Y´ 　 ｀Y"
+          ]
+        },
+        {
+          "id": "c135-shared-middle-y",
+          "line_start": 20,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            ":Ｙ Y＾Y＾Y Y＾Y＾Y Y＾ＹＹ||ﾆ||ﾆ||´￣｀||⌒|| l」L|」.Ll:.└└' ￣ :|　|　:|　 |　 |　Y|　 __　 :| |: 　 |　|　　:|　 |　|　　 |　　 | |　　　::|",
+            "┘└┴┘└┴┘└┘|:||ﾆ||ﾆ||二二||二||ィ=ﾐY＾Y Ｙ＾YY´｀Y |　|　:|￣|￣|__,|:|Y´　｀Y| |: 　 |　|　　:|　 |　|　　 | 冂::| |＿,,,,.. |",
+            ".ＹＹ´　｀ＹＹ⌒Ｙ Ｙ⌒YY}┬┬rr───‐‐r':| | |::::|　|::: | |::::: | .|　|　:|　 |　 | : |:|:｀Y＾Y´| |¨￣|　|　　:|　 |　l￣~ | 凵::| |　　　::|",
+            "::| |￣￣| :| |;;;;;|| |￣ | |{ﾆ{ﾆi{l_lY⌒YY⌒ :l　| | |::::|　|::: | |::::: | :|　|　:|　 |　 | : |:|　:|　|::::| |: 　 |_,,|　　:|　 |　|　　 |　　 | |　　　::|",
+            "::| |　 　 | :| |;;;;;|| |＿_| | |:::|~:|| | |~::|| |￣| l　| | |::::|　|::: | |::::: | :|　|　:|￣|￣| : |:|　:|　|::::| |: 　 |　|　　:|　 |　|　　 |　　 | |　　　::|",
+            ",,| |＿＿| :|_l￣|| |＿_| lﾉ　|__|j_|_|:,,」| |--|_l　|_|_|::::|_,,|::: |_|::::: |_:|　|　:|　 |　 |　冂　|　|::::冂＿_|_,,|　　:|　 |　|＿_,,|＿_::|_|＿,,,,,, |"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Repeated Y/caret forms share upright strokes across rows; adjacent bars and frames continue those supports. The source text has no paired native raster, so no raster-specific reading is claimed.",
+        "drawn_analogy": "The catalog's arcade/support and cap descriptions are textual construction readings, not operator labels.",
+        "mathematical_family": "Not assigned; shared repeated glyphs do not by themselves establish a mathematical family.",
+        "historical_implementation_limit": "Text-only source evidence does not prove a runtime-visible cap or current MAIN behavior."
+      }
+    },
+    {
+      "id": "aahub-rounded-cap-exemplar",
+      "title": "AAHub — /⌒ヽ cap inside a multi-row lobe construction",
+      "pattern_family": "contextual-joins-and-caps",
+      "focus_forms": ["/⌒ヽ", "/⌒"],
+      "provenance": {
+        "source_id": "aahub/bakuhatsu-kemuri/resK-147",
+        "text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/bakuhatsu-kemuri/resK-147.txt",
+        "image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/bakuhatsu-kemuri/resK-147.png",
+        "source_image_sha256": "30a9318b6e1e01cf3999e7bcea5ace0dc165a0366a3c0227de3379d139bd5d12",
+        "source_text_sha256_file": "22a5512d60c68b529c573b04e5ec472a45f2b30e63689ead080baacff421a8b3",
+        "inspected_artifacts": ["paired native PNG", "paired TXT"],
+        "corpus_counts": [
+          {"corpus": "AA-003", "pattern": "⌒ヽ", "occurrences": 6788, "pages": 3904, "slugs": 112},
+          {"corpus": "AA-004", "pattern": "⌒ヽ", "occurrences": 289610, "pages": 181747, "slugs": 8556}
+        ],
+        "count_unit_note": "Pinned corpus entry counts only; these values are not semantic labels or artist intent."
+      },
+      "passages": [
+        {
+          "id": "resk-147-rows-10-18",
+          "line_start": 10,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            "　　　　　　　＜　　 ／　　　　　　{　　　　　　　　　　　　　　　　　　　　　　　　｀｀｀\u0060く　　　　　　　　　　　￣｀\u0060ヽ､、",
+            ".　　　　　　 　 |/＼|　　　 ⌒ヽ　,:'゛　　　　　　　　　　　　　　　　　　　　　　　'\"´｀｀｀\u0060ヽ、　　　　　　　　　　　　　ヽ",
+            "　　　　　　　　　　(⌒Y　　　　}　{　　　　　　　　　　　　　　　　　　 　　　　　　　　　　　　　　　　　　　　　　　　　　 }",
+            "　　　　　　 　 　 　 Y 　 　 __ノ　乂　　　　　　　　　 ,:'゛⌒　　　　　　　　　　　　　　　　　　　　 　 \"´￣｀\u0060ヽ　 　 　 }",
+            "　　　　　　　　　　　乂___ノ　　　 ,:'゛⌒　　　　　 ,:'\"´　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　/⌒ヽ",
+            "　　　　　　　　　　　　　　 ______r'゛　　　　　 　 ,:'゛　　　　　　 γ⌒⌒　　　　　　　　☆　　　　　　　　　　 　 /⌒　　　 ⌒ヽ",
+            "　　　　　　　　　　　　　,:'゛　　 ⌒ヽ　　　　Λ {　　　　　　 γ　　　　　　　　　　　　　　　　　　　　　　 二二(",
+            "　　 　 　 　 　 　 　 　 ｆ　　　　　　　　　＜　 ,:'\"´　　　　　(　　　　　　　　　　　　　　　　　　　　　　　　---->　　　　　　　　)",
+            "　　　　　γ⌒ヽ. 　 　 {　　　　　　　　　　 |/ {　　　　　　　ゝ..,,＿ノ　　　　　　　　　　　　 ヽ　　　　　　　　　(　　　　　　＿ノ"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The source raster shows repeated curved caps entering varied supports inside a larger multi-row lobe drawing.",
+        "drawn_analogy": "Lobe is a local visual description, not a universal meaning for /⌒ヽ.",
+        "mathematical_family": "Not assigned; the selected example is not proof of a contour family.",
+        "historical_implementation_limit": "AA-003/AA-004 frequency and this source example do not establish current MAIN usage."
+      }
+    },
+    {
+      "id": "organic-person-underscore-unassigned",
+      "title": "Repeated 人_ — raw text candidate, subject unassigned",
+      "pattern_family": "unassigned-contextual-join",
+      "focus_forms": ["人_"],
+      "provenance": {
+        "source_id": "9636c2401facd04b90778f4bfea720c3:47",
+        "catalog_record_id": "fork-in",
+        "catalog_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/source/native-combos-organic-20261016.json",
+        "page_piece_path": "/Users/r/Projects/trueff-shallot/evidence/ascii-authoring/pages/9636c2401facd04b90778f4bfea720c3.json.gz.base64",
+        "page_id": "9636c2401facd04b90778f4bfea720c3",
+        "piece_index": 47,
+        "piece_sha256": "77fa3ac5c3e1e8b94da089c55e510161828d5903f9c597516a8e0b48c6468264",
+        "image_path": null,
+        "paired_native_png": null,
+        "visual_evidence": [],
+        "review_state": "raw-verified text-only candidate",
+        "context_limit": "Recurrence is not visual review, authored intent, quality, target-font rendering, runtime suitability, or subject assignment."
+      },
+      "passages": [
+        {
+          "id": "organic-person-underscore-page-47",
+          "line_start": 31,
+          "operator_region": null,
+          "operator_label": null,
+          "rows": [
+            ", | |　　 |へ _　　 ､＿人_| \"\"\"\"\"\"\"\"\"' \" |　　しぃ　 |／'\"\"⊂　〇)～～′,,,,,,,,,,ミ,,ﾟДﾟ彡\"\"\"\"\"\"\"\"\" ''\"\"\"｜　　　｜～～\"\""
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "No source PNG is attached to this candidate, so this viewer presents the exact raw-text passage and provenance only.",
+        "drawn_analogy": "No person, body, hand, or other subject meaning is assigned to 人_.",
+        "mathematical_family": "Not assessed from text recurrence.",
+        "historical_implementation_limit": "This unreviewed candidate is not a current MAIN or runtime-alphabet claim."
+      }
+    }
+  ]
+}

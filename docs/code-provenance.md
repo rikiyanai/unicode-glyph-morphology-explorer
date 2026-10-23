@@ -136,3 +136,21 @@ training. `assets/glyphs/corpus/aahub_aa003_train.sjis_combos.v1.json` is its
 output. It holds counts, and rows rendered in Saitamaar (font sha256
 `8f8c9b6e…35890`); no archive text is copied into it beyond combinations of
 at most three glyphs and band samples of at most 12.
+
+## Contextual construction evidence (2026-10-23)
+
+`assets/glyphs/contextual/shallot_native_contexts.v1.json` is a separate curated
+evidence owner, not regeneration of the AA-003/AA-004 count files above. It
+includes bounded longer/multi-row source excerpts, original row locators,
+source hashes, regional operator-label scope and selected ordered turntable
+glyph records. Its eight records retain unassigned and text-only candidates
+alongside paired PNG/TXT witnesses. Exact local/private source paths document
+origin; their availability on another installation is not promised.
+
+The viewer's `context` mode and `combo` integration expose those relationships.
+Terminal text preserves source codepoints but does not reproduce proportional
+Saitamaar spacing; use paired native art for visual review. Neither record
+membership, corpus recurrence, old renderer limits nor a whole-piece verdict
+establishes a mathematical curve family, runtime implementation or acceptance.
+`scripts/tests/test_contextual_combo_evidence.py` checks provenance and
+source-passage consistency when the private source files are available.
