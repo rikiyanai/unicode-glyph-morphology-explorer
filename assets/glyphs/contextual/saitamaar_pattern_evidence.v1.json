@@ -1,0 +1,3825 @@
+{
+  "schema": "glyph_morphology.pattern_evidence.v1",
+  "version": 1,
+  "input_sha256": "32899707c527b00c9ce96e7977bf0710d462d7e500a999bdab64ee2b877fd0e7",
+  "generator_sha256": "4ce3219f84a6663599aa95ed2619aee766e70c1d6f537175e8916aa03c9ba325",
+  "source": {
+    "kind": "operator-supplied transcript, reproduced from surviving original scripts",
+    "session_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+    "bundle_script_path": "/private/tmp/claude-501/-Users-r-Projects-asciicker-Y9-2/f84bdfc6-58ab-4abb-bdf3-87932b50e456/scratchpad/work/bundles.py",
+    "bundle_script_sha256": "f4708279dbd494a1d66fdd6513b59f1f8d01d85723b1cf971ca14189fb17ae63",
+    "extent_script_sha256": "37bf57a9728bb8f83e7e8c7bf1e8bfe0fa67e4092dbd813df1b8491824539c41",
+    "font_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/Saitamaar.ttf",
+    "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28",
+    "reported_stdout": "彡 adv 16.0 ink  34 px (0.12) strokes 3: 27 26 24\nミ adv 11.0 ink  24 px (0.13) strokes 3: 162 162 160\nﾐ adv  7.0 ink  16 px (0.13) strokes 3: 153 153 148\n〃 adv 16.0 ink  18 px (0.07) strokes 2: 62 62\n″ adv 16.0 ink   8 px (0.03) strokes 2: 68 68\n〟 adv 16.0 ink  12 px (0.04) strokes 2: 61 61\n川 adv 16.0 ink  42 px (0.15) strokes 3: 85 90 90\n巛 adv 16.0 ink  45 px (0.17) strokes 3: 96 96 96\nﾘ adv  8.0 ink  21 px (0.15) strokes 2: 90 78\nﾙ adv 11.0 ink  31 px (0.17) strokes 2: 96 79\n| adv  4.0 ink  16 px (0.24) strokes 1: 90\n| adv  4.0 ink  16 px (0.24) strokes 1: 90\nｌ adv  4.0 ink  11 px (0.16) strokes 1: 90\nｌ adv  4.0 ink  11 px (0.16) strokes 1: 90\nﾊ adv 10.0 ink  19 px (0.11) strokes 2: 108 74\nﾉ adv  8.0 ink  13 px (0.10) strokes 1: 68\nノ adv 11.0 ink  14 px (0.07) strokes 1: 51\n／ adv 16.0 ink  15 px (0.06) strokes 1: 45\n/ adv  8.0 ink  13 px (0.10) strokes 1: 65\n＼ adv 16.0 ink  15 px (0.06) strokes 1: 135\nヽ adv 12.0 ink   6 px (0.03) strokes 1: 131\n丶 adv 16.0 ink   4 px (0.01) strokes 1: 135\nヾ adv 12.0 ink  10 px (0.05) strokes 3: dot dot 131\nゞ adv 11.0 ink  14 px (0.07) strokes 3: dot dot 120\n爻 adv 16.0 ink  45 px (0.17) strokes 2: 179 4\nﾒ adv  8.0 ink  18 px (0.13) strokes 1: 71\nメ adv 12.0 ink  22 px (0.11) strokes 1: 50\n乂 adv 16.0 ink  33 px (0.12) strokes 1: 90\n※ adv 16.0 ink  44 px (0.16) strokes 5: 90 90 90 90 90\n从 adv 16.0 ink  42 px (0.15) strokes 2: 76 90\n仁 adv 16.0 ink  36 px (0.13) strokes 3: 89 0 0\nｿ adv  9.0 ink  15 px (0.10) strokes 2: 118 66\nﾂ adv 10.0 ink  17 px (0.10) strokes 3: 118 118 58\nツ adv 14.0 ink  22 px (0.09) strokes 3: 112 53 112\nシ adv 14.0 ink  19 px (0.08) strokes 3: 152 43 152\nｼ adv  9.0 ink  15 px (0.10) strokes 3: 152 152 52\n二 adv 16.0 ink  26 px (0.10) strokes 2: 0 0\nニ adv 15.0 ink  24 px (0.09) strokes 2: 0 0\nﾆ adv 10.0 ink  16 px (0.09) strokes 2: 0 0\n三 adv 16.0 ink  39 px (0.14) strokes 3: 0 0 0\n〆 adv 16.0 ink  28 px (0.10) strokes 1: 40\nｲ adv  9.0 ink  17 px (0.11) strokes 1: 76\nﾄ adv  7.0 ink  19 px (0.16) strokes 1: 90\n| adv  4.0 ink  16 px (0.24) strokes 1: 90\n! adv  4.0 ink   9 px (0.13) strokes 2: 90 dot\ni adv  3.0 ink   9 px (0.18) strokes 2: dot 90\n｜ adv 16.0 ink  16 px (0.06) strokes 1: 90\n"
+  },
+  "measurement": {
+    "px": 16,
+    "row_pitch_px": 17,
+    "ink_threshold_lt": 128,
+    "anchor": "la",
+    "padding_right_px": 8,
+    "component_connectivity": 8,
+    "angle_convention": "PCA major axis: atan2(-dy, dx) modulo 180 degrees; horizontal=0, vertical=90, '/' below 90, backslash above 90. Not individual pen-stroke angles.",
+    "density_denominator": "native advance * 17; not padded canvas area",
+    "limits": "Connected ink components are not pen strokes. A PCA axis can conceal crossings, hooks or isotropic shapes. Original x=0 / 17px-high measurement canvas may clip overhangs; this is a pinned measurement profile, not an all-font glyph law."
+  },
+  "reported_checks": [
+    {
+      "reported_row": "彡 adv 16.0 ink  34 px (0.12) strokes 3: 27 26 24",
+      "matches": true
+    },
+    {
+      "reported_row": "ミ adv 11.0 ink  24 px (0.13) strokes 3: 162 162 160",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾐ adv  7.0 ink  16 px (0.13) strokes 3: 153 153 148",
+      "matches": true
+    },
+    {
+      "reported_row": "〃 adv 16.0 ink  18 px (0.07) strokes 2: 62 62",
+      "matches": true
+    },
+    {
+      "reported_row": "″ adv 16.0 ink   8 px (0.03) strokes 2: 68 68",
+      "matches": true
+    },
+    {
+      "reported_row": "〟 adv 16.0 ink  12 px (0.04) strokes 2: 61 61",
+      "matches": true
+    },
+    {
+      "reported_row": "川 adv 16.0 ink  42 px (0.15) strokes 3: 85 90 90",
+      "matches": true
+    },
+    {
+      "reported_row": "巛 adv 16.0 ink  45 px (0.17) strokes 3: 96 96 96",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾘ adv  8.0 ink  21 px (0.15) strokes 2: 90 78",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾙ adv 11.0 ink  31 px (0.17) strokes 2: 96 79",
+      "matches": true
+    },
+    {
+      "reported_row": "| adv  4.0 ink  16 px (0.24) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "| adv  4.0 ink  16 px (0.24) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "ｌ adv  4.0 ink  11 px (0.16) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "ｌ adv  4.0 ink  11 px (0.16) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾊ adv 10.0 ink  19 px (0.11) strokes 2: 108 74",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾉ adv  8.0 ink  13 px (0.10) strokes 1: 68",
+      "matches": true
+    },
+    {
+      "reported_row": "ノ adv 11.0 ink  14 px (0.07) strokes 1: 51",
+      "matches": true
+    },
+    {
+      "reported_row": "／ adv 16.0 ink  15 px (0.06) strokes 1: 45",
+      "matches": true
+    },
+    {
+      "reported_row": "/ adv  8.0 ink  13 px (0.10) strokes 1: 65",
+      "matches": true
+    },
+    {
+      "reported_row": "＼ adv 16.0 ink  15 px (0.06) strokes 1: 135",
+      "matches": true
+    },
+    {
+      "reported_row": "ヽ adv 12.0 ink   6 px (0.03) strokes 1: 131",
+      "matches": true
+    },
+    {
+      "reported_row": "丶 adv 16.0 ink   4 px (0.01) strokes 1: 135",
+      "matches": true
+    },
+    {
+      "reported_row": "ヾ adv 12.0 ink  10 px (0.05) strokes 3: dot dot 131",
+      "matches": true
+    },
+    {
+      "reported_row": "ゞ adv 11.0 ink  14 px (0.07) strokes 3: dot dot 120",
+      "matches": true
+    },
+    {
+      "reported_row": "爻 adv 16.0 ink  45 px (0.17) strokes 2: 179 4",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾒ adv  8.0 ink  18 px (0.13) strokes 1: 71",
+      "matches": true
+    },
+    {
+      "reported_row": "メ adv 12.0 ink  22 px (0.11) strokes 1: 50",
+      "matches": true
+    },
+    {
+      "reported_row": "乂 adv 16.0 ink  33 px (0.12) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "※ adv 16.0 ink  44 px (0.16) strokes 5: 90 90 90 90 90",
+      "matches": true
+    },
+    {
+      "reported_row": "从 adv 16.0 ink  42 px (0.15) strokes 2: 76 90",
+      "matches": true
+    },
+    {
+      "reported_row": "仁 adv 16.0 ink  36 px (0.13) strokes 3: 89 0 0",
+      "matches": true
+    },
+    {
+      "reported_row": "ｿ adv  9.0 ink  15 px (0.10) strokes 2: 118 66",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾂ adv 10.0 ink  17 px (0.10) strokes 3: 118 118 58",
+      "matches": true
+    },
+    {
+      "reported_row": "ツ adv 14.0 ink  22 px (0.09) strokes 3: 112 53 112",
+      "matches": true
+    },
+    {
+      "reported_row": "シ adv 14.0 ink  19 px (0.08) strokes 3: 152 43 152",
+      "matches": true
+    },
+    {
+      "reported_row": "ｼ adv  9.0 ink  15 px (0.10) strokes 3: 152 152 52",
+      "matches": true
+    },
+    {
+      "reported_row": "二 adv 16.0 ink  26 px (0.10) strokes 2: 0 0",
+      "matches": true
+    },
+    {
+      "reported_row": "ニ adv 15.0 ink  24 px (0.09) strokes 2: 0 0",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾆ adv 10.0 ink  16 px (0.09) strokes 2: 0 0",
+      "matches": true
+    },
+    {
+      "reported_row": "三 adv 16.0 ink  39 px (0.14) strokes 3: 0 0 0",
+      "matches": true
+    },
+    {
+      "reported_row": "〆 adv 16.0 ink  28 px (0.10) strokes 1: 40",
+      "matches": true
+    },
+    {
+      "reported_row": "ｲ adv  9.0 ink  17 px (0.11) strokes 1: 76",
+      "matches": true
+    },
+    {
+      "reported_row": "ﾄ adv  7.0 ink  19 px (0.16) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "| adv  4.0 ink  16 px (0.24) strokes 1: 90",
+      "matches": true
+    },
+    {
+      "reported_row": "! adv  4.0 ink   9 px (0.13) strokes 2: 90 dot",
+      "matches": true
+    },
+    {
+      "reported_row": "i adv  3.0 ink   9 px (0.18) strokes 2: dot 90",
+      "matches": true
+    },
+    {
+      "reported_row": "｜ adv 16.0 ink  16 px (0.06) strokes 1: 90",
+      "matches": true
+    }
+  ],
+  "families": [
+    {
+      "id": "parallel-slant-bundles",
+      "title": "Parallel slant bundles",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "彡",
+        "ミ",
+        "ﾐ"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare complete three-mark shapes and native advance; do not fit each bundle as one diagonal.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "彡"
+          ],
+          "raster_rows": [
+            ".........#..............",
+            "........#...............",
+            "......##................",
+            "....##..................",
+            ".###.......#............",
+            "..........#.............",
+            ".........#..............",
+            ".......##...............",
+            "....###......#..........",
+            ".###........#...........",
+            "...........#............",
+            ".........##.............",
+            ".......##...............",
+            "....###.................",
+            "####....................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "彡",
+              "codepoint": "U+5F61",
+              "advance_px": 16.0,
+              "ink_px": 34,
+              "ink_per_advance_row": 0.125,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                13,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 9,
+                  "axis_deg": 26.942200885581855,
+                  "axis_ratio": 8.787033883185122
+                },
+                {
+                  "ink_px": 11,
+                  "axis_deg": 26.168269821207417,
+                  "axis_ratio": 7.974969306747847
+                },
+                {
+                  "ink_px": 14,
+                  "axis_deg": 24.486766944483634,
+                  "axis_ratio": 8.791654562878858
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ミ"
+          ],
+          "raster_rows": [
+            "...................",
+            ".###...............",
+            "....###............",
+            ".......##..........",
+            "...................",
+            ".###...............",
+            "....###............",
+            ".......#...........",
+            "...................",
+            "...................",
+            "###................",
+            "...###.............",
+            "......##...........",
+            "........#..........",
+            "...................",
+            "...................",
+            "..................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ミ",
+              "codepoint": "U+30DF",
+              "advance_px": 11.0,
+              "ink_px": 24,
+              "ink_per_advance_row": 0.12834224598930483,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                8,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 8,
+                  "axis_deg": 161.9863133074482,
+                  "axis_ratio": 9.779866806724572
+                },
+                {
+                  "ink_px": 7,
+                  "axis_deg": 161.88752787223984,
+                  "axis_ratio": 7.989660485207719
+                },
+                {
+                  "ink_px": 9,
+                  "axis_deg": 159.63792055631447,
+                  "axis_ratio": 9.70492549479533
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾐ"
+          ],
+          "raster_rows": [
+            "...............",
+            ".##............",
+            "...##..........",
+            ".....#.........",
+            "...............",
+            ".##............",
+            "...##..........",
+            ".....#.........",
+            "...............",
+            "...............",
+            "##.............",
+            "..##...........",
+            "....#..........",
+            ".....#.........",
+            "...............",
+            "...............",
+            "..............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾐ",
+              "codepoint": "U+FF90",
+              "advance_px": 7.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.13445378151260504,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                5,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 5,
+                  "axis_deg": 152.87694362721837,
+                  "axis_ratio": 7.252194142001362
+                },
+                {
+                  "ink_px": 5,
+                  "axis_deg": 152.87694362721837,
+                  "axis_ratio": 7.252194142001362
+                },
+                {
+                  "ink_px": 6,
+                  "axis_deg": 148.46383892552026,
+                  "axis_ratio": 7.8373589914646455
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paired-slant-bundles",
+      "title": "Paired slant marks",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "〃",
+        "″",
+        "〟"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare spacing, occupied height and inclination, not just component count.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "〃"
+          ],
+          "raster_rows": [
+            "........................",
+            "........................",
+            "........................",
+            "......##..##............",
+            "......#...#.............",
+            ".....#...#..............",
+            ".....#...#..............",
+            "....#...#...............",
+            "....#...#...............",
+            "...#...#................",
+            "...#...#................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "〃",
+              "codepoint": "U+3003",
+              "advance_px": 16.0,
+              "ink_px": 18,
+              "ink_per_advance_row": 0.0661764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                3,
+                3,
+                11,
+                10
+              ],
+              "components": [
+                {
+                  "ink_px": 9,
+                  "axis_deg": 61.950550375178835,
+                  "axis_ratio": 9.468098199798028
+                },
+                {
+                  "ink_px": 9,
+                  "axis_deg": 61.950550375178835,
+                  "axis_ratio": 9.46809819979803
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "″"
+          ],
+          "raster_rows": [
+            "..#..#..................",
+            "..#..#..................",
+            ".#..#...................",
+            ".#..#...................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "″",
+              "codepoint": "U+2033",
+              "advance_px": 16.0,
+              "ink_px": 8,
+              "ink_per_advance_row": 0.029411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                0,
+                5,
+                3
+              ],
+              "components": [
+                {
+                  "ink_px": 4,
+                  "axis_deg": 67.5,
+                  "axis_ratio": 5.82842712474619
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 67.5,
+                  "axis_ratio": 5.82842712474619
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "〟"
+          ],
+          "raster_rows": [
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "..##.##.................",
+            "..#..#..................",
+            ".##.##..................",
+            ".#..#...................",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "〟",
+              "codepoint": "U+301F",
+              "advance_px": 16.0,
+              "ink_px": 12,
+              "ink_per_advance_row": 0.04411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                10,
+                6,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 6,
+                  "axis_deg": 60.76739595259413,
+                  "axis_ratio": 3.465752880128338
+                },
+                {
+                  "ink_px": 6,
+                  "axis_deg": 60.76739595259413,
+                  "axis_ratio": 3.4657528801283384
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vertical-and-curved-bundles",
+      "title": "Vertical / curved bundles",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "川",
+        "巛",
+        "ﾘ",
+        "ﾙ"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare the complete neighboring strokes and their bends; matching total ink alone is insufficient.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "川"
+          ],
+          "raster_rows": [
+            "..#...........#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            "..#.....#.....#.........",
+            ".#......#.....#.........",
+            ".#............#.........",
+            "#.............#.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "川",
+              "codepoint": "U+5DDD",
+              "advance_px": 16.0,
+              "ink_px": 42,
+              "ink_per_advance_row": 0.15441176470588236,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 15,
+                  "axis_deg": 84.84879878881108,
+                  "axis_ratio": 10.263205860643662
+                },
+                {
+                  "ink_px": 15,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 12,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "巛"
+          ],
+          "raster_rows": [
+            "...#....#....#..........",
+            "...#....#....#..........",
+            "..#....#....#...........",
+            "..#....#....#...........",
+            ".#....#....#............",
+            ".#....#....#............",
+            "#....#....#.............",
+            "#....#....#.............",
+            ".#....#....#............",
+            "..#....#....#...........",
+            "..#....#....#...........",
+            "...#....#....#..........",
+            "...#....#....#..........",
+            "....#....#....#.........",
+            "....#....#....#.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "巛",
+              "codepoint": "U+5DDB",
+              "advance_px": 16.0,
+              "ink_px": 45,
+              "ink_per_advance_row": 0.16544117647058823,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 15,
+                  "axis_deg": 96.14472339309344,
+                  "axis_ratio": 3.7693958108670915
+                },
+                {
+                  "ink_px": 15,
+                  "axis_deg": 96.14472339309344,
+                  "axis_ratio": 3.7693958108670915
+                },
+                {
+                  "ink_px": 15,
+                  "axis_deg": 96.14472339309344,
+                  "axis_ratio": 3.7693958108670915
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾘ"
+          ],
+          "raster_rows": [
+            "................",
+            ".#...#..........",
+            ".#...#..........",
+            ".#...#..........",
+            ".#...#..........",
+            ".#...#..........",
+            ".#...#..........",
+            ".#...#..........",
+            ".....#..........",
+            "....#...........",
+            "....#...........",
+            "....#...........",
+            "...#............",
+            "...#............",
+            "..#.............",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾘ",
+              "codepoint": "U+FF98",
+              "advance_px": 8.0,
+              "ink_px": 21,
+              "ink_per_advance_row": 0.15441176470588236,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                1,
+                5,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 7,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 14,
+                  "axis_deg": 78.17481044246422,
+                  "axis_ratio": 8.869826389998373
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾙ"
+          ],
+          "raster_rows": [
+            "...................",
+            ".....#.............",
+            "..#..#.............",
+            "..#..#.............",
+            "..#..#.............",
+            "..#..#.............",
+            "..#..#.............",
+            "..#..#...#.........",
+            "..#..#...#.........",
+            ".#...#..#..........",
+            ".#...#..#..........",
+            ".#...#.#...........",
+            "#....##............",
+            "#....#.............",
+            "...................",
+            "...................",
+            "..................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾙ",
+              "codepoint": "U+FF99",
+              "advance_px": 11.0,
+              "ink_px": 31,
+              "ink_per_advance_row": 0.1657754010695187,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                9,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 19,
+                  "axis_deg": 95.66747896377787,
+                  "axis_ratio": 2.4458693407578838
+                },
+                {
+                  "ink_px": 12,
+                  "axis_deg": 78.99660426263763,
+                  "axis_ratio": 9.722022663745696
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stem-width-and-punctuation",
+      "title": "Narrow / fullwidth stems and punctuation",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "|",
+        "ｌ",
+        "｜",
+        "!",
+        "i"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Equal advance does not mean equal height or ink. Fullwidth ｜ has a different placement footprint.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "|"
+          ],
+          "raster_rows": [
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            "............"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "|",
+              "codepoint": "U+007C",
+              "advance_px": 4.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.23529411764705882,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                0,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 16,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ｌ"
+          ],
+          "raster_rows": [
+            "............",
+            "............",
+            "............",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            "............",
+            "............",
+            "............"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ｌ",
+              "codepoint": "U+FF4C",
+              "advance_px": 4.0,
+              "ink_px": 11,
+              "ink_per_advance_row": 0.16176470588235295,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                3,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 11,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "｜"
+          ],
+          "raster_rows": [
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            ".......#................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "｜",
+              "codepoint": "U+FF5C",
+              "advance_px": 16.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.058823529411764705,
+              "ink_bbox_xyxy_inclusive": [
+                7,
+                0,
+                7,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 16,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "!"
+          ],
+          "raster_rows": [
+            "............",
+            "............",
+            "............",
+            "#...........",
+            "#...........",
+            "#...........",
+            "#...........",
+            "#...........",
+            "#...........",
+            "#...........",
+            "#...........",
+            "............",
+            "............",
+            "#...........",
+            "............",
+            "............",
+            "............"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "!",
+              "codepoint": "U+0021",
+              "advance_px": 4.0,
+              "ink_px": 9,
+              "ink_per_advance_row": 0.1323529411764706,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                0,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 8,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "i"
+          ],
+          "raster_rows": [
+            "...........",
+            "...........",
+            "...........",
+            ".#.........",
+            ".#.........",
+            "...........",
+            "...........",
+            ".#.........",
+            ".#.........",
+            ".#.........",
+            ".#.........",
+            ".#.........",
+            ".#.........",
+            ".#.........",
+            "...........",
+            "...........",
+            "..........."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "i",
+              "codepoint": "U+0069",
+              "advance_px": 3.0,
+              "ink_px": 9,
+              "ink_per_advance_row": 0.17647058823529413,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                3,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 7,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fork-and-side-strokes",
+      "title": "Forks and side strokes",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "ﾊ",
+        "从",
+        "仁",
+        "ｲ",
+        "ﾄ"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Whole-glyph proposals for cooperating marks, not proof of any contact, split ownership or subject meaning.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "ﾊ"
+          ],
+          "raster_rows": [
+            "..................",
+            "..................",
+            "..................",
+            ".....#............",
+            "..#...#...........",
+            "..#...#...........",
+            "..#....#..........",
+            "..#....#..........",
+            ".#.....#..........",
+            ".#......#.........",
+            ".#......#.........",
+            "#.......#.........",
+            "#.......#.........",
+            "..................",
+            "..................",
+            "..................",
+            ".................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾊ",
+              "codepoint": "U+FF8A",
+              "advance_px": 10.0,
+              "ink_px": 19,
+              "ink_per_advance_row": 0.11176470588235295,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                8,
+                12
+              ],
+              "components": [
+                {
+                  "ink_px": 10,
+                  "axis_deg": 108.33987874131527,
+                  "axis_ratio": 9.333601943277761
+                },
+                {
+                  "ink_px": 9,
+                  "axis_deg": 74.00782138255295,
+                  "axis_ratio": 9.743010413460508
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "从"
+          ],
+          "raster_rows": [
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "...#.#...#.#............",
+            "...#.#...#.#............",
+            "...#..#..#.#............",
+            "..#...#.#...#...........",
+            "..#.....#...#...........",
+            ".#.....#.....#..........",
+            ".#.....#.....#..........",
+            "#.....#.......#.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "从",
+              "codepoint": "U+4ECE",
+              "advance_px": 16.0,
+              "ink_px": 42,
+              "ink_per_advance_row": 0.15441176470588236,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 19,
+                  "axis_deg": 76.22147788333824,
+                  "axis_ratio": 3.0510193390221447
+                },
+                {
+                  "ink_px": 23,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 2.0707299933390666
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "仁"
+          ],
+          "raster_rows": [
+            "...#....................",
+            "...#....................",
+            "..#...########..........",
+            "..#.....................",
+            ".##.....................",
+            ".##.....................",
+            "#.#.....................",
+            "..#.....................",
+            "..#.....................",
+            "..#.....................",
+            "..#.....................",
+            "..#.....................",
+            "..#.....................",
+            "..#..##########.........",
+            "..#.....................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "仁",
+              "codepoint": "U+4EC1",
+              "advance_px": 16.0,
+              "ink_px": 36,
+              "ink_per_advance_row": 0.1323529411764706,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 18,
+                  "axis_deg": 88.65706478667498,
+                  "axis_ratio": 6.191382444899968
+                },
+                {
+                  "ink_px": 8,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 10,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ｲ"
+          ],
+          "raster_rows": [
+            ".................",
+            "......#..........",
+            "......#..........",
+            ".....#...........",
+            ".....#...........",
+            "....#............",
+            "...##............",
+            "..#.#............",
+            ".#..#............",
+            "#...#............",
+            "....#............",
+            "....#............",
+            "....#............",
+            "....#............",
+            ".................",
+            ".................",
+            "................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ｲ",
+              "codepoint": "U+FF72",
+              "advance_px": 9.0,
+              "ink_px": 17,
+              "ink_per_advance_row": 0.1111111111111111,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                6,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 17,
+                  "axis_deg": 76.3034903720082,
+                  "axis_ratio": 2.5778234592145695
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾄ"
+          ],
+          "raster_rows": [
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".###...........",
+            ".#..#..........",
+            ".#...#.........",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            ".#.............",
+            "...............",
+            "..............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾄ",
+              "codepoint": "U+FF84",
+              "advance_px": 7.0,
+              "ink_px": 19,
+              "ink_per_advance_row": 0.15966386554621848,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                0,
+                5,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 19,
+                  "axis_deg": 90.33866697957575,
+                  "axis_ratio": 3.382726116613183
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossed-ink-shapes",
+      "title": "Crossed ink shapes",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "爻",
+        "ﾒ",
+        "メ",
+        "乂",
+        "※"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "A connected component may contain several crossing strokes. Its PCA axis does not describe all those strokes.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "爻"
+          ],
+          "raster_rows": [
+            "..##.......#............",
+            "....##....#.............",
+            "......##.#..............",
+            "........##..............",
+            "......##..#.............",
+            "....##.....##...........",
+            ".###.........#..........",
+            ".....#....#.............",
+            ".....#....#.............",
+            "......#..#..............",
+            "......#..#..............",
+            ".......##...............",
+            ".....##..#..............",
+            "...##.....##............",
+            "###.........###.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "爻",
+              "codepoint": "U+723B",
+              "advance_px": 16.0,
+              "ink_px": 45,
+              "ink_per_advance_row": 0.16544117647058823,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 22,
+                  "axis_deg": 179.19649332921242,
+                  "axis_ratio": 1.6610252643239596
+                },
+                {
+                  "ink_px": 23,
+                  "axis_deg": 3.850872361210719,
+                  "axis_ratio": 1.56773038309396
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾒ"
+          ],
+          "raster_rows": [
+            "................",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            ".#...#..........",
+            "..#.#...........",
+            "...##...........",
+            "....#...........",
+            "...#.#..........",
+            "...#..#.........",
+            "..#.............",
+            "..#.............",
+            ".#..............",
+            "#...............",
+            "................",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾒ",
+              "codepoint": "U+FF92",
+              "advance_px": 8.0,
+              "ink_px": 18,
+              "ink_per_advance_row": 0.1323529411764706,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                6,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 18,
+                  "axis_deg": 71.42848917767736,
+                  "axis_ratio": 2.6683735654138387
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "メ"
+          ],
+          "raster_rows": [
+            "....................",
+            "..........#.........",
+            "..........#.........",
+            "..........#.........",
+            ".........#..........",
+            "...##....#..........",
+            ".....##.#...........",
+            ".......#............",
+            ".......##...........",
+            "......#..#..........",
+            ".....#....#.........",
+            "....#...............",
+            "..##................",
+            "##..................",
+            "....................",
+            "....................",
+            "...................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "メ",
+              "codepoint": "U+30E1",
+              "advance_px": 12.0,
+              "ink_px": 22,
+              "ink_per_advance_row": 0.10784313725490197,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                10,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 22,
+                  "axis_deg": 50.01356699387935,
+                  "axis_ratio": 2.343109693598943
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "乂"
+          ],
+          "raster_rows": [
+            "...#.......#............",
+            "...#.......#............",
+            "...#.......#............",
+            "....#.....#.............",
+            "....#.....#.............",
+            "....#.....#.............",
+            ".....#...#..............",
+            ".....#...#..............",
+            "......#.#...............",
+            ".......#................",
+            "......#.#...............",
+            ".....#...#..............",
+            "....#.....#.............",
+            "..##.......##...........",
+            "##...........##.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "乂",
+              "codepoint": "U+4E42",
+              "advance_px": 16.0,
+              "ink_px": 33,
+              "ink_per_advance_row": 0.1213235294117647,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 33,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.2576067252224266
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "※"
+          ],
+          "raster_rows": [
+            "#............#..........",
+            ".#....##....#...........",
+            "..#...##...#............",
+            "...#......#.............",
+            "....#....#..............",
+            ".....#..#...............",
+            ".##...##...##...........",
+            ".##...##...##...........",
+            ".....#..#...............",
+            "....#....#..............",
+            "...#......#.............",
+            "..#...##...#............",
+            ".#....##....#...........",
+            "#............#..........",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "※",
+              "codepoint": "U+203B",
+              "advance_px": 16.0,
+              "ink_px": 44,
+              "ink_per_advance_row": 0.16176470588235295,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                13,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 28,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.0
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.0
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.0
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.0
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dotted-turn-bundles",
+      "title": "Dotted turn bundles",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "ｿ",
+        "ﾂ",
+        "ツ",
+        "シ",
+        "ｼ"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare dot positions and the longer return together; similar counts do not make these interchangeable.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "ｿ"
+          ],
+          "raster_rows": [
+            ".................",
+            ".................",
+            "#.....#..........",
+            ".#....#..........",
+            ".#....#..........",
+            "......#..........",
+            ".....#...........",
+            ".....#...........",
+            ".....#...........",
+            "....#............",
+            "....#............",
+            "...#.............",
+            "..#..............",
+            ".#...............",
+            ".................",
+            ".................",
+            "................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ｿ",
+              "codepoint": "U+FF7F",
+              "advance_px": 9.0,
+              "ink_px": 15,
+              "ink_per_advance_row": 0.09803921568627451,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                6,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 118.1549662370101,
+                  "axis_ratio": 4.391067076224634
+                },
+                {
+                  "ink_px": 12,
+                  "axis_deg": 65.94076017290021,
+                  "axis_ratio": 7.532160335528261
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾂ"
+          ],
+          "raster_rows": [
+            "..................",
+            "..................",
+            "...#..............",
+            "#...#..#..........",
+            ".#..#..#..........",
+            ".#.....#..........",
+            "......#...........",
+            "......#...........",
+            ".....#............",
+            ".....#............",
+            "....#.............",
+            "...#..............",
+            "..#...............",
+            ".#................",
+            "..................",
+            "..................",
+            ".................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾂ",
+              "codepoint": "U+FF82",
+              "advance_px": 10.0,
+              "ink_px": 17,
+              "ink_per_advance_row": 0.1,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                7,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 118.1549662370101,
+                  "axis_ratio": 4.391067076224634
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 118.1549662370101,
+                  "axis_ratio": 4.391067076224634
+                },
+                {
+                  "ink_px": 11,
+                  "axis_deg": 58.17348031404262,
+                  "axis_ratio": 8.595580059538948
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ツ"
+          ],
+          "raster_rows": [
+            "......................",
+            "......................",
+            "....#......#..........",
+            "#...#......#..........",
+            "#....#.....#..........",
+            ".#...#.....#..........",
+            ".#.........#..........",
+            "..........#...........",
+            "..........#...........",
+            ".........#............",
+            "........#.............",
+            ".......#..............",
+            ".....##...............",
+            "...##.................",
+            "......................",
+            "......................",
+            "......................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ツ",
+              "codepoint": "U+30C4",
+              "advance_px": 14.0,
+              "ink_px": 22,
+              "ink_per_advance_row": 0.09243697478991597,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                11,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 4,
+                  "axis_deg": 112.49999999999999,
+                  "axis_ratio": 5.82842712474619
+                },
+                {
+                  "ink_px": 14,
+                  "axis_deg": 53.460626367780506,
+                  "axis_ratio": 5.109991495309387
+                },
+                {
+                  "ink_px": 4,
+                  "axis_deg": 112.49999999999999,
+                  "axis_ratio": 5.82842712474619
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "シ"
+          ],
+          "raster_rows": [
+            "......................",
+            "......................",
+            "..##..................",
+            "....#.................",
+            "...........#..........",
+            "##.........#..........",
+            "..#.......#...........",
+            "..........#...........",
+            ".........#............",
+            "........#.............",
+            ".......#..............",
+            "......#...............",
+            "....##................",
+            ".###..................",
+            "......................",
+            "......................",
+            "......................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "シ",
+              "codepoint": "U+30B7",
+              "advance_px": 14.0,
+              "ink_px": 19,
+              "ink_per_advance_row": 0.07983193277310924,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                11,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 151.84503376298989,
+                  "axis_ratio": 4.391067076224638
+                },
+                {
+                  "ink_px": 13,
+                  "axis_deg": 42.59825712046546,
+                  "axis_ratio": 6.977147510504666
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 151.84503376298989,
+                  "axis_ratio": 4.391067076224636
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ｼ"
+          ],
+          "raster_rows": [
+            ".................",
+            ".................",
+            ".##..............",
+            "...#.............",
+            ".................",
+            "##.....#.........",
+            "..#....#.........",
+            "......#..........",
+            "......#..........",
+            ".....#...........",
+            "....#............",
+            "...#.............",
+            "..#..............",
+            ".#...............",
+            ".................",
+            ".................",
+            "................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ｼ",
+              "codepoint": "U+FF7C",
+              "advance_px": 9.0,
+              "ink_px": 15,
+              "ink_per_advance_row": 0.09803921568627451,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                7,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 151.84503376298989,
+                  "axis_ratio": 4.391067076224638
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 151.84503376298989,
+                  "axis_ratio": 4.391067076224636
+                },
+                {
+                  "ink_px": 9,
+                  "axis_deg": 51.5220346885896,
+                  "axis_ratio": 10.601395186809198
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horizontal-band-bundles",
+      "title": "Horizontal band bundles",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "二",
+        "ニ",
+        "ﾆ",
+        "三"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare native width, inter-line spacing and occupied height, not density alone.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "二"
+          ],
+          "raster_rows": [
+            "........................",
+            "........................",
+            "..###########...........",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "###############.........",
+            "........................",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "二",
+              "codepoint": "U+4E8C",
+              "advance_px": 16.0,
+              "ink_px": 26,
+              "ink_per_advance_row": 0.09558823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                14,
+                12
+              ],
+              "components": [
+                {
+                  "ink_px": 11,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 15,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ニ"
+          ],
+          "raster_rows": [
+            ".......................",
+            ".......................",
+            ".......................",
+            ".###########...........",
+            ".......................",
+            ".......................",
+            ".......................",
+            ".......................",
+            ".......................",
+            ".......................",
+            ".......................",
+            "#############..........",
+            ".......................",
+            ".......................",
+            ".......................",
+            ".......................",
+            "......................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ニ",
+              "codepoint": "U+30CB",
+              "advance_px": 15.0,
+              "ink_px": 24,
+              "ink_per_advance_row": 0.09411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                12,
+                11
+              ],
+              "components": [
+                {
+                  "ink_px": 11,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 13,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾆ"
+          ],
+          "raster_rows": [
+            "..................",
+            "..................",
+            "..................",
+            ".#######..........",
+            "..................",
+            "..................",
+            "..................",
+            "..................",
+            "..................",
+            "..................",
+            "..................",
+            "#########.........",
+            "..................",
+            "..................",
+            "..................",
+            "..................",
+            ".................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾆ",
+              "codepoint": "U+FF86",
+              "advance_px": 10.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.09411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                8,
+                11
+              ],
+              "components": [
+                {
+                  "ink_px": 7,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 9,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "三"
+          ],
+          "raster_rows": [
+            "........................",
+            ".#############..........",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "..###########...........",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "###############.........",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "三",
+              "codepoint": "U+4E09",
+              "advance_px": 16.0,
+              "ink_px": 39,
+              "ink_per_advance_row": 0.14338235294117646,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                14,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 13,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 11,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 15,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "short-diagonals-with-dots",
+      "title": "Short diagonals and dotted variants",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "ヽ",
+        "丶",
+        "ヾ",
+        "ゞ"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Additional dots are part of the intact glyph, not decoration that can be removed independently.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "ヽ"
+          ],
+          "raster_rows": [
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "...#................",
+            "....#...............",
+            ".....#..............",
+            "......#.............",
+            ".......#............",
+            ".......#............",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "...................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ヽ",
+              "codepoint": "U+30FD",
+              "advance_px": 12.0,
+              "ink_px": 6,
+              "ink_per_advance_row": 0.029411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                3,
+                4,
+                7,
+                9
+              ],
+              "components": [
+                {
+                  "ink_px": 6,
+                  "axis_deg": 131.04641864852078,
+                  "axis_ratio": 10.586520235183086
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "丶"
+          ],
+          "raster_rows": [
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "......#.................",
+            ".......#................",
+            "........#...............",
+            ".........#..............",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "丶",
+              "codepoint": "U+4E36",
+              "advance_px": 16.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.014705882352941176,
+              "ink_bbox_xyxy_inclusive": [
+                6,
+                5,
+                9,
+                8
+              ],
+              "components": [
+                {
+                  "ink_px": 4,
+                  "axis_deg": 135.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ヾ"
+          ],
+          "raster_rows": [
+            "....................",
+            "........#...........",
+            "......#..#..........",
+            ".......#............",
+            "...#................",
+            "....#...............",
+            ".....#..............",
+            "......#.............",
+            ".......#............",
+            ".......#............",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "....................",
+            "...................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ヾ",
+              "codepoint": "U+30FE",
+              "advance_px": 12.0,
+              "ink_px": 10,
+              "ink_per_advance_row": 0.049019607843137254,
+              "ink_bbox_xyxy_inclusive": [
+                3,
+                1,
+                9,
+                9
+              ],
+              "components": [
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 6,
+                  "axis_deg": 131.04641864852078,
+                  "axis_ratio": 10.586520235183086
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ゞ"
+          ],
+          "raster_rows": [
+            "...................",
+            ".......#...........",
+            ".....#..#..........",
+            ".#....#............",
+            ".#.................",
+            "..#................",
+            "...#...............",
+            "....#..............",
+            ".....##............",
+            "...##..............",
+            "..#................",
+            "...................",
+            "...................",
+            "...................",
+            "...................",
+            "...................",
+            "..................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ゞ",
+              "codepoint": "U+309E",
+              "advance_px": 11.0,
+              "ink_px": 14,
+              "ink_per_advance_row": 0.0748663101604278,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                1,
+                8,
+                10
+              ],
+              "components": [
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 10,
+                  "axis_deg": 119.58108402765637,
+                  "axis_ratio": 2.1143704212672283
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slope-and-native-width",
+      "title": "Slope and native-width alternatives",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "/",
+        "／",
+        "＼",
+        "\\",
+        "ﾉ",
+        "ノ",
+        "〆"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare actual slope and width in this pinned font; codepoint names do not supply the angle.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "/"
+          ],
+          "raster_rows": [
+            "................",
+            "................",
+            "......#.........",
+            ".....#..........",
+            ".....#..........",
+            "....#...........",
+            "....#...........",
+            "....#...........",
+            "...#............",
+            "...#............",
+            "..#.............",
+            "..#.............",
+            ".#..............",
+            ".#..............",
+            "#...............",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "/",
+              "codepoint": "U+002F",
+              "advance_px": 8.0,
+              "ink_px": 13,
+              "ink_per_advance_row": 0.09558823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                6,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 13,
+                  "axis_deg": 65.37917632943812,
+                  "axis_ratio": 15.757166955416803
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "／"
+          ],
+          "raster_rows": [
+            "..............#.........",
+            ".............#..........",
+            "............#...........",
+            "...........#............",
+            "..........#.............",
+            ".........#..............",
+            "........#...............",
+            ".......#................",
+            "......#.................",
+            ".....#..................",
+            "....#...................",
+            "...#....................",
+            "..#.....................",
+            ".#......................",
+            "#.......................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "／",
+              "codepoint": "U+FF0F",
+              "advance_px": 16.0,
+              "ink_px": 15,
+              "ink_per_advance_row": 0.05514705882352941,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 15,
+                  "axis_deg": 45.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "＼"
+          ],
+          "raster_rows": [
+            "#.......................",
+            ".#......................",
+            "..#.....................",
+            "...#....................",
+            "....#...................",
+            ".....#..................",
+            "......#.................",
+            ".......#................",
+            "........#...............",
+            ".........#..............",
+            "..........#.............",
+            "...........#............",
+            "............#...........",
+            ".............#..........",
+            "..............#.........",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "＼",
+              "codepoint": "U+FF3C",
+              "advance_px": 16.0,
+              "ink_px": 15,
+              "ink_per_advance_row": 0.05514705882352941,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                0,
+                14,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 15,
+                  "axis_deg": 135.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "\\"
+          ],
+          "raster_rows": [
+            "................",
+            "................",
+            "................",
+            "#.....#.........",
+            ".#...#..........",
+            ".#...#..........",
+            "..#.#...........",
+            "..#.#...........",
+            ".#####..........",
+            "...#............",
+            ".#####..........",
+            "...#............",
+            "...#............",
+            "...#............",
+            "................",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "\\",
+              "codepoint": "U+005C",
+              "advance_px": 8.0,
+              "ink_px": 24,
+              "ink_per_advance_row": 0.17647058823529413,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                6,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 24,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 1.7565558646815436
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾉ"
+          ],
+          "raster_rows": [
+            "................",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            "....#...........",
+            "....#...........",
+            "....#...........",
+            "...#............",
+            "...#............",
+            "..#.............",
+            ".#..............",
+            "#...............",
+            "................",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾉ",
+              "codepoint": "U+FF89",
+              "advance_px": 8.0,
+              "ink_px": 13,
+              "ink_per_advance_row": 0.09558823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                5,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 13,
+                  "axis_deg": 67.96663480769516,
+                  "axis_ratio": 7.183083487126251
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ノ"
+          ],
+          "raster_rows": [
+            "...................",
+            "...................",
+            ".........#.........",
+            ".........#.........",
+            ".........#.........",
+            "........#..........",
+            "........#..........",
+            ".......#...........",
+            ".......#...........",
+            "......#............",
+            ".....#.............",
+            "....#..............",
+            "..##...............",
+            "##.................",
+            "...................",
+            "...................",
+            "..................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ノ",
+              "codepoint": "U+30CE",
+              "advance_px": 11.0,
+              "ink_px": 14,
+              "ink_per_advance_row": 0.0748663101604278,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                9,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 14,
+                  "axis_deg": 50.90432989167087,
+                  "axis_ratio": 6.5850543198873055
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "〆"
+          ],
+          "raster_rows": [
+            "........................",
+            ".............#..........",
+            "............#...........",
+            "...........#............",
+            "..........#.............",
+            "...###...#..............",
+            "..#...#.#...............",
+            "..#....#................",
+            ".#....#.#...............",
+            ".#...#...#..............",
+            ".#..#...................",
+            "#..#....................",
+            "#.#.....................",
+            "##......................",
+            "#.......................",
+            "........................",
+            "........................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "〆",
+              "codepoint": "U+3006",
+              "advance_px": 16.0,
+              "ink_px": 28,
+              "ink_per_advance_row": 0.10294117647058823,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                13,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 28,
+                  "axis_deg": 39.788862657073565,
+                  "axis_ratio": 2.906193554931214
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tone-band-combinations",
+      "title": "Tone-band combination proposals",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        ".:",
+        ".:;",
+        ";;",
+        ":| / :| / :|",
+        "|:. / |:. / |:.",
+        "/;/;/ / /;/;/ / /;/;/"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Strings supplied in the operator's review-target account; these repeated-row layouts are comparison proposals, not validated placement or value rules.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            ".:"
+          ],
+          "raster_rows": [
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "....#.........",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "#...#.........",
+            "..............",
+            "..............",
+            ".............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": ".",
+              "codepoint": "U+002E",
+              "advance_px": 3.0,
+              "ink_px": 1,
+              "ink_per_advance_row": 0.0196078431372549,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                13,
+                0,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": ":",
+              "codepoint": "U+003A",
+              "advance_px": 3.0,
+              "ink_px": 2,
+              "ink_per_advance_row": 0.0392156862745098,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                7,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            ".:;"
+          ],
+          "raster_rows": [
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            "....#..#.........",
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            ".................",
+            "#...#..#.........",
+            ".......#.........",
+            "......#..........",
+            "................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": ".",
+              "codepoint": "U+002E",
+              "advance_px": 3.0,
+              "ink_px": 1,
+              "ink_per_advance_row": 0.0196078431372549,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                13,
+                0,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": ":",
+              "codepoint": "U+003A",
+              "advance_px": 3.0,
+              "ink_px": 2,
+              "ink_per_advance_row": 0.0392156862745098,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                7,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": ";",
+              "codepoint": "U+003B",
+              "advance_px": 3.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.0784313725490196,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                7,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 61.8450337629899,
+                  "axis_ratio": 4.391067076224634
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            ";;"
+          ],
+          "raster_rows": [
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            ".#..#.........",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            "..............",
+            ".#..#.........",
+            ".#..#.........",
+            "#..#..........",
+            ".............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": ";",
+              "codepoint": "U+003B",
+              "advance_px": 3.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.0784313725490196,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                7,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 61.8450337629899,
+                  "axis_ratio": 4.391067076224634
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            ":|",
+            ":|",
+            ":|"
+          ],
+          "raster_rows": [
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "...............",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "...............",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            "....#..........",
+            ".#..#..........",
+            "....#..........",
+            "....#..........",
+            "..............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": ":",
+              "codepoint": "U+003A",
+              "advance_px": 3.0,
+              "ink_px": 2,
+              "ink_per_advance_row": 0.0392156862745098,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                7,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": "|",
+              "codepoint": "U+007C",
+              "advance_px": 4.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.23529411764705882,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                0,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 16,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "|:.",
+            "|:.",
+            "|:."
+          ],
+          "raster_rows": [
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#............",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#.#..........",
+            ".#................",
+            ".#................",
+            "..................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#............",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#.#..........",
+            ".#................",
+            ".#................",
+            "..................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#............",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#................",
+            ".#...#.#..........",
+            ".#................",
+            ".#................",
+            ".................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "|",
+              "codepoint": "U+007C",
+              "advance_px": 4.0,
+              "ink_px": 16,
+              "ink_per_advance_row": 0.23529411764705882,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                0,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 16,
+                  "axis_deg": 90.0,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": ":",
+              "codepoint": "U+003A",
+              "advance_px": 3.0,
+              "ink_px": 2,
+              "ink_per_advance_row": 0.0392156862745098,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                7,
+                1,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": ".",
+              "codepoint": "U+002E",
+              "advance_px": 3.0,
+              "ink_px": 1,
+              "ink_per_advance_row": 0.0196078431372549,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                13,
+                0,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "/;/;/",
+            "/;/;/",
+            "/;/;/"
+          ],
+          "raster_rows": [
+            "......................................",
+            "......................................",
+            "......#..........#..........#.........",
+            ".....#..........#..........#..........",
+            ".....#..........#..........#..........",
+            "....#..........#..........#...........",
+            "....#..........#..........#...........",
+            "....#....#.....#....#.....#...........",
+            "...#..........#..........#............",
+            "...#..........#..........#............",
+            "..#..........#..........#.............",
+            "..#..........#..........#.............",
+            ".#..........#..........#..............",
+            ".#.......#..#.......#..#..............",
+            "#........#.#........#.#...............",
+            "........#..........#..................",
+            "......................................",
+            "......................................",
+            "......................................",
+            "......#..........#..........#.........",
+            ".....#..........#..........#..........",
+            ".....#..........#..........#..........",
+            "....#..........#..........#...........",
+            "....#..........#..........#...........",
+            "....#....#.....#....#.....#...........",
+            "...#..........#..........#............",
+            "...#..........#..........#............",
+            "..#..........#..........#.............",
+            "..#..........#..........#.............",
+            ".#..........#..........#..............",
+            ".#.......#..#.......#..#..............",
+            "#........#.#........#.#...............",
+            "........#..........#..................",
+            "......................................",
+            "......................................",
+            "......................................",
+            "......#..........#..........#.........",
+            ".....#..........#..........#..........",
+            ".....#..........#..........#..........",
+            "....#..........#..........#...........",
+            "....#..........#..........#...........",
+            "....#....#.....#....#.....#...........",
+            "...#..........#..........#............",
+            "...#..........#..........#............",
+            "..#..........#..........#.............",
+            "..#..........#..........#.............",
+            ".#..........#..........#..............",
+            ".#.......#..#.......#..#..............",
+            "#........#.#........#.#...............",
+            "........#..........#..................",
+            "......................................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "/",
+              "codepoint": "U+002F",
+              "advance_px": 8.0,
+              "ink_px": 13,
+              "ink_per_advance_row": 0.09558823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                6,
+                14
+              ],
+              "components": [
+                {
+                  "ink_px": 13,
+                  "axis_deg": 65.37917632943812,
+                  "axis_ratio": 15.757166955416803
+                }
+              ]
+            },
+            {
+              "char": ";",
+              "codepoint": "U+003B",
+              "advance_px": 3.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.0784313725490196,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                7,
+                1,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 1,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 3,
+                  "axis_deg": 61.8450337629899,
+                  "axis_ratio": 4.391067076224634
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "curved-crease-returns",
+      "title": "Curved crease / return proposals",
+      "pattern_family": "native-pattern-comparison",
+      "focus_forms": [
+        "｀ヽ､_",
+        "‐-､_",
+        "ﾉ",
+        "j",
+        "}",
+        "(",
+        ")"
+      ],
+      "provenance": {
+        "source_id": "f84bdfc6-58ab-4abb-bdf3-87932b50e456",
+        "annotation_status": "operator-supplied comparison candidates, not art approval",
+        "native_image_status": "packaged thresholded native-font rasters; not terminal-font glyphs",
+        "source_font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "interpretation": {
+        "observed_visual": "Compare complete local return alternatives; quoted target spellings are not approved source-native passages or a runtime fix.",
+        "drawn_analogy": "Comparison proposals, not universal glyph meanings or validated source-region targets.",
+        "mathematical_family": "Connected components and PCA axes are raster descriptors, not pen-stroke decomposition or semantic feature lines.",
+        "historical_implementation_limit": "No renderer behavior, view variant, motion quality or lighting/value acceptance is established."
+      },
+      "native_comparisons": [
+        {
+          "text_rows": [
+            "｀ヽ､_"
+          ],
+          "raster_rows": [
+            "..##....................................",
+            "....#...................................",
+            "........................................",
+            "........................................",
+            "...........#............................",
+            "............#...........................",
+            ".............#..........................",
+            "..............#.........................",
+            "...............#........................",
+            "...............#........................",
+            "........................................",
+            ".....................#..................",
+            "......................#.................",
+            ".......................#................",
+            "........................................",
+            "...........................####.........",
+            "........................................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "｀",
+              "codepoint": "U+FF40",
+              "advance_px": 8.0,
+              "ink_px": 3,
+              "ink_per_advance_row": 0.022058823529411766,
+              "ink_bbox_xyxy_inclusive": [
+                2,
+                0,
+                4,
+                1
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 151.84503376298989,
+                  "axis_ratio": 4.391067076224637
+                }
+              ]
+            },
+            {
+              "char": "ヽ",
+              "codepoint": "U+30FD",
+              "advance_px": 12.0,
+              "ink_px": 6,
+              "ink_per_advance_row": 0.029411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                3,
+                4,
+                7,
+                9
+              ],
+              "components": [
+                {
+                  "ink_px": 6,
+                  "axis_deg": 131.04641864852078,
+                  "axis_ratio": 10.586520235183086
+                }
+              ]
+            },
+            {
+              "char": "､",
+              "codepoint": "U+FF64",
+              "advance_px": 7.0,
+              "ink_px": 3,
+              "ink_per_advance_row": 0.025210084033613446,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                11,
+                3,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 135.0,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": "_",
+              "codepoint": "U+005F",
+              "advance_px": 5.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.047058823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                15,
+                3,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 4,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "‐-､_"
+          ],
+          "raster_rows": [
+            "....................................",
+            "....................................",
+            "....................................",
+            "....................................",
+            "....................................",
+            "....................................",
+            "....................................",
+            "######..............................",
+            "........#######.....................",
+            "....................................",
+            "....................................",
+            ".................#..................",
+            "..................#.................",
+            "...................#................",
+            "....................................",
+            ".......................####.........",
+            "...................................."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "‐",
+              "codepoint": "U+2010",
+              "advance_px": 8.0,
+              "ink_px": 6,
+              "ink_per_advance_row": 0.04411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                7,
+                5,
+                7
+              ],
+              "components": [
+                {
+                  "ink_px": 6,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": "-",
+              "codepoint": "U+002D",
+              "advance_px": 8.0,
+              "ink_px": 7,
+              "ink_per_advance_row": 0.051470588235294115,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                8,
+                6,
+                8
+              ],
+              "components": [
+                {
+                  "ink_px": 7,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": "､",
+              "codepoint": "U+FF64",
+              "advance_px": 7.0,
+              "ink_px": 3,
+              "ink_per_advance_row": 0.025210084033613446,
+              "ink_bbox_xyxy_inclusive": [
+                1,
+                11,
+                3,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 3,
+                  "axis_deg": 135.0,
+                  "axis_ratio": null
+                }
+              ]
+            },
+            {
+              "char": "_",
+              "codepoint": "U+005F",
+              "advance_px": 5.0,
+              "ink_px": 4,
+              "ink_per_advance_row": 0.047058823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                15,
+                3,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 4,
+                  "axis_deg": 0.0,
+                  "axis_ratio": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "ﾉ"
+          ],
+          "raster_rows": [
+            "................",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            ".....#..........",
+            "....#...........",
+            "....#...........",
+            "....#...........",
+            "...#............",
+            "...#............",
+            "..#.............",
+            ".#..............",
+            "#...............",
+            "................",
+            "................",
+            "................"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "ﾉ",
+              "codepoint": "U+FF89",
+              "advance_px": 8.0,
+              "ink_px": 13,
+              "ink_per_advance_row": 0.09558823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                5,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 13,
+                  "axis_deg": 67.96663480769516,
+                  "axis_ratio": 7.183083487126251
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "j"
+          ],
+          "raster_rows": [
+            "............",
+            "............",
+            "............",
+            "..#.........",
+            "..#.........",
+            "............",
+            "............",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "..#.........",
+            "##..........",
+            "............"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "j",
+              "codepoint": "U+006A",
+              "advance_px": 4.0,
+              "ink_px": 12,
+              "ink_per_advance_row": 0.17647058823529413,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                3,
+                2,
+                15
+              ],
+              "components": [
+                {
+                  "ink_px": 2,
+                  "axis_deg": null,
+                  "axis_ratio": null
+                },
+                {
+                  "ink_px": 10,
+                  "axis_deg": 81.46009123405005,
+                  "axis_ratio": 5.538567890408668
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "}"
+          ],
+          "raster_rows": [
+            "............",
+            "##..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            "..#.........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            ".#..........",
+            "##..........",
+            "............",
+            "............",
+            "............"
+          ],
+          "glyph_metrics": [
+            {
+              "char": "}",
+              "codepoint": "U+007D",
+              "advance_px": 4.0,
+              "ink_px": 15,
+              "ink_per_advance_row": 0.22058823529411764,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                1,
+                2,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 15,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 9.305423638443825
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            "("
+          ],
+          "raster_rows": [
+            ".............",
+            ".............",
+            "...#.........",
+            "..#..........",
+            ".#...........",
+            ".#...........",
+            "#............",
+            "#............",
+            "#............",
+            "#............",
+            ".#...........",
+            ".#...........",
+            "..#..........",
+            "...#.........",
+            ".............",
+            ".............",
+            "............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": "(",
+              "codepoint": "U+0028",
+              "advance_px": 5.0,
+              "ink_px": 12,
+              "ink_per_advance_row": 0.1411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                3,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 12,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 3.2347201786470414
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text_rows": [
+            ")"
+          ],
+          "raster_rows": [
+            ".............",
+            ".............",
+            "#............",
+            ".#...........",
+            "..#..........",
+            "..#..........",
+            "...#.........",
+            "...#.........",
+            "...#.........",
+            "...#.........",
+            "..#..........",
+            "..#..........",
+            ".#...........",
+            "#............",
+            ".............",
+            ".............",
+            "............."
+          ],
+          "glyph_metrics": [
+            {
+              "char": ")",
+              "codepoint": "U+0029",
+              "advance_px": 5.0,
+              "ink_px": 12,
+              "ink_per_advance_row": 0.1411764705882353,
+              "ink_bbox_xyxy_inclusive": [
+                0,
+                2,
+                3,
+                13
+              ],
+              "components": [
+                {
+                  "ink_px": 12,
+                  "axis_deg": 90.0,
+                  "axis_ratio": 3.2347201786470414
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

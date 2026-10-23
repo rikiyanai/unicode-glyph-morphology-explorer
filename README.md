@@ -15,13 +15,16 @@ half-width glyphs and 16×16 for full-width glyphs.
 Use it to browse candidate glyphs, inspect why they group together, and keep a
 small reviewed registry of useful morphology families for ASCII-renderer work.
 
-![Browse, filter, and inspect Unicode morphology](docs/glyph-morphology-explorer.gif)
+![Inspect a turning CJK stroke, ノ, 川 and ﾘ by their ink shapes](docs/glyph-morphology-explorer.gif)
+
+Single-glyph inspection: turns, curves, parallel stems and hooks in the
+browser's 16×16 font-chain profile—not a tour of symbol names.
 
 ## Run
 
 ```sh
 python3 -m pip install -r requirements.txt
-./run-browser.sh --block "Geometric Shapes"
+./run-browser.sh --block "CJK Strokes"
 ```
 
 The interactive browser requires a UTF-8 terminal. List the known Unicode blocks without entering the browser:
@@ -34,7 +37,24 @@ Controls are shown in the browser footer. `q` exits without changing tracked fil
 
 ## Browse discovered families
 
-![Animate and filter morphology families](docs/glyph-families-viewer.gif)
+![Compare native Saitamaar stroke bundles, curved-return runs and multi-row tone bands](docs/glyph-families-viewer.gif)
+
+Native-pattern comparisons: `彡 / ミ / ﾐ`, `川 / 巛 / ﾘ / ﾙ`, crossed forms,
+curved-return combinations and multi-row tone columns. These are the packaged
+Saitamaar 16 px rasters at native advances, not stretched terminal glyphs.
+Replay this view with `./run-families.sh --mode patterns`.
+
+![Animate an Ogham ink ramp, sharp and rounded corners, and angled and curved hooks](docs/glyph-ramps-and-curves.gif)
+
+Ramps and curves: `ᚆ ᚇ ᚈ ᚉ` adds strokes along one stem, `└ / ╰` compares
+a sharp and rounded corner, and `レ / し` compares angled and curved returns.
+The CLI animator displays complete raw 16×16 font-chain rasters; these selected
+comparisons do not stretch glyphs or interpolate between them.
+
+The reproducible recording recipes are
+[single-glyph inspection](docs/recordings/glyph-morphology-explorer.tape),
+[native-pattern comparisons](docs/recordings/glyph-families-viewer.tape), and
+[ramps and curves](docs/recordings/glyph-ramps-and-curves.tape).
 
 The family viewer shows reviewed glyph sequences as animated shape families.
 You can switch morphology axes, filter by family length, change speed, pause on
@@ -199,6 +219,43 @@ form, not its pixel width or the full multi-row construction's extent. The histo
 20-glyph / 38-degree limitation is not presented as current MAIN behavior.
 Likewise, AA-003 and AA-004 counts for `/⌒ヽ` are kept separate from the
 bounded source example and are not semantic labels.
+
+### Native stroke-bundle and combination comparisons
+
+The supplied Saitamaar comparisons are now a dedicated **NATIVE PATTERNS** axis
+and are included in `COMBOS`. Open it directly without rebuilding the full
+morphology cache:
+
+```sh
+python3 scripts/glyph_families_viewer.py --mode patterns
+python3 scripts/glyph_families_viewer.py --mode patterns --dump
+./run-families.sh --mode patterns
+```
+
+Twelve groups compare parallel/dotted/crossed bundles, narrow and fullwidth
+stems, horizontal bands, slope variants, and the quoted tone-band/curved-return
+combinations. Use `j`/`k` to select and `[`/`]` to scroll through complete
+thresholded Saitamaar rasters, advances, ink coverage, bounding boxes and
+component axes. Rasters retain native advances at 16 px with 17 px row pitch;
+they are not redrawn with the terminal's font or normalized to square cells.
+Widen the terminal when a raster is marked clipped.
+
+The original temporary `bundles.py` and `glyphcheck2.py` were inspected; the
+47 supplied bundle-table rows reproduce, including duplicate observations.
+**Their "strokes" are 8-connected ink components, not pen strokes.** A component's
+PCA axis can conceal a crossing or hook; match the full glyph construction, not
+the component count or angle alone. Multi-row tone/curve layouts are comparison
+proposals, not approved source passages, renderer fixes or lighting rules.
+
+The input, raw reported stdout, script/font hashes and limits are retained in
+`assets/glyphs/contextual/saitamaar_pattern_intake.v1.json`. Its generated,
+self-contained raster/measurement snapshot is
+`assets/glyphs/contextual/saitamaar_pattern_evidence.v1.json`. Viewing needs no
+private font or temporary scripts. Explicit regeneration needs the hash-pinned font:
+
+```sh
+python3 scripts/saitamaar_pattern_intake.py --font /path/to/Saitamaar.ttf --write
+```
 
 ## Included data
 

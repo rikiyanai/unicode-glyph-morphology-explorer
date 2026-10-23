@@ -266,6 +266,7 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_combination_families", return_value=[]),
             mock.patch.object(viewer, "load_seam_families", return_value=[]),
             mock.patch.object(viewer, "load_sjis_corpus_families", return_value=[]),
+            mock.patch.object(viewer, "load_pattern_families", return_value=[]),
         ):
             families = viewer.load_combo_families(fake_corpus, limit=1, corpus="aa004")
         self.assertTrue(families)
@@ -293,6 +294,7 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_combination_families", return_value=[]),
             mock.patch.object(viewer, "load_seam_families", return_value=[]),
             mock.patch.object(viewer, "load_sjis_corpus_families", return_value=[]),
+            mock.patch.object(viewer, "load_pattern_families", return_value=[]),
         ):
             families = viewer.load_default_families(fake_corpus, block=None, seam_limit=1)
         expected = {f['id'] for f in json.loads(DATA.read_text())['families']}

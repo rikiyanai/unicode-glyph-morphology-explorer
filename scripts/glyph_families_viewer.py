@@ -21,6 +21,8 @@ Run:
         # useful combinations plus source-context evidence
     python3 scripts/glyph_families_viewer.py --mode context
         # browse source rows, provenance, annotations, and interpretation limits
+    python3 scripts/glyph_families_viewer.py --mode patterns
+        # native Saitamaar bundle/combination comparisons; no discovery cache build
     python3 scripts/glyph_families_viewer.py --mode authored
         # the nine authored seed combinations, each beside its mirror
     python3 scripts/glyph_families_viewer.py --mode dir8 --dump
@@ -28,7 +30,7 @@ Run:
 
 Axes (top legend, switch with m):
     ALL  ROTATE(spin)  DIR8  DENSITY(ramp)  FILL  CYCLE  MIRROR  STRUCT(topo)
-    FOLIAGE STROKES  DISTRACT  COMBOS  CONTEXT EVIDENCE  AUTHORED
+    FOLIAGE STROKES  DISTRACT  COMBOS  CONTEXT EVIDENCE  AUTHORED  NATIVE PATTERNS
 Rotation is its own axis; CYCLE holds animation cycles of every length (3..16),
 filterable by length so each band is browsable on its own. With no --mode, ALL
 loads discovered families plus the local review surfaces: foliage stroke sets,
@@ -73,7 +75,7 @@ N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
 MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
-         "distract", "combo", "context", "authored", "sjis"]
+         "distract", "combo", "context", "authored", "sjis", "patterns"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
@@ -84,10 +86,11 @@ MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stro
 AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
               "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
               "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBOS",
-              "context": "CONTEXT EVIDENCE", "authored": "AUTHORED", "sjis": "SJIS CORPUS"}
+              "context": "CONTEXT EVIDENCE", "authored": "AUTHORED", "sjis": "SJIS CORPUS",
+              "patterns": "NATIVE PATTERNS"}
 # Axes whose row order carries meaning (ranking / authored/evidence file order)
 # and must therefore survive the list pane's size sort.
-ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis"}
+ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis", "patterns"}
 # Measured candidate data written by scripts/glyph_combo_gallery.py.
 MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 # The authored combination dictionary (offsets + codepoints + generated mirrors).
@@ -555,7 +558,29 @@ def load_combo_families(c: ga.Corpus, limit: int = 0,
     families.extend(load_seam_families(c, limit))
     families.extend(load_sjis_corpus_families(c, limit, mode="combo", corpus=corpus))
     families.extend(load_context_families(c, mode="combo"))
+    families.extend(load_pattern_families(c, mode="combo"))
     return families
+
+
+def load_pattern_families(c, mode: str = "patterns", doc: dict | None = None) -> list[dict]:
+    """Native comparison groups from the tracked, source-hashed intake snapshot."""
+    import saitamaar_pattern_intake as intake
+    try:
+        doc = doc if doc is not None else intake.load()
+    except (OSError, ValueError, KeyError) as exc:
+        sys.stderr.write(f"bad native pattern evidence: {exc}\n")
+        return []
+    result = []
+    for source in doc["families"]:
+        record = dict(source, measurement=doc["measurement"],
+                      reproduced_rows=len(doc["reported_checks"]))
+        chars = list(dict.fromkeys("".join(row for v in record["native_comparisons"]
+                                           for row in v["text_rows"])))
+        result.append({"mode": mode, "members": [c.i(ord(ch)) for ch in chars if c.i(ord(ch)) is not None],
+                       "block": "native pattern comparisons",
+                       "size": max(len(row) for v in record["native_comparisons"] for row in v["text_rows"]),
+                       "role_hint": record["id"], "note": record["title"], "context": record})
+    return result
 
 
 def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> list[dict]:
@@ -576,6 +601,8 @@ def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> l
     fams.extend(load_sjis_corpus_families(c, seam_limit))
     fams.extend(load_context_families(c, mode="combo"))
     fams.extend(load_context_families(c, mode="context"))
+    fams.extend(load_pattern_families(c, mode="combo"))
+    fams.extend(load_pattern_families(c, mode="patterns"))
     return fams
 
 
@@ -606,6 +633,8 @@ def _wrap_display(text: str, width: int) -> list[str]:
 
 def _context_detail_lines(record: dict, width: int) -> list[str]:
     """Human-readable detail pane retaining separate evidence/provenance fields."""
+    if record.get("native_comparisons"):
+        return _pattern_detail_lines(record, width)
     lines: list[str] = []
 
     def add(line: str) -> None:
@@ -674,7 +703,43 @@ def _context_detail_lines(record: dict, width: int) -> list[str]:
     return lines
 
 
+def _pattern_detail_lines(record: dict, width: int) -> list[str]:
+    """Raster rows stay intact, never wrapped or redrawn using terminal glyphs."""
+    lines = []
+
+    def add(text: str) -> None:
+        lines.extend(_wrap_display(text, width))
+
+    profile = record["measurement"]
+    add(record["title"])
+    add(f"Saitamaar {profile['px']}px / {profile['row_pitch_px']}px rows. Native binary ink, not normalized glyphs.")
+    for variant in record["native_comparisons"]:
+        add("--- " + " / ".join(variant["text_rows"]))
+        if len(variant["raster_rows"][0]) > width:
+            add("RASTER WIDER THAN PANE: widen terminal; rows are clipped, not wrapped/rescaled.")
+        lines.extend(_half_block_rows(variant["raster_rows"]))
+        for metric in variant["glyph_metrics"]:
+            axes = ",".join("dot" if c["axis_deg"] is None else f"{c['axis_deg']:.0f}"
+                            for c in metric["components"])
+            add(f"{metric['char']} {metric['codepoint']} advance={metric['advance_px']:g}px "
+                f"ink={metric['ink_px']}px density={metric['ink_per_advance_row']:.2f} "
+                f"components={len(metric['components'])} axes={axes} bbox={metric['ink_bbox_xyxy_inclusive']}")
+    add("8-connected INK COMPONENTS, NOT PEN STROKES. PCA axes do not decompose crossings/hooks.")
+    add(record["interpretation"]["observed_visual"])
+    add(record["interpretation"]["drawn_analogy"])
+    add(profile["angle_convention"])
+    add(profile["limits"])
+    add(f"{record['reproduced_rows']} supplied measurement rows reproduced, including duplicate observations.")
+    add("font SHA256: " + record["provenance"]["source_font_sha256"])
+    add(record["interpretation"]["historical_implementation_limit"])
+    return lines
+
+
 def _dump_context_record(record: dict) -> None:
+    if record.get("native_comparisons"):
+        for line in _pattern_detail_lines(record, 240):
+            print("       " + line)
+        return
     provenance = record.get("provenance") or {}
     interpretation = record.get("interpretation") or {}
     print(f"       context: {record.get('id')} — {record.get('title')}")
@@ -781,7 +846,7 @@ def init_colors() -> dict[str, int]:
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
         "distract": (203, -1), "combo": (214, -1), "context": (45, -1),
-        "authored": (114, -1), "sjis": (177, -1),
+        "authored": (114, -1), "sjis": (177, -1), "patterns": (45, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -792,6 +857,7 @@ def init_colors() -> dict[str, int]:
         "distract": (curses.COLOR_RED, -1), "combo": (curses.COLOR_YELLOW, -1),
         "context": (curses.COLOR_CYAN, -1),
         "authored": (curses.COLOR_GREEN, -1), "sjis": (curses.COLOR_MAGENTA, -1),
+        "patterns": (curses.COLOR_CYAN, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -910,7 +976,8 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
                 visible_count = max(0, h - 6)  # reserve the footer; do not overwrite a source row
                 max_scroll = max(0, len(detail) - visible_count)
                 context_scroll = min(context_scroll, max_scroll)
-                safe(stdscr, 4, dx, f"context {context_scroll + 1}-{min(len(detail), context_scroll + visible_count)}"
+                kind = "patterns" if context.get("native_comparisons") else "context"
+                safe(stdscr, 4, dx, f"{kind} {context_scroll + 1}-{min(len(detail), context_scroll + visible_count)}"
                      f" / {len(detail)}   [[]/[]] scroll", cset["dim"])
                 for line_i, line in enumerate(detail[context_scroll:context_scroll + visible_count]):
                     safe(stdscr, 5 + line_i, dx, line, cset["hud"])
@@ -1019,6 +1086,7 @@ def main() -> int:
                          "the useful-combination browser (including source context), "
                          "'context' for source-backed multi-row constructions, 'authored' for the nine seed "
                          "combinations, 'sjis' for corpus-derived Shift_JIS AA combinations, "
+                         "'patterns' for native Saitamaar bundle/combination comparisons, "
                          "or legacy 'seam' as an alias for combo")
     ap.add_argument("--dump", action="store_true",
                     help="print the groups as text and exit; no TTY required, so the "
@@ -1029,11 +1097,19 @@ def main() -> int:
                     help="SJIS corpus dataset for --mode sjis / combo: aa003 (AAHub slug pages, default) "
                          "or aa004 (AAHub MLT crawl, train keys)")
     args = ap.parse_args()
-    c = ga.Corpus()
+    if args.mode == "patterns":
+        import saitamaar_pattern_intake as intake
+        try:
+            pattern_doc = intake.load()
+        except (OSError, ValueError) as exc:
+            ap.error(str(exc))
+        c = intake.PatternCorpus(pattern_doc)
+    else:
+        c = ga.Corpus()
     if args.saved and args.foliage_strokes:
         ap.error("--saved and --foliage-strokes select different review sources")
     if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "context",
-                                                               "authored", "seam", "sjis"):
+                                                               "authored", "seam", "sjis", "patterns"):
         ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
                  f"combined with --saved / --foliage-strokes")
     if args.foliage_strokes:
@@ -1045,6 +1121,9 @@ def main() -> int:
     elif args.mode == "authored":
         fams = load_combination_families(c, mode="authored")
         initial_mode = "authored"
+    elif args.mode == "patterns":
+        fams = load_pattern_families(c, doc=pattern_doc)
+        initial_mode = "patterns"
     elif args.mode == "context":
         fams = load_context_families(c)
         initial_mode = "context"

@@ -31,6 +31,25 @@ python3 -c 'import numpy; import fontTools; import scipy; import skimage; from P
   exit 69
 }
 
+# This tracked native-pattern surface needs no discovery/seam cache rebuild.
+# Honour argparse's last --mode value rather than detecting an arbitrary substring.
+requested_mode=
+mode_value_next=0
+for arg in "$@"; do
+  if [ "$mode_value_next" = 1 ]; then
+    requested_mode=$arg
+    mode_value_next=0
+  else
+    case "$arg" in
+      --mode) mode_value_next=1 ;;
+      --mode=*) requested_mode=${arg#--mode=} ;;
+    esac
+  fi
+done
+if [ "$requested_mode" = patterns ]; then
+  exec python3 "$repo_dir/scripts/glyph_families_viewer.py" "$@"
+fi
+
 run_json_current() {
   python3 - "$1" "$2" "$3" "$4" "$5" <<'PY'
 import json

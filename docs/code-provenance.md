@@ -154,3 +154,45 @@ membership, corpus recurrence, old renderer limits nor a whole-piece verdict
 establishes a mathematical curve family, runtime implementation or acceptance.
 `scripts/tests/test_contextual_combo_evidence.py` checks provenance and
 source-passage consistency when the private source files are available.
+
+## Native pattern intake (2026-10-23)
+
+The operator supplied the stroke-bundle stdout from session
+`f84bdfc6-58ab-4abb-bdf3-87932b50e456`. The surviving `bundles.py` and
+`glyphcheck2.py` were inspected; their SHA-256 identities and the source-font
+identity are retained in `assets/glyphs/contextual/saitamaar_pattern_intake.v1.json`.
+All 47 supplied bundle rows reproduce with that pinned Saitamaar font, including
+duplicate observations. The original term "strokes" denotes 8-connected ink
+components; the viewer corrects that label without altering the raw stdout.
+PCA describes a component's major axis, not its constituent pen strokes.
+
+`scripts/saitamaar_pattern_intake.py` supplies a maintained reproduction and
+native-advance raster builder. Its declared output is
+`assets/glyphs/contextual/saitamaar_pattern_evidence.v1.json`; both input and
+generator hashes are checked before viewing. The tracked rasters make the
+comparisons viewable without those temporary scripts or an external font.
+No font bytes are newly bundled. No claim about another renderer is imported.
+Tone/curve combination layouts are explicit comparison proposals derived from
+the supplied target spellings, not source-region approvals or motion evidence.
+
+## README recording refresh (2026-10-23)
+
+The two README GIFs were re-recorded from the actual terminal tools using their
+maintained VHS tapes in `docs/recordings/`. The morphology browser recording
+inspects U+31D6, ノ, 川 and ﾘ in its font-chain raster profile. The family recording
+uses the native-pattern axis: parallel and vertical bundles, crossing forms,
+curved-return combinations and multi-row tone columns. Startup/exit shell screens
+are hidden; these are tool demonstrations, not renderer or artwork acceptance.
+Both outputs were decoded and sampled at two-second intervals for visual review.
+
+The operator approved the displayed native-pattern demo; its GIF is retained
+unchanged (SHA-256
+`66a036f299ae3d25299e61c0e8132739bf0a7f085f1fade1c35b96bb373d9c26`).
+A separate `glyph-ramps-and-curves.gif` records the existing `glyph_audit.py anim`
+CLI: U+1686–U+1689 (22, 28, 34, 40 ink pixels), U+2514/U+2570, and
+U+30EC/U+3057. These are explicitly selected comparisons in the raw 16×16
+font-chain profile, not newly discovered clusters, interpolation, native
+Saitamaar measurements, or evidence of feature-anchored runtime refinement.
+The 11.68-second output was fully decoded, and sampled frames were inspected
+for all four ramp steps and both members of each corner/hook comparison.
+The two earlier GIF hashes were verified unchanged after recording.
