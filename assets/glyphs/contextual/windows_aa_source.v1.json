@@ -1,0 +1,44 @@
+{
+  "schema": "glyph_morphology.windows_aa_source.v1",
+  "repository": "https://github.com/SikigamiHNQ/OrinrinEditor",
+  "commit": "f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874",
+  "license": "GPL-3.0-or-later, per source headers",
+  "license_url": "https://www.gnu.org/licenses/gpl-3.0.txt",
+  "license_path": "assets/glyphs/contextual/windows-aa/upstream/COPYING",
+  "license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+  "files": [
+    {
+      "url": "https://raw.githubusercontent.com/SikigamiHNQ/OrinrinEditor/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/TraceCtrl.cpp",
+      "raw_path": "assets/glyphs/contextual/windows-aa/upstream/TraceCtrl.cpp.cp932",
+      "raw_sha256": "ca6291531f48b9155fe5438f96da8a58f0cbdefd2a071aff2851a424eb5c8cdf",
+      "text_path": "assets/glyphs/contextual/windows-aa/upstream/TraceCtrl.cpp",
+      "text_sha256": "9ea80e88a19831427998d3e5bfc0ba623f8e4d7745775672b0f313108f2f862b",
+      "decoding": "strict CP932 to UTF-8; line endings preserved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/SikigamiHNQ/OrinrinEditor/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/BrushTemplate.cpp",
+      "raw_path": "assets/glyphs/contextual/windows-aa/upstream/BrushTemplate.cpp.cp932",
+      "raw_sha256": "3e1d723d06ce84e629e818bfe8066889923bfc61b6aba10b81834f82d791d72d",
+      "text_path": "assets/glyphs/contextual/windows-aa/upstream/BrushTemplate.cpp",
+      "text_sha256": "52838934606ccbb313012daf4c666a5cdc0c96d3159f02eb104c8445d080f31a",
+      "decoding": "strict CP932 to UTF-8; line endings preserved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/SikigamiHNQ/OrinrinEditor/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/LineTemplate.cpp",
+      "raw_path": "assets/glyphs/contextual/windows-aa/upstream/LineTemplate.cpp.cp932",
+      "raw_sha256": "e8cd9dfe3e3580e8542ce65ae2e12e4ce9de4f333282dc181b0f41b9b361bf5a",
+      "text_path": "assets/glyphs/contextual/windows-aa/upstream/LineTemplate.cpp",
+      "text_sha256": "adb30ed9a1a5a8e7c923003826615807a7fa47c60c0a4fdccf516d1d454d0d72",
+      "decoding": "strict CP932 to UTF-8; line endings preserved"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/SikigamiHNQ/OrinrinEditor/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/DocAdjustant.cpp",
+      "raw_path": "assets/glyphs/contextual/windows-aa/upstream/DocAdjustant.cpp.cp932",
+      "raw_sha256": "b8d07689f567b709308c2f968cb028a5c3395a1b5f1ecc060485c11c9085d602",
+      "text_path": "assets/glyphs/contextual/windows-aa/upstream/DocAdjustant.cpp",
+      "text_sha256": "4f76673454d85b3aafd7ae777007924bfc24beb0d706bd157f9a988351d835e5",
+      "decoding": "strict CP932 to UTF-8; line endings preserved"
+    }
+  ],
+  "limit": "Source inspection only; source/binary reproducibility not established."
+}

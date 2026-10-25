@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import hashlib
+import gzip
 import subprocess
 import sys
 import unittest
@@ -36,6 +37,30 @@ class ContextEvidenceData(unittest.TestCase):
             }, record["id"])
         self.assertTrue(any("current MAIN" in item for item in self.doc["claim_boundaries"]))
         self.assertTrue(any("old-typist 20-glyph" in item for item in self.doc["claim_boundaries"]))
+
+    def test_operator_cup_example_preserves_exact_variant_and_combined_reading(self) -> None:
+        record = self.families["aramaki-cup-plate-surface-following-tone"]
+        p = record["provenance"]
+        source = ROOT / p["text_path"]
+        text = source.read_text(encoding="utf-8")
+        self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), p["source_text_sha256_file"])
+        self.assertEqual(hashlib.sha256(text.rstrip("\n").encode("utf-8")).hexdigest(),
+                         p["source_text_sha256_utf8_rstrip_lf"])
+        self.assertIn("l　　 ⊃　　⌒_つ", text)
+        self.assertIn("sparse dots and multi stroke directional glyphs", p["operator_note"])
+        self.assertIsNone(p["paired_native_png"])
+        self.assertIn("different plate contents", p["native_image_status"])
+        self.assertEqual(record["passages"][0]["line_start"], 5)
+        self.assertIn("彳", record["focus_forms"])
+        self.assertIn("ジ", record["focus_forms"])
+        self.assertIn("density alone", record["interpretation"]["drawn_analogy"])
+        for passage in record["passages"]:
+            start = passage["line_start"] - 1
+            self.assertEqual(text.splitlines()[start:start + len(passage["rows"])], passage["rows"])
+        archive = Path(p["archive_piece_path"])
+        if archive.is_file():
+            archived = json.loads(gzip.decompress(archive.read_bytes()))["aa"][p["archive_piece_index"]]["value"]
+            self.assertEqual(archived.rstrip("\n"), text.rstrip("\n"))
 
     def test_t7_operator_boxes_and_source_rows_are_not_conflated(self) -> None:
         record = self.families["t7-texture-defined-regions"]
@@ -249,7 +274,9 @@ class ContextViewerDiscovery(unittest.TestCase):
         self.assertIn("mode=context", result.stdout)
         self.assertIn("TEXT CONTEXT ONLY", result.stdout)
         self.assertIn("focus length=", result.stdout)
-        self.assertIn("families=8", result.stdout)
+        import operator_construction_crops as crops
+        total = len(json.loads(DATA.read_text())["families"]) + len(crops.load()["families"])
+        self.assertIn(f"families={total}", result.stdout)
         for family_id in (
             "t7-texture-defined-regions",
             "c424-bounded-punctuation-pockets",
@@ -267,13 +294,14 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_seam_families", return_value=[]),
             mock.patch.object(viewer, "load_sjis_corpus_families", return_value=[]),
             mock.patch.object(viewer, "load_pattern_families", return_value=[]),
+            mock.patch.object(viewer, "load_round_families", return_value=[]),
+            mock.patch.object(viewer, "load_aaj_families", return_value=[]),
         ):
             families = viewer.load_combo_families(fake_corpus, limit=1, corpus="aa004")
         self.assertTrue(families)
         self.assertEqual({f["mode"] for f in families}, {"combo"})
         ids = {f["context"]["id"] for f in families if f.get("context")}
-        self.assertEqual(ids, set(json.loads(DATA.read_text())["families"][i]["id"]
-                                  for i in range(8)))
+        self.assertEqual(ids, {r["id"] for r in json.loads(DATA.read_text())["families"]})
         self.assertTrue(all(f["context"] for f in families))
 
     def test_interactive_detail_lines_keep_provenance_and_source_context(self) -> None:
@@ -295,6 +323,8 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_seam_families", return_value=[]),
             mock.patch.object(viewer, "load_sjis_corpus_families", return_value=[]),
             mock.patch.object(viewer, "load_pattern_families", return_value=[]),
+            mock.patch.object(viewer, "load_round_families", return_value=[]),
+            mock.patch.object(viewer, "load_aaj_families", return_value=[]),
         ):
             families = viewer.load_default_families(fake_corpus, block=None, seam_limit=1)
         expected = {f['id'] for f in json.loads(DATA.read_text())['families']}

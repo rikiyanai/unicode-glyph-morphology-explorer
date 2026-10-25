@@ -1,0 +1,7 @@
+{
+  "source": "assets/glyphs/contextual/ascii_justice_recovery.v1.json",
+  "source_sha256": "78bd2ec84256da8c64013f7ccdea424634c09e6db0361b6a213487f2129d4659",
+  "kernel_source": "scripts/ascii_justice_kernels.py",
+  "kernel_sha256": "fe6b1e43937787aac5e65b23e6bbf1871c64d4253a5d39773b5fb5ead1e088a5",
+  "scope": "93 exact JSON masks; edge demo uses a synthetic RGB tile and recovered Python kernels; not complete converter parity"
+}

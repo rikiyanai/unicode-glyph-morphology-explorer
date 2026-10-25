@@ -1,0 +1,15 @@
+{
+  "archive_key": "2f0353dc8e23bde120d1c050746f937c",
+  "page_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+  "source_pieces": [27, 36, 57, 73, 97, 105, 106, 107, 161, 165],
+  "crops": [
+    {"number": 1, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_ewnAZz/Screenshot 2026-10-23 at 23.41.10.png", "title": "01 — Godless Shrine: ｧ宀v cap and 弋__人 return", "focus_forms": ["ｧ宀v", "弋__人", "∧"], "binding": {"piece": 161, "line_start": 11, "line_end": 13}},
+    {"number": 2, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_5CXekQ/Screenshot 2026-10-23 at 23.41.25.png", "title": "02 — column-cap arc with jI斗 and ミ", "focus_forms": ["jI斗-─--ミ"], "binding": {"piece": 165, "line_start": 7, "line_end": 10}},
+    {"number": 3, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_KoKU6M/Screenshot 2026-10-23 at 23.42.29.png", "title": "03 — γ⌒ヽ cap with 乂__ノ lower return", "focus_forms": ["γ⌒ヽ", "乂__ノ"], "binding": {"piece": 36, "line_start": 7, "line_end": 8}},
+    {"number": 4, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_PfCJkg/Screenshot 2026-10-23 at 23.42.57.png", "title": "04 — paired lobes: shared motif in church variants 105/106/107", "focus_forms": ["（(⌒Y⌒)）", ")Ｉi("], "binding": {"piece": 105, "line_start": 6, "line_end": 7, "equivalent_pieces": [106, 107], "ambiguity": "Local motif is matched in all three church variants and repeats within each. Crop cannot identify a unique full artwork or left/right occurrence. Entry 105 is representative context, not a unique attribution."}},
+    {"number": 5, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_RQAStz/Screenshot 2026-10-23 at 23.43.21.png", "title": "05 — entry 97: rounded torso and lower return beside punctuation", "focus_forms": ["(　)", "/⌒Ｙ", "乂__ﾉ", "しく__"], "binding": {"piece": 97, "line_start": 4, "line_end": 7}},
+    {"number": 6, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_sWq8vk/Screenshot 2026-10-23 at 23.44.00.png", "title": "06 — arch band: ｲﾆア゜ to 寸ム / 寸ﾊ / Ⅵｉ", "focus_forms": ["ｲﾆア゜", "/ﾆｱ", "寸ム", "寸ﾊ", "Ⅵｉ"], "binding": {"piece": 73, "line_start": 7, "line_end": 17}},
+    {"number": 7, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_8Oy4hZ/Screenshot 2026-10-23 at 23.44.47.png", "title": "07 — Kraków St Mary's: stacked (__) / γ⌒ヽ / 乂__ソ", "focus_forms": ["(__)", "γ⌒ヽ", "乂__ソ"], "binding": {"piece": 57, "line_start": 12, "line_end": 14}},
+    {"number": 8, "path": "/var/folders/r8/n6419zqn3lx20lt6f2dph24w0000gn/T/TemporaryItems/NSIRD_screencaptureui_T02EuY/Screenshot 2026-10-23 at 23.44.56.png", "title": "08 — Kraków St Mary's: γ⌒ヽ / {　　　} / 乂__乂", "focus_forms": ["γ⌒ヽ", "{　　　}", "乂__乂"], "binding": {"piece": 57, "line_start": 9, "line_end": 14}}
+  ]
+}

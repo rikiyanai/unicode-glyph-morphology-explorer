@@ -1,0 +1,83 @@
+{
+  "schema": "glyph_morphology.round_reference_sources.v1",
+  "archive_root": "/Users/r/Projects/ascii-art-archive/collections/aahub",
+  "records": [
+    {
+      "id": "round-portrait-res91",
+      "title": "Rounded portrait — メ, ノノ and ｲ in neighboring rows",
+      "slug": "ningen-mobu-09",
+      "piece": "res91",
+      "source_url": "https://aahub.org/mlt/d40c87d7f4aa2daee631bb79463b6d79",
+      "focus_forms": ["メ", "ノノ", "ｲ"],
+      "observed_visual": "Row 1 places メ on the upper hair contour; row 2 has ノノ; row 8 has ｲ on the left hair/face side. Inspect the neighboring rows and intact strokes, not isolated character meanings.",
+      "drawn_analogy": "A rounded head/hair construction. 彡 and 州 occur in the hair mass; neither is identified as the operator's forgotten kanji.",
+      "review": "Luna and parent inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-watermelon-resK-185",
+      "title": "Watermelon — punctuation rim and striped lower return",
+      "slug": "yasai-kudamono",
+      "piece": "resK-185",
+      "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+      "focus_forms": ["ﾒﾌ", "ｲ", "州", "洲"],
+      "observed_visual": "Punctuation traces much of the round outer rim. Row 20 places ﾒﾌ where a stripe reaches the lower rim. ｲ and 州/洲 participate in interior stripe constructions; stripes are not interchangeable with the outer contour.",
+      "drawn_analogy": "Round fruit with corresponding rim, stripe entries and intentional paper. This does not identify the operator's forgotten kanji.",
+      "review": "Parent inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-ring-resK-72",
+      "title": "Circular ring — shallow arcs, diagonals and vertical sides",
+      "slug": "bakuhatsu-kemuri",
+      "piece": "resK-72",
+      "source_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+      "focus_forms": ["-―-", "⌒ヽ", "_,ハ", "‐--‐"],
+      "observed_visual": "Eight rows construct the ring with shallow top/bottom marks, diagonals, vertical sides, a small cap and open paper. The changing contour is not spelled by repeating one fixed-slope glyph.",
+      "drawn_analogy": "Circular ring construction, not a glyph-to-circle dictionary or motion demonstration.",
+      "review": "Parent inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-fruit-resK-232",
+      "title": "Tomato-section fruit — open rounded body and raised stem",
+      "slug": "yasai-kudamono",
+      "piece": "resK-232",
+      "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+      "focus_forms": ["/", "＼", "ﾉ"],
+      "observed_visual": "Rows 1–15 build a broad rounded body: raised stem/calyx at 1–3, shoulders at 4–7, sides at 8–12 and curved bottom at 13–15. Punctuation, slashes and horizontal/vertical strokes preserve a largely open interior.",
+      "drawn_analogy": "Rounded fruit; tomato-section item per the archive's preceding heading, not a claim of artist intent.",
+      "review": "Luna inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-wheels-resK-01",
+      "title": "Bicycle — sparse wheel rims connected to the frame",
+      "slug": "jitensha",
+      "piece": "resK-01",
+      "source_url": null,
+      "focus_forms": [".", "-"],
+      "observed_visual": "Rows 7–20 contain two rounded wheel rims built with punctuation bands, sloped returns and sparse interior marks. Frame tubes connect the hubs; the circular read belongs to the multi-row assembly, not just isolated dots.",
+      "drawn_analogy": "Two wheel constructions, not evidence that any particular kana sequence means circle. No original live URL was established from the inspected manifest.",
+      "review": "Luna inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-halo-res373",
+      "title": "Figure and halo — enclosing tapered oval and internal motif",
+      "slug": "shingu-butsugu-mingeihin-zou",
+      "piece": "res373",
+      "source_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+      "focus_forms": ["非", "(", ")"],
+      "observed_visual": "Rows 1–30 construct a tapered oval/teardrop enclosure around a seated figure; 31–35 form the pedestal. Parentheses, slashes and kana-like strokes articulate the contour. Repeated 非 is an internal halo motif, not its perimeter.",
+      "drawn_analogy": "Enclosing oval with an interior figure and motif. 非 is not identified as the operator's forgotten kanji.",
+      "review": "Luna inspected paired native PNG/TXT; source observation, not operator art approval."
+    },
+    {
+      "id": "round-veil-res424",
+      "title": "Veiled figure — nested head, veil and shoulder arcs",
+      "slug": "shingu-butsugu-mingeihin-zou",
+      "piece": "res424",
+      "source_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+      "focus_forms": ["イ", "人", "川"],
+      "observed_visual": "Rows 2–24 show the rounded head nested inside the larger veil/shoulder envelope. Row 2 has イ at the upper turn; lower rows widen into shoulders. Punctuation bands are interior veil cues, not the outer contour.",
+      "drawn_analogy": "Nested rounded boundaries; this packaged archive pair is distinct from the separately annotated S#424 artifact record.",
+      "review": "Luna inspected paired native PNG/TXT; source observation, not additional operator art approval."
+    }
+  ]
+}

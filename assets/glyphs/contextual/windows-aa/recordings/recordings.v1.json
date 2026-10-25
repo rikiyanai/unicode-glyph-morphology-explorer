@@ -1,0 +1,46 @@
+{
+  "source": "assets/glyphs/contextual/ascii_justice_recovery.v1.json",
+  "source_sha256": "78bd2ec84256da8c64013f7ccdea424634c09e6db0361b6a213487f2129d4659",
+  "generator": "scripts/aa_recovery_recordings.py",
+  "generator_sha256": "48846c68980f70fd358fbb6fd699973f6f0d9be2f08093694c1fa1a57cf7ae70",
+  "artifacts": [
+    {
+      "path": "assets/glyphs/contextual/windows-aa/recordings/luna-aaj-viewer.gif",
+      "sha256": "076530feee39bb8a07aeb0fea8675da4cb774254f882c06d99e0577a2cef6389",
+      "size": [
+        1400,
+        950
+      ],
+      "frames": 85,
+      "scope": "Real AAJ browser navigation; Saitamaar comparison rasters, not native Windows output or art approval."
+    }
+  ],
+  "rejected_artifacts": [
+    {
+      "filename": "uniform-dark-edge.png",
+      "sha256_before_deletion": "e881f8ec3c7176d6dd3cbe52a019174c73e9a67f079a6909fdee5810e5062e60",
+      "status": "operator rejected; deleted; not depictive/construction evidence"
+    },
+    {
+      "filename": "boundary-edge.png",
+      "sha256_before_deletion": "22cd257016f3bf99916e219b62df300256ee6437bba1a1efab8fc077ad02dc56",
+      "status": "operator rejected; deleted; not depictive/construction evidence"
+    },
+    {
+      "filename": "mask-page-01.png",
+      "sha256_before_deletion": "a3dbb5edb135bfa325eef7b566ec7a5cc567a72714f8928a8e8e1eb2760c755f",
+      "status": "operator rejected; deleted; not depictive/construction evidence"
+    },
+    {
+      "filename": "ascii-justice-edge-vs-area.gif",
+      "sha256_before_deletion": "31b90fbe35d82a434e31d103a040bf46cbe83ed2e9e0d65f7344b4ec0ab656ab",
+      "status": "operator rejected; deleted; not depictive/construction evidence"
+    },
+    {
+      "filename": "ascii-justice-original-masks.gif",
+      "sha256_before_deletion": "2d2d34013bae4561e50fbbc6df7cb103eeeb421f91f85f807174d3f7536de6ce",
+      "status": "operator rejected; deleted; not depictive/construction evidence"
+    }
+  ],
+  "status": "Only the real browser capture is retained as an active recording. Demonstration plates were rejected and must not be recreated or recommended."
+}

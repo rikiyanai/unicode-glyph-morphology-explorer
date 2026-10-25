@@ -1,0 +1,264 @@
+{
+  "schema": "glyph_morphology.operator_reference_sources.v1",
+  "input_hashes": {
+    "scripts/operator_reference_sources.py": "c36604ad50c9690670a2c142194d823ceb0152fd71bdbf08cdd049628f16cd97",
+    "assets/glyphs/contextual/operator_construction_crops.v1.json": "05a45a4415c8b2ef1ad85cf72a74c3ef9a7938c7bbe6ac6418099b73ef64e749",
+    "assets/glyphs/contextual/shallot_native_contexts.v1.json": "91a6c5ff19b1c163c8ccd39b04a263afa7dab1d6e42a6f8c1bca96368abf9554",
+    "assets/glyphs/contextual/operator-constructions/crop-01.png": "b613c1ea7fcf7dd4eed682ea57b0aa7f2d867da09e81bddd8cb54e3dc68ceec3",
+    "assets/glyphs/contextual/operator-constructions/church-161.txt": "b5c0395dccbc3ec3f1340951ce6974b7d9ce22e0bf54849fa29677ad5210f8cf",
+    "assets/glyphs/contextual/operator-constructions/church-161.raw.txt": "b5c0395dccbc3ec3f1340951ce6974b7d9ce22e0bf54849fa29677ad5210f8cf",
+    "assets/glyphs/contextual/operator-constructions/crop-02.png": "ced8520299420dbef31f852463185e4053b95cba72f62f71de8d1075e6abbc4c",
+    "assets/glyphs/contextual/operator-constructions/church-165.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
+    "assets/glyphs/contextual/operator-constructions/church-165.raw.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
+    "assets/glyphs/contextual/operator-constructions/crop-03.png": "02cfcf2c15ad0757240b9cdd4682486f47a333f559a96b28fd42f3149bc21dbc",
+    "assets/glyphs/contextual/operator-constructions/church-036.txt": "c59f6b47898f11e820fb2aafb189f11cf7688945dfa85764e907445527c407d5",
+    "assets/glyphs/contextual/operator-constructions/church-036.raw.txt": "4bab6904b70367a29424d872fc8020b60ecbab47f43273b985b690b8bf268a74",
+    "assets/glyphs/contextual/operator-constructions/crop-04.png": "38fb78b9d44e59167c4bcdacd5302d6676319cb8d6adeea260ed8f9303ef090b",
+    "assets/glyphs/contextual/operator-constructions/church-105.txt": "57648b947002e066824542b9e7171275948627de0a32922ce78635fe5317497b",
+    "assets/glyphs/contextual/operator-constructions/church-105.raw.txt": "57648b947002e066824542b9e7171275948627de0a32922ce78635fe5317497b",
+    "assets/glyphs/contextual/operator-constructions/church-106.txt": "624aa4b4cb4fd58c8595b8c9cafcca7f09e9334063e5286696a9eb454bcc369c",
+    "assets/glyphs/contextual/operator-constructions/church-106.raw.txt": "624aa4b4cb4fd58c8595b8c9cafcca7f09e9334063e5286696a9eb454bcc369c",
+    "assets/glyphs/contextual/operator-constructions/church-107.txt": "fa485190164a337adf3a50b180f6dd38f730332513f37bdb3621c5f087e90f67",
+    "assets/glyphs/contextual/operator-constructions/church-107.raw.txt": "fa485190164a337adf3a50b180f6dd38f730332513f37bdb3621c5f087e90f67",
+    "assets/glyphs/contextual/operator-constructions/crop-05.png": "d0b5bbbb397657968717abde4df70f542cc7f6151e5a2ec2a81ae07dd83fe20a",
+    "assets/glyphs/contextual/operator-constructions/church-097.txt": "f6cb2c4afa8018c4f7ad3c145ecae8820210fe4821d6f1de80e834173c1a4da6",
+    "assets/glyphs/contextual/operator-constructions/church-097.raw.txt": "f6cb2c4afa8018c4f7ad3c145ecae8820210fe4821d6f1de80e834173c1a4da6",
+    "assets/glyphs/contextual/operator-constructions/crop-06.png": "5c0a4b77c24289c0319f803dd64218296c79aefe1ebeb66433ac4e43cfa2ff8a",
+    "assets/glyphs/contextual/operator-constructions/church-073.txt": "45ce845a0be0fbde36adca715ab294d9721712d16c19c1ed385003a09cdf105b",
+    "assets/glyphs/contextual/operator-constructions/church-073.raw.txt": "45ce845a0be0fbde36adca715ab294d9721712d16c19c1ed385003a09cdf105b",
+    "assets/glyphs/contextual/operator-constructions/crop-07.png": "2364525b523c66eb57de8c0a280152e964654228b9682c5f40a37e87b4922d98",
+    "assets/glyphs/contextual/operator-constructions/church-057.txt": "cf5a7ade13f5f89a8e2347a7679ee3836b813fda0fa604f51fd0c51af93d572b",
+    "assets/glyphs/contextual/operator-constructions/church-057.raw.txt": "cf5a7ade13f5f89a8e2347a7679ee3836b813fda0fa604f51fd0c51af93d572b",
+    "assets/glyphs/contextual/operator-constructions/crop-08.png": "0bfad20831ab29c1428383f086ecf4494fc74eb6b8aed08b76753f6d06aca1b8",
+    "assets/glyphs/contextual/aramaki-cup-plate-176.txt": "8a9030fade504f4033854e98d677830aecdf5b884cbd2df5f48e8b4c7e745808"
+  },
+  "records": [
+    {
+      "id": "operator-curve-crop-01",
+      "title": "01 — Godless Shrine: ｧ宀v cap and 弋__人 return",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-01.png",
+      "crop_sha256": "b613c1ea7fcf7dd4eed682ea57b0aa7f2d867da09e81bddd8cb54e3dc68ceec3",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-161.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-161.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 161,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 11,
+          "line_end": 13
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-02",
+      "title": "02 — column-cap arc with jI斗 and ミ",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-02.png",
+      "crop_sha256": "ced8520299420dbef31f852463185e4053b95cba72f62f71de8d1075e6abbc4c",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-165.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-165.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 165,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 7,
+          "line_end": 10
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-03",
+      "title": "03 — γ⌒ヽ cap with 乂__ノ lower return",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-03.png",
+      "crop_sha256": "02cfcf2c15ad0757240b9cdd4682486f47a333f559a96b28fd42f3149bc21dbc",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-036.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-036.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 36,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 7,
+          "line_end": 8
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-04",
+      "title": "04 — paired lobes: shared motif in church variants 105/106/107",
+      "status": "shared AAHub motif matched; unique full-artwork variant unresolved (105/106/107)",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-04.png",
+      "crop_sha256": "38fb78b9d44e59167c4bcdacd5302d6676319cb8d6adeea260ed8f9303ef090b",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": null,
+      "original_raw_text_path": null,
+      "source_variants": [
+        {
+          "archive_piece_index": 105,
+          "text_path": "assets/glyphs/contextual/operator-constructions/church-105.txt",
+          "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-105.raw.txt",
+          "text_sha256": "57648b947002e066824542b9e7171275948627de0a32922ce78635fe5317497b",
+          "line_start": 6,
+          "line_end": 7
+        },
+        {
+          "archive_piece_index": 106,
+          "text_path": "assets/glyphs/contextual/operator-constructions/church-106.txt",
+          "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-106.raw.txt",
+          "text_sha256": "624aa4b4cb4fd58c8595b8c9cafcca7f09e9334063e5286696a9eb454bcc369c",
+          "line_start": 6,
+          "line_end": 7
+        },
+        {
+          "archive_piece_index": 107,
+          "text_path": "assets/glyphs/contextual/operator-constructions/church-107.txt",
+          "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-107.raw.txt",
+          "text_sha256": "fa485190164a337adf3a50b180f6dd38f730332513f37bdb3621c5f087e90f67",
+          "line_start": 6,
+          "line_end": 7
+        }
+      ],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": null,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 6,
+          "line_end": 7
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-05",
+      "title": "05 — entry 97: rounded torso and lower return beside punctuation",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-05.png",
+      "crop_sha256": "d0b5bbbb397657968717abde4df70f542cc7f6151e5a2ec2a81ae07dd83fe20a",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-097.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-097.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 97,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 4,
+          "line_end": 7
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-06",
+      "title": "06 — arch band: ｲﾆア゜ to 寸ム / 寸ﾊ / Ⅵｉ",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-06.png",
+      "crop_sha256": "5c0a4b77c24289c0319f803dd64218296c79aefe1ebeb66433ac4e43cfa2ff8a",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-073.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-073.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 73,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 7,
+          "line_end": 17
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-07",
+      "title": "07 — Kraków St Mary's: stacked (__) / γ⌒ヽ / 乂__ソ",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-07.png",
+      "crop_sha256": "2364525b523c66eb57de8c0a280152e964654228b9682c5f40a37e87b4922d98",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-057.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-057.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 57,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 12,
+          "line_end": 14
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-08",
+      "title": "08 — Kraków St Mary's: γ⌒ヽ / {　　　} / 乂__乂",
+      "status": "original AAHub text matched",
+      "crop_path": "assets/glyphs/contextual/operator-constructions/crop-08.png",
+      "crop_sha256": "0bfad20831ab29c1428383f086ecf4494fc74eb6b8aed08b76753f6d06aca1b8",
+      "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+      "candidate_page_url_not_a_binding": null,
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-057.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-057.raw.txt",
+      "source_variants": [],
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
+      "archive_piece_index": 57,
+      "archive_index_unit": "zero-based aa array index; not a verified live post ID",
+      "regions": [
+        {
+          "line_start": 9,
+          "line_end": 14
+        }
+      ]
+    },
+    {
+      "id": "aramaki-cup-plate-surface-following-tone",
+      "title": "Operator example — sparse dots plus directional multi-stroke marks turn with the cup surface",
+      "status": "complete operator drawing exactly matches original AAHub text",
+      "source_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+      "original_full_text_path": "assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+      "original_full_text_sha256": "8a9030fade504f4033854e98d677830aecdf5b884cbd2df5f48e8b4c7e745808",
+      "original_full_native_image_path": null,
+      "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz",
+      "archive_sha256": "41978e5fb08788067d7560c1bcd4a8fe402ddf997e4a728257a551a588e6d873",
+      "archive_piece_index": 176,
+      "archive_index_unit": "zero-based aa array index in the pinned local archive, not a verified current live post number",
+      "regions": [
+        {
+          "line_start": 5,
+          "line_end": 14
+        },
+        {
+          "line_start": 15,
+          "line_end": 21
+        }
+      ],
+      "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface",
+      "not_a_substitute": "tabemono-01/resK-182 has different plate contents; it is not this original drawing"
+    }
+  ],
+  "limit": "All eight local crop constructions have source references. Crop 04 matches a motif repeated in three full-artwork variants; no unique variant or repeated left/right occurrence is invented. Full source text is not an original native PNG. No guessed live post anchors."
+}

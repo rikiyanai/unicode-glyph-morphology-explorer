@@ -198,7 +198,8 @@ source rows and provenance without opening a TTY.
 The terminal pane is **textual context, not a native Saitamaar rendering**:
 terminal column widths do not preserve its proportional advances. Use the
 record's paired native PNG together with these exact rows before judging glyph
-fit, joins or negative shapes. Text-only candidates remain text-only.
+fit, joins or negative shapes. The separately packaged round references below
+also offer a native-PNG pixel viewport. Older text-only candidates remain text-only.
 
 The tracked records are source evidence, not universal glyph meanings or
 runtime proof. T#7 keeps its three separately boxed operator regions (branch
@@ -219,6 +220,170 @@ form, not its pixel width or the full multi-row construction's extent. The histo
 20-glyph / 38-degree limitation is not presented as current MAIN behavior.
 Likewise, AA-003 and AA-004 counts for `/⌒ヽ` are kept separate from the
 bounded source example and are not semantic labels.
+
+### Saved Windows AA patterns and tracing source
+
+The saved tools were **AA Judgment, ASCII Justice and Orinrin Editor**. Their
+patterns can be inspected on macOS without executing a Windows program:
+
+```sh
+python3 scripts/windows_aa_intake.py
+./run-families.sh --mode context
+./run-families.sh --mode aaj
+```
+
+**AA JUDGMENT** (`--mode aaj`) has **40 individually selectable combinations**,
+in the recovered builder's order. Each entry shows the intact combination,
+codepoints, native proportional placements, a packaged **Saitamaar 16px raster**,
+and executable/string addresses. These are labelled comparison rasters—not
+recovered Windows/MS Gothic output. No external font or private cache is needed
+to browse. `j/k` selects templates; `[/]` scrolls details. All 40 are in COMBOS
+and the default browser's AA JUDGMENT axis too.
+
+CONTEXT EVIDENCE and COMBOS include `aa-judgment-composite-matching-templates`
+(all **40** recovered sequences), `orinrin-brush-presets` and
+`orinrin-multiline-insertions`. These are editor/converter evidence, **not a claim
+that these presets produced the supplied AAHub drawings**. Text display is not
+native-font rendering.
+
+- [Recovered AA Judgment mappings, addresses and file hashes](assets/glyphs/contextual/windows_aa_patterns.v1.json).
+- [All 40 individually rendered template records](assets/glyphs/contextual/aaj_templates.native.v1.json).
+- Orinrin's exact [brush groups](assets/glyphs/contextual/windows-aa/aabrush.txt),
+  [insertion palette](assets/glyphs/contextual/windows-aa/aalist.txt) and
+  [multiline items](assets/glyphs/contextual/windows-aa/UserItem.ast).
+  All **24 named palette groups** are now separate CONTEXT EVIDENCE / COMBOS
+  records (`orinrin-palette-01` through `orinrin-palette-24`). They preserve
+  multi-character entries and the original adjacent-row samples—not just
+  individual glyphs. The insertion parser handles nonempty lines separately;
+  a pictured multi-row sample is not thereby a one-click macro.
+- Retrieved, commit-pinned [tracing source](assets/glyphs/contextual/windows-aa/upstream/TraceCtrl.cpp),
+  [template parser](assets/glyphs/contextual/windows-aa/upstream/LineTemplate.cpp),
+  [brush selector](assets/glyphs/contextual/windows-aa/upstream/BrushTemplate.cpp) and
+  [pixel-width spacing routines](assets/glyphs/contextual/windows-aa/upstream/DocAdjustant.cpp).
+  [Source manifest and license](assets/glyphs/contextual/windows_aa_source.v1.json).
+- [Findings: circular construction versus automatic tracing](docs/code-provenance.md#circular-construction-synthesis-and-saved-windows-tools-2026-10-24).
+- **ASCII Justice recovered:** [919-line HSP2 decompilation](assets/glyphs/contextual/windows-aa/ascii-justice/start.as),
+  [93 original 8×16 mask mappings and recovery provenance](assets/glyphs/contextual/ascii_justice_recovery.v1.json),
+  [portable edge/matching kernels](scripts/ascii_justice_kernels.py).
+  This supersedes the earlier manual-only inspection. Two clamp lines are
+  malformed in the decompiler output; full Windows-output parity is not claimed.
+- **Orinrin spacing:** [portable plain/Unicode gap routines](scripts/orinrin_spacing.py),
+  transcribed from the retrieved source under its GPL-3.0-or-later terms.
+  Their widths are editor assumptions, not measurements of your current font.
+
+AA Judgment matches native-font bitmaps of short strings to image patches.
+Orinrin's trace code adjusts and displays an image underlay; the artist still
+chooses the glyph construction. Neither is an established circle-construction
+algorithm for the archived art. No Windows binary was run or added here.
+The recovery findings and exact limits are in
+[the canonical algorithm record](docs/code-provenance.md#aa-judgment-browser-completeness-and-further-algorithm-recovery-2026-10-24).
+
+#### Watch the recovered material
+
+- [Luna's real AA Judgment browser recording](assets/glyphs/contextual/windows-aa/recordings/luna-aaj-viewer.gif).
+
+The operator rejected the mask sheets and synthetic edge demonstration as
+irrelevant to the requested source constructions. Those five images/GIFs were
+deleted and are not recommended evidence. Inspect the actual Orinrin palette
+groups and recovered source instead. No complete Windows-converter playback
+has been delivered.
+[Recording hashes/provenance](assets/glyphs/contextual/windows-aa/recordings/recordings.v1.json);
+[browser-capture retention utility](scripts/aa_recovery_recordings.py).
+
+The exact [919-line listing](assets/glyphs/contextual/windows-aa/ascii-justice/start.as)
+is available separately for inspection; the GIF is not presented as a recording
+of that original application running.
+
+### Operator example: surface-following dots and directional bundles
+
+The [exact cup/plate text](assets/glyphs/contextual/aramaki-cup-plate-176.txt)
+is the operator-supplied positive example from the AAHub 荒巻スカルチノフ archive
+(`aa[176]`). Its context record, `aramaki-cup-plate-surface-following-tone`,
+preserves the explanation: sparse dots **and** multi-stroke directional glyphs
+hug/bend with the surface. Inspect the rim, `. / : / ;` field, `彡` side marks,
+and changed `彳`/`ジ` lower returns together—not a density ramp in isolation.
+
+It is available in `--mode context` and `COMBOS`. The exact variant is currently
+**text-only**, not a claimed native raster: a similar food-page image has rice
+instead of the reclining character and is not substituted as its paired PNG.
+This explicitly supplied example is separate from the earlier rejected selection.
+
+### Operator construction crops: the actual local curve examples
+
+```sh
+./run-families.sh --mode round
+./run-families.sh --mode round --dump
+```
+
+The cache-free **CONSTRUCTION CROPS** axis (CLI name `round`) now contains the
+**eight screenshots supplied by the operator**, not the rejected rounded-object
+selection. The same crops are included in `CONTEXT EVIDENCE` and `COMBOS`.
+
+**Original AAHub sources, including the complete cup drawing:** see the
+[consolidated original-reference index](docs/code-provenance.md#original-aahub-reference-index--operators-eight-crops-and-cup-2026-10-24)
+and [machine-readable source registry](assets/glyphs/contextual/operator_reference_sources.v1.json).
+The index links every supplied crop, every matched full original and the original
+AAHub page. All eight local constructions are now source-matched. **Crop 04's
+motif is shared by variants 105/106/107**, so the index preserves all three full
+originals without claiming a unique variant or left/right copy.
+
+| Crop | Evidence | Exact source binding |
+|---|---|---|
+| [01](assets/glyphs/contextual/operator-constructions/crop-01.png) | `ｧ宀v` cap, `弋__人` return and `∧` | [Godless Shrine, entry 161, rows 11–13](assets/glyphs/contextual/operator-constructions/church-161.txt) |
+| [02](assets/glyphs/contextual/operator-constructions/crop-02.png) | `jI斗-─--ミ` column-cap arc | [Karnak, archived entry 165, rows 7–10](assets/glyphs/contextual/operator-constructions/church-165.txt) |
+| [03](assets/glyphs/contextual/operator-constructions/crop-03.png) | `γ⌒ヽ` cap and `乂__ノ` lower return | [Assisi, entry 36, rows 7–8](assets/glyphs/contextual/operator-constructions/church-036.txt) |
+| [04](assets/glyphs/contextual/operator-constructions/crop-04.png) | `（(⌒Y⌒)）` paired lobes and `)Ｉi(` | Shared motif in [105](assets/glyphs/contextual/operator-constructions/church-105.txt), [106](assets/glyphs/contextual/operator-constructions/church-106.txt), [107](assets/glyphs/contextual/operator-constructions/church-107.txt), rows 6–7; unique variant unresolved |
+| [05](assets/glyphs/contextual/operator-constructions/crop-05.png) | `(　)`, `/⌒Ｙ`, `乂__ﾉ`, `しく__` | [Entry 97, rows 4–7](assets/glyphs/contextual/operator-constructions/church-097.txt) |
+| [06](assets/glyphs/contextual/operator-constructions/crop-06.png) | `ｲﾆア゜`, `/ﾆｱ`, `寸ム`, `寸ﾊ`, `Ⅵｉ` changing around an arch band | [Church basement, entry 73, rows 7–17](assets/glyphs/contextual/operator-constructions/church-073.txt) |
+| [07](assets/glyphs/contextual/operator-constructions/crop-07.png) | `(__)` over `γ⌒ヽ` / `乂__ソ` | [Kraków St Mary's, entry 57, rows 12–14](assets/glyphs/contextual/operator-constructions/church-057.txt) |
+| [08](assets/glyphs/contextual/operator-constructions/crop-08.png) | `γ⌒ヽ` / `{　　　}` / `乂__乂`, with lower neighboring round | [Same entry 57, rows 9–14](assets/glyphs/contextual/operator-constructions/church-057.txt) |
+
+The kanji in crop 06's `寸ム` and `寸ﾊ` is **寸**, confirmed from the source text.
+It is not a claim about an unidentified character in another example. The
+operator's [Milan church passage](assets/glyphs/contextual/operator-constructions/church-027.txt)
+is also preserved as source context; the newly matched crops link to their own
+full artworks rather than being automatically assigned to Milan.
+
+Use `j`/`k` to select. The initial **overview** uses explicitly labelled integer
+ink pooling so the whole reference fits; it is not native glyph-fit evidence.
+Press **`v`** for **unscaled screenshot pixels**, **`h`/`l`** to pan horizontally,
+and **`[`/`]`** to scroll vertically through the image, exact source rows and
+provenance. Screenshot bytes are unchanged; their font pixel size and advance
+metrics are not inferred. Both raw archived text and HTML-decoded display text
+are packaged for ten source pieces, with separate hashes. No private font,
+archive or temporary screenshot path is needed to view the packaged evidence.
+
+For **all eight crops**, the detail pane also shows **CONSTRUCTION / TOOL
+COMPARISON**: 32 exact source fragments, their row/codepoint locations,
+Saitamaar 16px proportional positions, and exact overlaps with the saved
+Orinrin palette/brushes and all 40 AAJ combinations. Six cup fragments have the
+same comparison under its `CONTEXT EVIDENCE` entry. Fullwidth/halfwidth forms
+and whitespace are not normalized. Partial matches are labelled **PARTIAL**,
+not presented as matching whole constructions or evidence of a particular
+artist's tool. Saitamaar positions are comparisons, not inferred screenshot
+metrics. No synthetic diagnostic pictures or Windows-output claim is involved.
+
+The portable [mapping snapshot](assets/glyphs/contextual/construction_tool_mapping.v1.json)
+retains every overlap locator, including repeated punctuation matches grouped
+in the pane. Rebuild explicitly with `python3 scripts/construction_tool_mapping.py --write`
+using the pinned local font; browsing needs no font installation. This is an
+auditable comparison, **not a completed automatic-converter reconstruction**.
+
+For the actual mechanism explanation—font-specific construction, dot shifts,
+implied continuations, patterned tone, reusable editor fragments, and automatic
+local ink fitting—see [what produces the recurring combinations](docs/code-provenance.md#what-produces-the-recurring-combinations--mechanism-answer-2026-10-24).
+The forty AAJ composites are **not** its complete output vocabulary; absence of
+a whole-circle preset does not establish that sequential matching cannot build
+one. The cited practitioner walkthrough uses **（´д｀）Edit**, not Orinrin.
+
+The definition and index are
+`assets/glyphs/contextual/operator_construction_crops.sources.v1.json` and
+`operator_construction_crops.v1.json`. Explicit packaging from the original
+screenshots/archive uses:
+
+```sh
+python3 scripts/operator_construction_crops.py --write
+```
 
 ### Native stroke-bundle and combination comparisons
 

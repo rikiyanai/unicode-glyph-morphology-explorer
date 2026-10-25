@@ -1,0 +1,439 @@
+{
+  "schema": "glyph_morphology.round_references.v1",
+  "input_sha256": "184004614ce5f7df941deed550413fc8acd62fde8742d7d84bce00b5fed41a00",
+  "families": [
+    {
+      "id": "round-portrait-res91",
+      "title": "Rounded portrait — メ, ノノ and ｲ in neighboring rows",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "メ",
+        "ノノ",
+        "ｲ"
+      ],
+      "provenance": {
+        "source_id": "aahub/ningen-mobu-09/res91",
+        "source_url": "https://aahub.org/mlt/d40c87d7f4aa2daee631bb79463b6d79",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-portrait-res91.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-portrait-res91.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/ningen-mobu-09/res91.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/ningen-mobu-09/res91.txt",
+        "source_image_sha256": "39c43b1f7d426093dde4487cc7560a19be4c2a9a05aba0817d7e0786f8e15c94",
+        "source_text_sha256_file": "6f33c5d91ebfafb88bb6c5f475bee9d2e006155acb48f0b361aade675c16abad",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Luna and parent inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 734,
+        "height": 373
+      },
+      "passages": [
+        {
+          "id": "round-portrait-res91-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　 　 　 　 ,. -一'⌒/⌒メ ＿",
+            "　　　　　　　　 　 　 　 　 /´ 　 〈 ､{ { f ノノ　　｀ｰ､　　　　　　　　　　　　 　 　 　 　 r ─ ､",
+            "　　　　　　　　　　　　　 r'　ヽミミヽﾐﾐﾐY彡彡彡ﾆ. ヽ._ ／::::::::::::::::::::::::::::::::::::::　 　 　 l´￣ｌ |",
+            "　 　 　 　 　 　 　 　 　 ﾊ ミミミミY州州リﾉ彡彡三 ／::::::::::::::::::::::::::::::::::::::::::::::　　 　 |ー‐'｜",
+            "　　　　　　　　　　　 　 L ﾐ三ｦ´￣ ｀¨´￣ ｀Y彡 ／:::::::::ヾ:ﾊ:::l ｢ヽ:::::::::::::::::::::::::::::::::::::l　　　l",
+            "　　　　　　　　　　　　　{ 三7 ,.ニﾐ､_jL_,rﾆﾆ､ヽ　l:::::::::::::::::l::lヽﾉ_;: -───-　.,,_:::::::::|　≡ |",
+            "　　　　　　　　　　　 　 〈彡|={{:::::::}}ｧ=､{{:::::::}}=､i l:::::::::::::::/;.-'´　_,,,,. -‐ェェｪｪｪｪttttt|　 　 |",
+            "　　　　　　　　　　　　　 ｲﾐi　 `＝'ｲ._r､ヾ＝'′ ﾄ.l::::::::::／　,.‐爪　 j三/>＝=ぇミミ'´~|　　 卜､",
+            "　　　　　　　　　　 　 　 〈ﾐ|　　f,r＝=＝=､､　　 k l::::::/　／ｨjミ､　　lシ_ーﾟ‐´ヽ/vv､　l　≦ |ｖｖヽl⌒ヾ",
+            "　　　　　　　　　　　　 　 iﾐl　　 |´￣￣｀ヽ}i　　 k|ﾞ∨ ,ｨﾐｲ＞｡＞l　 　 ヽヽヽ` ｌ ~~ヾヽﾄ,　　 |`┴l　　 |",
+            "　　 　 　 　 　 　 　 　 　 ヾ!　　|　　　　　/　　 ﾊi .//l ｌ ｌ lｰ'　　 |rー、 　 ／~ヽ.　　 ﾋ|　　　ｌ 　 !　　 l",
+            "　　　　　　 　 　 　 　 　 　 ﾍ　 l{ _＿__ ,〃 　 ブﾉ彳 l ｌ l |　　 　 ヾ:::ｿ 　 |　　　 ＼　ﾋj　　　ヾﾆﾞ　l l ｣＼_",
+            "　　　　　　　　　　　　　　　　 '. ヾﾆニﾆ ′ ／/ij . |l ll ｌ l |　　　　__ｒ‐tｰ｢入_　　　　￣´ 　 l l　　　l l　|　 }",
+            "　　　　　　　　　　　　　　　 　 l'､　 　 　 ／　/｜　|l ll l l |　　 ,ｭ<｣ｰ┘::（　　＼　　 ヾヽ 　 ' ' 　 　 　 |　 |",
+            "　　　　　　　　　　　　　　　 　 |　 l ￣ ´/　 /　.!,....ヾll l l ゝ　 ヾ:::::::::::::::::::＼　　　 ､　 ` `　　　　　　　 l 　!",
+            "　　　　　　　　　　　　　　　 　 l　 ﾊ 　 /　_,.ィ７´.　　＼ｌｌ､ >、　＼j-、　　　 ＼　 、`　 　 　 　 　 　 　 }　|",
+            "　　　　　　　　　　　　　 　 _,.イ-､　_,._-_r'／://　　!　　ヾﾐ川＼　 ＼`､_,_rtｰ''ハ　ヽ　　 　 　 　 　 　 　 /",
+            "　　　　,. -――‐--‐ｧ:::':´/ヾﾆ=ﾆ=ﾆ-ｧ'´::::/ {　　 |　　　　｀'ー ＼　 ` ー‐''\"　　l　　　　　　 　 　 　 　 /",
+            "　　 ／　　　　 ,. -／::::::::〈　　/´_,　 '´::::::::::|　ヽ 　 !　　　　　　 .| ::＼｀~´　　　 .入　　　　　　　　　 　 /",
+            "　 /　　　　 ／ ／:::::::::::::::::｀７:´::::::::::::::::::::::::! 　 !　　　　　 　 　 _jヾ;::::`ｰ--─''\":::::ヽ　　 　 　 　 　 　 厂ｰ--　.,_",
+            "　 !　　 　 / ／::::::::::::::::::::::::/:::::::::::::::::::::::::::::::ヽ ﾉ　　 　 ._,.-‐''\"／　 ＼:::::::::::::::::::::::::::::＼　　　　　　　　{　　　　　　｀''ｰ-"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Row 1 places メ on the upper hair contour; row 2 has ノノ; row 8 has ｲ on the left hair/face side. Inspect the neighboring rows and intact strokes, not isolated character meanings.",
+        "drawn_analogy": "A rounded head/hair construction. 彡 and 州 occur in the hair mass; neither is identified as the operator's forgotten kanji.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-watermelon-resK-185",
+      "title": "Watermelon — punctuation rim and striped lower return",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "ﾒﾌ",
+        "ｲ",
+        "州",
+        "洲"
+      ],
+      "provenance": {
+        "source_id": "aahub/yasai-kudamono/resK-185",
+        "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-watermelon-resK-185.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-watermelon-resK-185.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/yasai-kudamono/resK-185.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/yasai-kudamono/resK-185.txt",
+        "source_image_sha256": "7aa14ba7ebb2c6c5aa8a70c24b84f0c42fe2d615f8c55071df6e759f7de4257a",
+        "source_text_sha256_file": "e6353f86f643198e09986a2964e450368e41235c25fad018cafb89a1fad8d665",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Parent inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 453,
+        "height": 390
+      },
+      "passages": [
+        {
+          "id": "round-watermelon-resK-185-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　 _,,、､-‐‐‐‐- ､.,_",
+            "　　　　　　　　　 　 　 　 _､-'' ｀　　ﾐﾙｲ彡'''　　　´''‐ _",
+            "　　　　　　　　　　　 _､‐｀　　 气三(　　)＝＝=≡三ﾆkt´' ,_",
+            "　　　　　　　　　　､ ｀=-ｰ彡辷汽气Yﾅｲミゝミ圭ミゞ　　　　^ _",
+            "　　　　 　 　 　 ､｀　　　ノｲ　　从 州 ヾﾄｯ从ｯ　　　ヾミy　　　´ ,",
+            "　　　　　　　　,｀　　　ｿK　　 ﾙ　 洲　　洲　ヾミﾙｧ　　 ヾﾐミ 　´_",
+            "　 　 　 　 　 ,｀　　ﾇﾈf　 f州ｵ　 洲ft　 ｿﾐ{ｯ　　爪　　　k,,　　 　 ',",
+            ".　　 　　　　,′ ,ｨﾙ　　　州ﾄ　　 洲{　　 ﾙ州　 （州ﾐ､　　fｬ 　 　 '.",
+            "　　　　　　 ;　 〆　　　j州　}}　　洲　　　洲ﾊ　　州州ﾄ　　ﾐv;;,　　:",
+            "　　　 　 　 !　/　　　州州ｼｲ　　洲　　　州洲　　　ヽミﾐｯ　　（ﾐk　ｉ",
+            "　　　 　 　 !　　　　　ｲ州　{　　ｲ洲　　　洲什　　　　ﾙ州　　{ﾐi　 ｉ",
+            "　　　　　　 ,　　　　州　　 j　　　ﾂ洲　　　ﾈ圭气　　ｾﾐ州ﾄ　 ﾙ从;",
+            ".　　　 　 　 '.　　　 州　　ｲ　　 洲爪　　　洲ｻ　　　　　)州l　　{ij ,′",
+            "　 　 　 　 　´,　　　洲　 ﾄ　　　ｶ洲}　　　ｵ州ﾄ　　　　　ﾙ洲　 ﾂ,'",
+            "　　　　　　　 ´_　 州　　|　　　　}州　　　　洲ﾋ　　　 　歹ヾ} 　_｀",
+            "　　　　　　　　 ^､ ｿ　　　)　　　}洲　　　　　洲ﾚ　　　　　}ﾙ'　､｀",
+            "　　　　　 　 　 　 ' _　　ｲ　　　　洲　　　　　ｵ洲Y　　　　州j_ ｀",
+            "　　　　　　 　 　 　 ´-._ﾑ　　　　ﾙf　　　　　 ﾇ洲´　　　jjj､‐｀",
+            "　　　　　 　 　 　 　 　 ´‐､,_　　 ｽﾁ　 　 　 　州ﾂ　 _,､‐'｀圭圭圭ﾆ__",
+            "　　　　　　　　　　　　　　　 ´''‐-ミ爪、,,_____,,.ﾒﾌ-‐''｀圭圭圭圭圭圭圭",
+            "　　　　　　　　　　　　　　　　圭圭圭圭圭圭圭圭圭圭圭圭圭圭圭",
+            "　　　　　　　　　　　　　　　　　气圭圭圭圭圭圭圭圭圭圭圭圭"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Punctuation traces much of the round outer rim. Row 20 places ﾒﾌ where a stripe reaches the lower rim. ｲ and 州/洲 participate in interior stripe constructions; stripes are not interchangeable with the outer contour.",
+        "drawn_analogy": "Round fruit with corresponding rim, stripe entries and intentional paper. This does not identify the operator's forgotten kanji.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-ring-resK-72",
+      "title": "Circular ring — shallow arcs, diagonals and vertical sides",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "-―-",
+        "⌒ヽ",
+        "_,ハ",
+        "‐--‐"
+      ],
+      "provenance": {
+        "source_id": "aahub/bakuhatsu-kemuri/resK-72",
+        "source_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-ring-resK-72.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-ring-resK-72.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/bakuhatsu-kemuri/resK-72.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/bakuhatsu-kemuri/resK-72.txt",
+        "source_image_sha256": "88215fac3530ae1df34f0369d25078e0c375a7efa0693370527a2ccfdc5d2d2c",
+        "source_text_sha256_file": "b19c8f9bf823f37308f83be6cf3a5016f4329bd376f86ed4e099e79f2d08d29e",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Parent inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 180,
+        "height": 152
+      },
+      "passages": [
+        {
+          "id": "round-ring-resK-72-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　 -―-",
+            "　　　　／　　　　　, ⌒ヽ.",
+            "　　　/　　　　　　 ヽ.　_,ハ",
+            "　 　 |　　　　　 　 　 　 　 l",
+            "　 　 |　　　　　 　 　 　 　 |",
+            "　　　　　　　　　　　　　　/",
+            "　　　　＼　　　　　　　／",
+            "　　　　　　　 ‐--‐　 ´"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Eight rows construct the ring with shallow top/bottom marks, diagonals, vertical sides, a small cap and open paper. The changing contour is not spelled by repeating one fixed-slope glyph.",
+        "drawn_analogy": "Circular ring construction, not a glyph-to-circle dictionary or motion demonstration.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-fruit-resK-232",
+      "title": "Tomato-section fruit — open rounded body and raised stem",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "/",
+        "＼",
+        "ﾉ"
+      ],
+      "provenance": {
+        "source_id": "aahub/yasai-kudamono/resK-232",
+        "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-fruit-resK-232.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-fruit-resK-232.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/yasai-kudamono/resK-232.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/yasai-kudamono/resK-232.txt",
+        "source_image_sha256": "37ecda65e8e8cca3d9a9329d1974e6ab51c2ccb4483a60ec31b379f45888fe34",
+        "source_text_sha256_file": "6722a3bce9c6c248359300463caa2f7eb8b4e845479d9aebb1f983fecb09e6ba",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Luna inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 354,
+        "height": 271
+      },
+      "passages": [
+        {
+          "id": "round-fruit-resK-232-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　 ,;;;;",
+            "　　　　　　　　　　　　　　　　　 ｉｉｉ",
+            "　　　　　　　　　　　_,､ -‐''''\"\"~|||~\"\"''''‐-､_",
+            "　　 　 　 　 　 　 ,,-====ﾆﾆ;;;;;; 　 ;;;;;;彡ミミﾆ=、",
+            "　　　　　　　　,／　　　　,;;;ﾞﾞﾞ''''''ミ''''''ミﾐﾆﾆ=､　 `'､",
+            "　　　　　　　,;´　　　　,r'\"｀　　ミ''　　　　　　　　　.｀i､",
+            "　　　　　　 /　　 ,,'´　　　　　 ﾐ'' 　 　 　 　 　 　　　.｀ｉ,",
+            "　　　　　　.|　　 .\"　　　　　　　　　　　　　　　　　　　. ﾞl",
+            "　　　　　　|　　　　　　　　 ｀‐､　　　 ,i´　 　 　 　 　 　 |",
+            "　　　　　　.|　　　　　　　　　　　　　′　　　　　　　　 ,,lﾞ",
+            "　　　　　　 ﾞl,　　　　　　　　　　　　　　　　　　　　　　,ﾉ",
+            "　　　　　　　＼　　　　　　　　　　　　　　　　　　　　,;'´",
+            "　　　　　　　　｀'i､　　　　　　　　　 　 　 　 　 　 ,,‐'´",
+            "　　　　　　　　　 ｀''-,,_　　　　　　　　　　　 _,,,‐'´",
+            "　　　　　　　　　　　　｀ﾞ''ー-,,,,,,,,,,,,,,,,,,―ｰ'\""
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Rows 1–15 build a broad rounded body: raised stem/calyx at 1–3, shoulders at 4–7, sides at 8–12 and curved bottom at 13–15. Punctuation, slashes and horizontal/vertical strokes preserve a largely open interior.",
+        "drawn_analogy": "Rounded fruit; tomato-section item per the archive's preceding heading, not a claim of artist intent.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-wheels-resK-01",
+      "title": "Bicycle — sparse wheel rims connected to the frame",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        ".",
+        "-"
+      ],
+      "provenance": {
+        "source_id": "aahub/jitensha/resK-01",
+        "source_url": null,
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-wheels-resK-01.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-wheels-resK-01.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/jitensha/resK-01.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/jitensha/resK-01.txt",
+        "source_image_sha256": "01e9b6107c73e394e4525d394489a4af22cbeee09810d99c84c369a42eb03a6a",
+        "source_text_sha256_file": "630b48c60544e820a86ad21d34c9d92ba9500d66934cb8ec610d43950f77b6c4",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Luna inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 424,
+        "height": 356
+      },
+      "passages": [
+        {
+          "id": "round-wheels-resK-01-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　 　　　　rﾆﾆKｺﾍfﾆ(( )-─ｭ",
+            "　　　　　　　　　　　　　　　　　　　　　 ラ /´｀￣｀¨ヽ",
+            "　　　　　　　　r───-､　　　　　　　 }7!",
+            "　　　　　　　　ゝ=≦彳´¨　　　　　　　 ﾉ..ﾊ",
+            "　　　　　　　　　　　E]　　　　　　,..イ::::/::::∧",
+            "　　　　　　　　　　　 ||　　　 ,...イ＞ ´/::::/l=l､",
+            "　　　....::::::::::::....　　　≠,...:::::,＞　　 ./::::/ Vﾍf7=ｭ.......",
+            "　 .:::／￣￣｀ﾐ:::rｧ７ﾍ:::r'　　　　　/:::/　　Vﾘ:::x====-､:::..",
+            ".ｨ::/ｨ､　　 　 r､j／::::/ :::!　　　　 /:::/　 ,.:::::’，^l !　 　　　､:::::..",
+            ".::/// 　　 　 7ｲ,ｨﾍ::::.. }::i　＿_ｲ::::,' 　 ,::/ 　 ’，V!　　 　　　､::::..",
+            ":::l　　　 ｨ=／ 〃 　 .:::.. |::!f}‐/:::,:　　 ..:/ 　　 　，V!　　　　　　.:::::..",
+            ":::|　＿ﾉイ::∧===== :::へ::!〉'::::/　 　 :::! 　　　 ､{　l，　　　　　　:::::",
+            "::::: 　 f9ｾﾊソﾆﾆ≧:::Y´:::::::ヽ:/　　　 ::::l 　　　　ゝ=､ソ　　　　　 :::::",
+            ":::　　　　ﾉl　　　　　 ;{:::::|||::::} 　 　 　 ::::!　　　　　｀¨¨　　　　　　 :::::",
+            "ゝ::､　　　────-ゝ::!!!ノ　　　　　 ::､　　　　　　　　　　　　　;:::;",
+            "　 ＼､　　　　　 ノ:::/ ＿j|}　　　　　　　.::､　　　　　　　　　　　 ,::::",
+            "　　　＞ﾆ====彡　　｀¨¨¨　　　　　　　丶:..　　　　　　　　　 .:::::/",
+            "　　　　　｀¨¨¨´　　　　　　　　　　　　　　 ＼::....　　　　　....::::／",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　＞　::::::::::::彡",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　¨¨¨"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Rows 7–20 contain two rounded wheel rims built with punctuation bands, sloped returns and sparse interior marks. Frame tubes connect the hubs; the circular read belongs to the multi-row assembly, not just isolated dots.",
+        "drawn_analogy": "Two wheel constructions, not evidence that any particular kana sequence means circle. No original live URL was established from the inspected manifest.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-halo-res373",
+      "title": "Figure and halo — enclosing tapered oval and internal motif",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "非",
+        "(",
+        ")"
+      ],
+      "provenance": {
+        "source_id": "aahub/shingu-butsugu-mingeihin-zou/res373",
+        "source_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-halo-res373.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-halo-res373.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/shingu-butsugu-mingeihin-zou/res373.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/shingu-butsugu-mingeihin-zou/res373.txt",
+        "source_image_sha256": "b26a3f048f81ec9ef6b46dff050b64846604cf1fc03b31d507440ffb8880edf9",
+        "source_text_sha256_file": "dadf8d28ce3e01c94c0548fa685cfcce5b74c63173d2f6cc7badb93783920625",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Luna inspected paired native PNG/TXT; source observation, not operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 418,
+        "height": 611
+      },
+      "passages": [
+        {
+          "id": "round-halo-res373-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　（ヽ",
+            "　　　　　　　　　　　　　　　　　）ﾚ　ﾚ､",
+            "　　　　　　　　　　　　　　　ｒ､/（（ﾉ（）ヽﾍ",
+            "　　　　　　　　　　　　　∧/ (人 (）（(）（）ヽﾊ",
+            "　　　　　　　　　　　ｒ､/ (） (））(\"ﾐ=Jｿｒ=､（） し,",
+            "　　　　　　　　　ｒ､/（)）(从(ｒ,=,ｒ'ﾞ三ﾐヽ=ミ､=()（.)ｒ､",
+            "　　　　　　　　 (（)（）ﾉｒﾞｿ非:Ｎｒ,=＝=､|/l:非ミ､（()ﾞﾍ",
+            "　　　　　　 　 (（)ヽ()）l非l\"::|）|ｌミ尚:=ｌ|（|:::ﾞl非lY（)ノlｒ,",
+            "　　　　 　 　 (ヽ）=彡l非l:::::;|）|l（ﾊﾞﾊ）||（|;::::::l非lぅ(ブﾉ",
+            "　　　　　 　 （(）,(）ヾl非l::::::{ ,r''‐''‐''‐''‐､ }::::::l非l彡 (ﾉ）ｒ,",
+            "　　　　　　　Z=､ぅ）}l非l:::::::V-‐-､　,r‐-V:::::::l非l\"(フ（ﾉ }",
+            "　　　　　　　ゝ､(）,r=l非l::ｒｎ| ‐--　 --‐ |::::::l非l（ｒ'７ (ﾆ′",
+            "　　　　　　　ヽ（ヽ(r='l非l|| |ｌ　　 ｒ l:､　　l::::l非lﾐ､（米）(ﾉ）",
+            "　　 　 　 从()ヽ(）l非l:::l=|　',＼　= =　／:l非l:::ｌ非ｌ.｢l (ﾉ ﾚ,ｒ､",
+            "　　　 ｒ,（()ヽ=ﾐｌ非l:::,r'\"´ヽ　lヽ`_― '´￣l７7ｯ､:ヾ｢l ｢｢ｒ､（.) ）",
+            "　 　 （()）(）ｒl非l::::::/ｌ　　 |＝|　　　　 　 // ∧ﾊ:::ｌ.` \"\"1（ｒ,リﾊ",
+            "　　 ヾYﾞ(ｒ,l非l:::::::/　', __.l　 │　　　　 // （　 ）ﾊ::|　　Ａミ/ﾉ（.).）",
+            "　　（()ｿ(ｒl非l::::::/ 　 〈ｒ\"!　　|　 　 　 /／／|| ｢|ﾞl､!==|lEl（(９（)/",
+            "　 （(）ｒﾞ（l非l:::::/=､､ ハ l　　 |　　　 /´／/{ﾞ)C|.|.|.|　 .l非l（)（（)ﾉ）",
+            "　 ｒ)) }）)ｌ非l:::ﾉ　 ,ｒ'\"⌒ヽ 　 | ｒ'\"ﾞヽ7´///l ||　　 |ｌ　 |非| （)7ﾉ(ﾉl",
+            "　J(）ﾆ=ﾞl非l/　　ｆ　　　　 l_ノ┴っノ////　〃.__ / ｌ　|ｌ非l（人(ﾉ./",
+            "　ゝ (）ﾊ.}F/　　/| 　 　 　 l|｣＿三⊇ノ/|| 〈ヽ..__ﾉ　 リl非l ）>ﾉﾉl",
+            "　 ヾ,(）彡/　　/::|l　　　　 ｌl|二 -‐ﾆﾞ /ｌ ||　|:::::::ﾊ　　ll非lｿ（ﾉ/ﾉ",
+            "　　ヾ､.=/=､､/ﾖ::|lヽ　　　ﾉｌ|ニ-‐ '／ || ||　|::::/::::l　　llｦ(ﾉｒ=''ﾚｧ",
+            "　　　／ ノ ｀ｌl非l|lヽ ￣　ﾉｌl|--‐ ´　　ｌbﾘ__l／::::;ｨｌ　　ｌ(フ (7ノ",
+            "　　（/ ｒooo/)ﾐｌﾖ|l､　￣　ﾉｌl|__　　 __（(ヾ)ノ＞-∈ﾖ__　l ｒ_シ7",
+            "　　　|｣87)8ぅノlﾐ|.ｌｌ` -‐　　ｌl|　￣　　))〃　 _....　-''\"￣ヽ‐''′",
+            "　　　　8'\"8ヾﾆｼ| l ｌｌ　,r‐-､fr⌒Ｙ⌒ヽ,r''\"´ ﾆ 二 ￣ ノ　}⊃",
+            "　　　　8o8　 　 | l ｌｌ /　 　 ヾ'\"⌒｢´|ミ ‐-　....　＿　　　/",
+            "　　 ,.....8o8--‐┴ｰ'ｒ'ヽ).））））＿_..辷ゝ｀二 ＿＿＿＿ノ‐- ､",
+            "　　ヾ⌒（⌒\"⌒`(\"⌒`\"⌒`ｿ\"⌒`\"⌒ヾ⌒`\"⌒/⌒`⌒)⌒ｿ",
+            "　 　 ヽr‐ヽ、　　(\"⌒`\"⌒`ヽ 　 　 　 ／⌒`\"⌒)　 　 /\"ン",
+            "　 　 　 ＼ （`\"⌒ヽ　　 　 ／⌒`\"⌒ヾ　　　　／⌒\"｀）／",
+            "　　　　 　 ｀`丶 ...___＼　（　　　　　　　）　 ∠　　-‐''\"´",
+            "　　　　　　　　　　　　l三三三三三三三三l"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Rows 1–30 construct a tapered oval/teardrop enclosure around a seated figure; 31–35 form the pedestal. Parentheses, slashes and kana-like strokes articulate the contour. Repeated 非 is an internal halo motif, not its perimeter.",
+        "drawn_analogy": "Enclosing oval with an interior figure and motif. 非 is not identified as the operator's forgotten kanji.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    },
+    {
+      "id": "round-veil-res424",
+      "title": "Veiled figure — nested head, veil and shoulder arcs",
+      "pattern_family": "round-contour-source-construction",
+      "focus_forms": [
+        "イ",
+        "人",
+        "川"
+      ],
+      "provenance": {
+        "source_id": "aahub/shingu-butsugu-mingeihin-zou/res424",
+        "source_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+        "image_path": "assets/glyphs/contextual/aahub-round-refs/round-veil-res424.png",
+        "text_path": "assets/glyphs/contextual/aahub-round-refs/round-veil-res424.txt",
+        "origin_image_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/shingu-butsugu-mingeihin-zou/res424.png",
+        "origin_text_path": "/Users/r/Projects/ascii-art-archive/collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+        "source_image_sha256": "b7f8e348179c86154827b04e20aa6e9a35074b8c36eea7d1822957833bbbc0b8",
+        "source_text_sha256_file": "cc54d067d709b448d6f911be068e9b1f4a53e26913757e4072673cb20765ac02",
+        "native_image_status": "Exact archived native PNG bytes; Saitamaar 16px source profile, not terminal-font text.",
+        "annotation_status": "Luna inspected paired native PNG/TXT; source observation, not additional operator art approval.",
+        "live_url_status": "Page URL retained from archived HTML when known; exact drawings are identified by the archived piece ID and packaged byte hashes, not current live post numbering."
+      },
+      "native_reference": {
+        "width": 439,
+        "height": 424
+      },
+      "passages": [
+        {
+          "id": "round-veil-res424-full-text",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　_ ＿",
+            "　　　　　　　　　　　　　　　 　 , イ´　　　 ｀丶、",
+            "　　　　　　 　 　 　 　 　 　 ／.: 　 　.＿ _　　　ヽ",
+            "　　　　　　　　　　　　　　 / .::: .／　　 　 ｀ヽ i　 ﾊ",
+            "　　　　　　　　　　　　　　,'.: :: .,' 　 　 人　　 ｀l 　 |",
+            "　　　　　　 　 　 　 　 　 ,.: .::　l=-‐ ´ 　 ｀ ｰミl 　 !",
+            "　　　　　　　　　　 　 　 .l:::: :. ;'　＿ 　　　＿｀ l 　ﾊ",
+            "　　　　　　　　　　　　　 ｌ::::::::｜`＝'ヽ　'´＝'　! :: :..',",
+            "　　　　　　　　　　 　 　 ! :: : ｜　 　.::}　 　 　 .! :: ::｜",
+            "　　　　 　 　 　 　 　 　 l :: ::　ﾄ､.　　::し 　 　 /:! :: ::ﾊ",
+            "　　　　　　　　 　 　 　 ,' :: ::　川:. 、 ｀-´ 　.ｲ ::ｌ :: ::　',",
+            "　　　　　　　 　 　 　 ./　:: :. ,' ｌ l ::::... - :::: 　| :::| :: ::　ﾍ",
+            "　　　　　　　　 　 　 / 　 :: :.l　!ﾘ::::::::::'　　　 ｌ　::! :: :　　ゝ、",
+            "　　　　　　　　 　 ／.　　 :　:!: ;'ヽ::　　　　 ｲ,! 　:! : :. 　 　 ＼",
+            "　　 　 　 　 　 ／.:　:　　 :　:l il ::.、｀ - - ' / } .::.|　 ::.　 : :　　＼",
+            "　　　　　　 .／ .:　.::　　　:　,'.: ゝ、｀ｰ - イ / .:　|　 :::　 :.:.　　　 ヽ",
+            "　　　　　　/　.:　 .::　:. 　 :: l:i　::　ﾄ､: : : ... ｲ　::.　!　 :::.　::　　　 　 ﾍ",
+            "　　 　 　 /　.:　 .::　 .:　　:: l:l . :: ﾉ:. ヽ イ.:人　:..｜　::::　:　　　　　　',",
+            "　 　 　 ./　.:　 .::　　:: 　 ::: |:l　::（::::.　　.::　　ヽ :. l 　 ::: .:　 :　　 : .　 ｌ",
+            "　　 　 .,': .::　 .:::　　.::　　::: ﾄ､ :. :）:::.　　　　 　 ）::|　　:: :　 :　 　 : :　 |",
+            "　　　 .,':: .:　 .::::　　.:: 　 .::: !　）ノ　 .:i'Y'l　　　（ :: !　: ::.:　 .:　　　: :　 |",
+            "　　　..ｌ:: ::　 .::::: 　 :::.　 .:: ::l: .'´　　.::|'Y'|:. 　　　｀ !　: :: 　 ::　　　 : :.　!",
+            "　　　 ｌ:: ::　.::::::　　::::　 ::　::!: ..　　..::,'｜';:.　　　 .::|　:: ::.　 ::　　　 :: ::. |",
+            "　　　 |::::　.::::::　　 :::　.::: .:::}: : .. 　 /　|　';::　　 .::::|　:　:::.　::.　　　:: .::. !"
+          ]
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Rows 2–24 show the rounded head nested inside the larger veil/shoulder envelope. Row 2 has イ at the upper turn; lower rows widen into shoulders. Punctuation bands are interior veil cues, not the outer contour.",
+        "drawn_analogy": "Nested rounded boundaries; this packaged archive pair is distinct from the separately annotated S#424 artifact record.",
+        "mathematical_family": "Not assigned; a depicted rounded form does not prove a mathematical feature detector.",
+        "historical_implementation_limit": "No renderer behavior, temporal quality, corpus-wide frequency or operator acceptance is established."
+      }
+    }
+  ]
+}

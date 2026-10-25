@@ -23,6 +23,8 @@ Run:
         # browse source rows, provenance, annotations, and interpretation limits
     python3 scripts/glyph_families_viewer.py --mode patterns
         # native Saitamaar bundle/combination comparisons; no discovery cache build
+    python3 scripts/glyph_families_viewer.py --mode round
+        # operator-supplied construction crops: source pixels and matched source rows
     python3 scripts/glyph_families_viewer.py --mode authored
         # the nine authored seed combinations, each beside its mirror
     python3 scripts/glyph_families_viewer.py --mode dir8 --dump
@@ -75,7 +77,7 @@ N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
 MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
-         "distract", "combo", "context", "authored", "sjis", "patterns"]
+         "distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
@@ -87,10 +89,10 @@ AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
               "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
               "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBOS",
               "context": "CONTEXT EVIDENCE", "authored": "AUTHORED", "sjis": "SJIS CORPUS",
-              "patterns": "NATIVE PATTERNS"}
+              "patterns": "NATIVE PATTERNS", "round": "CONSTRUCTION CROPS", "aaj": "AA JUDGMENT"}
 # Axes whose row order carries meaning (ranking / authored/evidence file order)
 # and must therefore survive the list pane's size sort.
-ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis", "patterns"}
+ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj"}
 # Measured candidate data written by scripts/glyph_combo_gallery.py.
 MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 # The authored combination dictionary (offsets + codepoints + generated mirrors).
@@ -527,7 +529,9 @@ def load_context_families(c: ga.Corpus, mode: str = "context") -> list[dict]:
         sys.stderr.write(f"unsupported contextual evidence schema: {CONTEXT_EVIDENCE}\n")
         return []
     families: list[dict] = []
-    for record in doc.get("families", []):
+    import construction_tool_mapping as tool_mapping
+    import operator_reference_sources as reference_sources
+    for record in reference_sources.attach(tool_mapping.attach(doc.get("families", []))):
         forms = [str(form) for form in record.get("focus_forms", []) if str(form)]
         focus_chars = "".join(forms)
         members: list[int] = []
@@ -559,6 +563,8 @@ def load_combo_families(c: ga.Corpus, limit: int = 0,
     families.extend(load_sjis_corpus_families(c, limit, mode="combo", corpus=corpus))
     families.extend(load_context_families(c, mode="combo"))
     families.extend(load_pattern_families(c, mode="combo"))
+    families.extend(load_round_families(c, mode="combo"))
+    families.extend(load_aaj_families(c, mode="combo"))
     return families
 
 
@@ -583,6 +589,28 @@ def load_pattern_families(c, mode: str = "patterns", doc: dict | None = None) ->
     return result
 
 
+def load_aaj_families(c, mode: str = "aaj", doc: dict | None = None) -> list[dict]:
+    import aaj_template_intake as intake
+    doc = doc if doc is not None else intake.load()
+    return [{"mode": mode, "members": [c.i(ord(ch)) for ch in dict.fromkeys(r["converter_template"]["text"])
+                                        if c.i(ord(ch)) is not None],
+             "block": "AA Judgment composite templates", "size": len(r["converter_template"]["text"]),
+             "role_hint": r["id"], "note": r["title"], "context": r}
+            for r in doc["families"]]
+
+
+def load_round_families(c, mode: str = "round", doc: dict | None = None) -> list[dict]:
+    import operator_construction_crops as crops
+    import construction_tool_mapping as tool_mapping
+    import operator_reference_sources as reference_sources
+    doc = doc if doc is not None else crops.load()
+    return [{"mode": mode, "members": [c.i(ord(ch)) for ch in dict.fromkeys("".join(r["focus_forms"]))
+                                        if c.i(ord(ch)) is not None],
+             "block": "operator construction crops", "size": max(map(len, r["focus_forms"]), default=0),
+             "role_hint": r["id"], "note": r["title"], "context": r}
+            for r in reference_sources.attach(tool_mapping.attach(doc["families"]))]
+
+
 def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> list[dict]:
     """The one-command standalone browser surface.
 
@@ -603,6 +631,10 @@ def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> l
     fams.extend(load_context_families(c, mode="context"))
     fams.extend(load_pattern_families(c, mode="combo"))
     fams.extend(load_pattern_families(c, mode="patterns"))
+    for mode in ("combo", "context", "round"):
+        fams.extend(load_round_families(c, mode=mode))
+    for mode in ("combo", "aaj"):
+        fams.extend(load_aaj_families(c, mode=mode))
     return fams
 
 
@@ -631,7 +663,7 @@ def _wrap_display(text: str, width: int) -> list[str]:
     return rows
 
 
-def _context_detail_lines(record: dict, width: int) -> list[str]:
+def _context_detail_lines(record: dict, width: int, native: bool = False, x: int = 0) -> list[str]:
     """Human-readable detail pane retaining separate evidence/provenance fields."""
     if record.get("native_comparisons"):
         return _pattern_detail_lines(record, width)
@@ -643,13 +675,44 @@ def _context_detail_lines(record: dict, width: int) -> list[str]:
     provenance = record.get("provenance") or {}
     interpretation = record.get("interpretation") or {}
     add(str(record.get("title", record.get("id", "context record"))))
-    add("TEXT CONTEXT ONLY: terminal columns do not reproduce Saitamaar advances; inspect the paired native PNG before judging ink fit.")
+    if record.get("converter_template"):
+        template = record["converter_template"]
+        add("RECOVERED COMBINATION: " + template["text"])
+        add("codepoints: " + " ".join(template["codepoints"]))
+        profile = template["profile"]
+        add(f"{profile['font']} {profile['px']}px, {profile['row_pitch_px']}px rows; native advances, whole glyphs.")
+        add("COMPARISON RASTER, NOT recovered Windows/MS Gothic output.")
+        if len(template["raster_rows"][0]) > width:
+            add("RASTER WIDER THAN PANE: clipped, not wrapped or rescaled; widen terminal.")
+        lines.extend(_half_block_rows(template["raster_rows"]))
+        add(f"total advance: {template['advance_px']:g}px")
+        for placement in template["placements"]:
+            add(f"{placement['char']} x={placement['x_px']:g}px advance={placement['advance_px']:g}px")
+        add(f"internal label: {provenance['internal_label']!r}; builder {provenance['builder_instruction_va']}; string {provenance['text_va']}")
+        add("PE SHA256: " + provenance["executable_sha256"])
+        add("font SHA256: " + provenance["font_sha256"])
+        add(template["limit"])
+        return lines
+    if record.get("native_reference"):
+        import operator_construction_crops as crops
+        raster, scale, offset = crops.raster_rows(record, width, native, x)
+        shape = record["native_reference"]
+        label = "PACKAGED SCREENSHOT" if shape.get("kind") == "operator-screenshot" else "PACKAGED NATIVE PNG"
+        add(f"{label} {shape['width']}x{shape['height']}px. [v] overview/source pixels; [h/l] pan; [[]/[]] scroll.")
+        if native:
+            add(f"NATIVE PIXELS 1:1, x={offset}. No resampling; half blocks pack two source rows per text row.")
+        else:
+            add(f"OVERVIEW 1:{scale} integer ink pooling; context only, NOT native glyph-fit evidence. Press v for native pixels.")
+        lines.extend(_half_block_rows(raster))
+        add("--- EXACT SOURCE TEXT / PROVENANCE (text columns are not native font metrics) ---")
+    else:
+        add("TEXT CONTEXT ONLY: terminal columns do not reproduce Saitamaar advances; inspect the paired native PNG before judging ink fit.")
     add(f"pattern family: {record.get('pattern_family', 'unclassified')}")
     add("focus: " + " / ".join(record.get("focus_forms") or []))
     add("focus length is codepoints in a quoted form, not native width or the extent of this multi-row construction.")
     add(f"record: {record.get('id', '')}   source: {provenance.get('source_id', 'unspecified')}")
-    for key in ("image_path", "text_path", "turntable_gif_path", "frame_records_path",
-                "construction_record_path", "catalog_path"):
+    for key in ("source_url", "image_path", "text_path", "raw_text_path", "turntable_gif_path", "frame_records_path",
+                "construction_record_path", "catalog_path", "reference_registry_path"):
         if provenance.get(key):
             add(f"{key}: {provenance[key]}")
     for key in ("source_image_sha256", "source_text_sha256_file",
@@ -657,9 +720,11 @@ def _context_detail_lines(record: dict, width: int) -> list[str]:
         if provenance.get(key):
             add(f"{key}: {provenance[key]}")
     for key in ("annotation_status", "construction_record_status", "native_image_status",
-                "review_state", "context_limit", "frame_review_method", "study_status"):
+                "review_state", "context_limit", "frame_review_method", "study_status", "source_binding_status", "decoding", "original_reference_status"):
         if provenance.get(key):
             add(f"{key.replace('_', ' ')}: {provenance[key]}")
+    for variant in provenance.get("source_variants") or []:
+        add(f"SHARED MOTIF VARIANT aa[{variant['archive_piece_index']}] rows {variant['line_start']}-{variant['line_end']}: {variant['text_path']}")
     if provenance.get("operator_verdict") is not None:
         add(f"operator verdict: {provenance['operator_verdict']}")
         add(f"operator note: {provenance.get('operator_note') or '(empty)'}")
@@ -671,6 +736,10 @@ def _context_detail_lines(record: dict, width: int) -> list[str]:
     for key in ("observed_visual", "drawn_analogy", "mathematical_family",
                 "historical_implementation_limit"):
         add(f"{key.replace('_', ' ')}: {interpretation.get(key, 'not recorded')}")
+    if record.get("tool_mapping"):
+        import construction_tool_mapping as tool_mapping
+        for line in tool_mapping.detail_lines(record["tool_mapping"]):
+            add(line)
     for count in provenance.get("corpus_counts") or []:
         add(f"corpus count: {count['corpus']} {count['pattern']} = "
             f"{count['occurrences']:,} occurrences / {count['pages']:,} pages / "
@@ -736,6 +805,18 @@ def _pattern_detail_lines(record: dict, width: int) -> list[str]:
 
 
 def _dump_context_record(record: dict) -> None:
+    if record.get("tool_mapping"):
+        for line in _context_detail_lines(record, 160):
+            print("       " + line)
+        return
+    if record.get("converter_template"):
+        for line in _context_detail_lines(record, 160):
+            print("       " + line)
+        return
+    if record.get("native_reference"):
+        for line in _context_detail_lines(record, 100):
+            print("       " + line)
+        return
     if record.get("native_comparisons"):
         for line in _pattern_detail_lines(record, 240):
             print("       " + line)
@@ -846,7 +927,7 @@ def init_colors() -> dict[str, int]:
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
         "distract": (203, -1), "combo": (214, -1), "context": (45, -1),
-        "authored": (114, -1), "sjis": (177, -1), "patterns": (45, -1),
+        "authored": (114, -1), "sjis": (177, -1), "patterns": (45, -1), "round": (114, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -858,6 +939,7 @@ def init_colors() -> dict[str, int]:
         "context": (curses.COLOR_CYAN, -1),
         "authored": (curses.COLOR_GREEN, -1), "sjis": (curses.COLOR_MAGENTA, -1),
         "patterns": (curses.COLOR_CYAN, -1),
+        "round": (curses.COLOR_GREEN, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -894,6 +976,9 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
     fps = 4.0
     len_filter = 0          # 0 = all lengths; 1-9 = only families of that size
     context_scroll = 0
+    reference_native = False
+    reference_x = 0
+    reference_id = None
     last = time.monotonic()
     stdscr.timeout(60)
 
@@ -922,6 +1007,12 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
         fams = view()
         if sel >= len(fams):
             sel = max(0, len(fams) - 1)
+        selected_id = fams[sel].get("context", {}).get("id") if fams else None
+        if selected_id != reference_id:
+            reference_native = False
+            reference_x = 0
+            context_scroll = 0
+            reference_id = selected_id
         h, w = stdscr.getmaxyx()
         list_w = 40
         list_h = h - 4
@@ -934,6 +1025,8 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
         stdscr.erase()
         scope = "SAVED" if saved_only else ("FOLIAGE STROKES" if all(
             f["mode"] == "stroke" for f in fams_all) else "DISCOVERY+REVIEW")
+        if all(f["mode"] == "round" for f in fams_all):
+            scope = "OPERATOR CONSTRUCTION CROPS"
         safe(stdscr, 0, 1, f"Glyph Families ({scope}) — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
         note = ""
@@ -953,7 +1046,11 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             chars = "".join(chr(int(c.cps[i])) for i in f["members"][:6])
             extent = f"cp{f['size']:<2}" if f.get('context') else f"sz{f['size']:<2}"
             line = f"{'>' if issel else ' '}[{f['mode']:5}] {extent} {chars}"
-            safe(stdscr, y, 1, line.ljust(list_w), attr)
+            if f.get("context", {}).get("native_reference"):
+                line = f"{'>' if issel else ' '}[{f['mode']:5}] {f['context']['title']}"
+            shown = (_wrap_display(line, list_w - 1)[0] if f.get("context", {}).get("native_reference")
+                     else line.ljust(list_w))
+            safe(stdscr, y, 1, shown, attr)
             if not issel:
                 safe(stdscr, y, 2, f"[{f['mode']:5}]", cset.get(f["mode"], cset["hud"]))
 
@@ -972,11 +1069,12 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             context = f.get("context")
             combo = f.get("combo")
             if context:
-                detail = _context_detail_lines(context, avail)
+                detail = _context_detail_lines(context, avail, reference_native, reference_x)
                 visible_count = max(0, h - 6)  # reserve the footer; do not overwrite a source row
                 max_scroll = max(0, len(detail) - visible_count)
                 context_scroll = min(context_scroll, max_scroll)
-                kind = "patterns" if context.get("native_comparisons") else "context"
+                kind = ("round" if context.get("native_reference") else
+                        "patterns" if context.get("native_comparisons") else "context")
                 safe(stdscr, 4, dx, f"{kind} {context_scroll + 1}-{min(len(detail), context_scroll + visible_count)}"
                      f" / {len(detail)}   [[]/[]] scroll", cset["dim"])
                 for line_i, line in enumerate(detail[context_scroll:context_scroll + visible_count]):
@@ -1026,7 +1124,7 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
 
         safe(stdscr, h - 1, 1,
              "[jk]sel [PgUp/Dn]page [m]axis [1-9]len [0]all "
-             "[space]pause [+/-]speed [w]raw/norm [[]/[]]context [q]uit",
+             "[space]pause [+/-]speed [w]raw/norm [[]/[]]scroll [v]ref pixels [h/l]pan [q]uit",
              cset["dim"])
         stdscr.refresh()
 
@@ -1043,6 +1141,7 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             return
         elif ch in (curses.KEY_DOWN, ord("j")):
             sel = min(sel + 1, max(0, len(fams) - 1)); frame = 0; context_scroll = 0
+            reference_native = False; reference_x = 0
         elif ch in (curses.KEY_UP, ord("k")):
             sel = max(sel - 1, 0); frame = 0; context_scroll = 0
         elif ch == curses.KEY_NPAGE:
@@ -1068,6 +1167,15 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             context_scroll = max(0, context_scroll - 1)
         elif ch == ord("]"):
             context_scroll += 1
+        elif ch == ord("v") and fams and fams[sel].get("context", {}).get("native_reference"):
+            reference_native = not reference_native
+            context_scroll = 0
+        elif ch in (ord("h"), ord("l")) and fams and fams[sel].get("context", {}).get("native_reference"):
+            if not reference_native:
+                context_scroll = 0
+            reference_native = True
+            max_x = max(0, fams[sel]["context"]["native_reference"]["width"] - max(1, w - list_w - 4))
+            reference_x = min(max_x, max(0, reference_x + (16 if ch == ord("l") else -16)))
 
 def main() -> int:
     locale.setlocale(locale.LC_ALL, "")
@@ -1087,6 +1195,8 @@ def main() -> int:
                          "'context' for source-backed multi-row constructions, 'authored' for the nine seed "
                          "combinations, 'sjis' for corpus-derived Shift_JIS AA combinations, "
                          "'patterns' for native Saitamaar bundle/combination comparisons, "
+                         "'round' for operator-supplied local construction crops, "
+                         "'aaj' for all 40 recovered AA Judgment combinations, "
                          "or legacy 'seam' as an alias for combo")
     ap.add_argument("--dump", action="store_true",
                     help="print the groups as text and exit; no TTY required, so the "
@@ -1097,7 +1207,28 @@ def main() -> int:
                     help="SJIS corpus dataset for --mode sjis / combo: aa003 (AAHub slug pages, default) "
                          "or aa004 (AAHub MLT crawl, train keys)")
     args = ap.parse_args()
-    if args.mode == "patterns":
+    if args.mode == "aaj":
+        import aaj_template_intake as intake
+        try:
+            aaj_doc = intake.load()
+        except (OSError, ValueError) as exc:
+            ap.error(str(exc))
+        c = intake.TemplateCorpus(aaj_doc)
+    elif args.mode == "round":
+        import operator_construction_crops as crops
+        try:
+            round_doc = crops.load()
+        except (OSError, ValueError) as exc:
+            ap.error(str(exc))
+        c = crops.ConstructionCorpus(round_doc)
+    elif args.mode == "context":
+        # Text/source-pixel evidence needs a codepoint index, not a private
+        # discovery feature cache. No terminal-font raster fit is claimed.
+        import operator_construction_crops as crops
+        context_doc = json.loads(CONTEXT_EVIDENCE.read_text(encoding="utf-8"))
+        crop_doc = crops.load()
+        c = crops.ConstructionCorpus({"families": context_doc["families"] + crop_doc["families"]})
+    elif args.mode == "patterns":
         import saitamaar_pattern_intake as intake
         try:
             pattern_doc = intake.load()
@@ -1109,7 +1240,7 @@ def main() -> int:
     if args.saved and args.foliage_strokes:
         ap.error("--saved and --foliage-strokes select different review sources")
     if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "context",
-                                                               "authored", "seam", "sjis", "patterns"):
+                                                               "authored", "seam", "sjis", "patterns", "round", "aaj"):
         ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
                  f"combined with --saved / --foliage-strokes")
     if args.foliage_strokes:
@@ -1124,8 +1255,14 @@ def main() -> int:
     elif args.mode == "patterns":
         fams = load_pattern_families(c, doc=pattern_doc)
         initial_mode = "patterns"
+    elif args.mode == "round":
+        fams = load_round_families(c, doc=round_doc)
+        initial_mode = "round"
+    elif args.mode == "aaj":
+        fams = load_aaj_families(c, doc=aaj_doc)
+        initial_mode = "aaj"
     elif args.mode == "context":
-        fams = load_context_families(c)
+        fams = load_context_families(c) + load_round_families(c, mode="context")
         initial_mode = "context"
     elif args.mode in ("combo", "seam"):
         fams = load_combo_families(c, args.limit, args.corpus)

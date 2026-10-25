@@ -1,0 +1,2628 @@
+{
+  "schema": "glyph_morphology.aaj_templates.native.v1",
+  "input_sha256": "5a8bff60809ed3df1c9f40737ad3f2a5b768f16df860cabd57e090f28ebb45f3",
+  "generator_sha256": "07bc0478b4340575f8f4e26beb21d87aab101bbc8077f9c684403c763e6fd7a7",
+  "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28",
+  "families": [
+    {
+      "id": "aaj-template-01",
+      "title": "AA Judgment 01/40: __",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "__"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "?",
+        "builder_instruction_va": "0x450677",
+        "text_va": "0x450ea0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "__",
+        "codepoints": [
+          "U+005F",
+          "U+005F"
+        ],
+        "raster_rows": [
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "####.####.........",
+          ".................."
+        ],
+        "placements": [
+          {
+            "char": "_",
+            "x_px": 0.0,
+            "advance_px": 5.0
+          },
+          {
+            "char": "_",
+            "x_px": 5.0,
+            "advance_px": 5.0
+          }
+        ],
+        "advance_px": 10.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-02",
+      "title": "AA Judgment 02/40: ,-^",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ",-^"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "\\",
+        "builder_instruction_va": "0x450693",
+        "text_va": "0x450eb8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ",-^",
+        "codepoints": [
+          "U+002C",
+          "U+002D",
+          "U+005E"
+        ],
+        "raster_rows": [
+          "..........................",
+          ".............##...........",
+          "............#..#..........",
+          "...........#....#.........",
+          "..........................",
+          "..........................",
+          "..........................",
+          "..........................",
+          "...#######................",
+          "..........................",
+          "..........................",
+          "..........................",
+          "..........................",
+          ".#........................",
+          ".#........................",
+          "#.........................",
+          ".........................."
+        ],
+        "placements": [
+          {
+            "char": ",",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "-",
+            "x_px": 3.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": "^",
+            "x_px": 11.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 18.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-03",
+      "title": "AA Judgment 03/40: ^-,",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "^-,"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "2",
+        "builder_instruction_va": "0x4506af",
+        "text_va": "0x450ed0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "^-,",
+        "codepoints": [
+          "U+005E",
+          "U+002D",
+          "U+002C"
+        ],
+        "raster_rows": [
+          "..........................",
+          "..##......................",
+          ".#..#.....................",
+          "#....#....................",
+          "..........................",
+          "..........................",
+          "..........................",
+          "..........................",
+          ".......#######............",
+          "..........................",
+          "..........................",
+          "..........................",
+          "..........................",
+          "................#.........",
+          "................#.........",
+          "...............#..........",
+          ".........................."
+        ],
+        "placements": [
+          {
+            "char": "^",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": "-",
+            "x_px": 7.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": ",",
+            "x_px": 15.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 18.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-04",
+      "title": "AA Judgment 04/40: ..",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "A",
+        "builder_instruction_va": "0x4506cb",
+        "text_va": "0x450ee8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "..",
+        "codepoints": [
+          "U+002E",
+          "U+002E"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "#..#..........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-05",
+      "title": "AA Judgment 05/40: .;",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".;"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "B",
+        "builder_instruction_va": "0x4506e7",
+        "text_va": "0x450f00",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".;",
+        "codepoints": [
+          "U+002E",
+          "U+003B"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "....#.........",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "#...#.........",
+          "....#.........",
+          "...#..........",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ";",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-06",
+      "title": "AA Judgment 06/40: ;;",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ";;"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "C",
+        "builder_instruction_va": "0x450703",
+        "text_va": "0x450f18",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ";;",
+        "codepoints": [
+          "U+003B",
+          "U+003B"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          ".#..#.........",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          ".#..#.........",
+          ".#..#.........",
+          "#..#..........",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ";",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ";",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-07",
+      "title": "AA Judgment 07/40: ll",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "ll"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "D",
+        "builder_instruction_va": "0x45071f",
+        "text_va": "0x450f30",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "ll",
+        "codepoints": [
+          "U+006C",
+          "U+006C"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          ".#..#.........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-08",
+      "title": "AA Judgment 08/40: lll",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "lll"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "E",
+        "builder_instruction_va": "0x45073b",
+        "text_va": "0x450f48",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "lll",
+        "codepoints": [
+          "U+006C",
+          "U+006C",
+          "U+006C"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".#..#..#.........",
+          ".................",
+          ".................",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-09",
+      "title": "AA Judgment 09/40: ^)",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "^)"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "G",
+        "builder_instruction_va": "0x450757",
+        "text_va": "0x450f60",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "^)",
+        "codepoints": [
+          "U+005E",
+          "U+0029"
+        ],
+        "raster_rows": [
+          "....................",
+          "..##................",
+          ".#..#..#............",
+          "#....#..#...........",
+          ".........#..........",
+          ".........#..........",
+          "..........#.........",
+          "..........#.........",
+          "..........#.........",
+          "..........#.........",
+          ".........#..........",
+          ".........#..........",
+          "........#...........",
+          ".......#............",
+          "....................",
+          "....................",
+          "...................."
+        ],
+        "placements": [
+          {
+            "char": "^",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": ")",
+            "x_px": 7.0,
+            "advance_px": 5.0
+          }
+        ],
+        "advance_px": 12.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-10",
+      "title": "AA Judgment 10/40: (^",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "(^"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "M",
+        "builder_instruction_va": "0x450773",
+        "text_va": "0x450f78",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "(^",
+        "codepoints": [
+          "U+0028",
+          "U+005E"
+        ],
+        "raster_rows": [
+          "....................",
+          ".......##...........",
+          "...#..#..#..........",
+          "..#..#....#.........",
+          ".#..................",
+          ".#..................",
+          "#...................",
+          "#...................",
+          "#...................",
+          "#...................",
+          ".#..................",
+          ".#..................",
+          "..#.................",
+          "...#................",
+          "....................",
+          "....................",
+          "...................."
+        ],
+        "placements": [
+          {
+            "char": "(",
+            "x_px": 0.0,
+            "advance_px": 5.0
+          },
+          {
+            "char": "^",
+            "x_px": 5.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 12.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-11",
+      "title": "AA Judgment 11/40: ﾟl",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "ﾟl"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "N",
+        "builder_instruction_va": "0x45078f",
+        "text_va": "0x450f90",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "ﾟl",
+        "codepoints": [
+          "U+FF9F",
+          "U+006C"
+        ],
+        "raster_rows": [
+          ".#.............",
+          "#.#............",
+          "#.#............",
+          ".#...#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          ".....#.........",
+          "...............",
+          "...............",
+          "..............."
+        ],
+        "placements": [
+          {
+            "char": "ﾟ",
+            "x_px": 0.0,
+            "advance_px": 4.0
+          },
+          {
+            "char": "l",
+            "x_px": 4.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 7.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-12",
+      "title": "AA Judgment 12/40: lﾟ",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "lﾟ"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "O",
+        "builder_instruction_va": "0x4507ab",
+        "text_va": "0x450fa8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "lﾟ",
+        "codepoints": [
+          "U+006C",
+          "U+FF9F"
+        ],
+        "raster_rows": [
+          "....#..........",
+          "...#.#.........",
+          "...#.#.........",
+          ".#..#..........",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          ".#.............",
+          "...............",
+          "...............",
+          "..............."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "ﾟ",
+            "x_px": 3.0,
+            "advance_px": 4.0
+          }
+        ],
+        "advance_px": 7.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-13",
+      "title": "AA Judgment 13/40: ...",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "..."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "Q",
+        "builder_instruction_va": "0x4507c7",
+        "text_va": "0x450fc0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "...",
+        "codepoints": [
+          "U+002E",
+          "U+002E",
+          "U+002E"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          ".................",
+          "#..#..#..........",
+          ".................",
+          ".................",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-14",
+      "title": "AA Judgment 14/40: ^^^",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "^^^"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "S",
+        "builder_instruction_va": "0x4507e3",
+        "text_va": "0x450fd8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "^^^",
+        "codepoints": [
+          "U+005E",
+          "U+005E",
+          "U+005E"
+        ],
+        "raster_rows": [
+          ".............................",
+          "..##.....##.....##...........",
+          ".#..#...#..#...#..#..........",
+          "#....#.#....#.#....#.........",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          ".............................",
+          "............................."
+        ],
+        "placements": [
+          {
+            "char": "^",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": "^",
+            "x_px": 7.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": "^",
+            "x_px": 14.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 21.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-15",
+      "title": "AA Judgment 15/40: ^^",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "^^"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "W",
+        "builder_instruction_va": "0x4507ff",
+        "text_va": "0x450ff0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "^^",
+        "codepoints": [
+          "U+005E",
+          "U+005E"
+        ],
+        "raster_rows": [
+          "......................",
+          "..##.....##...........",
+          ".#..#...#..#..........",
+          "#....#.#....#.........",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................",
+          "......................"
+        ],
+        "placements": [
+          {
+            "char": "^",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": "^",
+            "x_px": 7.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 14.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-16",
+      "title": "AA Judgment 16/40: .-",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".-"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "Z",
+        "builder_instruction_va": "0x45081b",
+        "text_va": "0x451008",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".-",
+        "codepoints": [
+          "U+002E",
+          "U+002D"
+        ],
+        "raster_rows": [
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...#######.........",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "#..................",
+          "...................",
+          "...................",
+          "..................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "-",
+            "x_px": 3.0,
+            "advance_px": 8.0
+          }
+        ],
+        "advance_px": 11.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-17",
+      "title": "AA Judgment 17/40: -.",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "-."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "a",
+        "builder_instruction_va": "0x450837",
+        "text_va": "0x451020",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "-.",
+        "codepoints": [
+          "U+002D",
+          "U+002E"
+        ],
+        "raster_rows": [
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "#######............",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "........#..........",
+          "...................",
+          "...................",
+          "..................."
+        ],
+        "placements": [
+          {
+            "char": "-",
+            "x_px": 0.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": ".",
+            "x_px": 8.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 11.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-18",
+      "title": "AA Judgment 18/40: --",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "--"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "c",
+        "builder_instruction_va": "0x450853",
+        "text_va": "0x451038",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "--",
+        "codepoints": [
+          "U+002D",
+          "U+002D"
+        ],
+        "raster_rows": [
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "#######.#######.........",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................"
+        ],
+        "placements": [
+          {
+            "char": "-",
+            "x_px": 0.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": "-",
+            "x_px": 8.0,
+            "advance_px": 8.0
+          }
+        ],
+        "advance_px": 16.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-19",
+      "title": "AA Judgment 19/40: -^",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "-^"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "e",
+        "builder_instruction_va": "0x45086f",
+        "text_va": "0x451050",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "-^",
+        "codepoints": [
+          "U+002D",
+          "U+005E"
+        ],
+        "raster_rows": [
+          ".......................",
+          "..........##...........",
+          ".........#..#..........",
+          "........#....#.........",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          "#######................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          "......................."
+        ],
+        "placements": [
+          {
+            "char": "-",
+            "x_px": 0.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": "^",
+            "x_px": 8.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 15.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-20",
+      "title": "AA Judgment 20/40: ^-",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "^-"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "m",
+        "builder_instruction_va": "0x45088b",
+        "text_va": "0x451068",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "^-",
+        "codepoints": [
+          "U+005E",
+          "U+002D"
+        ],
+        "raster_rows": [
+          ".......................",
+          "..##...................",
+          ".#..#..................",
+          "#....#.................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......#######.........",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          "......................."
+        ],
+        "placements": [
+          {
+            "char": "^",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": "-",
+            "x_px": 7.0,
+            "advance_px": 8.0
+          }
+        ],
+        "advance_px": 15.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-21",
+      "title": "AA Judgment 21/40: .l",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".l"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "s",
+        "builder_instruction_va": "0x4508a7",
+        "text_va": "0x451080",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".l",
+        "codepoints": [
+          "U+002E",
+          "U+006C"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "#...#.........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-22",
+      "title": "AA Judgment 22/40: l.",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "l."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "o",
+        "builder_instruction_va": "0x4508c3",
+        "text_va": "0x451098",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "l.",
+        "codepoints": [
+          "U+006C",
+          "U+002E"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#.#..........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-23",
+      "title": "AA Judgment 23/40: ./",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "./"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "u",
+        "builder_instruction_va": "0x4508df",
+        "text_va": "0x4510b0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "./",
+        "codepoints": [
+          "U+002E",
+          "U+002F"
+        ],
+        "raster_rows": [
+          "...................",
+          "...................",
+          ".........#.........",
+          "........#..........",
+          "........#..........",
+          ".......#...........",
+          ".......#...........",
+          ".......#...........",
+          "......#............",
+          "......#............",
+          ".....#.............",
+          ".....#.............",
+          "....#..............",
+          "#...#..............",
+          "...#...............",
+          "...................",
+          "..................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "/",
+            "x_px": 3.0,
+            "advance_px": 8.0
+          }
+        ],
+        "advance_px": 11.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-24",
+      "title": "AA Judgment 24/40: .ヽ",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".ヽ"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "z",
+        "builder_instruction_va": "0x4508fb",
+        "text_va": "0x4510c8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".ヽ",
+        "codepoints": [
+          "U+002E",
+          "U+30FD"
+        ],
+        "raster_rows": [
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          "......#................",
+          ".......#...............",
+          "........#..............",
+          ".........#.............",
+          "..........#............",
+          "..........#............",
+          ".......................",
+          ".......................",
+          ".......................",
+          "#......................",
+          ".......................",
+          ".......................",
+          "......................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "ヽ",
+            "x_px": 3.0,
+            "advance_px": 12.0
+          }
+        ],
+        "advance_px": 15.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-25",
+      "title": "AA Judgment 25/40: :l",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ":l"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ア",
+        "builder_instruction_va": "0x450917",
+        "text_va": "0x4510e0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ":l",
+        "codepoints": [
+          "U+003A",
+          "U+006C"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          ".#..#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          "....#.........",
+          ".#..#.........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ":",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-26",
+      "title": "AA Judgment 26/40: l:",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "l:"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ウ",
+        "builder_instruction_va": "0x450933",
+        "text_va": "0x4510f8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "l:",
+        "codepoints": [
+          "U+006C",
+          "U+003A"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#..#.........",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#............",
+          ".#..#.........",
+          "..............",
+          "..............",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ":",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-27",
+      "title": "AA Judgment 27/40: ,,",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ",,"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "エ",
+        "builder_instruction_va": "0x45094f",
+        "text_va": "0x451110",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ",,",
+        "codepoints": [
+          "U+002C",
+          "U+002C"
+        ],
+        "raster_rows": [
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          "..............",
+          ".#..#.........",
+          ".#..#.........",
+          "#..#..........",
+          ".............."
+        ],
+        "placements": [
+          {
+            "char": ",",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ",",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 6.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-28",
+      "title": "AA Judgment 28/40: ..l",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "..l"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "オ",
+        "builder_instruction_va": "0x45096b",
+        "text_va": "0x451128",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "..l",
+        "codepoints": [
+          "U+002E",
+          "U+002E",
+          "U+006C"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          ".......#.........",
+          "#..#...#.........",
+          ".................",
+          ".................",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-29",
+      "title": "AA Judgment 29/40: l..",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "l.."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "カ",
+        "builder_instruction_va": "0x450987",
+        "text_va": "0x451140",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "l..",
+        "codepoints": [
+          "U+006C",
+          "U+002E",
+          "U+002E"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#...............",
+          ".#.#..#..........",
+          ".................",
+          ".................",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ".",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-30",
+      "title": "AA Judgment 30/40: .／",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".／"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "キ",
+        "builder_instruction_va": "0x4509a3",
+        "text_va": "0x451158",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".／",
+        "codepoints": [
+          "U+002E",
+          "U+FF0F"
+        ],
+        "raster_rows": [
+          ".................#.........",
+          "................#..........",
+          "...............#...........",
+          "..............#............",
+          ".............#.............",
+          "............#..............",
+          "...........#...............",
+          "..........#................",
+          ".........#.................",
+          "........#..................",
+          ".......#...................",
+          "......#....................",
+          ".....#.....................",
+          "#...#......................",
+          "...#.......................",
+          "...........................",
+          "..........................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "／",
+            "x_px": 3.0,
+            "advance_px": 16.0
+          }
+        ],
+        "advance_px": 19.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-31",
+      "title": "AA Judgment 31/40: .＼",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".＼"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ク",
+        "builder_instruction_va": "0x4509bf",
+        "text_va": "0x451170",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".＼",
+        "codepoints": [
+          "U+002E",
+          "U+FF3C"
+        ],
+        "raster_rows": [
+          "...#.......................",
+          "....#......................",
+          ".....#.....................",
+          "......#....................",
+          ".......#...................",
+          "........#..................",
+          ".........#.................",
+          "..........#................",
+          "...........#...............",
+          "............#..............",
+          ".............#.............",
+          "..............#............",
+          "...............#...........",
+          "#...............#..........",
+          ".................#.........",
+          "...........................",
+          "..........................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "＼",
+            "x_px": 3.0,
+            "advance_px": 16.0
+          }
+        ],
+        "advance_px": 19.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-32",
+      "title": "AA Judgment 32/40: li,",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "li,"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ケ",
+        "builder_instruction_va": "0x4509db",
+        "text_va": "0x451188",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "li,",
+        "codepoints": [
+          "U+006C",
+          "U+0069",
+          "U+002C"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          ".#..#............",
+          ".#..#............",
+          ".#...............",
+          ".#...............",
+          ".#..#............",
+          ".#..#............",
+          ".#..#............",
+          ".#..#............",
+          ".#..#............",
+          ".#..#............",
+          ".#..#..#.........",
+          ".......#.........",
+          "......#..........",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": "l",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "i",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": ",",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-33",
+      "title": "AA Judgment 33/40: ﾞ､",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "ﾞ､"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "コ",
+        "builder_instruction_va": "0x4509f7",
+        "text_va": "0x4511a0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "ﾞ､",
+        "codepoints": [
+          "U+FF9E",
+          "U+FF64"
+        ],
+        "raster_rows": [
+          ".#.................",
+          "..#................",
+          "#..................",
+          ".#.................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          ".....#.............",
+          "......#............",
+          ".......#...........",
+          "...................",
+          "...................",
+          "..................."
+        ],
+        "placements": [
+          {
+            "char": "ﾞ",
+            "x_px": 0.0,
+            "advance_px": 4.0
+          },
+          {
+            "char": "､",
+            "x_px": 4.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 11.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-34",
+      "title": "AA Judgment 34/40: ｀､",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "｀､"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "サ",
+        "builder_instruction_va": "0x450a13",
+        "text_va": "0x4511b8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "｀､",
+        "codepoints": [
+          "U+FF40",
+          "U+FF64"
+        ],
+        "raster_rows": [
+          "..##...................",
+          "....#..................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".........#.............",
+          "..........#............",
+          "...........#...........",
+          ".......................",
+          ".......................",
+          "......................."
+        ],
+        "placements": [
+          {
+            "char": "｀",
+            "x_px": 0.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": "､",
+            "x_px": 8.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 15.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-35",
+      "title": "AA Judgment 35/40: -､",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "-､"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "シ",
+        "builder_instruction_va": "0x450a2f",
+        "text_va": "0x4511d0",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "-､",
+        "codepoints": [
+          "U+002D",
+          "U+FF64"
+        ],
+        "raster_rows": [
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          ".......................",
+          "#######................",
+          ".......................",
+          ".......................",
+          ".........#.............",
+          "..........#............",
+          "...........#...........",
+          ".......................",
+          ".......................",
+          "......................."
+        ],
+        "placements": [
+          {
+            "char": "-",
+            "x_px": 0.0,
+            "advance_px": 8.0
+          },
+          {
+            "char": "､",
+            "x_px": 8.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 15.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-36",
+      "title": "AA Judgment 36/40: ﾟ｡",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "ﾟ｡"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ス",
+        "builder_instruction_va": "0x450a4b",
+        "text_va": "0x4511e8",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "ﾟ｡",
+        "codepoints": [
+          "U+FF9F",
+          "U+FF61"
+        ],
+        "raster_rows": [
+          ".#.................",
+          "#.#................",
+          "#.#................",
+          ".#.................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          "...................",
+          ".....##............",
+          "....#..#...........",
+          "....#..#...........",
+          ".....##............",
+          "...................",
+          "...................",
+          "..................."
+        ],
+        "placements": [
+          {
+            "char": "ﾟ",
+            "x_px": 0.0,
+            "advance_px": 4.0
+          },
+          {
+            "char": "｡",
+            "x_px": 4.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 11.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-37",
+      "title": "AA Judgment 37/40: ﾞ:､",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "ﾞ:､"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "セ",
+        "builder_instruction_va": "0x450a67",
+        "text_va": "0x451200",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "ﾞ:､",
+        "codepoints": [
+          "U+FF9E",
+          "U+003A",
+          "U+FF64"
+        ],
+        "raster_rows": [
+          ".#....................",
+          "..#...................",
+          "#.....................",
+          ".#....................",
+          "......................",
+          "......................",
+          "......................",
+          ".....#................",
+          "......................",
+          "......................",
+          "......................",
+          "........#.............",
+          ".........#............",
+          ".....#....#...........",
+          "......................",
+          "......................",
+          "......................"
+        ],
+        "placements": [
+          {
+            "char": "ﾞ",
+            "x_px": 0.0,
+            "advance_px": 4.0
+          },
+          {
+            "char": ":",
+            "x_px": 4.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "､",
+            "x_px": 7.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 14.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-38",
+      "title": "AA Judgment 38/40: .｡",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ".｡"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "ソ",
+        "builder_instruction_va": "0x450a83",
+        "text_va": "0x451218",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ".｡",
+        "codepoints": [
+          "U+002E",
+          "U+FF61"
+        ],
+        "raster_rows": [
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "....##............",
+          "...#..#...........",
+          "...#..#...........",
+          "#...##............",
+          "..................",
+          "..................",
+          ".................."
+        ],
+        "placements": [
+          {
+            "char": ".",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "｡",
+            "x_px": 3.0,
+            "advance_px": 7.0
+          }
+        ],
+        "advance_px": 10.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-39",
+      "title": "AA Judgment 39/40: ｡.",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        "｡."
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "タ",
+        "builder_instruction_va": "0x450a9f",
+        "text_va": "0x451230",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": "｡.",
+        "codepoints": [
+          "U+FF61",
+          "U+002E"
+        ],
+        "raster_rows": [
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          "..................",
+          ".##...............",
+          "#..#..............",
+          "#..#..............",
+          ".##....#..........",
+          "..................",
+          "..................",
+          ".................."
+        ],
+        "placements": [
+          {
+            "char": "｡",
+            "x_px": 0.0,
+            "advance_px": 7.0
+          },
+          {
+            "char": ".",
+            "x_px": 7.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 10.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    },
+    {
+      "id": "aaj-template-40",
+      "title": "AA Judgment 40/40: ,il",
+      "pattern_family": "recovered-converter-composite-template",
+      "focus_forms": [
+        ",il"
+      ],
+      "provenance": {
+        "source_id": "aa-judgment-3.0",
+        "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+        "internal_label": "チ",
+        "builder_instruction_va": "0x450abb",
+        "text_va": "0x451248",
+        "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
+      },
+      "converter_template": {
+        "text": ",il",
+        "codepoints": [
+          "U+002C",
+          "U+0069",
+          "U+006C"
+        ],
+        "raster_rows": [
+          ".................",
+          ".................",
+          ".................",
+          "....#..#.........",
+          "....#..#.........",
+          ".......#.........",
+          ".......#.........",
+          "....#..#.........",
+          "....#..#.........",
+          "....#..#.........",
+          "....#..#.........",
+          "....#..#.........",
+          "....#..#.........",
+          ".#..#..#.........",
+          ".#...............",
+          "#................",
+          "................."
+        ],
+        "placements": [
+          {
+            "char": ",",
+            "x_px": 0.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "i",
+            "x_px": 3.0,
+            "advance_px": 3.0
+          },
+          {
+            "char": "l",
+            "x_px": 6.0,
+            "advance_px": 3.0
+          }
+        ],
+        "advance_px": 9.0,
+        "profile": {
+          "font": "Saitamaar",
+          "px": 16,
+          "row_pitch_px": 17,
+          "padding_right_px": 8,
+          "anchor": "la",
+          "ink_threshold_lt": 128
+        },
+        "limit": "Saitamaar comparison rendering, NOT the original Windows/MS Gothic template bitmap. No glyph deformation, semantic admission or motion evidence."
+      }
+    }
+  ]
+}
