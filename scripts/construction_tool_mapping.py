@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,7 +17,7 @@ BASE = ROOT / "assets/glyphs/contextual"
 OUTPUT = BASE / "construction_tool_mapping.v1.json"
 WINDOWS = BASE / "windows_aa_patterns.v1.json"
 JUSTICE = BASE / "ascii_justice_recovery.v1.json"
-FONT = Path("/Users/r/Library/Fonts/Saitamaar.ttf")
+FONT = Path(os.environ.get("SAITAMAAR_TTF", "/Users/r/Library/Fonts/Saitamaar.ttf"))  # hash-checked below
 FONT_HASH = "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28"
 
 # Exact source fragments and observed roles, not an assertion of artist intent.
@@ -25,9 +26,9 @@ CASES = [
     ("operator-curve-crop-01", "operator-constructions/church-161.txt",
      "Godless Shrine: a cap using ｧ宀v and a lower 弋__人 return cooperate with an open gap; not an isolated round glyph.",
      [(11, "ｧ宀v", "upper cap"), (12, "弋__人", "lower return and meeting"), (13, "∧", "continuation below the opening")]),
-    ("operator-curve-crop-03", "operator-constructions/church-036.txt",
-     "Two-row opening: cap/shoulders above a lower return; the empty middle belongs to the construction.",
-     [(7, "γ⌒ヽ", "upper cap and shoulders"), (8, "乂__ノ", "lower return and base")]),
+    ("operator-curve-crop-03", "operator-constructions/church-121.txt",
+     "Brace-sided opening: a cap with shoulder ticks above brace sides; the empty middle belongs to the construction.",
+     [(2, "γ⌒ヽ'´", "upper cap and shoulders"), (3, "{　　　 }", "brace sides around open paper")]),
     ("operator-curve-crop-06", "operator-constructions/church-073.txt",
      "A thick arch changes tangent and band articulation across rows; the foreground pillar interrupts it, not a join through the pillar.",
      [(8, "x≪ニ二ﾆ", "left shallow upper band"), (9, "／二-＞''~", "left turning band"),

@@ -29,7 +29,7 @@ def sha(path):
 def build():
     import operator_construction_crops as crops
     doc = crops.load()
-    original = json.loads(gzip.decompress(Path(doc["archive_path"]).read_bytes()))
+    original = json.loads(gzip.decompress(crops.readable(Path(doc["archive_path"])).read_bytes()))
     inputs = {str(p.relative_to(ROOT)): sha(p) for p in (Path(__file__), CROPS, CONTEXT)}
     records = []
     for record in doc["families"]:
@@ -66,13 +66,13 @@ def build():
     p = cup["provenance"]
     path = ROOT / p["text_path"]
     archive = Path(p["archive_piece_path"])
-    original_cup = json.loads(gzip.decompress(archive.read_bytes()))["aa"][p["archive_piece_index"]]["value"]
+    original_cup = json.loads(gzip.decompress(crops.readable(archive).read_bytes()))["aa"][p["archive_piece_index"]]["value"]
     if path.read_text().rstrip("\n") != original_cup.rstrip("\n") or sha(path) != p["source_text_sha256_file"]:
         raise ValueError("Cup is not the exact archived operator variant")
     records.append({"id": cup["id"], "title": cup["title"], "status": "complete operator drawing exactly matches original AAHub text",
                     "source_url": p["source_url"], "original_full_text_path": p["text_path"],
                     "original_full_text_sha256": sha(path), "original_full_native_image_path": None,
-                    "archive_path": str(archive), "archive_sha256": sha(archive), "archive_piece_index": p["archive_piece_index"],
+                    "archive_path": str(archive), "archive_sha256": sha(crops.readable(archive)), "archive_piece_index": p["archive_piece_index"],
                     "archive_index_unit": p["archive_index_unit"],
                     "regions": [{"line_start": s["line_start"], "line_end": s["line_start"] + len(s["rows"]) - 1} for s in cup["passages"]],
                     "operator_note": p["operator_note"],

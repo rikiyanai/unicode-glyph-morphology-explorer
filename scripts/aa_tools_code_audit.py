@@ -177,11 +177,8 @@ def recover_aaj_alphabet():
                        "Conditional blank handling and line endings are not a complete converter port."]}
 
 
-def audit():
-    justice = json.loads((BASE / "ascii_justice_recovery.v1.json").read_text())
-    windows = json.loads((BASE / "windows_aa_patterns.v1.json").read_text())
-    mapping = json.loads((BASE / "construction_tool_mapping.v1.json").read_text())
-    aaj = recover_aaj_alphabet()
+def mapping_rows(justice, windows, mapping, aaj):
+    """Per-fragment capability rows for every construction_tool_mapping record."""
     aaj_chars = set(aaj["proportional_output_characters_upper_bound"] + aaj["monospaced_output_characters_upper_bound"])
     candidate_chars = set(justice["candidate_characters"])
     composites = [item["text"] for item in windows["converter"]["multichar_templates"]]
@@ -214,6 +211,15 @@ def audit():
                          "orinrin_other_saved_text_contains_fragment": [item for item in other_rows if p["text"] in item["text"]],
                          "orinrin_palette_contains_entire_fragment": [item for item in palette if p["text"] in item["text"]]}
                          for p in parts]})
+    return rows, other_paths
+
+
+def audit():
+    justice = json.loads((BASE / "ascii_justice_recovery.v1.json").read_text())
+    windows = json.loads((BASE / "windows_aa_patterns.v1.json").read_text())
+    mapping = json.loads((BASE / "construction_tool_mapping.v1.json").read_text())
+    aaj = recover_aaj_alphabet()
+    rows, other_paths = mapping_rows(justice, windows, mapping, aaj)
     inputs = {}
     for path in (Path(__file__), ROOT / "scripts/windows_aa_intake.py", ROOT / "scripts/orinrin_brush.py",
                  BASE / "ascii_justice_recovery.v1.json", BASE / "windows_aa_patterns.v1.json",
@@ -276,6 +282,30 @@ def audit():
     print(f"Audited {sum(len(r['fragments']) for r in rows)} exact source fragments in {len(rows)} constructions")
 
 
+def refresh_records():
+    """Recompute only the per-fragment records after construction_tool_mapping.v1.json changed,
+    reusing the AAJ alphabet this audit already saved. Every other recorded input must be
+    unchanged; otherwise a full --write (which needs the .run source work directory) is required."""
+    doc = json.loads(OUTPUT.read_text())
+    mapping_name = str((BASE / "construction_tool_mapping.v1.json").relative_to(ROOT))
+    self_name = str(Path(__file__).resolve().relative_to(ROOT))
+    for name, expected in doc["input_hashes"].items():
+        if name not in (mapping_name, self_name) and digest((ROOT / name).read_bytes()) != expected:
+            raise ValueError(f"{name} changed too; run the full --write audit")
+    aaj_path = ROOT / doc["aaj_alphabet"]["path"]
+    if digest(aaj_path.read_bytes()) != doc["aaj_alphabet"]["sha256"]:
+        raise ValueError("saved AAJ alphabet changed; run the full --write audit")
+    rows, _ = mapping_rows(json.loads((BASE / "ascii_justice_recovery.v1.json").read_text()),
+                           json.loads((BASE / "windows_aa_patterns.v1.json").read_text()),
+                           json.loads((BASE / mapping_name.split("/")[-1]).read_text()),
+                           json.loads(aaj_path.read_text()))
+    doc["records"] = rows
+    doc["input_hashes"][mapping_name] = digest((BASE / "construction_tool_mapping.v1.json").read_bytes())
+    doc["input_hashes"][self_name] = digest(Path(__file__).read_bytes())
+    OUTPUT.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n")
+    return doc
+
+
 def load():
     doc = json.loads(OUTPUT.read_text())
     if doc.get("schema") != "glyph_morphology.windows_aa_code_audit.v1":
@@ -316,6 +346,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--fetch-orinrin", action="store_true")
     parser.add_argument("--write", action="store_true")
+    parser.add_argument("--refresh-records", action="store_true",
+                        help="recompute records after construction_tool_mapping.v1.json changed (no .run needed)")
     parser.add_argument("--stage-aaj", type=Path)
     parser.add_argument("--inspect-aaj-constants", action="store_true")
     args = parser.parse_args()
@@ -327,3 +359,5 @@ if __name__ == "__main__":
         inspect_aaj_constants()
     if args.write:
         audit()
+    if args.refresh_records:
+        refresh_records()

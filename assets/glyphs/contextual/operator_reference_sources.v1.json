@@ -1,8 +1,8 @@
 {
   "schema": "glyph_morphology.operator_reference_sources.v1",
   "input_hashes": {
-    "scripts/operator_reference_sources.py": "0a26b5aed61ee2bc6192982f55f19b69165a6a6fd4e742778dd8c26abaedbf57",
-    "assets/glyphs/contextual/operator_construction_crops.v1.json": "05a45a4415c8b2ef1ad85cf72a74c3ef9a7938c7bbe6ac6418099b73ef64e749",
+    "scripts/operator_reference_sources.py": "d6f4b381a8c41cebd5853d7db49f167a8f70eea9e1fac047deff13c06f59cdc0",
+    "assets/glyphs/contextual/operator_construction_crops.v1.json": "630f4bb90dce9657e6fcd5a07d668c7adf277e89dad33f556441d1a1d47274ae",
     "assets/glyphs/contextual/shallot_native_contexts.v1.json": "91a6c5ff19b1c163c8ccd39b04a263afa7dab1d6e42a6f8c1bca96368abf9554",
     "assets/glyphs/contextual/operator-constructions/crop-01.png": "b613c1ea7fcf7dd4eed682ea57b0aa7f2d867da09e81bddd8cb54e3dc68ceec3",
     "assets/glyphs/contextual/operator-constructions/church-161.txt": "b5c0395dccbc3ec3f1340951ce6974b7d9ce22e0bf54849fa29677ad5210f8cf",
@@ -11,8 +11,8 @@
     "assets/glyphs/contextual/operator-constructions/church-165.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
     "assets/glyphs/contextual/operator-constructions/church-165.raw.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
     "assets/glyphs/contextual/operator-constructions/crop-03.png": "02cfcf2c15ad0757240b9cdd4682486f47a333f559a96b28fd42f3149bc21dbc",
-    "assets/glyphs/contextual/operator-constructions/church-036.txt": "c59f6b47898f11e820fb2aafb189f11cf7688945dfa85764e907445527c407d5",
-    "assets/glyphs/contextual/operator-constructions/church-036.raw.txt": "4bab6904b70367a29424d872fc8020b60ecbab47f43273b985b690b8bf268a74",
+    "assets/glyphs/contextual/operator-constructions/church-121.txt": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
+    "assets/glyphs/contextual/operator-constructions/church-121.raw.txt": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
     "assets/glyphs/contextual/operator-constructions/crop-04.png": "38fb78b9d44e59167c4bcdacd5302d6676319cb8d6adeea260ed8f9303ef090b",
     "assets/glyphs/contextual/operator-constructions/church-105.txt": "57648b947002e066824542b9e7171275948627de0a32922ce78635fe5317497b",
     "assets/glyphs/contextual/operator-constructions/church-105.raw.txt": "57648b947002e066824542b9e7171275948627de0a32922ce78635fe5317497b",
@@ -95,23 +95,23 @@
     },
     {
       "id": "operator-curve-crop-03",
-      "title": "03 — γ⌒ヽ cap with 乂__ノ lower return",
+      "title": "03 — γ⌒ヽ'´ cap over {　　　 } brace sides (church 121)",
       "status": "original AAHub text matched",
       "crop_path": "assets/glyphs/contextual/operator-constructions/crop-03.png",
       "crop_sha256": "02cfcf2c15ad0757240b9cdd4682486f47a333f559a96b28fd42f3149bc21dbc",
       "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
       "candidate_page_url_not_a_binding": null,
-      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-036.txt",
-      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-036.raw.txt",
+      "original_full_text_path": "assets/glyphs/contextual/operator-constructions/church-121.txt",
+      "original_raw_text_path": "assets/glyphs/contextual/operator-constructions/church-121.raw.txt",
       "source_variants": [],
       "original_full_native_image_path": null,
       "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
-      "archive_piece_index": 36,
+      "archive_piece_index": 121,
       "archive_index_unit": "zero-based aa array index; not a verified live post ID",
       "regions": [
         {
-          "line_start": 7,
-          "line_end": 8
+          "line_start": 2,
+          "line_end": 3
         }
       ],
       "artwork_creation": {

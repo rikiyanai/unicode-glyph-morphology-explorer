@@ -46,11 +46,11 @@ class ConstructionToolMapping(unittest.TestCase):
         self.assertEqual(mapping.overlaps("ﾆア", [{"text": "ニア"}]), [])
 
     def test_small_circle_matches_fragments_not_whole_template(self):
-        cap, lower = self.records["operator-curve-crop-03"]["fragments"]
-        self.assertEqual({m["shared_text"] for m in cap["palette_overlaps"]}, {"γ⌒", "⌒ヽ"})
+        cap, sides = self.records["operator-curve-crop-03"]["fragments"]
+        self.assertEqual({m["shared_text"] for m in cap["palette_overlaps"]}, {"γ⌒", "⌒ヽ", "'´"})
         self.assertTrue(all(not m["covers_entire_fragment"] for m in cap["palette_overlaps"]))
-        self.assertIn("__ノ", {m["shared_text"] for m in lower["palette_overlaps"]})
-        self.assertEqual([m["shared_text"] for m in lower["aaj_overlaps"]], ["__"])
+        self.assertTrue(all(not m["covers_entire_fragment"] for m in sides["palette_overlaps"]))
+        self.assertEqual(sides["aaj_overlaps"], [])
 
     def test_forty_composites_are_not_claimed_to_be_full_output_vocabulary(self):
         self.assertIn("NOT its complete character vocabulary", self.doc["limit"])

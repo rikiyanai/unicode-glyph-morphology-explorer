@@ -1,12 +1,12 @@
 {
   "schema": "glyph_morphology.windows_aa_code_audit.v1",
   "input_hashes": {
-    "scripts/aa_tools_code_audit.py": "aa28b5f59b72cb3f42c5c61655c9b1acb2e94076a7d9b1bda7c73c897558797f",
+    "scripts/aa_tools_code_audit.py": "15c9cd9dddaf487961799a9826406bc85700c555fc56d96e246233e6a43baea0",
     "scripts/windows_aa_intake.py": "1f2eaa3685831192c9d1365d2df81f1711b0f0ae1f14a6d8b27aa9998e764f96",
     "scripts/orinrin_brush.py": "b4f3967e0c0955dd76d16c41113e159ba1e1632a3408a58612b3185dc7b00629",
     "assets/glyphs/contextual/ascii_justice_recovery.v1.json": "78bd2ec84256da8c64013f7ccdea424634c09e6db0361b6a213487f2129d4659",
     "assets/glyphs/contextual/windows_aa_patterns.v1.json": "5a8bff60809ed3df1c9f40737ad3f2a5b768f16df860cabd57e090f28ebb45f3",
-    "assets/glyphs/contextual/construction_tool_mapping.v1.json": "6544eb58fff7b39dd44d049cae76e11dcce796d0edfb92c251c3bb102d5d012d",
+    "assets/glyphs/contextual/construction_tool_mapping.v1.json": "30c159365053db4398831a63c5351db3c4c77e2e9b04693a45d2df94ab0c0bf4",
     "assets/glyphs/contextual/windows-aa/UserItem.ast": "88ab8d1c0bab4a70c3ade9b874f4745aec0313319cb6330dbe9f446ad8535be8",
     "assets/glyphs/contextual/windows-aa/lettering-1.ast": "0ec6e1d5b8efa3529ed3309d1fb525b55af9630d703fde539f88cd8b778c37d1",
     "assets/glyphs/contextual/windows-aa/lettering-2.ast": "a6f83d92a86ca060707ae2772d1cb88ed627392a91901133b42b6976e9b35776",
@@ -529,63 +529,33 @@
     },
     {
       "id": "operator-curve-crop-03",
-      "source_path": "assets/glyphs/contextual/operator-constructions/church-036.txt",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-121.txt",
       "fragments": [
         {
-          "line": 7,
-          "text": "γ⌒ヽ",
+          "line": 2,
+          "text": "γ⌒ヽ'´",
           "justice_missing_characters": [
             "γ",
             "⌒",
-            "ヽ"
+            "ヽ",
+            "´"
           ],
           "aaj_missing_characters_both_modes": [
             "γ",
-            "⌒"
+            "⌒",
+            "´"
           ],
           "aaj_equal_composite": false,
-          "orinrin_other_saved_text_contains_fragment": [
-            {
-              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
-              "line": 157,
-              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
-              "item_header": "[AA][画面見方]",
-              "kind": "illustrated manual; not a preset"
-            },
-            {
-              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
-              "line": 382,
-              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
-              "item_header": "[AA][Profile3]",
-              "kind": "illustrated manual; not a preset"
-            },
-            {
-              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
-              "line": 1622,
-              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
-              "item_header": "[AA][ﾎｯﾄｷｰ2]",
-              "kind": "illustrated manual; not a preset"
-            },
-            {
-              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
-              "line": 1741,
-              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
-              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
-              "kind": "illustrated manual; not a preset"
-            }
-          ],
+          "orinrin_other_saved_text_contains_fragment": [],
           "orinrin_palette_contains_entire_fragment": []
         },
         {
-          "line": 8,
-          "text": "乂__ノ",
+          "line": 3,
+          "text": "{　　　 }",
           "justice_missing_characters": [
-            "乂",
-            "ノ"
+            "　"
           ],
-          "aaj_missing_characters_both_modes": [
-            "乂"
-          ],
+          "aaj_missing_characters_both_modes": [],
           "aaj_equal_composite": false,
           "orinrin_other_saved_text_contains_fragment": [],
           "orinrin_palette_contains_entire_fragment": []

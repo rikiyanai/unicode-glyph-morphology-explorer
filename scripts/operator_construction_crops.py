@@ -28,11 +28,24 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+CANONICAL_ARCHIVE = "/Users/r/Projects/ascii-art-archive"
+
+
+def readable(path: Path) -> Path:
+    """The recorded path, or its copy under $AAHUB_ARCHIVE_ROOT when the recorded one is absent.
+    Recorded provenance keeps the canonical path either way."""
+    import os
+    root = os.environ.get("AAHUB_ARCHIVE_ROOT")
+    if not path.exists() and root and str(path).startswith(CANONICAL_ARCHIVE):
+        return Path(root + str(path)[len(CANONICAL_ARCHIVE):])
+    return path
+
+
 def build() -> dict:
     definition = json.loads(DEFINITION.read_text(encoding="utf-8"))
     key = definition["archive_key"]
     archive = Path("/Users/r/Projects/ascii-art-archive/collections/aahub-mlt") / key[:2] / (key + ".json.gz")
-    archived = archive.read_bytes()
+    archived = readable(archive).read_bytes()
     page = json.loads(gzip.decompress(archived))
     PAIRS.mkdir(parents=True, exist_ok=True)
     sources = {}
@@ -50,8 +63,9 @@ def build() -> dict:
     records = []
     for crop in definition["crops"]:
         original = Path(crop["path"])
-        data = original.read_bytes()
         target = PAIRS / f"crop-{crop['number']:02}.png"
+        # the operator's temporary screenshot may be gone; the packaged copy is those exact bytes
+        data = original.read_bytes() if original.exists() else target.read_bytes()
         target.write_bytes(data)
         with Image.open(target) as image:
             width, height = image.size

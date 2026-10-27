@@ -1,6 +1,6 @@
 {
   "schema": "glyph_morphology.operator_construction_crops.v1",
-  "definition_sha256": "0aec2a723399d42b357256c57ca7909527fea3e5e4745e058509ac801628ac76",
+  "definition_sha256": "331ceff9bb1d7b76ea0324838e7baf29173cf7121340738a6dbecee0ec523b45",
   "archive_path": "/Users/r/Projects/ascii-art-archive/collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz",
   "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78",
   "page_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
@@ -305,6 +305,41 @@
       ]
     },
     {
+      "archive_piece_index": 121,
+      "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-121.raw.txt",
+      "text_path": "assets/glyphs/contextual/operator-constructions/church-121.txt",
+      "raw_sha256": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
+      "text_sha256": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
+      "decoded_rows": [
+        "相州戦神館學園 八命陣（聖堂）",
+        ": : : ≧s｡/:::::::::::| | | :|:::ｉ| i|　　 { {////,|　:|ｉ｀`丶､　＿＿＿ヽγ⌒ヽ'´＿＿_　　,､丶` | 　 |///,ﾘ　i}　,j{　|　 | :|: | |　　_」L斗r≦",
+        ": : : : : : : : :≧s｡.,| | :|　ｉ| i|　　 ', '////{　 |ｉ──┘`ー‐‐--' {　　　 } ──‐'　└─‐ } 　 }////　,'　∥　|　 | :|: |｡s≦: : : : : : : : : :",
+        ": : : : : : : : : : : : : ::≧s｡」 i|　　 ﾊ Ⅶ//ｌ　 |i￣￣￣＞　　　 ノ　　　 '､　　　　＜￣￣ j 　 j//'/　/　/　 /,.｡o≦: : : : : : : : : : : : : :",
+        "＾^'=-　_: : : : : : : : : : : : ＼　　 ∧ V/ﾊ　八,､丶`　 　　 ／　　　　 　 ＼　　　 　｀ヽ､,' 　 ﾊ//　/　/　／: : : : : : : : : : : : :_,.　-=≦",
+        ": : : : : : :￣弋二f:┬s｡: : : :＼　 ∧ ∨∧　 ﾍ　　　　 ／　　　　　　　　　＼　　　 　 /　 /'//　/　/／: : : : _: : -‐ェ≡'\"~: : : : : ::::::",
+        ": : : : : ::　　 |:::::il: : |　「^'ト.．: :ヽ　 ﾍ ﾞ寸ム　 ゝ＿／　　　　/〉 　 〈ﾊ　　　 ＼＿_,/　 ,ｲ/ｱ　/　／: : ,.｡o「 {　l : | {＿}　　: : : : ::::::",
+        ": : : ::　 　 　|:::::i|: : |　'. 弋ﾆ〕ト．＼　'､　寸>､　 ＼{　　　　/ /　　　Vﾊ　　　　} ／　,ｲ'/ｱ ／／: :／{￣_,} l{　ｌ :::| |:::::|　　　: : : : :::",
+        ": : :　　　 　 |:::::i|: : {　 ', :| : i|',ﾟ｡ヽ: :＼ ゝ　ヾ心､　 ゝ　　 / /　　　　 Vﾊ　,､丶` ,.イ/／／／: ::／ /i|￣ | j{　l : :| |:::::|　　　　: : : ::",
+        ":::　 　 　 　 |:::::i|',: :',　 Ⅵ::::i|∧ﾟ。＼ : :､ ＼ `'マﾐs｡..　≧=-　　　　 -=≦ 　 ィ升ア´／／: :／ //　i|:::::::|∥ l : ::| |:::::|　　　　 : : : :",
+        ":　　　 　 　 |:::::i| ',: :',　 ',| : i|Vﾍ ゝ　ヽ: :＼､`ヽ､`'＜ミs｡.,　＿＿＿　,.｡o≦/＞'´／ ,../: :,ｲ′//　/i|:::::::|/　; : : | |:::::|　　　　　: : :",
+        "::　／＾＼　 |:::::i|', V:ﾊ　 | : i| ∨＼＼ ＼: :ヽ＼ ｀ヽ､ `'＜≧=----=≦＞''´,､丶`,xｉ〔/: ://　//ヘ/ i|:::::::|　/: : /| |:::::|　 ／^＼",
+        "./　ｨ癶　ヽ |:::::ｉ圦／＼ | : i|/　　 ,癶＼ ＼ ∨ヘs｡.,｀ 　 ..,`'＜＿＞'´,.､丶` ,xi〔ﾍ､/: ://／癶 　 `:i|:::::::|/^ヽ//| |:::::| /　,ｨ癶 ヽ",
+        "{　/::::::::',　} |:::::i| / ／ヽヽ:::i|　　 ｨ癶 ＼＼ 〉 }::::::＼ ≧s｡.,_`ｰ(　 )‐'\"_,.｡o≦/:::::: : |: :|／／ｨ癶　　:i|::::::/ /ヽ Ⅵ |:::::|:|　/::::::::}　}",
+        "|- |＿::: |　|:|:::::i| | {::::::::::| Ⅵ　／ ,ハ ヽ∨/_／ヽ: : }／｀ヽ､ ／ 　 ＼　／　　{::／ヽ{: :|／ / /`ヽ＼:i|:::/ /::::: }　l| |:::::|:|　{:::::::::廴|_",
+        ",. ┴┴=ミ　|:::jI斗r‐‐=ﾐ|　|i|/ {　{:::: }　| |/:| |/＼∨／⌒ヽ/　 ,ハ 　Ｖ:,'⌒ヽ∨/癶|: :|ヽ/　{:::＿} }`i|:::|_」ィ≠ミ_| |:::::|」 ﾉ⌒⌒ヽ､`",
+        "｡s≦≧s｡｀ヽ/ ／,ィ=ミ ｀ヽi|／＞_--ミ|_|　|/ ( ) ヽ| :||⌒|_|　　|〉〈| 　:| |⌒|__∨ (::) Ⅵ ||,ィ⌒__｀ヽ､i|／　,ィ≠ﾐ　｀ヽ／,｡o≦≧s｡",
+        "i:i:i:i:i:i:i:i:i:i|　 |_//i:i:i:i:i:i:i｀Y　|_/,ｨi(i:)is｡ |_|⌒|／＼|⌒||八| |　　|∧| 　:| |八| l´`||ｨ癶l|⌒|_|ィ「i:i:i〕x|‐|　 /i:i:i:i:i:i:i:｀|_,,|　 |i:i:i:i:i:i:i:i:i:i:",
+        "i:i:i:i:i:i:i:i:i:i|　 | |:|i:i:i:i:i:i:i:i:i:|　:| ||i:i:i:i:i:i:i:| | |　 ||::::::::||　 ||　 | |Ψ..￣　Ψ| |　 | |　:||::: : ||　 | |i:i:i:i:i:i:i:i:| :|　 |i:i:i:i:i:i:i:i:i:|　|　 |i:i:i:i:i:i:i:i:i:i:",
+        "「li:i「li:「li:i|　 | |:|i:「li:「li:「l:|　:| ||i:「i:「i:「| | |　 ||::::::::||　_||＿|_|~￣￣￣~:|_|＿|_|　:||::: : ||　 | |i:「i:「i:「i:| :|　 |i:「l 「l:「|│ |　 |i:「li:「li:「li:",
+        "───‐廴_|_|:|───┴‐|_||二二二l|_|￣|￣￣|‐ |≧≦|_,,,|￣￣|,,_|≧≦|‐‐|￣~~|￣|_|ニニニl|_,|ｰ┴──┴|_,,|--|--------",
+        "三三三三三三三三三三三三三三三三三三┐───────────┌厂广三三三三三三三三三三三三三三三",
+        "二二二二二二二二二二二二二二Tー||__」┤'\"ｨ少:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.＼＼」├厂/──‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_‐_",
+        "二二二二二二二二二二二二 ',＿| |‐ｨ_|'┘,ｨ少'´.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.＼＼」」‐||＿//￣￣二二二二二二二二二二",
+        "￣￣￣￣￣￣￣￣￣ | ||＿　| | ,ィｉ「┘,ィ少'.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.: ＼＼「「┬j|　 ＿||￣￣￣￣￣￣￣￣￣￣",
+        "￣￣￣￣￣￣￣|　　　| ||-┤丁「　,.ィ少': : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :: ＼＼┘丁├-||　　　　||￣￣￣￣￣￣￣"
+      ]
+    },
+    {
       "archive_piece_index": 161,
       "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-161.raw.txt",
       "text_path": "assets/glyphs/contextual/operator-constructions/church-161.txt",
@@ -471,11 +506,11 @@
     },
     {
       "id": "operator-curve-crop-03",
-      "title": "03 — γ⌒ヽ cap with 乂__ノ lower return",
+      "title": "03 — γ⌒ヽ'´ cap over {　　　 } brace sides (church 121)",
       "pattern_family": "operator-supplied-local-curve-construction",
       "focus_forms": [
-        "γ⌒ヽ",
-        "乂__ノ"
+        "γ⌒ヽ'´",
+        "{　　　 }"
       ],
       "native_reference": {
         "width": 118,
@@ -492,20 +527,20 @@
         "annotation_status": "operator-supplied construction witness; not a whole-page approval",
         "native_image_status": "Exact operator screenshot bytes; do not infer a font pixel size or reconstruct its spacing.",
         "source_binding_status": "source passage matched",
-        "archive_piece_index": 36,
-        "text_path": "assets/glyphs/contextual/operator-constructions/church-036.txt",
-        "source_text_sha256_file": "c59f6b47898f11e820fb2aafb189f11cf7688945dfa85764e907445527c407d5",
-        "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-036.raw.txt",
-        "raw_text_sha256": "4bab6904b70367a29424d872fc8020b60ecbab47f43273b985b690b8bf268a74",
+        "archive_piece_index": 121,
+        "text_path": "assets/glyphs/contextual/operator-constructions/church-121.txt",
+        "source_text_sha256_file": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
+        "raw_text_path": "assets/glyphs/contextual/operator-constructions/church-121.raw.txt",
+        "raw_text_sha256": "0258857b05f4ecee2a58928f748c21445647763ec366dbdab6758fffab2c31e6",
         "decoding": "html.unescape; raw archived text also preserved"
       },
       "passages": [
         {
           "id": "crop-03-source-passage",
-          "line_start": 7,
+          "line_start": 2,
           "rows": [
-            ".　 　 　 　 |l l|　ⅱ|::|ⅱ|::|ⅱ|　　　　　　　|　　 ／　　　　γ⌒ヽ　　　　＼|",
-            ".　 　 　 　 |　|　　 |::|　 |::|　 |　　　　　　　|　／＿＿＿＿乂__ノ＿＿＿＿＼"
+            ": : : ≧s｡/:::::::::::| | | :|:::ｉ| i|　　 { {////,|　:|ｉ｀`丶､　＿＿＿ヽγ⌒ヽ'´＿＿_　　,､丶` | 　 |///,ﾘ　i}　,j{　|　 | :|: | |　　_」L斗r≦",
+            ": : : : : : : : :≧s｡.,| | :|　ｉ| i|　　 ', '////{　 |ｉ──┘`ー‐‐--' {　　　 } ──‐'　└─‐ } 　 }////　,'　∥　|　 | :|: |｡s≦: : : : : : : : : :"
           ]
         }
       ],

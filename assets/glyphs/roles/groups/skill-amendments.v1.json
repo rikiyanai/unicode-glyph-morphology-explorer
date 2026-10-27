@@ -14,7 +14,7 @@
   "Split-stroke search: flagged only 乂@349 row 8 in church-036 (oculus return vs cornice). Checked and not flagged: `｢`@258 r7 church-073 (band end at the pillar occlusion), `Y`@61 r6 church-105/106/107 (generic Y join, excluded by the addendum), `彳`/`ジ` in the cup (same form)"
  ],
  "gaps": [
-  "church036 rows 7-8: the bound operator screenshot crop-03 does not show this passage, so the Assisi entry rests on the skill citation + verified TXT, not on a matching operator crop",
+  "church036 rows 7-8: no operator crop shows this passage (crop-03 was rebound to aa[121] rows 2-3 on 2026-10-27); the Assisi entry rests on the skill citation + verified TXT",
   "church073 thick band marks: covered by the skill-rounded group (sr-p11-crown-at-pillar, sr-p11-left-flank, sr-p11-right-flank); profile 11 = aa[73] [parent note]",
   "No xs (one-row) rim_cap from an artwork in this group; the only one-row entries are Orinrin palette fragments",
   "C#99 rows 1-8: no thinning within a band (the courses repeat at constant density); thinning tone for this pattern comes only from C#126 here",
@@ -352,7 +352,7 @@
    "note": "Small round window whose lower return `乂__ノ` is spelled inside the pediment's cornice run `／＿＿＿＿乂__ノ＿＿＿＿＼`: the ring interrupts the cornice instead of being drawn as a separate closed circle.",
    "status": {
     "state": "retained",
-    "reason": "operator-supplied crop source; no written region label"
+    "reason": "skill-cited (Recovered AA tools: Assisi church036 rows 7-8); no operator crop shows this passage (crop-03 was rebound to aa[121] on 2026-10-27); no written region label"
    },
    "inspection": "r7 cap `γ⌒ヽ`@345-377 under the raking cornices `／`@285 / `＼`@433; r8 cornice `／＿＿＿＿`@269-333 → `乂`@349 → `__`@365-370 → `ノ`@375 → `＿＿＿＿＼`@386-450; in the crop `乂`'s left-to-right stroke continues the `γ` tail down into the window bottom `__`, its other stroke lands on the cornice end; paper kept inside the ring; r6 `イﾆﾆヽ ／` / `＼ﾆヽ` and r9 entablature `|¨¨|¨¨¨¨¨丁¨二二¨¨ﾞ[` frame it. Note: the bound screenshot crop-03 does not show these rows (see inspection_log)",
    "inspected_by": "skill-amendments agent",
@@ -744,15 +744,15 @@
    "source": {
     "repo": "ascii-art-archive",
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#121",
-    "label": "church page 2f0353dc aa[121], rows 2-5 (the passage operator crop-03 visibly shows; see note)",
+    "label": "church page 2f0353dc aa[121], rows 2-5 (operator crop-03 shows rows 2-3)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\"; operator_reference_sources.v1.json operator-curve-crop-03 (bound there to aa[36] rows 7-8)"
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\"; operator_reference_sources.v1.json operator-curve-crop-03 (aa[121] rows 2-3, rebound 2026-10-27)"
    },
    "crop": "crops/sa-church121-brace-oculus.png",
-   "note": "Hub where ribs converge: a `γ⌒ヽ` cap with `{`/`}` flanks that the horizontal ribs touch, open at the bottom into diverging `／ ＼` ribs. Binding discrepancy: operator_reference_sources.v1.json binds crop-03 to aa[36] rows 7-8, but the crop's pixels (`ヽγ⌒ヽ'´` over `-' {   } ─`, with `ノ`/`'､` below) match this passage by agent visual comparison; not resolved here.",
+   "note": "Hub where ribs converge: a `γ⌒ヽ` cap with `{`/`}` flanks that the horizontal ribs touch, open at the bottom into diverging `／ ＼` ribs. Operator crop-03 shows rows 2-3 of this passage; its binding was corrected from aa[36] rows 7-8 to aa[121] rows 2-3 on 2026-10-27.",
    "status": {
     "state": "retained",
-    "reason": "operator-supplied crop source; no written region label"
+    "reason": "operator-supplied crop source (crop-03); no written region label"
    },
    "inspection": "r2 `ヽγ⌒ヽ'´`@356-415 caps the hub, outer `ヽ`@356 and `'´`@412-415 meet the ribs `＿＿＿`@308-340 / `＿＿_`@423-455; r3 flanks `{`@370 and `}`@412 touched by `ー‐‐--'`@315-362 and `──‐'`@421-461; r4 `ノ`@363 and `'､`@412-415 turn inward but leave the bottom open; `＞`@309 / `＜`@466 converge from the sides; r5 `／`@341 and `＼`@422 diverge downward; paper inside the hub",
    "inspected_by": "skill-amendments agent"
@@ -1192,5 +1192,9 @@
    "inspection": "r935 `⌒`@0 cap, `ヾ`@16 tick, `て`@28 whose top bar continues the cap level and hooks back down-left; siblings `)て`, `て＿＿`, `てノ(` in rows 933-936",
    "inspected_by": "skill-amendments agent"
   }
+ ],
+ "revision_log": [
+  "sa-assisi036-oculus-pediment: status.reason 'operator-supplied crop source' -> skill-cited, no operator crop, because crop-03 was rebound to aa[121] (2026-10-27)",
+  "sa-church121-brace-oculus: label, cited_by, note, status.reason updated because the crop-03 binding was corrected to aa[121] rows 2-3 (2026-10-27)"
  ]
 }

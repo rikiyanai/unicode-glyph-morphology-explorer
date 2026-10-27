@@ -36,7 +36,7 @@ class OperatorConstructionCrops(unittest.TestCase):
                 self.assertEqual(image.size, (record["native_reference"]["width"], record["native_reference"]["height"]))
 
     def test_raw_and_display_text_are_distinct_and_reproducible(self):
-        self.assertEqual({s["archive_piece_index"] for s in self.doc["sources"]}, {27, 36, 57, 73, 97, 105, 106, 107, 161, 165})
+        self.assertEqual({s["archive_piece_index"] for s in self.doc["sources"]}, {27, 36, 57, 73, 97, 105, 106, 107, 121, 161, 165})
         for source in self.doc["sources"]:
             raw = (ROOT / source["raw_text_path"]).read_text()
             decoded = (ROOT / source["text_path"]).read_text()

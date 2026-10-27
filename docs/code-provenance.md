@@ -564,12 +564,24 @@ page URLs, zero-based archive indices, source/crop paths and SHA-256 identities.
 The viewer's source panes expose `reference registry path` and `original
 reference status`; screenshots and full original text are separate fields.
 
+**Correction, 2026-10-27 — crop 03 rebound.** Crop 03 shows `γ⌒ヽ'´` above
+`{　　　 }` brace sides. That is archived church `aa[121]` rows 2–3
+(相州戦神館學園 八命陣（聖堂）), not Assisi `aa[36]` rows 7–8 (`γ⌒ヽ` above
+`乂__ノ` on a cornice), which this section originally bound it to. The binding was
+corrected in `operator_construction_crops.sources.v1.json` and the producers
+re-run (`operator_construction_crops.v1.json`, `operator_reference_sources.v1.json`,
+`construction_tool_mapping.v1.json`, and the records of `windows_aa_code_audit.v1.json`).
+Assisi `aa[36]` stays packaged as `church-036.txt`; findings below that quote its
+text (`γ⌒ヽ` / `乂__ノ` overlaps with Orinrin palettes 22/24, AAJ coverage, upstream
+MLT line 939) remain true of that text, but they are not findings about crop 03.
+The upstream MLT line of `aa[121]` was not rechecked in this correction.
+
 | Operator example | Preserved exact supplied crop/text | Original AAHub artwork and source binding |
 |---|---|---|
 | **Cup, steam, plate and reclining character** | [Complete exact drawing](../assets/glyphs/contextual/aramaki-cup-plate-176.txt), all 21 rows | **Matched**: [荒巻スカルチノフ](https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04), archived `aa[176].value`. Rim/side/return rows 5–14; plate/context rows 15–21. No exact original native PNG packaged. |
 | Crop 01 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-01.png) | **Matched**: [church page](https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c), archived `aa[161]`, MTG Godless Shrine / `ＭＴＧ 神なき祭壇`; [complete original text](../assets/glyphs/contextual/operator-constructions/church-161.txt), [raw text](../assets/glyphs/contextual/operator-constructions/church-161.raw.txt), rows 11–13: `ｧ宀v`, `弋__人`, `∧`. |
 | Crop 02 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-02.png) | **Matched**: [church page](https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c), archived `aa[165]`, Karnak; [complete original text](../assets/glyphs/contextual/operator-constructions/church-165.txt), [raw archived text](../assets/glyphs/contextual/operator-constructions/church-165.raw.txt). Crop passage rows 7–10. |
-| Crop 03 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-03.png) | **Matched**: [church page](https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c), archived `aa[36]`, Assisi; [complete original text](../assets/glyphs/contextual/operator-constructions/church-036.txt), [raw archived text](../assets/glyphs/contextual/operator-constructions/church-036.raw.txt). Crop passage rows 7–8. |
+| Crop 03 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-03.png) | **Matched (corrected 2026-10-27)**: [church page](https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c), archived `aa[121]`, 相州戦神館學園 八命陣（聖堂）; [complete original text](../assets/glyphs/contextual/operator-constructions/church-121.txt), [raw archived text](../assets/glyphs/contextual/operator-constructions/church-121.raw.txt). Crop passage rows 2–3: `γ⌒ヽ'´` / `{　　　 }`. Previously mis-bound to Assisi `aa[36]` rows 7–8. |
 | Crop 04 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-04.png) | **Shared motif matched, not a unique variant**: same church page, rows 6–7, `（(⌒Y⌒)）` / `)Ｉi(`, in [aa[105] wedding](../assets/glyphs/contextual/operator-constructions/church-105.txt), [aa[106] wedding without people](../assets/glyphs/contextual/operator-constructions/church-106.txt), and [aa[107] ordinary-church variant](../assets/glyphs/contextual/operator-constructions/church-107.txt). Each repeats the motif twice. All three full original texts and raw counterparts are packaged; none is claimed to be uniquely identified by this crop. |
 | Crop 05 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-05.png) | **Matched**: same church page, archived `aa[97]`; [complete original text](../assets/glyphs/contextual/operator-constructions/church-097.txt), [raw text](../assets/glyphs/contextual/operator-constructions/church-097.raw.txt), rows 4–7: `(　)`, `/⌒Ｙ`, `乂__ﾉ`, `しく__`. |
 | Crop 06 | [Exact screenshot](../assets/glyphs/contextual/operator-constructions/crop-06.png) | **Matched**: [church page](https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c), archived `aa[73]`, church basement; [complete original text](../assets/glyphs/contextual/operator-constructions/church-073.txt), [raw archived text](../assets/glyphs/contextual/operator-constructions/church-073.raw.txt). Crop passage rows 7–17. |
@@ -709,13 +721,13 @@ unseen workflow or a claim about all AAHub art:
    and [crop 06](../assets/glyphs/contextual/operator-constructions/crop-06.png).
    **寸** is identified there; this does not prove it is the operator's formerly
    remembered kanji.
-3. **Fit adjacent ink and spaces, not character names.** Crop 03's `γ⌒ヽ`
+3. **Fit adjacent ink and spaces, not character names.** Assisi's `γ⌒ヽ`
    above `乂__ノ` builds the small round opening from cap/shoulder and lower-return
    relationships. The cross-strokes are part of the intact glyphs, not disposable
    noise. The source's proportional spacing must be retained; terminal columns
    are not a substitute for its native positioning. Witness:
-   [church-036 rows 7–8](../assets/glyphs/contextual/operator-constructions/church-036.txt),
-   [crop 03](../assets/glyphs/contextual/operator-constructions/crop-03.png).
+   [church-036 rows 7–8](../assets/glyphs/contextual/operator-constructions/church-036.txt)
+   (crop 03 is `aa[121]` rows 2–3, not this passage; see the 2026-10-27 correction).
 4. **A curved band is more than one thin contour.** In crop 06, multiple strokes
    establish band thickness/inner and outer turns; the central pillar interrupts
    its visibility. Treating every character as a single isolated centerline loses
@@ -1419,7 +1431,7 @@ every occurrence was inserted from one preset.
 
 | Supplied source | How its local construction works |
 |---|---|
-| [Assisi, complete source](../assets/glyphs/contextual/operator-constructions/church-036.txt), rows 7–8; [crop 03](../assets/glyphs/contextual/operator-constructions/crop-03.png) | `γ⌒ヽ` supplies upper cap/shoulders, while the positioned next-row `乂__ノ` supplies the lower return. Their relationship encloses paper. Matching an isolated cap is not matching this entire opening. |
+| [Assisi, complete source](../assets/glyphs/contextual/operator-constructions/church-036.txt), rows 7–8 (not crop 03's source; see the 2026-10-27 correction) | `γ⌒ヽ` supplies upper cap/shoulders, while the positioned next-row `乂__ノ` supplies the lower return. Their relationship encloses paper. Matching an isolated cap is not matching this entire opening. |
 | [Church-basement source](../assets/glyphs/contextual/operator-constructions/church-073.txt), rows 8–16; [crop 06](../assets/glyphs/contextual/operator-constructions/crop-06.png) | Shallow multi-stroke bands change through `ｲ二㌃゜`, `ｲﾆア゜`, `/ﾆｱ` on one shoulder and `くﾆ心、`, `寸ム`, `寸ﾊ`, `∨i,`, `Ⅵｉ` on the other. Articulation and row position change together; the result is a turning thick band, interrupted by a foreground pillar—not one diagonal repeated around a circle. |
 | [Karnak source](../assets/glyphs/contextual/operator-constructions/church-165.txt), row 9; [crop 02](../assets/glyphs/contextual/operator-constructions/crop-02.png) | `jI斗-─--ミ` combines a shallow run and fuller end constructions across the capital. Whole-glyph ink and the surrounding rows matter, not only the central horizontal strokes. |
 | [Godless Shrine source](../assets/glyphs/contextual/operator-constructions/church-161.txt), rows 11–13; [crop 01](../assets/glyphs/contextual/operator-constructions/crop-01.png) | `ｧ宀v` caps the opening, `弋__人` makes the lower turn/meeting, and `∧` continues below. This is a distinct compound cap/return vocabulary, not another isolated `⌒` example. |
@@ -1658,7 +1670,8 @@ per-row lists; the manifest/browser keeps the complete lists and original source
 |---|---|---|
 | crop01, Godless Shrine aa161 | `ｧ宀v`, `弋__人` | `ｧ 宀 弋 人` |
 | crop02, Karnak aa165 | `jI斗-─--ミ` | `斗` |
-| crop03, Assisi aa36 | `γ⌒ヽ` / `乂__ノ` | `γ ⌒ 乂` |
+| crop03, aa121 (corrected 2026-10-27) | `γ⌒ヽ'´` / `{　　　 }` | `γ ⌒ ´` |
+| Assisi aa36 (formerly listed as crop03) | `γ⌒ヽ` / `乂__ノ` | `γ ⌒ 乂` |
 | crop04, shared aa105/106/107 | `（(⌒Y⌒)）` / `)Ｉi(` | `⌒` |
 | crop05, aa97 | `/⌒Ｙ`, `乂__ﾉ` | `⌒ Ｙ 乂 ﾉ` |
 | crop06, basement arch aa73 | `ｲﾆア゜`, `寸ム`, `寸ﾊ`, `Ⅵｉ` | `ｲ ﾆ ア 寸 ム ﾊ Ⅵ ｉ` |
@@ -1773,7 +1786,8 @@ for that check; the decoded display text is not substituted for raw provenance.
 |---|---:|---|
 | crop01, Godless Shrine | church: 4236, 22 rows | Unverified |
 | crop02, Karnak | church: 4346, 26 rows | Unverified |
-| crop03, Assisi | church: 939, 35 rows | Unverified |
+| Assisi aa36 (formerly listed as crop03) | church: 939, 35 rows | Unverified |
+| crop03, aa121 (corrected 2026-10-27) | not rechecked | Unverified |
 | crop04, repeated paired-lobe motif | church: 2807 / 2838 / 2869, three full variants | Unverified; unique variant also unresolved |
 | crop05, aa97 | church: 2515, 39 rows | Unverified |
 | crop06, Fate church basement | church: 2035, 26 rows | Unverified |

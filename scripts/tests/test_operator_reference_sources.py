@@ -23,7 +23,7 @@ class OperatorReferenceSources(unittest.TestCase):
         self.assertEqual(set(self.records), {f"operator-curve-crop-{n:02}" for n in range(1, 9)} | {"aramaki-cup-plate-surface-following-tone"})
 
     def test_bound_sources_are_original_full_text_not_just_excerpts(self):
-        for number, piece in ((1, 161), (2, 165), (3, 36), (5, 97), (6, 73), (7, 57), (8, 57)):
+        for number, piece in ((1, 161), (2, 165), (3, 121), (5, 97), (6, 73), (7, 57), (8, 57)):
             record = self.records[f"operator-curve-crop-{number:02}"]
             self.assertEqual(record["archive_piece_index"], piece)
             self.assertEqual(record["source_url"], "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c")
