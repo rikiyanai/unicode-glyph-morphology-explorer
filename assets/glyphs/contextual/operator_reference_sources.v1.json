@@ -1,7 +1,7 @@
 {
   "schema": "glyph_morphology.operator_reference_sources.v1",
   "input_hashes": {
-    "scripts/operator_reference_sources.py": "c36604ad50c9690670a2c142194d823ceb0152fd71bdbf08cdd049628f16cd97",
+    "scripts/operator_reference_sources.py": "0a26b5aed61ee2bc6192982f55f19b69165a6a6fd4e742778dd8c26abaedbf57",
     "assets/glyphs/contextual/operator_construction_crops.v1.json": "05a45a4415c8b2ef1ad85cf72a74c3ef9a7938c7bbe6ac6418099b73ef64e749",
     "assets/glyphs/contextual/shallot_native_contexts.v1.json": "91a6c5ff19b1c163c8ccd39b04a263afa7dab1d6e42a6f8c1bca96368abf9554",
     "assets/glyphs/contextual/operator-constructions/crop-01.png": "b613c1ea7fcf7dd4eed682ea57b0aa7f2d867da09e81bddd8cb54e3dc68ceec3",
@@ -53,7 +53,15 @@
           "line_start": 11,
           "line_end": 13
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-02",
@@ -75,7 +83,15 @@
           "line_start": 7,
           "line_end": 10
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-03",
@@ -97,7 +113,15 @@
           "line_start": 7,
           "line_end": 8
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-04",
@@ -144,7 +168,15 @@
           "line_start": 6,
           "line_end": 7
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-05",
@@ -166,7 +198,15 @@
           "line_start": 4,
           "line_end": 7
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-06",
@@ -188,7 +228,15 @@
           "line_start": 7,
           "line_end": 17
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-07",
@@ -210,7 +258,15 @@
           "line_start": 12,
           "line_end": 14
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "operator-curve-crop-08",
@@ -232,7 +288,15 @@
           "line_start": 9,
           "line_end": 14
         }
-      ]
+      ],
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     },
     {
       "id": "aramaki-cup-plate-surface-following-tone",
@@ -257,7 +321,15 @@
         }
       ],
       "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface",
-      "not_a_substitute": "tabemono-01/resK-182 has different plate contents; it is not this original drawing"
+      "not_a_substitute": "tabemono-01/resK-182 has different plate contents; it is not this original drawing",
+      "artwork_creation": {
+        "verified": false,
+        "creator": null,
+        "editor": null,
+        "production_workflow": null,
+        "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+        "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25"
+      }
     }
   ],
   "limit": "All eight local crop constructions have source references. Crop 04 matches a motif repeated in three full-artwork variants; no unique variant or repeated left/right occurrence is invented. Full source text is not an original native PNG. No guessed live post anchors."

@@ -64,6 +64,14 @@ class OperatorReferenceSources(unittest.TestCase):
             if record.get("crop_path"):
                 self.assertEqual(sources.sha(ROOT / record["crop_path"]), record["crop_sha256"])
 
+    def test_source_matching_is_not_mislabeled_as_creation_workflow_attribution(self):
+        for record in self.records.values():
+            creation = record["artwork_creation"]
+            self.assertFalse(creation["verified"])
+            for key in ("creator", "editor", "production_workflow"):
+                self.assertIsNone(creation[key])
+            self.assertIn("UNVERIFIED", creation["status"])
+
     def test_viewer_points_to_registry_and_explicit_original_status(self):
         doc = crops.load()
         corpus = crops.ConstructionCorpus(doc)
@@ -72,6 +80,7 @@ class OperatorReferenceSources(unittest.TestCase):
             text = "\n".join(viewer._context_detail_lines(record, 100))
             self.assertIn("operator_reference_sources.v1.json", text)
             self.assertIn("original reference status:", text)
+            self.assertIn("production workflow status: UNVERIFIED", text)
 
 
 if __name__ == "__main__":

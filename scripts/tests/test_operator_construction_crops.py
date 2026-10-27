@@ -90,16 +90,19 @@ class OperatorConstructionCrops(unittest.TestCase):
 
     def test_round_axis_uses_operator_crops_not_rejected_candidates(self):
         families = viewer.load_round_families(self.corpus)
-        self.assertEqual(len(families), 8)
-        self.assertTrue(all(f["context"]["id"].startswith("operator-curve-crop-") for f in families))
+        self.assertEqual(len(families), 53)
+        self.assertEqual([f["context"]["id"] for f in families[:8]],
+                         [f"operator-curve-crop-{n:02}" for n in range(1, 9)])
+        self.assertTrue(all(f["context"]["id"].startswith("profile-circle-") for f in families[8:]))
         with patch.object(viewer, "load_combination_families", return_value=[]), \
              patch.object(viewer, "load_seam_families", return_value=[]), \
              patch.object(viewer, "load_sjis_corpus_families", return_value=[]), \
              patch.object(viewer, "load_context_families", return_value=[]), \
              patch.object(viewer, "load_aaj_families", return_value=[]), \
+             patch.object(viewer, "load_component_families", return_value=[]), \
              patch.object(viewer, "load_pattern_families", return_value=[]):
             self.assertEqual({f["context"]["id"] for f in viewer.load_combo_families(self.corpus)},
-                             {r["id"] for r in self.doc["families"]})
+                             {f["context"]["id"] for f in families})
 
     def test_cli_is_portable_without_cache_or_temporary_screenshots(self):
         script = ("import sys;sys.path.insert(0,sys.argv[1]);import glyph_families_viewer as v;"
@@ -108,7 +111,7 @@ class OperatorConstructionCrops(unittest.TestCase):
         result = subprocess.run([sys.executable, "-c", script, str(ROOT / "scripts")],
                                 capture_output=True, text=True, timeout=30)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("families=8", result.stdout)
+        self.assertIn("families=53", result.stdout.splitlines()[0])
         self.assertIn("operator-curve-crop-06", result.stdout)
         self.assertIn("unique full-artwork variant unresolved", result.stdout)
         self.assertIn("church-161.txt", result.stdout)

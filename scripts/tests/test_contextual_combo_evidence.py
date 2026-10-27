@@ -275,8 +275,11 @@ class ContextViewerDiscovery(unittest.TestCase):
         self.assertIn("TEXT CONTEXT ONLY", result.stdout)
         self.assertIn("focus length=", result.stdout)
         import operator_construction_crops as crops
-        total = len(json.loads(DATA.read_text())["families"]) + len(crops.load()["families"])
-        self.assertIn(f"families={total}", result.stdout)
+        import profile_circle_intake
+        import component_library_intake
+        total = (len(json.loads(DATA.read_text())["families"]) + len(crops.load()["families"])
+                 + len(profile_circle_intake.load()["families"]) + len(component_library_intake.load()["families"]))
+        self.assertIn(f"families={total}", result.stdout.splitlines()[0])
         for family_id in (
             "t7-texture-defined-regions",
             "c424-bounded-punctuation-pockets",
@@ -296,6 +299,7 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_pattern_families", return_value=[]),
             mock.patch.object(viewer, "load_round_families", return_value=[]),
             mock.patch.object(viewer, "load_aaj_families", return_value=[]),
+            mock.patch.object(viewer, "load_component_families", return_value=[]),
         ):
             families = viewer.load_combo_families(fake_corpus, limit=1, corpus="aa004")
         self.assertTrue(families)
@@ -325,6 +329,7 @@ class ContextViewerDiscovery(unittest.TestCase):
             mock.patch.object(viewer, "load_pattern_families", return_value=[]),
             mock.patch.object(viewer, "load_round_families", return_value=[]),
             mock.patch.object(viewer, "load_aaj_families", return_value=[]),
+            mock.patch.object(viewer, "load_component_families", return_value=[]),
         ):
             families = viewer.load_default_families(fake_corpus, block=None, seam_limit=1)
         expected = {f['id'] for f in json.loads(DATA.read_text())['families']}

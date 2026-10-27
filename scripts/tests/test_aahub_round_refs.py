@@ -80,7 +80,7 @@ class RoundReferenceTests(unittest.TestCase):
                                 text=True, capture_output=True, timeout=30)
         self.assertEqual(result.returncode, 0, result.stderr)
         import operator_construction_crops as crops
-        self.assertIn("families=8", result.stdout)
+        self.assertIn("families=53", result.stdout.splitlines()[0])
         self.assertIn("PACKAGED SCREENSHOT", result.stdout)
         for record in crops.load()["families"]:
             self.assertIn(record["id"], result.stdout)
@@ -90,7 +90,7 @@ class RoundReferenceTests(unittest.TestCase):
         result = subprocess.run([str(ROOT / "run-families.sh"), "--mode=round", "--dump"],
                                 text=True, capture_output=True, timeout=30)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertIn("families=8", result.stdout)
+        self.assertIn("families=53", result.stdout.splitlines()[0])
         self.assertNotIn("computing families", result.stderr)
 
     def test_combo_and_default_axes_include_round_sources(self):
@@ -100,15 +100,18 @@ class RoundReferenceTests(unittest.TestCase):
              patch.object(viewer, "load_context_families", return_value=[]), \
              patch.object(viewer, "load_pattern_families", return_value=[]), \
              patch.object(viewer, "load_aaj_families", return_value=[]), \
+             patch.object(viewer, "load_component_families", return_value=[]), \
              patch.object(viewer, "load_families", return_value=[]), \
              patch.object(viewer, "load_foliage_stroke_families", return_value=[]):
             combo = viewer.load_combo_families(self.corpus)
             default = viewer.load_default_families(self.corpus, None, 0)
         import operator_construction_crops as crops
-        self.assertEqual(len(combo), 8)
+        import profile_circle_intake
+        expected = profile_circle_intake.extend(crops.load())["families"]
+        self.assertEqual(len(combo), 53)
         for mode in ("combo", "context", "round"):
             self.assertEqual({f["context"]["id"] for f in default if f["mode"] == mode},
-                             {r["id"] for r in crops.load()["families"]})
+                             {r["id"] for r in expected})
 
     def test_interpretation_does_not_identify_forgotten_kanji(self):
         records = {r["id"]: r for r in self.doc["families"]}

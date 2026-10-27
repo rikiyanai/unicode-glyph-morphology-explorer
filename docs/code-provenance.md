@@ -1,5 +1,251 @@
 # Code provenance
 
+## Component-library discovery and viewer intake — 2026-10-26
+
+User: "LOG AND MAKE IT DISCOVERABLE ALSO LOOK FOR MORE COMBOS WE MISSED".
+Root fetched origin before edits; morphology remains0ahead/1behind, with remote
+README-only04429ed and earlier unpublished viewer/audit/profile work preserved.
+Root reread current ASCII SKILL, applicable structural vocabulary/role/round
+guidance and MAIN goal before this reference-tooling iteration. No subagents,
+tmux, MAIN renderer, benchmark corpus split, account visibility, publication,
+commit or push is involved. The remote README is not overwritten.
+
+**Discovery scope:** scanned all13,981rows of the local pinned AAHub page index,
+then inspected headings of39non-adult generic body/effect and generic
+parts/symbol/frame/shape candidates. This is title/path-led metadata discovery,
+not a claim to have read every artwork or excluded other relevant libraries.
+The web search returned no useful results; local source metadata plus direct
+live AAHub pages supplied the findings. The39candidate titles, exact headings,
+source URLs and packaged-versus-metadata-only status are retained in
+[component_libraries.v1.json](../assets/glyphs/contextual/component_libraries.v1.json).
+
+The important direct omission is **線・図形・図表**, key
+`a7065b14a8fb85fd61e0a2e01e91501b`: an explicit **円形・球** circle/sphere
+section, other solids, angular shapes, straight lines, curved/bent/branching
+lines and other diagrams/material. Its147circle-section entries include many
+complete native multi-row rings with changing crown/shoulder/flank/return and
+band character. This is far stronger direct construction coverage than relying
+on one church opening. Other finds are large-mouth, ear, pattern/gradient,
+effect-line and mechanical-parts catalogs; the large-eye page was already partly
+cited, but not exposed as a whole role-organized catalog. Do not describe every
+one of these as previously unknown or every imported source as approved.
+
+**Personal source inspection:** root read exact original AAHub JSON glyph
+records at selected indices enumerated per library in the registry. Opened
+the live small-face, lines/shapes, patterns, ears, large-mouth, effect-line,
+mechanical-parts and large-eye pages and viewed selected native-font examples;
+these actions do not establish a visual review of all source entries. Specific
+retained relationships: adjacent small-eye rows and asymmetry; ring crown/side/
+return/inner paper; ear rim/fold/negative pocket; mouth upper/lower return and
+bounded tone; organized repeat/transition rather than scalar density; shared
+effect directions; mechanical contacts and planar bands. Reject isolated glyph
+strength as importance, implicit fixed-template recognition, forced closure,
+normalization of spaces/width variants, and statistical mining being called
+personal inspection. No GIF/motion claim applies to this static catalog intake.
+
+**Delivered discovery:** `./run-families.sh --mode parts --list-libraries` lists
+eight complete source libraries. `--library faces-small --section 2行` selects
+the original50two-row eye entries; `--library shapes --section 円形` selects
+147circle/sphere entries; `--section 枝分かれ` selects18curved/bent/branching
+entries. The COMPONENT LIBRARIES axis preserves original page/section/entry
+order and complete native text rows, also discoverable from COMBOS, CONTEXT and
+the default browser. Existing53 ROUND records remain unchanged.
+
+Counts: small faces437; shapes543; large eyes275; large mouths267; ears14;
+patterns146; effect lines87; mechanical parts84. This is1,853non-heading
+**source entries**, not1,853unique presets or accepted drawings; some entries
+are textual notes. All1,886original archive entries, including33section
+headings, remain available through the byte-identical original `.json.gz`
+pages. No deduplication, whitespace normalization, glyph reselection, cropping
+or template fitting replaces a source entry. The original JSON pointer and
+whole decoded glyph rows are exposed in each detail pane.
+
+The producer `scripts/component_library_intake.py --write` owns only
+`assets/glyphs/contextual/component-libraries-20261026/` and its registry.
+Whole source text is rendered in new Saitamaar16px/17px-row comparison PNGs,
+not called original PNGs or browser-pixel parity. Source pages, image artifacts,
+font and producer are hashed. Per-entry font coverage is recorded and surfaced
+if missing glyphs occur. Indexed/unreviewed entries are explicitly labelled;
+source artist/editor, automatic selection and animation/LOD relationships
+remain unverified. The31other candidates remain metadata only.
+
+The ASCII skill's main provenance table, source front door and structural
+guidance now route these complete role/footprint-organized libraries. The
+earlier bounded discovery note below is superseded **only** where it says the
+small-face page had not yet been imported. Verification is recorded after the
+actual checks, not inferred from counts or source presence.
+
+Verification completed:79scoped source/viewer tests across nine modules pass.
+They account for all1,886original entries/33headings, validate exact full rows
+and whitespace against preserved original JSON, retain the small-eye nested
+role/row hierarchy, query147circles/18branching curves/50two-row eyes, check
+whole-entry glyph membership (including later rows), native pixel panning,
+source pointers, provenance/review labels, all discovery surfaces and cache-free
+wrapper/CLI operation.1,861packaged artifacts validate by SHA-256; the producer
+hash matches current source. There are8entries with codepoints absent from the
+comparison font; their source remains unchanged and their panes explicitly warn
+that the comparison is not native-fit evidence. No fallback-font parity is claimed.
+
+The first integration run exposed one real bug: the new cache-free character
+directory assumed every older contextual passage had `rows`, but motion-source
+passages use glyph records. Fixed the directory to combine available original
+rows and focus forms, with a regression counter-test. Remaining failures were
+isolated-loader mocks and old aggregate counts that omitted the profile and/or
+component catalogs. Updated fixtures to preserve their original source/pixel/
+ambiguity checks while accounting for new discovery surfaces; no art-quality
+acceptance threshold was changed. Oversized assertion output prompted bounding
+aggregate-header assertions and subsequent test result reporting.
+
+Root exercised the actual curses UI in PTYs for shapes/円形 and
+faces-small/2行:147and50entries, selection, overview/native toggle, horizontal
+panning, source-detail scrolling and clean quit. Unique library/index labels
+now precede long titles so entries remain distinguishable in narrow lists.
+Opened comparison PNGs shapes002/006, faces-small017/068, ears002, patterns076,
+effect-lines002 and mechanical-parts002 at original resolution; these are new
+renders, not original art screenshots. Source/skill diff checks pass. All three
+packaging commands finished normally; the two UI sessions were closed.
+This verifies catalog transport/discoverability, not MAIN rendering or motion.
+
+## Missed role-organized AAHub component library — 2026-10-26
+
+Operator supplied `https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157`.
+Root reread current ASCII SKILL and MAIN goal, opened the live page in Chrome,
+viewed native-font1–3-row eye examples and read exact original archive text:
+`ascii-art-archive/collections/aahub-mlt/aa/aa4a08aa52d30eb30ac42f64f068c157.json.gz`.
+Selected actual reads: headings and aa[2,3,17,29,33,45,46,68,69], mouths318–328,
+faces432–434. This is not an inspection claim for every one of447entries.
+The web text reader failed; signed-in Chrome and the original archive worked.
+
+The title is `顔・表情01（小型）`, path
+`汎用AA/体/顔・表情/顔・表情01（小型）`. It organizes reusable **depicted
+features by row footprint**, not a bare n-gram dictionary: eye/pupil heading0;
+1row heading1,2rows16,3rows67,4rows191,5rows244,6rows264,other275;
+small mouths317;small faces431. The447archive entries include these ten
+section headings, so447must not be reported as447glyph-combination presets.
+Exact cooperating passages include `灯ぅミ`/`Vリ`, `r示ミ、`/`{辷ﾘ`,
+`ｨぅて笊㍉`/`乂rツ` and three-row cap/eye/return constructions.
+Retain row relationships, target-font spaces, paired asymmetry and openings;
+do not normalize them into independent character matches.
+
+**Why it was missed in the curated intake:** the source already existed in the
+archive, but its key was absent from the skill's curated reference index, the
+contextual evidence and previous circle-profile registry. The inspected corpus
+miner `scripts/sjis_corpus_combos.py` explicitly indexes idioms, touching
+bigrams/trigrams, nearby vertical pairs, bands and whitespace—not this page's
+part/row hierarchy as whole reusable constructions. This establishes a
+discovery/indexing gap, not absence of AAHub component references, proof that
+the statistical corpora exclude it, or an attribution to any recovered editor.
+
+The skill's AAHub source front door now identifies the page, row sections and
+selected exact locators. No447-entry viewer import is claimed or performed in
+this bounded discovery answer. Existing53 ROUND records and all prior evidence
+remain unchanged. A future intake should preserve original group boundaries,
+whole multi-row passages, spaces and source indices rather than mine this only
+as popular adjacent characters. The row families do not prove matched LOD
+versions, temporal transitions or a runtime recipe. They supply articulation
+alternatives after depiction selection; they do not decide which part matters.
+
+## Operator circle profile intake — 2026-10-26
+
+Root personally opened the operator's native My MLT `circle` in signed-in
+Chrome: `https://aahub.org/mlts/6zbpnrsgp96r`, 51 entries, dated2026/10/26,
+**private draft**, unchanged. Exported UTF-8 through the site's export modal;
+the download event hook timed out, but the actual `Downloads/circle.mlt`
+arrived and was read. The preserved export is not a browser-storage scrape.
+Its header is `2026/10/26 05:03:38`; CRLF bytes are retained unchanged.
+Export SHA-256: `4e97009cc050839c8f00df2302439ae6c28232a33cf2198b1259ffbb5fdb0708`.
+An independent live DOM/export comparison of all51 entries agreed after only
+outer trim and ordered separator joining:101049UTF-16 code units, FNV-1a32
+`af3e6eee` (a transport comparison, not a cryptographic identity). The live art
+uses CSS family`aahub`,12px/13px rows; it is NOT asserted identical to the
+new16px Saitamaar comparisons. A Web Crypto probe was unavailable in the
+read-only page scope; no cryptographic DOM digest is claimed.
+
+Root reread ASCII `SKILL.md` (skills HEADb329fbf plus existing dirty changes),
+structural vocabulary/tool/round transfer guidance and the MAIN goal's current
+publication intake (trueff HEADcd3044621 observed during this task). This task
+adds static reference evidence/viewer access, not a renderer iteration. Viewed
+all51 native page entries through overlapping screenshots from top to bottom;
+read the export's actual glyph rows and focused source rows. Sources and exact
+one-based regions personally inspected are enumerated in the registry below.
+No GIF was changed/reviewed and no playback or runtime acceptance is claimed.
+Keep different caps/returns, nested rim/opening/paper relationships, partially
+hidden contours, overlaps/attachments and bounded tone. Reject treating every
+example as `γ⌒ヽ`/`乂__ノ`, as independent circle stamps, or as closed empty
+outlines. Do not import a thick architectural band onto every rounded subject.
+
+**Source identification:** whole-text comparison against13,981 archived AAHub
+pages found exact decoded original text for all51 entries. Only outer
+whitespace is ignored for matching; interior whitespace and fullwidth/halfwidth
+forms are not normalized. There are45 distinct drawings and six duplicate-save
+pairs: `[0,1]`, `[5,6]`, `[8,9]`, `[19,20]`, `[21,29]`, `[25,26]`.
+Profile35 occurs in corpse101 and human/mob10-261; profile40 in laboratory26
+and ruins141. Both occurrences are retained, not falsely resolved to one artist
+or publication. Profile positions and original archive `aa[index]` values are
+different zero-based namespaces; neither is asserted to be a live post ID.
+
+The canonical machine-readable owner is
+[profile_circle_evidence.v1.json](../assets/glyphs/contextual/profile_circle_evidence.v1.json).
+Each of45 records identifies its exact rounded passage, quoted glyphs,
+interpretive retained relationships, all profile positions, original category
+URL/indices, archive hashes, full raw/decoded TXT and image provenance.
+Originals/export and separately labelled comparison PNGs are packaged under
+[profile-circle-20261026](../assets/glyphs/contextual/profile-circle-20261026/).
+The new rasters are **Saitamaar16px,17px-row comparisons from the original TXT**,
+not recovered original PNGs, original-browser pixels or inferred font parity.
+The original native PNG pairing remains unavailable in this intake; the live
+page was personally viewed independently. Source authors/editor workflows
+remain unverified. Operator-selected membership is not an invented rectangle
+annotation or blanket approval of every mark.
+Root also opened newly packaged comparison PNGs15,28,31,34,37,41,43,50 at
+original pixel resolution alongside their actual TXT-derived passages, checking
+the ring of cells, perspective band, scallops, clustered fruit, vessel returns,
+cylinder orientations, nested eyes and berries. Those are new comparison
+images, not retroactive claims of recovered originals.
+
+The source curation/producer is
+[`scripts/profile_circle_intake.py`](../scripts/profile_circle_intake.py):
+`--write --mlt PATH` owns only the profile evidence snapshot/artifact directory.
+Viewing validates packaged hashes without the private profile, archive or font.
+The viewer's **ROUND CONSTRUCTIONS** axis (`--mode round`) now exposes all45
+profile drawings plus the unchanged eight operator crops,53records total;
+CONTEXT and COMBOS discover them too. Native-pixel mode/panning distinguishes
+the original crops from new comparison renders. Detail panes show source rows,
+profile positions, duplicate saves, every original match and interpretation
+limits. No converter/tool overlap is invented for the new examples.
+
+Coverage includes compact/tall rounds with different returns, domed caps,
+thick/receding/carved arches, nested stained-glass cells, perspective ellipses,
+vessels/cylinder ends, scalloped lobes, long lost-and-found envelopes,
+overlapping fruit/berries, eye/iris/pupil/highlight rings, fur-carried turns,
+crescents and interrupted openings. The skill's source index and structural
+reference now route these cases; the prior eight crops and cup remain intact.
+This is still-reference construction evidence, **not a fixed runtime template
+catalog or proof of temporal scale insertion**.
+
+Existing unpublished viewer/audit and skill work was preserved. The morphology
+checkout was0ahead/1behind after fetch (remote04429ed changes README); this task
+does not edit README, merge, commit or push unrelated work. Verification results
+are recorded here after execution, not inferred from inventories.
+
+Verification:30 focused tests pass across `test_profile_circle_intake`,
+`test_operator_construction_crops`, `test_operator_reference_sources` and
+`test_construction_tool_mapping`. They check all51 ordered profile positions,
+six duplicate pairs,45 complete originals, verbatim focused rows/fragments,
+raw/decoded identity, explicit comparison-image provenance, both multi-source
+bindings,53-record discovery and cache-free CLI. The initial run failed one
+old CLI assertion still expecting8total records; changed it to53 while retaining
+all original crop/source/ambiguity checks. It was not an artwork failure.
+Both ROUND and CONTEXT dumps expose the new entries; COMBOS uses the same
+tested loader. Root ran the actual curses viewer in a PTY, selected through
+to profile50, toggled native pixels, panned to x160 and scrolled, then quit
+normally. Displayed53records and the explicit NOT ORIGINAL PNG comparison
+label were observed. No detached shell remains from that UI check.
+`git diff --check` passes for morphology and the changed ASCII skill paths.
+These checks establish reference transport/viewer behavior, not renderer art
+quality or animation acceptance. No commit, push or profile publication was
+requested/performed in this task.
+
 This standalone implementation was extracted from `rikiyanai/asciicker-Y9-2`
 at commit `242ecba44f76ed1120dadf06653fd6de47017b7f`.
 
@@ -1130,6 +1376,12 @@ visual-review limits.
 
 ## What produces the recurring combinations — mechanism answer (2026-10-24)
 
+**Scope correction after the operator's explicit objection:** this section
+explains visible construction and documented tool capabilities. It **does not
+answer which production workflow actually made the supplied artworks**. The
+operator intended that attribution question; presenting it as merely a remaining
+side issue was a task substitution. See the production-workflow status below.
+
 **The recurring unit is a font-specific construction assembled from intact
 glyph ink, horizontal placement, neighboring rows and deliberate paper.** It
 is not merely a round character, nor does its recurrence require a hidden
@@ -1272,3 +1524,308 @@ tests. The skips concern unavailable optional original inputs; no converter
 parity is inferred. Cache-free `--mode round --dump` exposes all eight records,
 new source bindings, all three crop04 variant paths, and the new constructions.
 `git diff --check` passed. No commit or push was requested/performed this turn.
+
+## Actual production-workflow attribution — requested question still unanswered (2026-10-25)
+
+The operator clarified that identifying the workflow which **actually produced
+each reference** was the question, not merely describing how its visible ink
+cooperates. The preceding response did not complete that task. Original-artwork
+matching, preset overlap, a general artist tutorial and converter recovery are
+different evidence classes; none by itself attributes these drawings to a tool
+or workflow.
+
+**Current result: no verified production-workflow attribution for any of the
+eight supplied crops or the complete cup.** Specifically, manual typing,
+manual tracing, preset insertion, automatic conversion, post-editing and hybrid
+workflows have not been distinguished for these particular artworks. No artist,
+original creation post or creation/editing log has been verified here.
+
+### Direct checks after the correction
+
+- Inspected the actual source-record metadata for church entries
+  `36/57/73/97/105/106/107/161/165` and cup entry `176`. Both page records have
+  fields `name`, `path`, `updated`, `aa`; **every selected artwork entry has only
+  `value`**. The page update dates are collection metadata, not creation dates.
+  These snapshots contain no separate artist/editor/workflow attribution fields.
+- Inspected `ascii-art-archive/tools/crawl_aahub_mlt.py`: it preserves the raw
+  AAHub storage response, rather than constructing a reduced per-artwork object.
+  Thus the absent fields were not shown to have been discarded by our source
+  intake. This does not rule out attribution in original posts or other records.
+- Exact-text web discovery surfaced the Godless Shrine passage in
+  [a story collection](https://yaruonichijou.com/blog-category-143.html).
+  That is a reuse lead, **not an identified creation post**; full-page retrieval
+  failed, so its original-thread/credit links were not inspected and no author
+  attribution was admitted. Other searches did not establish a primary creation
+  record. These bounded failures do not establish that such records do not exist.
+
+`python3 scripts/operator_reference_sources.py --inspect-metadata` reproduces
+the metadata inspection. The source index remains a source-binding index, not
+a workflow-attribution index. A future attribution must bind the exact artwork
+to an original creator statement, project/edit history, making-of record or
+equivalent direct evidence. Visual resemblance alone cannot fill that field.
+
+## Source-code and exact-combination audit (2026-10-25)
+
+**The inspected AA Judgment and ASCII Justice builds cannot directly generate
+any of the nine complete supplied constructions as unchanged automatic output:
+each construction requires glyphs absent from both builds' emitted vocabulary.**
+This is a code/table exclusion, not a stylistic guess or a claim that automatic
+conversion followed by editing is impossible. Orinrin does implement reusable
+multi-row block selection and placement; its brush is a literal string repeater,
+not an automatic surface-following construction selector. These results narrow
+the possible production chain but do not establish the original creator's tool.
+
+This audit supersedes the earlier **unrecovered AAJ full alphabet** limitation
+above. The forty recovered combinations remain real code mappings, not the
+entire alphabet, not forty artist presets, and not forty guaranteed reachable
+conversion candidates. No renderer, skill, approved GIF or source artwork changed.
+
+### Inspected inputs and reproducible evidence
+
+- Recovered the moved original AAJ executable from
+  `/Users/r/Desktop/shift_jis_research,asiciiand aky92needtobeorg/inspection-20261015/aaj/aaj.exe`.
+  Rechecked SHA-256
+  `891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5`.
+  Native `objdump` reads it as data; no Windows executable was run.
+- Reacquired Orinrin's source at
+  [`f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874`](https://github.com/SikigamiHNQ/OrinrinEditor/tree/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874).
+  Archive SHA-256 `32308d2555fdd59a6c5cabbf099c4294d2562a04342b9e13f9b8fd088232861d`.
+  Downloaded/decoded 57 files, 72,557 lines; **only the relevant call paths below
+  were traced, not a line-by-line review of all 72,557 lines**. The resource version
+  is 0.34.1.920; the saved manual calls itself 0.341 Aurora. Source/executable
+  reproducibility has not been built or established.
+- Read the recovered 919-line ASCII Justice listing at the candidate/edge/
+  scoring/output paths below and its original 93 mapped masks/density values.
+  The two malformed decompiler clamp lines remain explicit limits.
+- Compared all **38 exact source fragments in eight operator crops plus the cup**
+  against actual converter character availability, the 40 AAJ mappings, all 24
+  Orinrin palette groups, brushes, UserItem AST and all four saved AST files.
+  The illustrated manual is searched but **not counted as a preset library**.
+  No full/half-width folding or Unicode normalization was used.
+
+The [portable audit manifest](../assets/glyphs/contextual/windows_aa_code_audit.v1.json)
+binds input/source hashes and every fragment result. The
+[AAJ alphabet proof](../assets/glyphs/contextual/windows-aa/code-audit/aaj-candidate-alphabet.v1.json)
+retains exact constant bytes, encodings, virtual/file addresses, direct-tone
+strings and selected disassembly. Additional Orinrin source files are retained
+as original CP932 plus decoded UTF-8 under
+[`windows-aa/code-audit/`](../assets/glyphs/contextual/windows-aa/code-audit/),
+with the existing GPL-3.0-or-later license. The
+[producer](../scripts/aa_tools_code_audit.py) owns those artifacts.
+
+### AA Judgment: actual alphabet, substitutions and direct tone
+
+The builder at `0x4503d8` initializes its string from `0x450c68`, appends CP932
+constants `0x450d08/0x450d48/0x450d6c`, or replaces it with `0x450d98` in
+monospaced mode. At `0x4504af`, `0x403de4` concatenates the string with itself.
+This is **not deduplication**: the two halves are rasterized with different
+style bytes, 1 and 0 (`0x450b3a/0x450b5a`). There are 274 proportional or 164
+monospaced slots, respectively, before runtime matching.
+
+`0x450626–0x450655` extracts each candidate. Proportional mode applies the
+41 builder mappings (40 multi-character strings plus ideographic space);
+monospaced mode bypasses them. **Only 39 multi-character mappings have a
+reachable label:** `W -> ^^` exists at `0x4507ff`, but `W` is absent from the
+fixed candidate alphabet. All forty code mappings remain browsable; this does
+not mean `^^` cannot arise from successive outputs or another branch.
+
+The audit also checks **18 direct tone/blank branches** at `0x451b9f–0x451ea6`,
+which bypass candidate selection. Proportional tone strings include `....`,
+`:.:.`, `;,;,`, `;;;;`, `i.i.`, `i;i;`, `lili`, `llll`; monospaced tone can
+emit `C/X/Q/W/M`, including `W` despite its absence from the matcher alphabet.
+Ignoring those branches would not constitute a full availability audit.
+
+The matcher compares candidate/source pixel states in a 16-sample-high local
+patch (`0x45200f–0x452153`), with separate agreement rewards and mismatch
+penalties, then score/density selection. `0x452330` retrieves the selected label;
+`0x45235e–0x452805` applies output substitutions and `0x452805` appends text.
+Native text width controls advancement. These paths select local ink patterns,
+not a stored complete multi-row circle/arch. Full scorer-equivalent conversion,
+font parity and original Windows output have **not** been recreated.
+
+The [bundled help](../assets/glyphs/contextual/windows-aa/code-audit/aaj-bundled-help.txt)
+documents another real workflow: **draw black/white raster lines in the tool,
+then convert to AA** (直描き); 白紙 makes a blank image. That is manual raster
+construction plus automatic typing, distinct from placing glyphs over an image
+underlay. This manual statement does not identify who used it for these artworks.
+
+### Exact exclusions in the supplied constructions
+
+The following are **examples of unavailable required characters**, not exhaustive
+per-row lists; the manifest/browser keeps the complete lists and original sources.
+
+| Supplied construction | Source-exact fragments | Missing from this AAJ build, both automatic modes |
+|---|---|---|
+| crop01, Godless Shrine aa161 | `ｧ宀v`, `弋__人` | `ｧ 宀 弋 人` |
+| crop02, Karnak aa165 | `jI斗-─--ミ` | `斗` |
+| crop03, Assisi aa36 | `γ⌒ヽ` / `乂__ノ` | `γ ⌒ 乂` |
+| crop04, shared aa105/106/107 | `（(⌒Y⌒)）` / `)Ｉi(` | `⌒` |
+| crop05, aa97 | `/⌒Ｙ`, `乂__ﾉ` | `⌒ Ｙ 乂 ﾉ` |
+| crop06, basement arch aa73 | `ｲﾆア゜`, `寸ム`, `寸ﾊ`, `Ⅵｉ` | `ｲ ﾆ ア 寸 ム ﾊ Ⅵ ｉ` |
+| crop07, Kraków aa57 | `γ⌒ヽ`, `乂__ソ` | `γ ⌒ 乂 ソ` |
+| crop08, Kraków aa57 | `γ⌒ヽ`, `乂__乂` | `γ ⌒ 乂` |
+| cup aa176 | `ヾ<:;_`, `_,.ン`, `...:;:彡`, `:;:=:彳`, `....::::;;;ジ` | `< ン 彡 彳 ジ` |
+
+For example, AAJ has `メ`, `ノ`, `イ`, `ミ`, `ヾ`, but **does not have all the
+glyphs used in these complete constructions**. Some input-alphabet characters
+are aliases rather than literal output: `ア` becomes `:l`, `ソ` becomes `.｡`.
+Testing the raw internal alphabet alone would give false availability results.
+ASCII Justice's 93-character table excludes the required Japanese characters
+and even `<` in the cup rim. Therefore neither pinned automatic build suffices
+without changing/post-editing its output. Availability alone never proves that
+a particular arrangement of available characters can be generated.
+
+### Orinrin: producer to actual consumer, not just template inventory
+
+- `MaaCatalogue.cpp:101–200,466` parses MLT/AST and returns an entire selected
+  AA block. `MaaItems.cpp:1164–1180` sends that block to
+  `ViewMaaMaterialise`. `ViewCentral.cpp:2152–2207` decodes Shift_JIS and routes
+  it to layer placement, rectangular insertion, ordinary insertion or clipboard.
+  This is implemented **multi-row reuse**, not merely a bag of single characters.
+- `LayerBox.cpp:1764–2100` derives target dot-x/row-y from the positioned layer,
+  processes row spans and transparent characters, uses native glyph advances,
+  pads gaps and inserts/overwrites text. This is a placement mechanism, not an
+  image recognizer, and is not certification of every overlap/deletion branch.
+- `ViewKeyButton.cpp:541–563` actively invokes the brush on mouse-up.
+  `:896–928` handles a selected region or blank run; `DocSelect.cpp:566–665`
+  applies per-row widths. `BrushStringMake` at `:943–1014` repeats the selected
+  pattern, then adds whole leading characters to fill the remainder. It can
+  overshoot: with a supplied 16px width for `彡`, a 17px request yields two whole
+  glyphs (32px), because the overshoot-prevention block is disabled. The
+  [portable transcription](../scripts/orinrin_brush.py) preserves that behavior.
+  It receives **no image, surface tangent or density field**. `彡` and the cup's
+  punctuation really occur in the brushes, but their changing placement around
+  the cup is not supplied by that repeating routine.
+- `TraceCtrl.cpp:110–132,997–1030` calls the image DLL and transforms/displays
+  an underlay. This inspected call path does not select glyphs from that image;
+  uninspected DLL internals are not claimed recovered.
+- `MoziScript.cpp:472–545` retrieves a saved multi-row **letter form for each
+  typed input character**. Its "AA conversion" is lettering, not image tracing.
+
+The exact `γ⌒ヽ` also appears at rows157/382/1622/1741 of the illustrated manual
+`lettering-3.ast`, as part of a character illustration. This is an additional
+literal witness of the vocabulary, **not** a saved whole Assisi circle preset.
+No multi-character source fragment is wholly contained in the other saved
+UserItem/lettering libraries; partial palette matches and the single `∧` remain
+separate. Shared fragments support reusable vocabulary, not original-art attribution.
+
+### ASCII Justice: what the recovered code actually chooses
+
+`start.as:59` fixes the 93-character candidate map; `:239–242` traverses an 8×16
+grid. `:837–890` extracts local adjacent-RGB contrast changes, and `:891–912`
+thickens them directionally. The quality-dependent mask scorers and
+`:299–344` ranking/density gate select a mapped character, then `:345–350`
+emit one character and advance. Thus **contour** means matching marks to local
+contrast edges; **tone** means selecting coverage/density for an area. Neither
+is recognition of a complete circle, arch, cup or surface-following band.
+The original equal-density `(`/`)` test demonstrates that ink position matters,
+not only density. A fuller contour matcher still cannot emit missing kana/kanji.
+
+### Browser and verification boundary
+
+`./run-families.sh --mode round` and `--mode context` retain the original-source
+links and fragment comparisons and now add a **SOURCE-CODE CAPABILITY AUDIT**
+section: per-fragment AAJ exclusions, additional library/manual occurrences,
+and the alphabet-proof path. This is packaged evidence; viewing needs no Windows
+program or ignored source-cache directory. No new synthetic bitmap/GIF was made.
+
+Focused verification: **74 tests passed, zero skips** across code-audit,
+construction/source bindings, crop intake, contextual evidence, recovered
+kernels, AAJ template intake, Windows intake and retained-recording checks.
+For this run, `windows_aa_intake.SAVED` and `recover_ascii_justice.TARGET` were
+pointed in-process to the relocated original directory above; default source
+paths were not rewritten. This rechecked the original AAJ builder/output
+mappings and ASCII Justice executable hash plus embedded payload hashes, rather
+than accepting the old unavailable-original skips. The code-audit tests also
+re-extract AAJ constants/direct-tone strings from the staged hash-pinned PE,
+check every library/manual occurrence locator, test brush repetition/overshoot,
+and verify browser detail integration. `--mode round --dump` exposes all eight
+source audits; `--mode context --dump` exposes the cup exclusions.
+`git diff --check` passed. These checks establish code/data bindings, **not**
+original Windows conversion parity, visual acceptance or creator attribution.
+No commit or push was performed for this audit.
+
+## Artwork-specific production backtrace (2026-10-25)
+
+**Requested question: which production workflow actually made each artwork?**
+The source-code audit above does **not** answer that question. It establishes
+tool capabilities/exclusions. It must not be substituted for an artwork's
+creation history. **No original creator/editor/production workflow has been
+verified for any of the nine supplied examples.** This remains unfinished.
+
+### Checked beyond the AAHub extraction
+
+Fetched AAMZ's live file index and used its actual file hashes to retrieve the
+upstream **collection** MLT files. These are not original creation-project files:
+
+- [宗教施設（教会・その他）.mlt](https://aa.yaruyomi.com/matome-zip/file/download?hash=6a45fc7e8803d951aefb2d08567e3af5),
+  462,275 bytes, CP932 despite a UTF-8 HTTP header; SHA-256
+  `66aa8807964d98826c80eeb07fc05d087f71f3e85d5cd842dcec1189866ec234`.
+- [荒巻スカルチノフ.mlt](https://aa.yaruyomi.com/matome-zip/file/download?hash=9c55fc2464f6ec34536a89819e3aac85),
+  193,972 bytes, also CP932; SHA-256
+  `cf32aa25ac302cd321c7c6685e68e465df0beedd18056ec472a937a4532d7201`.
+
+After normalizing only CRLF to LF, every packaged **raw full-art text** is an
+exact substring of the upstream file. Assisi's raw entity spellings are retained
+for that check; the decoded display text is not substituted for raw provenance.
+
+| Operator example | Upstream MLT line(s), 1-based | Actual creation workflow |
+|---|---:|---|
+| crop01, Godless Shrine | church: 4236, 22 rows | Unverified |
+| crop02, Karnak | church: 4346, 26 rows | Unverified |
+| crop03, Assisi | church: 939, 35 rows | Unverified |
+| crop04, repeated paired-lobe motif | church: 2807 / 2838 / 2869, three full variants | Unverified; unique variant also unresolved |
+| crop05, aa97 | church: 2515, 39 rows | Unverified |
+| crop06, Fate church basement | church: 2035, 26 rows | Unverified |
+| crop07, Kraków | church: 1598, 24 rows | Unverified |
+| crop08, same Kraków artwork | same full source as crop07 | Unverified |
+| cup, plate and reclining character | Aramaki: 1729, all 21 rows | Unverified |
+
+The church collection contains no creator/editor URL or explicit workflow label
+for these blocks. The Aramaki file **does** retain a 2005 naming discussion in
+a different block, including `◆yoVdJC8esk`; that is about naming the character,
+**not** a credit or workflow for this cup. Do not transplant that name/date.
+
+### New publication leads, not creation attributions
+
+- **Godless Shrine:** followed the previously inaccessible story-category lead
+  through its [individual article](https://yaruonichijou.com/blog-entry-15735.html)
+  to [the actual forum post610](https://jbbs.shitaraba.net/bbs/read.cgi/otaku/14429/1467544242/610).
+  Its 21 art rows match in order under whitespace-only discovery normalization;
+  it is posted by `◆BfGjhMDR96`, dated **2017/03/20 19:49:53**. This establishes
+  a dated publication of the drawing, **not** that the story poster drew it.
+  The complete thread was captured and searched for creation/credit terms;
+  it was not reviewed line-by-line and no creation-workflow statement was admitted.
+- **Cup:** the exact full drawing appears under **お茶菓子** on
+  [顔文字ちゃんねる](https://kaomojich.com/aa/aramaki/) and on
+  [Commentia's individual page](https://www.commentia.biz/a582/).
+  These are additional collection/reuse witnesses, not identified making-of
+  records. Commentia's metadata has conflicting publication dates and names
+  its site account; neither is assigned as original creation evidence.
+- An older Mac AA gallery was searched through all three pages of its Aramaki
+  category. Its 2006 dates are **not bound to this cup**; no backdated attribution
+  is made from the category name or thumbnails.
+- The [2019 MLT collection submission](https://bbs.yaruyomi.com/test/read.cgi/ban/1558862961/413)
+  includes the church filename, but is a collection update, not a creation post
+  for any particular drawing. Its introduction calls MLTs usable with
+  （´д｀）Edit; file compatibility does not establish the artist's editor.
+- Inspected AAHub's older forum client to find its real public post-search
+  endpoint. The observed `gae.aahub.org/aabox/posts` endpoint fails DNS resolution
+  for the church, Aramaki and background tag queries. This is a specific failed
+  lookup, not evidence that original posts never existed. No authentication or
+  private-account endpoint was used.
+
+The bounded fetch/inspection helper is
+[`scripts/artwork_workflow_audit.py`](../scripts/artwork_workflow_audit.py).
+Raw response bytes, SHA-256 receipts, decoding choices and exact upstream
+verification are retained under ignored `.run/artwork_workflow_audit/`.
+`--verify-upstream` reproduces all eleven full-variant matches across nine
+records using those captured sources. Plain MLT is **not** parsed as HTML;
+angle brackets and literal entity spellings remain intact.
+
+The canonical original-source registry now gives each example explicit null
+creator/editor/workflow fields and `verified: false`. Both ROUND and CONTEXT
+detail panes display **production workflow status: UNVERIFIED** independently
+of **original reference status: matched**. This is a scope correction and honest
+research status, **not completion of the requested attribution**. No renderer,
+skill, original crop, source artwork or GIF was altered.

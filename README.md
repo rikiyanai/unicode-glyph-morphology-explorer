@@ -247,6 +247,11 @@ that these presets produced the supplied AAHub drawings**. Text display is not
 native-font rendering.
 
 - [Recovered AA Judgment mappings, addresses and file hashes](assets/glyphs/contextual/windows_aa_patterns.v1.json).
+- [Source-code audit against all eight supplied crops and the cup](docs/code-provenance.md#source-code-and-exact-combination-audit-2026-10-25):
+  the full pinned AAJ alphabet **and direct tone branches**, not just its 40 strings,
+  exclude required glyphs in every example. The browser's construction details now
+  show those exclusions. Orinrin's actual multi-row library/layer consumer and
+  repeating brush routine are traced separately; tool capability is not artwork attribution.
 - [All 40 individually rendered template records](assets/glyphs/contextual/aaj_templates.native.v1.json).
 - Orinrin's exact [brush groups](assets/glyphs/contextual/windows-aa/aabrush.txt),
   [insertion palette](assets/glyphs/contextual/windows-aa/aalist.txt) and

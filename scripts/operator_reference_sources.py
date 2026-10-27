@@ -78,6 +78,14 @@ def build():
                     "operator_note": p["operator_note"],
                     "not_a_substitute": "tabemono-01/resK-182 has different plate contents; it is not this original drawing"})
     for record in records:
+        record["artwork_creation"] = {
+            "verified": False,
+            "creator": None,
+            "editor": None,
+            "production_workflow": None,
+            "status": "UNVERIFIED: exact artwork located, but no artwork-specific creation workflow established",
+            "findings_owner": "docs/code-provenance.md#artwork-specific-production-backtrace-2026-10-25",
+        }
         for key in ("crop_path", "original_full_text_path", "original_raw_text_path"):
             if record.get(key):
                 path = ROOT / record[key]
@@ -107,7 +115,8 @@ def attach(records):
     index = {r["id"]: r for r in load()["records"]}
     return [{**r, "provenance": {**r["provenance"],
              "reference_registry_path": str(OUTPUT.relative_to(ROOT)),
-             "original_reference_status": index[r["id"]]["status"]}}
+             "original_reference_status": index[r["id"]]["status"],
+             "production_workflow_status": index[r["id"]]["artwork_creation"]["status"]}}
             if r["id"] in index else r for r in records]
 
 

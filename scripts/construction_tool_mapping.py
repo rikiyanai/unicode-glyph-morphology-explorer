@@ -194,6 +194,8 @@ def detail_lines(mapping):
             lines.append("Orinrin brush items present (not an arrangement rule): " + " / ".join(repr(s) for s in items))
         if part["ascii_justice_unavailable_characters"]:
             lines.append("ASCII Justice cannot directly emit: " + " ".join(part["ascii_justice_unavailable_characters"]))
+    import aa_tools_code_audit as code_audit
+    lines.extend(code_audit.detail_lines(mapping["id"]))
     return lines
 
 

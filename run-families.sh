@@ -47,7 +47,7 @@ for arg in "$@"; do
   fi
 done
 case "$requested_mode" in
-  patterns|round|context|aaj) exec python3 "$repo_dir/scripts/glyph_families_viewer.py" "$@" ;;
+  patterns|round|context|aaj|parts) exec python3 "$repo_dir/scripts/glyph_families_viewer.py" "$@" ;;
 esac
 
 run_json_current() {

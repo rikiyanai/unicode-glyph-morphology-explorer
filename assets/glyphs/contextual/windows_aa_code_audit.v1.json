@@ -1,0 +1,1182 @@
+{
+  "schema": "glyph_morphology.windows_aa_code_audit.v1",
+  "input_hashes": {
+    "scripts/aa_tools_code_audit.py": "aa28b5f59b72cb3f42c5c61655c9b1acb2e94076a7d9b1bda7c73c897558797f",
+    "scripts/windows_aa_intake.py": "1f2eaa3685831192c9d1365d2df81f1711b0f0ae1f14a6d8b27aa9998e764f96",
+    "scripts/orinrin_brush.py": "b4f3967e0c0955dd76d16c41113e159ba1e1632a3408a58612b3185dc7b00629",
+    "assets/glyphs/contextual/ascii_justice_recovery.v1.json": "78bd2ec84256da8c64013f7ccdea424634c09e6db0361b6a213487f2129d4659",
+    "assets/glyphs/contextual/windows_aa_patterns.v1.json": "5a8bff60809ed3df1c9f40737ad3f2a5b768f16df860cabd57e090f28ebb45f3",
+    "assets/glyphs/contextual/construction_tool_mapping.v1.json": "6544eb58fff7b39dd44d049cae76e11dcce796d0edfb92c251c3bb102d5d012d",
+    "assets/glyphs/contextual/windows-aa/UserItem.ast": "88ab8d1c0bab4a70c3ade9b874f4745aec0313319cb6330dbe9f446ad8535be8",
+    "assets/glyphs/contextual/windows-aa/lettering-1.ast": "0ec6e1d5b8efa3529ed3309d1fb525b55af9630d703fde539f88cd8b778c37d1",
+    "assets/glyphs/contextual/windows-aa/lettering-2.ast": "a6f83d92a86ca060707ae2772d1cb88ed627392a91901133b42b6976e9b35776",
+    "assets/glyphs/contextual/windows-aa/lettering-3.ast": "af069b66b8fa39a21c7ddba09c6c7b7dc0c9a6504225c20a59750f2fea87ab4f",
+    "assets/glyphs/contextual/windows-aa/lettering-4.ast": "df949625042b5c5a58d9f26ee96bbb325b5ecfc4561178bad4bb32b89859ae44"
+  },
+  "orinrin_source": {
+    "commit": "f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874",
+    "archive_sha256": "32308d2555fdd59a6c5cabbf099c4294d2562a04342b9e13f9b8fd088232861d",
+    "source_file_count": 57,
+    "source_line_count": 72557,
+    "source_version": "0.34.1.920",
+    "saved_manual_version": "0.341 Aurora",
+    "source_binary_parity": "Not built or compared with the saved executable",
+    "retained_source_files": [
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/ViewKeyButton.cpp",
+        "raw_sha256": "e0ddaef5a78589a997a8c14e79342b2951e27e236c596421bf67d3492cc1ae4b",
+        "encoding": "cp932",
+        "utf8_sha256": "521b8168da86fe428013bd60ddca48804478973722fea29226a383744d0057ca",
+        "lines": 1069,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/ViewKeyButton.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/ViewKeyButton.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/DocSelect.cpp",
+        "raw_sha256": "fb131ffe594123ac76deaf58409c22c32a71dc33a6094ef26b60c63aa35349bd",
+        "encoding": "cp932",
+        "utf8_sha256": "3ae0e4902f4b50bd4cb9f63f498b003a9a116769bd72c56f6ad97d3acac2cb81",
+        "lines": 959,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/DocSelect.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/DocSelect.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/MaaCatalogue.cpp",
+        "raw_sha256": "419acbaf9e581eb30a09efa6f3fcd3762b29fe7a208007b68d828babb2482a93",
+        "encoding": "cp932",
+        "utf8_sha256": "1993d38555a48f39bd14b82d48749417c391f6f6e280fca4096fdcfcee17b6c9",
+        "lines": 911,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/MaaCatalogue.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/MaaCatalogue.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/MaaItems.cpp",
+        "raw_sha256": "79f3022b0a657468deb5492eec83206ca7c783d9c1f5e08c3215a393f0a5f6cb",
+        "encoding": "cp932",
+        "utf8_sha256": "edb5d9cbc900446b79bfea4f35e892764d96f15ff9be8538be6f586b9298aaef",
+        "lines": 1559,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/MaaItems.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/MaaItems.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/ViewCentral.cpp",
+        "raw_sha256": "2bd1d609bc5d20855f61fcb16a80225071119e193941004a321faf97d3ed887e",
+        "encoding": "cp932",
+        "utf8_sha256": "602f1d443bbd1efa8111ef11792cfbbada61df188a29ed6ff46d75a4e2afa1a2",
+        "lines": 2968,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/ViewCentral.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/ViewCentral.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/LayerBox.cpp",
+        "raw_sha256": "b5514c0065a79b15e90ea3ac7f47249d50a1fbaa64e031655f5ceb1a120e3fa6",
+        "encoding": "cp932",
+        "utf8_sha256": "4bf2fe523974e2a32243e04e3057dd05b9f86ef1f7438f93e0d94bf709454443",
+        "lines": 2271,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/LayerBox.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/LayerBox.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/MoziScript.cpp",
+        "raw_sha256": "a923a64ad506ff8a6d4df471805e7e58effa28b68ee51e62dd1d82508253863a",
+        "encoding": "cp932",
+        "utf8_sha256": "a2c4203fb1ce0e92051be4f29f04fbe8bc5743356ec1aae2ceee5cc64a64e4b1",
+        "lines": 1855,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/MoziScript.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/MoziScript.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/UnicodePalette.cpp",
+        "raw_sha256": "e103112a3b9542a19a5279f69075efd99b374481010cac0e33373f9f5162225f",
+        "encoding": "cp932",
+        "utf8_sha256": "9d5ac053a2b697ae5f87eca557294abb87649efe5e4889aab44d11ad99e413ea",
+        "lines": 684,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/UnicodePalette.cpp.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/UnicodePalette.cpp"
+      },
+      {
+        "path": "assets/glyphs/contextual/windows-aa/code-audit/OrinrinEditor.rc",
+        "raw_sha256": "23d79824c2b08e79698558513ff1372d3216dcca6bd90e3f3043815380c6c1a7",
+        "encoding": "cp932",
+        "utf8_sha256": "f38df0e05c7b73e73ecef2d136e18840c864118b8b3848ae48af5b9f463d22e3",
+        "lines": 1179,
+        "raw_path": "assets/glyphs/contextual/windows-aa/code-audit/OrinrinEditor.rc.cp932",
+        "source_url": "https://github.com/SikigamiHNQ/OrinrinEditor/blob/f5dd6da43198eccbf58fbe2eec71ebe8c7fdb874/OrinrinEditor.rc"
+      }
+    ],
+    "license_path": "assets/glyphs/contextual/windows-aa/upstream/COPYING",
+    "license": "GPL-3.0-or-later"
+  },
+  "justice_candidate_count": 93,
+  "aaj_composite_count": 40,
+  "aaj_alphabet": {
+    "path": "assets/glyphs/contextual/windows-aa/code-audit/aaj-candidate-alphabet.v1.json",
+    "sha256": "2097acd0ce9859d8d49d85a6ae7a2ebe9b62ad0e8fa386041fc4c738094516cc",
+    "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+    "reachable_multichar_mapping_count": 39,
+    "proportional_candidate_slots": 274,
+    "monospaced_candidate_slots": 164,
+    "bundled_help_text_path": "assets/glyphs/contextual/windows-aa/code-audit/aaj-bundled-help.txt",
+    "bundled_help_text_sha256": "b7b875b9fb0a6efc03ec590633ba9fc37b31d44d3c134229a4dba560b25f36f4",
+    "original_cp932_help_sha256": "22a47a43da518abdc3594fbc0df66c631f65f7e5ad3e2afbdcff5000d3603af5"
+  },
+  "orinrin_palette_group_count": 24,
+  "records": [
+    {
+      "id": "operator-curve-crop-01",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-161.txt",
+      "fragments": [
+        {
+          "line": 11,
+          "text": "ｧ宀v",
+          "justice_missing_characters": [
+            "ｧ",
+            "宀"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ｧ",
+            "宀"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 12,
+          "text": "弋__人",
+          "justice_missing_characters": [
+            "弋",
+            "人"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "弋",
+            "人"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 13,
+          "text": "∧",
+          "justice_missing_characters": [
+            "∧"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "∧"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [
+            {
+              "path": "assets/glyphs/contextual/windows-aa/UserItem.ast",
+              "line": 22,
+              "text": "　　　　 　 　∧　　　　 　　 　 　　／::::/ |",
+              "item_header": "[AA][お燐ちゃん]",
+              "kind": "saved AST library"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/UserItem.ast",
+              "line": 25,
+              "text": "　　　 　/＞:／　／ 　　　 、 　 ｀ヽ. 〉:::::_∧」",
+              "item_header": "[AA][お燐ちゃん]",
+              "kind": "saved AST library"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/UserItem.ast",
+              "line": 42,
+              "text": "　　　　　　　∧　　　 　　　　　　 　　 ／＼_|￣￣",
+              "item_header": "[AA][お燐ちゃん]",
+              "kind": "saved AST library"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/UserItem.ast",
+              "line": 43,
+              "text": "　　　　　　　|　＼＿ 　 　　 　　 　 _∧＿/",
+              "item_header": "[AA][お燐ちゃん]",
+              "kind": "saved AST library"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/UserItem.ast",
+              "line": 44,
+              "text": "　　　　　　 　￣|＼_＞ｰ--r-─＜.,__,∧",
+              "item_header": "[AA][お燐ちゃん]",
+              "kind": "saved AST library"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 12,
+              "text": "　　　　,、　　　　　　　　　　　　∧__∧",
+              "item_header": "[AA][-タイトル-]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 61,
+              "text": "　　　　　　|.　∨∨＼|＼∧.　/∨　　　 　 |　　簡単な目次は↓だよ！　おねえさん！　　|",
+              "item_header": "[AA][-導入-]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 66,
+              "text": "　　　　　 　∧{ /;;;|、::/:::::::;|　　}∧",
+              "item_header": "[AA][-導入-]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 70,
+              "text": "　　　　　 　/∧/＿}_//＿}＿}_／",
+              "item_header": "[AA][-導入-]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 132,
+              "text": "　| 　/∧,,/∧　　,乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿_ノ",
+              "item_header": "[AA][画面見方]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 147,
+              "text": "　 　　　　　　/∧,,/∧　　　　　|　　複数行テンプレと言った方がわかりやすいかな？　　 　 　 　 　 　 　 |",
+              "item_header": "[AA][画面見方]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 223,
+              "text": "　　　　　　　/∧,,/∧",
+              "item_header": "[AA][Profile1]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 299,
+              "text": "　| 　/∧,,/∧　　　　　&#8201;使うmltには、チェックボックスにチェックを。",
+              "item_header": "[AA][Profile2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 347,
+              "text": "　| 　/∧,,/∧",
+              "item_header": "[AA][Profile3]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 372,
+              "text": "　 　　　　　　/∧,,/∧　　　　　　　&#8194;それでもダメだったら、",
+              "item_header": "[AA][Profile3]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 471,
+              "text": "　| 　/∧,,/∧　　　　&#8197; ／￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣＼",
+              "item_header": "[AA][基本動作]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 486,
+              "text": "　/∧,,/∧　 　 　 　 |　　複数行テンプレートの基本的な使い方はそれだけ！　　　　　&#8202;　 |",
+              "item_header": "[AA][基本動作]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 552,
+              "text": "　| 　/∧,,/∧　　　&#8198;乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][見出し機能]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 584,
+              "text": "　　　　　〈　ヽ∧八. 　　〈.　|!r|　　　　l!|｀Y 　/￣",
+              "item_header": "[AA][副タブ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 613,
+              "text": "　| 　/∧,,/∧　　 　 乂＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][副タブ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 673,
+              "text": "　| 　/∧,,/∧　　　　　&#8201;|　　『使用』って書かれたタブをクリックすると、　　&#8194;　 |",
+              "item_header": "[AA][使用履歴]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 688,
+              "text": "　/∧,,/∧　　　　　&#8198;乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][使用履歴]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 712,
+              "text": "　| 　/∧,,/∧　　　&#8201; |　　やる夫アクション.mltから使ったＡＡは、同じ「やる夫」のカテゴリで使用履歴に残るんだ　　&#8197;　 |",
+              "item_header": "[AA][使用履歴]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 760,
+              "text": "　/∧,,/∧　　 　 　 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][ｶｽﾀﾏｲｽﾞ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 776,
+              "text": "　　　　　〈　ヽ∧八. 　　〈.　|!r|　　　　l!|｀Y 　/￣　　　&#8201; ／￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣＼",
+              "item_header": "[AA][ｶｽﾀﾏｲｽﾞ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 794,
+              "text": "　| 　/∧,,/∧　　　&#8197; 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][ｶｽﾀﾏｲｽﾞ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 864,
+              "text": "　| 　/∧,,/∧　　　　　&#8202;|　　ちょこーっとアドバイスしておいた方がいいと思うものもあるのさ　　　&#8198;　 |",
+              "item_header": "[AA][-ﾒﾆｭｰ-]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 948,
+              "text": "　| 　/∧,,/∧　　　　&#8197; 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][ﾚｲﾔﾎﾞｯｸｽ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1008,
+              "text": "　| 　/∧,,/∧　　　　 　 |　　ちなみに、この枠、自分で好きな枠を作ることもできるんだ　　　　 |",
+              "item_header": "[AA][枠]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1140,
+              "text": "　　　　　　|.　∨∨＼|＼∧.　/∨　　　　　&#8201; |　　「ひらがな.ast」「カタカナ.ast」「数字.ast」があるよ　　　　 |",
+              "item_header": "[AA][文字ＡＡ機能2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1145,
+              "text": "　　　　　 　∧{ /;;;|、::/:::::::;|　　}∧　　 　 　 　 　 ＼＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿／",
+              "item_header": "[AA][文字ＡＡ機能2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1149,
+              "text": "　　　　　 　/∧/＿}_//＿}＿}_／",
+              "item_header": "[AA][文字ＡＡ機能2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1174,
+              "text": "　　　　　　　　　　　　〈Y〉,!. ‐-＜〈.∧　　　　　　　　　　|　　まず、いじりたいastファイルを開くか、作成して、　　　&#8201;　 |",
+              "item_header": "[AA][文字ＡＡ機能2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1270,
+              "text": "　| 　/∧,,/∧　　　　　&#8201;|　　バックアップは常に上書きされることなんだ　　　　　&#8201;　 |",
+              "item_header": "[AA][一般設定]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1317,
+              "text": "　/∧,,/∧　　　 　 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][一般設定]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1465,
+              "text": "　| 　/∧,,/∧",
+              "item_header": "[AA][ﾎｯﾄｷｰ1]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1466,
+              "text": "　|X{´ ｀⌒´ヾ{　　　　　　　　　&#8202;∧",
+              "item_header": "[AA][ﾎｯﾄｷｰ1]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1481,
+              "text": "　| 　/∧,,/∧",
+              "item_header": "[AA][ﾎｯﾄｷｰ1]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1530,
+              "text": "　| 　/∧,,/∧　　　　　|　　『ページまくりコピー』機能が起動するんだ　　　　　&#8194;　 |",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1569,
+              "text": "　| 　/∧,,/∧　　　&#8197; |　　専用ブラウザで投下して、次にEditorにフォーカスを移してコピーをとって、　　　&#8197; 　 |",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1612,
+              "text": "　 　　　　　　/∧,,/∧　　　　　　　 |　　貼り付けたら、そのままOrinrinEditorに戻ることはせず、　 　 　 　 　 　 　 　 |",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1629,
+              "text": "　| 　/∧,,/∧　　　 　 |　　コピーアンドペーストができるようになるから、　　　 　 |",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1716,
+              "text": "　| 　/∧,,/∧　　&#8197; 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1731,
+              "text": "　 　　　　　　/∧,,/∧　　　　|　　予期せぬシャットダウンしたときは、警告が出るようになっているので、　※　　　 　 　 　 |",
+              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1806,
+              "text": "　| 　/∧,,/∧　　　　　&#8194;乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][ver.up]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1878,
+              "text": "　| 　/∧,,/∧　　　　　&#8201;乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][青いの]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1917,
+              "text": "　| 　/∧,,/∧　　　　 　 乂＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿,ノ",
+              "item_header": "[AA][使いたくない]",
+              "kind": "illustrated manual; not a preset"
+            }
+          ],
+          "orinrin_palette_contains_entire_fragment": [
+            {
+              "text": "∧",
+              "group": "２",
+              "line": 103
+            },
+            {
+              "text": "∧",
+              "group": "４",
+              "line": 158
+            },
+            {
+              "text": "∧",
+              "group": "１６よく使う文字列",
+              "line": 545
+            },
+            {
+              "text": "　　 ∧l___!__|_ノ|",
+              "group": "２４怒り口",
+              "line": 1402
+            },
+            {
+              "text": "　 　 　 ∧_｣＿|＿_｣__ノ!",
+              "group": "２４怒り口",
+              "line": 1410
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-03",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-036.txt",
+      "fragments": [
+        {
+          "line": 7,
+          "text": "γ⌒ヽ",
+          "justice_missing_characters": [
+            "γ",
+            "⌒",
+            "ヽ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "γ",
+            "⌒"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 157,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][画面見方]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 382,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][Profile3]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1622,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1741,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
+              "kind": "illustrated manual; not a preset"
+            }
+          ],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 8,
+          "text": "乂__ノ",
+          "justice_missing_characters": [
+            "乂",
+            "ノ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "乂"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-06",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-073.txt",
+      "fragments": [
+        {
+          "line": 8,
+          "text": "x≪ニ二ﾆ",
+          "justice_missing_characters": [
+            "≪",
+            "ニ",
+            "二",
+            "ﾆ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "≪",
+            "ニ",
+            "二",
+            "ﾆ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 9,
+          "text": "／二-＞''~",
+          "justice_missing_characters": [
+            "／",
+            "二",
+            "＞"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "二",
+            "＞",
+            "~"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 10,
+          "text": "ｲ二㌃゜",
+          "justice_missing_characters": [
+            "ｲ",
+            "二",
+            "㌃",
+            "゜"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ｲ",
+            "二",
+            "㌃"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 11,
+          "text": "ｲﾆア゜",
+          "justice_missing_characters": [
+            "ｲ",
+            "ﾆ",
+            "ア",
+            "゜"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ｲ",
+            "ﾆ",
+            "ア"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 12,
+          "text": "/ﾆｱ",
+          "justice_missing_characters": [
+            "ﾆ",
+            "ｱ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ﾆ",
+            "ｱ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 13,
+          "text": "/ﾆ'′",
+          "justice_missing_characters": [
+            "ﾆ",
+            "′"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ﾆ",
+            "′"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 8,
+          "text": "二二ﾆ≫ｘ",
+          "justice_missing_characters": [
+            "二",
+            "ﾆ",
+            "≫",
+            "ｘ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "二",
+            "ﾆ",
+            "≫",
+            "ｘ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 9,
+          "text": "＜二≫,、",
+          "justice_missing_characters": [
+            "＜",
+            "二",
+            "≫",
+            "、"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "＜",
+            "二",
+            "≫"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 10,
+          "text": "くﾆ心、",
+          "justice_missing_characters": [
+            "く",
+            "ﾆ",
+            "心",
+            "、"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ﾆ",
+            "心"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 11,
+          "text": "寸ム",
+          "justice_missing_characters": [
+            "寸",
+            "ム"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "寸",
+            "ム"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 12,
+          "text": "寸ﾊ",
+          "justice_missing_characters": [
+            "寸",
+            "ﾊ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "寸",
+            "ﾊ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 13,
+          "text": "∨i,",
+          "justice_missing_characters": [
+            "∨"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "∨"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 14,
+          "text": "Ⅵｉ",
+          "justice_missing_characters": [
+            "Ⅵ",
+            "ｉ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "Ⅵ",
+            "ｉ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 16,
+          "text": "|ﾆ",
+          "justice_missing_characters": [
+            "ﾆ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "|",
+            "ﾆ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-02",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-165.txt",
+      "fragments": [
+        {
+          "line": 9,
+          "text": "jI斗-─--ミ",
+          "justice_missing_characters": [
+            "斗",
+            "─",
+            "ミ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "斗"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-04",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-105.txt",
+      "fragments": [
+        {
+          "line": 6,
+          "text": "（(⌒Y⌒)）",
+          "justice_missing_characters": [
+            "（",
+            "⌒",
+            "）"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "⌒"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 7,
+          "text": ")Ｉi(",
+          "justice_missing_characters": [
+            "Ｉ"
+          ],
+          "aaj_missing_characters_both_modes": [],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-05",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-097.txt",
+      "fragments": [
+        {
+          "line": 4,
+          "text": "(　)",
+          "justice_missing_characters": [
+            "　"
+          ],
+          "aaj_missing_characters_both_modes": [],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 5,
+          "text": "/⌒Ｙ",
+          "justice_missing_characters": [
+            "⌒",
+            "Ｙ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "⌒",
+            "Ｙ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 6,
+          "text": "乂__ﾉ",
+          "justice_missing_characters": [
+            "乂",
+            "ﾉ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "乂",
+            "ﾉ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 7,
+          "text": "しく__",
+          "justice_missing_characters": [
+            "し",
+            "く"
+          ],
+          "aaj_missing_characters_both_modes": [],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-07",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-057.txt",
+      "fragments": [
+        {
+          "line": 12,
+          "text": "(__)",
+          "justice_missing_characters": [],
+          "aaj_missing_characters_both_modes": [],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 13,
+          "text": "γ⌒ヽ",
+          "justice_missing_characters": [
+            "γ",
+            "⌒",
+            "ヽ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "γ",
+            "⌒"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 157,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][画面見方]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 382,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][Profile3]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1622,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1741,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
+              "kind": "illustrated manual; not a preset"
+            }
+          ],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 14,
+          "text": "乂__ソ",
+          "justice_missing_characters": [
+            "乂",
+            "ソ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "乂",
+            "ソ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "operator-curve-crop-08",
+      "source_path": "assets/glyphs/contextual/operator-constructions/church-057.txt",
+      "fragments": [
+        {
+          "line": 9,
+          "text": "γ⌒ヽ",
+          "justice_missing_characters": [
+            "γ",
+            "⌒",
+            "ヽ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "γ",
+            "⌒"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 157,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][画面見方]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 382,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][Profile3]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1622,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾎｯﾄｷｰ2]",
+              "kind": "illustrated manual; not a preset"
+            },
+            {
+              "path": "assets/glyphs/contextual/windows-aa/lettering-3.ast",
+              "line": 1741,
+              "text": "　　/ ＞ー= 　　＿／ 　| ＼　　　　γ⌒ヽ",
+              "item_header": "[AA][ﾊﾞｯｸｱｯﾌﾟ]",
+              "kind": "illustrated manual; not a preset"
+            }
+          ],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 10,
+          "text": "{　　　}",
+          "justice_missing_characters": [
+            "　"
+          ],
+          "aaj_missing_characters_both_modes": [],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 11,
+          "text": "乂__乂",
+          "justice_missing_characters": [
+            "乂"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "乂"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    },
+    {
+      "id": "aramaki-cup-plate-surface-following-tone",
+      "source_path": "assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+      "fragments": [
+        {
+          "line": 7,
+          "text": "ヾ<:;_",
+          "justice_missing_characters": [
+            "ヾ",
+            "<"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "<"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 7,
+          "text": "_,.ン",
+          "justice_missing_characters": [
+            "ン"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ン"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 8,
+          "text": "...:;:彡",
+          "justice_missing_characters": [
+            "彡"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "彡"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 9,
+          "text": "...::::;:;;;;;彡",
+          "justice_missing_characters": [
+            "彡"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "彡"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 13,
+          "text": ":;:=:彳",
+          "justice_missing_characters": [
+            "彳"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "彳"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        },
+        {
+          "line": 14,
+          "text": "....::::;;;ジ",
+          "justice_missing_characters": [
+            "ジ"
+          ],
+          "aaj_missing_characters_both_modes": [
+            "ジ"
+          ],
+          "aaj_equal_composite": false,
+          "orinrin_other_saved_text_contains_fragment": [],
+          "orinrin_palette_contains_entire_fragment": []
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Literal character/fragment coverage is not production-workflow attribution.",
+    "AAJ full pinned alphabet is now audited separately from its forty-composite table.",
+    "A fragment in a palette does not prove the source artwork was made in that editor."
+  ]
+}

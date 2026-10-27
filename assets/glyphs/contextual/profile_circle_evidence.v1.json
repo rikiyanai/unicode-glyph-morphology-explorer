@@ -1,0 +1,3157 @@
+{
+  "schema": "glyph_morphology.profile_circle_evidence.v1",
+  "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+  "inspected_date": "2026-10-26",
+  "entry_count": 51,
+  "distinct_drawing_count": 45,
+  "font_sha256": "592bf6be803ed76311841b95a10b20db3df0ec693a15f858757d47420b9b3a28",
+  "image_profile": "Saitamaar 16px, 17px row pitch, whole glyph advances; comparison only",
+  "export_path": "assets/glyphs/contextual/profile-circle-20261026/circle.utf8.mlt",
+  "artifact_hashes": {
+    "assets/glyphs/contextual/profile-circle-20261026/circle.utf8.mlt": "4e97009cc050839c8f00df2302439ae6c28232a33cf2198b1259ffbb5fdb0708",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-00.raw.txt": "5200a2651a9714e036795a67072dbae7757c11bc2aacb28eab8bad66971c6d44",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-00.txt": "5200a2651a9714e036795a67072dbae7757c11bc2aacb28eab8bad66971c6d44",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-00.png": "d7fa05a7f1305f0efb487330d9475cc1869fae236ce438cee3088f6f75551d0b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-02.raw.txt": "b834ebe088dce70cba7a9ddbcb21c2aba4666e3ad0b2a3f16cfa392fd8a5df93",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-02.txt": "b834ebe088dce70cba7a9ddbcb21c2aba4666e3ad0b2a3f16cfa392fd8a5df93",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-02.png": "45d0e13174e7a89d3b53f3d1ba553f9a1ba0e1dc9cb13bbdd76aa1e33b158046",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-03.raw.txt": "4bab6904b70367a29424d872fc8020b60ecbab47f43273b985b690b8bf268a74",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-03.txt": "c59f6b47898f11e820fb2aafb189f11cf7688945dfa85764e907445527c407d5",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-03.png": "472afadee06228c63d0f2e52a3e929c8e6b48cee2a86d1985147ae18e492acd6",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-04.raw.txt": "0b298142291fbed5b09be44fd6b068df4a40ffc2031c0cbb9075b9b9507b6d46",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-04.txt": "0b298142291fbed5b09be44fd6b068df4a40ffc2031c0cbb9075b9b9507b6d46",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-04.png": "1373bd16bfd7f52a5ac7ae7b8759b5cfce0909967e03f92ae40c760ef600dbb9",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-05.raw.txt": "560a2215fe1134457ba98921f5dd8a7b753c1444b0e8df4392c36d4107397b2e",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-05.txt": "560a2215fe1134457ba98921f5dd8a7b753c1444b0e8df4392c36d4107397b2e",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-05.png": "f693d188c723b2ee54bcdb8294d0e978b07c01a5bc74afebbd580a410f092c7f",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-07.raw.txt": "bf9c1fc0ef4c6d81e4102a1962490dab2d7a58c9040df8d93a066ab23254c1b3",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-07.txt": "bf9c1fc0ef4c6d81e4102a1962490dab2d7a58c9040df8d93a066ab23254c1b3",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-07.png": "f808c6f39215c4989f99e7d3b6802f828a6a7cae6e25159aef096e42b024eb2f",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-08.raw.txt": "cf5a7ade13f5f89a8e2347a7679ee3836b813fda0fa604f51fd0c51af93d572b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-08.txt": "cf5a7ade13f5f89a8e2347a7679ee3836b813fda0fa604f51fd0c51af93d572b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-08.png": "315f352add7a22546bfd910f2a8d0906ce8de613326764a81194878fa1537468",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-10.raw.txt": "2a1b8f6a1224250b9c2bdfd9ba6db0cc32d3833f243200ee3f15b52c96254631",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-10.txt": "2a1b8f6a1224250b9c2bdfd9ba6db0cc32d3833f243200ee3f15b52c96254631",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-10.png": "48e9d414f99beaed531607d229d96a238cfdac8ca6f609a7d18b40623115a131",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-11.raw.txt": "45ce845a0be0fbde36adca715ab294d9721712d16c19c1ed385003a09cdf105b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-11.txt": "45ce845a0be0fbde36adca715ab294d9721712d16c19c1ed385003a09cdf105b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-11.png": "c4f76e63bb04b0bc8708a9baecba3779a386ca340e6a9b0806d724cae423f9cc",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-12.raw.txt": "9703446b0f45d51f3ff922d900e84abf81b0382eddcbe185e84c0f9523c3136d",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-12.txt": "9703446b0f45d51f3ff922d900e84abf81b0382eddcbe185e84c0f9523c3136d",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-12.png": "7f3764d18dd63cafff58783cb1dc8795c9451d8fc86544be10f648d31b36c30e",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-13.raw.txt": "f6cb2c4afa8018c4f7ad3c145ecae8820210fe4821d6f1de80e834173c1a4da6",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-13.txt": "f6cb2c4afa8018c4f7ad3c145ecae8820210fe4821d6f1de80e834173c1a4da6",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-13.png": "ec4e6cb0203cdc2ff67f21c940606bb7d615df68e5cc89fb090a94ffce7e86a7",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-14.raw.txt": "f30e5d1db0f14ad49469b95469d9206410228f55c26027343c4b8f02fd13d4be",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-14.txt": "f30e5d1db0f14ad49469b95469d9206410228f55c26027343c4b8f02fd13d4be",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-14.png": "c945e135009841bee532049ad134292e0fd6c6a87ebbcb50d6d5202a8c10ba46",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-15.raw.txt": "e10208f822cd226f5bc2c2f308f69ef12f105c7f8ded740d6e742f656d778b53",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-15.txt": "e10208f822cd226f5bc2c2f308f69ef12f105c7f8ded740d6e742f656d778b53",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-15.png": "b83b04992163424989da37a23be4642dab8e900f24cf6baf51cb8d6c7eb22592",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-16.raw.txt": "eb928ed632f74a4bdc414d13aca76337a74f644a1fe06f53e43b9578b6834c17",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-16.txt": "eb928ed632f74a4bdc414d13aca76337a74f644a1fe06f53e43b9578b6834c17",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-16.png": "6d35c6a95485fdfbf60abf40effdce5e0aa9d53790e6d1069cdefb8a11ca2abf",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-17.raw.txt": "17d796879b9a47a6f65f6067a080fc1c46ee55ad29a6b25dcb734d0dcb31e343",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-17.txt": "17d796879b9a47a6f65f6067a080fc1c46ee55ad29a6b25dcb734d0dcb31e343",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-17.png": "95d63e835159e1a665c4e618ee51bc8e4976ce9c441939a32904264a893f9a35",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-18.raw.txt": "75d6e0fba46094db719503ec86098a7673fc0a1c9765abfe95e29e18b9406217",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-18.txt": "75d6e0fba46094db719503ec86098a7673fc0a1c9765abfe95e29e18b9406217",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-18.png": "d4039802b33e83e3ecfe4dce3b81220cb23a1ea711a95a60b2d8c641d36f6ace",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-19.raw.txt": "8a212f0542708027f8c75b070155580117cd27bf93c350a7f5285153b605b2c7",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-19.txt": "8a212f0542708027f8c75b070155580117cd27bf93c350a7f5285153b605b2c7",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-19.png": "115d8461b274d879ae4636d90b64372d6bf02fdf7fd857c9a0aff70537bda8bc",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-21.raw.txt": "85f4e02c517bb5440f55f279c21ba0d466ad060087e57581d4797d7f9d2c4123",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-21.txt": "85f4e02c517bb5440f55f279c21ba0d466ad060087e57581d4797d7f9d2c4123",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-21.png": "ea5582d1c6c2f1cb22170e5090d9ae910283e7a657b55be49eb543ad144430e4",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-22.raw.txt": "75b43a4587f0cc7c1ac415924e26280795651156b461d0eba302b6b5d056b300",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-22.txt": "75b43a4587f0cc7c1ac415924e26280795651156b461d0eba302b6b5d056b300",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-22.png": "44ed0eb0f1ce9889719898057f896c8270c97994d63b4cabe162106dc0bb1510",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-23.raw.txt": "b2cb8bacede9110da4df5d9787e148044d7189475ce03ec7fcced20caf41453a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-23.txt": "b2cb8bacede9110da4df5d9787e148044d7189475ce03ec7fcced20caf41453a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-23.png": "029de8b4f09feb059b0b90e966295948c7b05eaefb666bf5962410889df9fcc9",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-24.raw.txt": "261ef8b63b9cb6bc0d9a28960910e930644488eb4e80814940cd4e10f7adc179",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-24.txt": "261ef8b63b9cb6bc0d9a28960910e930644488eb4e80814940cd4e10f7adc179",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-24.png": "bc4dc6ab60ae799e24b0f5cf149957fc0c23fa2ed61cf49281c30c279721ecd5",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-25.raw.txt": "ae01d9097364bc83a0ad5fc4f28cfd2a04f94d21fdf4b1c6b1c957efc5203b07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-25.txt": "ae01d9097364bc83a0ad5fc4f28cfd2a04f94d21fdf4b1c6b1c957efc5203b07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-25.png": "20e27ac8b23a1678728317c35807d6e0e3b5e5a4fc0928e8efd4d9b891c15326",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-27.raw.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-27.txt": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-27.png": "90f24a21f848599b4090a9ca4354c2b88a2301e63c4838e3acb6f9d486919325",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-28.raw.txt": "809224645d90b72f74ef3dcd8d6a656bc82a53ba1cecf0463b00f60805ed3bdf",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-28.txt": "809224645d90b72f74ef3dcd8d6a656bc82a53ba1cecf0463b00f60805ed3bdf",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-28.png": "89f74760d3afbb46e6285830d6a47ced69ae40943f0fc85778da84c3d5505b63",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-30.raw.txt": "0de10d36bdf237e7e8f14a6b0c16338637c6d63b9d8f8b53de44036d894ebf67",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-30.txt": "0de10d36bdf237e7e8f14a6b0c16338637c6d63b9d8f8b53de44036d894ebf67",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-30.png": "c4cc3c54c1160fbdb0fe3480ec8802ea5324a17ee731fb8469c5784ffc39965e",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-31.raw.txt": "e7b04789e1ccbdec7f888dbd285bdf931c67e7d37961419c52bb4f025815255f",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-31.txt": "e7b04789e1ccbdec7f888dbd285bdf931c67e7d37961419c52bb4f025815255f",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-31.png": "fce9616bb85760be786249816d8f655530dc8480e09ec113b47803249d26a4c2",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-32.raw.txt": "1941ef98f919fad6f071ab9fd95ea484494f50c0f1997612836d34e7db584a07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-32.txt": "1941ef98f919fad6f071ab9fd95ea484494f50c0f1997612836d34e7db584a07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-32.png": "9bbb35664ef34fa0b03e99cae319f492d9ac2936e5adf02ecaae12353da86675",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-33.raw.txt": "0ec321f0170524dcb7f5bfa86bb1729e7dd0aa68c347285a0a35f64bbf6f0784",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-33.txt": "0ec321f0170524dcb7f5bfa86bb1729e7dd0aa68c347285a0a35f64bbf6f0784",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-33.png": "765f88b66f0c1c9ddfc664fd55619fb32b49d0337e140ef30663f1ecaae40203",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-34.raw.txt": "247c09ee29e063f88ce28d40e24a35c4b5ff82f7cc621ff8f7e961cf3966c418",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-34.txt": "247c09ee29e063f88ce28d40e24a35c4b5ff82f7cc621ff8f7e961cf3966c418",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-34.png": "a8b6d4c476cfe87e4ef367ed1a5c39933d83a7f60aae665a43438e82d2dfd984",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-35.raw.txt": "2126a5add782bf73b4fe16638c91d2bd47736302562a0daff711b98956b53fbb",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-35.txt": "2126a5add782bf73b4fe16638c91d2bd47736302562a0daff711b98956b53fbb",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-35.png": "c90834b65c728a3803a711c8314e15dcff450b5e98317d720e2fc9f1e06687f3",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-36.raw.txt": "f1d8678484c65b94a07858bd28ee4a1c0121bd00c8ca4448f5e1e20c02f48b6a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-36.txt": "f1d8678484c65b94a07858bd28ee4a1c0121bd00c8ca4448f5e1e20c02f48b6a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-36.png": "590fb4da8ee60046aa440c24a310b1529bb4698febff6fb85f340464b677f5c9",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-37.raw.txt": "e1d8cfe3b8e869155c873beb4e7cc0bc0afd0783cf56b51248423964208e4e39",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-37.txt": "e1d8cfe3b8e869155c873beb4e7cc0bc0afd0783cf56b51248423964208e4e39",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-37.png": "7878dcc64b4699bc0c4a4d70a2ee0a3804ef66d633d5fe4fcbeacbc85bffb74d",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-38.raw.txt": "12b04f24cdb40a61255892678814ff9ab3d70896fa81275823581619424f4336",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-38.txt": "12b04f24cdb40a61255892678814ff9ab3d70896fa81275823581619424f4336",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-38.png": "bb8e2099c31d64bc32760891c92066c6826cdbc6e6466797ce6de88d2e89871e",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-39.raw.txt": "5d582f967fd60ea8711cec886ac9299900923ef43baedce27d368fe2760d4b07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-39.txt": "5d582f967fd60ea8711cec886ac9299900923ef43baedce27d368fe2760d4b07",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-39.png": "bc21511fbc734c048a064b4dfe5949dc46fd05f9a0213ee734939a885f0e9487",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-40.raw.txt": "2f16b215b3512ae76764bd0423db767d5b2ca5948e8fc54a9f7b417d5bdaaa42",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-40.txt": "2f16b215b3512ae76764bd0423db767d5b2ca5948e8fc54a9f7b417d5bdaaa42",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-40.png": "4b0721ee4d8153555c65ccd496e5627c5879627370799fe3f2695d3a6c4f408c",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-41.raw.txt": "18f76ca50712f3d7eec51df0f14a1c0aaf83491b098d8991efe8bce5574570a1",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-41.txt": "18f76ca50712f3d7eec51df0f14a1c0aaf83491b098d8991efe8bce5574570a1",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-41.png": "d43ec8170fdca86ff1831267e8415c007a99f929007e678bbaf6dbfabbae2d4c",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-42.raw.txt": "7ed61cc0b80526a9a1ce2701d86ba318580d5e1ffd995205693d073bb48c0ed1",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-42.txt": "7ed61cc0b80526a9a1ce2701d86ba318580d5e1ffd995205693d073bb48c0ed1",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-42.png": "02cb08005458d6479c9f0e27747cd62c2ebd376c849cbc63d119100daaad6772",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-43.raw.txt": "feef4b577d82be1e2e23cc5e0f174d001bb6094ad1ead2dbb02b04f1d495b065",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-43.txt": "feef4b577d82be1e2e23cc5e0f174d001bb6094ad1ead2dbb02b04f1d495b065",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-43.png": "e714c4ee2f5402266578e0273fb03eb7914260e5ac70bbf0577d8493819d091b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-44.raw.txt": "c92d6b2a2317119915568b8c5904a06f8e28e194da8651f8a5eb443b39d80c2a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-44.txt": "c92d6b2a2317119915568b8c5904a06f8e28e194da8651f8a5eb443b39d80c2a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-44.png": "28040e82d17316546c12e04017a999b1e53abffb44a68ef513fc1be4307c75a4",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-45.raw.txt": "896917052f4f84c5063f51e212f0161186306e4cae24f446add2af8701a9a18b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-45.txt": "896917052f4f84c5063f51e212f0161186306e4cae24f446add2af8701a9a18b",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-45.png": "67ae9b6c7a42b1ffeafdfed2846caa69ccdc6622f1623a2c7cdc99692f556a93",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-46.raw.txt": "fdb248fe92ca83cadb4d00a0d29f68ac6024b46961b998f22ea2b495cbc3e2ff",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-46.txt": "fdb248fe92ca83cadb4d00a0d29f68ac6024b46961b998f22ea2b495cbc3e2ff",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-46.png": "9147a93dac971e5d2742d09821dea2b66611566132db8e1c995ebe013df500e7",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-47.raw.txt": "4c54afe6679da1edb7be6a3c11544f1141b8cfcc562f38484f637ea4eff48ab5",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-47.txt": "4c54afe6679da1edb7be6a3c11544f1141b8cfcc562f38484f637ea4eff48ab5",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-47.png": "a0aa5d9b073be71516c9df57cf9ae95f174463532389b478848e19fe4d7c6e42",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-48.raw.txt": "2c6218f004b9897a8840b8a0a522be491bf43b714e16f67793c3327ecd054ac4",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-48.txt": "2c6218f004b9897a8840b8a0a522be491bf43b714e16f67793c3327ecd054ac4",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-48.png": "04fc84f0487d65c2f6f3bd8e6a5d659c42936eaa2972d18b928aef3ad2ad287c",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-49.raw.txt": "71edc9026a2cedf1886e27f2cc99811a428d14a48e2adb6815885776b3c0af8a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-49.txt": "71edc9026a2cedf1886e27f2cc99811a428d14a48e2adb6815885776b3c0af8a",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-49.png": "8581263f6385c73f949f32b66bad526f1a3df8edfa89b7ab354a1f5962d6af7c",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-50.raw.txt": "d8fcb4291ef131c7869fa69aea9eda8ad9430ff4c870a223c2151822a0ced7ba",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-50.txt": "d8fcb4291ef131c7869fa69aea9eda8ad9430ff4c870a223c2151822a0ced7ba",
+    "assets/glyphs/contextual/profile-circle-20261026/entry-50.png": "26852b976bb8181ccf3bbb916642829f97eeb07c717e66189fcdf835b2a2c1c7"
+  },
+  "families": [
+    {
+      "id": "profile-circle-00",
+      "title": "Martorana: nested arch bands and a rounded return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "/⌒'ﾊ",
+        "弋____ノ"
+      ],
+      "native_reference": {
+        "width": 597,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 0; original aa[33]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          0,
+          1
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-00.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-00.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-00.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 33,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "5200a2651a9714e036795a67072dbae7757c11bc2aacb28eab8bad66971c6d44",
+        "source_image_sha256": "d7fa05a7f1305f0efb487330d9475cc1869fae236ce438cee3088f6f75551d0b",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-00-rounded-region",
+          "line_start": 8,
+          "rows": [
+            ".　　 |.:.:.:.:.|.:.:.:.|　ｉ:::::::.:.: 　　 ∨∧:::|:　／ |::::::::::.:.:.:.: |⌒＼＿＿_.∧|: : |.:.: .　 　 -─-　　 　 :|",
+            ".　／|＿_,,|＿_|　|:::::::.:.:　　　｜ ∧:| /　, '|::::::::::.:.:.:.: |´￣~'|:::::::::::|｀Ｙ: : |　　／ ,．---ミ ＼　 |",
+            "::/　|＿＿|＿_|　|--ー…￢ﾆ|　. ::||′/　|::::::::::.:.:.:.: l-ｰ…|:::.:.:.:. |.｜:. :|　. ::／.:.:.:.:.:.:.:.:. ＼＼|",
+            "/　　ＶＶＶＶＶ　 |.::／￣＼: : |　. ::|: :/　..:|::::::::::.:.:.:.: |　 　 |::::.: :.: | :|.: :.:|/: /.:.:／´￣｀丶.:.:｀、'.",
+            ".　 　 ∨// / 　 |/.:.:／￣ ＼|　: ::|: ｉ/^ヽ|::::::::::.:.:.:.: |　 　 |::::.: :.: | :|.: .:.|: /.:./ .／⌒＼　＼ハ_|",
+            ",_　　　|´￣ [　　|.:.:/⌒'ﾊ／´|　: ::|: |ヽ.:.:.|::::::::::.:.:.:.: |≧=‐|::::.: :.: |-|____|_,| / /.:.:.:.:.:.:.:.:.＼　 　 |",
+            "⌒ﾆ=┤.:. :. |　　|::::|　　|::|.:.:.:.|　: ::|: |: |.:.:.|::::::::::.:.:.:.: |　 ／|::::.: :.: | |＿＿,|:|　| .:.:.:.:.:.:.:.:.:.:. ｉ　|　|",
+            ":.　　　|::: : 　|=- |::::|　　|::| ／|ﾆニ|=|: |.:.:.|::::::::::.:.:.:.: | /　/|::::.: :.: |　 |:: : |: |　|.: :／⌒＼:. |　|　|",
+            ": .　　 |::::::::　|　　 ⌒ﾆ=-.|:|.:.:弋____ノ :|.:.:.|::::::::::.:.:.:.: | |　:| |::::.: :.: |　 |:: : |: |　ｉ　　　　　 |.:.|　|　|",
+            ":.::.　　|:::::: :　|　 　 . . : :.:.:|:|.:.:.:.:|:　|＾Ｙ:|.:.:.|::::::::::.:.:.:.: |￣~| |::::.: :.: |　 |:: : |: ｉ　　 　 　 　 |.:.|　|　|",
+            ":.:: : . .|::::: : 　|　　: : : : : : |:|.:.:.:.:|　　 .| |.:.:.|::::::::::.:.:.:.: |ニi | |::::.: :.: |　 |: : .　　 　 　 　 　 |.:.|　|　|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Nested arch boundaries, thickness and the opening cooperate across rows.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-02",
+      "title": "Santa Maria Maggiore: tower round",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "Ｙ⌒Ｙ",
+        "乂_ノ"
+      ],
+      "native_reference": {
+        "width": 797,
+        "height": 611,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 2; original aa[34]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          2
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-02.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-02.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-02.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 34,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "b834ebe088dce70cba7a9ddbcb21c2aba4666e3ad0b2a3f16cfa392fd8a5df93",
+        "source_image_sha256": "45d0e13174e7a89d3b53f3d1ba553f9a1ba0e1dc9cb13bbdd76aa1e33b158046",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-02-rounded-region",
+          "line_start": 12,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 |丁¨¨¨¨¨¨::|",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 o　　 　 　 　 |::|ｰｉＹ⌒Ｙｰ|",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　{:::｝　　　　　　|::|__|乂_ノ|__|",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　只　　　 叶　j_{　 叶　　　 只.:.:.:.:.:.:. ￣|",
+            "　　　　＿　　 __　　 __　　　__　　 __　　___　　　__{__{　　　_}_}_」二L_}__}　　　{__{.:.:.:.:.:.:＿__|　　__　　 __　　　__　　___　　____",
+            "...　　　|｜|~~~| |¨~~| |¨¨¨¨| |¨~~| |¨~~| :|¨|-- | | :|¨¨¨¨｡o二二二o｡¨¨¨¨¨| :|¨[¨¨| | :| |¨~~| |¨~~| |¨¨¨¨| |¨~~| |¨~~|｜|｀丶、",
+            "　　／ニ二二二二二二二二二二二二二ヽ__,| |¨|¨¨¨¨::|¨| /⌒Ｖ|¨|¨¨¨¨¨|¨|＼__/二二二二二二二二二二二二二二¨＼|",
+            "..＜／ﾞ|｜|口 | |:口:| |／＼| |:口:| |:口:| :|.:|¨¨~| |¨| ｉ'⌒'ｉ:|¨|:|///| |: |:ｉ⌒＾ｉ |¨| |¨¨ﾞ| | :| |:口:| |:口:| |／＼| |:口:| |:口:|｜|｀''-､＞",
+            "　　|／|二二二二二 |_|三|:|二二二二二¨|: ___| | :| |//::|:| :|:|///| |: |:|///| |: | | ___|二二二二二二|:|三| |二二二二二,,|''-､.:|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The tower's compact round has paired shoulders, a return and enclosing architecture.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-03",
+      "title": "Assisi: compact cap and return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "乂__ノ"
+      ],
+      "native_reference": {
+        "width": 603,
+        "height": 611,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 3; original aa[36]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          3
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-03.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-03.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-03.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 36,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "c59f6b47898f11e820fb2aafb189f11cf7688945dfa85764e907445527c407d5",
+        "source_image_sha256": "472afadee06228c63d0f2e52a3e929c8e6b48cee2a86d1985147ae18e492acd6",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-03-rounded-region",
+          "line_start": 7,
+          "rows": [
+            ".　 　 　 　 |l l|　ⅱ|::|ⅱ|::|ⅱ|　　　　　　　|　　 ／　　　　γ⌒ヽ　　　　＼|",
+            ".　 　 　 　 |　|　　 |::|　 |::|　 |　　　　　　　|　／＿＿＿＿乂__ノ＿＿＿＿＼"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Cap and return preserve the enclosed paper; this is one spelling, not the vocabulary.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-04",
+      "title": "Notre Dame: round and partially hidden rounds",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "弋＿ノ",
+        "乂___,"
+      ],
+      "native_reference": {
+        "width": 475,
+        "height": 628,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 4; original aa[48]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          4
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-04.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-04.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-04.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 48,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "0b298142291fbed5b09be44fd6b068df4a40ffc2031c0cbb9075b9b9507b6d46",
+        "source_image_sha256": "1373bd16bfd7f52a5ac7ae7b8759b5cfce0909967e03f92ae40c760ef600dbb9",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-04-rounded-region",
+          "line_start": 7,
+          "rows": [
+            ".:/｀Ｙ.: : ´,ゝ'.:|:::::/^ｉ::ｉ: : : : : : : : :γ⌒ヽ　 . . : : : : :.:/＾Ｙ : |:|:::::/:／^l.: |.:.:.:",
+            ",'.:.:.ﾉ: : : : ｉ:.::.|:: ::|.:. |::|: : : : : : : : 弋＿ノ　　. : : : : ::/ /＾|: : |｀¨´/.:. :. |.:.|.:.::",
+            "ﾆﾆ7⌒ｉ: ::|: :|:: ::|: :. |::|: : : : : : ::／: : : ＼.:.:.: : : : : ::|:::|: :.:|: : |:.:.:.ｉ.:.:.:.:ｉ＾|.:.|.:.:",
+            ":::::/Ｙ::::|.: :l: |:: ::|.:.:.:.:|::|: : : : :／: : : : : : : :＼:.:: : : : |:::|: : ::|: : |.:. |.:.::..:| : |.:.|.:",
+            ": /　|___|｀Ｙ:|:: ::|､.:.:.:.|::|.:: :.::/: : : : : : : : : : : :‘,:.:: : :|:::|: :／|: : l.: |.::ｉ'＾|___,|.:.|:",
+            "/　　|: :|_,,| |:: ::|:∧:.::|::|: :.:/: : :. ＿＿＿: : : : ‘, :: :|:::|::/: :.:|: : |.:|.:.|::/´| |:|.:.|",
+            "　　 |: :|: :| |:: ::|::/∧ |::|: /: :.／:,．----ミ::＼:.::‘,:.:|:::|/: : : :|: : |:|＾ｉ::|　 | l |.:.",
+            "＼ :|: :|: :| |:: ::|⌒ヽ:ｉ:|::|/:／::／: : : : : : : :＼::＼‘,:|:::|::γ⌒|: : l:|:::|::|　 | | |.:",
+            ":.:.:＼ |: :| |:: ::|　　｜:|::|/:::／´￣＞*＜:￣｀＼::::: ｉ:::|:::|　　.:|: : |:|: |::|　 | |:/",
+            ": : : : ＼| |:: ::|‐‐‐┘:|.:| ∨: : :.／: : : : : :＼: : : ∨:l:: |:└‐‐‐|: : |:|: |::|　 |/.:.::",
+            ".:.:.:.:.:. : : |:: ::|⌒ヽ: : | :.:.:.|:.::／: :＿＿__: : : ＼ : |.:.:.:.:|.:.:γ⌒|: : |:|: |::|: /.:.:.:.:",
+            "＼.:.:.:.:: :|:: ::|､__,ノ.: :|.:.:.:.:|::/::／::::::::::::::::＼: : : ::::|.:. :. |.: 乂___,|: : |:|: | /.:.:.:.:.:.:"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Full and partly occluded rounds coexist with structural columns; do not close hidden ink.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-05",
+      "title": "Aachen: dome cap and flat base",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "{＿＿}"
+      ],
+      "native_reference": {
+        "width": 724,
+        "height": 492,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 5; original aa[52]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          5,
+          6
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-05.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-05.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-05.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 52,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "560a2215fe1134457ba98921f5dd8a7b753c1444b0e8df4392c36d4107397b2e",
+        "source_image_sha256": "f693d188c723b2ee54bcdb8294d0e978b07c01a5bc74afebbd580a410f092c7f",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-05-rounded-region",
+          "line_start": 10,
+          "rows": [
+            "水狄水从　　　　　　　　　　　　　　　　　　　　　　　　　 γ⌒ヽ　　　　　　　　|.:.:.:.:.:.:|",
+            "爻乂父爻　　　　　　　　　　　　　　　　　　　　　　　　　　{＿＿}　 　 　 　 　 ∧.:.:.:.:∧"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "A domed cap terminates on a flat base; not every cap encloses a circle.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-07",
+      "title": "St Paul's: nested medallions and ribbed dome",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "Ｙ⌒Ｙ",
+        "乂_ン",
+        "≧=≦"
+      ],
+      "native_reference": {
+        "width": 682,
+        "height": 560,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 7; original aa[54]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          7
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-07.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-07.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 54,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "bf9c1fc0ef4c6d81e4102a1962490dab2d7a58c9040df8d93a066ab23254c1b3",
+        "source_image_sha256": "f808c6f39215c4989f99e7d3b6802f828a6a7cae6e25159aef096e42b024eb2f",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-07-rounded-region",
+          "line_start": 11,
+          "rows": [
+            "　　　　　　　　　| | |　| |　 | |　| |　　　　　,．　´ /　ヽ＼丶、　　　　　　　　　　 　 .| | |　| | |　 | |　| |",
+            "　　　　　　　Ｔﾆﾆア´￣￣｀弌ﾆニｈ　 ／/ /　/　 }　 ;　':,　＼　　　　　　　　　　　|イﾆﾆTア´￣｀弌ﾆT",
+            "　　　　　　　 |　　|{　Ｙ⌒Ｙ　}｜　 | | ./ /　{　 {　　}　 }　 }　 }い　　　　　　　　　／ノ|　　|{ Y⌒ Y :}　 |",
+            "　　　　　　　 |　　|ﾍ 乂_ン /.::|　　| | ′{_､-=＝＝＝_､-''\"´｀\"'‐ ,_　　　　　　　厂|　|　　|ﾍ乂_ン.:/　｜",
+            "　　　　　　　 |　　|　 ≧=≦　 |　　| |j／|　|　|_ -=ﾆ´　　　　 　 　 ｀ﾆ=- _　　　ﾉ|＾|　|　　|　≧=≦ |　 |",
+            "　　　　　　|二二|￣￣￣￣￣|二二|_,|_ｒ=ﾆ⌒　　　　　　　　　　　　　　⌒ﾆ=┐|_,|二二|￣￣￣￣|二二|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Inner rounds, outer frames and dome ribs have different roles and must not merge.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-08",
+      "title": "Krakow: three different rounded constructions",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ｘ=ミ",
+        "λ＿,ﾉ",
+        "γ⌒ヽ",
+        "乂__乂",
+        "(__)",
+        "乂__ソ"
+      ],
+      "native_reference": {
+        "width": 604,
+        "height": 424,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 8; original aa[57]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          8,
+          9
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-08.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-08.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-08.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 57,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "cf5a7ade13f5f89a8e2347a7679ee3836b813fda0fa604f51fd0c51af93d572b",
+        "source_image_sha256": "315f352add7a22546bfd910f2a8d0906ce8de613326764a81194878fa1537468",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-08-rounded-region",
+          "line_start": 9,
+          "rows": [
+            "＜二::::::ｘ=ミ:::::::＞:| |:::|: : |:| |::::| ｉ| 　 |i| ハ_Ｙ:|/||Ⅵ__|　Ⅷ|ｉ| 　| ,:::::::i||:|::::i| |:::::∨:::::::γ⌒ヽ::::::",
+            "〈　∨:::/　　', :::{　 :| |:::|: : |:| |::::| ｉ| 　 |i|j＿|_|,,ｘ仝ｘ|__|＿i|ｉ|ｉ| 　| |::::: i||:|::::i| |:::::::|＼:::::{　　　}::::／",
+            "ノ⌒〉:λ＿,ﾉ:::::＼ | |:::|: : |:| |::::| i| 　 |‐|¨¨| |丁¨丁 丁¨:i|-ｉ| 　| |::::: i||:|::::i| |:::::::|　/::::乂__乂:∧",
+            "＿/＿＿＿＿＿_..　|(__):.:|:| |::::| i| 　 |‐|　 | |｜　:|　 | 　[|‐ｉ| 　| |::::: i||:|__(__)_:::_／＿＿＿＿＿",
+            "＼＿＿＿＿＿/_／_____＼| |::::|从..　|‐|　 | |｜　:|　 | 　[|‐ｉ|　_†_::::::｢｢:γ⌒ヽ＼＿＿＿＿＿＿",
+            "　〔＿＿＿＿_〕＿〕::(__)::〔::| |ノｼ＾'<Ｙ|‐|　 | |丁¨丁] | 　[|‐ｉ|_|＿_|__|_|__乂__ソ／ ／||￣￣￣ | |"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Tall round, small flattened ovals and shorter round retain different side/return spellings.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-10",
+      "title": "Canterbury: receding curved bands",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "｡o--o｡",
+        "γ⌒ＹＹ⌒ヽ"
+      ],
+      "native_reference": {
+        "width": 435,
+        "height": 594,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 10; original aa[58]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          10
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-10.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-10.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 58,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "2a1b8f6a1224250b9c2bdfd9ba6db0cc32d3833f243200ee3f15b52c96254631",
+        "source_image_sha256": "48e9d414f99beaed531607d229d96a238cfdac8ca6f609a7d18b40623115a131",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-10-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "イギリス　カンタベリー大聖堂",
+            "　 /／　　／_　 -　¨￣＞ ' ´｡o--o｡｀` ' ＜ ￣｀`ヽ、　 ＼　Ⅵil|",
+            ". /'ﾟ　　／'\"´　　 　 ／,､　´＿__＿＿｀`丶､ ｀ヽ、　　 ＼　 ∨|　i|",
+            "/　　／　　 　 　 ／／'\"´￣　 ＿＿＿ ￣｀`ヽ、｀ヽ、　 ﾍ,　Ⅶノ|",
+            "　／ヽ　 　 　 ／／　_､　´￣_二ﾆ=‐=ﾆ二_｀`ヽ､＼　＼　i|　| |　|",
+            ",/⌒V ﾟ｡ 　／／　／､丶^⌒＞-‐……‐-＜⌒^ヽ、＼　`ｉ|　|_|'＾|",
+            "〔| 　 |　', .,'ﾟ,:'ﾟ　／´　 ､ヽ`､丶`｀￣＿__￣｀`～､、 ＼ ＼]|　| |　|",
+            "〔| 　 |　:|// xく　　 ／､ヽ` ､ヽ`￣二=二_￣｀`ヽ､＼　ﾟ｡ ∨^| |　|/",
+            "〔| 　 |　:|∥/＾ｉﾟ｡ ,:'ﾟ／､丶`_､丶`　＿＿＿｀`丶､ ＼＼ｉ|　|　| | ,/",
+            "〔| 　 l_ﾊ| |j|　 | |//／　／'´,､ヽ`｀＞ー‐＜ ＾`丶＼ ﾟ｡ i}イ〔 | |/",
+            "〔| 　 | | | |ｉ|　 | |∥ヽ /,:ﾟ ／,､丶`＞ー‐＜ ｀`ヽ､.＼　} |｜ ]| |　 ∥",
+            "〔|_　 | | | |ｉ|　 | [||　 |ﾟ,ﾊ´:／／､丶｀￣￣__｀`ヽ、＼∨''|｜ _| |ハi|",
+            "　⌒≧s｡,|ｉ|　 | [||　 | { i|んﾟ,:'ﾟ／／￣￣＿｀丶､｀ヽ.Ⅶ｜|'´ | | | ||",
+            "i⌒|| |:　.:ｉ〕iト Ｌi:||　 | | i| | i|/ ,:'ﾟ　　／　＿_｀丶＼ {｣ l ﾚ'| |^| | | ||",
+            "| ﾊ|| |⌒|ｉ|||ﾊ　 ﾞト　｣_| i| | i| /::./ ,:'ﾟ,;㌻¨”||”¨ヽ｀:｡「| |｜| |^| | | ||",
+            "|..| || |｜|ｉ||| | |＾ｉ|^iﾊ| 〕iト|_i|ん'ﾞ ん'/ ハ..::||:. ハ ﾔⅧﾞ|｜| |^| | | ||",
+            "|..| || |｜|ｉ||| | | |i| i| i| || |||＾|::|─|| ||　|_,|..::||:. |_,|　| |:| |｜| |^| | | ||_",
+            "竝｣| |竝|ｉ|||_| |_|i| i| i| || ｉ|| i|::|　 || ||i⌒ｉ⌒||i⌒i⌒| |:| |｜|」-| |¨￣",
+            "￣￣¨¨¨ﾞ||ﾞ''''''''''|冖ｉ|…ｰ|-|::|　 || |l[][][][]||[][][][i| |:|TΤ|iiﾍ| |　,ﾍ",
+            "　／＼　.:||::／ヽl へ| ,ﾊ :|＾|::|　 ||]||γ⌒ＹＹ⌒ヽ | |:| i^i^|]'＾| | // ﾍ",
+            "./γへヽ ｉ|/＾ヽ..|/＾|| |＾ｉ | :|::|　 ||_|| |＿　| |　＿_|| |:| |｜|]　| |// /"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Repeated arch bands recede in depth; their crowns, flanks and gaps change together.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-11",
+      "title": "Basement: thick turning arch band",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ｲ二㌃゜",
+        "ｲﾆア゜",
+        "/ﾆｱ",
+        "寸ム",
+        "寸ﾊ",
+        "∨i,",
+        "Ⅵｉ"
+      ],
+      "native_reference": {
+        "width": 623,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 11; original aa[73]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          11
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-11.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-11.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 73,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "45ce845a0be0fbde36adca715ab294d9721712d16c19c1ed385003a09cdf105b",
+        "source_image_sha256": "c4f76e63bb04b0bc8708a9baecba3779a386ca340e6a9b0806d724cae423f9cc",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-11-rounded-region",
+          "line_start": 7,
+          "rows": [
+            "ニニニニﾆアﾟ: : :　　　　 ､ヽ`　 　 　,｡s≦｢|:::::::::::::::::::::|¨≧s｡,　　　　　　　　:　:　 : ‐ ‐ ──二二",
+            "ニニニﾆア : :.　　　　 ／　 　 　 x≪ニ二ﾆ|:::::::::::::::::::::|二二ﾆ≫ｘ　　　　　　 　:　:　:　: :‐ ‐ ─二",
+            "ニニﾆ>'゜ : :　　　　／　 　 　 ／二-＞''~ : |:::::::::::::::::::::|　~`'' ＜二≫,、　　　　　　　:　:　:　: : : - -",
+            "二ﾆｱ゜: : :. 　 　 ,.:ﾞ　　 　 　,ｲ二㌃゜　　 　 |:::::::::::::::::::::|　　　　　｀'くﾆ心、　　　　　　　　　　:　:　: :",
+            ";ﾆｱ゜: : :.　　　 , ′　　　　,ｲﾆア゜　 　 　__,,.|:::::::::::::::::::::|　　　　　　　`寸ム　　　　　　　　　　: : : : :",
+            "ｱ゜: : :　　　　 ′　 　 　 /ﾆｱ　　 　 ,　'゜　 :|:::::::::::::::::::::|　/　　　　　　　寸ﾊ　　　　　　　. . : : : : : : :",
+            ": : :　　　　 /　　　　　　/ﾆ'′　　／　　 ,､-:|:::::::::::::::::::::|∨/　　　　　　　 ∨i,　　　　ｒ-‐=ﾆ¨￣ﾞ| : : :",
+            ": :　　　　 /　　　　　　 '　　　 　 ′　　,.:.:｣:::|:::::::::::::::::::::|: V/　　　　　　 　 Ⅵｉ　　 　:|: : : : : : : : | : :",
+            ": : . .　　 .′　　　　. ..:|　 　 　 ;′ 　 /:::::|::::|:::::::::::::::::::::| : |　　　　　　　　　 'ﾆ　　　　|: : : : : : :.:.:|",
+            ": : : : : :.,′ 　 　 　 :　|　. : : : : |: : : :_ ‐二 : |:::::::::::::::::::::| :｜　:　:　.　　　　　 |ﾆ　　　 :|: : : : : : : :,|",
+            ": : : : : ,′ _　-　: : : : |: : : : : : _l_:_-_:_:_:_: : : |:::::::::::::::::::::|　 l　:　:　:　:　.　.　.　|ﾆ. . . : .::|: : : : : ／ |"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Multi-stroke band changes from shallow crown to steep flanks around open regions and a pillar.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-12",
+      "title": "Dominion chapel: framed round and oval ornament",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "｡o≦==≧o｡",
+        "寸ﾐﾑ",
+        "（ ＿||＿ ）",
+        "（ ￣||￣ ）"
+      ],
+      "native_reference": {
+        "width": 664,
+        "height": 492,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 12; original aa[74]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          12
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-12.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-12.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-12.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 74,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "9703446b0f45d51f3ff922d900e84abf81b0382eddcbe185e84c0f9523c3136d",
+        "source_image_sha256": "7f3764d18dd63cafff58783cb1dc8795c9451d8fc86544be10f648d31b36c30e",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-12-rounded-region",
+          "line_start": 3,
+          "rows": [
+            "┬‐{彡爻彡'ヽ 　 /)爻彡ﾍミx､:i:i:i:ｉ|　|: . . . . ｡o≦==≧o｡., . . . ..:|　|i:i:i:i爻爻/彡' .: . : . .:.ゝミﾐヾミﾒﾉ┬",
+            "｜　　爻ﾒ⌒ｿ 　 {　)爻彡ヘミ(i:i:i:i |　|: .／ニ＞ ´　　｀ マﾐ＼ . .:|　|i:i:ｉ爻ソ/___彡 : .: : .:(_/ヽ}彡＾´ . :|",
+            "｜　 　爻⌒ﾒ''\"^ヽ､ﾉ｀ヽｨ⌒ Yi:i:i:i: |　l/ニア´　／⌒＼ 　寸ﾐﾑ..:|　|i:i:i:~^^^Yｿ⌒ ノ⌒＼ 　 ﾐ爻 . : . :|",
+            "｜　////／//////ﾑ　　}　 　 lニΤ 仁ｱ´ 　,'　　　 　 ',　 ヾﾆﾑ Τ二|　 　ｌ　　/////////////: : : :|",
+            "｜////ゝマヽ//////ﾑ　L__ 　|:::::::|　二{　　 ｌ　　　　　　ｌ 　 }ﾆﾆ　|:::::::| 　 ﾉ 　////////////////: :|",
+            "｜ ///／⌒寸//////ﾑ 　 |　l|:::::::|　ﾆ圦 　 |　, '⌒ヽ 　| 　ﾉ二 　|:::::::|　´　 ///////／　｀ヽ/////,'|",
+            "｜//,:' ;:; :;:;:;:;:;寸/ / //ﾊ　 ヽ |:::::::|　-=ﾆ]　 | /V⌒Ｖﾊ..|　[ﾆ=-.　|:::::::|　 　　////〃;:;:;:;:;:;:;:;:;:∨/// |",
+            "｜ 〃;:;:;:;:.:.:..:;;:;:;:寸∨//,ﾊ　　ヽ￣.三三 l{　｜　　__　　..|　}l 三三. ￣　 　,′////;:;:;:; 　 　':;:;:;:Ⅵ/メ|",
+            "｜.j{;:;:;:;:.:.' : : ; .:.;.:.∨ ///　 　 　 　.|―|｀'l| 　l　　<ｌｌ> 　 |　|ｌ　|―|　 　 　 ｀　 | 　l.;:;;:'　　　　 :;:;:;:Ⅶン|",
+            "｜.l{;:;:;:..':. . 　　:. .;.:.:V// （と㍉）　　| 　|　l| 　| 　 〉||〈 　 |　|ｌ　| 　| 　(γう） 　| 　|;;:;.　　　　　 :;:;:;| lニ|",
+            "｜:l{;:;:;::.: 　 　 　 :.;.;.:{///l f{　ﾊ　　 | 　|　l| 　l　〈　|| .〉 . |　|ｌ　| 　|　　ﾊ　h 　 | 　|;:;:　　　　　　:;:;:| lニ|",
+            "｜八;:;:;. 　 　 　 .:;.;';.;｝//l TニT　　.|　 |　l|　 l　,:´ || ｀:,　.　|ｌ　| 　|　 .TニT　ﾞ | 　|;:.;.　　　　　　;:;:| lニ|",
+            "｜,ｲﾐ､.:.　　 　 　 ;.;ｲ//// |ﾆﾆ|　 　| 　|　l| 　|（ ＿||＿ ）|　|ｌ　| 　|　　|ﾆﾆ|　　| 　|;:;;.　　　　　　.:.:| lニ|",
+            "｜彡ミ.;.　 　 　 　; ;|///爻⌒ハ　　|―|　l| 　|（ ￣||￣ ）|　|ｌ　|―| 　 辷⌒ヽ､| 　|:;.;.　　　　　　.;.:| lニ|",
+            "｜彡ミ.;　 　 　 　.; ;|爻彡⌒彡ハ　.|　 |　l| 　|､ ｀ ± ´ ｨ|　|ｌ　| 　| 　f辷彡⌒爻ｨl.;.;.. 　 　 　 　.;.:| lニ|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Outer thick band, inner opening and vertically stacked oval ornament are distinct constructions.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-13",
+      "title": "Interior: stacked rounded figure and arch",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "(　)",
+        "/⌒Ｙ",
+        "乂__ﾉ"
+      ],
+      "native_reference": {
+        "width": 500,
+        "height": 679,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 13; original aa[97]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          13
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-13.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-13.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-13.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 97,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "f6cb2c4afa8018c4f7ad3c145ecae8820210fe4821d6f1de80e834173c1a4da6",
+        "source_image_sha256": "ec4e6cb0203cdc2ff67f21c940606bb7d615df68e5cc89fb090a94ffce7e86a7",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-13-rounded-region",
+          "line_start": 4,
+          "rows": [
+            "i:i:i:i:i:i|: : ::／　　 ,....:'´...............................｀`～､、　｀''＜::::::¨ﾆ=- ::(　)　_　.:.:.:.:.:.:.:.:.:",
+            "i:i:i:ｉ:ｉ:|: ::/　　 ／....,．-‐………‐-　 _..............｀丶､　 ＼:::::::::::::/⌒Ｙ辷ｎ.:.:.:.:.:.:.:.",
+            "i:i:i:i:ｉ:|: /　　 /...／: : : : : : : : : : : : : : :｀丶、..............＼　 ＼::::::乂__ﾉ＿_ﾉ⌒ﾆ=‐",
+            "i:i:i:i:i:|/　　 /／: : : : : : : : : : : : : : : : : : : : ｀ヽ､.............＼　 ＼::::しく__|/￣〉::::::::"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Small oval above a larger rounded form; retain its attachment and nearby arch, not an isolated token.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-14",
+      "title": "Interior altar: repeated cap/return frieze",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "f⌒Y",
+        "Y⌒Y",
+        "乂乂"
+      ],
+      "native_reference": {
+        "width": 717,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 14; original aa[98]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          14
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-14.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-14.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-14.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 98,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "f30e5d1db0f14ad49469b95469d9206410228f55c26027343c4b8f02fd13d4be",
+        "source_image_sha256": "c945e135009841bee532049ad134292e0fd6c6a87ebbcb50d6d5202a8c10ba46",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-14-rounded-region",
+          "line_start": 13,
+          "rows": [
+            "　| | |　|　|::| |　|:| | 「「_|_|　| | :|┼┼{ー=f⌒Y=-=Y⌒Y=-=Y⌒Y=-=f⌒Y=} | |:|:|:| | | | |　| | |　 | :| | | |＿|_,,|_l_|: : :",
+            "　| | |　|　|::| |　|:| | |i:ｉ:ｉ| |　| | :|││{ー=乂乂=-=乂乂=-=乂乂=-=乂乂=} | |:|:|:| | | | |　| | |　 | :| | | |＿|_,,|_l_|: : :",
+            "　| | |　|　|::| |　|:| | |i:ｉ:ｉ| |　| | :|丁丁l|ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ＾ﾟ:| | |:|:|:| | | |_|　| | |　 | :| | | |　 |　| l |: : :",
+            "r'ﾟ⌒ﾟ＜二二ヽ|:| |ﾟﾞ⌒ﾟヽ__|_|_:|::|::::|::l|　　０　　 ０　　　０　　　 ０　 　 ０ 　 |,,f⌒⌒ヽ_||:|'⌒⌒⌒ヽ__,r'⌒⌒ヽ　|: : :",
+            "|:|===ｉ|:|===ｉ|:|:|＝＝＝|::|_|_|_,|┴┴l|о　　о　　 о　　　о　　.о　　о:|_|:: |＝＝=|:|=========:|:|====|:|　|: : :",
+            "|:|===ｉ|:|⌒ヽ|:|:|､ヽ｀ヽ｀＞========|　　O　　 O　　　O　　　 O　 　 O 　 |==＜γγ|:lγγγ⌒ヽ|:|￣￣|:|　|: : :"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Repeated rounds share a band rhythm without becoming one continuous filled stripe.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-15",
+      "title": "Stained glass: ring of cooperating rounded cells",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "／￣￣＼",
+        "＼＿＿＿,／",
+        "≧=‐-‐=≦"
+      ],
+      "native_reference": {
+        "width": 571,
+        "height": 594,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 15; original aa[120]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          15
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-15.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-15.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 120,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "e10208f822cd226f5bc2c2f308f69ef12f105c7f8ded740d6e742f656d778b53",
+        "source_image_sha256": "b83b04992163424989da37a23be4642dab8e900f24cf6baf51cb8d6c7eb22592",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-15-rounded-region",
+          "line_start": 3,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　＿＿＿＿",
+            "　　　　　　　　　　　　　　 　　 ． ‥…………………‥　．",
+            "　　　　　　　　　　　　　．……‥‥　　＂＇＇＂　　　‥……　．",
+            "　　　　　　　　　　 ．……　　　　　　＿　 -─‐-　＿　　　　　 ‥…‐ ．",
+            "　　　　　　　　 ．‥…　　　 _　-┼ｰ　／　　　 　 ＼ ‐┼‐　_　　　　…….．",
+            "　　　　　　 ．……　　 　-‐-┌￣.:.:.:/　　　　　　　　　:.:.:.: ┐-- 　　　　……．",
+            "　　　　　 …… 　 　.／　 ／￣￣＼|　 　 　 　 　 　 |／￣￣＼　＼ 　　　……",
+            "　　　　……　 　 　 { 　 /　　　　 　 ´,　　　 　 　 　 /　　　　　　'，　}　 　 　 ……",
+            "　　　……　　／￣｀＼　　　　　　　　 ＼＿＿＿,／　　　　　　　 　／￣＼　　……",
+            "　　 …‐　　　|　　　　/|　　　　　　　　 |／￣￣＼| 　　　　　　 　　|'.　　 　 |　　　‐….",
+            "　 …‐　 　 　　　　　.:..‘，　　 　 　 　 /　 　 　 　 　　　　 　 　 　 /.::.　　　 |: 　 　 ‐…",
+            "　…‐　　 ／￣＼＿|.:.:.:.:＼___＿__　./　 　　　　　　'.＼＿＿＿／.:.:.::|___／￣＼　　‐…",
+            "...…　　　′ 　 　 V |.:.:.:.:／￣￣~＼|　　　　　　　　 |／￣￣ ＼.:.:.:.:.|'./　　　　 　　 ‐…",
+            ".…　　　:| 　 　 　 :|/'..:.:/　　　 　 　 ´,　　　　　　　 / 　 　 　 　 ‘， / ´, 　 　 　 |　　‐…",
+            "…　　　 ＼＿_,,....:/　∨　　　　　　　　＼＿＿＿／　　　　　　　　∨ 　 ｉ､＿__,／ 　　‐…",
+            "…　　　／￣　＼ｉ　　.|　　　　　　 　　 |／￣￣ ＼|　　　　　　　　｜ 　 |,／￣＼　　　‐…",
+            "…　　 :|　　　 　 :|　　　　　　　　　　　/　　　 　 　 ‘，　　　　　 　 /　　｜　　　　　　　.‐…",
+            "…　　　:.　　　　 :|　　　 ＼＿＿＿,／　　　　　　　　|＼＿＿＿／ 　 　 |　　　 　 | 　　‐…",
+            ".….　　　＼＿_／|　　　　　　＼.:.:.:.:.: |　　　　　　 　 |.:.:.:.:.:／　　　 　 　 |＼＿__／　　 ‐…",
+            "..….　　　／￣＼::.　　　　　　　 丶、:::.　　　　　　　/.:.:,，'’　　　　　　　/／￣＼　　　‐…",
+            ". …　　 /　 　 　 　 ､　　　　　　 　 ｀¨^≧=‐-‐=≦^¨´　　　　　 　 　 //　　　　　　　‐…",
+            "　…‐　 |　　　　　 |　＼　　　　　　　　　　　　　　　　　　　　　　　　／ :|　　　　　|　 ‐…",
+            "　 …‐.　＼＿＿／￣　＼　　　　　　　　　 　 　 　 　 　 　 　 　 ／￣　＼＿__／　‐…",
+            "　　 …‐　　 　 /　　　　　 丶、　　　　　　　　　　　　　　　　　／　　　　　　　　　.‐…",
+            "　　　 ……　　|　　　 　 　 |　 ::........　　　　　　　　　　　　　／ 　 |　　　　 　|　　‐…",
+            "　　　　 …….　＼＿＿__／￣　＼::::::....…ー--─…　　　　／￣＼＿＿／　……",
+            "　　　　　　……．　　　 /　　　　　 .:::／￣　＼::::／￣　＼/　　　　　　　．……",
+            "　　　　　　　 …… ．　 |　　　　　　|/　　　　　∨　　　　 　　　 　　　|．……",
+            "　　　　　　　　　…… ．＼＿＿_／|　　　　　　 |　　　　　　|＼＿_／……",
+            "　　　　　　　　　　 　………　．　　＼＿＿__／＼＿＿_,／　．……",
+            "　　　　　　　　　　　　　 ＇　………‐---------‐…………　＇",
+            "　　　　　　　　　　　　　　　　　　＇　　……──……　＇"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Outer dotted rim, inner ring, rounded cells and intervening paper form a nested arrangement.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-16",
+      "title": "Ruined church: interrupted arch returns",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ｘ=ミ",
+        "j{⌒Ｖ",
+        "/⌒ヽ"
+      ],
+      "native_reference": {
+        "width": 449,
+        "height": 628,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 16; original aa[126]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          16
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-16.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-16.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-16.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 126,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "eb928ed632f74a4bdc414d13aca76337a74f644a1fe06f53e43b9578b6834c17",
+        "source_image_sha256": "6d35c6a95485fdfbf60abf40effdce5e0aa9d53790e6d1069cdefb8a11ca2abf",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-16-rounded-region",
+          "line_start": 10,
+          "rows": [
+            "/∧／::/::::j{⌒Ｖ::::|.:.:|‐Ｌ,,_|::|: :|:|_,,,｣: |:::|／:ｘ=ミﾞi, :‘i,:ゝ-'／: : : : :　 `、",
+            "∨∧: /::: j{　　.|::::| : |::::::::￣|: :|￣.:: : |:::|:::/　　|::ﾞi,:::‘i,:／:::::::: : : :",
+            ": ∨∧::::::j{　　 |::::|.:. |:/⌒Ｖ:|: :|:/⌒V:|:::|::|　 　 |::ﾞi ／i,.:.:.:.:.:＿_",
+            "::::::＼: ＼{:`ｰ-':: :|.:.:.|:|　　.|::|: :|:|　　.|::|:::l: |　 ／／i, ::‘i,　::/:::::/｀丶",
+            ":::::/::::＼:::＼::;:;: ::|: : |:l　　 |::|: :|:l　　 l: |:::|::￣／::: ::ﾞi,::::‘i,:::∨∧",
+            ":::/:::::::: ／￣＼:::|: :.:| `ｰ‐': :|: :| `ｰ‐' : |:::|／.:.:.:.:.:.:.:.ﾞi, : ‘i,:: ∨∧",
+            ":/:: :　 '⌒ヽ, 　^,|｀ﾆ=ｰー--|----ー=ﾆ´:|:::: : ／＾|.: ﾞi,.:. ‘i, : ∨∧",
+            ": : : 　 　 　 　 . :|: : :／⌒ヽ.:|: :|::/⌒ヽ:::|:::|:::://　　|.:.:ﾞi,.:.:.‘i,.:.:.∨∧",
+            ": :　 : ｉ: .　　　　　 . :|　　　 | |: :| |　 　 | :|:::|:::|:| 　　 | : ﾞi,: : ‘i,: : ∨∧"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Broken architecture deliberately interrupts curves; missing masonry is not a demand for closure.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-17",
+      "title": "Sewu: grouped carved caps and returns",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒l__f⌒Y",
+        "弋ﾆﾆｨ⌒弋ﾆf"
+      ],
+      "native_reference": {
+        "width": 796,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 17; original aa[130]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          17
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-17.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-17.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-17.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 130,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "17d796879b9a47a6f65f6067a080fc1c46ee55ad29a6b25dcb734d0dcb31e343",
+        "source_image_sha256": "95d63e835159e1a665c4e618ee51bc8e4976ce9c441939a32904264a893f9a35",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-17-rounded-region",
+          "line_start": 7,
+          "rows": [
+            "ーr──:┬──r‐‐'＾∨ﾑ　∧∧::l￣|　　　　γ⌒l__f⌒Y´ﾊ｀Y⌒V⌒ヽ 　　　　　　　　　　　　　　　　　　　　　＿＿＿＿＿",
+            "‐ |　:　:　 |　　　 }　:　:::|∨___ ∧∧j:::::|i,　　　/‐‐‐ﾉ 辷辷ｱ__乂辷Ⅵ‐_八　　　　　　　　　　　　　　　＿＿＿∠|＿＿|",
+            ",,,,|　:　:　 |￣￣ {｀ヽ､ ,|/「＿」　∨ﾑ:::圦　 弋ﾆﾆｨ⌒弋ﾆf´　｀Yﾆﾆf⌒Yﾆﾌ　　　　　　　　　 ／ ヽ／|＿＿__／￣／:|:￣￣:|＿",
+            "　|　:　:　 |￣￣ }｀ヽ､/|　 ∨∧　∨:Ⅵ/　　 }弋宀宀宀宀宀宀宀宀宀ﾅ{　　　　　　八　／ : ::／／ ／　／　／ 　 :|:￣￣:|",
+            "ｰ|　:　:　 |─‐‐/　:　:〉|　　 〉 ∧　∨:Ⅵ八 ﾉ￣＾ｰｰ＾ｰｰ＾ｰ＾ｰ＾ｰｰ^ ￣¨乂　　　　ノ___乂 : :／／／　／　／::|　 ／:|:￣￣:|",
+            "Τ:　: 　 :|￣~ﾞ|｀ヽ､ / |^ヽ/　　∧　∨ﾑ辷ｺ宀ｰ┐r'⌒'ｭ　　　r'⌒'ｭ　r‐宀八　 γ´　:|　 ／／／　／　／ｉ|　_l／　 :|:￣￣:|ー‐",
+            "_|　:　:　 :|:　　:| |: ::::|　|__/∧　　∧　∨:∨竺竺竺竺竺竺竺竺竺竺竺竺竺圦　{'´￣ﾞ|／／／　／　／　 ,ィ´:l 　／:|:￣￣:|",
+            "ｉl￣￣￣|￣~ | |ｉ＼|　|∨:: ∧　　∧　∨:〉:l弋:_:_:_:_:_:|¨|: : : : :　:|¨|:_:_:_:_:_:_:_ナ | /辷辷l／／　／　／　,ィ´ |　 l／／l|:￣￣:|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Small adjacent carved lobes attach to a larger mass, with repeated lower transitions.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-18",
+      "title": "Hagia Sophia: thick dome and nested arches",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ﾏﾑ",
+        "寸i,",
+        "∩∩"
+      ],
+      "native_reference": {
+        "width": 713,
+        "height": 441,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 18; original aa[133]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          18
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-18.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-18.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-18.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 133,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "75d6e0fba46094db719503ec86098a7673fc0a1c9765abfe95e29e18b9406217",
+        "source_image_sha256": "d4039802b33e83e3ecfe4dce3b81220cb23a1ea711a95a60b2d8c641d36f6ace",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-18-rounded-region",
+          "line_start": 2,
+          "rows": [
+            "　　　　　　 └' 　 f＾ｌ　　 ﾏﾑ　||i:i:i:i:|,ィf㌻　／　 ／ 〃//　 {ｌ　.l}　'v,　＼　 ＼　＼ ／ / ＼ ＼　.|:::|　{//////",
+            "l　|　　 l⌒l　　　　|_,|　　　ﾏﾑ..||i:i:ｱｱｱ　 メ廴／__ /　//　 .{ｌ　 .l}　　'v,　 ヽ　　＞'\"　〈＾.,　xヘ　Ⅵ::|　{//////",
+            "L_|　　 |　:|　f＾Y　　　　 　 ∨',|| /i/:/__ｱ　≧xs｡..,'　//　　 {{　　ｌ}　＿}l_,,..｡o≦x　　　 ヽ／／ ﾍ　|:::|　{//////",
+            "　　≧s｡.,_|　|　|　 YY　ｎ.　 ∨|/i/:/ 〃≧s｡./_/　　￣Y＾Y￣￣￣Y＾Y　　　__ﾟ。〉-=≦=-,ィ=ﾐ　V:::::|::,'l//////",
+            "⌒Y　 x=ﾐ　≧s｡., |_|　| |　　 WVi:/ //≧=＿-=ﾆ二ﾆ=zzzzzzzzzzzzzzz=ﾆ二ﾆ=-　'ﾞ　 ,ｲｨi〔＼ヽ:::::::/ {//////",
+            "|_　|　.:|　::|　 f＾Y　ｎ≧s｡.,,_　 Yi:j! ∥,ィi〔,.ｨゝﾍ`丶､　￣￣￣＞''\"￣＿￣｀　.　 　 　 //∥圦 Vﾊ:::/ /l//////",
+            "　￣　ﾆ=┴　|,,_|　| |　f＾Y　｀`'|i:j!　/〃,ｨｹﾞji{　ヽヾﾑ　　　 ／　,ｨ沙'´￣｀`'マ心､　　// ∥ f刈 |ﾆ7_/ {l//////",
+            "⌒Y　x＝ﾐ　　　ﾆ=-　廴|　　　|i:|　んf＾Y xx　xx ﾟ｡ 'v　　/　 ,ｲｱ　　　　　　　 寸i,　 {i:{　{ｌ　|　| :|:|:::::|　{ｌ/////,}",
+            "　ﾏﾆﾌ＾V┴f⌒Y_x=ﾐ　__￣二ﾆ=＿- |　| |　| .|　| }i }i,＿ｉ{__ んﾞ ∩∩ ∩　∩∩}i:}竺竺竺竺竺]|:|:::::|　{ｌ/////,}",
+            "　 |:::| 　 VＶ　 Ｖ/　ﾏﾌ　｀|　　γ´/｀ヽﾆﾆﾆﾆﾆﾆﾆﾆ｡o00o｡ |ｌ||二ﾆﾆﾆﾆﾆﾆ二,xKIIIミs｡＾ヽ γ´ﾞ|:|:::::|　{/////,ﾘ",
+            "　 |:::| 　 :|:::|　 l|:|　 l|:| |￣|　　 {/////}Yf⌒li⌒i　///////ﾑ ||≧＝─‐＝≦7/////ﾞハ　ﾊ:l　_,|:|:::::|　{/////,′"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Dome ribs, turning arch bands and small repeated apertures stay distinct.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-19",
+      "title": "Hagia Sophia: medallions on a dome interior",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "乂__:ノ"
+      ],
+      "native_reference": {
+        "width": 586,
+        "height": 696,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 19; original aa[134]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          19,
+          20
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-19.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-19.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-19.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 134,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "8a212f0542708027f8c75b070155580117cd27bf93c350a7f5285153b605b2c7",
+        "source_image_sha256": "115d8461b274d879ae4636d90b64372d6bf02fdf7fd857c9a0aff70537bda8bc",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-19-rounded-region",
+          "line_start": 25,
+          "rows": [
+            ".:.:.:.: /.: |: :|:|: :|:|: |:|::|l:::|:::|:|::/´Ｖ.:.:.:.γ⌒ヽ￣￣￣γ⌒: .　　..::/:＾Ｖ:|:::|::: ||: ||:::|:|: |:|::::::|∧:::::",
+            ".:. ／.:.:.:|: :|:|: :|:|: |:|::|l:::|:::|:|:{.:.:. }:ｉ＾ｉ: {:::::::::::}:ｉ＾ｉｉ＾ｉｉ＾ｉ{: : .　　 ..:|:::{::::: }::|:::|::: ||: ||:::|:|: |:|::::::|:::::＼",
+            "¨´:|.:. :. |:_:|:|:_:|:|:_|:|;;|l;;;|:⊥:乂_ﾉ:凵::乂__:ノ::|_,||_,||_,|ヽ　　 . 凵 _乂ノ⊥:|;;;_||:_|l__|:|:_|:|::::::|:::::::::::",
+            "””￣￣:::::::::::::__,,..ﾆ=-‐‐''Π:|.:.:.:.:.:.:.:.:.:.:.| |::::::ｉ⌒ｉ: .　　 . : ::::::::::::::|‐-=ﾆ二..__::::::::::::::´´´´￣￣",
+            "-‐…￢冖.:.:二￣,-､ ,ﾍ'＾ｉ|:|::|:ｉ⌒l ／＼| |::::::|_.　　　 . |: : :.:ｉ⌒ｉ:.:|::|.:.:ｉ＾ｉ:,ﾍ:,‐､: ,-、￣二\" ''冖",
+            ": : : : : /⌒∨::::∨:::::|ﾞ: :|:::||:|::|:|　 | |￣｢|| |:::.: .　　 . :.:| |: : :.:|　 |:.:|::|.:.:|: ||::::l|::::Ｖ:::::ﾟ,.:/::::::｀．::::"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Rounded medallions and partly hidden neighbors sit on the larger vaulted volume.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-21",
+      "title": "Umayyad Mosque: repeated arch bays",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "f⌒Y",
+        "Ｙ⌒YY",
+        "Y⌒YY⌒"
+      ],
+      "native_reference": {
+        "width": 787,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 21; original aa[135]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          21,
+          29
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-21.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-21.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-21.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 135,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "85f4e02c517bb5440f55f279c21ba0d466ad060087e57581d4797d7f9d2c4123",
+        "source_image_sha256": "ea5582d1c6c2f1cb22170e5090d9ae910283e7a657b55be49eb543ad144430e4",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-21-rounded-region",
+          "line_start": 14,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　__|__|_　　　_,,. -= |　　　 ,.ｲ=x/⌒ヽ.Y´ 圦　　 |　　:|　 |　　x=x　　 Ｙ^Y　|:::::::|",
+            "　　　　　　　　　　　　　　　　　　　i　　　　　　　 |　jI斗r≦　　 f⌒Y 　 ./ |　 | |　　 | |　 |　:.　.::|　　:|　 |＾i　|:::::|　　::|: : |　|:::::::|",
+            "　　　　　　　　　　　　　　　　　　 八　　 　　 ｡o≦　　　　　　_Lﾆｌ二|　 |　|　 | |　　 | |　 |　 Ⅵ |　　:|　 |: l　|:::::|　　.:|__,,| └=''",
+            "　　　　　　　　　　　　　　　 　　 f⌒i｡o≦　　　　　_,,...　-=≦　|　|　:|　 |　|__,,l└‐= '　￣　　:|　|　　:|　 |_」:└=　　　|　 ＿",
+            "　　　　　　　　　　　　　　　_｡si(////)is｡_,,..　-=≦　,.ｨ=x=行刈　|　:|　 |　_　　　,ィ=ミ　//⌒Y :|　　:|　 l　ィ=ミ､　　 |Y´ 　 ｀Y",
+            "二二二二二二二二｡s≦刀刀刀ﾌﾌ77ァｧ‐s｡∩∩:::|::::|　| | |_|　|　:|　 |/_f刈 //＿_ヽⅣ＿,,|_,,|　　:|　 |　|　　 |　　 | |　　　::|",
+            ":Ｙ Y＾Y＾Y Y＾Y＾Y Y＾ＹＹ||ﾆ||ﾆ||´￣｀||⌒|| l」L|」.Ll:.└└' ￣ :|　|　:|　 |　 |　Y|　 __　 :| |: 　 |　|　　:|　 |　|　　 |　　 | |　　　::|",
+            "┘└┴┘└┴┘└┘|:||ﾆ||ﾆ||二二||二||ィ=ﾐY＾Y Ｙ＾YY´｀Y |　|　:|￣|￣|__,|:|Y´　｀Y| |: 　 |　|　　:|　 |　|　　 | 冂::| |＿,,,,.. |",
+            ".ＹＹ´　｀ＹＹ⌒Ｙ Ｙ⌒YY}┬┬rr───‐‐r':| | |::::|　|::: | |::::: | .|　|　:|　 |　 | : |:|:｀Y＾Y´| |¨￣|　|　　:|　 |　l￣~ | 凵::| |　　　::|",
+            "::| |￣￣| :| |;;;;;|| |￣ | |{ﾆ{ﾆi{l_lY⌒YY⌒ :l　| | |::::|　|::: | |::::: | :|　|　:|　 |　 | : |:|　:|　|::::| |: 　 |_,,|　　:|　 |　|　　 |　　 | |　　　::|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Adjacent arches use shared supports and changing projected widths; not separate circles pasted over columns.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-22",
+      "title": "Crescent: nested curves and bounded tone",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "-= ､‐ ､",
+        "｀ ｰ- ‐ ´"
+      ],
+      "native_reference": {
+        "width": 689,
+        "height": 475,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 22; original aa[147]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          22
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-22.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-22.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-22.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 147,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "75b43a4587f0cc7c1ac415924e26280795651156b461d0eba302b6b5d056b300",
+        "source_image_sha256": "44ed0eb0f1ce9889719898057f896c8270c97994d63b4cabe162106dc0bb1510",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-22-rounded-region",
+          "line_start": 2,
+          "rows": [
+            ";';';';';';';';';';';';';';';';';';';';';';';';';':':':':':':':': ' : ' :　:　　:　　　　　　　　　 -= ､‐ ､　　　　　　　　:　　:　: ' : ' :':':':':':':';';';';';';';';';'",
+            ";';';';';';';';';';';';';';';';';';';':':':':':':':': ' : ' :　:　　:　　　　　　　　　 ／　　　　 '.,　ﾞ::,　　　　　　　 　 :　　:　: ' : ' :':':':':':':';';';';';'",
+            ";';';';';';';';';';';';';':':':':':':':': ' : ' :　:　　:　　　　　　　　　　　　∧　　　　　　!　:.:!　　　　　　　 　 　 :　　:　: ' : ' :':':':':':':';';",
+            ";';';';';':':':':':':':': ' : ' :　:　　:　　　　　　　　　　 　 　 　 　 !　ゝ,,　　　／　.:.::|　　　　　　　　　 　 　:　　:　: ' : ' :':':':':':",
+            "':':':': ' : ' :　:　　:　　　　　　　　　　　　　　　 　 　　 　　,　　　￣ 　 . ..::;/　　　　　　　　　　　　　　:　　:　: ' : ' :':'",
+            ":' :　　:　　　　　　　 ＿＿　 ,,,,........ /:`ｰ-ｲ　　　　　　　＼:... ... .:..:.::::／　　　　　　　　　　　　　　　　　:　　:　: ' :",
+            "　　　　　　r=ﾆ二::::::;;;;;;;;;___r‐''''\"ﾞ :.::.:.: .: |　　　　 　 　 　 ｀ ｰ- ‐ ´"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Inner concavity, outer round and bounded punctuation describe a crescent, not a closed disk.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-23",
+      "title": "Ajanta: carved, layered arch",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "xく⌒＞",
+        "ｲ⌒>",
+        "ﾉ＿＿_乂"
+      ],
+      "native_reference": {
+        "width": 648,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 23; original aa[151]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          23
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-23.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-23.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-23.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 151,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "b2cb8bacede9110da4df5d9787e148044d7189475ce03ec7fcced20caf41453a",
+        "source_image_sha256": "029de8b4f09feb059b0b90e966295948c7b05eaefb666bf5962410889df9fcc9",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-23-rounded-region",
+          "line_start": 5,
+          "rows": [
+            ")　| | |::Lｎ_｣:|　 　 | |============ｧ'’　｡s个　{　　}　 个s｡　｀'<===========::| |　　.::|ZZZZ|　{　 |",
+            "≪| |ＺＺＺＺZ|〕ｉs｡.,| |二二二二二,ｱ　 xく⌒＞-乂乂-＜⌒^'>､　寸ニニニニニ:| |　　.::|__( )_,,|　{　 |",
+            "丿| | |瓦「瓦|　 　 | |天天天ｚｚｚｚ′,ｲ⌒>'ﾟ,.イニニニﾐh､'く⌒心,　ﾏｚｚz,天天天| |　　.::|j|＿|ﾘ|ﾟ，＼|",
+            "＼| | |ｆ衍i衍|〕ｉs｡.,| | |:::_( )_√⌒{　√_У,ｲニニニニニﾆﾍ｀，￣ﾍ　}⌒ヽ:( )::: 〈_| |　　.::|_|_|_l__|　ヽ／",
+            "　 | | |::_( )_:::|　 　 | | |ﾉﾉ　ヽ`，　　√./ /ニニニニニニﾆム∨￣}　　　√ｉ ｀ヽ} | |　　.::|::_( )_ |／／",
+            "＼| | |::Lｎ_｣:|〕ｉs｡.,| | |ｲｰｔ-ｼ〉|　　√/_/ニニニニニニニﾆム_￣j}　　　辺_ｧﾉﾉ: | |　／ﾞ|::Lｎ」:|／｢",
+            "　 | | |瓦「瓦|斈斈| | 杙_ノヽ::ﾘ 　 |_Ｌ＿L＿＿＿＿＿＿_Ｌ＿｣　j{　　　{:::{　Π:::| |　　.::|ZZZＺ| |ﾉﾉ",
+            "　 | | |ｆ衍i衍|＿＿|_|_|_∟∟|ﾉ＿__|　　　　　　　　　　　　　　　　|ﾉ＿＿_乂|_ﾉ⊥_|_|＿___|______,||_| 瓜"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Crown ornaments, turning thick band and lower supports surround one opening.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-24",
+      "title": "Halloween: rounded pumpkin masses",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "／⌒⌒ヽ",
+        "川",
+        "彡′"
+      ],
+      "native_reference": {
+        "width": 567,
+        "height": 696,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 24; original aa[160]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          24
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-24.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-24.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-24.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 160,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "261ef8b63b9cb6bc0d9a28960910e930644488eb4e80814940cd4e10f7adc179",
+        "source_image_sha256": "bc4dc6ab60ae799e24b0f5cf149957fc0c23fa2ed61cf49281c30c279721ecd5",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-24-rounded-region",
+          "line_start": 11,
+          "rows": [
+            "､、　-=二二ｱ─ ‐‐ ‐二7: . .　　　　　　　γ7^ 　^｀ヽ「三Ｙﾆ㌻^　^ヽﾉ: :∨二二─　‐",
+            "j心、　-二ア　‐‐ｧ'´-ニj{: : : : : : : . .　†　 {　{｀^^´　 ﾉ｀Ｙﾆ|ﾆ{　｀^^^´}: : : †二二─ ‐ ‐",
+            "　 j心､　ノ　　_／　-二j{: : : : : : : : :ｼ゜￣｀ゝ..＞=＝ミ二丁二＞|￣|＜γ´￣｀ヽ二- -",
+            "　　⌒心、　 .::　　　-=j{: : : : : : : : :(　＿ ./／⌒⌒ヽ }｀ヽ|i／./ △　△ヽ ＿_　ノ　　- -",
+            "　　　 ⌒うぅc｡.,　　-ﾆj{　　　　: : : :ノＹ｀'</､､､､　　 }ﾉ　　}i　 {　ﾄｪｪｪｲ 　} |:::::|∨ _　　-",
+            "　　　　　　　⌒うぅc｡.,′　　　　 γ　}　　}､-‐…ミ＜._　ノ|i､__,＞　　＜ ノ |:::::|ハ |:|",
+            "　　　　　　　　　　ﾆj{うぅ∞*∴｡｡Lぅｿ&㌍∞∵`｀｀'㍉二ﾆＴ二二二二〕ｈ<:::::::Ｙ´￣｀丶",
+            "-ﾐ　　　　　　　‐=ﾆj{　　　　　　　>fﾆｱ´ △　　△　　； 寸_|i=二二|￣|二ﾆ≧ｘ乂＿__ノ",
+            "＿)　　　(￣)　ﾆﾆj{ ＿: : . .　　ノ/二{　トｪ冂ｪｪｪイ　 川:}ﾆ|i二㌻⌒¨⌒冂二|ﾆ7:/_/∧",
+            "　 |三三ｉ|￣|冖￢(＿_)＿: : : (　|ｘ=ミiﾆニ::::ﾆﾆi＿彡′ﾉﾆ|i二{ △　 iニ:: :ニ|ﾆ| |ﾆ| |ﾆ|",
+            "　 | | | | ||　 |丁ＴＴ|　 | |￣二Ｔﾆ7:/ﾉﾉ／:{:::|三三三≧x二|i二乂ﾄｪｪｪィ |::|ﾆハ| |ﾆ| |ﾆ|",
+            "￣　　'' ┴ ⊥ＬＬ｣｣＿|_|_ハ「ﾉ ﾉ{::{／=三{::::{==ﾆ二三|ﾆ＼j_､rf〔三三＞j::{三∧／￣￣",
+            "　　　　　　　　　　　　_､ｒぅ:::{ |；| り|三三ｿ::l::乂=ﾆﾆ三|ﾆ三|ﾆﾆﾆﾆﾆﾆﾆ价〈＼∠..＿＿／",
+            "　　　　　　　　　_､ｒぅﾟ⌒ .}:::{_川厶=-‐………‐-=ﾆ三|ﾆ三|ﾆﾆﾆﾆﾆﾆノ_」Lヽ」二三三|三"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Lobed volumes, faces and directional side/return marks cooperate; not empty-circle outlines.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-25",
+      "title": "Necrovalley altar: another compact return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "ゝ._ ノ"
+      ],
+      "native_reference": {
+        "width": 431,
+        "height": 407,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 25; original aa[162]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          25,
+          26
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-25.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-25.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-25.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 162,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "ae01d9097364bc83a0ad5fc4f28cfd2a04f94d21fdf4b1c6b1c957efc5203b07",
+        "source_image_sha256": "20e27ac8b23a1678728317c35807d6e0e3b5e5a4fc0928e8efd4d9b891c15326",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-25-rounded-region",
+          "line_start": 15,
+          "rows": [
+            "‐-=〈::::|l::::::r‐‐､:::l::::::l .l|　 γ⌒ヽ　　　　 　l. /:::::l:::｀＿::::::l:::」＿ . . .",
+            "/´|l￣￣l|￣￣｀丶､::l .| 　 ゝ._ ノ＿＿＿　〈 l::::-‐:r─┴──‐ ｀ヽ",
+            ":::::::￣￣:::::_::::::|_|::|...｀l .| __Ⅰ二二二二Ⅰ_ | l.／|:|:l　　　|＿_|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "A different lower return closes the compact round above its support.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-27",
+      "title": "Karnak: shallow column-cap arc",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "jI斗-─--ミ",
+        "i{ー彡"
+      ],
+      "native_reference": {
+        "width": 641,
+        "height": 458,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 27; original aa[165]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          27
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-27.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-27.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-27.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 165,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "0c88dfed18092262e381345c56b7b8b8bb151763526d567e6c73b7f8aabb36a2",
+        "source_image_sha256": "90f24a21f848599b4090a9ca4354c2b88a2301e63c4838e3acb6f9d486919325",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-27-rounded-region",
+          "line_start": 7,
+          "rows": [
+            "::{:;:;:;:;ヽﾉ-─…‐‐-､:,　|／ /７ : . /〉:,山| 〈ヽ : : |:,　:,　:,　:,　:,　:|ﾄ､＿　　　　　　　　　 圦 /　 i{　:,　:,",
+            "::乂＿,扞:,　:,　:,　:,　＼|:,　/:/　:,/ /　(__):,　V:, : |叮T__:,　:,　:,..::|　｀ヽ￣＼　　　　 　 　 Y{　:, :i{　:,　:,",
+            ":::::::::::::| jI斗-─--ミ:,　|:, /:/:,　:,○__:, (_):,　:,} }:::,|廻幵{　:,　:,　:,|:,　:,　)　 /　　　　　　　　i{:. 　 i{　:,　:,",
+            "::::::: :: | i{:,　:,　:,　:,　:,ヽ|:, Ｏ__r､/ー :| :{_)Ｙ:, _Ｏ:::,|￣ 卅　:,　:,　 |:,　:,Y ／　　　　　＿,,,...　i{　 :, i{　:,　:,",
+            ":::::::::: | i{-=x:,　:, :, :::::l^|:厂/ﾊiｰｲ　} | :|　 }　ヽ 〉:,|:,　:,　:,　:,　:, : |:,　:,:}´_,.　-─　￣　　　　i{　　,.i{ ／:,",
+            ":::::::::::| i{/77)::::, :, :, : | |:ﾊ　:|　:, {　ﾉ_|: }　ﾉ :, } :{　|:只 石:,　 :, :, :|￣｀|　　　　　　　　　　　　{／,.イ　:,　:",
+            "::::: :: | i{ー彡:,　:,::: :,.:| |// /ー､ |　|　:,|:::{　:,　| |:, |:凸 己:,　:, :, : |　　:|　　　　　　　　　　 　 ＼{ .i{　:,　:,"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "A shallow crown transitions to steep side and lower surface marks; it is not a complete circle.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-28",
+      "title": "Altar: broad perspective ellipse and thick rim",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "｛=-",
+        "⌒≧s｡",
+        "三三三こ=-"
+      ],
+      "native_reference": {
+        "width": 610,
+        "height": 509,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 28; original aa[166]",
+        "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          28
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-28.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-28.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-28.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+            "archive_piece_index": 166,
+            "archive_file_sha256": "bb7373264e8c33236eacbaef381c21df9074b2dd857d5ddefa7ab34732d1fa78"
+          }
+        ],
+        "source_text_sha256_file": "809224645d90b72f74ef3dcd8d6a656bc82a53ba1cecf0463b00f60805ed3bdf",
+        "source_image_sha256": "89f74760d3afbb46e6285830d6a47ced69ae40943f0fc85778da84c3d5505b63",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-28-rounded-region",
+          "line_start": 6,
+          "rows": [
+            ". 　 　/ //`'＜￣　　＞-こ=-_ -　￣｡*`／＿⊥＿＼　ﾟ * 。　 ｀`''＜≧《__》ミ___＼＼",
+            "　　 / //　____＞《__》‐＿‐￣＿_*　　　_j｣⊥=-──-=こ｣j_￣‐ミ￣￣`ﾒミ＜ﾐh､＜＼＼",
+            ".　 / //___≫'ﾟィ㌻／＼／　　 ／ ,， '＾＞''\"´￣人￣｀`'' ＜｀`ヽ、＼　/〈〉 ｀ヽ＼`'マ>｀'弌￣￣",
+            "　/_//,アﾟィ(i㌢／　　　＼__／γ´｀ｼ´ 　 　 　 〈　〉　　　 -=ヽ─ ヽ　〈〉　 《》　 ＼`寸i:､ヽ──",
+            "_/＿,/' /ﾆｱﾟ /　　 《》　　 _ 〈〉{￣ ｛=-　　　　　｀´　　　　　‐=〕─‐}〉〈｀`～､、　 《》｡.や}ｉ｡ﾞ'(─",
+            "/＿/ .小W　;　 《》　　 ｘf〔 ﾟ｡　ﾍ ／`'マﾆ=-　　　　　＿-=ﾆ㌣─,ｧ’　 〉- ､/｀丶､　 }. ﾔﾆﾑ_'.",
+            "＿/{　{三〕　{　　　ｘf〔＼/＼＼__〕iト／｀`''ｰ-=こ＿＿＞＜　　／〈〉／＼ /｀`'7　｀`'ｊ　]ﾆ《___》",
+            "　　]　{へﾊ　ﾟ｡ｘ＜　＼／＼ ＼｀ヽ、⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒　 ｰ──…￢宀ニ7　〔三_〕ⅰ",
+            "　 从. ﾟ｡　小｡ ﾞ'寸￢冖''''““¨¨””￣　　　 ､＿＿＿＿＿　-=ｧ《》　　　　　　　　⌒ソ　厶三7 √",
+            "　/,小　ﾞ'(三込､ ﾞ'≪ 》　　《 》　　　　　　　 ＼＿|＿＿_|＿_/　　　　　　　　　⌒>'ﾟ ／三ﾆｱ /⌒",
+            "　/　,心､ ﾞ寸三≫､、｀'＜⌒　　　 《 》　　　　 ＼＿＿|＿_,/《》　　　　　 ⌒＞'’ ｘi(三ﾆアﾟ /⌒",
+            "　 ｘ≪⌒ゝ ｀''弌三らぅｓ｡~\"''～､、　　　　《 》　　＼＿＿/　　　　　_こ-　ﾟ_,.｡s个三沙'’／≧s｡",
+            "≪≫≪≫≪>ｘ　`'＜三三うぅゎ｡.,_｀`''　ｰ-=こ＿___＼,.厶=-　''\"´_　-こ三三ﾆ＞'’ｘf(⌒",
+            "≪≫^>'’ ≫'’　≫､、｀`'' ＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=-　ﾞ｡s≦⌒",
+            "　≫^<≫'’　≫'’　 ⌒≧s｡..,,_｀`'' ｰ=こ三三三三三三三三二=-　'\"´_,.｡s≦⌒"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Nested elliptical rim, changing thickness, surface marks and paper express a tilted plane.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-30",
+      "title": "Flowers: overlapping petals, bowls and vessel rims",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "(⌒y'⌒)",
+        "（⌒大⌒)",
+        "ヾ､;.＿＿,;ノ"
+      ],
+      "native_reference": {
+        "width": 547,
+        "height": 492,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 30; original aa[93]",
+        "source_url": "https://aahub.org/mlt/5cb42e8a1adf7fc1d97b8f776debbff4",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          30
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-30.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-30.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-30.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/5cb42e8a1adf7fc1d97b8f776debbff4",
+            "archive_piece_index": 93,
+            "archive_file_sha256": "2136f01d0eac4ca072cb601e1700d392c8648fc86277a50be926a865f4574b0f"
+          }
+        ],
+        "source_text_sha256_file": "0de10d36bdf237e7e8f14a6b0c16338637c6d63b9d8f8b53de44036d894ebf67",
+        "source_image_sha256": "c4cc3c54c1160fbdb0fe3480ec8802ea5324a17ee731fb8469c5784ffc39965e",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-30-rounded-region",
+          "line_start": 5,
+          "rows": [
+            "　　 (⌒'^)'/′ .　＜⌒ヾ､{i⌒）_,.─-、　　 　 　 ＿＿＿",
+            "　 (´　')' (⌒y'⌒) 　冫‐(　｀y' ､_）¨´　　　　　　 ヽ_＿_/",
+            "　　弋,ノて__ｿ､⌒)　 ゞ ''（,､ﾉ､_ﾉヾ》　　　　　　　　∨∨　　　　　　　　　　　　　＿＿＿",
+            "　　　,ﾊ`ｙ‐(,_,ﾉ｀´ 　 {_, ｲ　,)ヾ｀ 　 　 　 　 　 　 　 ﾞＴﾞ 　 　 　 　 　 　　 　 　　ヽ_＿_/",
+            "　 /´ゝv'､.,ﾉ､_,＞ 　 　 　｀ｉ|　　　 　 　　_ '　 　 　 ﾉ７　　　　　 　 　 　 　 　　　 ∨∨",
+            "　 `ぐ.,ﾉ､,,ﾉ` 　 　 　 　 　 ||,（｀'） 　 　 （,､) 　 　 くノ　 　　　　　　　ﾋｯｸ　　　　　 ﾞＴﾞ",
+            "　　《ｿ |!　　 ｀　_ 　 　　{ヾ( _｀ﾒ⌒) 　 　 　 　 　 　 　　　__　 _ ＿___　　　　　　　ﾉ７",
+            "　 (＾ヾj|）　　　（,､)　　　(冫(,_人_,）　　　 　 　 　 　 　 /´／::::::::::::::::::::｀ヾ⌒ヽ　くノ",
+            "　.(´ノ（＾Y＾)　　　　　 　 {ﾉ |ﾄ》　　　　　　　　 　 　 　 ∨::／´ ￣￣｀＼:::ヽ_ﾉ",
+            "　くﾐ（⌒大⌒)　　 　　　　　ﾘ　　　　　　　　　　 ＿＿__|::;⊂)つ　 ⊂)つｉ::::::|",
+            "　　〃´(,､）｀　　　　 　 　　　＿＿ 　 　 　 　 　 ＼　 ／!kxv　 ▼ 　vxxh:::/",
+            ".　ﾉ′　　　　_　'´　 　 　／◇:.:.:.:.:.ヽ.　　 　 　 　 （⌒＼＼　 ⊂つ 　 ﾉ／",
+            "　　　 　 　 （,.ﾉ　　　　 ,（:.:.△:.:.＊ :.: ）　 　 　 　 　 ＼＿￣｀ー---‐'^＼",
+            "　　　　　　　　　　　　（.:.:ヾ､;.＿＿,;ノ　　　　　　　　　　　/ 　 　 　 　　　 ＼",
+            "　　　　　　　　　　　　　ﾞｰ='＼ ||　　 　 　 　 　 　 ／⌒ヾ 　 　　　　 ｛｀ヽ､__,）",
+            "　　　　_　'´　　 　 　 　　 　 .)￣(　　＿＿_　　　/　 　 ＿＿,. ─'　　 ｝",
+            "　　　（,.ﾉ　　　　　　　　,.-‐（＿＿）‐＼__∠.　　 ｀ー‐'´　　（　　　　_ノ～４",
+            "　　　　　　　　 　 　 　 ｀ー‐-----, -､ =≡） ) ）.　 　 　　　 ｀￣￣"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Petal lobes overlap; bowl/plate ellipses and vessel returns have separate depth and tone roles.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-31",
+      "title": "Rounded character: chained scallops and shared returns",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒Ｙ⌒ﾝ´｀ヽ",
+        "γ⌒ｿ",
+        "乂＿__メ"
+      ],
+      "native_reference": {
+        "width": 286,
+        "height": 135,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 31; original aa[76]",
+        "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          31
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-31.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-31.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-31.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+            "archive_piece_index": 76,
+            "archive_file_sha256": "ecdf9480d6a81343f5b8fd9a0a4b023e356a09c16f0900879c3d8552de4d0e9a"
+          }
+        ],
+        "source_text_sha256_file": "e7b04789e1ccbdec7f888dbd285bdf931c67e7d37961419c52bb4f025815255f",
+        "source_image_sha256": "fce9616bb85760be786249816d8f655530dc8480e09ec113b47803249d26a4c2",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-31-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　 　 　 　 γ⌒ヽ 　 γ⌒Ｙ⌒ﾝ´｀ヽ",
+            "　　　　　 　 γ⌒ｿ　　　}　　{　　　 　 　 　 }",
+            "　　　　γ⌒ｿ　　　　 γ⌒ヽ!　 l　 / 　 　 ﾘ",
+            "　 　 　 {　　　 　 ､　!Σ　・　 〉　 　 －　／",
+            "　 　 　 乂　　 ー ｀　 { 　 　 乂＿_)￣ ´",
+            "　　　　 　 ｀ー―― ´乂＿__メ､＿",
+            "　　　　　　　　 　 才´　　 　 　 |ヽ"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Several lobes form one outline with shared turns, not a row of independent circular stamps.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-32",
+      "title": "Postal character: nested eye circles and broad return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "Ｙ⌒Ｙ",
+        "人__人",
+        "乂__",
+        "ミ=-"
+      ],
+      "native_reference": {
+        "width": 294,
+        "height": 203,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 32; original aa[84]",
+        "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          32
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-32.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-32.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-32.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+            "archive_piece_index": 84,
+            "archive_file_sha256": "ecdf9480d6a81343f5b8fd9a0a4b023e356a09c16f0900879c3d8552de4d0e9a"
+          }
+        ],
+        "source_text_sha256_file": "1941ef98f919fad6f071ab9fd95ea484494f50c0f1997612836d34e7db584a07",
+        "source_image_sha256": "9bbb35664ef34fa0b03e99cae319f492d9ac2936e5adf02ecaae12353da86675",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-32-rounded-region",
+          "line_start": 5,
+          "rows": [
+            "　 〃⌒　　 ､ l / 　 ｜　 ｜　 ､ l /　 　 ⌒ヽ",
+            "　 {{　 　 　 Ｙ⌒Ｙ　 ｜　 ｜　.Ｙ⌒Ｙ　 　 　 }}",
+            "　 乂__　　 人__人 . ｜　 ｜　人__人　　 __乂",
+            ".　　　{{　 　 　 　 　 └─┘　　　　　　　}}",
+            "　　　八　　　　 ＼　　　　　　 ／　　　　八",
+            ".　 　 　 ＼　　　 　 ー─‐一 　 　 　 ／",
+            "　　　 　 　 ミ=-　　 ＿＿＿　　 -=彡"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Small paired rounds sit inside a larger U-like envelope, with distinct shared returns.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-33",
+      "title": "Round character: long lost-and-found envelope",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "_,,,　　　,,,_",
+        "｀ ‐---‐ ´",
+        "弋 ノ"
+      ],
+      "native_reference": {
+        "width": 421,
+        "height": 356,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 33; original aa[315]",
+        "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          33
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-33.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-33.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-33.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+            "archive_piece_index": 315,
+            "archive_file_sha256": "ecdf9480d6a81343f5b8fd9a0a4b023e356a09c16f0900879c3d8552de4d0e9a"
+          }
+        ],
+        "source_text_sha256_file": "0ec321f0170524dcb7f5bfa86bb1729e7dd0aa68c347285a0a35f64bbf6f0784",
+        "source_image_sha256": "765f88b66f0c1c9ddfc664fd55619fb32b49d0337e140ef30663f1ecaae40203",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-33-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　 _,,,　　　,,,_",
+            "　　　　　　　　　　　　 ＜　　　　　　　 　｀ 　 ､",
+            "　　　　　　　　　 ィ　　　　　　　　　　　　　　　 ヘ",
+            "　　　　　　　／　　　　　　　　　　　　　　　　　　　 ＼",
+            "　　　　　 　 　 　 　 　 　 ●　　　　●",
+            "r ､　　　/　　　　　　　　　　　　　　　　 　 　 　 　 　 　 ﾑ",
+            "{　 ＼ ./　　 　 　 　 　 　 ｀ ‐---‐ ´　　　　　　　　　　　ﾊ",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 ',",
+            "　 ＼　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　}",
+            "　　　ヽ　　　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 i",
+            "　　 　 i　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ゝ",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 ＼",
+            "　　　　 ',　　　　　　　　　　　　　　　　　　　　　　　　　　　,、　　 ヽ",
+            "　　　 　 ∨　　　　　　　　　　　　　　　　　　　　　　　　　/ ｀ '' ‐-'",
+            "　　　　　　 ﾍ　　　　　　　　 　 　 　 　 　 　 　 　 　 ／",
+            "　　　　　　　 ヘ",
+            "　　　　　　　　　 ｀ ＜　　　　　　　　　　　　＞ ´",
+            "　　　　　　　　　　　　　|　　　r──‐i　 　 !",
+            "　　　　　　　　　　　　　|　　∨　　 　 i　　 ｉ",
+            "　　　　　　　　　　　　　弋 ノ　　　　 弋 .ノ"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "A large round body uses shallow crown, shoulders, flanks, interrupted spans and lower turns.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-34",
+      "title": "Fruit clusters: overlapping small rounded units",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "⌒X⌒",
+        "人__ﾉ",
+        "ゝ_ﾑ-kイ"
+      ],
+      "native_reference": {
+        "width": 409,
+        "height": 254,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 34; original aa[65]",
+        "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          34
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-34.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-34.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-34.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+            "archive_piece_index": 65,
+            "archive_file_sha256": "b425e4c3c0c79489f241f6905cd0028468ed5fe36d0beb7b72d8624215842743"
+          }
+        ],
+        "source_text_sha256_file": "247c09ee29e063f88ce28d40e24a35c4b5ff82f7cc621ff8f7e961cf3966c418",
+        "source_image_sha256": "a8b6d4c476cfe87e4ef367ed1a5c39933d83a7f60aae665a43438e82d2dfd984",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-34-rounded-region",
+          "line_start": 4,
+          "rows": [
+            "　　　　　　　　,ｨ=-<⌒X⌒ヽ／　!　　　　　　　　　／／",
+            "　　　　　　　　>‐く⌒k__｀Y´_)ぇ　}　　　　 　 　 ／／　-‐ = '\"￣",
+            "　　　　　　　 人__ﾉこX⌒Y⌒ヽﾚ'　　　　　　／／　　７¨´",
+            "　　　　　　　 Y´ 八　 ﾊ_,ﾉゝ-〈_)＼.　　 , ⌒Yレ⌒X¨)",
+            "　 -―=＝二 ゝ〈　,又__ルｲ_ノﾉ ヾ 丶 / ムへ、_)(　ソﾍ,",
+            "　　　　　　　　｀¨ゞ=x'_∠メﾙ' ⌒ ー　}{ .i〉_ルｲゝ_ﾑ-kイ",
+            "　　　　　　　　　　　　　}　 /　　／／.ﾉヽ人__X__メ、ﾙ-<",
+            "　　　　　　　　　　　　　l　/　／／ ., ' ／ゝくλこj_χ'_ノ",
+            "　　　　　　　　　　　　　i./／／　 ./／　 　｀¨ゞ-=＜¨´"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Many rounded units overlap and occlude, with changing exposed caps and lower returns.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-35",
+      "title": "Face: concentric and tilted eye rims",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "}_＞-ヾ_-",
+        "',::..__ ノ' /"
+      ],
+      "native_reference": {
+        "width": 567,
+        "height": 271,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 35; original aa[101]",
+        "source_url": "https://aahub.org/mlt/d08548555a8be6fa373d54ff8925cd03",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          35
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-35.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-35.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-35.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/d08548555a8be6fa373d54ff8925cd03",
+            "archive_piece_index": 101,
+            "archive_file_sha256": "f6c47e6d6c68a888493af5616ab2b66344a3515c38c2214c6aff1a88ff1ebb0f"
+          },
+          {
+            "source_url": "https://aahub.org/mlt/b685f3a6d5138cc70aced415d448b373",
+            "archive_piece_index": 261,
+            "archive_file_sha256": "d9e4c5a9019f0f6f3ffd70717569a7781e0651b3e6baefb72f268640a2f6ea60"
+          }
+        ],
+        "source_text_sha256_file": "2126a5add782bf73b4fe16638c91d2bd47736302562a0daff711b98956b53fbb",
+        "source_image_sha256": "c90834b65c728a3803a711c8314e15dcff450b5e98317d720e2fc9f1e06687f3",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-35-rounded-region",
+          "line_start": 2,
+          "rows": [
+            "　　　　　　　　　　　　　　＿＿　　ｨ __´　　　}}｀ '' 丶",
+            "　　　　　　　　　　_　-''´　__ｨ''￣ ＜　 ,）　　/　 　 　 ＼",
+            "　　　　　　　　　''--　　　フ::::....　　 ｀ ー―/― 　　　　 ＼",
+            "　　　　　　,:::､´ /_;;::::.　｀　'';;;;,-　,'　　　￣/￣￣　 　　　　 ',ﾐi､",
+            "__　-　''´　i:::;;ｭ|||||_i::::　　　　{ |　::　／　¨/¨¨¨¨　ヽ　､､　　 {ii}ミ,",
+            "　　　　　　',:::;_i|||||i_}:::　　　　=ー　　　／ 　_　　　　 　 ',､　　}||||ﾍ,",
+            "　　　　　　 ',::;,{||||||_i:::　　　　　　　　/　　　}_＞-ヾ_-　　ヾ:.　'//||||i､",
+            "　　　　　　　'::;;||||||/::　　　　　　　 /　　　　}　　 　 i} }　 　}:i /////∧",
+            "　　　　　　　　 '￣'´　　　　　　　 （　　　　　',::..__ ノ' /　　 ,／ //////",
+            "　　　　　　　　 ｀ii´　　　　　　　　　ヽ　 　　　{;',｡/　　　　//ii, {/////∧",
+            "　　　　　　　　　| |　　___　　,　　 　　}}　　 　　',ci　　　 ／'　 || i///////二三､＿＿",
+            "　　　　　　　　　| |　　　 ',　{　　　　/'　　 　　 };;i　　　,'||{　　i| ||/////////-三三===､",
+            "　　　　　　　　　 i|　　　ヽi　） 　 　 !　　　　　　　　　 |||||　　}∨////////////三三ミ､",
+            "　　　　　　　　　　　　　　i| {{　　　　　　　　　　　　　 |||||　 / ///////////////三三三ヽ"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Eye opening, eyelid and surrounding facial turn are nested but nonconcentric in perspective.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-36",
+      "title": "Ruins: compact round against masonry",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ⌒ヽ",
+        "乂__ノ"
+      ],
+      "native_reference": {
+        "width": 670,
+        "height": 390,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 36; original aa[61]",
+        "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          36
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-36.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-36.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-36.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+            "archive_piece_index": 61,
+            "archive_file_sha256": "e28e68afca7f414fd2a29cb6af4918c8a3c4ccf0fbe47d63b024eb6d46bf1fe8"
+          }
+        ],
+        "source_text_sha256_file": "f1d8678484c65b94a07858bd28ee4a1c0121bd00c8ca4448f5e1e20c02f48b6a",
+        "source_image_sha256": "590fb4da8ee60046aa440c24a310b1529bb4698febff6fb85f340464b677f5c9",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-36-rounded-region",
+          "line_start": 16,
+          "rows": [
+            "::|ﾆﾆﾆｉ==「|-┘ﾆﾆ||ﾐ;、:;:;γ⌒ヽ￣＾|_::;::; ::､::＼〉￣　　 _,,..　-‐　''　|__ｒ=ﾐｒ「｣┘|二二二二二二二二;;;;;;;;;",
+            "┴…￢￢￢￢￢￢: :｀\"\"乂__ノｰ--|二|-┘￣　　_､‐''゛ ｎｍn__. . :__ｒ「「_|┘＿: : : : : .:__.:.:.:__.:.:.::__:::::__:;::;:",
+            "｀:､｀:､｀:､｀:､｀:､｀:､｀:､__,,.. 　 -| | ￣　 _,,..　-‐　'' \"´　　　　| |┼| |二| |二| |─| | |ー─‐| |─| |─| |─| |:::::"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The same compact vocabulary serves a different setting; surrounding contacts distinguish its use.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-37",
+      "title": "Japanese room: vessel rims and paired lower lobes",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ｉ´.:.:.:｀ｉ",
+        "乂_,,乂",
+        "{｀¨¨¨¨´}",
+        "乂;;;,,　 ノ"
+      ],
+      "native_reference": {
+        "width": 520,
+        "height": 492,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 37; original aa[55]",
+        "source_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          37
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-37.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-37.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-37.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+            "archive_piece_index": 55,
+            "archive_file_sha256": "d823b9dd4b0440ec070d049ce9796c8b1c18e5952706c680d8bc391b22a2d49d"
+          }
+        ],
+        "source_text_sha256_file": "e1d8cfe3b8e869155c873beb4e7cc0bc0afd0783cf56b51248423964208e4e39",
+        "source_image_sha256": "7878dcc64b4699bc0c4a4d70a2ee0a3804ef66d633d5fe4fcbeacbc85bffb74d",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-37-rounded-region",
+          "line_start": 18,
+          "rows": [
+            "　| :| ||　 ｉiiiii}}ﾆﾆﾆﾆﾆﾆﾆﾆヽ　|:| |　　 　 ＴＴ　　 | |　 　 　 | | 　 | :| |　 　 |",
+            "　| :| ||　　ｉiiiiiｉ}}ニﾆﾆﾆﾆﾆヽ　 |:| |＿＿ｉ´.:.:.:｀ｉ＿|_|＿＿＿| |─_ﾞ‐| |‐-　_|",
+            "　| :| ||＿＿＿|[二二]|＿＿＿|:| |＿＿乂_,,乂＿|三ﾆｉ＝＝＝ｉ |｀'| |.:.:. :..:|￣　　‐",
+            "　| ,|_|,､-只-.、＿＿＿＿＿＿_|_|＿＿＿＿＿＿＿|_|＿＿＿|_|　|_|_.:.:.:.::|.:.:.:.:.:.:.:",
+            "　/＿{｀¨¨¨¨´}＿＿＿＿＿＿＿＿＼＿＿＿＿＿_＿_＿_＿__＿_　ﾆ- _|.:.:.:.:.:",
+            "￣|｀ｉ乂;;;,,　 ノ ￣^||￣￣￣￣￣￣￣￣￣￣￣￣￣￣￣＼、￣￣￣　ﾆ-　_",
+            "¨¨|¨|: : :｀¨¨´ 　 　 ||================================＼、"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Elliptical rims and changing side/return tone construct vessels, not a brightness ramp alone.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-38",
+      "title": "Japanese room: small vase and rounded return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "(__)",
+        "γ＾ヽ",
+        "乂_乂"
+      ],
+      "native_reference": {
+        "width": 792,
+        "height": 475,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 38; original aa[69]",
+        "source_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          38
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-38.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-38.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-38.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+            "archive_piece_index": 69,
+            "archive_file_sha256": "d823b9dd4b0440ec070d049ce9796c8b1c18e5952706c680d8bc391b22a2d49d"
+          }
+        ],
+        "source_text_sha256_file": "12b04f24cdb40a61255892678814ff9ab3d70896fa81275823581619424f4336",
+        "source_image_sha256": "bb8e2099c31d64bc32760891c92066c6826cdbc6e6466797ce6de88d2e89871e",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-38-rounded-region",
+          "line_start": 17,
+          "rows": [
+            "　 || 　 || 　|||　|　|　|| | | |｣i|　|　　　 |: : : : : : | 　 　 |i:|　　　　　　 ゑ　　　<>|　||　 　 ||　　　 　 |ｉ:i|:|",
+            "¨¨¨¨¨¨~~ﾞ||||¨¨¨¨¨ﾞ|¨￣..|i|　|　　　_|＿＿＿|_　 　 |i:|＿＿＿＿_(__)____｢乂ｿ__||　 　 ||　　　 　 |ｉ:i|:|",
+            "　 　 ＿___,|||Ｌ. 　 -┼…=|i|　|　　　　γ＾ヽ　 　 　 :|i:|¨¨¨¨¨¨¨¨¨丁¨¨¨¨¨¨¨¨.|　 　 ||　　　 　 |ｉ:i|:|＿",
+            "¨¨￣:::::::::: :||::::::::::::::::|::::::::::|i|_⊥-----乂_乂------|i:|_ﾟ＿＿＿＿_|＿＿＿＿ﾟ_|　 　 ||　　　 　 |i:ｉ|:|─",
+            ":::::::::::::::::: :: ||:::::::::__ ┴ｧ'⌒k_¨¨¨¨¨¨¨¨¨¨¨¨¨¨二二二二__¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨≧s｡.,_||　　　 　 |ｉ:i|:|:::::::",
+            ":::::::::::__　-=||二=-　^~ﾍ.:.:乂 Yｼ´￣｀｀｀｀￣⌒　　　　　. : : :￣￣￣｀ヽ､＿＿＿＿＿≧s｡.,_　　|i:ｉ|:|:::::::",
+            "-二二=-　￣￣＞く⌒ヽ＞'7′ﾆ=-----=彡　　　ｰ──==彡　　　　　｀丶､￣￣￣￣￣￣｀`　┴二ｰ"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Different small vessels preserve rim/neck/body correspondence at different widths.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-39",
+      "title": "Cherries: two overlapping shaded rounds",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ゝ⌒ヽ",
+        "､ ..:::,ノ",
+        "ヽ､_..::::::ノ"
+      ],
+      "native_reference": {
+        "width": 156,
+        "height": 152,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 39; original aa[144]",
+        "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          39
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-39.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-39.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-39.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+            "archive_piece_index": 144,
+            "archive_file_sha256": "b425e4c3c0c79489f241f6905cd0028468ed5fe36d0beb7b72d8624215842743"
+          }
+        ],
+        "source_text_sha256_file": "5d582f967fd60ea8711cec886ac9299900923ef43baedce27d368fe2760d4b07",
+        "source_image_sha256": "bc21511fbc734c048a064b4dfe5949dc46fd05f9a0213ee734939a885f0e9487",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-39-rounded-region",
+          "line_start": 4,
+          "rows": [
+            "　　　　　　|　＼",
+            "　　 　 　 _,|　/ ゝ⌒ヽ",
+            "　　　／　⊥｀ヽ　　::::::!",
+            "　　　|　　　:::::::|､ ..:::,ノ",
+            "　　　ヽ､_..::::::ノ"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Two attached rounded fruits share stems, depth order and bounded side shading.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-40",
+      "title": "Laboratory ruins: large round opening with depth",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "_,.二二._",
+        "──=彡"
+      ],
+      "native_reference": {
+        "width": 824,
+        "height": 356,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 40; original aa[26]",
+        "source_url": "https://aahub.org/mlt/f2c6919c2b6efd385116f35e107987b9",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          40
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-40.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-40.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-40.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f2c6919c2b6efd385116f35e107987b9",
+            "archive_piece_index": 26,
+            "archive_file_sha256": "ec09fba5427e4861d995c21e74885fab4c1c7b0bf051ce9e7149bf7a1a7c8afb"
+          },
+          {
+            "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+            "archive_piece_index": 141,
+            "archive_file_sha256": "e28e68afca7f414fd2a29cb6af4918c8a3c4ccf0fbe47d63b024eb6d46bf1fe8"
+          }
+        ],
+        "source_text_sha256_file": "2f16b215b3512ae76764bd0423db767d5b2ca5948e8fc54a9f7b417d5bdaaa42",
+        "source_image_sha256": "4b0721ee4d8153555c65ccd496e5627c5879627370799fe3f2695d3a6c4f408c",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-40-rounded-region",
+          "line_start": 8,
+          "rows": [
+            "|::::: |::::::::::: ||¨¨ﾟ|￣::||: |:. :. |.:.|: : |___ｒ┴ｰ|_____,| |'ｉ─| |::|::::::::::::::::: ||::|卩:|‐-:　　　　.: : : : : ::::|: : : : : ::::::::|:::::|: : : : :_,.二二._￢ｰ-=ﾆ..__",
+            "::::: :l|::::::::::: ||::::: | :::: ||ﾐ|┬┘:| : : :.:.:|ﾛﾛﾛ|丁::]| |:|二| |└…￢冖':|::|口:|:.:.　　 　 .::ｉ: : : : : : |: : : : : : :::::|:::::|: :,．' ´::::::::::::::::｀ヽ、: : : : :",
+            "|::: :|:|::::::::::: |:--┴￢:|:ﾛ口:::: |_: : :.:.:|:::::::::|￣__| |:|◯|_|_,. ､､--ｰ‐┷ﾟ、:::i.　　　　..:ｉ:|: : : : :::::|: : : : ::::::::::|:::::| /:::::::::::::::::::::::::::::::::::＼: : : :",
+            ":|::::|ﾐ|::::::::::: |:::.:.:.:.:.:.:.:.|:::: : : : :| |┐: :|:::::::::|￣,,,| |:|: : |ヽ-‐__,,.二￣--‐‐ 　:. 　　.: |:|: : : : : ::|: : : : : :::::::|:::::|:,ﾞ:::::::::::::::::::::::::::::::::::::::::‘，: :",
+            "_| :|: :|::::::::::: |::::.:.:.:.:.:.:.:|:: : : : : |_|_ｉ::::::|:::::::::|￣_:|_|:|: :_|､:|_|＼__,,..､､､--‐　　 :　 .:|_:|:|: : : :.:.:::|: : : : : : ::::|:::::| |::::::::::::::::::::::::::::::::::::::::::::::'.",
+            ":::::|:::::|::::::::::: |:::::::::::::::::ｘ-く￣￣＼へ￣￣￣＼:::￣::::: : |: ::|::::::| : : : .　　　 :　 ::::::::`丶、: ::|: : : : :.:::::::|:::::| :|:::::::::::::::::::::::::::::::::::::::::::::: |: :",
+            "/ ||:::::|-‐…''|:::_,,. ．‐{;;::;:::::/￣:::::}_|┘◯::::::::::::::＼.:.:. :.: ＼|::::::|: : .　　　　 '　 :::::::::::::::::::｀丶、: : : ::::::|:::::| :‘，:::::::::::::::::::::::::::::::::::::::::: |: :",
+            ": :l |___|:;:;:;:: : ￣: : : : :｀¨⌒ゝ.__／‐_::::;:;:::::::::::::::::::::::＼:: : : . ￣: : .　　　　　 　 : : ::::::::::::::::::::::::｀丶、: |:::::|: : : ＼::::::::::::::::::::::::::::::::::::::/: :",
+            ":::| :|;:;:;:;:;:;:;:;:;:;:;:;:::::::::::::::::.:.:.:.:.:.:.:.:;:;:;:;:‐_;:;:;:;:;:;:::::::::::::::::::::＼: : .　　　　　　　　　　: : :::::::::::::::::::::::::::::::::｀¨¨¨ﾆ=-　_:＼:::::::::::::::::::::::::::／: : :",
+            "ﾐ|::::|;:;:;:;:;:;:;:;:;:;:;:;:;:;:::::::::::::::::::::::::::::::::;:;:;:;:‐_;:;:::::::::::::::::.:.:.:.: : :＼　　　　　　　　　　: : : ::::::::::::::::::::::::::::::::::::::::::::::::::::::¨ﾆ=-　_──=彡: : : : :"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "The rim, shaded interior, wall plane and interrupted lower edge construct an opening with depth.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-41",
+      "title": "Cylinder debris: elliptical ends in different orientations",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "_ ,, -- ― -- ,, _",
+        "|¨≧＝==＝≦¨|",
+        "ー　＿ -　\""
+      ],
+      "native_reference": {
+        "width": 707,
+        "height": 271,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 41; original aa[165]",
+        "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          41
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-41.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-41.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+            "archive_piece_index": 165,
+            "archive_file_sha256": "e28e68afca7f414fd2a29cb6af4918c8a3c4ccf0fbe47d63b024eb6d46bf1fe8"
+          }
+        ],
+        "source_text_sha256_file": "18f76ca50712f3d7eec51df0f14a1c0aaf83491b098d8991efe8bce5574570a1",
+        "source_image_sha256": "d43ec8170fdca86ff1831267e8415c007a99f929007e678bbaf6dbfabbae2d4c",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-41-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　 　 　 _ ,, -- ― -- ,, _",
+            "　　　　　　　　　　　　 　 　 　 　 |¨≧＝==＝≦¨|　　　　　　　　　　　　　＿",
+            "　　　　 .　――＜　　　　　　 　 .|　　　　　　　　 .|　　　　　　　　　　　/　　　　｀ヽ",
+            "　　　7〈　 　 　 　 　 ｀＞､　　　 .|　 　 　 　 　 　 |　　　　 　 　 　 　 ∧　　　　　　 ＼",
+            "　　 7　`＜　　　　　 　 　 〉　 　 〉 ＝　===　＝.┴＜　　　　　　　 /　 ＼　　　　　　_〉- ､ ＿",
+            "　　7.　　　 ｀　＜　＿ ≧ 7　 　 |　　　　＞ ´　　　　　｀ヽ　　　　 /　　　　` ＜.　´　　　　.}＼　 ｀ヽ",
+            "　 7　　　　 　 　 　 　 　 7.　 ヘ_!,､　 /　　　　　　　　　　ﾑ　 　 ム　　　　 ／ 　 　 　 　 / 　 ＼ r_ﾊ",
+            "　7　　　　　　　 　 　 　 ﾉ　´　- ヾ≧!　　　　　　 　　_ ＿ ﾑ_.∨　 ゝ､　　/ 　 　 　 　 .　　 　 　 ＼ .}",
+            "..7　　　.､ _ , _,,　ｰ-、_ _-'　　　　　　 ﾔ　　　　- ¨　　　　　 ﾑ/　　　　 ¨f　　　　　 ／　　　　　　　 l'＼",
+            "7　　,´¨￣　　　ゞ　　　　　 　 　 　 　 ﾔ ／　　　　　　　　　 ∧t____ノ..ノゝ_　　 ＜　　　　　　　　 /　´｀ゞ´¨　'' -､",
+            "¨ﾟ　　　　　　　　　　　　　　　　　　　　∧　 　 　 　 　 　 　 　 ∧　　　　　 ＼　　　　　　　　　　 /　　　〈",
+            "　　　　　　　　　　　 　 　 　 　 　 　 　 ∧　　　　　　 　_ 　 ― ∧　　　 　 　 ＼,, -　､　　 　 ／ 　　　 ｿ",
+            "　　　　　　　　　　　　　　　　　　　　　 ＿ヾ,,_　　_ 　¨　　　　　　f　　 　 　 　 　 ＼,,, . --;;;;;;-\"￣ﾞ-丶´¨ ｀",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　｀ヽ、　 　 　 　 　 ｿ",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　ー　＿ -　\""
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Elliptical end faces and side walls change with cylinder orientation and occlusion.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-42",
+      "title": "Wall opening: tilted nested ellipse and runoff",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "／: _",
+        "＞.、＿＿ ,"
+      ],
+      "native_reference": {
+        "width": 562,
+        "height": 373,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 42; original aa[217]",
+        "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          42
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-42.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-42.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-42.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+            "archive_piece_index": 217,
+            "archive_file_sha256": "e28e68afca7f414fd2a29cb6af4918c8a3c4ccf0fbe47d63b024eb6d46bf1fe8"
+          }
+        ],
+        "source_text_sha256_file": "7ed61cc0b80526a9a1ce2701d86ba318580d5e1ffd995205693d073bb48c0ed1",
+        "source_image_sha256": "02cb08005458d6479c9f0e27747cd62c2ebd376c849cbc63d119100daaad6772",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-42-rounded-region",
+          "line_start": 3,
+          "rows": [
+            "　　/:::　　　　＿_　　　　　 ＞ 、　　　　 ,;::.;:::.;:::.,;:::,;:... . 　 　 　 / 　 　 ／　　　 , ィ ´￣￣",
+            "　　|::　　／: _　　　｀ ヽ　　　 　 ＞　 -―.::‐;‐:;‐:.――――-. 　 　 ／　　　　　￣￣￣",
+            "　　|::　 ,'::::: :　｀　、　　 ｀ 、　　　.／　　 '::;:.:,;:.:,;:.; ; 　 　 　 　 ＼／",
+            "　　|::　 |:::::::　　 　 ' .、　　 ' ,　／　　　　 :.;;:.,;:.:,;,;:.　　　　　　 　 |",
+            "　　|::　 |::::::::.'　、.　 　' ,　 　.',　　　　　 　 :.;,::;.:,::.:　　 　 　 　 　 |　　　　＿＿＿",
+            "　　|::.　 ';:::::::::.　' , 　 　 ',　　 |　　 !／￣￣￣￣￣￣￣＼: . 　 |　　　　｀",
+            "　　|::　　 ﾏ:::::::..　i　　 　.!　　.!　　.|　＞　、　　　　　　 ／::|:.:.:　 |",
+            "　　|::.　　　＼::::... 　 　 ,.' 　 / . 　 |　　　　＞　、 __ ／ 　 .|:.:.:　 |　　　　　　　　＿＿＿",
+            "　　|::　　　　　＞.、＿＿ ,　'　　　 |　　　　　　　 |.:.|　　 　 |:.:.:　 |　　 　 　 　 　 ￣￣￣",
+            "　　|::　　　　　　. : : .:i',:i',;i! _ 　 　 .|　　　　　,. ≦=∧　　　.|:.:.:　 |",
+            "　　|:: 　 . : . : : . : : ...:i',:i',;i!: : : :　　|　　,. ≦ = - =:-∧　　 |:.:.:　 |　　　 ー --",
+            "　　|::.: : : : : . : : . : :.:.:i',:i',;i!: : ; -==|≦ = ≡ -―- 三∧ __.|:.:.:　 |",
+            "　　|::: : : : : : : : : :.::.:..:i',:i',;i!/ﾟ｀ -　= ＿　- ―　- =　≡ :. : :｀＞ |",
+            "　　|::: : : : : : : : : :..ヾﾞ:i',:i',;i!そ = ＿　_ __　- ヾ _ ￣ - シ :. :.　:.　＼"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Inner and outer elliptical boundaries enclose a shaded recess; runoff begins below the opening.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-43",
+      "title": "Eyes: nested round openings and thick lower bands",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ヾ:::::::::::ノ",
+        "ﾏ＞...､＿＿＿,...ィﾀ",
+        "＝==＝"
+      ],
+      "native_reference": {
+        "width": 652,
+        "height": 169,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 43; original aa[115]",
+        "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          43
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-43.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-43.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-43.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+            "archive_piece_index": 115,
+            "archive_file_sha256": "bad281b2a0dbaf5a544949f2a503615b7bd21ae3cc487bacf6e4e4ca06afb755"
+          }
+        ],
+        "source_text_sha256_file": "feef4b577d82be1e2e23cc5e0f174d001bb6094ad1ead2dbb02b04f1d495b065",
+        "source_image_sha256": "e714c4ee2f5402266578e0273fb03eb7914260e5ac70bbf0577d8493819d091b",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-43-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　 　 　 　 ＿＿＿_　　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 　 ＿＿＿_",
+            "　　　 　 　 　 _,. ,ィｾ:;ｱ―――　‐≡ミ　　　　　　　　　　　　　　　 　 　 　 　 ィ≡‐　―――ｴ;::-、.,_",
+            "　　　　　　　 ／´,'::/　　　　 __　　　　ヾ;:ﾐ､ ヽ　　 　 　 　 　 　 　 　 　 ,r' ﾐ:;/　 　 　 __　　　　ﾊ::',｀＼",
+            "　　　　　　, '　　.i::;′ 　 .,ｨ::::::::::ヽ　　　 'ﾊ. ヽ　　　　 　 　 　 　 　 　 / 　.ﾊ' 　 　 ,ｨ:::::::::::ヽ　 　 ';::i. 　 ' ,",
+            "　 　 　 　 　 | 　.!:|　　　 i:::::::::::::::::i　　 　 !:! 　　、　　　　　　　 　 　 ,　 　 !:! 　 　 ｉ:::::::::::::::::ｉ　　　|:! 　｜",
+            "　　　　 　 　 ',　 !:!　　　 ヾ:::::::::::ノ　　　./::}　 　 ',　　　　　　　　　　,'　　　{::l 　 　 ヾ:::::::::::ノ 　 　 !:! 　,'",
+            "　　　　　　 　 ',　';:､　 　 　 ｀　´　　　 ,.ﾀ:;′　., '　　 　　　　　　　　' ,.　　;:ﾑ.,　 　 　 ｀　´ 　 　 ､:;'　,/",
+            "　　　　 　 　 　 ヽ. ﾏ＞...､＿＿＿,...ィﾀ::/ , .ィ　　　　　　　　　　　　 　 ゞ　, ﾞｉ::ﾑｪ...,＿＿＿､...＜ﾀ.,r'",
+            "　　　　　　　 　 　 ｀｀ﾞ ‐-＝==＝ -‐ ﾞ´´　　　　　　　　 　 　 　 　 　 　 　 ｀｀ﾞ ‐- ＝==＝-‐ ﾞ´´"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Pupil/iris openings, outer eye rim, thick band and paper are selected together.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-44",
+      "title": "Eye: partial face with nested round and pupil",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "-‐‐=＝＝",
+        "{　 ●　 l",
+        "ゞ__ 　.ﾉ"
+      ],
+      "native_reference": {
+        "width": 338,
+        "height": 339,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 44; original aa[117]",
+        "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          44
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-44.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-44.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-44.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+            "archive_piece_index": 117,
+            "archive_file_sha256": "bad281b2a0dbaf5a544949f2a503615b7bd21ae3cc487bacf6e4e4ca06afb755"
+          }
+        ],
+        "source_text_sha256_file": "c92d6b2a2317119915568b8c5904a06f8e28e194da8651f8a5eb443b39d80c2a",
+        "source_image_sha256": "28040e82d17316546c12e04017a999b1e53abffb44a68ef513fc1be4307c75a4",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-44-rounded-region",
+          "line_start": 10,
+          "rows": [
+            "　　　　　　　 .!　　　　　 -‐‐=＝＝ 、;;::::::..　 　 　 :::::",
+            "　　　　　　　 |　　　　 ´,　-__=＝-　　:::::::::::.",
+            "　　　　　　　 |　　　　 ,　´　　__￣｀ヽ",
+            "　　　　　　　 ｌ　　 　 ,　 　 ,´　　 ヾ　ゝ",
+            "　　　　　　　 ｌ　　　　l　　 {　 ●　 l　 ｀、",
+            "　　　　　　　 |　　　　 ゜、　ゞ__ 　.ﾉ　 i",
+            "　　　　　　　 ｌ::::::::::::::::;;, 、＿ __ -‐..'....,,",
+            "　　　　　　　 ｌ::::::::::::::::::::::::::::::::::::::::::::::;;;;"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Eyebrow/lid, iris and pupil have different curvature and tone; surrounding face remains visible.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-45",
+      "title": "Large eye: broad round with edge-bound tone",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "｀ー::::::::::::::::＿-‐"
+      ],
+      "native_reference": {
+        "width": 590,
+        "height": 322,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 45; original aa[219]",
+        "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          45
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-45.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-45.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-45.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+            "archive_piece_index": 219,
+            "archive_file_sha256": "bad281b2a0dbaf5a544949f2a503615b7bd21ae3cc487bacf6e4e4ca06afb755"
+          }
+        ],
+        "source_text_sha256_file": "896917052f4f84c5063f51e212f0161186306e4cae24f446add2af8701a9a18b",
+        "source_image_sha256": "67ae9b6c7a42b1ffeafdfed2846caa69ccdc6622f1623a2c7cdc99692f556a93",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-45-rounded-region",
+          "line_start": 2,
+          "rows": [
+            "　　　　　　　 o　　　　　　　　　　　　　 - 　 -\":::::::::::::::::::::::::::｀ヽ､　　　　　　 　￣｀ ､ |::::::　　　|",
+            "　　　　　　　 ＼　　　　　　　　　 ´ 　　　／:::::::　:::　::　:　::　::::::::::ヽ　　　　 　 　　　　|::::::　　　|",
+            "　　　　　　　　　＼ ,,,,,,,,　o　／ 　 　 　/:::::::::　:　　　　　　　:::::　:::::ヽ 　 　 　　　 　　|:::::　　　|",
+            "　　 　 　 　　 　（;:;:;:;:ヾ-r 　 　　　 　 /::::::::　　　　　　　　　:　　　:::::::|　　　　　 　　　|:::::　　　|",
+            "　 　 　　　 　　 ソ;:;:;:;:;:;:;:｝　　 　　　　|:::::::::　　　　　　　　　　　　　　l　.　　　 　 　 　|:::::　　　|",
+            "　　　　　　　　 ゞｲ\"ヾ,:;:,ｿ 　　 　 　　 i　　　 　　　　 　　　　　　:::::::::i 　 　 　　 　 　|:::::　　　|",
+            "　　　　　　!l(;:;:ノｒ-´^~　　　　　　　　　l　　　　　　　　　　　　　　:::::/ 　 　 　 　 　 /|:::::　　　|",
+            "　　　　　　　　　 　|∫　 　　 　 　　 　 ヽ:::::::　　　　　　　　　　::::::/　　　　　　　／　|::::　　　|",
+            "　　　　　　　　　　|∫　　　　　 　　　　　 ＼:::::::: :::　::　　::::::::::::／　　　　 　　_;:;:⌒ゝｿ;:::::　　|",
+            "　　　　　　　　　 人ゞ ζ 　　　　　　　 　 　｀ー::::::::::::::::＿-‐ '　　　　　　　（;:;:;:;:;:;:;:;:;:) ::::　　|",
+            "　　　　　　　 　 /三ヽζ　　　　ζ　 　 　　　 　　￣￣ 　　　＿＿　 ⊂￣￣⊃;;;;;;;;;;/;::::　　|"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Shallow crown, sides and lower turn cooperate with a nonuniform bounded tone field.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-46",
+      "title": "Eye: tiny round highlight inside a large envelope",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "〃⌒Y",
+        "乂__ノ",
+        "弋こﾘ"
+      ],
+      "native_reference": {
+        "width": 575,
+        "height": 220,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 46; original aa[220]",
+        "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          46
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-46.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-46.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-46.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+            "archive_piece_index": 220,
+            "archive_file_sha256": "bad281b2a0dbaf5a544949f2a503615b7bd21ae3cc487bacf6e4e4ca06afb755"
+          }
+        ],
+        "source_text_sha256_file": "fdb248fe92ca83cadb4d00a0d29f68ac6024b46961b998f22ea2b495cbc3e2ff",
+        "source_image_sha256": "9147a93dac971e5d2742d09821dea2b66611566132db8e1c995ebe013df500e7",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-46-rounded-region",
+          "line_start": 1,
+          "rows": [
+            ":i:i:i:i:i:i:i:i:i:i:i∧　　　　　　　　　_　-=‐　 　_　　-=ﾆﾆ=‐　　_　　　　 　⌒＾＼i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i",
+            ":i:i:i:i:i:i:i:i:i:i:i:ｉ∧　　　　 　_　-=　　　 　／　　　　　　　　 　 ＼ 　 　 　 　 　 ＼i:i:i:i:i:i:i:i:i:i:i:i:i:i",
+            ":i:i:i:i:i:i:i:i:i:i:i:i:ｉ∧　 　_　イ´　　　　 　〃⌒Y　　　　　　　　　　　　　 　 　 　 　 ＼i:i:i:i:i:i:i:i:i:i:ｉ",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ:∧　　 　ﾉ　　　　 　 /乂__ノ　　　　　　　　　　　',　　 　 　 　 　 　 ＼i:i:i:i:i:i:i:i",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ:∧　　〃　　　　　　ｌ　　　ﾟ　 　 んhﾊ　　　　 　 ｌ　　　　　　　　 　 |}^　、:i:i:i",
+            ":i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ∧／　　　　　　 　|　　　　 　 弋こﾘ　　　　 　 |　　　　　　 　 　 〃　/^ ､:ｉ",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ:∧　　　　　　　　　　　　　　　　 　 　 　 　 　 ,　　　　　　　 　 〃　/　 　＼",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i∧､ 　 　 　 　 　 ＼　　　　　　　　　　 　 ／　　　 　 　 　 ／ 　/",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i∧＼　　　　　　　　　　　 　 ＿＿　 　 　 　 　 　 　 　 ／ 　／",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ∧　 　、　　　　　　　　　 　 ￣　　　　　　　　　 　 ／ 　／",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:ｉ:ｉ∧　 　＼　　　　　　　 　 　 　 　 　 　 　 　 　 イ 　 ／",
+            "i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:i:∧　　 　`　　　　　　　　　　　　　 　_"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Small highlight, inner dark mark, outer round and eyelid are separate nested features.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-47",
+      "title": "Dog: rounded eyes inside textured head",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "γ oヽ",
+        "ゝ .ノ",
+        "乂 .ノ",
+        "__彡´"
+      ],
+      "native_reference": {
+        "width": 501,
+        "height": 560,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 47; original aa[95]",
+        "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          47
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-47.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-47.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-47.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+            "archive_piece_index": 95,
+            "archive_file_sha256": "85e42a18697c860495df2b72b7d9448872c82fa050a35300526f8095f5487462"
+          }
+        ],
+        "source_text_sha256_file": "4c54afe6679da1edb7be6a3c11544f1141b8cfcc562f38484f637ea4eff48ab5",
+        "source_image_sha256": "a0aa5d9b073be71516c9df57cf9ae95f174463532389b478848e19fe4d7c6e42",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-47-rounded-region",
+          "line_start": 4,
+          "rows": [
+            "　　　　　　　 ,､　　　　　　　　　　x'^`ヾ　　　　　　　　　　　|ﾄ､ i|{｢　|!　f 0 } {　}!",
+            "　　　　 ,x'^´｀:.`ヾ,　　　　　 　 ,爻: : : :`ﾐ　　　　　　　　　　|i＼i|{l___|!｡　ﾌ/ 乂ﾉ",
+            "　　　　,ﾐ : : : : : : :ﾐ､,､,､,､,､,､,､,爻: : ;;;;;;,:`ﾐ",
+            "　　　　ﾐ: : : : ;;;;;; 爻: : : : : : : : : : : ｀`ミx;; :ﾐ,",
+            "　　　　ﾐ: : : ;;;;;;;;爻 : : : : : : : : : : : : : : : : `xﾐ,",
+            "　　 　 ﾐ: : : ;;;;;,爻: : : : : : : : : : : : : : : : : : :`x<",
+            "　　 　 ﾐ: : :;;;;;;x': : : : : : : : : : : : : : : : : : : : : :.ﾐ､",
+            "　　　　ﾐ : : :,x : : : : : : : : : : : : : : : : : : :: : : : : : ﾐ",
+            "　　　　爻x': : : : : : : : : : : : : : : : : : :.:γ oヽ: : : :ﾐ",
+            "　　　　爻 : : : : : : : : ::γ oヽ　　　　　ゝ .ノｰ : : ﾐ",
+            "　　　　'爻: : : : : : : : : :乂 .ノ　　 　 ===､　,　 　 ﾐ 　ヽ",
+            "　　　　 '爻: : : : :　　　 　 　 　 　 (ﾆﾆﾆi} 　:,　　ﾐ::　　　　＼",
+            "　　　　　｀ミx: : :　　　　　　 　 　 　 　 　 _,,ﾉ　 ﾐ:::}　　}　　　 ,",
+            "　　　　　　｀ミx: 　 　 　 　 　 ,,,,,,,,,｡r≦ｦ´　　 ﾐ:::,′",
+            "　　　　　　　 `ミx　　　　 　 　 　 　 　 　 　 ﾐ':::ｲ＼ ノ　 　 　 }!",
+            "　　　　　　　／　 `ミx　　　　　　　　 　 __彡´ 　 　 ＼　　　,",
+            "　　　　　 ／　　　　　 `ミ=ｰ=≠=ｧﾆ二〔　　　 　 　 　 ＼／"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Compact eye rounds sit inside a fur-edged round envelope; texture can carry the contour.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-48",
+      "title": "Dog: fur turns and paired mouth returns",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "ﾐ",
+        "シ",
+        "乂＿_乂"
+      ],
+      "native_reference": {
+        "width": 435,
+        "height": 288,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 48; original aa[108]",
+        "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          48
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-48.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-48.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-48.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+            "archive_piece_index": 108,
+            "archive_file_sha256": "85e42a18697c860495df2b72b7d9448872c82fa050a35300526f8095f5487462"
+          }
+        ],
+        "source_text_sha256_file": "2c6218f004b9897a8840b8a0a522be491bf43b714e16f67793c3327ecd054ac4",
+        "source_image_sha256": "04fc84f0487d65c2f6f3bd8e6a5d659c42936eaa2972d18b928aef3ad2ad287c",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-48-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　 　,.　-‐ ､　　　　　　　　 　　 ､-‐ 、",
+            "　　　　　 　 　 　 ﾐ　　　　`､　　　　　　 　 ､:｀　　　 ﾐ、",
+            "　　　　　　　　　 ﾐ　　 ヾヽ　ﾞ:,　　　　　 　,:ﾞ,:ﾞ 　　　　ﾐ、",
+            "　　　 　 　 　 　 ﾐ　 ヽヾ 　''\"｀ \"\"\"\"\"\"\" ´　'' ,:ﾞ ,,.シ{ _ﾐ、",
+            "　 　 　 　 　 　 ﾐ｀シﾞ　　　　　　　　　　　　　　　　　　｀ヾ、",
+            "　　　　　　　_,.シﾞ　　　　　　　　　　　　　　　　　 　 　 　 `ト.,,ノ(",
+            "　　　__,,.｀二ﾝ′　　　　　　　　　　　　　　　　　 　 　 　 　 ヾミｰ--",
+            "　　　‐--‐ｧﾞ　　　　　　 　,;:　　　　　　　　:;,　　　　　　　 　　ﾞく\"´",
+            "　　　 ___彡　　　　 　 　 　　　　　　　　　　 　　　　　　　　　　ミ､_,,.",
+            "　　　ヾ､　　　　　　ー=fぴゞ´　　　 　｀fぴゞ=ー　　　　　　　__,シ⌒",
+            "　　 ,,.ノ　　 　 _,､ﾞ 　 　 　　　 　ﾊYﾊ　 　 　 　 　 `: .､　　　　｀ゝ",
+            "　　 ヾ、　　_,､ﾞ　　　　　　,:ﾞ　　 辷ヲ　　ﾞ:,　　 　 　 　 `: .､　　く.,__",
+            "　　,,.彡　　　　 　 :! 　　,,__ 　　;;;人;;;　　 __,, 　 :!　　　　　　　　シ´",
+            "　 　｀ミ　　　 　 　 ﾞ:, 　 ＼｀¨T¨　　¨T¨´／　 ,:ﾞ　　　　　　　 　ミ、",
+            "　　 ,.シ　　　　　　　ﾞ:, 　　 ＼乂＿_乂／　　,:ﾞ　　　　　　　　　＜,_",
+            "　　ヾ　　　　　　　　　　　　　　 ー　‐　　　　　　　　　　　　　 　 ｀ミ.,,"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Texture bundles turn with the head; paired lower returns belong to the mouth, not the fur boundary.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-49",
+      "title": "Dog: long curved body and facial return",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "-‐… -ﾐ",
+        "＼_彡'⌒丶",
+        "`ー―― '''\"´`ー---‐''\""
+      ],
+      "native_reference": {
+        "width": 539,
+        "height": 543,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 49; original aa[145]",
+        "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          49
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-49.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-49.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-49.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+            "archive_piece_index": 145,
+            "archive_file_sha256": "85e42a18697c860495df2b72b7d9448872c82fa050a35300526f8095f5487462"
+          }
+        ],
+        "source_text_sha256_file": "71edc9026a2cedf1886e27f2cc99811a428d14a48e2adb6815885776b3c0af8a",
+        "source_image_sha256": "8581263f6385c73f949f32b66bad526f1a3df8edfa89b7ab354a1f5962d6af7c",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-49-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 　 　 -‐… -ﾐ　,　-‐ｪｪｭ､",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 ,　´　　　　　　　ヽ",
+            "　　　　　　　　　　　　　　　　　 　 　 　 　 　 　 　 　 　 ｲ　　　　 　 　 　 心　 　 　 ﾉ",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 ／　ﾐ　　 　 rｰ　､　弋ﾉ　　　,",
+            "　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 ／　　 ﾐ　　 　 {　 　 ＼ ﾞﾞ　　／",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　 { 　 　 ﾐ　　　　 { 　　　　＼／",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　 　 ＼_彡'⌒丶、　{　　　　 　 ＼",
+            "　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 ／´￣￣｀丶＼,{　 　 　 　 　 ＼r'⌒)",
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　´　　　　　　　 ＼;{ 　 　 　 　 　 ノ ／",
+            ".　　　　　　　　　　 　 　 　 　 　 ,　　 '\"´　　　　　　　　 　 　 　 ハ____________／　/",
+            ".　　　　　　　　　　　 　 -‐　　　　　　　　　　　 　 　 　 　 　 　 　 　 ｀ヽ 　/　　/",
+            "　　　　 　 　 　 　 ´　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 } /　　/",
+            "　　 　 　 　 ／　　　　　　　　　　　　　 　 ,　'\"´￣｀ヽ 　　　 {　　　　　 }/ 　 /",
+            "　　　　 　 /　　　　　　　　　　　　　 　 ／　　　　　　 } 　　　{ 　 　 　 ノ 　 /",
+            "　　　　　　　　　　　　　　　　　　 　 ／　　　　　　　　}　　　 {　　　　　　　/",
+            "　　　　　′　　　　　　　　　 　 　 /　　 　 　 　 　 　 } 　　　{　　　　　 ／",
+            ".　　　　 {　　　　　　　　　　　 　 /　　　　　　　　　　 }　 　 人 　 　 ／",
+            ".　　　　 l　　　　　　　　　　　　　　　　 　 　 　 　 　 ﾉ-‐ \"／⌒)ｰ'\"",
+            ".　　　　 {　　　　　　　　　　　　　　　 ﾉ　　　　　　 / 　 ／　 ／",
+            "　　　 　 ヽ　　　　　　　　　　　　　 /　　 　 　 　 厶イ　　／",
+            "　　　　　　}　　 　 ,ｨ　　　　　　　 /　　　　　　 .:.'　　　／",
+            "　　　　　 ﾉ 　 　 /:.　　　　　　　/　　　　　　.:.'　　 ／",
+            ".　　　 ／　　　 /､:.　　　　　 　 {　　 　 　 ,:.:' 　 ／",
+            ".　　 /　 　 　 /　 `ー―― '''\"´`ー---‐''\" ¨¨´"
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Long body arcs, ear/neck turns and supporting contacts read together; no closed-circle requirement.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    },
+    {
+      "id": "profile-circle-50",
+      "title": "Plant: overlapping round berries with side tone",
+      "pattern_family": "operator-profile-rounded-construction",
+      "focus_forms": [
+        "_{x : . 　. :､}",
+        "ヽ._,_._,ソ⌒>",
+        "_,_._,ソ⌒>"
+      ],
+      "native_reference": {
+        "width": 487,
+        "height": 152,
+        "kind": "saitamaar-comparison"
+      },
+      "provenance": {
+        "source_id": "My MLT circle entry 50; original aa[18]",
+        "source_url": "https://aahub.org/mlt/7a9ec10846347e9f3860befc2d7b0ffc",
+        "profile_url": "https://aahub.org/mlts/6zbpnrsgp96r",
+        "profile_entry_indices": [
+          50
+        ],
+        "profile_visibility": "private draft; unchanged",
+        "text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-50.txt",
+        "raw_text_path": "assets/glyphs/contextual/profile-circle-20261026/entry-50.raw.txt",
+        "image_path": "assets/glyphs/contextual/profile-circle-20261026/entry-50.png",
+        "archive_matches": [
+          {
+            "source_url": "https://aahub.org/mlt/7a9ec10846347e9f3860befc2d7b0ffc",
+            "archive_piece_index": 18,
+            "archive_file_sha256": "2dced500c6317621682285ed13e07ebc486512450e6a1c874e1efdb992975316"
+          }
+        ],
+        "source_text_sha256_file": "d8fcb4291ef131c7869fa69aea9eda8ad9430ff4c870a223c2151822a0ced7ba",
+        "source_image_sha256": "26852b976bb8181ccf3bbb916642829f97eeb07c717e66189fcdf835b2a2c1c7",
+        "reference_registry_path": "assets/glyphs/contextual/profile_circle_evidence.v1.json",
+        "annotation_status": "operator-selected list membership; feature readings are root interpretations, not new operator rectangle labels",
+        "native_image_status": "NEW Saitamaar 16px/17px-row comparison from exact original TXT; NOT a recovered original PNG or browser screenshot",
+        "source_binding_status": "whole original text matched; only outer whitespace ignored for matching; originals preserved unchanged",
+        "context_limit": "Zero-based profile positions and archive aa indices are different namespaces. Still reference only; no temporal or renderer acceptance."
+      },
+      "passages": [
+        {
+          "id": "entry-50-rounded-region",
+          "line_start": 1,
+          "rows": [
+            "　　　　　　　　　　　　　　　　　　　　　　　　　　 　 　 　 　 　 _..._",
+            "　　 　 　 　 　 _..._　　　　　　　　　　　　　　　　　 　 　 　 , '´　　｀ヽ",
+            "　　　 　 　 , '´　　｀ヽ　　　　　　　　　　 　 　 　 　 　 　 _{x : . 　. :､}",
+            "　 　 　 　 _{x : . 　. :､}　　　　　　　　　　　　　　　　 , '\": . . ヽ._,_._,ソ⌒>",
+            "　　　 , '\": . . ヽ._,_._,ソ⌒>　　　　　　　　　 　 　 　 ｛x: .　. ..:.｝　У´￣｀ヽ",
+            "　　　｛x: .　. ..:.｝　У´￣｀ヽ　　　　　 　 　 　 　 <こヽ:x._._,:<⌒｛x:. . .　..､}",
+            "　 <こヽ:x._._,:<⌒｛x:. . .　..､}　　　　　　　　..　　　　　　　　　 ＞ﾍ、 _,_._,ソ⌒>",
+            "　　 　 　 　 　 ＞ﾍ、 _,_._,ソ⌒>　　　　　　ﾋ＠ . . ."
+          ],
+          "operator_label": null
+        }
+      ],
+      "interpretation": {
+        "observed_visual": "Individual berries keep cap, side tone, return, attachment and foreground/background order.",
+        "drawn_analogy": "Compare the complete form, neighboring rows, enclosed paper and purposeful tone; focus fragments are locators, not independent stamps.",
+        "mathematical_family": "Visual rounded construction; no curvature detector is inferred.",
+        "historical_implementation_limit": "Original editor/workflow unverified. No fixed circle alphabet, runtime algorithm, GIF behavior or universal thickness follows."
+      }
+    }
+  ]
+}

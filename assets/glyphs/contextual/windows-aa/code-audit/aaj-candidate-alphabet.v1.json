@@ -1,0 +1,1038 @@
+{
+  "executable_sha256": "891dc66d0fe134e0002c7cfb1e296dec407ccb0afb0253418d77741b33756fb5",
+  "execution": "none; static PE bytes and native objdump only",
+  "constants": [
+    {
+      "va": "0x450c68",
+      "file_offset": "0x50068",
+      "encoding": "utf-16le",
+      "byte_length": 148,
+      "bytes_hex": "20003f005c0030003100320033003400350036003700380039006100620063006400650066006700680069006a006b006c006d006e006f007000710072007300740075007600780079007a004100420043004400450046004700480049004a004b004c004d004e004f005000510052005300540055005600580059005a00210022002700280029003d002d005e009b309c309fff",
+      "sha256": "dd6f4f3eaf7e6f4374fef1edbd4ea5949c827ab7c49170a48cbcf1e6306c23fa",
+      "text": " ?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^゛゜ﾟ"
+    },
+    {
+      "va": "0x450d08",
+      "file_offset": "0x50108",
+      "encoding": "cp932",
+      "byte_length": 54,
+      "bytes_hex": "3b3a7b7d5b5d2f814281412e2c5f82a482ad82b582c682e8835e8367836d8371837e8381838882688341834583478349834a834c834e",
+      "sha256": "61e1700ff2c6ecb8c9de025b81dda2b5e4dc46bc47b6128fbed73e73a0ca6f35",
+      "text": ";:{}[]/。、.,_うくしとりタトノヒミメヨＩアウエオカキク"
+    },
+    {
+      "va": "0x450d48",
+      "file_offset": "0x50148",
+      "encoding": "cp932",
+      "byte_length": 24,
+      "bytes_hex": "83508352835483568358835a835c835e83608162849f815b",
+      "sha256": "377ebf475ddb7d589bbfbf963e916c87e1facde3e3bc16b546b865d6654c0fb3",
+      "text": "ケコサシスセソタチ｜─ー"
+    },
+    {
+      "va": "0x450d6c",
+      "file_offset": "0x5016c",
+      "encoding": "cp932",
+      "byte_length": 37,
+      "bytes_hex": "81558154815381528146815f815e8343814a814f8169816a816b816c817581768171817225",
+      "sha256": "b14d30d980a66625b85857e585224eaf5817af33bfa368a71946e1ccb10dae87",
+      "text": "ゞゝヾヽ：＼／イ゛＾（）〔〕「」〈〉%"
+    },
+    {
+      "va": "0x450d98",
+      "file_offset": "0x50198",
+      "encoding": "utf-16le",
+      "byte_length": 164,
+      "bytes_hex": "20003b003a002e002c005f007b007d005b005d002f003f005c0030003100320033003400350036003700380039006100620063006400650066006700680069006a006b006c006d006e006f007000710072007300740075007600780079007a004100420043004400450046004700480049004a004b004c004d004e004f005000510052005300540055005600580059005a00210022002700280029003d002d005e009fff",
+      "sha256": "c592e415f78ea9fd0c5abd8e03a7ca29e4b9e806fd012956fc8dc4970fe12fb5",
+      "text": " ;:.,_{}[]/?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^ﾟ"
+    }
+  ],
+  "proportional_internal_alphabet": " ?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^゛゜ﾟ;:{}[]/。、.,_うくしとりタトノヒミメヨＩアウエオカキクケコサシスセソタチ｜─ーゞゝヾヽ：＼／イ゛＾（）〔〕「」〈〉% ?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^゛゜ﾟ;:{}[]/。、.,_うくしとりタトノヒミメヨＩアウエオカキクケコサシスセソタチ｜─ーゞゝヾヽ：＼／イ゛＾（）〔〕「」〈〉%",
+  "monospaced_internal_alphabet": " ;:.,_{}[]/?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^ﾟ ;:.,_{}[]/?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^ﾟ",
+  "self_concatenation_va": "0x4504af",
+  "wide_concat_function_va": "0x403de4",
+  "proportional_unique_candidates": [
+    {
+      "label": " ",
+      "raster_text": " "
+    },
+    {
+      "label": "?",
+      "raster_text": "__"
+    },
+    {
+      "label": "\\",
+      "raster_text": ",-^"
+    },
+    {
+      "label": "0",
+      "raster_text": "0"
+    },
+    {
+      "label": "1",
+      "raster_text": "1"
+    },
+    {
+      "label": "2",
+      "raster_text": "^-,"
+    },
+    {
+      "label": "3",
+      "raster_text": "3"
+    },
+    {
+      "label": "4",
+      "raster_text": "4"
+    },
+    {
+      "label": "5",
+      "raster_text": "5"
+    },
+    {
+      "label": "6",
+      "raster_text": "6"
+    },
+    {
+      "label": "7",
+      "raster_text": "7"
+    },
+    {
+      "label": "8",
+      "raster_text": "8"
+    },
+    {
+      "label": "9",
+      "raster_text": "9"
+    },
+    {
+      "label": "a",
+      "raster_text": "-."
+    },
+    {
+      "label": "b",
+      "raster_text": "b"
+    },
+    {
+      "label": "c",
+      "raster_text": "--"
+    },
+    {
+      "label": "d",
+      "raster_text": "d"
+    },
+    {
+      "label": "e",
+      "raster_text": "-^"
+    },
+    {
+      "label": "f",
+      "raster_text": "f"
+    },
+    {
+      "label": "g",
+      "raster_text": "g"
+    },
+    {
+      "label": "h",
+      "raster_text": "h"
+    },
+    {
+      "label": "i",
+      "raster_text": "i"
+    },
+    {
+      "label": "j",
+      "raster_text": "j"
+    },
+    {
+      "label": "k",
+      "raster_text": "k"
+    },
+    {
+      "label": "l",
+      "raster_text": "l"
+    },
+    {
+      "label": "m",
+      "raster_text": "^-"
+    },
+    {
+      "label": "n",
+      "raster_text": "n"
+    },
+    {
+      "label": "o",
+      "raster_text": "l."
+    },
+    {
+      "label": "p",
+      "raster_text": "p"
+    },
+    {
+      "label": "q",
+      "raster_text": "q"
+    },
+    {
+      "label": "r",
+      "raster_text": "r"
+    },
+    {
+      "label": "s",
+      "raster_text": ".l"
+    },
+    {
+      "label": "t",
+      "raster_text": "t"
+    },
+    {
+      "label": "u",
+      "raster_text": "./"
+    },
+    {
+      "label": "v",
+      "raster_text": "v"
+    },
+    {
+      "label": "x",
+      "raster_text": "x"
+    },
+    {
+      "label": "y",
+      "raster_text": "y"
+    },
+    {
+      "label": "z",
+      "raster_text": ".ヽ"
+    },
+    {
+      "label": "A",
+      "raster_text": ".."
+    },
+    {
+      "label": "B",
+      "raster_text": ".;"
+    },
+    {
+      "label": "C",
+      "raster_text": ";;"
+    },
+    {
+      "label": "D",
+      "raster_text": "ll"
+    },
+    {
+      "label": "E",
+      "raster_text": "lll"
+    },
+    {
+      "label": "F",
+      "raster_text": "F"
+    },
+    {
+      "label": "G",
+      "raster_text": "^)"
+    },
+    {
+      "label": "H",
+      "raster_text": "H"
+    },
+    {
+      "label": "I",
+      "raster_text": "I"
+    },
+    {
+      "label": "J",
+      "raster_text": "J"
+    },
+    {
+      "label": "K",
+      "raster_text": "K"
+    },
+    {
+      "label": "L",
+      "raster_text": "L"
+    },
+    {
+      "label": "M",
+      "raster_text": "(^"
+    },
+    {
+      "label": "N",
+      "raster_text": "ﾟl"
+    },
+    {
+      "label": "O",
+      "raster_text": "lﾟ"
+    },
+    {
+      "label": "P",
+      "raster_text": "P"
+    },
+    {
+      "label": "Q",
+      "raster_text": "..."
+    },
+    {
+      "label": "R",
+      "raster_text": "R"
+    },
+    {
+      "label": "S",
+      "raster_text": "^^^"
+    },
+    {
+      "label": "T",
+      "raster_text": "T"
+    },
+    {
+      "label": "U",
+      "raster_text": "U"
+    },
+    {
+      "label": "V",
+      "raster_text": "V"
+    },
+    {
+      "label": "X",
+      "raster_text": "X"
+    },
+    {
+      "label": "Y",
+      "raster_text": "Y"
+    },
+    {
+      "label": "Z",
+      "raster_text": ".-"
+    },
+    {
+      "label": "!",
+      "raster_text": "!"
+    },
+    {
+      "label": "\"",
+      "raster_text": "\""
+    },
+    {
+      "label": "'",
+      "raster_text": "'"
+    },
+    {
+      "label": "(",
+      "raster_text": "("
+    },
+    {
+      "label": ")",
+      "raster_text": ")"
+    },
+    {
+      "label": "=",
+      "raster_text": "="
+    },
+    {
+      "label": "-",
+      "raster_text": "-"
+    },
+    {
+      "label": "^",
+      "raster_text": "^"
+    },
+    {
+      "label": "゛",
+      "raster_text": "゛"
+    },
+    {
+      "label": "゜",
+      "raster_text": "゜"
+    },
+    {
+      "label": "ﾟ",
+      "raster_text": "ﾟ"
+    },
+    {
+      "label": ";",
+      "raster_text": ";"
+    },
+    {
+      "label": ":",
+      "raster_text": ":"
+    },
+    {
+      "label": "{",
+      "raster_text": "{"
+    },
+    {
+      "label": "}",
+      "raster_text": "}"
+    },
+    {
+      "label": "[",
+      "raster_text": "["
+    },
+    {
+      "label": "]",
+      "raster_text": "]"
+    },
+    {
+      "label": "/",
+      "raster_text": "/"
+    },
+    {
+      "label": "。",
+      "raster_text": "。"
+    },
+    {
+      "label": "、",
+      "raster_text": "、"
+    },
+    {
+      "label": ".",
+      "raster_text": "."
+    },
+    {
+      "label": ",",
+      "raster_text": ","
+    },
+    {
+      "label": "_",
+      "raster_text": "_"
+    },
+    {
+      "label": "う",
+      "raster_text": "う"
+    },
+    {
+      "label": "く",
+      "raster_text": "く"
+    },
+    {
+      "label": "し",
+      "raster_text": "し"
+    },
+    {
+      "label": "と",
+      "raster_text": "と"
+    },
+    {
+      "label": "り",
+      "raster_text": "り"
+    },
+    {
+      "label": "タ",
+      "raster_text": "｡."
+    },
+    {
+      "label": "ト",
+      "raster_text": "ト"
+    },
+    {
+      "label": "ノ",
+      "raster_text": "ノ"
+    },
+    {
+      "label": "ヒ",
+      "raster_text": "ヒ"
+    },
+    {
+      "label": "ミ",
+      "raster_text": "ミ"
+    },
+    {
+      "label": "メ",
+      "raster_text": "メ"
+    },
+    {
+      "label": "ヨ",
+      "raster_text": "ヨ"
+    },
+    {
+      "label": "Ｉ",
+      "raster_text": "Ｉ"
+    },
+    {
+      "label": "ア",
+      "raster_text": ":l"
+    },
+    {
+      "label": "ウ",
+      "raster_text": "l:"
+    },
+    {
+      "label": "エ",
+      "raster_text": ",,"
+    },
+    {
+      "label": "オ",
+      "raster_text": "..l"
+    },
+    {
+      "label": "カ",
+      "raster_text": "l.."
+    },
+    {
+      "label": "キ",
+      "raster_text": ".／"
+    },
+    {
+      "label": "ク",
+      "raster_text": ".＼"
+    },
+    {
+      "label": "ケ",
+      "raster_text": "li,"
+    },
+    {
+      "label": "コ",
+      "raster_text": "ﾞ､"
+    },
+    {
+      "label": "サ",
+      "raster_text": "｀､"
+    },
+    {
+      "label": "シ",
+      "raster_text": "-､"
+    },
+    {
+      "label": "ス",
+      "raster_text": "ﾟ｡"
+    },
+    {
+      "label": "セ",
+      "raster_text": "ﾞ:､"
+    },
+    {
+      "label": "ソ",
+      "raster_text": ".｡"
+    },
+    {
+      "label": "チ",
+      "raster_text": ",il"
+    },
+    {
+      "label": "｜",
+      "raster_text": "｜"
+    },
+    {
+      "label": "─",
+      "raster_text": "─"
+    },
+    {
+      "label": "ー",
+      "raster_text": "ー"
+    },
+    {
+      "label": "ゞ",
+      "raster_text": "ゞ"
+    },
+    {
+      "label": "ゝ",
+      "raster_text": "ゝ"
+    },
+    {
+      "label": "ヾ",
+      "raster_text": "ヾ"
+    },
+    {
+      "label": "ヽ",
+      "raster_text": "ヽ"
+    },
+    {
+      "label": "：",
+      "raster_text": "："
+    },
+    {
+      "label": "＼",
+      "raster_text": "＼"
+    },
+    {
+      "label": "／",
+      "raster_text": "／"
+    },
+    {
+      "label": "イ",
+      "raster_text": "イ"
+    },
+    {
+      "label": "＾",
+      "raster_text": "＾"
+    },
+    {
+      "label": "（",
+      "raster_text": "（"
+    },
+    {
+      "label": "）",
+      "raster_text": "）"
+    },
+    {
+      "label": "〔",
+      "raster_text": "〔"
+    },
+    {
+      "label": "〕",
+      "raster_text": "〕"
+    },
+    {
+      "label": "「",
+      "raster_text": "「"
+    },
+    {
+      "label": "」",
+      "raster_text": "」"
+    },
+    {
+      "label": "〈",
+      "raster_text": "〈"
+    },
+    {
+      "label": "〉",
+      "raster_text": "〉"
+    },
+    {
+      "label": "%",
+      "raster_text": "　"
+    }
+  ],
+  "raster_style_bytes": {
+    "first_half": 1,
+    "second_half": 0
+  },
+  "direct_tone_or_blank_outputs": [
+    {
+      "instruction_va": "0x451b9f",
+      "text_va": "0x4529d0",
+      "text": "　",
+      "bytes_hex": "8140",
+      "sha256": "5845a3f69ea59cfc12219a5272b8be0b9f9bb60648ed002627e6637041b1bff3",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451bd6",
+      "text_va": "0x4529dc",
+      "text": "....",
+      "bytes_hex": "2e2e2e2e",
+      "sha256": "dfa3476846ce31adf8b1496b34595fb3f5ca2adf22b6df8ca2264c718b985cd9",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451c03",
+      "text_va": "0x4529ec",
+      "text": ":.:.",
+      "bytes_hex": "3a2e3a2e",
+      "sha256": "8ebc7b65e35a5489e2ed52d1b118293c267dadc9edbac87a4f996eabf6e1fc05",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451c2e",
+      "text_va": "0x4529fc",
+      "text": ";,;,",
+      "bytes_hex": "3b2c3b2c",
+      "sha256": "3cb80b19716da07b6704b8f374e5e45f30dc382e58b19b868bbaaff94e2de457",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451c59",
+      "text_va": "0x452a0c",
+      "text": ";;;;",
+      "bytes_hex": "3b3b3b3b",
+      "sha256": "8481755debfadbaf23751b5804ec02c51592c8cbafec8acbdaf7033678413229",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451c86",
+      "text_va": "0x452a1c",
+      "text": "i.i.",
+      "bytes_hex": "692e692e",
+      "sha256": "018cadc5d34c5a6b58fd52680e2e78fb41eba287430626b176da705c202cf78e",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451cb7",
+      "text_va": "0x452a2c",
+      "text": "i;i;",
+      "bytes_hex": "693b693b",
+      "sha256": "d03c92769d00ccaecc6afa9143832dfa02117f1916b4df1b0ff55fd23f2611ac",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451ce4",
+      "text_va": "0x452a3c",
+      "text": "lili",
+      "bytes_hex": "6c696c69",
+      "sha256": "6c1ccd1f20742182387027bb4b72c4bfe4ca7e9247af5e7c0f1f8ce0f236724e",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451cfe",
+      "text_va": "0x452a4c",
+      "text": "llll",
+      "bytes_hex": "6c6c6c6c",
+      "sha256": "0626b633129acbe99b1f52a9112f3c4dd7bbd13c86763764c5a18c0b72d9cf8b",
+      "mode": "proportional"
+    },
+    {
+      "instruction_va": "0x451d47",
+      "text_va": "0x452a5c",
+      "text": " ",
+      "bytes_hex": "20",
+      "sha256": "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451d7e",
+      "text_va": "0x452a68",
+      "text": ".",
+      "bytes_hex": "2e",
+      "sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451dab",
+      "text_va": "0x452a74",
+      "text": ":",
+      "bytes_hex": "3a",
+      "sha256": "e7ac0786668e0ff0f02b62bd04f45ff636fd82db63b1104601c975dc005f3a67",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451dd6",
+      "text_va": "0x452a80",
+      "text": "i",
+      "bytes_hex": "69",
+      "sha256": "de7d1b721a1e0632b7cf04edf5032c8ecffa9f9a08492152b926f1a5a7e765d7",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451e01",
+      "text_va": "0x452a8c",
+      "text": "C",
+      "bytes_hex": "43",
+      "sha256": "6b23c0d5f35d1b11f9b683f0b0a617355deb11277d91ae091d399c655b87940d",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451e2e",
+      "text_va": "0x452a98",
+      "text": "X",
+      "bytes_hex": "58",
+      "sha256": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451e5f",
+      "text_va": "0x452aa4",
+      "text": "Q",
+      "bytes_hex": "51",
+      "sha256": "4ae81572f06e1b88fd5ced7a1a000945432e83e1551e6f721ee9c00b8cc33260",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451e8c",
+      "text_va": "0x452ab0",
+      "text": "W",
+      "bytes_hex": "57",
+      "sha256": "fcb5f40df9be6bae66c1d77a6c15968866a9e6cbd7314ca432b019d17392f6f4",
+      "mode": "monospaced"
+    },
+    {
+      "instruction_va": "0x451ea6",
+      "text_va": "0x452abc",
+      "text": "M",
+      "bytes_hex": "4d",
+      "sha256": "08f271887ce94707da822d5263bae19d5519cb3614e0daedc4c7ce5dab7473f1",
+      "mode": "monospaced"
+    }
+  ],
+  "proportional_output_characters_upper_bound": " _,-^013456789.bdfghijklnpqrt/vxyヽ;F)HIJKL(ﾟPRTUVXY!\"'=゛゜:{}[]。、うくしとり｡トノヒミメヨＩ／＼ﾞ､｀｜─ーゞゝヾ：イ＾（）〔〕「」〈〉　",
+  "monospaced_output_characters_upper_bound": " ;:.,_{}[]/?\\0123456789abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ!\"'()=-^ﾟW",
+  "reachable_multichar_mapping_count": 39,
+  "unreachable_builder_mappings": [
+    {
+      "label": "W",
+      "text": "^^",
+      "codepoints": [
+        "U+005E",
+        "U+005E"
+      ],
+      "instruction_va": "0x4507ff",
+      "text_va": "0x450ff0"
+    }
+  ],
+  "disassembly_excerpts": [
+    "  403dd8: 85 c0                        \ttestl\t%eax, %eax",
+    "  403dda: 74 05                        \tje\t0x403de1 <CODE+0x2de1>",
+    "  403ddc: 8b 40 fc                     \tmovl\t-0x4(%eax), %eax",
+    "  403ddf: d1 e8                        \tshrl\t%eax",
+    "  403de1: c3                           \tretl",
+    "  403de2: 8b c0                        \tmovl\t%eax, %eax",
+    "  403de4: 53                           \tpushl\t%ebx",
+    "  403de5: 56                           \tpushl\t%esi",
+    "  403de6: 57                           \tpushl\t%edi",
+    "  403de7: 55                           \tpushl\t%ebp",
+    "  403de8: 51                           \tpushl\t%ecx",
+    "  403de9: 8b ea                        \tmovl\t%edx, %ebp",
+    "  403deb: 89 04 24                     \tmovl\t%eax, (%esp)",
+    "  403dee: 8b c5                        \tmovl\t%ebp, %eax",
+    "  403df0: e8 e3 ff ff ff               \tcalll\t0x403dd8 <CODE+0x2dd8>",
+    "  403df5: 8b d8                        \tmovl\t%eax, %ebx",
+    "  403df7: 85 db                        \ttestl\t%ebx, %ebx",
+    "  403df9: 74 42                        \tje\t0x403e3d <CODE+0x2e3d>",
+    "  403dfb: 8b 04 24                     \tmovl\t(%esp), %eax",
+    "  403dfe: 8b 00                        \tmovl\t(%eax), %eax",
+    "  403e00: e8 d3 ff ff ff               \tcalll\t0x403dd8 <CODE+0x2dd8>",
+    "  403e05: 8b f0                        \tmovl\t%eax, %esi",
+    "  403e07: 8d 04 33                     \tleal\t(%ebx,%esi), %eax",
+    "  403e0a: e8 35 00 00 00               \tcalll\t0x403e44 <CODE+0x2e44>",
+    "  403e0f: 8b f8                        \tmovl\t%eax, %edi",
+    "  403e11: 85 f6                        \ttestl\t%esi, %esi",
+    "  403e13: 7e 10                        \tjle\t0x403e25 <CODE+0x2e25>",
+    "  403e15: 8b ce                        \tmovl\t%esi, %ecx",
+    "  403e17: 03 c9                        \taddl\t%ecx, %ecx",
+    "  403e19: 8b d7                        \tmovl\t%edi, %edx",
+    "  403e1b: 8b 04 24                     \tmovl\t(%esp), %eax",
+    "  403e1e: 8b 00                        \tmovl\t(%eax), %eax",
+    "  403e20: e8 23 e9 ff ff               \tcalll\t0x402748 <CODE+0x1748>",
+    "  403e25: 8b cb                        \tmovl\t%ebx, %ecx",
+    "  403e27: 03 c9                        \taddl\t%ecx, %ecx",
+    "  403e29: 8d 14 77                     \tleal\t(%edi,%esi,2), %edx",
+    "  403e2c: 8b c5                        \tmovl\t%ebp, %eax",
+    "  403e2e: e8 15 e9 ff ff               \tcalll\t0x402748 <CODE+0x1748>",
+    "  403e33: 8b 04 24                     \tmovl\t(%esp), %eax",
+    "  403e36: 8b d7                        \tmovl\t%edi, %edx",
+    "  403e38: e8 17 fe ff ff               \tcalll\t0x403c54 <CODE+0x2c54>",
+    "  403e3d: 5a                           \tpopl\t%edx",
+    "  403e3e: 5d                           \tpopl\t%ebp",
+    "  403e3f: 5f                           \tpopl\t%edi",
+    "  403e40: 5e                           \tpopl\t%esi",
+    "  403e41: 5b                           \tpopl\t%ebx",
+    "  403e42: c3                           \tretl",
+    "  4503da: ec                           \tinb\t%dx, %al",
+    "  4503db: 83 c4 d4                     \taddl\t$-0x2c, %esp",
+    "  4503de: 53                           \tpushl\t%ebx",
+    "  4503df: 56                           \tpushl\t%esi",
+    "  4503e0: 57                           \tpushl\t%edi",
+    "  4503e1: 33 c0                        \txorl\t%eax, %eax",
+    "  4503e3: 89 45 d4                     \tmovl\t%eax, -0x2c(%ebp)",
+    "  4503e6: 89 45 d8                     \tmovl\t%eax, -0x28(%ebp)",
+    "  4503e9: 89 45 f0                     \tmovl\t%eax, -0x10(%ebp)",
+    "  4503ec: 33 c0                        \txorl\t%eax, %eax",
+    "  4503ee: 55                           \tpushl\t%ebp",
+    "  4503ef: 68 56 0c 45 00               \tpushl\t$0x450c56               # imm = 0x450C56",
+    "  4503f4: 64 ff 30                     \tpushl\t%fs:(%eax)",
+    "  4503f7: 64 89 20                     \tmovl\t%esp, %fs:(%eax)",
+    "  4503fa: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  4503ff: ba 68 0c 45 00               \tmovl\t$0x450c68, %edx         # imm = 0x450C68",
+    "  450404: e8 97 38 fb ff               \tcalll\t0x403ca0 <CODE+0x2ca0>",
+    "  450409: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  45040c: 8b 15 10 f8 46 00            \tmovl\t0x46f810, %edx",
+    "  450412: e8 c5 34 fb ff               \tcalll\t0x4038dc <CODE+0x28dc>",
+    "  450417: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  45041a: ba 08 0d 45 00               \tmovl\t$0x450d08, %edx         # imm = 0x450D08",
+    "  45041f: e8 f8 34 fb ff               \tcalll\t0x40391c <CODE+0x291c>",
+    "  450424: 8b 55 d8                     \tmovl\t-0x28(%ebp), %edx",
+    "  450427: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  45042c: e8 33 39 fb ff               \tcalll\t0x403d64 <CODE+0x2d64>",
+    "  450431: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  450434: 8b 15 10 f8 46 00            \tmovl\t0x46f810, %edx",
+    "  45043a: e8 9d 34 fb ff               \tcalll\t0x4038dc <CODE+0x28dc>",
+    "  45043f: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  450442: ba 48 0d 45 00               \tmovl\t$0x450d48, %edx         # imm = 0x450D48",
+    "  450447: e8 d0 34 fb ff               \tcalll\t0x40391c <CODE+0x291c>",
+    "  45044c: 8b 55 d8                     \tmovl\t-0x28(%ebp), %edx",
+    "  45044f: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  450454: e8 0b 39 fb ff               \tcalll\t0x403d64 <CODE+0x2d64>",
+    "  450459: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  45045c: 8b 15 10 f8 46 00            \tmovl\t0x46f810, %edx",
+    "  450462: e8 75 34 fb ff               \tcalll\t0x4038dc <CODE+0x28dc>",
+    "  450467: 8d 45 d8                     \tleal\t-0x28(%ebp), %eax",
+    "  45046a: ba 6c 0d 45 00               \tmovl\t$0x450d6c, %edx         # imm = 0x450D6C",
+    "  45046f: e8 a8 34 fb ff               \tcalll\t0x40391c <CODE+0x291c>",
+    "  450474: 8b 55 d8                     \tmovl\t-0x28(%ebp), %edx",
+    "  450477: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  45047c: e8 e3 38 fb ff               \tcalll\t0x403d64 <CODE+0x2d64>",
+    "  450481: a1 a4 67 45 00               \tmovl\t0x4567a4, %eax",
+    "  450486: 8b 80 64 02 00 00            \tmovl\t0x264(%eax), %eax",
+    "  45048c: e8 7f 08 fe ff               \tcalll\t0x430d10 <CODE+0x2fd10>",
+    "  450491: 3c 01                        \tcmpb\t$0x1, %al",
+    "  450493: 75 0f                        \tjne\t0x4504a4 <CODE+0x4f4a4>",
+    "  450495: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  45049a: ba 98 0d 45 00               \tmovl\t$0x450d98, %edx         # imm = 0x450D98",
+    "  45049f: e8 fc 37 fb ff               \tcalll\t0x403ca0 <CODE+0x2ca0>",
+    "  4504a4: b8 10 f8 46 00               \tmovl\t$0x46f810, %eax         # imm = 0x46F810",
+    "  4504a9: 8b 15 10 f8 46 00            \tmovl\t0x46f810, %edx",
+    "  4504af: e8 30 39 fb ff               \tcalll\t0x403de4 <CODE+0x2de4>",
+    "  450583: a1 10 f8 46 00               \tmovl\t0x46f810, %eax",
+    "  450588: e8 4b 38 fb ff               \tcalll\t0x403dd8 <CODE+0x2dd8>",
+    "  45058d: a3 0c f8 46 00               \tmovl\t%eax, 0x46f80c",
+    "  450592: c7 45 fc 0a 00 00 00         \tmovl\t$0xa, -0x4(%ebp)",
+    "  450622: 8d 45 d4                     \tleal\t-0x2c(%ebp), %eax",
+    "  450625: 50                           \tpushl\t%eax",
+    "  450626: b9 01 00 00 00               \tmovl\t$0x1, %ecx",
+    "  45062b: 8b 55 fc                     \tmovl\t-0x4(%ebp), %edx",
+    "  45062e: a1 10 f8 46 00               \tmovl\t0x46f810, %eax",
+    "  450633: e8 24 38 fb ff               \tcalll\t0x403e5c <CODE+0x2e5c>",
+    "  450638: 8b 55 d4                     \tmovl\t-0x2c(%ebp), %edx",
+    "  45063b: 8d 45 f0                     \tleal\t-0x10(%ebp), %eax",
+    "  45063e: e8 99 32 fb ff               \tcalll\t0x4038dc <CODE+0x28dc>",
+    "  450643: a1 a4 67 45 00               \tmovl\t0x4567a4, %eax",
+    "  450648: 8b 80 64 02 00 00            \tmovl\t0x264(%eax), %eax",
+    "  45064e: e8 bd 06 fe ff               \tcalll\t0x430d10 <CODE+0x2fd10>",
+    "  450653: 84 c0                        \ttestb\t%al, %al",
+    "  450655: 0f 85 7c 04 00 00            \tjne\t0x450ad7 <CODE+0x4fad7>",
+    "  450b16: a1 0c f8 46 00               \tmovl\t0x46f80c, %eax",
+    "  450b1b: d1 f8                        \tsarl\t%eax",
+    "  450b1d: 79 03                        \tjns\t0x450b22 <CODE+0x4fb22>",
+    "  450b1f: 83 d0 00                     \tadcl\t$0x0, %eax",
+    "  450b22: 3b 45 fc                     \tcmpl\t-0x4(%ebp), %eax",
+    "  450b25: 7e 20                        \tjle\t0x450b47 <CODE+0x4fb47>",
+    "  450b27: a1 a4 67 45 00               \tmovl\t0x4567a4, %eax",
+    "  450b2c: 8b 80 20 02 00 00            \tmovl\t0x220(%eax), %eax",
+    "  450b32: e8 4d 20 fe ff               \tcalll\t0x432b84 <CODE+0x31b84>",
+    "  450b37: 8b 40 0c                     \tmovl\t0xc(%eax), %eax",
+    "  450b3a: 8a 15 4c 12 45 00            \tmovb\t0x45124c, %dl",
+    "  450b40: e8 f3 19 fc ff               \tcalll\t0x412538 <CODE+0x11538>",
+    "  450b45: eb 1e                        \tjmp\t0x450b65 <CODE+0x4fb65>",
+    "  450b47: a1 a4 67 45 00               \tmovl\t0x4567a4, %eax",
+    "  450b4c: 8b 80 20 02 00 00            \tmovl\t0x220(%eax), %eax",
+    "  450b52: e8 2d 20 fe ff               \tcalll\t0x432b84 <CODE+0x31b84>",
+    "  450b57: 8b 40 0c                     \tmovl\t0xc(%eax), %eax",
+    "  450b5a: 8a 15 70 0e 45 00            \tmovb\t0x450e70, %dl",
+    "  450b60: e8 d3 19 fc ff               \tcalll\t0x412538 <CODE+0x11538>",
+    "  45200f: 8b 45 90                     \tmovl\t-0x70(%ebp), %eax",
+    "  452012: 8b 00                        \tmovl\t(%eax), %eax",
+    "  452014: 85 c0                        \ttestl\t%eax, %eax",
+    "  452016: 0f 8e 37 01 00 00            \tjle\t0x452153 <CODE+0x51153>",
+    "  45201c: 89 45 94                     \tmovl\t%eax, -0x6c(%ebp)",
+    "  45201f: 8b 45 80                     \tmovl\t-0x80(%ebp), %eax",
+    "  452022: 89 85 7c ff ff ff            \tmovl\t%eax, -0x84(%ebp)",
+    "  452028: 8d 85 b8 ee ff ff            \tleal\t-0x1148(%ebp), %eax",
+    "  45202e: 89 85 78 ff ff ff            \tmovl\t%eax, -0x88(%ebp)",
+    "  452034: bf 10 00 00 00               \tmovl\t$0x10, %edi",
+    "  452039: 8b 85 7c ff ff ff            \tmovl\t-0x84(%ebp), %eax",
+    "  45203f: 8b f0                        \tmovl\t%eax, %esi",
+    "  452041: 8b 85 78 ff ff ff            \tmovl\t-0x88(%ebp), %eax",
+    "  452047: 8b d8                        \tmovl\t%eax, %ebx",
+    "  452049: 8b 45 fc                     \tmovl\t-0x4(%ebp), %eax",
+    "  45204c: 8b 80 64 02 00 00            \tmovl\t0x264(%eax), %eax",
+    "  452052: e8 b9 ec fd ff               \tcalll\t0x430d10 <CODE+0x2fd10>",
+    "  452057: 84 c0                        \ttestb\t%al, %al",
+    "  452059: 75 62                        \tjne\t0x4520bd <CODE+0x510bd>",
+    "  45205b: 8a 03                        \tmovb\t(%ebx), %al",
+    "  45205d: 3a 06                        \tcmpb\t(%esi), %al",
+    "  45205f: 75 13                        \tjne\t0x452074 <CODE+0x51074>",
+    "  452061: 3c 01                        \tcmpb\t$0x1, %al",
+    "  452063: 75 0f                        \tjne\t0x452074 <CODE+0x51074>",
+    "  452065: 8b 45 c4                     \tmovl\t-0x3c(%ebp), %eax",
+    "  452068: 03 85 50 eb ff ff            \taddl\t-0x14b0(%ebp), %eax",
+    "  45206e: 03 45 b0                     \taddl\t-0x50(%ebp), %eax",
+    "  452071: 89 45 c4                     \tmovl\t%eax, -0x3c(%ebp)",
+    "  452074: 8a 03                        \tmovb\t(%ebx), %al",
+    "  452076: 3a 06                        \tcmpb\t(%esi), %al",
+    "  452078: 75 0d                        \tjne\t0x452087 <CODE+0x51087>",
+    "  45207a: 84 c0                        \ttestb\t%al, %al",
+    "  45207c: 75 09                        \tjne\t0x452087 <CODE+0x51087>",
+    "  45207e: 8b 85 54 eb ff ff            \tmovl\t-0x14ac(%ebp), %eax",
+    "  452084: 01 45 c4                     \taddl\t%eax, -0x3c(%ebp)",
+    "  452087: 8a 03                        \tmovb\t(%ebx), %al",
+    "  452089: 3a 06                        \tcmpb\t(%esi), %al",
+    "  45208b: 74 0d                        \tje\t0x45209a <CODE+0x5109a>",
+    "  45208d: 3c 01                        \tcmpb\t$0x1, %al",
+    "  45208f: 75 09                        \tjne\t0x45209a <CODE+0x5109a>",
+    "  452091: 8b 85 58 eb ff ff            \tmovl\t-0x14a8(%ebp), %eax",
+    "  452097: 01 45 c0                     \taddl\t%eax, -0x40(%ebp)",
+    "  45209a: 8a 03                        \tmovb\t(%ebx), %al",
+    "  45209c: 3a 06                        \tcmpb\t(%esi), %al",
+    "  45209e: 0f 84 8f 00 00 00            \tje\t0x452133 <CODE+0x51133>",
+    "  4520a4: 84 c0                        \ttestb\t%al, %al",
+    "  4520a6: 0f 85 87 00 00 00            \tjne\t0x452133 <CODE+0x51133>",
+    "  4520ac: 8b 45 c0                     \tmovl\t-0x40(%ebp), %eax",
+    "  4520af: 03 85 5c eb ff ff            \taddl\t-0x14a4(%ebp), %eax",
+    "  4520b5: 03 45 ac                     \taddl\t-0x54(%ebp), %eax",
+    "  4520b8: 89 45 c0                     \tmovl\t%eax, -0x40(%ebp)",
+    "  4520bb: eb 76                        \tjmp\t0x452133 <CODE+0x51133>",
+    "  4520bd: 8a 03                        \tmovb\t(%ebx), %al",
+    "  4520bf: 3a 06                        \tcmpb\t(%esi), %al",
+    "  4520c1: 75 25                        \tjne\t0x4520e8 <CODE+0x510e8>",
+    "  4520c3: 3c 01                        \tcmpb\t$0x1, %al",
+    "  4520c5: 75 21                        \tjne\t0x4520e8 <CODE+0x510e8>",
+    "  4520c7: 8b 45 c4                     \tmovl\t-0x3c(%ebp), %eax",
+    "  4520ca: 83 c0 0c                     \taddl\t$0xc, %eax",
+    "  4520cd: 8b 55 fc                     \tmovl\t-0x4(%ebp), %edx",
+    "  4520d0: 8b 92 14 02 00 00            \tmovl\t0x214(%edx), %edx",
+    "  4520d6: 8b 92 1c 01 00 00            \tmovl\t0x11c(%edx), %edx",
+    "  4520dc: d1 fa                        \tsarl\t%edx",
+    "  4520de: 79 03                        \tjns\t0x4520e3 <CODE+0x510e3>",
+    "  4520e0: 83 d2 00                     \tadcl\t$0x0, %edx",
+    "  4520e3: 03 c2                        \taddl\t%edx, %eax",
+    "  4520e5: 89 45 c4                     \tmovl\t%eax, -0x3c(%ebp)",
+    "  4520e8: 8a 03                        \tmovb\t(%ebx), %al",
+    "  4520ea: 3a 06                        \tcmpb\t(%esi), %al",
+    "  4520ec: 75 08                        \tjne\t0x4520f6 <CODE+0x510f6>",
+    "  4520ee: 84 c0                        \ttestb\t%al, %al",
+    "  4520f0: 75 04                        \tjne\t0x4520f6 <CODE+0x510f6>",
+    "  4520f2: 83 45 c4 04                  \taddl\t$0x4, -0x3c(%ebp)",
+    "  4520f6: 8a 03                        \tmovb\t(%ebx), %al",
+    "  4520f8: 3a 06                        \tcmpb\t(%esi), %al",
+    "  4520fa: 74 08                        \tje\t0x452104 <CODE+0x51104>",
+    "  4520fc: 3c 01                        \tcmpb\t$0x1, %al",
+    "  4520fe: 75 04                        \tjne\t0x452104 <CODE+0x51104>",
+    "  452100: 83 45 c0 02                  \taddl\t$0x2, -0x40(%ebp)",
+    "  452104: 8a 03                        \tmovb\t(%ebx), %al",
+    "  452106: 3a 06                        \tcmpb\t(%esi), %al",
+    "  452108: 74 29                        \tje\t0x452133 <CODE+0x51133>",
+    "  45210a: 84 c0                        \ttestb\t%al, %al",
+    "  45210c: 75 25                        \tjne\t0x452133 <CODE+0x51133>",
+    "  45210e: 8b 45 fc                     \tmovl\t-0x4(%ebp), %eax",
+    "  452111: 8b 80 14 02 00 00            \tmovl\t0x214(%eax), %eax",
+    "  452117: 8b 80 1c 01 00 00            \tmovl\t0x11c(%eax), %eax",
+    "  45211d: c1 e0 02                     \tshll\t$0x2, %eax",
+    "  452120: b9 03 00 00 00               \tmovl\t$0x3, %ecx",
+    "  452125: 99                           \tcltd",
+    "  452126: f7 f9                        \tidivl\t%ecx",
+    "  452128: 8b 55 c0                     \tmovl\t-0x40(%ebp), %edx",
+    "  45212b: 83 c2 06                     \taddl\t$0x6, %edx",
+    "  45212e: 03 c2                        \taddl\t%edx, %eax",
+    "  452130: 89 45 c0                     \tmovl\t%eax, -0x40(%ebp)",
+    "  452133: 43                           \tincl\t%ebx",
+    "  452134: 46                           \tincl\t%esi",
+    "  452135: 4f                           \tdecl\t%edi",
+    "  452136: 0f 85 0d ff ff ff            \tjne\t0x452049 <CODE+0x51049>",
+    "  45213c: 83 85 78 ff ff ff 10         \taddl\t$0x10, -0x88(%ebp)",
+    "  452143: 83 85 7c ff ff ff 10         \taddl\t$0x10, -0x84(%ebp)",
+    "  45214a: ff 4d 94                     \tdecl\t-0x6c(%ebp)",
+    "  45214d: 0f 85 e1 fe ff ff            \tjne\t0x452034 <CODE+0x51034>",
+    "  452321: 8d 85 3c eb ff ff            \tleal\t-0x14c4(%ebp), %eax",
+    "  452327: 50                           \tpushl\t%eax",
+    "  452328: b9 01 00 00 00               \tmovl\t$0x1, %ecx",
+    "  45232d: 8b 55 d4                     \tmovl\t-0x2c(%ebp), %edx",
+    "  452330: a1 10 f8 46 00               \tmovl\t0x46f810, %eax",
+    "  452335: e8 22 1b fb ff               \tcalll\t0x403e5c <CODE+0x2e5c>",
+    "  45233a: 8b 95 3c eb ff ff            \tmovl\t-0x14c4(%ebp), %edx",
+    "  452340: 8d 45 9c                     \tleal\t-0x64(%ebp), %eax",
+    "  452343: e8 94 15 fb ff               \tcalll\t0x4038dc <CODE+0x28dc>",
+    "  452348: 8b 45 fc                     \tmovl\t-0x4(%ebp), %eax",
+    "  45234b: 8b 80 64 02 00 00            \tmovl\t0x264(%eax), %eax",
+    "  452351: e8 ba e9 fd ff               \tcalll\t0x430d10 <CODE+0x2fd10>",
+    "  452356: 84 c0                        \ttestb\t%al, %al",
+    "  452358: 0f 85 a7 04 00 00            \tjne\t0x452805 <CODE+0x51805>",
+    "  452805: 8d 45 a8                     \tleal\t-0x58(%ebp), %eax",
+    "  452808: 8b 55 9c                     \tmovl\t-0x64(%ebp), %edx",
+    "  45280b: e8 0c 11 fb ff               \tcalll\t0x40391c <CODE+0x291c>",
+    "  452810: 8b 45 fc                     \tmovl\t-0x4(%ebp), %eax",
+    "  452813: 8b 80 e4 01 00 00            \tmovl\t0x1e4(%eax), %eax",
+    "  452819: e8 66 03 fe ff               \tcalll\t0x432b84 <CODE+0x31b84>",
+    "  45281e: 8b 55 a8                     \tmovl\t-0x58(%ebp), %edx",
+    "  452821: e8 0a 08 fc ff               \tcalll\t0x413030 <CODE+0x12030>",
+    "  452826: 89 45 ec                     \tmovl\t%eax, -0x14(%ebp)",
+    "  452829: 8d 45 a0                     \tleal\t-0x60(%ebp), %eax",
+    "  45282c: 8b 55 9c                     \tmovl\t-0x64(%ebp), %edx",
+    "  45282f: e8 fc 0e fb ff               \tcalll\t0x403730 <CODE+0x2730>"
+  ],
+  "limits": [
+    "Availability excludes absent glyphs, but does not prove that every sequence of available glyphs can be emitted.",
+    "CP932 conversion assumes the Japanese codepage used by the bundled strings/manual.",
+    "Duplicated candidate labels are rasterized in two halves with different style-byte settings at 450b3a/450b5a; this is not an accidental duplicate-template claim.",
+    "Conditional blank handling and line endings are not a complete converter port."
+  ]
+}

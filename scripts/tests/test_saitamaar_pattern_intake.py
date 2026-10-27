@@ -95,6 +95,7 @@ class PatternIntakeTests(unittest.TestCase):
              patch.object(viewer, "load_context_families", return_value=[]), \
              patch.object(viewer, "load_round_families", return_value=[]), \
              patch.object(viewer, "load_aaj_families", return_value=[]), \
+             patch.object(viewer, "load_component_families", return_value=[]), \
              patch.object(viewer, "load_families", return_value=[]), \
              patch.object(viewer, "load_foliage_stroke_families", return_value=[]):
             combo = viewer.load_combo_families(self.corpus)

@@ -25,6 +25,9 @@ Run:
         # native Saitamaar bundle/combination comparisons; no discovery cache build
     python3 scripts/glyph_families_viewer.py --mode round
         # operator-supplied construction crops: source pixels and matched source rows
+    python3 scripts/glyph_families_viewer.py --mode parts --list-libraries
+    python3 scripts/glyph_families_viewer.py --mode parts --library shapes --section 円形
+        # whole source constructions, preserving role/section/row organization
     python3 scripts/glyph_families_viewer.py --mode authored
         # the nine authored seed combinations, each beside its mirror
     python3 scripts/glyph_families_viewer.py --mode dir8 --dump
@@ -77,7 +80,7 @@ N = gf.N
 CATALOG = gf.CACHE_DIR / "families.jsonl"
 META = gf.CACHE_DIR / "families.meta.json"
 MODES = ["all", "spin", "dir8", "ramp", "fill", "cycle", "mirror", "topo", "stroke",
-         "distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj"]
+         "distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj", "parts"]
 # Each discovery mode IS an axis; rotation (spin) is its own first-class axis,
 # distinct from the near-identical animation cycles. Display names make that
 # explicit so "view all axes" reads as real categories. dir8 = 8-way directed
@@ -89,10 +92,10 @@ AXIS_LABEL = {"all": "ALL", "spin": "ROTATE", "dir8": "DIR8", "ramp": "DENSITY",
               "fill": "FILL", "cycle": "CYCLE", "mirror": "MIRROR", "topo": "STRUCT",
               "stroke": "FOLIAGE STROKES", "distract": "DISTRACT", "combo": "COMBOS",
               "context": "CONTEXT EVIDENCE", "authored": "AUTHORED", "sjis": "SJIS CORPUS",
-              "patterns": "NATIVE PATTERNS", "round": "CONSTRUCTION CROPS", "aaj": "AA JUDGMENT"}
+              "patterns": "NATIVE PATTERNS", "round": "ROUND CONSTRUCTIONS", "aaj": "AA JUDGMENT", "parts": "COMPONENT LIBRARIES"}
 # Axes whose row order carries meaning (ranking / authored/evidence file order)
 # and must therefore survive the list pane's size sort.
-ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj"}
+ORDERED_MODES = {"distract", "combo", "context", "authored", "sjis", "patterns", "round", "aaj", "parts"}
 # Measured candidate data written by scripts/glyph_combo_gallery.py.
 MEASURED = gf.CACHE_DIR / "glyph_combo_measured.json"
 # The authored combination dictionary (offsets + codepoints + generated mirrors).
@@ -565,6 +568,7 @@ def load_combo_families(c: ga.Corpus, limit: int = 0,
     families.extend(load_pattern_families(c, mode="combo"))
     families.extend(load_round_families(c, mode="combo"))
     families.extend(load_aaj_families(c, mode="combo"))
+    families.extend(load_component_families(c, mode="combo"))
     return families
 
 
@@ -603,12 +607,25 @@ def load_round_families(c, mode: str = "round", doc: dict | None = None) -> list
     import operator_construction_crops as crops
     import construction_tool_mapping as tool_mapping
     import operator_reference_sources as reference_sources
-    doc = doc if doc is not None else crops.load()
+    import profile_circle_intake as profile_circles
+    doc = doc if doc is not None else profile_circles.extend(crops.load())
     return [{"mode": mode, "members": [c.i(ord(ch)) for ch in dict.fromkeys("".join(r["focus_forms"]))
                                         if c.i(ord(ch)) is not None],
-             "block": "operator construction crops", "size": max(map(len, r["focus_forms"]), default=0),
+             "block": ("operator circle profile" if r["id"].startswith("profile-circle-") else "operator construction crops"),
+             "size": max(map(len, r["focus_forms"]), default=0),
              "role_hint": r["id"], "note": r["title"], "context": r}
             for r in reference_sources.attach(tool_mapping.attach(doc["families"]))]
+
+
+def load_component_families(c, mode="parts", doc=None, library=None, section=None):
+    import component_library_intake as intake
+    doc = doc if doc is not None else intake.load()
+    return [{"mode": mode, "members": [c.i(ord(ch)) for ch in dict.fromkeys("".join(row for p in r["passages"] for row in p["rows"]))
+                                        if c.i(ord(ch)) is not None],
+             "block": "component library " + r["component_library"]["id"],
+             "size": max(map(len, r["focus_forms"]), default=0), "role_hint": r["id"],
+             "note": r["title"], "context": r}
+            for r in intake.select(doc, library, section)]
 
 
 def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> list[dict]:
@@ -635,6 +652,8 @@ def load_default_families(c: ga.Corpus, block: str | None, seam_limit: int) -> l
         fams.extend(load_round_families(c, mode=mode))
     for mode in ("combo", "aaj"):
         fams.extend(load_aaj_families(c, mode=mode))
+    for mode in ("combo", "context", "parts"):
+        fams.extend(load_component_families(c, mode=mode))
     return fams
 
 
@@ -697,7 +716,8 @@ def _context_detail_lines(record: dict, width: int, native: bool = False, x: int
         import operator_construction_crops as crops
         raster, scale, offset = crops.raster_rows(record, width, native, x)
         shape = record["native_reference"]
-        label = "PACKAGED SCREENSHOT" if shape.get("kind") == "operator-screenshot" else "PACKAGED NATIVE PNG"
+        label = {"operator-screenshot": "PACKAGED SCREENSHOT",
+                 "saitamaar-comparison": "NEW SAITAMAAR COMPARISON (NOT ORIGINAL PNG)"}.get(shape.get("kind"), "PACKAGED NATIVE PNG")
         add(f"{label} {shape['width']}x{shape['height']}px. [v] overview/source pixels; [h/l] pan; [[]/[]] scroll.")
         if native:
             add(f"NATIVE PIXELS 1:1, x={offset}. No resampling; half blocks pack two source rows per text row.")
@@ -720,11 +740,24 @@ def _context_detail_lines(record: dict, width: int, native: bool = False, x: int
         if provenance.get(key):
             add(f"{key}: {provenance[key]}")
     for key in ("annotation_status", "construction_record_status", "native_image_status",
-                "review_state", "context_limit", "frame_review_method", "study_status", "source_binding_status", "decoding", "original_reference_status"):
+                "review_state", "context_limit", "frame_review_method", "study_status", "source_binding_status", "decoding", "original_reference_status", "production_workflow_status"):
         if provenance.get(key):
             add(f"{key.replace('_', ' ')}: {provenance[key]}")
     for variant in provenance.get("source_variants") or []:
         add(f"SHARED MOTIF VARIANT aa[{variant['archive_piece_index']}] rows {variant['line_start']}-{variant['line_end']}: {variant['text_path']}")
+    if provenance.get("profile_entry_indices") is not None:
+        add(f"My MLT: {provenance['profile_url']} positions {provenance['profile_entry_indices']} (zero-based; duplicate saves retained)")
+        add(f"visibility at inspection: {provenance['profile_visibility']}")
+    for match in provenance.get("archive_matches") or []:
+        add(f"ORIGINAL MATCH: {match['source_url']} aa[{match['archive_piece_index']}] (zero-based archive index, not a live post ID)")
+    if record.get("component_library"):
+        component = record["component_library"]
+        add(f"LIBRARY: {component['id']} / {component['title']}")
+        add("SOURCE SECTION: " + " / ".join(component["section_path"]))
+        add(f"ORIGINAL ENTRY: aa[{component['archive_piece_index']}], {component['row_count']} rows; {provenance['source_page_path']}{provenance['source_json_pointer']}")
+        if component.get("missing_comparison_font_codepoints"):
+            add("COMPARISON FONT MISSING GLYPHS (not native-fit evidence): " + " ".join(component["missing_comparison_font_codepoints"]))
+        add("Whole source entry, NOT a counted n-gram or an automatically accepted preset.")
     if provenance.get("operator_verdict") is not None:
         add(f"operator verdict: {provenance['operator_verdict']}")
         add(f"operator note: {provenance.get('operator_note') or '(empty)'}")
@@ -927,7 +960,7 @@ def init_colors() -> dict[str, int]:
         "spin": (213, -1), "dir8": (198, -1), "ramp": (84, -1), "fill": (215, -1),
         "cycle": (81, -1), "mirror": (147, -1), "topo": (208, -1),
         "distract": (203, -1), "combo": (214, -1), "context": (45, -1),
-        "authored": (114, -1), "sjis": (177, -1), "patterns": (45, -1), "round": (114, -1),
+        "authored": (114, -1), "sjis": (177, -1), "patterns": (45, -1), "round": (114, -1), "parts": (81, -1),
     } if curses.COLORS >= 256 else {
         "hud": (curses.COLOR_WHITE, -1), "dim": (curses.COLOR_BLUE, -1),
         "sel": (curses.COLOR_BLACK, curses.COLOR_WHITE), "ink": (curses.COLOR_WHITE, -1),
@@ -940,6 +973,7 @@ def init_colors() -> dict[str, int]:
         "authored": (curses.COLOR_GREEN, -1), "sjis": (curses.COLOR_MAGENTA, -1),
         "patterns": (curses.COLOR_CYAN, -1),
         "round": (curses.COLOR_GREEN, -1),
+        "parts": (curses.COLOR_CYAN, -1),
     })
     pairs = {}
     for i, (name, (fg, bg)) in enumerate(spec.items(), start=1):
@@ -1026,7 +1060,9 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
         scope = "SAVED" if saved_only else ("FOLIAGE STROKES" if all(
             f["mode"] == "stroke" for f in fams_all) else "DISCOVERY+REVIEW")
         if all(f["mode"] == "round" for f in fams_all):
-            scope = "OPERATOR CONSTRUCTION CROPS"
+            scope = "OPERATOR ROUND CONSTRUCTIONS"
+        elif all(f["mode"] == "parts" for f in fams_all):
+            scope = "COMPONENT LIBRARIES"
         safe(stdscr, 0, 1, f"Glyph Families ({scope}) — axes: " + legend(), cset["hud"] | curses.A_BOLD)
         lf = f"len={len_filter}" if len_filter else "len=all"
         note = ""
@@ -1048,6 +1084,10 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
             line = f"{'>' if issel else ' '}[{f['mode']:5}] {extent} {chars}"
             if f.get("context", {}).get("native_reference"):
                 line = f"{'>' if issel else ' '}[{f['mode']:5}] {f['context']['title']}"
+            if f.get("context", {}).get("component_library"):
+                component = f["context"]["component_library"]
+                section = " / ".join(component["section_path"]) or "source note"
+                line = f"{'>' if issel else ' '}[{f['mode']:5}] {component['id']}:{component['archive_piece_index']:03} {section}"
             shown = (_wrap_display(line, list_w - 1)[0] if f.get("context", {}).get("native_reference")
                      else line.ljust(list_w))
             safe(stdscr, y, 1, shown, attr)
@@ -1073,7 +1113,7 @@ def run(stdscr, c: ga.Corpus, fams_all: list[dict], initial_mode: str, saved_onl
                 visible_count = max(0, h - 6)  # reserve the footer; do not overwrite a source row
                 max_scroll = max(0, len(detail) - visible_count)
                 context_scroll = min(context_scroll, max_scroll)
-                kind = ("round" if context.get("native_reference") else
+                kind = ("parts" if context.get("component_library") else "round" if context.get("native_reference") else
                         "patterns" if context.get("native_comparisons") else "context")
                 safe(stdscr, 4, dx, f"{kind} {context_scroll + 1}-{min(len(detail), context_scroll + visible_count)}"
                      f" / {len(detail)}   [[]/[]] scroll", cset["dim"])
@@ -1195,7 +1235,8 @@ def main() -> int:
                          "'context' for source-backed multi-row constructions, 'authored' for the nine seed "
                          "combinations, 'sjis' for corpus-derived Shift_JIS AA combinations, "
                          "'patterns' for native Saitamaar bundle/combination comparisons, "
-                         "'round' for operator-supplied local construction crops, "
+                         "'round' for operator construction crops and the circle profile, "
+                         "'parts' for role-organized AAHub component libraries, "
                          "'aaj' for all 40 recovered AA Judgment combinations, "
                          "or legacy 'seam' as an alias for combo")
     ap.add_argument("--dump", action="store_true",
@@ -1206,8 +1247,27 @@ def main() -> int:
     ap.add_argument("--corpus", choices=sorted(SJIS_CORPORA), default="aa003",
                     help="SJIS corpus dataset for --mode sjis / combo: aa003 (AAHub slug pages, default) "
                          "or aa004 (AAHub MLT crawl, train keys)")
+    ap.add_argument("--library", help="parts: library ID from --list-libraries")
+    ap.add_argument("--section", help="parts: literal source-section substring (for example 円形 or 2行)")
+    ap.add_argument("--list-libraries", action="store_true", help="parts: list sources, IDs and original section labels")
     args = ap.parse_args()
-    if args.mode == "aaj":
+    if (args.library or args.section or args.list_libraries) and args.mode != "parts":
+        ap.error("--library / --section / --list-libraries require --mode parts")
+    if args.mode == "parts":
+        import component_library_intake as component_intake
+        try:
+            component_doc = component_intake.load()
+        except (OSError, ValueError) as exc:
+            ap.error(str(exc))
+        if args.library and args.library not in {lib['id'] for lib in component_doc['libraries']}:
+            ap.error("unknown component library; use --mode parts --list-libraries")
+        if args.list_libraries:
+            for lib in component_doc['libraries']:
+                print(f"{lib['id']}: {lib['title']} — {lib['source_entry_count_excluding_section_headings']} non-heading source entries; {lib['source_url']}")
+                print("  " + " / ".join(h['label'] for h in lib['section_headings']))
+            return 0
+        c = component_intake.ComponentCorpus(component_intake.select(component_doc, args.library, args.section))
+    elif args.mode == "aaj":
         import aaj_template_intake as intake
         try:
             aaj_doc = intake.load()
@@ -1216,8 +1276,9 @@ def main() -> int:
         c = intake.TemplateCorpus(aaj_doc)
     elif args.mode == "round":
         import operator_construction_crops as crops
+        import profile_circle_intake as profile_circles
         try:
-            round_doc = crops.load()
+            round_doc = profile_circles.extend(crops.load())
         except (OSError, ValueError) as exc:
             ap.error(str(exc))
         c = crops.ConstructionCorpus(round_doc)
@@ -1225,9 +1286,11 @@ def main() -> int:
         # Text/source-pixel evidence needs a codepoint index, not a private
         # discovery feature cache. No terminal-font raster fit is claimed.
         import operator_construction_crops as crops
+        import profile_circle_intake as profile_circles
         context_doc = json.loads(CONTEXT_EVIDENCE.read_text(encoding="utf-8"))
-        crop_doc = crops.load()
-        c = crops.ConstructionCorpus({"families": context_doc["families"] + crop_doc["families"]})
+        crop_doc = profile_circles.extend(crops.load())
+        import component_library_intake as component_intake
+        c = component_intake.ComponentCorpus(context_doc["families"] + crop_doc["families"] + component_intake.load()["families"])
     elif args.mode == "patterns":
         import saitamaar_pattern_intake as intake
         try:
@@ -1240,7 +1303,7 @@ def main() -> int:
     if args.saved and args.foliage_strokes:
         ap.error("--saved and --foliage-strokes select different review sources")
     if (args.saved or args.foliage_strokes) and args.mode in ("distract", "combo", "context",
-                                                               "authored", "seam", "sjis", "patterns", "round", "aaj"):
+                                                               "authored", "seam", "sjis", "patterns", "round", "aaj", "parts"):
         ap.error(f"--mode {args.mode} replaces the family source; it cannot be "
                  f"combined with --saved / --foliage-strokes")
     if args.foliage_strokes:
@@ -1262,8 +1325,11 @@ def main() -> int:
         fams = load_aaj_families(c, doc=aaj_doc)
         initial_mode = "aaj"
     elif args.mode == "context":
-        fams = load_context_families(c) + load_round_families(c, mode="context")
+        fams = load_context_families(c) + load_round_families(c, mode="context") + load_component_families(c, mode="context")
         initial_mode = "context"
+    elif args.mode == "parts":
+        fams = load_component_families(c, doc=component_doc, library=args.library, section=args.section)
+        initial_mode = "parts"
     elif args.mode in ("combo", "seam"):
         fams = load_combo_families(c, args.limit, args.corpus)
         initial_mode = "combo"
