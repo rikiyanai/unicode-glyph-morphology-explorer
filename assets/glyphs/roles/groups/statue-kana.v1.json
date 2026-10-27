@@ -5,8 +5,31 @@
   "t_junction": "one contour ends on, or branches from, a line that continues through: the glyph's main stroke carries the through-line and its side stroke starts/ends the abutting line (abutment/occlusion in the drawing; not proof of a physical intersection)",
   "fold_start": "apex where a drapery fold, ridge or crease begins: two strokes diverge from one point, typically one continuing an outer contour or band edge and the other opening the fold's inner edge, with paper between the legs"
  },
- "inspection_log": [],
- "gaps": [],
+ "inspection_log": [
+  "Selection: statue category page 神具・仏具・民芸品・像 (MLT 61c3c2f5b2de9783de0981411fba022c), section 【像・絵画】 aa[335-559], pieces chosen by their own headings (マリア像 424 skill-cited; 不動明王 392/395, 金剛力士 378, ニケ 413, ダビデ 433, ミロのヴィーナス 442, 平和祈念像 405, お地蔵さん 361, 阿修羅 375, 二宮金次郎 437, 土偶 463, バトル兵馬俑 503, モアイ 511, 狛犬 337, 正義の女神 428). Local resNN.txt = aa[NN] (manifest).",
+  "Locator aid (disclosed): counted the target kana inside ~27 heading-selected pieces, and searched the statue section for the rare ones (ｴ only in aa[463], 之 only in aa[503]/[504]); counts located regions, they chose nothing. Full TXT printed only for the selected pieces 424, 392, 378, 413, 433, 442 (1-74), 405, 361, 375, 437, 463 (rows 1-16), 511/512, 428 (rows 18-39), 395 (rows 1-30) to place crops.",
+  "Skill check: structural-line-selection.md Worked multi-row Veil excerpt (Madonna rows 16-19) matches archive res424.txt rows 16-19 exactly; no mismatch.",
+  "aa[424] rows 8-14 x140-300: wide face view used to place the ﾄ / ｲ / ﾘ crops; crop not kept (replaced by three tight crops).",
+  "aa[392] rows 40-46 x300-470: wide skirt view; kept the tighter x300-410 crop (ﾍ stair + ﾊ stack).",
+  "aa[392] rows 24-31 x20-210: left arm/flames view; flame ヾ marks judged texture, region narrowed to the fist (ﾌ) rows 24-28.",
+  "aa[392] rows 11-17 x210-420: face view; split into scowl (人, rows 10-13) and mouth (ゞ, rows 14-17) crops; face ｲ/ﾊ/ｿ around the eyes too dense to bind one role each, not entered.",
+  "aa[413] rows 5-14 x20-330: wing/torso view; the ﾄ r11-12 under the wing could not be read as a definite meeting at this scale - not entered; kept only the wing-root texture crop.",
+  "aa[378] rows 24-29 x250-400: first skirt crop clipped the pleat lines; replaced by rows 23-29 x175-350.",
+  "aa[378] rows 1-22 (く ハ }, {-くヽ〉, 八ゝ, 人, フ{γ): read in TXT only while placing the skirt crop; not cropped, no entry.",
+  "aa[428] rows 18-24 x425-545: first pan crop split two pans; replaced by x370-470 (one complete pan).",
+  "aa[433] rows 5-11 x0-190 kept (two 人); deltoid ﾍ and shoulder ｿ/ｨ cropped separately.",
+  "aa[442] rows 40-48: く and レ kept; ハ@122 r47 seen in the same crop but its role (strand split vs fold) is unclear - not used as a ハ witness.",
+  "aa[337] rows 3-8: dense ornament - recorded only as a non-junction counterexample; the subject reading of the passage is unsettled.",
+  "Split-stroke: none bound. Ashura く (aa[375] r8) sits on a seam between two heads but the crop does not show which ink part serves which head, so no split_stroke field was written."
+ ],
+ "gaps": [
+  "No xs (1-row) entries: every kana junction here needs its neighbours on the rows above/below to be legible; a 1-row slice would not show the meeting.",
+  "ｪ, ｴ, 之 and ヾ were found only as texture/ornament (feather band, ornament belt, armour scales, hair strands) in the statue section; no junction witness for them.",
+  "ｧ: texture (Nike wing root, Ashura bead band) plus the Ashura eye-tail mention; no clear junction witness.",
+  "Fullwidth ハ: one witness only (justice robe fold chain, aa[428] r31); halfwidth ﾊ is better covered.",
+  "三 as construction: only the moai lip mass (aa[511]); its other statue uses seen (Nike feathers, Thinker aa[452] not opened) are tone/texture.",
+  "Not opened: アテナ 421/422, ラオコーン 435, 考える人 452, 仁王像 388/390, 如来像 365-367 - left for a later pass if more ﾍ/ﾘ/ゞ witnesses are wanted."
+ ],
  "entries": [
   {
    "id": "sk2-madonna-cheek-to",
@@ -473,7 +496,7 @@
     "state": "retained",
     "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
    },
-   "inspection": "rows 15-21: ﾄ@202 ､@209 r17 begin `: : : ...`@216-246 which ends at ｲ@254 r17; ﾄ stem over ﾉ@197 r18 -> （@191 r19 -> ）@197 r20 -> ノ@189 r21 (left sleeve); ｲ@254 under /@262 r16 above 人@252 r18; collar `｀ - - '` r15 and `ゝ、｀ｰ - イ` r16 above",
+   "inspection": "rows 15-21: ﾄ@202 ､@209 r17 begin `: : : ...`@216-246 which ends at ｲ@254 r17; ﾄ stem over ﾉ@197 r18 -> （@191 r19 -> ）@197 r20 -> ノ@187 r21 (left sleeve); ｲ@254 under /@262 r16 above 人@252 r18; collar `｀ - - '` r15 and `ゝ、｀ｰ - イ` r16 above",
    "inspected_by": "statue-kana agent"
   },
   {
@@ -534,12 +557,1948 @@
     "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
    },
    "crop": "crops/sk2-madonna-mantle-fork-hito.png",
-   "note": "人 forks one descending line into two: `/`@257 r15 -> `/`@262 r16 -> ｲ@254 r17 arrive at 人@252 r18; its right leg continues SE to ヽ@267 r19 and ）@282 r20 (outer sleeve/forearm curve) while the left leg dies into `.:`; a parallel inner chain イ@244 r16 -> イ@233 r18 runs left of it; outer mantle line |/!/｜/l/| at 287-293 stays separate with a `::` strip between",
+   "note": "人 forks one descending line into two: `/`@257 r15 -> `/`@262 r16 -> ｲ@254 r17 arrive at 人@252 r18; its right leg continues SE to ヽ@267 r19 and ）@282 r20 (outer sleeve/forearm curve) while the left leg dies into `.:`; a parallel inner chain イ@244 r16 -> イ@233 r18 runs left of it; outer mantle line |@291 r15, |@292 r16, !@294 r17, ｜@288 r18, l@295 r19, |@296 r20 stays separate with a `::` strip between",
    "status": {
     "state": "retained",
     "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
    },
-   "inspection": "rows 15-20: /@257 r15, /@262 r16, ｲ@254 r17 descend to 人@252 r18; 人 right leg -> ヽ@267 r19 -> ）@282 r20; left leg ends at .: r18; イ@244 r16 / イ@233 r18 inner chain; |@288 r15-16, !@290 r17, ｜@288 r18, l r19, | r20 outer line with :: strip",
+   "inspection": "rows 15-20: /@257 r15, /@262 r16, ｲ@254 r17 descend to 人@252 r18; 人 right leg -> ヽ@267 r19 -> ）@282 r20; left leg ends at .: r18; イ@244 r16 / イ@233 r18 inner chain; |@291/|@292/!@294/｜@288/l@295/|@296 r15-20 outer line with :: strip between",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo-skirt-he-fan",
+   "role": "fold_crease",
+   "also_roles": [
+    "fold_start",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 110,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "open paper between the ﾍ ridge and the ﾊ fold to its left, and right of the ﾍ stair; the cord knot ｒｲｿ / 人ﾉ sits on paper"
+   },
+   "native": {
+    "rows": [
+     "｀ｰ,　ｒｲｿ､￣ヽ　",
+     "　　}_人ﾉ､ﾍ　　 ｀",
+     "　　　 ｌ　i ﾊ ﾍ　 　",
+     "ヾ＼） ヾ7 ﾊ　ﾍ　",
+     " （　｀ヽ　｀ｰｧ　ﾍ　",
+     "　　ヽ　　',　∨ヽ　",
+     "　　 '.　　}　　＼}_"
+    ],
+    "row_numbers": [
+     40,
+     46
+    ],
+    "x_px": [
+     300,
+     410
+    ],
+    "row_pen_x": [
+     308,
+     305,
+     300,
+     302,
+     306,
+     300,
+     305
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res392.txt",
+    "label": "神具・仏具・民芸品・像 aa[392] under heading '不動明王' (local res392.txt = aa[392])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo-skirt-he-fan.png",
+   "note": "A fold ridge drawn as a stair of single ﾍ caps (ﾍ@367 r41, @376 r42, @389 r43, @398 r44) descending SE to ヽ@389 r45 / ＼@386 r46; a parallel fold left of it is a stack of ﾊ apexes (ﾊ@361 r42, @368 r43) that closes in ｧ@379 r44 and the valley ∨@373 r45; both start under a cord knot where ｒｲｿ､ r40 sits over }_人ﾉ､ r41 (人@336: two cord loops meet)",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 40-46: knot ｒｲｿ､@340-364 r40 over }_人ﾉ､@327-360 r41; ﾍ stair @367/376/389/398 r41-44 -> ヽ@389 r45 -> ＼@386 r46; ﾊ@361 r42, ﾊ@368 r43 -> ｧ@379 r44 -> ∨@373 r45; paper between the two folds",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo-to-bar-column",
+   "role": "periodic_band",
+   "also_roles": [
+    "side"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 100,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "paper between the two ﾄ| shafts (r27-29 ~490-510) and between the shafts and the crossbars"
+   },
+   "native": {
+    "rows": [
+     ">ｭ､_ｲﾄ/｀ｰ<ﾄ|",
+     "｀ﾟ/ ﾄｌﾄ| ￣ヾ)|",
+     "/　ﾄｌﾄ|　　ｊ ﾄ|",
+     "ﾉ　 .ﾄｌﾄ|　/ｲﾄ|",
+     "_l　ﾄ|ヾ=ｿ'ﾄﾄ|",
+     " _ノ　ﾄﾊ 　 ﾉ,ｲ|",
+     "ｒ-‐'´ﾄ|ヾ=ｼ　ﾄ|",
+     "ゝ､_,､ﾄ| __,　　ﾄ|",
+     "　,ィ　ﾄ|,ィ　　 ﾄ|"
+    ],
+    "row_numbers": [
+     26,
+     34
+    ],
+    "x_px": [
+     440,
+     540
+    ],
+    "row_pen_x": [
+     441,
+     443,
+     449,
+     443,
+     453,
+     440,
+     440,
+     440,
+     440
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": null,
+    "up": "side",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res392.txt",
+    "label": "神具・仏具・民芸品・像 aa[392] under heading '不動明王' (local res392.txt = aa[392])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo-to-bar-column.png",
+   "note": "COUNTEREXAMPLE for junction lookup: ﾄ is used as a repeating notch texture, not a meeting. Two vertical shafts are built from stacked `ﾄ|` / `ﾄｌﾄ|` pairs (ﾄ@468-483 r27-29, ﾄ@519-526 r26-34); the ticks repeat every row on the same side and meet nothing; the only real meetings are the crossbars ヾ=ｿ r30 and ヾ=ｼ r32 tying the shafts. Do not read each ﾄ here as a t_junction",
+   "status": {
+    "state": "retained",
+    "reason": "counterexample (texture/periodic use of ﾄ); catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 26-34: ﾄｌﾄ|@468-486 r27-29 and ﾄ|@472-479 r30-34 make the left shaft; ﾄ|@519-533 r26-34 the right shaft; ticks repeat each row; crossbars ヾ=ｿ@483-503 r30 and ヾ=ｼ@484-504 r32 join the shafts; paper between",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo-fist-fu",
+   "role": "shoulder",
+   "also_roles": [
+    "contact_junction",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 105,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "thin paper slits between the stacked finger lines (r25/r26/r27) and between the fingertips and the hilt |@192-198"
+   },
+   "native": {
+    "rows": [
+     "ィヾｒｲ-､ヽ__ , ｲ| ",
+     "　! ﾄヽ ｀ｰｦ'ﾊ | ",
+     "　', ヾ,､ﾆﾌｌ }　| ",
+     "｀ヽゝ__ｱ_ﾉ j,　| ",
+     "　｀ヽ ＼　,ｲ {!､ｊ "
+    ],
+    "row_numbers": [
+     24,
+     28
+    ],
+    "x_px": [
+     95,
+     200
+    ],
+    "row_pen_x": [
+     96,
+     103,
+     105,
+     104,
+     96
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "contact_junction",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res392.txt",
+    "label": "神具・仏具・民芸品・像 aa[392] under heading '不動明王' (local res392.txt = aa[392])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo-fist-fu.png",
+   "note": "Fingers wrapped round a hilt: each finger's edge runs horizontally and hooks down at the tip; ﾌ@159 r26 takes the top bar of ﾆ@149 straight into its hook, which drops onto ｌ@168 (the tip's flank); the same corner recurs as ｦ@165 r25 (`｀ｰｦ'`) and ｱ@146 r27 (`__ｱ_ﾉ`); ﾊ@177 r25 and } r26 touch the vertical hilt | at 192; ﾄ@123 r25 at the inner thumb side",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 24-28: ｀ｰｦ'ﾊ@147-177 r25, ﾆﾌｌ }@149-177 r26, ゝ__ｱ_ﾉ@124-161 r27 stack three horizontal finger edges each hooking down at the right; ﾌ@159 r26 bar continues ﾆ, hook -> ｌ@168; fingertips meet hilt |@192 r24-27; paper slits between fingers kept",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-kongo-skirt-he-return",
+   "role": "return_base",
+   "also_roles": [
+    "fold_crease",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 175,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "paper between the parallel ＼＼ pleat lines and inside each ＿∧ / ＿ﾍ pocket; outside the right contour } { { ,ノ j"
+   },
+   "native": {
+    "rows": [
+     "ー＝ミ､__ノ⌒ヽ　　　　ヽ　",
+     "＼＼　＼＼＼＿∧　　　　}　",
+     "　ヽ ＼　､ ＼＼__∧　　　{　",
+     " 　 ＼ ＼＼ ＼＿xﾍ　　 {　",
+     "ヽ　　 ＼ ＼＼ ＼＿ヘ,ノ　",
+     "　＼　　 ＼ ＼＼ ＼__,.ヘ　",
+     " ＼　＼　　 ＼　　＼＼　　"
+    ],
+    "row_numbers": [
+     23,
+     29
+    ],
+    "x_px": [
+     175,
+     350
+    ],
+    "row_pen_x": [
+     189,
+     176,
+     183,
+     186,
+     184,
+     187,
+     183
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res378.txt",
+    "label": "神具・仏具・民芸品・像 aa[378] under heading '東大寺南大門金剛力士像阿形像' (local res378.txt = aa[378])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-kongo-skirt-he-return.png",
+   "note": "Pleat ends: parallel diagonal fold lines ＼＼ run SE and each one bottoms out in an underline then kicks up into a small peak: `＼＿∧` r24, `＼＼__∧` r25, `＼＿xﾍ` r26 (ﾍ@304), `＼＿ヘ,ノ` r27 (ヘ@313 meets the outer contour ノ@331), `＼__,.ヘ` r28 (ヘ@331); ﾍ/ヘ's short up-stroke is the next pleat's rising edge and its long down-stroke the hem; the right contour } { { ,ノ j closes the skirt",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 23-29: ＼ lines @176-312 descend SE; endings ＿∧@267-283 r24, __∧@282-292 r25, ＿xﾍ@281-304 r26, ＿ヘ,ノ@297-331 r27, __,.ヘ@315-331 r28; outer contour }@343 r24, {@341 r25-26, ,ノ@328-331 r27; pocket paper inside each end",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-nike-wing-root-e-texture",
+   "role": "periodic_band",
+   "also_roles": [
+    "shoulder",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper above/left of the stepped leading edge ,,イ / ,ｪｪｧ / ｧ行 / ／{ / ,ｲ / .{; colon tone only starts right of the ≦/ー feather tips"
+   },
+   "native": {
+    "rows": [
+     "　　　 　 　 　 　 　 ,,イ",
+     "　　　　　,ｪｪｧ＝≦:::::",
+     "　 　 ｧ行三ミ=ｰ::::::: :",
+     " . ／{爪彡ヾ<ﾆ=-:: :",
+     " ,ｲ三ミﾘﾊｿバ≧=ー:",
+     ".{心Jﾊ′i!川ﾘ≦三≧"
+    ],
+    "row_numbers": [
+     5,
+     10
+    ],
+    "x_px": [
+     20,
+     150
+    ],
+    "row_pen_x": [
+     22,
+     22,
+     22,
+     27,
+     22,
+     22
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_mid",
+    "up": "paper",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res413.txt",
+    "label": "神具・仏具・民芸品・像 aa[413] under heading 'サモトラケのニケ像' (local res413.txt = aa[413])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-nike-wing-root-e-texture.png",
+   "note": "COUNTEREXAMPLE/texture: ｪ, ｧ and 三 here build a feather band, not junctions. The wing's leading edge steps down-left as ,,イ r5 -> `,ｪｪｧ` r6 (the ｪ bases stack as the edge, ｧ's tail starts the slope) -> ｧ@54 r7 -> ／@40 r8 -> ,ｲ@27-30 r9; inside, 三/ミ/≧=ー bars r7-10 are layered feather rows that end in the colon tone field; no two forms meet at ｪ",
+   "status": {
+    "state": "retained",
+    "reason": "texture use of ｪ/ｧ/三 (feather band); catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 5-10: ,,イ@140-146 r5; ,ｪｪｧ＝≦@77-120 r6 (ｪ@80, ｪ@88, ｧ@96) then ::::; ｧ行三ミ=ｰ@54-113 r7; ／{爪彡ヾ<ﾆ=-@40-130 r8; ,ｲ三ミﾘﾊｿバ≧=ー r9; .{心Jﾊ′i!川ﾘ≦三≧ r10; edge steps SW, bars run E into the colon field",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-david-chest-hito",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_start"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 190,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "chest paper either side of both 人 marks; dotted tone only below the pectoral line (r9-11) and inside the right arm"
+   },
+   "native": {
+    "rows": [
+     "　　　　　 ｿ}',　 ｀-ｲ　,ｨﾆヽ,",
+     "　 　　 ,. イ　', :: .人'\" ミヽ. ヽ",
+     "　 ｨ´　 -‐''　-､ ー ｀`'＼:::::..ﾍ",
+     "...,'　　　　　　`ヽ''\" : : :　}｀Ｙ::::ﾍ",
+     "..{:..　 Ｙ.....。. . ._人...: : ﾟ.ﾉ:::. }::::::",
+     "..}'\"´. ﾊ::-‐''´......,,,､　: : }.＼{:::::::",
+     ".{　　 ,ﾍ:::......::;'\"　.;;..　..::|　　＼::"
+    ],
+    "row_numbers": [
+     5,
+     11
+    ],
+    "x_px": [
+     0,
+     190
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "shoulder",
+    "up": "flank",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res433.txt",
+    "label": "神具・仏具・民芸品・像 aa[433] under heading 'ダビデ像' (local res433.txt = aa[433])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-david-chest-hito.png",
+   "note": "Two 人 meetings on the torso: 人@103 r6 is the neck pit where the neck sides (`',`@78 r6 left, `｀-ｲ`@95-111 r5 right) converge and the clavicle lines diverge (left leg toward `-‐''` r7, right leg toward `'\"`/ミ and ＼ r7); 人@95 r9 is the sternum point where the left pectoral's lower curve `｀ヽ''\"` r8 and `._` r9 meet, legs opening into the dotted abdomen",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 5-11: ｀-ｲ@95-111 r5 and ',@78-81 r6 converge on 人@103 r6; legs -> -‐''@47-66 / ｀`'＼@120-138 r7; ｀ヽ''\"@81-106 r8 and ._@87-90 r9 meet at 人@95 r9 with dots ...: : right; paper kept on the upper chest",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-david-deltoid-he",
+   "role": "shoulder",
+   "also_roles": [
+    "flank",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 75,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "everything right of the ﾍ stair is paper; the dotted rows fill only the muscle side"
+   },
+   "native": {
+    "rows": [
+     ",ｨﾆヽ,",
+     " ミヽ. ヽ",
+     "`'＼:::::..ﾍ",
+     ": :　}｀Ｙ::::ﾍ",
+     ": ﾟ.ﾉ:::. }::::::.ﾍ",
+     ": : }.＼{::::::::: ",
+     "..::|　　＼::::;"
+    ],
+    "row_numbers": [
+     5,
+     11
+    ],
+    "x_px": [
+     125,
+     200
+    ],
+    "row_pen_x": [
+     131,
+     130,
+     128,
+     127,
+     128,
+     128,
+     131
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "shoulder",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res433.txt",
+    "label": "神具・仏具・民芸品・像 aa[433] under heading 'ダビデ像' (local res433.txt = aa[433])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-david-deltoid-he.png",
+   "note": "The deltoid's outer contour is a stair of three ﾍ caps (ﾍ@175 r7, @183 r8, @193 r9) each terminating a dotted tone row (`:::::..`, `::::`, `::::::.`): the ﾍ short stroke meets the end of the dots, the long stroke steps the contour SE to the next row; the arm's inner lines ＼ r7, }｀Ｙ r8, } r9, ＼{ r10 run inside",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 5-11: ,ｨﾆヽ, r5 and ミヽ. ヽ r6 above; ＼:::::..ﾍ@138-175 r7, }｀Ｙ::::ﾍ@149-183 r8, }::::::.ﾍ@168-193 r9 - each dotted row ends in ﾍ; r10 {:::::::::@167-195 and r11 ＼::::;@169-197 close with }@203 / ﾉ@200 just outside the slice; paper right",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-venus-drape-fu",
+   "role": "fold_crease",
+   "also_roles": [
+    "t_junction",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 230,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper strips between the horizontal drape lines and between the steep ／ / folds; the colon tone r34-35 stays above the drape"
+   },
+   "native": {
+    "rows": [
+     "　　　　. : : : : : .　.　　.　. . : : : :　　 ,. ",
+     "　　　　: : :　　　　　　　　＿,. -‐''フ´-",
+     "　　　　　　＿,,.. -‐=''フ´／　 ／ 　 　",
+     "__,.　-‐'三=￢''´￣´_／　 ／　　,. ‐''´",
+     "-=ﾆ´　　 _,, -‐ ''´/　 ／　　／__,∠",
+     "…￢''\"´ _,. ｒ''７\"´フ´￣￣´¨´　　　",
+     "￣ ¨¨フ\"´/ / /　／ ／　　　　 　 　 ",
+     "ｧ''\"´／／ / /　/ , '　 ,. - ‐　 　‐-　"
+    ],
+    "row_numbers": [
+     34,
+     41
+    ],
+    "x_px": [
+     60,
+     290
+    ],
+    "row_pen_x": [
+     66,
+     61,
+     61,
+     64,
+     72,
+     72,
+     63,
+     67
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "fold_crease",
+    "up": "tone_fringe",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res442.txt",
+    "label": "神具・仏具・民芸品・像 aa[442] under heading 'ミロのヴィーナス' (local res442.txt = aa[442])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-venus-drape-fu.png",
+   "note": "Horizontal fold lines of the hip drape end in フ, whose top bar continues the near-horizontal line and whose hook turns down-left into the steep fold lines: `-‐''フ´-` r35 (フ@261), `-‐=''フ´／` r36 (フ@190), `７\"´フ´￣` r39 (フ@186), `¨¨フ\"´/ / /` r40 (フ@100); each フ is the corner where the wrapped drape turns into a falling fold",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 34-41: ＿,. -‐''フ´-@212-282 r35; ＿,,.. -‐=''フ´／@127-211 r36; ７\"´フ´￣￣@159-223 r39; ¨¨フ\"´/ / /@84-155 r40; ／／ / / diagonals r36-41 fall SW from the フ hooks; paper strips between",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-venus-hem-ku-re",
+   "role": "fold_start",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 140,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the wedge of paper inside the く angle and the open paper between the left strands | | and the fold pocket ＼＼_/"
+   },
+   "native": {
+    "rows": [
+     " }￣ ￣ ¨¨フ\"´/ / /　",
+     "厶 -‐ｧ''\"´／／ / /　/",
+     " ｰｧ'´,. ‐く '´_// /　/ ",
+     "　〈//l　＼＼_/ /　/ /",
+     "　 {/｜　　ヽ. ｉ/　/　l　",
+     " 　 |　|　 　 　 |　/!　 ! ",
+     "　 レ|　　 　 ／{｜　!　",
+     " 　 ｜|　 　 /　ハ|　 l　",
+     " 　 |｜　 /　/　 ! ,ｲ　"
+    ],
+    "row_numbers": [
+     40,
+     48
+    ],
+    "x_px": [
+     30,
+     170
+    ],
+    "row_pen_x": [
+     33,
+     30,
+     35,
+     33,
+     33,
+     30,
+     36,
+     30,
+     38
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "fold_crease",
+    "up": "fold_crease",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res442.txt",
+    "label": "神具・仏具・民芸品・像 aa[442] under heading 'ミロのヴィーナス' (local res442.txt = aa[442])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-venus-hem-ku-re.png",
+   "note": "く@88 r42 is the pointed end of a fold pocket: its upper stroke meets the drape diagonals ´/ (r41-42), its lower stroke hands to ＼@98 r43 -> ヽ@99 r44 and the pocket closes at _/ r43 (@114-119); left of it a vertical strand | (r45) ends in レ@52 r46 whose stem continues the strand and whose tick flicks up into paper while the parallel strand |@66 keeps going",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 40-48: ‐く@80-88 r42; く upper arm toward '´@102-105 r42 / ／ r41; lower arm -> ＼@98 r43 -> ヽ@99 r44; ＼＼_/@82-119 r43; strands |@51 r45 -> レ@52 r46 -> ｜@51 r47 and |@66-67 r45-48 parallel with paper between",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-peace-shoulder-to",
+   "role": "t_junction",
+   "also_roles": [
+    "shoulder",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 125,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper above the extended arm (right of ト, above `. _` / `｀丶 .._`) and the paper wedge between the arm's upper line and its lower line 廴＿_＿_"
+   },
+   "native": {
+    "rows": [
+     ":..Y",
+     "　＞､_",
+     ".:.:::ﾉ :.:`ト . _",
+     ":,' .:.:::::川 l｢｀丶 .._",
+     "　 . .:.:.:川ljl廴＿_＿_",
+     ".　.:.:::川ljﾘ＜´￣｀ヽ"
+    ],
+    "row_numbers": [
+     9,
+     14
+    ],
+    "x_px": [
+     205,
+     330
+    ],
+    "row_pen_x": [
+     213,
+     205,
+     208,
+     214,
+     208,
+     214
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "flank",
+    "up": "flank",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res405.txt",
+    "label": "神具・仏具・民芸品・像 aa[405] under heading '平和祈念像' (local res405.txt = aa[405])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-peace-shoulder-to.png",
+   "note": "ト@255 r11 is the shoulder T of the horizontally extended arm: its stem drops onto the drapery strands 川@252 r12 / 川@250 r13 (body side continues down) while its tick starts the arm's upper contour to the right (.@270 _@278 r11 -> ｢｀丶 .._@276-318 r12); the arm's lower line leaves from 廴@276 r13 (＿_＿_ to 329); under it ﾘ@269 r14 continues strand j@265 and opens the hanging sleeve ＜´￣｀ヽ",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 9-14: ＞､_@216-239 r10 above; :.:`ト@239-255 r11 with .@270 _@278; 川@252 l@273 ｢@276 ｀丶@283-291 .._@312-318 r12; 川@250 ljl@266-273 廴@276 ＿_＿_@292-329 r13; 川@246 lj@262-265 ﾘ@269 ＜@277 ´￣｀ヽ@293-325 r14; paper above the arm",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-peace-hand-re",
+   "role": "return_base",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 75,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "paper above and right of the fist; the inside of the raised forearm between ,'/l and !/} stays empty"
+   },
+   "native": {
+    "rows": [
+     " 　 _",
+     "　 / ∟、",
+     "　/　Y^ﾚ'",
+     ",'　　!",
+     "l　　 }",
+     "l:::.:..〈　　__"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     165,
+     240
+    ],
+    "row_pen_x": [
+     172,
+     168,
+     165,
+     169,
+     167,
+     165
+    ]
+   },
+   "ports": {
+    "left": "rim_cap",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res405.txt",
+    "label": "神具・仏具・民芸品・像 aa[405] under heading '平和祈念像' (local res405.txt = aa[405])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-peace-hand-re.png",
+   "note": "Raised fist at the top: `/ ∟、` r2 and `/ Y^ﾚ'` r3; ﾚ@211 r3 closes the fist's right side - its stem drops from the curled finger and its up-right tick returns into `'`@220, while `^`@204 notches between knuckles Y@195 and ﾚ; below, the forearm sides ,'/l (left) and !@197 r4 / }@197 r5 (right) descend with paper between",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 1-6: _@193 r1; /@184 ∟@197 、@213 r2; /@176 Y@195 ^@204 ﾚ@211 '@220 r3; ,'@169-172 !@197 r4; l@167 }@197 r5; l:::.:..〈 r6; ﾚ is the lower-right return of the fist; forearm paper inside",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-jizo-sleeve-to",
+   "role": "t_junction",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "n/a",
+    "inside": "right",
+    "paper": "paper inside the sleeve between the i/ｊ edge and the ｛ ｛ ｛ line, and between the two hanging fold diagonals"
+   },
+   "native": {
+    "rows": [
+     "　 /　　　｛　　",
+     "　′　　 ｛.　",
+     " iﾄ､　 　 ｛　　",
+     "_ｊト ヽ　 丿_＿",
+     "「__｀`「_イ　　",
+     "{　丿}⌒}ト　"
+    ],
+    "row_numbers": [
+     9,
+     14
+    ],
+    "x_px": [
+     95,
+     175
+    ],
+    "row_pen_x": [
+     96,
+     99,
+     101,
+     100,
+     95,
+     99
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "flank",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res361.txt",
+    "label": "神具・仏具・民芸品・像 aa[361] under heading 'お地蔵さん' (local res361.txt = aa[361])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-jizo-sleeve-to.png",
+   "note": "Halfwidth ﾄ and fullwidth ト doing the same job on consecutive rows: ﾄ@109 r11 (i@106 beside) and ト@109 r12 (ｊ@105 beside) carry the vertical inner sleeve edge down while their ticks plus ､@116 r11 / ヽ@124 r12 start two fold lines hanging SE; the sleeve bottom 「__｀`「_イ r13 closes below; a third ト@154 r14 sits at the right of }⌒} doing the same edge+tick job",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 9-14: /@112 r9, ′@110 r10 outer sleeve; iﾄ､@106-116 r11 and _ｊト ヽ@100-124 r12 - stems stacked at 109, ticks + ､/ヽ step SE; ｛@153-155 r9-11 and 丿@152 r12 the other side; 「__｀`「_イ@95-141 r13; }⌒}ト@130-154 r14",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-jizo-hand-hachi",
+   "role": "contact_junction",
+   "also_roles": [
+    "t_junction",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper inside the rounded fist (⌒ヽ / 、 / ｝ / 乃) and between the staff's double line and the fist outline above r11"
+   },
+   "native": {
+    "rows": [
+     "　 }}ﾉ ＼",
+     "　{{′⌒ヽ",
+     "　}}ト　、 ｝",
+     "｝ﾉ八__ :.乃",
+     "/　}｝γヾ｝",
+     ".:　ノｲ　Yイ"
+    ],
+    "row_numbers": [
+     8,
+     13
+    ],
+    "x_px": [
+     215,
+     295
+    ],
+    "row_pen_x": [
+     216,
+     218,
+     221,
+     218,
+     223,
+     216
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "side",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res361.txt",
+    "label": "神具・仏具・民芸品・像 aa[361] under heading 'お地蔵さん' (local res361.txt = aa[361])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-jizo-hand-hachi.png",
+   "note": "A hand gripping the staff: the staff's double edge }} / {{ / }} (229-236, r8-10) is met by ト@240 r10 whose stem continues the staff's right edge and whose tick reaches into the fist; at the fist's base 八@234 r11 splits - left leg continues down beside ﾉ@226 along the staff, right leg sweeps into the fist's lower contour __@250-255 -> :.乃@265-271; fist top ⌒ヽ@253-269 r9, ｝@277 r10",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 8-13: }}ﾉ＼@232-253 r8; {{′⌒ヽ@229-269 r9; }}ト@232-240 、@261 ｝@277 r10; ｝ﾉ八__ :.乃@218-271 r11 (八@234); /@223 }｝@242-246 γヾ｝ r12; ノｲ@233-244 Yイ r13; fist paper kept open",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-ashura-face-ichi",
+   "role": "small_mouth",
+   "also_roles": [
+    "closed_ring"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 235,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "face paper between the eyes r芸/r芸ｧ and the mouth, and below the mouth line down to 二ﾆらぅ爪 r12"
+   },
+   "native": {
+    "rows": [
+     "γ´／---＜　ノﾍ　γ^ヽ　　　　　　　",
+     " {^り､__,　､_ノ ＼-くr'　 ‐､〉　　　　　　",
+     "^, {:r芸　r芸ｧ　})) }　　ゞ'{　　　　　　　",
+     "爪 Y　 '....〉　　　{_ソ　　__ｿ　　　　　　",
+     "　 ﾍ ゝ ｰ一　,.ィ´{　__,,,ノ　　　　　　　_",
+     "　__二ﾆらぅ爪　;　¨ ァｧｧｧｧ…ァ￢''´　",
+     "　　{{　＼　　　　 /| | | |/＼/　　　　"
+    ],
+    "row_numbers": [
+     7,
+     13
+    ],
+    "x_px": [
+     235,
+     470
+    ],
+    "row_pen_x": [
+     243,
+     240,
+     244,
+     239,
+     237,
+     238,
+     250
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "contact_junction",
+    "up": "fold_crease",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res375.txt",
+    "label": "神具・仏具・民芸品・像 aa[375] under heading '興福寺阿修羅像' (local res375.txt = aa[375])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-ashura-face-ichi.png",
+   "note": "一 as a lip line: the central face's mouth is `ｰ一` (ｰ@285 + 一@295 r11) under the nose `'....〉`@285-300 r10, flanked by ﾍ@253 (jaw corner) and ゝ@268; 一 meets nothing - its job is a flat closed-lip stroke continuing the shorter ｰ; also visible: ｧ@321 r9 as the right eye's outer tail (`r芸ｧ`), and the right head's profile beginning at く@351 r8",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 7-13: brows γ´／---＜@243-307 r7; eyes {:r芸@259-272 / r芸ｧ@299-321 r9; nose '....〉@285-300 r10; ﾍ@253 ゝ@268 ｰ@285 一@295 r11 mouth; 二ﾆらぅ爪@259-308 r12; ｧ band r12 and | strands r13 below; paper between features",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-ashura-faces-ku",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 95,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper inside the right head (between γ^ヽ, ‐､〉 and ゞ'{) and the gap between the central head's ear })) and the right head's lower contour {_ソ"
+   },
+   "native": {
+    "rows": [
+     "／ヽ ￣｀ヽ　　",
+     "　ノﾍ　γ^ヽ　",
+     " ＼-くr'　 ‐､〉　",
+     "ｧ　})) }　　ゞ'{　",
+     "　　{_ソ　　__ｿ　"
+    ],
+    "row_numbers": [
+     6,
+     10
+    ],
+    "x_px": [
+     315,
+     410
+    ],
+    "row_pen_x": [
+     322,
+     323,
+     322,
+     321,
+     319
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "rim_cap",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res375.txt",
+    "label": "神具・仏具・民芸品・像 aa[375] under heading '興福寺阿修羅像' (local res375.txt = aa[375])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-ashura-faces-ku.png",
+   "note": "Two of the three heads abut at く@351 r8: the central head's right side comes down ノﾍ@334-345 r7 -> ＼@327 r8 -> ear }))@340-349 r9, and the right head's crown γ^ヽ@366-389 r7 begins just right of it; く's upper arm points to γ@366, its lower arm to r'@360-366 r8 / }@359 r9, and `-`@343 ties it to ＼; which head owns く is an agent reading (seam point, not a merged outline)",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 6-10: ／ヽ ￣｀ヽ@322-379 r6; ノﾍ@334-345 γ^ヽ@366-389 r7; ＼@327 -@343 く@351 r'@360-366 ‐､〉@385-400 r8; ｧ@321 }))@340-349 }@359 ゞ'{@385-399 r9; {_ソ@341-350 __ｿ@385-395 r10; paper inside the right head",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-ashura-necklace-a-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 100,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "below",
+    "paper": "paper between the pendant strands | | | | under the band and above the band below the chin __,,,ノ"
+   },
+   "native": {
+    "rows": [
+     "{　__,,,ノ　　　　　",
+     "¨ ァｧｧｧｧ…ァ￢",
+     "　 /| | | |/＼/　　"
+    ],
+    "row_numbers": [
+     11,
+     13
+    ],
+    "x_px": [
+     340,
+     440
+    ],
+    "row_pen_x": [
+     346,
+     349,
+     340
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "return_base",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res375.txt",
+    "label": "神具・仏具・民芸品・像 aa[375] under heading '興福寺阿修羅像' (local res375.txt = aa[375])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-ashura-necklace-a-band.png",
+   "note": "COUNTEREXAMPLE/texture: `ァｧｧｧｧ…ァ￢` (ァ@362, ｧ@374/382/390/398, ァ@422) is a bead band; each small ｧ's tail lands on a pendant strand below (|@373/382/391 r13), so the band 'meets' the strands repetitively - a decorative periodic attachment, not a junction between two forms; the chin return {　__,,,ノ r11 sits above",
+   "status": {
+    "state": "retained",
+    "reason": "texture/periodic use of ｧ; catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 11-13: {@346 __,,,ノ@361-380 r11; ¨@349 ァ@362 ｧ@374 ｧ@382 ｧ@390 ｧ@398 …@406 ァ@422 ￢@434 r12; /@356 |@364 |@373 |@382 |@391 /@395 ＼@403 /@419 r13 hang under the ｧ tails",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-ninomiya-hair-ke-texture",
+   "role": "periodic_band",
+   "also_roles": [
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 175,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper above the f⌒ヽ-=＝≡--､ crown line; face paper below r5 between f⌒ヽ, ⌒ and ヽﾘ"
+   },
+   "native": {
+    "rows": [
+     "　　　f⌒ヽ-=＝≡--､",
+     "　 ／ミﾐヽヾヾヽ＼j⌒ﾄ､",
+     " /ミﾐヾヾヽヾヽヾヾヽ》》》ヽ",
+     "i ヾミﾐ/ミﾐヽヾヾヾヾ ヽ》》 ）",
+     " iﾐf⌒ヽ乍ミﾐj´⌒　　ヽﾘ /",
+     "ミ|(　ｿﾐ丿⌒　,-=.__　　/"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     325,
+     500
+    ],
+    "row_pen_x": [
+     330,
+     330,
+     330,
+     330,
+     326,
+     331
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "small_face"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res437.txt",
+    "label": "神具・仏具・民芸品・像 aa[437] under heading '二宮金次郎の像' (local res437.txt = aa[437])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-ninomiya-hair-ke-texture.png",
+   "note": "COUNTEREXAMPLE/texture: ヾ repeated with ミ/ﾐ/ヽ/》 fills the hair mass in curved rows (r2-4), each ヾ a strand mark, none a meeting; the mass is bounded by ／@346 r2, /@335 r3, i@330 r4 (left) and the crown f⌒ヽ-=＝≡--､ r1; the real meetings here are ﾄ@464 r2 (`j⌒ﾄ､`, top-knot cap meeting the right outline) and ﾘ@470 r5 (`ヽﾘ /`, hair edge meeting the face side)",
+   "status": {
+    "state": "retained",
+    "reason": "texture use of ヾ (hair strands); catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 1-6: f⌒ヽ-=＝≡--､@363-460 r1; ／ミﾐヽヾヾヽ＼j⌒ﾄ､@346-471 r2; /ミﾐヾヾヽヾヽヾヾヽ》》》ヽ@335-481 r3; i ヾミﾐ/ミﾐヽヾヾヾヾ ヽ》》 ）@330-492 r4; iﾐf⌒ヽ乍ミﾐj´⌒ ヽﾘ /@331-483 r5; ヾ rows follow the head curve",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-dogu-brow-nose-iri",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_start"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 140,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "E",
+    "tangent_out": "W",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper under the brow lines either side of the nose ring (.) and inside ゝ,__,ﾉ above it"
+   },
+   "native": {
+    "rows": [
+     "　　巛ゞｱ⌒ヾう心",
+     "　 rﾒｿ二ゝ,__,ﾉ二イｈ",
+     "少'´￣入(.)人￣｀マ┐",
+     "ｲﾞ_,.<Lｴニ┴ニｴL>､_",
+     " ―― ､´￣｀,.―― ┴"
+    ],
+    "row_numbers": [
+     2,
+     6
+    ],
+    "x_px": [
+     180,
+     320
+    ],
+    "row_pen_x": [
+     187,
+     181,
+     192,
+     184,
+     194
+    ]
+   },
+   "ports": {
+    "left": "rim_cap",
+    "right": "rim_cap",
+    "up": "return_base",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res463.txt",
+    "label": "神具・仏具・民芸品・像 aa[463] under heading '土偶(どぐう）' (local res463.txt = aa[463])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-dogu-brow-nose-iri.png",
+   "note": "Mirror pair at the brow-nose meeting: the left brow ￣@219 r4 ends on 入@235 and the right brow ￣@280 starts from 人@264, with the nose ring (.)@251-259 between; 入 is used as the left-hand mirror of 人 so both apexes lean toward the nose; their legs open down toward the band <Lｴニ┴ニｴL> r5; above, ゝ,__,ﾉ@236-264 r3 is the brow/forehead return",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 2-6: 巛ゞｱ⌒ヾう心@209-285 r2; rﾒｿ二ゝ,__,ﾉ二イｈ@197-301 r3; 少'´￣入(.)人￣｀マ┐@192-318 r4 (入@235, (.)@251-259, 人@264); <Lｴニ┴ニｴL>@208-300 r5; ―― ､´￣｀,.―― r6; paper under each brow",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-dogu-belt-e-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 220,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "enclosed",
+    "paper": "the band sits between the ℃α/Ｃｃ―ｏＣ row above and the Ωピ_ス―---―,オ_ピΩ row below with thin paper slits"
+   },
+   "native": {
+    "rows": [
+     "_rイ､＿_　　　　　　　　　 ＿_入__",
+     "_＼℃α￣Ｃｃ―ｏＣ￣うつ ／_心",
+     "cヽ 二二ｴヮｪ_ニ_ｪヮｴ二二 ｱっ／",
+     " ＼Ωピ_ス―----―,オ_ピΩ／　｛"
+    ],
+    "row_numbers": [
+     12,
+     15
+    ],
+    "x_px": [
+     150,
+     370
+    ],
+    "row_pen_x": [
+     154,
+     159,
+     158,
+     154
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res463.txt",
+    "label": "神具・仏具・民芸品・像 aa[463] under heading '土偶(どぐう）' (local res463.txt = aa[463])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-dogu-belt-e-band.png",
+   "note": "COUNTEREXAMPLE/texture: ｴ and ｪ make a symmetric ornament `二二ｴヮｪ_ニ_ｪヮｴ二二` (ｴ@215/290, ｪ@237/270) - decoration on one surface, no forms meet there; contrast the real meeting at the top right where the arm line ＿_ rises into 入@331 r12 and drops to __ (shoulder bump where the arm joins the body)",
+   "status": {
+    "state": "retained",
+    "reason": "texture use of ｴ/ｪ (ornament band); catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 12-15: _rイ､＿_@154-201 and ＿_入__@310-352 r12; _＼℃α￣Ｃｃ―ｏＣ￣うつ ／_心@159-355 r13; cヽ 二二ｴヮｪ_ニ_ｪヮｴ二二 ｱっ／@158-360 r14; ＼Ωピ_ス―----―,オ_ピΩ／@159-341 r15; ornament mirrored about ニ@250",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-heibayo-armor-no-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "side"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 190,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "n/a",
+    "inside": "enclosed",
+    "paper": "paper outside the armor block (left of l/l and ＼＼, right of ﾊ/!/ / /); no paper inside the 之 rows"
+   },
+   "native": {
+    "rows": [
+     " /　　　　/ //}」　　∠/|∧〈__",
+     " /　　　　/ /之之之之7/ヽ∧:",
+     " }～-　_/ /之之之之7/／ ﾍ:＼",
+     "√之=- 二二二二二７{〈_／ﾍ",
+     "_¨　-=之之之之之ﾊｰヾ}　〉",
+     "　　 ¨ T ┬─━￢冖之＼ﾏｰ`",
+     "　　 　 l　.l之之之之之之〉＼~",
+     "　　　　l　.|之之之之之之ﾊ | ヽ",
+     "　　　 ＼＼之之之之之之 !　",
+     "　　　　　＼＼之之之之./ / .l",
+     " 　 　 　 　 ＼＼之之／／　 ",
+     "　_　　 　 　 　 ＼ヾ／／　　_,."
+    ],
+    "row_numbers": [
+     16,
+     27
+    ],
+    "x_px": [
+     100,
+     290
+    ],
+    "row_pen_x": [
+     110,
+     103,
+     103,
+     103,
+     115,
+     101,
+     101,
+     100,
+     107,
+     106,
+     110,
+     106
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "side",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res503.txt",
+    "label": "神具・仏具・民芸品・像 aa[503] under heading 'バトル兵馬俑' (local res503.txt = aa[503])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-heibayo-armor-no-band.png",
+   "note": "COUNTEREXAMPLE/texture: 之 repeated 4-6 per row (r17-26) is lamellar armour scale, a periodic band, not a junction; the band is bounded by ruled lines (二二二二二７ r19, T ┬─━￢冖 r21), the sides l/l r22-23 and the tapering ＼＼ … ／／ r24-27, and rows end against the contour with 7 (r17-18) or ﾊ (r20 @235, r23 @261)",
+   "status": {
+    "state": "retained",
+    "reason": "texture use of 之 (armour scales); catalog entry, not operator-approved; no operator note"
+   },
+   "inspection": "rows 16-27: 之@181-229 7@245 r17; 之@173-221 7@237 r18; 二×5 ７@236 r19; 之@155-219 ﾊ@235 r20; 之@164-244 〉@260 r22; 之@165-245 ﾊ@261 r23; ＼＼之×6 r24, ＼＼之×4 r25, ＼＼之之／／ r26, ＼ヾ／／ r27 - the block tapers to a point",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-moai-crown-ichi",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 180,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper above the head; inside, the forehead paper between / and .:::ヽ､ above the brow line"
+   },
+   "native": {
+    "rows": [
+     "　 , - 一 -　､_",
+     " /　　　　　　.:::ヽ､",
+     "/, -ｰ- -､　.:::://:ヽ",
+     "i..::/＼::::::::ヽ､::|i::::::|"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     35,
+     215
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44,
+     44
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res511.txt",
+    "label": "神具・仏具・民芸品・像 aa[511] under heading 'モアイ' (local res511.txt = aa[511])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-moai-crown-ichi.png",
+   "note": "一 as a flat crown: `, - 一 -　､_` r1 rises from ,@60 through -@68 to 一@81 (the flat top) and falls via -@102 to ､_@121-128; the left shoulder then drops as /@49 r2 -> /@44 r3, the right as .:::ヽ､ r2 (tone side); the brow ridge `, -ｰ- -､` r3 is a second, parallel flat arc",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 1-4: ,@60 -@68 一@81 -@102 ､@121 _@128 r1; /@49 .:::ヽ､@123-147 r2; /@44 , -ｰ- -､@52-99 .::::／/:ヽ r3; i..::/＼::::::::ヽ､::|i::::::| r4; 一 is the cap's flat middle",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-moai-mouth-san",
+   "role": "small_mouth",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 190,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "paper under the nose return `｀''''''''´` r9 and below the mouth; the right cheek is colon tone"
+   },
+   "native": {
+    "rows": [
+     "　 .i i;::::ヽ､ ,i　　 .:::::::|::::::::|",
+     "　 i　｀''''''''´　　 .::::::::|::::::::|",
+     "　i-=三＝- ､　.:::::::::ゝ､ノ",
+     ". i　　　　　　　.:::::::::::i:::|",
+     "..i　　　　　　 .:::::::::::::i:::|"
+    ],
+    "row_numbers": [
+     8,
+     12
+    ],
+    "x_px": [
+     0,
+     190
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "tone_mid",
+    "up": "return_base",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res511.txt",
+    "label": "神具・仏具・民芸品・像 aa[511] under heading 'モアイ' (local res511.txt = aa[511])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-moai-mouth-san.png",
+   "note": "三 as the thick middle of a tapered mouth: `i-=三＝- ､` r10 - the line thickens from -@14 to =@22 to 三@30, then thins via ＝@46 and -@62 to ､@75; 三 here is lip mass (stacked lip strokes), not hatching or a junction; the face edge i@11 meets the mouth's left end",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 8-12: .i i;::::ヽ､ ,i r8 nose; i ｀''''''''´@16-62 r9 nose base; i@11 -@14 =@22 三@30 ＝@46 -@62 ､@75 r10; .:::::::::ゝ､ノ@93-142 r10 cheek; . i / ..i face edge r11-12",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-komainu-mane-iri-texture",
+   "role": "periodic_band",
+   "also_roles": [
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 195,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "enclosed",
+    "paper": "almost none: only the gaps inside (入__乂＿ノ__入 r5 and 込ｒ＿＿＿几 r7 are open"
+   },
+   "native": {
+    "rows": [
+     " 乂ｊ|＿　乂廴人_人__.八＿几",
+     "　 /７Ｙ⌒几_廻ノ＾乂廻几⌒Yハ",
+     " 乂_.人　(入__乂＿ノ__入ｒイ乂",
+     "⌒Y＾Y乂( |/=＝＝=|/( )Y＾Yハ",
+     "(＾)入人　 込ｒ＿＿＿几_ｒイ入",
+     "⌒Ｙ⌒込入ノﾉし示しハ込/⌒ハ"
+    ],
+    "row_numbers": [
+     3,
+     8
+    ],
+    "x_px": [
+     110,
+     305
+    ],
+    "row_pen_x": [
+     119,
+     110,
+     115,
+     117,
+     113,
+     112
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res337.txt",
+    "label": "神具・仏具・民芸品・像 aa[337] under heading '狛犬' (local res337.txt = aa[337])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-komainu-mane-iri-texture.png",
+   "note": "COUNTEREXAMPLE/texture: 乂, 入, 人, 八, ハ, 几 and 込 are packed as curl/ornament motifs (乂@124/175/227/290, 入@176/255/131/289/170, ハ@300/298/301); they repeat with Y＾Y and ⌒Y⌒ rather than marking where two forms meet; the subject reading of this dense passage is not settled from the crop, so it is recorded only as a non-junction use",
+   "status": {
+    "state": "retained",
+    "reason": "dense ornamental use of 乂/入/ハ; catalog entry, not operator-approved; no operator note; subject reading unsettled"
+   },
+   "inspection": "rows 3-8: 乂ｊ|＿ 乂廴人_人__.八＿几@124-289 r3; /７Ｙ⌒几_廻ノ＾乂廻几⌒Yハ@126-300 r4; 乂_.人 (入__乂＿ノ__入ｒイ乂@120-290 r5; ⌒Y＾Y乂( |/=＝＝=|/( )Y＾Yハ r6; (＾)入人 込ｒ＿＿＿几_ｒイ入 r7; ⌒Ｙ⌒込入ノﾉし示しハ込/⌒ハ r8",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-justice-scale-pan-gai",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 100,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the triangle of paper between the two chains and the pan's back rim ―― r22; paper under the pan"
+   },
+   "native": {
+    "rows": [
+     "　　　8:8　　　　",
+     "　　 8　8　　　　",
+     "　　 8　　8　　　",
+     "　 8.　　　8　　　",
+     "　 8　――　8　　",
+     " 乂＿＿＿乂. 　",
+     "　　ー――　'　　"
+    ],
+    "row_numbers": [
+     18,
+     24
+    ],
+    "x_px": [
+     370,
+     470
+    ],
+    "row_pen_x": [
+     377,
+     380,
+     375,
+     379,
+     370,
+     376,
+     371
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res428.txt",
+    "label": "神具・仏具・民芸品・像 aa[428] under heading '正義の女神' (local res428.txt = aa[428])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-justice-scale-pan-gai.png",
+   "note": "乂 where a chain meets a scale pan: two chains of 8 diverge from 8:8@410-421 r18 down to 8@386 / 8@448 r22, and each lands on a 乂 (乂@381 and 乂@445 r23); the 乂's upper arms take the chain, its lower arms flare as the pan lip, with the rim ＿＿＿@397-429 between them and the bowl bottom ー――@393-424 r24; ―― r22 is the pan's back rim",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 18-24: 8:8@410-421 r18; 8@407/426 r19, 8@402/432 r20, 8.@395 8@439 r21, 8@386 ――@405-421 8@448 r22; 乂@381 ＿＿＿@397-429 乂@445 r23; ー――@393-424 '@451 r24; paper inside the chain triangle",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-justice-robe-ha",
+   "role": "fold_start",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 185,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper on both sides of the descending fold chain and between it and the right-hand robe edge }} / }}"
+   },
+   "native": {
+    "rows": [
+     " ∧　 l乂　　 ー　 　 }　}",
+     "八　!　 ヽ　 　 _ ﾉノ　:}i",
+     "　 　 ヽ　　　　 ＿丿　/:}}",
+     "　　　ハ 　 乂_丿イ　 　}}",
+     "}　　　　 ＼ 　 Ｔ 丿 し＾}}ﾄ",
+     "}　　　　　　}　 八{　　ノ:}ﾉハ",
+     "}　　　　　　}　　　}} /　ﾉ　ﾉ}i"
+    ],
+    "row_numbers": [
+     28,
+     34
+    ],
+    "x_px": [
+     185,
+     370
+    ],
+    "row_pen_x": [
+     189,
+     200,
+     187,
+     187,
+     187,
+     187,
+     187
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "fold_crease",
+    "up": "fold_crease",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res428.txt",
+    "label": "神具・仏具・民芸品・像 aa[428] under heading '正義の女神' (local res428.txt = aa[428])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-justice-robe-ha.png",
+   "note": "A drapery fold descending SE as a chain of apex glyphs: ∧@194 r28 -> 八@200 r29 -> ヽ@219 r30 -> ハ@220 r31 -> ＼@240 r32 -> }@257 r33; each apex's right stroke continues the fold diagonal and its left stroke is a short spur opening the fold; 八@277 r33 starts a second fold under Ｔ@277 r32, and ハ@345 r33 another at the right edge after ﾉ@337",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 28-34: ∧@194 l乂@226-229 r28; 八@200 !@227 ヽ@247 r29; ヽ@219 r30; ハ@220 乂_丿イ@257-294 r31; ＼@240 Ｔ@277 r32; }@257 八@277 {@293 ﾉ@337 ハ@345 r33; }@257 r34; right robe edge }}@333-338 r28-34",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-david-shoulder-i-so",
+   "role": "shoulder",
+   "also_roles": [
+    "t_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 120,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper below/left of the stepped trapezius line and between it and the neck lines ',/ ,ｲ"
+   },
+   "native": {
+    "rows": [
+     "　　 　　 〉ﾐゝ'' 　.｀､",
+     "　　　　　ミﾘゝ;;::::...ﾃ",
+     "　　　　　 ｿ}',　 ｀-ｲ",
+     "　 　　 ,. イ　', :: .人'",
+     "　 ｨ´　 -‐''　-､ ー ",
+     "...,'　　　　　　`ヽ''\" :"
+    ],
+    "row_numbers": [
+     3,
+     8
+    ],
+    "x_px": [
+     0,
+     120
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "contact_junction",
+    "up": "periodic_band",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res433.txt",
+    "label": "神具・仏具・民芸品・像 aa[433] under heading 'ダビデ像' (local res433.txt = aa[433])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-david-shoulder-i-so.png",
+   "note": "ｿ ends the hair and starts the neck-shoulder line: hair curls 〉ﾐゝ r3, ミﾘゝ r4 (ﾘ@66 a curl) end at ｿ@60 r5, whose long stroke sweeps SW into the trapezius slope ,. イ@43-54 r6 -> ｨ´@16-23 r7 -> ...,'@0-12 r8; イ and ｨ step the slope down with their short top strokes; }', r5 is the neck's back edge",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 3-8: 〉ﾐゝ''@54-84 r3; ミﾘゝ;;::::...ﾃ@55-113 r4; ｿ@60 }@69 ',@73-76 r5; ,.@43-46 イ@54 ',@78-81 r6; ｨ@16 ´@23 -‐''@47-66 r7; ...,'@0-12 r8; slope ｿ->イ->ｨ->,' descends SW with paper below",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo-scowl-hito",
+   "role": "fold_crease",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "concave",
+    "inside": "none",
+    "paper": "paper in the eye sockets either side of 人 (between ﾊゝ and ｲ_ｿ) and under the brows"
+   },
+   "native": {
+    "rows": [
+     " _,ィ ヽ'ｒ､ ゝ-､_　　",
+     "'ｒ‐-､-Yｒ ｧミｲ､）-",
+     "ノ-'_ﾊゝ人ｲ_ｿ Y　",
+     "　　ヽ~　　/　ヾ/"
+    ],
+    "row_numbers": [
+     10,
+     13
+    ],
+    "x_px": [
+     235,
+     345
+    ],
+    "row_pen_x": [
+     239,
+     239,
+     236,
+     245
+    ]
+   },
+   "ports": {
+    "left": "closed_ring",
+    "right": "closed_ring",
+    "up": "fold_crease",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res392.txt",
+    "label": "神具・仏具・民芸品・像 aa[392] under heading '不動明王' (local res392.txt = aa[392])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo-scowl-hito.png",
+   "note": "The scowl: the two brows ｒ‐-､- (r11 left) and ｒ ｧミｲ､ (right) pinch to Y@279 r11, and 人@285 r12 sits under it - Y over 人 is the vertical frown crease between the eyes, 人's legs opening down toward the inner eye corners ゝ@273 (left) and ｲ@301 (right); nose ヽ~ r13 below",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 10-13: _,ィ ヽ'ｒ､ ゝ-､_ r10; 'ｒ‐-､-@239-271 Y@279 ｒ@288 ｧミｲ､@299-327 r11; ノ-'_ﾊゝ@236-273 人@285 ｲ_ｿ@301-315 Y@329 r12; ヽ@267 ~@279 /@308 ヾ/@327-339 r13",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo-mouth-gu",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 105,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "above",
+    "paper": "paper under the nose line and inside the open mouth between r15 and the chin row (!>=-=ｖ r17"
+   },
+   "native": {
+    "rows": [
+     "_≧､ﾍ､_ノ-ィ､_ｊイ",
+     "　ｲゞ-ゞY-'‐^ ｀Y",
+     "（　,ｨ ｒ'__,ヾ､　　ｊ",
+     "　(_!>=-=ｖ､）,ｲ_"
+    ],
+    "row_numbers": [
+     14,
+     17
+    ],
+    "x_px": [
+     240,
+     345
+    ],
+    "row_pen_x": [
+     246,
+     240,
+     246,
+     251
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res392.txt",
+    "label": "神具・仏具・民芸品・像 aa[392] under heading '不動明王' (local res392.txt = aa[392])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo-mouth-gu.png",
+   "note": "ゞ in the mouth: `ｲゞ-ゞY-'‐^` r15 - ゞ@260 and ゞ@279 curl the upper lip (ゝ body) while their dakuten ticks read as small tooth/fang points, separated by `-`@271 and closed by ｲ@251 (left corner) and Y@290; above, ﾍ@274 r14 between ､@267 and ､@284 is the nose-tip cap; chin (_!>=-=ｖ､） r17",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 14-17: _≧､@246-267 ﾍ@274 ､_ノ@284-296 -ィ､_ｊイ r14; ｲ@251 ゞ@260 -@271 ゞ@279 Y@290 -'‐^@299-318 ｀Y@330-338 r15; （@246 ,ｨ@265-268 ｒ'__,ヾ､@280-314 r16; (_!>=-=ｖ､）@262-323 ,ｲ_ r17",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-fudo2-cheek-he-hira",
+   "role": "fold_crease",
+   "also_roles": [
+    "small_mouth",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 155,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "none in the dark face: the dotted tone fills; the strokes stay legible because they interrupt the .:.: field"
+   },
+   "native": {
+    "rows": [
+     "℡、..ノ=={.斗==マ.:.:|/|",
+     "__`'マ:.:.:.:了＿＿ﾉ.:.:.∨}",
+     ":.:.:.:.:/|.:.:.:∨.:.:.:.:.:.:.:.:.:.:}」",
+     ":/(.:.:.:.:.:.:.:.:へ.:.:.:.:.:.:.:.:/ }",
+     ".:.:.:＼＿___ノへ.:.:.:.:.:八}",
+     "---､_ノ--..._.:.:.:.:.:/___|"
+    ],
+    "row_numbers": [
+     13,
+     18
+    ],
+    "x_px": [
+     215,
+     370
+    ],
+    "row_pen_x": [
+     217,
+     215,
+     216,
+     215,
+     217,
+     225
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res395.txt",
+    "label": "神具・仏具・民芸品・像 aa[395] under heading '不動明王' (local res395.txt = aa[395])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "statue category page, selected by its own heading; not individually cited by the skill"
+   },
+   "crop": "crops/sk2-fudo2-cheek-he-hira.png",
+   "note": "Hiragana へ in a dark tone-filled face: the mouth line ＼@235 ＿___@251-277 ノ@282 r17 hands straight into へ@293 r17 (the mouth corner kicks up and drops back into the tone), and a lone へ@279 r16 above it is a cheek/nasolabial bump carried only by the tone around it; eyes 斗==マ r13 and 了＿＿ﾉ r14 above",
+   "status": {
+    "state": "retained",
+    "reason": "statue-section piece selected by heading; catalog entry, not operator-approved; no operator note on this region"
+   },
+   "inspection": "rows 13-18: ℡、..ノ=={.斗==マ.:.:|/| r13; マ@235 了@270 ＿＿@286-302 ﾉ@318 r14; へ@279 floats in .:.: r16; ＼@235 ＿___@251-277 ノ@282 へ@293 八@339 r17; ---､_ノ--@225-280 r18; tone fills between",
    "inspected_by": "statue-kana agent"
   }
  ]
