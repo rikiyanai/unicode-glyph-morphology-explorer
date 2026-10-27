@@ -1,0 +1,1196 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "skill-amendments",
+ "inspection_log": [
+  "C#99 mlt 2f0353dc aa[99] rows 1-10 full text printed once to locate the four columns; rows 1-8 x 100-265 and x 445-610 cropped and viewed (native + x5); doc excerpt `|;;::;:|` matches row 2/4/6/8 col1 exactly -> sa-church99-column-bands-left/right",
+  "C#126 aa[126] rows 16-28 full-width native preview (x2) viewed only to locate the wedge's lower end; rows 23-28 x 130-330 and 25-28 x 0-125 cropped/viewed -> two entries; rows 28-31 x 0-330 viewed for the down ports (stripe continues to the `￣￣￣￣` ground line r31). Existing sk-church126-diagonal-light-paper (r15-25, x0-190) and sk-church126-ray-band (r18-24, x300-450) not duplicated",
+  "Operator crops crop-03/04/06/08 PNGs viewed (crop-03/04 also x5): crop-06 matches church-073 rows 7-17 and crop-04 the `（(⌒Y⌒)）` motif; crop-03 does NOT match church-036 rows 7-8 (it shows `γ⌒ヽ` over `{   }` with `ヽ`/`'´` beside it). Text search of the church MLT for a `γ⌒ヽ` row followed by a brace row gave aa[42/43/52/57/64/121/134]; aa[121] rows 2-4 x 340-460 rendered and visually matches crop-03 -> sa-church121-brace-oculus; binding discrepancy reported, operator_reference_sources.v1.json not edited",
+  "church-036.txt rows 6-9 printed with pens and rows 6-9 x 250-470 cropped/viewed (x6) -> sa-assisi036-oculus-pediment (split_stroke on 乂@349 r8, agent reading). church-036.txt differs from church-036.raw.txt only by html entities; the unescaped txt equals archive aa[36]",
+  "church-073.txt rows 5-18 printed once; rows 7-17 x 100-560 viewed (x3) as overview, then rows 7-10 x 180-430 and 10-17 x 140-470 cropped/viewed -> crown + pillar/flanking paper entries. The thick left/right band marks (`ｲ二㌃゜`…`/ﾆ'′`, `寸ム`…`Ⅵｉ`) were NOT given their own entries: aa[73] is circle-profile position 11, which another agent covers",
+  "church-105/106/107.txt rows 4-9 printed; rows 5-8 x 0-130 cropped/viewed in all three (crops byte-identical) -> one entry per variant, each stating the crop does not identify one variant; the motif also repeats at ~pen 402 in each artwork (not entered)",
+  "Text verification against archive MLT 2f0353dc (html-unescaped): church-036/073/105/106/107.txt all identical to aa[36]/[73]/[105]/[106]/[107]; aramaki-cup-plate-176.txt identical to e8e2f681 aa[176]",
+  "Cup aramaki-cup-plate-176.txt rows 4-15 x 270-400 printed with pens; whole drawing viewed once (x2) to place regions; rows 7-12 x 340-405, 12-15 x 280-405 and 15-21 x 180-330 cropped/viewed -> three entries. Existing sk-cup176-rim-ellipse/cylinder-tone/cast-shadow/plate-ellipse-return not duplicated as primary roles. `彳`@375 r13 and `ジ`@368 r14 each combine contour and hatch strokes of the same cup: not flagged as split stroke (one form, not two)",
+  "Orinrin: windows_aa_patterns.v1.json palette_groups give group 22 `２２衝撃` lines 895-1000 and group 24 `２４怒り口` lines 1127-1436 (1-based rows of windows-aa/aalist.txt; CRLF stripped by the loader). Group 22 rows 895-937 printed (direction headings `**上`/`**右上`/`**右`; one-row alternatives); group 24 rows 1215-1240 printed around the code-provenance-cited `／⌒ヽ` sample. Cropped/viewed: 1224-1226, 1228-1230, 901, 935 -> four entries addressed exactly as txt: slices of the existing aalist.txt; no new files",
+  "Split-stroke search: flagged only 乂@349 row 8 in church-036 (oculus return vs cornice). Checked and not flagged: `｢`@258 r7 church-073 (band end at the pillar occlusion), `Y`@61 r6 church-105/106/107 (generic Y join, excluded by the addendum), `彳`/`ジ` in the cup (same form)"
+ ],
+ "gaps": [
+  "church036 rows 7-8: the bound operator screenshot crop-03 does not show this passage, so the Assisi entry rests on the skill citation + verified TXT, not on a matching operator crop",
+  "church073 thick band marks: covered by the skill-rounded group (sr-p11-crown-at-pillar, sr-p11-left-flank, sr-p11-right-flank); profile 11 = aa[73] [parent note]",
+  "No xs (one-row) rim_cap from an artwork in this group; the only one-row entries are Orinrin palette fragments",
+  "C#99 rows 1-8: no thinning within a band (the courses repeat at constant density); thinning tone for this pattern comes only from C#126 here",
+  "The cup's sparse-to-denser punctuation ramp has no new entry: sk-cup176-cylinder-tone already keys rows 8-12 as tone_core/tone_mid/tone_fringe"
+ ],
+ "entries": [
+  {
+   "id": "sa-church99-column-bands-left",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 165,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "the nave interval between the two columns (pens ~143-228) stays empty except the banner cross; one half space separates each column body from its thin side-face `|`"
+   },
+   "native": {
+    "rows": [
+     "|___:| |　 　 　 　　　 | |;;:;:|　",
+     "|;;::;:| |　　 　 　 　 　| |___|　",
+     "|___:| |　 　 　 　　　 | |;;:;:|　",
+     "|;;::;:| |　　 　 　 　 　| |___|　",
+     "|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "|;;::;:| |　 ━╋━　　| |___|　",
+     "|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "|;;::;:| |　 　 ┃　　 　| |___|　"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     100,
+     265
+    ],
+    "row_pen_x": [
+     108,
+     108,
+     108,
+     108,
+     108,
+     108,
+     108,
+     108
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": null,
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99), top rows",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Four important AA construction patterns\" (updated 716bedd), \"Dots as form articulation\": church C#99 rows 1-8 column punctuation bands incl. `|;;::;:|`"
+   },
+   "crop": "crops/sa-church99-column-bands-left.png",
+   "note": "Two columns built from alternating courses: a `___` joint course and a punctuation course; the two columns run in opposite phase, and each has a separate thin side-face `|` turned toward the centre.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited dots-as-form-articulation witness; no operator rejection recorded"
+   },
+   "inspection": "col1 alternates `|___:|` (r1,3,5,7) and `|;;::;:|` (r2,4,6,8) @108-130, its `:`@127 always on the inner (right) edge; col2 runs in counter-phase `|;;:;:|`/`|___|` @238-257; thin side faces `|`@139 and `|`@229 face the centre with one half space of paper; banner `┃`@175 r5/7/8 and `━╋━`@159-191 r6 hang in the otherwise empty interval; the punctuation courses texture the column faces in rhythm with the joints, not as fill",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church99-column-bands-right",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 165,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "the interval between col3 and col4 (pens ~485-568) stays empty except the banner cross"
+   },
+   "native": {
+    "rows": [
+     " |___| |　 　　 　 　 　| |:;::;;|",
+     " |:;:;;| | 　 　 　 　　　| |:___|",
+     " |___| |　 　　 　 　 　| |:;::;;|",
+     " |:;:;;| | 　 　 　 　　　| |:___|",
+     " |___| |　 　　┃　 　 | |:;::;;|",
+     " |:;:;;| |　　━╋━ 　| |:___|",
+     " |___| |　 　　┃ 　 　| |:;::;;|",
+     " |:;:;;| | 　　　┃ 　 　| |:___|"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     445,
+     610
+    ],
+    "row_pen_x": [
+     446,
+     446,
+     446,
+     446,
+     446,
+     446,
+     446,
+     446
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": null,
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99), top rows",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Four important AA construction patterns\" (updated 716bedd), \"Dots as form articulation\": church C#99 rows 1-8 column punctuation bands incl. `|;;::;:|`"
+   },
+   "crop": "crops/sa-church99-column-bands-right.png",
+   "note": "Mirror pair of the left columns with different punctuation spellings (`:;:;;`, `:;::;;`) and the colon moved to the inner (left) edge of the outer column.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited dots-as-form-articulation witness; no operator rejection recorded"
+   },
+   "inspection": "col3 alternates `|___|` (odd rows) and `|:;:;;|` (even) @451-470; col4 counter-phase `|:;::;;|` (odd) / `|:___|` (even) @578-600 with the course colon `:`@582 on its inner (left) edge, mirroring col1 `___:`; side faces `|`@479 and `|`@569 face the centre; banner `┃`@521 r5/7/8, `━╋━`@505-537 r6",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church126-wedge-thinning-tails",
+   "role": "tone_fringe",
+   "also_roles": [
+    "tone_mid",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 200,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "a diagonal paper stripe ~60-90 px wide stepping right ~15 px per row between the left rubble tails and the right masonry; no mark inside it"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　| 　 　 | : |:::| :::|:|　　 __",
+     ":__ 　 　 　 　 _ ___|::: |:::|::::::\"´:.:.:.:.",
+     ";: : : .　　　　　　 . :.::.:|:::|:::::: : : : : ",
+     ":;.::.: : : .　　　　　 　 ..:|:::|::::: : : : : :",
+     " : : : : :|: .　　　　　　　. :|::: : : : : : ",
+     " : : : : :|: :|: .　　　 　　 　 . . : : : : "
+    ],
+    "row_numbers": [
+     23,
+     28
+    ],
+    "x_px": [
+     130,
+     330
+    ],
+    "row_pen_x": [
+     130,
+     131,
+     131,
+     130,
+     132,
+     132
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "side",
+    "up": "opening_paper_gap",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126), lower middle",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after \"Four important AA construction patterns\": church C#126 rows 16-28 colon/dot tone thinning vs broad open diagonal paper (lighting/negative-space analogy, not principal highlights)"
+   },
+   "crop": "crops/sa-church126-wedge-thinning-tails.png",
+   "note": "Lower end of the open diagonal: both bounding tone fields stop in thinning tails (`: : .`, `|: .`, `..:|`, `. :|`, `. .`) instead of an outline, so the paper stripe reads as a light passage.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited aa[126] tone-thinning comparison; lighting reading is the skill's analogy, not an operator region label"
+   },
+   "inspection": "left tails step right: r25 `;: : : .`@131-158, r26 `: : : .`@148-172, r27 `|: .`@172-184, r28 `|: :|: .`@172-199; right edge: r24 `_ ___|`@213-238 then r25 `. :.::.:|`@232-258, r26 `..:|`@251-260, r27 `. :|`@264-275, r28 column ends and dissolves into `. . : :`@283-307; stripe between is empty; masonry right of it has dense `|:::|` slabs whose rows thin to `: : : :` to the right; rows 29-30 continue the stripe until the `￣￣￣￣` ground line on row 31",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church126-rubble-tone-mid",
+   "role": "tone_mid",
+   "also_roles": [
+    "tone_core",
+    "tone_fringe",
+    "side"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 125,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "a ~14 px gap between the rubble field and the column `|:::|` on every row"
+   },
+   "native": {
+    "rows": [
+     "::j{;:;:;:::: : ￣|:::|:.:: :.:|: ",
+     "j{: : :::; : :　 |:::|.:.:.:.:.|: :",
+     ": : : : :;:;: :　|:::|.:. :.: |::; ",
+     ": : : :.:::;: :　|:::|.:.:.:.: |:::."
+    ],
+    "row_numbers": [
+     25,
+     28
+    ],
+    "x_px": [
+     0,
+     125
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "tone_mid",
+    "up": "opening_paper_gap",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126), lower left",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after \"Four important AA construction patterns\": church C#126 rows 16-28 colon/dot tone thinning vs broad open diagonal paper (lighting/negative-space analogy, not principal highlights)"
+   },
+   "crop": "crops/sa-church126-rubble-tone-mid.png",
+   "note": "Three tone densities side by side: rubble ground as spaced `:` with one denser `:::;` cluster per row, a narrow column face packed with `:::`, and a wall face alternating `.:.:` and broken `: :.` rows.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited aa[126] tone-thinning comparison; no operator region label"
+   },
+   "inspection": "r25 dense `;:;:;::::`@14-38 hugs the `j{`@6-10 edge, then `: ￣`@46-54; r26-28 rubble `:` at 8 px steps with one denser cluster each (`:::;`@24-33 r26, `:;:;:`@32-44 r27, `.:::;:`@27-42 r28) ending `: :` before a gap; column `|:::|`@64-83 dense on all rows; wall `|.:.:.:.:.|` r26/r28 vs `|:.:: :.:|` r25 and `|.:. :.: |` r27 alternate dense/broken; the field continues down to row 30 and the base `_,.⊥` on row 31",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-assisi036-oculus-pediment",
+   "role": "return_base",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 220,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the oculus (pens ~349-389, rows 7-8) and the empty pediment triangle around it; the cornice is absent between `乂` and `ノ`"
+   },
+   "native": {
+    "rows": [
+     "イﾆﾆヽ ／　　　　 　 　 　 ＼ﾆヽ",
+     "|　　 ／　　　　γ⌒ヽ　　　　＼|",
+     "|　／＿＿＿＿乂__ノ＿＿＿＿＼",
+     "|'´|¨¨|¨¨¨¨¨丁¨二二¨¨ﾞ[¨¨¨¨|¨:|"
+    ],
+    "row_numbers": [
+     6,
+     9
+    ],
+    "x_px": [
+     250,
+     470
+    ],
+    "row_pen_x": [
+     254,
+     254,
+     254,
+     252
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "shoulder",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-036.txt",
+    "label": "Assisi San Francesco, church page 2f0353dc aa[36], operator-constructions/church-036.txt (html-unescaped; verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Assisi church036 rows 7-8: changing `γ⌒ヽ` cap and `乂__ノ` lower return cooperate with their enclosed paper and surrounding architecture\""
+   },
+   "crop": "crops/sa-assisi036-oculus-pediment.png",
+   "note": "Small round window whose lower return `乂__ノ` is spelled inside the pediment's cornice run `／＿＿＿＿乂__ノ＿＿＿＿＼`: the ring interrupts the cornice instead of being drawn as a separate closed circle.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "r7 cap `γ⌒ヽ`@345-377 under the raking cornices `／`@285 / `＼`@433; r8 cornice `／＿＿＿＿`@269-333 → `乂`@349 → `__`@365-370 → `ノ`@375 → `＿＿＿＿＼`@386-450; in the crop `乂`'s left-to-right stroke continues the `γ` tail down into the window bottom `__`, its other stroke lands on the cornice end; paper kept inside the ring; r6 `イﾆﾆヽ ／` / `＼ﾆヽ` and r9 entablature `|¨¨|¨¨¨¨¨丁¨二二¨¨ﾞ[` frame it. Note: the bound screenshot crop-03 does not show these rows (see inspection_log)",
+   "inspected_by": "skill-amendments agent",
+   "split_stroke": [
+    {
+     "glyph": "乂",
+     "row": 8,
+     "pen_x": 349,
+     "serves": [
+      "left-to-right (＼) stroke -> lower-left flank/return of the oculus, continuing the `γ` tail into `__ノ`",
+      "lower-left foot of the right-to-left (ノ) stroke -> end of the pediment cornice `＿＿＿＿` arriving from the left"
+     ],
+     "depth": "oculus in front: the cornice stops at `乂` and resumes only after `ノ`@375, so it reads as passing behind the ring; the ring keeps its own enclosed paper",
+     "reading": "one intact glyph carries both the ring contour and the cornice arrival; on the right side the same meeting is spelled with a separate `ノ` and `＿`, which makes the left-side sharing visible. A plain tangent contact is also a possible reading",
+     "binding": "agent_reading"
+    }
+   ]
+  },
+  {
+   "id": "sa-basement073-shallow-crown",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 250,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between the band's outer and inner edges, and the open space below row 9 on both sides of the pillar"
+   },
+   "native": {
+    "rows": [
+     "　 　 　,｡s≦｢|:::::::::::::::::::::|¨≧s｡,　　　　　",
+     " 　 x≪ニ二ﾆ|:::::::::::::::::::::|二二ﾆ≫ｘ　　　",
+     "／二-＞''~ : |:::::::::::::::::::::|　~`'' ＜二≫,、",
+     "二㌃゜　　 　 |:::::::::::::::::::::|　　　　　｀'くﾆ心"
+    ],
+    "row_numbers": [
+     7,
+     10
+    ],
+    "x_px": [
+     180,
+     430
+    ],
+    "row_pen_x": [
+     182,
+     180,
+     183,
+     182
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-073.txt",
+    "label": "church page 2f0353dc aa[73] (basement), operator-constructions/church-073.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Basement church073 rows 7-17: shallow crown, changing sloped/steeper band marks, central pillar and flanking open regions cooperate\""
+   },
+   "crop": "crops/sa-basement073-shallow-crown.png",
+   "note": "Thick, very shallow arch crown (rises ~2 rows over ~240 px) spelled as outer edge, middle stripe and inner edge, cut at the apex by the pillar in front of it.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "outer edge r7 `,｡s≦｢`@225-258 runs into the pillar `|`@265 and resumes `¨≧s｡,`@336-374; stripe r8 `x≪ニ二ﾆ`@201-255 / `二二ﾆ≫ｘ`@336-394; inner edge r9 `／二-＞''~`@183-245 / `~`'' ＜二≫,、`@347-423; r10 hands to the steeper band `二㌃゜`@182-214 and `｀'くﾆ心`@391-421; pillar `|:::...:|`@265-332 occludes the apex on every row; three edges = band thickness, which the skill says is not licence to multiply outlines on a plain sphere; no split stroke seen (`｢` reads as the band end at the occlusion)",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-basement073-pillar-flank-paper",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "side",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 330,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "two open regions: left between the thick band (`,ｲﾆア゜`→`/ﾆ'′`) and the thin inner rib (`'゜`, `,､-:`, `｣`); right between the pillar marks (`/`, `∨/`, `V/`, `|`) and the band (`寸ム`, `寸ﾊ`, `Ⅵｉ`)"
+   },
+   "native": {
+    "rows": [
+     "　 　,ｲ二㌃゜　　 　 |:::::::::::::::::::::|　　　　　｀'くﾆ心、　　",
+     "　,ｲﾆア゜　 　 　__,,.|:::::::::::::::::::::|　　　　　　　`寸ム　　",
+     " /ﾆｱ　　 　 ,　'゜　 :|:::::::::::::::::::::|　/　　　　　　　寸ﾊ　　",
+     "/ﾆ'′　　／　　 ,､-:|:::::::::::::::::::::|∨/　　　　　　　 ∨i,　",
+     "　　　 　 ′　　,.:.:｣:::|:::::::::::::::::::::|: V/　　　　　　 　 Ⅵｉ　",
+     " 　 　 ;′ 　 /:::::|::::|:::::::::::::::::::::| : |　　　　　　　　　 'ﾆ",
+     ". : : : : |: : : :_ ‐二 : |:::::::::::::::::::::| :｜　:　:　.　　　　　 |ﾆ",
+     ": : : : : _l_:_-_:_:_:_: : : |:::::::::::::::::::::|　 l　:　:　:　:　.　.　.　|ﾆ"
+    ],
+    "row_numbers": [
+     10,
+     17
+    ],
+    "x_px": [
+     140,
+     470
+    ],
+    "row_pen_x": [
+     143,
+     148,
+     145,
+     142,
+     142,
+     149,
+     147,
+     143
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-073.txt",
+    "label": "church page 2f0353dc aa[73] (basement), operator-constructions/church-073.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"central pillar and flanking open regions cooperate\""
+   },
+   "crop": "crops/sa-basement073-pillar-flank-paper.png",
+   "note": "Central pillar as a dense colon-filled slab between two plain edges, with large empty regions kept on both sides between it and the arch band.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "pillar `|`@265 and `|`@332 with 21 `:` between on every row 10-17 (tone_core slab); left: band steps steeper `,ｲ二㌃゜`@170 r10 → `,ｲﾆア゜`@159 → `/ﾆｱ`@150 → `/ﾆ'′`@142 r13, a thin inner rib `__,,.`@246-262 r11, `,`@221 / `'゜`@235 r12, `／`@201 + `,､-:`@244-262 r13, `,.:.:｣:::`@234-262 r14 meets the pillar; right: `/`@347 r12, `∨/`@336-352 r13, `: V/`@336-354 r14, `: |`@341-349 r15, `:｜`@341 r16, `l`@352 r17 against band `寸ム`@420 r11, `寸ﾊ`@432, `∨i,`@442, `Ⅵｉ`@449, `'ﾆ`@457, `|ﾆ`@462; paper between these marks and the band stays empty; ground dots start only on rows 16-17",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church105-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-105.txt",
+    "label": "church page 2f0353dc aa[105], operator-constructions/church-105.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church105-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[105] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[105] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church106-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-106.txt",
+    "label": "church page 2f0353dc aa[106], operator-constructions/church-106.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church106-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[106] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[106] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church107-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-107.txt",
+    "label": "church page 2f0353dc aa[107], operator-constructions/church-107.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church107-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[107] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[107] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church121-brace-oculus",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 230,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "enclosed by `γ⌒ヽ`, `{ }` and `ノ '､`, open at the bottom between `ノ` and `'､`; empty bays between the radiating ribs"
+   },
+   "native": {
+    "rows": [
+     "､　＿＿＿ヽγ⌒ヽ'´＿＿_　　,､丶` ",
+     "┘`ー‐‐--' {　　　 } ──‐'　└─‐ ",
+     "￣＞　　　 ノ　　　 '､　　　　＜￣￣ j",
+     "`　 　　 ／　　　　 　 ＼　　　 　｀ヽ､,'"
+    ],
+    "row_numbers": [
+     2,
+     5
+    ],
+    "x_px": [
+     290,
+     520
+    ],
+    "row_pen_x": [
+     290,
+     292,
+     293,
+     291
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "shoulder"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#121",
+    "label": "church page 2f0353dc aa[121], rows 2-5 (the passage operator crop-03 visibly shows; see note)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\"; operator_reference_sources.v1.json operator-curve-crop-03 (bound there to aa[36] rows 7-8)"
+   },
+   "crop": "crops/sa-church121-brace-oculus.png",
+   "note": "Hub where ribs converge: a `γ⌒ヽ` cap with `{`/`}` flanks that the horizontal ribs touch, open at the bottom into diverging `／ ＼` ribs. Binding discrepancy: operator_reference_sources.v1.json binds crop-03 to aa[36] rows 7-8, but the crop's pixels (`ヽγ⌒ヽ'´` over `-' {   } ─`, with `ノ`/`'､` below) match this passage by agent visual comparison; not resolved here.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "r2 `ヽγ⌒ヽ'´`@356-415 caps the hub, outer `ヽ`@356 and `'´`@412-415 meet the ribs `＿＿＿`@308-340 / `＿＿_`@423-455; r3 flanks `{`@370 and `}`@412 touched by `ー‐‐--'`@315-362 and `──‐'`@421-461; r4 `ノ`@363 and `'､`@412-415 turn inward but leave the bottom open; `＞`@309 / `＜`@466 converge from the sides; r5 `／`@341 and `＼`@422 diverge downward; paper inside the hub",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-cup176-hatch-flank",
+   "role": "flank",
+   "also_roles": [
+    "tone_core",
+    "side"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 65,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "outside the cup to the right of the side `|`/`{` stays empty on rows 7-11; the cast shadow starts only after `j` on row 12"
+   },
+   "native": {
+    "rows": [
+     "　_,.ン |",
+     "...:;:彡|",
+     ":::;:;;;;;彡{",
+     "..:::;;;;;彡|",
+     ":;::;:;;;;彡{",
+     ".:.::;:;;;彡j:::::"
+    ],
+    "row_numbers": [
+     7,
+     12
+    ],
+    "x_px": [
+     340,
+     405
+    ],
+    "row_pen_x": [
+     347,
+     354,
+     341,
+     342,
+     341,
+     341
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Cup original TXT, rows 5-14, ties rim, sparse-to-denser punctuation, `彡` sides and `彳`/`ジ` returns to one form\"; \"Rounded constructions beyond one circle spelling\" (surface-following `彡` → `彳`/`ジ` returns)"
+   },
+   "crop": "crops/sa-cup176-hatch-flank.png",
+   "note": "Shadow-side flank carried by a stacked column of `彡` whose curved strokes bend toward the silhouette, set just inside an alternating `|`/`{` side line. Existing sk-cup176-cylinder-tone covers the same rows as tone_core (flank only as also-role); this entry keys the `彡` side as the flank itself. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "`彡`@371-372 on every row 8-12 sits ~15 px inside the side, which alternates `|`@388 (r8, r10) and `{`@387 (r9, r11) and ends `j`@387 r12; each `彡`'s three strokes curve down-right toward the side and continue the left-to-right ramp `...:;:` → `;;;;;`; r7 `_,.ン`@358-369 inner-rim return sits above the first `彡`, side `|`@388 r7",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-cup176-lower-return",
+   "role": "return_base",
+   "also_roles": [
+    "flank",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 125,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the lit lower-left of the cup between `ト ,` / `ヽ､..` and the dot ramp stays mostly empty; outside the base below `￣￣`"
+   },
+   "native": {
+    "rows": [
+     "!,　　　 . .:.::;:;;;彡j:::::",
+     "　 ト ,　 . ..,:;:;:=:彳:::::",
+     "　 ヽ､..　....::::;;;ジ.:::::::",
+     "　　　　 ￣￣"
+    ],
+    "row_numbers": [
+     12,
+     15
+    ],
+    "x_px": [
+     280,
+     405
+    ],
+    "row_pen_x": [
+     288,
+     282,
+     283,
+     280
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "cast_shadow_edge",
+    "up": "tone_core",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": cup rows 5-14 `彳`/`ジ` returns"
+   },
+   "crop": "crops/sa-cup176-lower-return.png",
+   "note": "The cup base as one return seen from both sides: plain lit-side marks `!,` → `ト ,` → `ヽ､..` on the left, directional `彡j` → `=:彳` → `;;;ジ` on the shadow side, closing on `￣￣`. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "left: `!,`@288-292 r12 → `ト ,`@298-313 r13 → `ヽ､..`@299-321 r14; right: `彡j`@371/387 r12 → `=:彳`@364-375 r13 (彳 stem steps ~12 px in from the side line) → `;;;ジ`@359-368 r14 → `￣￣`@329-345 r15; dots between thin from `;:;;;` at right to `. .` at left; shadow colons right of `j`/`彳`/`ジ` stay outside; `彳`/`ジ` strokes serve the same cup (contour + hatch), so not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-cup176-plate-right-turn",
+   "role": "flank",
+   "also_roles": [
+    "cast_shadow_edge",
+    "tone_mid",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 150,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the narrow gap between the plate-top dots and the cast-shadow dots is the plate edge; it stays empty except `` ` ``, `!`, `,: '`"
+   },
+   "native": {
+    "rows": [
+     "_　.　　　　　　　　　　　 ￣",
+     "　゛`'丶.､.......",
+     "　　　::::::...`.::::::::....",
+     "つ　　.:::::::::　 !::::::::::::...",
+     "　　　　　　,: '.:::::::::",
+     "_,,,,,...--‐=''´..::::::",
+     "‐' ''' \"´"
+    ],
+    "row_numbers": [
+     15,
+     21
+    ],
+    "x_px": [
+     180,
+     330
+    ],
+    "row_pen_x": [
+     184,
+     187,
+     184,
+     183,
+     186,
+     182,
+     189
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": cup rows 15-21 plate/context"
+   },
+   "crop": "crops/sa-cup176-plate-right-turn.png",
+   "note": "Right end of the plate ellipse carried mostly by the gap between two dot fields (plate top vs. cast shadow) plus a few sparse rim marks. Complements sk-cup176-plate-ellipse-return (pens 0-265), which stops before this turn. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "far rim `゛`'丶.､`@198-235 r16 drops to the end; the edge itself is only `` ` ``@244 r17, `!`@266 r18 and `,: '`@252-263 r19, turning into the near rim `--‐=''´`@211-249 r20; plate-top tone `::::::...`@217-241 r17 and `.:::::::::`@220-247 r18 stays left; cast shadow `.......`@242-260 r16, `.::::::::....`@251-287 r17, `::::::::::::...`@270-312 r18, `.:::::::::`@266-293 r19, `..::::::`@257-278 r20 lies right; no outline on either shadow edge",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin24-round-mouth",
+   "role": "small_mouth",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 70,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the ring; the ring is broken by half-space gaps at both lower corners"
+   },
+   "native": {
+    "rows": [
+     "　 ／⌒ヽ",
+     "　.i　　　　i",
+     "　 ヽ ＿ ノ"
+    ],
+    "row_numbers": [
+     1224,
+     1226
+    ],
+    "x_px": [
+     0,
+     70
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt (UTF-8 of aalist.txt.cp932), [ListName=２４怒り口] lines 1126-1436, blank-separated sample at lines 1224-1226",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin24-round-mouth.png",
+   "note": "Three-row round mouth from the palette: long `／` shoulder into a `⌒` cap, thin `i` flanks, and a `ヽ ＿ ノ` return with gaps. Palette entries are stored alternatives; this one is a complete blank-separated multi-row sample.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r1224 `／⌒ヽ`@16-48 (`／` shoulder longer than the right `ヽ`); r1225 `.i`@11-14 and `i`@61 flanks; r1226 `ヽ ＿ ノ`@16-54 with half spaces leaving both lower corners open; paper inside; blank rows 1223/1227 separate it from neighbouring samples",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin24-brace-mouth",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 80,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the brace ring below the doubled `二二` top"
+   },
+   "native": {
+    "rows": [
+     "　 /二二ヽ",
+     "　｛　　　　｝",
+     "　 ヽ--- '′"
+    ],
+    "row_numbers": [
+     1228,
+     1230
+    ],
+    "x_px": [
+     0,
+     80
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２４怒り口], blank-separated sample at lines 1228-1230",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin24-brace-mouth.png",
+   "note": "Rounded angry-mouth variant: `/二二ヽ` top whose double strokes give a lip line plus an inner tooth line, `｛ ｝` flanks and a dashed `ヽ--- '′` base.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r1228 `/二二ヽ`@16-56 (two `二` = outer lip line over an inner line); r1229 `｛`@11 and `｝`@63 flanks; r1230 `ヽ--- '′`@16-60 base with a short `'′` right return; paper inside; blank rows 1227/1231 separate the sample",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin22-up-turn",
+   "role": "effect_line",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 45,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "above the U turn"
+   },
+   "native": {
+    "rows": [
+     "ゞ乂ノ"
+    ],
+    "row_numbers": [
+     901,
+     901
+    ],
+    "x_px": [
+     0,
+     45
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２２衝撃] (impact), under the `**上` heading (line 895), line 901",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin22-up-turn.png",
+   "note": "One-row impact turn fragment: `ゞ` flick, `乂` crossing and `ノ` rising make a cupped U. Group 22 rows are one-row alternatives listed under direction headings, not adjacent rows of one drawing.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r901 `ゞ`@0 flick, `乂`@11 whose ＼ stroke curves into `ノ`@27 rising right = U turn; sibling alternatives `ゞ从ﾚ` r899, `ゞ火ノ` r900 directly above (not part of this slice)",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin22-right-turn",
+   "role": "effect_line",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 45,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the `て` hook"
+   },
+   "native": {
+    "rows": [
+     "⌒ヾて"
+    ],
+    "row_numbers": [
+     935,
+     935
+    ],
+    "x_px": [
+     0,
+     45
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２２衝撃] (impact), under the `**右` heading (line 931), line 935",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin22-right-turn.png",
+   "note": "One-row impact turn fragment: a `⌒` cap, a `ヾ` tick and a `て` hook curling back. A one-row stored alternative, not a drawing.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r935 `⌒`@0 cap, `ヾ`@16 tick, `て`@28 whose top bar continues the cap level and hooks back down-left; siblings `)て`, `て＿＿`, `てノ(` in rows 933-936",
+   "inspected_by": "skill-amendments agent"
+  }
+ ]
+}
