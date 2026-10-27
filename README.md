@@ -3,22 +3,20 @@
 Unicode Glyph Morphology Explorer is a terminal browser for finding Unicode
 characters by how they look.
 
-It exists because codepoint names and script blocks are the wrong search tool
-when you are building ASCII/Unicode visual effects. Sometimes you need “a thin
-vertical stroke,” “a dense block,” “a diagonal ramp,” or “a family of related
-shapes.” This repo renders glyphs through a pinned eight-font chain and compares
-their silhouettes by density, orientation, topology, and related visual
-features. The base morphology browser keeps the historical 16×16 raster, while
-the combination/seam tools measure as-positioned terminal cells: 8×16 for
-half-width glyphs and 16×16 for full-width glyphs.
+Search for a thin stroke, dense block, diagonal ramp or related shapes without
+knowing their Unicode names. The browser renders glyphs through a fixed chain
+of eight fonts and compares density, orientation, topology and other shape
+features. Individual glyphs use a 16×16 raster. Combination and seam tools
+measure positioned terminal cells: 8×16 for narrow glyphs and 16×16 for wide
+glyphs.
 
-Use it to browse candidate glyphs, inspect why they group together, and keep a
-small reviewed registry of useful morphology families for ASCII-renderer work.
+Browse glyphs, compare their shapes and save useful families for character art
+and rendering work.
 
 ![Inspect a turning CJK stroke, ノ, 川 and ﾘ by their ink shapes](docs/glyph-morphology-explorer.gif)
 
 Single-glyph inspection: turns, curves, parallel stems and hooks in the
-browser's 16×16 font-chain profile—not a tour of symbol names.
+browser's 16×16 rendering profile.
 
 ## Run
 
@@ -134,10 +132,9 @@ Unicode/Kana/CJK/Arabic review buckets, so examples such as `_.-´`,
 Arabic joining-form runs can be reviewed as run families rather than fixed two-
 or three-cell tuples.
 
-The standalone viewer treats those combinations as visual exploration data, not
-runtime proof counters. In particular, Asciicker runtime `combo_hits` values are
-candidate-transition diagnostics; they are not selected or rendered combination
-usage counts.
+The viewer helps explore combinations. It does not measure their use in the
+Asciicker renderer. That renderer's `combo_hits` counter records candidate
+transitions rather than selected or displayed combinations.
 
 The measurement profile matters. These standalone combo and seam artifacts are
 8×16 half-width / 16×16 full-width exploration data from the pinned font chain.
@@ -145,9 +142,8 @@ Current Asciicker Godot native-terminal work uses a tall 16×32 half-width cell;
 full-width glyphs retain intact 32×32 masks across two adjacent tall cells.
 Before a family, seam threshold, D_SM radius, altitude rule, or run offset is
 used by that renderer, it must be rebased in cell units for the Godot profile.
-Orthographic and perspective rendering also remain separate proof conditions,
-so this repo can identify candidate families but cannot certify either
-projection's runtime election.
+Orthographic and perspective renderers also need separate testing. A useful
+family in this viewer may behave differently in either renderer.
 
 The one-command family viewer builds and opens the measured combination surface
 too. To jump straight to it:
@@ -166,13 +162,13 @@ Regenerate the working copy with `python3 scripts/glyph_combo_gallery.py`.
 training slugs (23,363 pages) and drawn in Saitamaar 16 px at their true pixel
 offsets, each beside its mirror. The categories are:
 
-- the stroke idioms from ascii-art-authoring section 15.5;
+- recurring stroke arrangements;
 - touching stroke pairs and triples;
 - vertical stacks whose centres lie within 3 px;
 - tone bands.
 
 `--mode combo` includes them too. The data file is tracked, so no build step
-runs. Regenerating it needs the private archive and the font:
+runs. Regenerating it requires the separate source dataset and font:
 
 ```sh
 python3 scripts/sjis_corpus_combos.py ARCHIVE SPLIT.json Saitamaar-Regular.ttf \
@@ -201,25 +197,19 @@ record's paired native PNG together with these exact rows before judging glyph
 fit, joins or negative shapes. The separately packaged round references below
 also offer a native-PNG pixel viewport. Older text-only candidates remain text-only.
 
-The tracked records are source evidence, not universal glyph meanings or
-runtime proof. T#7 keeps its three separately boxed operator regions (branch
-marks, falling marks, and root/patchy-ground marks) distinct. S#424 (the statue
-page, not church C) preserves
-the whole-piece `yes` verdict while stating that there are no region rectangles;
-its local punctuation reading is not a region-level approval. C#126 and C#99
-retain source rows and reconstruction/observation status. C#135 is explicitly
-text-only because no paired native PNG was located; the repeated `人_` record
-is also raw-text-only and its subject meaning remains unassigned.
+The records show glyphs in particular drawings rather than assigning universal
+meanings to them. T#7 separates branch marks, falling marks and ground marks.
+S#424 contains a whole statue drawing without annotated region rectangles.
+C#126 and C#99 retain their source rows and reconstruction details. C#135 has
+text only because no matching native PNG was found. The repeated `人_` record
+also has text only, with no assigned subject meaning.
 
-Hand evidence preserves open spaces and ordered turntable frame records. Its
-interior fold/joint comparison is a drawn analogy only, not a proven
-mathematical suggestive-contour or ridge family. The frame review is a static
-ordered construction-study frame inspection, not playback of the original AAHub
-drawing or current MAIN. Contextual `focus length` counts codepoints in a quoted
-form, not its pixel width or the full multi-row construction's extent. The historical old-typist
-20-glyph / 38-degree limitation is not presented as current MAIN behavior.
-Likewise, AA-003 and AA-004 counts for `/⌒ヽ` are kept separate from the
-bounded source example and are not semantic labels.
+The hand examples include open spaces and ordered turntable frames. Interior
+fold and joint comparisons are visual analogies, not a mathematical
+classification of contours or ridges. These are still frames, not recordings
+of the original drawing. `focus length` counts codepoints in a quoted fragment,
+not pixels or the full drawing's width. Historical renderer limits and corpus
+frequency counts do not describe a glyph's meaning or current renderer behavior.
 
 ### Saved Windows AA patterns and tracing source
 
@@ -270,8 +260,8 @@ native-font rendering.
 - **ASCII Justice recovered:** [919-line HSP2 decompilation](assets/glyphs/contextual/windows-aa/ascii-justice/start.as),
   [93 original 8×16 mask mappings and recovery provenance](assets/glyphs/contextual/ascii_justice_recovery.v1.json),
   [portable edge/matching kernels](scripts/ascii_justice_kernels.py).
-  This supersedes the earlier manual-only inspection. Two clamp lines are
-  malformed in the decompiler output; full Windows-output parity is not claimed.
+  Two clamp lines are malformed in the decompiler output. The portable code
+  does not reproduce the complete Windows program's output.
 - **Orinrin spacing:** [portable plain/Unicode gap routines](scripts/orinrin_spacing.py),
   transcribed from the retrieved source under its GPL-3.0-or-later terms.
   Their widths are editor assumptions, not measurements of your current font.
@@ -281,17 +271,15 @@ Orinrin's trace code adjusts and displays an image underlay; the artist still
 chooses the glyph construction. Neither is an established circle-construction
 algorithm for the archived art. No Windows binary was run or added here.
 The recovery findings and exact limits are in
-[the canonical algorithm record](docs/code-provenance.md#aa-judgment-browser-completeness-and-further-algorithm-recovery-2026-10-24).
+[the algorithm notes](docs/code-provenance.md#aa-judgment-browser-completeness-and-further-algorithm-recovery-2026-10-24).
 
 #### Watch the recovered material
 
-- [Luna's real AA Judgment browser recording](assets/glyphs/contextual/windows-aa/recordings/luna-aaj-viewer.gif).
+- [AA Judgment pattern browser recording](assets/glyphs/contextual/windows-aa/recordings/luna-aaj-viewer.gif).
 
-The operator rejected the mask sheets and synthetic edge demonstration as
-irrelevant to the requested source constructions. Those five images/GIFs were
-deleted and are not recommended evidence. Inspect the actual Orinrin palette
-groups and recovered source instead. No complete Windows-converter playback
-has been delivered.
+The recording shows the pattern browser. It does not show the complete Windows
+converter running. The Orinrin palette groups and recovered source are linked
+above.
 [Recording hashes/provenance](assets/glyphs/contextual/windows-aa/recordings/recordings.v1.json);
 [browser-capture retention utility](scripts/aa_recovery_recordings.py).
 
@@ -299,38 +287,33 @@ The exact [919-line listing](assets/glyphs/contextual/windows-aa/ascii-justice/s
 is available separately for inspection; the GIF is not presented as a recording
 of that original application running.
 
-### Operator example: surface-following dots and directional bundles
+### Dots and strokes following a surface
 
-The [exact cup/plate text](assets/glyphs/contextual/aramaki-cup-plate-176.txt)
-is the operator-supplied positive example from the AAHub 荒巻スカルチノフ archive
-(`aa[176]`). Its context record, `aramaki-cup-plate-surface-following-tone`,
-preserves the explanation: sparse dots **and** multi-stroke directional glyphs
-hug/bend with the surface. Inspect the rim, `. / : / ;` field, `彡` side marks,
-and changed `彳`/`ジ` lower returns together—not a density ramp in isolation.
+The [cup and plate drawing](assets/glyphs/contextual/aramaki-cup-plate-176.txt)
+comes from entry `aa[176]` in the AAHub 荒巻スカルチノフ archive.
+Sparse dots and directional strokes follow its surfaces. Compare the rim,
+the `. / : / ;` field, `彡` side marks and `彳`/`ジ` lower returns.
 
 It is available in `--mode context` and `COMBOS`. The exact variant is currently
-**text-only**, not a claimed native raster: a similar food-page image has rice
-instead of the reclining character and is not substituted as its paired PNG.
-This explicitly supplied example is separate from the earlier rejected selection.
+text only. A similar image contains rice in place of the reclining character,
+so it is not used as a matching PNG.
 
-### Operator construction crops: the actual local curve examples
+### Curve construction examples
 
 ```sh
 ./run-families.sh --mode round
 ./run-families.sh --mode round --dump
 ```
 
-The cache-free **CONSTRUCTION CROPS** axis (CLI name `round`) now contains the
-**eight screenshots supplied by the operator**, not the rejected rounded-object
-selection. The same crops are included in `CONTEXT EVIDENCE` and `COMBOS`.
+The CONSTRUCTION CROPS axis (`round`) contains eight screenshots of curve
+constructions. They are also available in CONTEXT EVIDENCE and COMBOS.
 
 **Original AAHub sources, including the complete cup drawing:** see the
 [consolidated original-reference index](docs/code-provenance.md#original-aahub-reference-index--operators-eight-crops-and-cup-2026-10-24)
 and [machine-readable source registry](assets/glyphs/contextual/operator_reference_sources.v1.json).
-The index links every supplied crop, every matched full original and the original
-AAHub page. All eight local constructions are now source-matched. **Crop 04's
-motif is shared by variants 105/106/107**, so the index preserves all three full
-originals without claiming a unique variant or left/right copy.
+The index links each crop to its matching full drawing and original AAHub page.
+Crop 04's motif appears in variants 105, 106 and 107. All three originals are
+included because the crop does not identify a unique variant.
 
 | Crop | Evidence | Exact source binding |
 |---|---|---|
@@ -343,11 +326,9 @@ originals without claiming a unique variant or left/right copy.
 | [07](assets/glyphs/contextual/operator-constructions/crop-07.png) | `(__)` over `γ⌒ヽ` / `乂__ソ` | [Kraków St Mary's, entry 57, rows 12–14](assets/glyphs/contextual/operator-constructions/church-057.txt) |
 | [08](assets/glyphs/contextual/operator-constructions/crop-08.png) | `γ⌒ヽ` / `{　　　}` / `乂__乂`, with lower neighboring round | [Same entry 57, rows 9–14](assets/glyphs/contextual/operator-constructions/church-057.txt) |
 
-The kanji in crop 06's `寸ム` and `寸ﾊ` is **寸**, confirmed from the source text.
-It is not a claim about an unidentified character in another example. The
-operator's [Milan church passage](assets/glyphs/contextual/operator-constructions/church-027.txt)
-is also preserved as source context; the newly matched crops link to their own
-full artworks rather than being automatically assigned to Milan.
+The kanji in crop 06's `寸ム` and `寸ﾊ` is 寸, as recorded in the source text.
+The [Milan church passage](assets/glyphs/contextual/operator-constructions/church-027.txt)
+is included as another reference. It is not the source of these eight crops.
 
 Use `j`/`k` to select. The initial **overview** uses explicitly labelled integer
 ink pooling so the whole reference fits; it is not native glyph-fit evidence.
@@ -371,8 +352,8 @@ metrics. No synthetic diagnostic pictures or Windows-output claim is involved.
 The portable [mapping snapshot](assets/glyphs/contextual/construction_tool_mapping.v1.json)
 retains every overlap locator, including repeated punctuation matches grouped
 in the pane. Rebuild explicitly with `python3 scripts/construction_tool_mapping.py --write`
-using the pinned local font; browsing needs no font installation. This is an
-auditable comparison, **not a completed automatic-converter reconstruction**.
+using the pinned local font. Browsing needs no font installation. These
+comparisons do not reconstruct an automatic image converter.
 
 For the actual mechanism explanation—font-specific construction, dot shifts,
 implied continuations, patterned tone, reusable editor fragments, and automatic
