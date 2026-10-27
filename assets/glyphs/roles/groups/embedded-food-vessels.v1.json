@@ -1,0 +1,1967 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "embedded-food-vessels",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings",
+  "ellipse_rim": "perspective rim of a round opening, end face or plane (vessel mouth, cylinder end, altar) recorded with its near/far or inner/outer edges and thickness, not a cap alone",
+  "dotted_rim": "round boundary drawn as a run of leader/dot glyphs (… ‥ ．) stepping around the form, distinct from a solid contour and from a tone field",
+  "texture_boundary": "edge of a form carried only by where a texture/punctuation field stops against paper, with no traced outline (structural-line-selection.md 'Texture-supported boundary'); an image/occupancy boundary, not automatically a material seam on one surface",
+  "whole_vessel": "a complete vessel construction (perspective rim or mouth, walls/body with any coupled tone, and lower return or foot) recorded as one passage, so its parts can be resized together"
+ },
+ "inspection_log": [
+  "Read: laneB_brief_rounds_embedded.md, laneB_brief_common.md, laneB_brief_addendum.md; trueff-shallot AGENTS.md 'How to inspect'; ascii-art-authoring SKILL.md (working tree at 54a56da, later than the 716bedd named in the addendum) Revision preservation, 2.1, 2.2, Split-stroke ownership, 4.4, Mark-purpose test, 15.3-15.7; structural-line-selection.md Attachment is not construction, Split-stroke ownership, Four important AA construction patterns, Worked multi-row constructions, Rounded constructions beyond one circle spelling, Recovered AA tools; aahub-reference-index.md Role-organized component libraries, Operator circle profile update, Other individually cited pieces; schema.json; existing groups (to avoid duplicating sk-cup176-*, sa-cup176-*, sh-mlt39/34, sr-p37/p41).",
+  "Selection: section headings only. Cup page e8e2f681 【食べ物・飲み物】 aa[160]-[180] searched for 彳/ジ -> aa[175], aa[176]; tableware page ed1686b6 headings 湯呑み(87) お椀(95) ボウル(387) かめ(414) 壺(417) 鍋(185) ビン・缶(265); fruit page af2d0567 headings カキ(32) サクランボ(142) トマト(234) ミカン(364) モモ(393) リンゴ(410); circle-profile entries 30, 38, 39, 50 (skill-cited food/vessel members not yet covered).",
+  "e8e2f681 aa[175] rows 1-11 full + cup x384-488 (x2 and x6 views): small cup 8 rows, same rim/return as aa[176], 3 彡 rows -> 4 entries.",
+  "e8e2f681 aa[176] rows 1-21 full + cup rows 5-15 x282-390 (x2, x5): large cup 11 rows, 5 彡 rows -> 1 whole entry (parts already in sk-/sa- groups).",
+  "ed1686b6 aa[90] yunomi rows 1-7 (x3) -> entry; aa[91] `ｒ===ミ`/`|TTTTL`/`ヽzzzノ` 3-row cup (x3) viewed, not used (patterned body, rim not a round construction).",
+  "ed1686b6 aa[92] lidded cup (x3, x6) -> entry.",
+  "ed1686b6 aa[96] (x2, x4), aa[97] (x2, x3, x4), aa[98] (x2, x3) owan bowls -> 5 entries; aa[97]/[98] identical outline with/without fill.",
+  "ed1686b6 aa[388] (x2, x4), aa[389] (x2, x4) ボウル -> 2 entries; aa[391] 8-row angular bowl `く＿…斗` / `∧` printed as text only (PNG not viewed), not used: faceted, not a round.",
+  "ed1686b6 aa[418], aa[419] jars (x2, x4) -> 2 entries; aa[418] rows 7-8 equal aa[96] rows 3-4 glyph for glyph.",
+  "ed1686b6 aa[199], aa[200], aa[205] (鍋 section small pots) and aa[274] (ビン・缶 can) printed as text only, PNGs not viewed; not used: boxy pots/can with straight sides, no round rim construction visible in the text.",
+  "af2d0567 aa[365] mikan (x2, x5) -> entry; aa[369] mikan with a face (`（●）`) printed only, left to the faces agent; aa[377] mikan crate printed only, not round.",
+  "af2d0567 aa[235] tomato (x2, x4) -> entry; aa[236] `___WWW__` toned tomato-character with `人` feet viewed (x2), not used (character, not a fruit round).",
+  "af2d0567 aa[33] persimmon (x2, x5) -> entry.",
+  "af2d0567 aa[143] cherries (x2, x5) -> entry.",
+  "af2d0567 aa[397] peach (x2, x5) -> entry; aa[398] larger angular peach printed as text only, not used.",
+  "af2d0567 aa[412] apple (x2, x4) -> 2 entries; aa[415] cut apple (x2, x4, core x6) -> 1 entry; outline identical to aa[412].",
+  "profile entry-39 (cherries, aa[144]) rows 1-8 (x3) + rows 4-7 x30-110 (x6) -> stem junction entry.",
+  "profile entry-50 (berries, その他植物 aa[18]) rows 1-8 (x3) + left cluster rows 2-8 x12-196 (x4) -> entry; right cluster is the same text shifted, not entered twice.",
+  "profile entry-38 (和室 aa[69]) rows 15-24 (x2) + rows 18-20 x222-296 and rows 17-19 x396-500 (x6) -> 2 entries; rows 21-23 lower-left `┴ｧ'⌒k_`/`＞く⌒ヽ＞'7′` viewed, not identified as a vessel, not used.",
+  "profile entry-30 (花 aa[93]) rows 12-23 (x2) + rows 15-22 x128-221 (x4) + rows 20-22 (x6) -> vase-on-dish entry; the round shade rows 15-19 (`／◇:.:.ヽ.`, `（.:.:ヾ､;.＿＿,;ノ`) viewed but its right edge shares rows with a cocktail glass, and it is a lampshade/ornament rather than food or a vessel, so not entered.",
+  "No split_stroke recorded: the closest candidate, entry-38 row 20 `乂`@232/@253 whose crossed strokes both close the pot and cut the floor line, reads as a contact/return in the crop; I could not show one stroke serving a separate form behind it, so no split ownership is claimed."
+ ],
+ "gaps": [
+  "No small (2-5 row) cup at a THIRD size in the aa[176] family: only aa[175] (8 rows) and aa[176] (11 rows) carry the 彡 -> 彳/ジ construction in that section.",
+  "No vessel whose rim ellipse itself changes between two sizes of the same drawing: in the cup pair the rim rows are identical and only side rows are added.",
+  "Bottles (ビン) and kettles/pots (鍋, ヤカン): not entered; the small entries whose text I printed were boxy (straight sides, `|￣￣￣|`) and the larger ones (12-24 rows) were not opened for lack of a section locator narrower than the whole heading.",
+  "Pot/teapot lids at more than one size: only the 5-row lidded cup aa[92].",
+  "Cut-fruit cross-sections other than the apple core (mikan/lemon segments) not found among the opened entries.",
+  "Fruit in a basket/bowl scene with overlap against a vessel rim (fruit-in-bowl occlusion) not found in the opened entries.",
+  "A one-row vessel rim cap (xs) on its own: only the shelf vases (ef-p38-shelf-vases) as complete 1-2 row vessels."
+ ],
+ "entries": [
+  {
+   "id": "ef-cup175-whole-8row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "ellipse_rim",
+    "tone_core",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 102,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "left half of the cup body (rows 6-9, pens ~395-440) stays open paper as the lit side; inside the rim ellipse the character face `,' 3` sits in paper"
+   },
+   "native": {
+    "rows": [
+     " 　. -‐　） ‐- .",
+     "´,.::::;;:... .　. _ 　`.",
+     " ヾ:;　_,' 3`,.　ン|",
+     "l　　　　￣...:;:彡|",
+     "ｉ　　　 　 　 .;彡|",
+     "}　　　　 :;;;:;;;彡{",
+     "ト ,　 . 　 .,:;:;=:彳",
+     "ヽ、..　　.....:::;;ジ.:"
+    ],
+    "row_numbers": [
+     3,
+     10
+    ],
+    "x_px": [
+     384,
+     488
+    ],
+    "row_pen_x": [
+     386,
+     386,
+     386,
+     384,
+     384,
+     386,
+     386,
+     387
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "cast_shadow_edge",
+    "up": "effect_line",
+    "down": "cast_shadow_edge"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#175",
+    "label": "荒巻スカルチノフ page 【食べ物・飲み物】 aa[175] (Aramaki characters on a tray beside a steaming cup), cup at right",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "sibling of the skill-cited cup aa[176] in the same 【食べ物・飲み物】 section (aa[160]-[180]); located by searching that section for 彳/ジ; not itself cited"
+   },
+   "crop": "crops/ef-cup175-whole-8row.png",
+   "note": "SMALL member of the cup family: the same rim and return spelling as aa[176] but only 3 彡 side rows (aa[176] has 5), so the cup is 8 rows instead of 11 at almost the same width; ink 102 x 135 px. The rim ellipse rows and the `ト ,`/`彳` + `ヽ、`/`ジ` lower turn are copied; height is set by the number of `{l|ｉ|}} … 彡|{` side rows.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited family (sibling drawing in the cited section); not operator-approved"
+   },
+   "inspection": "row 3 `. -‐　） ‐- .` (pens 402-471) far rim broken by the steam stroke `）`@437; row 4 `´,.::::;;:...`@386-427 near rim as a dot band thinning right to `_`@457 and `` `.``@478/485; row 5 `ヾ`@391 ... `ン`@468 `|`@482 inner lip; rows 6-8 left flank `l`@384 `ｉ`@384 `}`@386 with paper beside, right side `...:;:彡|`, `.;彡|`, `:;;;:;;;彡{` (彡@463-465 against `|`/`{`@479-481); row 9 `ト ,`@386/401 opens the lower turn while `.,:;:;=:彳`@444-473 turns the tone band; row 10 `ヽ、..`@387-413 and `.....:::;;`@438-465 `ジ`@468 close it; cast-shadow dots continue right of `彳`/`ジ`",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-cup175-rim-ellipse",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "rim_cap",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 98,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between far rim row 3 and near rim row 4 (the cup mouth) only light dots; the steam stroke `）` crosses the far rim gap"
+   },
+   "native": {
+    "rows": [
+     " 　. -‐　） ‐- .",
+     "´,.::::;;:... .　. _ 　`.",
+     " ヾ:;　_,' 3`,.　ン|"
+    ],
+    "row_numbers": [
+     3,
+     5
+    ],
+    "x_px": [
+     384,
+     488
+    ],
+    "row_pen_x": [
+     386,
+     386,
+     386
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "effect_line",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#175",
+    "label": "荒巻スカルチノフ page 【食べ物・飲み物】 aa[175], cup rim rows 3-5",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "sibling of the skill-cited cup aa[176] in the same 【食べ物・飲み物】 section (aa[160]-[180]); located by searching that section for 彳/ジ; not itself cited"
+   },
+   "crop": "crops/ef-cup175-rim-ellipse.png",
+   "note": "Three-row perspective rim of the small cup; byte-identical in spelling to aa[176] rows 5-6 (the rim does not change between the 8-row and 11-row cups); ink 98 x 50 px. Far rim = sparse `. -‐ ‐- .` with a gap for steam; near rim = dot band `.´,.::::;;:...` that thins rightward; row 5 is the inner lip/content line.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited family (sibling drawing); not operator-approved"
+   },
+   "inspection": "row 3 `.`@402 `-‐`@410/418 | gap with `）`@437 | `‐-`@450/458 `.`@471 is the far rim built from short dashes ending in dots; row 4 `´`@386 then `,.::::;;:...`@394-427 a dense-to-sparse dot band as the near rim, `. _`@449/457 and `` `.``@478/485 finish the right end; row 5 `ヾ`@391 and `ン`@468 hook down into the lip with `|`@482 starting the right wall",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-cup175-hatch-side",
+   "role": "tone_core",
+   "also_roles": [
+    "flank",
+    "tone_mid",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 98,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "everything between the left flank (`l`/`ｉ`/`}`) and the tone (pens ~395-440) is paper: the lit side"
+   },
+   "native": {
+    "rows": [
+     "l　　　　￣...:;:彡|",
+     "ｉ　　　 　 　 .;彡|",
+     "}　　　　 :;;;:;;;彡{"
+    ],
+    "row_numbers": [
+     6,
+     8
+    ],
+    "x_px": [
+     384,
+     488
+    ],
+    "row_pen_x": [
+     384,
+     384,
+     386
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "ellipse_rim",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#175",
+    "label": "荒巻スカルチノフ page 【食べ物・飲み物】 aa[175], cup side rows 6-8",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "sibling of the skill-cited cup aa[176] in the same 【食べ物・飲み物】 section (aa[160]-[180]); located by searching that section for 彳/ジ; not itself cited"
+   },
+   "crop": "crops/ef-cup175-hatch-side.png",
+   "note": "Cup-style coupled tone at the small size: one `彡` per row hugging the right wall, preceded by a short colon/semicolon run that lengthens downward (`...:;:` -> `.;` -> `:;;;:;;;`); ink 98 x 50 px. In aa[176] the same rows carry 5 彡 rows with longer runs (`. . ...::::;:;;;;;彡`), so tone width and row count scale together with cup height.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited family (sibling drawing); not operator-approved"
+   },
+   "inspection": "row 6 `l`@384 left flank, `￣`@431 lip underside, `...:;:`@447-462 then `彡`@465 against `|`@481; row 7 `ｉ`@384, only `.;`@458/461 before `彡`@464 `|`@480; row 8 `}`@386, `:;;;:;;;`@439-460, `彡`@463 against `{`@479; the right wall alternates `|`/`{` where the 彡 bulge meets it; left two-thirds empty paper",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-cup175-return",
+   "role": "return_base",
+   "also_roles": [
+    "tone_mid",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 101,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "left part of rows 9-10 (between `ト ,` and the tone) stays paper with two lone dots; below row 10 is the tray/paper"
+   },
+   "native": {
+    "rows": [
+     "}　　　　 :;;;:;;;彡{",
+     "ト ,　 . 　 .,:;:;=:彳",
+     "ヽ、..　　.....:::;;ジ.:"
+    ],
+    "row_numbers": [
+     8,
+     10
+    ],
+    "x_px": [
+     384,
+     488
+    ],
+    "row_pen_x": [
+     386,
+     386,
+     387
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "cast_shadow_edge",
+    "up": "tone_core",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#175",
+    "label": "荒巻スカルチノフ page 【食べ物・飲み物】 aa[175], cup lower turn rows 8-10",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "sibling of the skill-cited cup aa[176] in the same 【食べ物・飲み物】 section (aa[160]-[180]); located by searching that section for 彳/ジ; not itself cited"
+   },
+   "crop": "crops/ef-cup175-return.png",
+   "note": "Lower turn of the small cup: the 彡 hatch changes to `=:彳` then `ジ` exactly as in aa[176] rows 13-14, and the left side turns through `ト ,` -> `ヽ、..`; ink 101 x 50 px. Same two-row return at both cup sizes; only the rows above it are added.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited family (sibling drawing); not operator-approved"
+   },
+   "inspection": "row 8 `}`@386 … `:;;;:;;;彡{` (context); row 9 `ト`@386 (flank kink into the turn) `,`@401 `.`@420, `.,:;:;=:`@444-470 then `彳`@473 (stroke turns from the 彡 slope to vertical); row 10 `ヽ、`@387/399 `..`@410/413 lower-left turn, `.....:::;;`@438-465 `ジ`@468 closes the right; dots `.:` past `ジ` belong to the cast shadow",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-cup176-whole-11row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "ellipse_rim",
+    "tone_core",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 11,
+    "px_wide": 104,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "left half of the body (pens ~295-330, rows 8-13) stays paper as the lit side; rim interior paper apart from the `ヾ<:;_` lip marks"
+   },
+   "native": {
+    "rows": [
+     "　 . -‐　） ‐- .",
+     ".´,.::::;;:... .　. _ 　`.",
+     "i ヾ<:;_　　　_,.ン |",
+     "l　　　　 ￣...:;:彡|",
+     " }　　. . ...::::;:;;;;;彡{",
+     "ｉ　　　. . ...:::;;;;;彡|",
+     "} 　 . .....:::;::;:;;;;彡{",
+     "!,　　　 . .:.::;:;;;彡j",
+     "　 ト ,　 . ..,:;:;:=:彳",
+     "　 ヽ､..　....::::;;;ジ.::",
+     "　　　 ￣￣"
+    ],
+    "row_numbers": [
+     5,
+     15
+    ],
+    "x_px": [
+     282,
+     390
+    ],
+    "row_pen_x": [
+     286,
+     286,
+     286,
+     286,
+     282,
+     286,
+     287,
+     288,
+     282,
+     283,
+     291
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "cast_shadow_edge",
+    "up": "effect_line",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
+    "label": "荒巻スカルチノフ page 【食べ物・飲み物】 aa[176] (cup on plate scene), cup rows 5-15",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Rounded constructions beyond one circle spelling\" (cup elliptical rim and surface-following 彡 -> 彳/ジ returns) and \"Recovered AA tools\" (cup aa[176] rows 5-14); aahub-reference-index.md \"Other individually cited pieces\" Cup/plate aa[176]"
+   },
+   "crop": "crops/ef-cup176-whole-11row.png",
+   "note": "LARGE member of the cup family, recorded whole so it can be compared row-for-row with ef-cup175-whole-8row: identical rim rows (5-6 here = 3-4 there) and identical return (13-14 = 9-10), but 5 side rows (8-12) instead of 3 and an extra `￣￣` base row 15; ink 104 x 171 px. Existing entries sk-cup176-* / sa-cup176-* split the same drawing by part.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (cup aa[176]); not operator-approved"
+   },
+   "inspection": "row 5 `. -‐　） ‐- .`@302-371 far rim; row 6 `.´,.::::;;:...`@286-330 near-rim dot band to `_`@360 `` `.``@381/388; row 7 `i`@286 `ヾ<:;_`@294-320 … `_,.ン`@358-369 `|`@388 lip; rows 8-12 left `l`,`}`,`ｉ`,`}`,`!,`@286-292 and right `彡`@371-372 against `|`/`{`/`j`@387-388 with colon runs `...:;:` -> `. . ...::::;:;;;;;` lengthening down; row 13 `ト ,`@298/313 and `=:彳`@364/375; row 14 `ヽ､..`@299-321 and `ジ`@368; row 15 `￣￣`@329/345 under the turn",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-owan97-whole-8row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "ellipse_rim",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 166,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "whole bowl interior and wall are paper; inside the rim ellipse (row 2) is paper"
+   },
+   "native": {
+    "rows": [
+     " ,、　''\"ﾟ~~￣￣￣~~ﾟ\"''～､",
+     "i（　　　　　　　 　 　 　 　 ）i",
+     "| ｀ ｰ‐――――――一´ |",
+     "|　　　　 　 　 　 　 　 　 　 |",
+     " 、　　　　　　　　　　 　 　 ,",
+     " ＼　　　　　　　　　　　／",
+     " 　 ｀ ┬――――┬ ´",
+     "　　　　｀ ｰ-----‐ ´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     44,
+     214
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44,
+     44,
+     44,
+     49,
+     49,
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#97",
+    "label": "食器・調理器具 【茶碗・ティーカップ・コーヒーカップ】 > お椀 aa[97]",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading お椀 (aa[95]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-owan97-whole-8row.png",
+   "note": "Line-only lacquer bowl, 8 rows; ink 166 x 128 px. Three-row rim ellipse (far rim quote-stair to `￣￣￣`, `（`/`）` lip ends inside `i`, near rim `｀ ｰ‐――――――一´`), straight `|` walls, `、`/`,` then `＼`/`／` lower turn, and a two-row foot ring `┬――――┬` over `｀ ｰ-----‐ ´`. aa[98] is the same outline filled with `:` (ef-owan98-filled-8row).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `,、`@49/52 then `''\"ﾟ~~`@74-99 `￣￣￣`@106-138 `~~ﾟ\"''～､`@154-202: far rim as a sub-cell stair rising to a flat top; row 2 `i（`@44/47 and `）i`@201/209 wall + lip end; row 3 `|`@44 `｀`@53 `ｰ‐――――――一´`@66-196 `|`@209 near rim; row 4 `|`@44 `|`@209 walls; row 5 `、`@49 `,`@207 turn; row 6 `＼`@54 `／`@191; row 7 `｀`@70 `┬――――┬`@83-163 `´`@184 foot top; row 8 `｀ ｰ-----‐ ´`@88-164 foot return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-owan97-rim-ellipse",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 166,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "mouth interior (row 2 between `（` and `）`) is paper"
+   },
+   "native": {
+    "rows": [
+     " ,、　''\"ﾟ~~￣￣￣~~ﾟ\"''～､",
+     "i（　　　　　　　 　 　 　 　 ）i",
+     "| ｀ ｰ‐――――――一´ |"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     44,
+     214
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#97",
+    "label": "食器・調理器具 お椀 aa[97], rim rows 1-3",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading お椀 (aa[95]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-owan97-rim-ellipse.png",
+   "note": "Wide three-row bowl mouth: outer wall `i`/`|` stands outside an inner lip `（ ）`, so rim thickness is the gap between `i` and `（`; far rim steps up through `''\"ﾟ~~` to `￣`; near rim `｀ ｰ‐―…一´` hangs inside the walls; ink 166 x 50 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `,、`@49/52 outer shoulder, `''\"ﾟ~~`@74-99 rising stair, `￣￣￣`@106-138 flat top, `~~ﾟ\"''～､`@154-202 falling stair; row 2 `i`@44 wall with `（`@47 lip end inside it, `）`@201 and `i`@209 mirrored; row 3 `|`@44 `｀`@53 `ｰ‐――――――一´`@66-196 near rim curving up at both ends, `|`@209",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-owan97-foot-return",
+   "role": "return_base",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 160,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "between `＼`/`／` and the foot ring, and inside the foot ring (row 8 above the dashes) is paper"
+   },
+   "native": {
+    "rows": [
+     " 、　　　　　　　　　　 　 　 ,",
+     " ＼　　　　　　　　　　　／",
+     " 　 ｀ ┬――――┬ ´",
+     "　　　　｀ ｰ-----‐ ´"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     44,
+     214
+    ],
+    "row_pen_x": [
+     44,
+     49,
+     49,
+     44
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "flank",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#97",
+    "label": "食器・調理器具 お椀 aa[97], lower turn and foot rows 5-8",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading お椀 (aa[95]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-owan97-foot-return.png",
+   "note": "Bowl lower turn that does not close in one curve: `、`/`,` -> `＼`/`／` diagonals stop short, and a separate foot ring `｀ ┬――――┬ ´` / `｀ ｰ-----‐ ´` closes the base; the `┬` glyphs are the meetings of the foot's sides with its top line; ink 160 x 48 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 5 `、`@49 and `,`@207 start the turn; row 6 `＼`@54 `／`@191 diagonals ending in open paper; row 7 `｀`@70 and `´`@184 tuck under the diagonals, `┬`@83 `――――`@99-147 `┬`@163 foot top with its two legs; row 8 `｀`@88 `ｰ-----‐`@101-151 `´`@164 foot-ring return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-owan98-filled-8row",
+   "role": "tone_core",
+   "also_roles": [
+    "whole_vessel",
+    "ellipse_rim"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 166,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "row 3 right of the near rim line and the foot ring (rows 7-8) stay paper; only the far-rim band and the body are filled"
+   },
+   "native": {
+    "rows": [
+     " ,、　''\"ﾟ~~￣￣￣~~ﾟ\"''～､",
+     "i（::::::::::::::::::::::::::::::::::::::::::::::: ）i",
+     "l::｀ ｰ‐――――――一´ |",
+     "l::::::::::::::::::::::::::::::::::::::::::::::::::::::|",
+     " 、:::::::::::::::::::::::::::::::::::::::::::::::::;",
+     " ＼ ::::::::::::::::::::::::::::::::::::: ／",
+     " 　 ｀ ┬――――┬ ´",
+     "　　　　｀ ｰ-----‐ ´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     44,
+     214
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44,
+     44,
+     44,
+     49,
+     49,
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#98",
+    "label": "食器・調理器具 お椀 aa[98] (filled variant of aa[97])",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading お椀 (aa[95]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-owan98-filled-8row.png",
+   "note": "Same outline as aa[97] with a uniform `:` fill (dark lacquer, a material fill rather than a light gradient); ink 166 x 128 px. Shows which outline glyphs survive under fill: the near-rim line stays a line, `|`->`l` on the left wall, `,`->`;` at the right turn, and the foot ring stays unfilled.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved; uniform fill is material, not form-following tone"
+   },
+   "inspection": "row 1 identical far rim to aa[97]; row 2 `i（`@44/47 then `:` x47 to `）i`; row 3 `l::`@44-50 then the same `｀ ｰ‐――――――一´` line with paper right of it and `|`@209; row 4 `l`@44 + `:` run to `|`; row 5 `、`@49 + `:` run ending `;`@~207 (aa[97] has `,`); row 6 `＼ ::…: ／`; rows 7-8 foot ring unchanged and unfilled",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-bowl389-dotrim-6row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "dotted_rim",
+    "tone_mid",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 150,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "mouth interior (row 2) and the left/upper part of the bowl wall (rows 3-4 left of pen ~80) stay paper"
+   },
+   "native": {
+    "rows": [
+     " 　 .　-‐…・・・・…‐-　.",
+     " ｉ｛　 　 　 　 　 　 　 　 ｝i",
+     " ､.｀ 　　‐------‐.:.:.:.:.´/",
+     "　 ､　 . . : : : ..:.:.:.:.:.:.:.:.: /",
+     "　 　＼:::::::::::::::::::::::::::::／",
+     "　 　 　｀' ー─―　'\""
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     40,
+     201
+    ],
+    "row_pen_x": [
+     41,
+     43,
+     43,
+     44,
+     40,
+     40
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#389",
+    "label": "食器・調理器具 【その他】 > ボウル aa[389]",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading ボウル (aa[387]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-bowl389-dotrim-6row.png",
+   "note": "Six-row bowl whose far rim is a leader/dot run `-‐…・・・・…‐-` and whose tone is coupled to the inner rim and lower wall: `.:.:.:.:.` beside the near rim at right, `. . : : :`->`..:.:.:` across row 4, full `:` run between `＼` and `／`; ink 150 x 88 px. Compare ef-bowl388 (4 rows, line only) and ef-owan97 (8 rows).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `.`@62 `-‐`@76/84 `…・・・・…`@92-140 `‐-`@156/164 `.`@183: dotted far rim; row 2 `ｉ｛`@48/52 and `｝i`@188/196 lip ends inside the walls; row 3 `､.｀`@48-58 left turn into the near rim `‐------‐`@93-149, `.:.:.:.:.`@157-181 tone, `´/`@184/192; row 4 `､`@60, sparse `. . : : :`@83-115 thickening to `..:.:.:…`@123-177, `/`@185; row 5 `＼`@67 `:`x29 `／`@170; row 6 `｀'`@83/91 `ー─―`@99-130 `'\"`@157/160 return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-bowl388-plain-4row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "ellipse_rim",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 129,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "whole bowl interior paper"
+   },
+   "native": {
+    "rows": [
+     "　＿＿＿＿＿＿＿_",
+     " l.ー─────‐―.l",
+     "　､　　 　 　 　 　 　 /",
+     " 　＼＿＿＿＿__／"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     10,
+     148
+    ],
+    "row_pen_x": [
+     11,
+     11,
+     11,
+     11
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#388",
+    "label": "食器・調理器具 【その他】 > ボウル aa[388]",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading ボウル (aa[387]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-bowl388-plain-4row.png",
+   "note": "Smallest line bowl: the mouth is only two rows (`＿＿＿` far rim over `l.ー─────‐―.l` near rim between short walls) and the body one row `､ … /` before the `＼＿＿＿＿__／` return; ink 129 x 52 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `＿`x7 @22-118 `_`@134 far rim as a flat line; row 2 `l.`@16/19 `ー─────‐―`@22-125 `.l`@141/144 near rim inside short walls; row 3 `､`@22 and `/`@136 body turn; row 4 `＼`@27 `＿＿＿＿__`@43-112 `／`@117 flat bottom return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-owan96-sidetone-5row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "tone_mid",
+    "return_base",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 119,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "left two-thirds of the body (rows 2-4) is paper (lit side); tone only along the right wall and lower right turn"
+   },
+   "native": {
+    "rows": [
+     ",._,._,._,._,._,._,._,._,.._,._",
+     ",!　　　　　　　　　;;,:!",
+     ",!　　　　　　　　　;;,:!",
+     "ヽ､　　　　　 :;:;:;:''",
+     "　　ﾞ`!二二二!"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     46,
+     172
+    ],
+    "row_pen_x": [
+     55,
+     49,
+     49,
+     55,
+     55
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#96",
+    "label": "食器・調理器具 【茶碗・ティーカップ・コーヒーカップ】 > お椀 aa[96]",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading お椀 (aa[95]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-owan96-sidetone-5row.png",
+   "note": "Five-row bowl seen nearly edge-on: rim is one scalloped `,._` run, walls `,!` / `!`, right-side tone `;;,:` hugging `!` then sweeping inward with the lower turn as `:;:;:;:''`, foot `ﾞ`!二二二!`; ink 119 x 69 px. Rows 2-4 are reused verbatim as the lower body of the jar aa[418] (ef-jar418-band-return rows 7-8).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `,._`x10 + `,.._,._`@55-163 rim as a repeated scallop; rows 2-3 `,!`@49/52 left wall with paper, `;;,:`@155-164 tone against `!`@167; row 4 `ヽ､`@55/67 lower-left turn, `:;:;:;:''`@134-158 tone running down-left along the turn; row 5 `ﾞ``@77/81 `!二二二!`@88-140 foot",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-jar418-band-return",
+   "role": "return_base",
+   "also_roles": [
+    "shoulder",
+    "periodic_band",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 91,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "left part of rows 7-8 below the pattern band is paper; outside paper"
+   },
+   "native": {
+    "rows": [
+     " ,r'´　　　　ヽ,",
+     ",!》》》》》》》》》》:!",
+     ",!巛巛巛巛巛:!",
+     ",!》》》》》》》》》》:!",
+     ",!　　　　　　 ;;,:!",
+     "ヽ､　　　　:;:;:;:''",
+     "　　ﾞ`''''''''''''''"
+    ],
+    "row_numbers": [
+     3,
+     9
+    ],
+    "x_px": [
+     50,
+     150
+    ],
+    "row_pen_x": [
+     55,
+     55,
+     55,
+     55,
+     55,
+     55,
+     55
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#418",
+    "label": "食器・調理器具 【その他】 > かめ/壺 aa[418] (jar, neck rows 1-2 omitted)",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading かめ (aa[414]) / 壺 (aa[417]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-jar418-band-return.png",
+   "note": "Jar body below the neck: `,r'´ … ヽ,` shoulder, three `》/巛` pattern rows bounded by `,!` and `:!`, then the SAME `,!　…;;,:!` / `ヽ､　…:;:;:;:''` rows as the bowl aa[96] and a `ﾞ`'''…` foot; ink 91 x 108 px. Evidence that the side-tone + lower-turn passage is a reusable standard part transplanted between a 5-row bowl and a 9-row jar.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 3 `,r'´`@60-72 left shoulder, `ヽ,`@124/136 right; rows 4-6 `,!`@55/58 then `》`x10 / `巛`x5 / `》`x10 @62-134 band, `:!`@142/145; row 7 `,!`@55/58 paper, `;;,:`@133-142 `!`@145 (= aa[96] row 3); row 8 `ヽ､`@55/67 `:;:;:;:''`@118-142 (= aa[96] row 4); row 9 `ﾞ``@77/81 `'`x14 @88-127 foot",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-jar419-tone-edge",
+   "role": "whole_vessel",
+   "also_roles": [
+    "texture_boundary",
+    "tone_mid",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "upper belly (row 3) and the left/centre of rows 5-6 are paper; the tone band of row 4 is open-ended at both sides"
+   },
+   "native": {
+    "rows": [
+     "　　 ｝:::::::::::::｛",
+     "　,r'´　　　　　ヽ,",
+     ",:'...::::::::::::::::::::::::::...::",
+     ":,　　　　　　　,,;;,,:'",
+     "　ヽ､　　 ,,;:;:;:;:;:''",
+     "　　　ﾞ`''''''''''''"
+    ],
+    "row_numbers": [
+     2,
+     7
+    ],
+    "x_px": [
+     40,
+     156
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44,
+     44,
+     44,
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#419",
+    "label": "食器・調理器具 【その他】 > 壺 aa[419]",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading 壺 (aa[417]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-jar419-tone-edge.png",
+   "note": "Round jar where tone carries part of the outline: the widest row is a dot band `,:'...:::…:::...::` whose ends ARE the left and right edge (no `|`), and the lower-right return is drawn by `,,;;,,:'` -> `,,;:;:;:;:;:''` dot runs rather than a line; ink 110 x 91 px. Same `,r'´ … ヽ,` shoulder and `ﾞ``''…` foot as aa[418].",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 2 neck `｝`@71 `:`x13 @79-115 `｛`@118; row 3 `,r'´`@55-67 and `ヽ,`@130/142 shoulders with paper between; row 4 `,:'`@44-50 `...`@53-59 `:`-run @62-137 `...`@140-146 `::`@149/152: belly band whose end dots replace both flanks; row 5 `:,`@44/47 left edge, `,,;;,,:'`@127-148 right edge as tone; row 6 `ヽ､`@55/67 and `,,;:;:;:;:;:''`@101-140; row 7 `ﾞ``@77/81 `'`x12 @88-121 foot",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-yunomi90-brace-5row",
+   "role": "whole_vessel",
+   "also_roles": [
+    "tone_core",
+    "tone_fringe",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "right part of each body row thins to paper with single dots before the right brace"
+   },
+   "native": {
+    "rows": [
+     "＿＿＿",
+     "};;::::;:: . .{",
+     "}::;:: . .　{",
+     "};;;: : : ...{",
+     "｀＝＝´"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     8,
+     90
+    ],
+    "row_pen_x": [
+     11,
+     11,
+     11,
+     11,
+     11
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "effect_line",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#90",
+    "label": "食器・調理器具 【茶碗・ティーカップ・コーヒーカップ】 > 湯呑み aa[90] (steam `∫` row 2 omitted)",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading 湯呑み (aa[87]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-yunomi90-brace-5row.png",
+   "note": "Small straight cup: flat rim `＿＿＿`, brace walls `}` … `{` on three rows, tone dense at the left wall and thinning to dots at right (`};;::::;:: . .{`), foot `｀＝＝´`; ink 50 x 63 px. The braces make a slightly bulged cylinder without an ellipse.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 3 `＿＿＿`@11-43 rim; row 4 `}`@11 `;;::::;::`@15-39 `. .`@47/55 `{`@58; row 5 `}`@11 `::;::`@15-27 `. .`@35/43 `{`@57; row 6 `}`@11 `;;;:`@15-24 `: : ...`@32-54 `{`@57; row 7 `｀`@11 `＝＝`@19/35 `´`@51 foot return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-lidbowl92-cap-joint",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "whole_vessel",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "dome interior (row 1-2) is paper apart from the `ﾆ`/`_` knob marks"
+   },
+   "native": {
+    "rows": [
+     "ｒ´⌒｀ヽ",
+     "ト、ﾆ_斗",
+     "｛::ニ::::｛",
+     "｛:::::::::::::｝",
+     " ｀￣￣"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     130,
+     188
+    ],
+    "row_pen_x": [
+     132,
+     132,
+     132,
+     132,
+     132
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/ed/ed1686b6a7c8b3b4909217de429beac1.json.gz#92",
+    "label": "食器・調理器具 【茶碗・ティーカップ・コーヒーカップ】 > 湯呑み aa[92] (lidded cup)",
+    "aahub_url": "https://aahub.org/mlt/ed1686b6a7c8b3b4909217de429beac1",
+    "cited_by": "汎用AA/小道具/飲食系/食器・調理器具 page, located via its own section heading 湯呑み (aa[87]); AA-004-style category page in aahub-mlt (the page is cited in aahub-reference-index.md as aa[341])"
+   },
+   "crop": "crops/ef-lidbowl92-cap-joint.png",
+   "note": "Lidded cup at five rows: dome lid cap `ｒ´⌒｀ヽ`, lid-to-cup meeting row `ト、ﾆ_斗` where `ト` and `斗` are the joints (the lid edge projects past the cup wall), then brace body `｛::ニ::::｛`/`｛::::::｝` and `｀￣￣` return; ink 50 x 70 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `ｒ`@132 `´⌒｀`@138-162 `ヽ`@170 dome cap; row 2 `ト`@132 left joint, `、ﾆ_`@142-163 lid rim/knob, `斗`@168 right joint whose bar sticks out past the wall; row 3 `｛`@132 `::ニ::::`@140-170 `｛`@173; row 4 `｛`@132 `:`x13 `｝`@179; row 5 `｀￣￣`@137-161 return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-mikan365-dotted-6row",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 106,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior is paper with a sparse grid of `.`/`:` peel dots; outline itself has gaps at upper left, upper right and lower centre"
+   },
+   "native": {
+    "rows": [
+     " 　 　 　 ＿_",
+     "　 ,　´　 ﾊ,ｨ　｀ .",
+     " / . :　.: ゞく.　　:',",
+     " {:　.　: .　.　｀　. : }",
+     " ',:　.　: :　.　:　: ./",
+     "　 ヽ: . 　＿ 　.／"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     108,
+     223
+    ],
+    "row_pen_x": [
+     113,
+     112,
+     114,
+     110,
+     114,
+     108
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#365",
+    "label": "野菜・果物 ミカン（蜜柑） aa[365]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading ミカン（蜜柑） (aa[364])"
+   },
+   "crop": "crops/ef-mikan365-dotted-6row.png",
+   "note": "Six-row mandarin, near the Studio xs sphere band; ink 106 x 86 px. Lost-and-found rim: `,　´` / `｀ .` top, `/`, `{ }`, `',:` / `./`, `ヽ` / `／`, a single `＿` navel at the bottom; calyx `ﾊ,ｨ` over `ゞく.` under a `＿_` stem; interior sparse dots organised in rows read as peel texture, not shading.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `＿_`@166/182 stem; row 2 `,`@128 `´`@142 rim fragments, `ﾊ,ｨ`@166-179 calyx, `｀`@197 `.`@210; row 3 `/`@119 left shoulder, `ゞく.`@165-185 calyx base, `:',`@210-216 right shoulder; row 4 `{`@115 and `}`@218 widest flanks with `: . : .` dots between; row 5 `',:`@119-125 and `./`@211/214; row 6 `ヽ`@124 `:` `.` then `＿`@163 navel and `.／`@195/198 return; outline gaps at rows 2 and 6 left open",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-tomato235-calyx-tone-8row",
+   "role": "whole_circle",
+   "also_roles": [
+    "texture_boundary",
+    "tone_core",
+    "contact_junction",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 149,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "a paper notch on row 4 (pens ~90-105) is the highlight; the sepal triangles `／::::＼` on row 3 are bounded by `}`/`{`"
+   },
+   "native": {
+    "rows": [
+     "　　　　 _､___,､___",
+     "　　_ -く7　__　､-ミ",
+     " ,.:'´:::::::}／::::＼{::::::｀ヽ、",
+     ";:::::::　 ::::::::::::::::::::::::::::::::::ﾞ,",
+     "|::::::::::::::::::::::::::::::::::::::::::::::::|",
+     "ﾞ:,:::::::::::::::::::::::::::::::::::::::::::,:ﾞ",
+     " `:､::::::::::::::::::::::::::::::::／",
+     " 　 ｀\"'''‐----‐'''\"´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     60,
+     217
+    ],
+    "row_pen_x": [
+     66,
+     66,
+     66,
+     66,
+     64,
+     66,
+     70,
+     70
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#235",
+    "label": "野菜・果物 トマト aa[235]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading トマト (aa[234])"
+   },
+   "crop": "crops/ef-tomato235-calyx-tone-8row.png",
+   "note": "Eight-row tomato fully toned with `:`; the upper-left shoulder and the left edge of row 4 are carried by where the tone stops (`,.:'´`, `;::::`) rather than by a line, while the lower half has line glyphs (`|`, `ﾞ:,`, `` `:､ ``/`／`, `｀\"'''‐----‐'''\"´`); calyx `_､___,､___` / `_ -く7 __ ､-ミ` with sepals `}／::::＼{` meeting the body; ink 149 x 117 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `_､___,､___`@115-162 calyx top; row 2 `_ -く7`@88-115 `__`@134/139 `､-ミ`@155-170 sepal tips; row 3 `,.:'´`@71-83 shoulder as tone edge, `:::::::}`@91-112, `／::::＼`@116-144 sepal, `{::::::`@160-179, `｀ヽ、`@182-202; row 4 `;:::::::`@66-87 then paper gap to `::…`@106-205 and `ﾞ,`@208/212; row 5 `|`@64 … `|`@212; row 6 `ﾞ:,`@66-73 / `,:ﾞ`@205-211; row 7 `` `:､ ``@75-85 / `／`@188; row 8 `｀\"'''‐----‐'''\"´`@91-181 return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-apple412-lobe-cap-9row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 137,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior paper except a window-shaped highlight `［ ］` / `「 l` / `| 」`; outline gaps between every glyph"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　 ノ",
+     "　,.r''\"⌒ヽv \"⌒｀ヽ",
+     "/　　　　　　　 ［ ］　 Y",
+     "l　　　　　　　　　　　　l",
+     "l　　　　　　　　「 l 　　l",
+     "ヽ　 　 　 　 　 | 」 　 ﾉ",
+     "　ヽ　　　　　　　　　/",
+     "　　＼　　　　　　／",
+     "　　　　 ``~~~´´"
+    ],
+    "row_numbers": [
+     1,
+     9
+    ],
+    "x_px": [
+     0,
+     139
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#412",
+    "label": "野菜・果物 リンゴ（林檎） aa[412]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading リンゴ（林檎） (aa[410])"
+   },
+   "crop": "crops/ef-apple412-lobe-cap-9row.png",
+   "note": "Nine-row apple: paired-lobe cap `,.r''\"⌒ヽv \"⌒｀ヽ` with a `v` dimple where the two lobes meet under the `ノ` stem, `/ … Y` shoulders, `l` flanks, `ヽ … ﾉ`, `ヽ … /`, `＼ … ／` lower turn and a `` ``~~~´´ `` return; ink 137 x 138 px. aa[415] uses the identical outline around a cut-apple core (ef-apple415-core-ring).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `ノ`@71 stem; row 2 `,.r''\"`@11-29 `⌒ヽ`@37/53 left lobe, `v`@65 dimple, `\"⌒｀ヽ`@78-110 right lobe; row 3 `/`@0 left shoulder, `［ ］`@90/103 highlight, `Y`@127 right shoulder with a notch; rows 4-5 `l`@0 and `l`@134-135; row 6 `ヽ`@0 `ﾉ`@130; row 7 `ヽ`@11 `/`@122; row 8 `＼`@22 `／`@104; row 9 `` ``~~~´´ ``@49-92 return",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-apple412-paired-lobe-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 136,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "below the two lobes is paper; the stem `ノ` stands in paper above the dimple"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　 ノ",
+     "　,.r''\"⌒ヽv \"⌒｀ヽ",
+     "/　　　　　　　 ［ ］　 Y"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     139
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#412",
+    "label": "野菜・果物 リンゴ（林檎） aa[412], cap rows 1-3",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading リンゴ（林檎） (aa[410])"
+   },
+   "crop": "crops/ef-apple412-paired-lobe-cap.png",
+   "note": "Cap family \"paired lobes with a central meeting\": two `⌒` lobes, each with its own stair-in (`,.r''\"`, `\"`) and drop (`ヽ`, `｀ヽ`), meet at `v` (a dedicated meeting glyph) instead of one continuous `⌒`; shoulders continue into `/` and `Y`; ink 136 x 47 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `ノ`@71 stem above the dimple; row 2 `,.r`@11-17 `''\"`@23-29 stair up, `⌒`@37 `ヽ`@53 left lobe dropping into `v`@65, `\"`@78 `⌒`@86 `｀ヽ`@102/110 right lobe; row 3 `/`@0 and `Y`@127 shoulders (Y forks where the lobe meets the flank), `［ ］`@90/103 highlight",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-apple415-core-ring",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 53,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "seed cavity interior holds `¶:¶` seeds; around the core ring `:` dots sit in paper, thinning to `!!` and `l` down the centre line"
+   },
+   "native": {
+    "rows": [
+     ": :.ii.: :　　",
+     " : /`ヽ.: : ",
+     ": （¶:¶ ）: ",
+     ": :ヽvソ: :　",
+     "　: :!!: 　　",
+     "　 : l: 　　"
+    ],
+    "row_numbers": [
+     3,
+     8
+    ],
+    "x_px": [
+     108,
+     166
+    ],
+    "row_pen_x": [
+     118,
+     110,
+     110,
+     110,
+     111,
+     110
+    ]
+   },
+   "ports": {
+    "left": "tone_fringe",
+    "right": "tone_fringe",
+    "up": "tone_fringe",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#415",
+    "label": "野菜・果物 リンゴ（林檎） aa[415] (cut apple; same outline as aa[412]), core rows 3-8",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading リンゴ（林檎） (aa[410])"
+   },
+   "crop": "crops/ef-apple415-core-ring.png",
+   "note": "Small three-row inner round embedded in the cut face: cap `/`ヽ`, flanks `（ ）`, return `ヽvソ` whose `v` is the meeting at the bottom point, surrounded by colon dots and a `ii` / `!!` / `l` core line; ink 53 x 96 px for the whole slice (the ring itself ~35 px).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 3 `: :.ii.: :`@118-149 core line above; row 4 `/`@123 `` ` ``@131 `ヽ`@138 cap, `.: :`@150-161; row 5 `（`@118 `¶:¶`@126-137 `）`@150 flanks with seeds; row 6 `ヽ`@121 `v`@133 `ソ`@141 return meeting at `v`; row 7 `!!`@133/137; row 8 `l`@134; colon dots on both sides of rows 3-8",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-cherry143-stem-pair-3row",
+   "role": "whole_circle",
+   "also_roles": [
+    "contact_junction",
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 132,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "each cherry interior is paper; paper between the two cherries (pens ~100-135)"
+   },
+   "native": {
+    "rows": [
+     "　 │　　　　　　ヽ",
+     "/\"┻´ヽ　　　/\"┻ヽ",
+     "i　　　　i　　　i　　　　i",
+     "ヽ､,,,,,,ノ　　　ヽ､,,,,,,ノ"
+    ],
+    "row_numbers": [
+     4,
+     7
+    ],
+    "x_px": [
+     50,
+     189
+    ],
+    "row_pen_x": [
+     55,
+     55,
+     55,
+     55
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#143",
+    "label": "野菜・果物 サクランボ aa[143] (two cherries on forked stems)",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading サクランボ (aa[142])"
+   },
+   "crop": "crops/ef-cherry143-stem-pair-3row.png",
+   "note": "Two identical small rounds (3 rows, ~50 px each) side by side: cap `/\"┻´ヽ` where `┻` is the stem meeting the top, flanks `i … i`, return `ヽ､,,,,,,ノ` with a comma band as the lower edge; the right copy drops `´` (`/\"┻ヽ`), a one-glyph width change; ink 132 x 67 px for the pair.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 4 `│`@71 left stem and `ヽ`@153 right stem descending; row 5 `/\"`@55/63 `┻`@71 `´ヽ`@87/95 left cap, `/\"`@140/148 `┻`@156 `ヽ`@172 right cap; row 6 `i`@55 `i`@102 and `i`@138 `i`@185 flanks; row 7 `ヽ､`@55/67 `,,,,,,`@74-89 `ノ`@92 and `ヽ､`@136/148 `,,,,,,`@155-170 `ノ`@173 returns",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-p39-stem-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 85,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper between the stem and the rear cherry's cap; cherry interior paper above the `:` tone on row 7"
+   },
+   "native": {
+    "rows": [
+     "　　　|　＼",
+     " 　 _,|　/ ゝ⌒",
+     "／　⊥｀ヽ　　",
+     "|　　　:::::::|､ ."
+    ],
+    "row_numbers": [
+     4,
+     7
+    ],
+    "x_px": [
+     30,
+     110
+    ],
+    "row_pen_x": [
+     33,
+     38,
+     33,
+     33
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "rim_cap",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-39.txt",
+    "label": "circle profile entry 39 = 野菜・果物 サクランボ aa[144] (operator circle My MLT position 39), rows 4-7",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "structural-line-selection.md \"Rounded constructions beyond one circle spelling\" (profile39 cherries); aahub-reference-index.md \"Operator circle profile update\" positions 34;39"
+   },
+   "crop": "crops/ef-p39-stem-junction.png",
+   "note": "Stem-to-fruit meeting at a cherry top: `_,|` stem with a leaf tick, `⊥` where the stem meets the cap, `｀ヽ` right shoulder, `／` left shoulder far left; the rear cherry `ゝ⌒` starts beside it; ink 85 x 67 px. Compare `┻` in ef-cherry143 (same job, heavier glyph). Existing sh-mlt39-cherry-side-tone covers rows 5-8 for the tone.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (circle profile 39); list membership is not operator approval of this region"
+   },
+   "inspection": "row 4 `|`@66 stem, `＼`@81 second stem; row 5 `_,`@59/64 leaf, `|`@67, `/`@82, `ゝ⌒`@95/107 rear cherry cap; row 6 `／`@33 left shoulder, `⊥`@60 stem meets the front cherry, `｀ヽ`@76/84 right shoulder; row 7 `|`@33 flank, `:::::::`@70-88 tone, `|`@91 overlap edge, `､`@95 `.`@107",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-kaki33-calyx-flat-5row",
+   "role": "whole_circle",
+   "also_roles": [
+    "contact_junction",
+    "tone_core",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 90,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "no interior paper: the body is filled with `:`; paper above the calyx leaves"
+   },
+   "native": {
+    "rows": [
+     "　　　 ｨfﾄ､.",
+     "　く彡<い>ミ>",
+     "{:::::::::ﾄﾐ勿''\"::::}",
+     "ヽ::::::::::::::::::::::ノ",
+     "　 　 ￣￣"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     20,
+     114
+    ],
+    "row_pen_x": [
+     22,
+     22,
+     22,
+     22,
+     22
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#33",
+    "label": "野菜・果物 カキ（柿） aa[33]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading カキ（柿） (aa[32])"
+   },
+   "crop": "crops/ef-kaki33-calyx-flat-5row.png",
+   "note": "Flattened persimmon at five rows: calyx `ｨfﾄ､.` over a leaf row `く彡<い>ミ>`, and the calyx's lower leaves `ﾄﾐ勿''\"` sit INSIDE the first body row between `{` and `}`; body return `ヽ:::…:::ノ` and a short `￣￣` flat bottom; ink 90 x 69 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `ｨfﾄ､.`@60-86 calyx top; row 2 `く彡<い>ミ>`@33-100 leaf lobes; row 3 `{`@22 `:::::::::`@26-50 `ﾄﾐ勿''\"`@53-89 `::::`@97-106 `}`@109 (calyx meets body inside the outline); row 4 `ヽ`@22 `:`x22 `ノ`@100; row 5 `￣￣`@54/70 flat base",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-peach397-cleft-6row",
+   "role": "whole_circle",
+   "also_roles": [
+    "contact_junction",
+    "shoulder",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 94,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior paper; paper between the lower return and the leaves"
+   },
+   "native": {
+    "rows": [
+     "　　　　 人",
+     "　　　／　 ＼",
+     "　 ／　　　　 ＼",
+     "　(　　　　　　　)",
+     "　 ＼___人___／",
+     "　＜＿／＼＿＞"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     0,
+     108
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/af/af2d0567b491b61bd90183e58b2bb1bf.json.gz#397",
+    "label": "野菜・果物 モモ（桃） aa[397]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "野菜・果物 page (reference index alias V), located via its own section heading モモ（桃） (aa[393])"
+   },
+   "crop": "crops/ef-peach397-cleft-6row.png",
+   "note": "Six-row peach whose two meetings get dedicated glyphs: `人` at the pointed top and `人` again at the cleft in the return `＼___人___／`; shoulders `／ ＼` step out twice, flanks `( )`; leaves `＜＿／＼＿＞` below; ink 94 x 101 px.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading; not operator-approved"
+   },
+   "inspection": "row 1 `人`@49 tip; row 2 `／`@33 `＼`@65; row 3 `／`@16 `＼`@81; row 4 `(`@11 `)`@93 widest; row 5 `＼`@16 `___`@32-42 `人`@47 cleft `___`@63-73 `／`@78; row 6 `＜＿／＼＿＞`@11-91 leaves",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-p50-berry-cluster",
+   "role": "contact_junction",
+   "also_roles": [
+    "whole_circle",
+    "rim_cap",
+    "return_base",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 176,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "each berry interior paper with an `x` gloss and a few `: .` dots; paper between berries where returns do not touch"
+   },
+   "native": {
+    "rows": [
+     " 　 　 　 　 _..._　　　　　　　　",
+     "　 　 　 , '´　　｀ヽ　　　　　　",
+     "　 　 　 _{x : . 　. :､}　　　　　　",
+     "　 , '\": . . ヽ._,_._,ソ⌒>　　　　",
+     "　｛x: .　. ..:.｝　У´￣｀ヽ　　　",
+     "<こヽ:x._._,:<⌒｛x:. . .　..､}　　　",
+     " 　 　 　 　 ＞ﾍ、 _,_._,ソ⌒>　"
+    ],
+    "row_numbers": [
+     2,
+     8
+    ],
+    "x_px": [
+     12,
+     196
+    ],
+    "row_pen_x": [
+     22,
+     22,
+     16,
+     22,
+     22,
+     16,
+     22
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-50.txt",
+    "label": "circle profile entry 50 = その他植物 aa[18] (operator circle My MLT position 50), left cluster rows 2-8",
+    "aahub_url": "https://aahub.org/mlt/7a9ec10846347e9f3860befc2d7b0ffc",
+    "cited_by": "structural-line-selection.md \"Rounded constructions beyond one circle spelling\" (profile50 berries: `_{x : . 　. :､}`, `ヽ._,_._,ソ⌒>`); aahub-reference-index.md \"Operator circle profile update\" position 50"
+   },
+   "crop": "crops/ef-p50-berry-cluster.png",
+   "note": "Three overlapping 4-row berries (~55 px) whose meetings are dedicated glyphs: a front berry's return `ヽ._,_._,ソ` hands into `⌒>` (sepal), the left berry's return `._._,:` turns into `<⌒` and on into the right berry's `｛`, and `У` joins the left berry's side to the right berry's cap `´￣｀ヽ`; caps are dot caps `_..._`; ink 176 x 105 px. The same cluster is repeated unchanged to the right in the source (standardised detail).",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (circle profile 50); list membership is not operator approval of this region"
+   },
+   "inspection": "row 2 `_..._`@91-105 dot cap; row 3 `,`@70 `'´`@78/81 `｀ヽ`@111/119 shoulders; row 4 `_{x`@64-73 `: . . :､`@85-123 `}`@130; row 5 `, '\":`@38-57 left berry cap behind, `ヽ._,_._,ソ`@81-120 top berry return, `⌒>`@133/149; row 6 `｛x:`@33-48 `｝`@90, `У`@109 junction `´￣｀ヽ`@125-157 right berry cap; row 7 `<こヽ:x._._,:`@16-75 then `<⌒`@81/89 turning into `｛x:`@105-120 … `､}`@159/166; row 8 `＞ﾍ、`@91-117 `_,_._,ソ`@133-157 `⌒>`@170/186",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-p38-pot-on-floor",
+   "role": "return_base",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 76,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the pot (rows 19-20 between `γ` and `ヽ`) is paper; the shelf front above it is a separate form"
+   },
+   "native": {
+    "rows": [
+     "|＿＿＿|_　",
+     "γ＾ヽ　 　 ",
+     "-乂_乂----"
+    ],
+    "row_numbers": [
+     18,
+     20
+    ],
+    "x_px": [
+     222,
+     296
+    ],
+    "row_pen_x": [
+     224,
+     230,
+     224
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "side",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-38.txt",
+    "label": "circle profile entry 38 = 和室 aa[69] (operator circle My MLT position 38), rows 18-20",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "structural-line-selection.md and profile_circle_evidence \"Japanese room: small vase and rounded return\" (focus `γ＾ヽ`, `乂_乂`)"
+   },
+   "crop": "crops/ef-p38-pot-on-floor.png",
+   "note": "Two-row round pot sitting on a floor/sill line: cap `γ＾ヽ` (knob `＾`), and a return `乂_乂` whose crossed glyphs both close the pot and break into the `-` line on either side, so the base reads as sitting in the line rather than floating; ink 76 x 50 px.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (circle profile 38); list membership is not operator approval of this region"
+   },
+   "inspection": "row 18 `|＿＿＿|_`@224-280 shelf/cabinet bottom above (context); row 19 `γ`@230 `＾`@246 `ヽ`@254 cap; row 20 `-`@224 line, `乂`@232 `_`@248 `乂`@253 return whose outer strokes cross the line, `----`@269-293 line continues",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-p38-shelf-vases",
+   "role": "whole_vessel",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 88,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "paper inside `(__)` and inside `｢乂ｿ`; paper between the two vases on the shelf"
+   },
+   "native": {
+    "rows": [
+     " ゑ　　　<>|　||　",
+     "(__)____｢乂ｿ__||　",
+     "丁¨¨¨¨¨¨¨¨.|　"
+    ],
+    "row_numbers": [
+     17,
+     19
+    ],
+    "x_px": [
+     396,
+     500
+    ],
+    "row_pen_x": [
+     397,
+     400,
+     403
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "paper",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-38.txt",
+    "label": "circle profile entry 38 = 和室 aa[69], tokonoma shelf rows 17-19",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "profile_circle_evidence \"Japanese room: small vase and rounded return\" (focus `(__)`); structural-line-selection.md \"Stacked small and larger rounded forms\" lists `(　)` small rounds"
+   },
+   "crop": "crops/ef-p38-shelf-vases.png",
+   "note": "Two xs vessels at one row each plus ornament, sharing the shelf line as their base: `ゑ` flower over `(__)` (the `__` of the vase is also the shelf line, continuing as `____`), and `<>` over `｢乂ｿ` (shoulder `｢`, crossed body `乂`, return `ｿ`) ; ink 88 x 50 px.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (circle profile 38); list membership is not operator approval of this region"
+   },
+   "inspection": "row 17 `ゑ`@402 flowers, `<>`@451/459 ornament, `|`@467 `||`@482/486 frame; row 18 `(`@400 `__`@405/410 `)`@415 vase whose base continues as `____`@420-435 shelf line, `｢`@440 `乂`@447 `ｿ`@463 second vase, `__`@472/477; row 19 `丁`@403 shelf support, `¨`x8 @419-475 shelf edge dots",
+   "inspected_by": "embedded-food-vessels agent"
+  },
+  {
+   "id": "ef-p30-vase-on-dish",
+   "role": "whole_vessel",
+   "also_roles": [
+    "ellipse_rim",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 84,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the vase belly and between the belly and the dish rim is paper; the `||` stem above the neck (row 19, outside the slice) rises into a round shade"
+   },
+   "native": {
+    "rows": [
+     "　　 　 .)￣(　　",
+     "　,.-‐（＿＿）‐",
+     " ｀ー‐-----, -"
+    ],
+    "row_numbers": [
+     20,
+     22
+    ],
+    "x_px": [
+     128,
+     221
+    ],
+    "row_pen_x": [
+     130,
+     132,
+     136
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-30.txt",
+    "label": "circle profile entry 30 = 花 aa[93] (operator circle My MLT position 30), table scene rows 20-22",
+    "aahub_url": "https://aahub.org/mlt/5cb42e8a1adf7fc1d97b8f776debbff4",
+    "cited_by": "aahub-reference-index.md \"Operator circle profile update\" position 30 (overlapping petals, bowls, plate/vessel rims); structural-line-selection.md \"Rounded constructions beyond one circle spelling\""
+   },
+   "crop": "crops/ef-p30-vase-on-dish.png",
+   "note": "Two-row vase-shaped base standing in a dish, embedded in a table scene: concave neck `)￣(` (reversed parentheses) over a convex belly `（＿＿）`, the dish rim `,.-‐ … ‐` passing behind the belly at its widest row and the dish return `｀ー‐-----,` below; ink 84 x 50 px. The `||` stem continuing upward suggests a lamp base; read as a vessel form only.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (circle profile 30); list membership is not operator approval of this region"
+   },
+   "inspection": "row 20 `.`@173 `)`@176 `￣`@181 `(`@197 pinched neck (parentheses face outward = concave); row 21 `,.-‐`@143-157 far dish rim, `（`@165 `＿＿`@173/189 `）`@205 belly with flat base, `‐`@213 dish rim resumes on the right; row 22 `｀ー`@141/149 `‐-----`@164-204 `,`@212 `-`@220 dish near rim/return",
+   "inspected_by": "embedded-food-vessels agent"
+  }
+ ]
+}
