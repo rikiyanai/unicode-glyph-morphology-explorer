@@ -92,6 +92,13 @@ def check_entry(nat: Native, e: dict, base: Path) -> list[str]:
         ref = role_crop.crop(nat, rows, a, b, x0, x1)
         if got.shape != ref.shape or (got != ref).any():
             errs.append(f"crop {e['crop']} differs from native render of the slice")
+    lay = nat.layout(rows)
+    for sp in e.get("split_stroke", []):
+        line = lay[sp["row"] - 1] if 1 <= sp["row"] <= len(lay) else []
+        if (sp["glyph"], sp["pen_x"]) not in line:
+            errs.append(f"split_stroke {sp['glyph']!r}@{sp['pen_x']} not on source row {sp['row']}")
+        elif not (a <= sp["row"] <= b and x0 <= sp["pen_x"] < x1):
+            errs.append(f"split_stroke {sp['glyph']!r} row {sp['row']} pen {sp['pen_x']} outside the entry's slice")
     if not "".join(e["native"]["rows"]).strip("　 "):
         errs.append("slice has no ink glyphs")
     return errs
@@ -131,8 +138,9 @@ def load_and_check(paths, nat):
 def merge(out: Path, docs: list[dict], nat: Native):
     merged, seen, dups = [], {}, []
     ext = {}
-    logs, gaps = [], []
+    logs, gaps, revisions = [], [], []
     for d in docs:
+        revisions += [f"[{d.get('group')}] {x}" for x in d.get("revision_log", [])]
         ext.update(d.get("role_extensions", {}))
         logs += [f"[{d.get('group')}] {x}" for x in d.get("inspection_log", [])]
         gaps += [f"[{d.get('group')}] {x}" for x in d.get("gaps", [])]
@@ -154,7 +162,13 @@ def merge(out: Path, docs: list[dict], nat: Native):
                         "scripts/role_lookup_check.py. Corpus statistics (aahub_blocks.v1) never select entries.",
            "taxonomy": TAXONOMY, "role_extensions": ext,
            "groups": sorted({d.get("group", "?") for d in docs}),
-           "deduplicated": dups, "gaps": gaps, "inspection_log": logs, "entries": merged}
+           "deduplicated": dups, "gaps": gaps, "revision_log": revisions, "inspection_log": logs,
+           "entries": merged}
+    if out.exists():  # parent-written fields survive a re-merge
+        old = json.loads(out.read_text())
+        for k in ("parent_audit", "parent_audits"):
+            if k in old:
+                doc[k] = old[k]
     out.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
     print(f"merged {len(merged)} entries ({len(dups)} duplicates dropped) -> {out}")
 
