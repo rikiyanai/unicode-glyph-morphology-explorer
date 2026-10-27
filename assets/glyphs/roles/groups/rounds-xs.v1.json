@@ -1,0 +1,327 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "rounds-xs",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings"
+ },
+ "inspection_log": [
+  "read laneB_brief_rounds_xs/common/addendum, trueff-shallot AGENTS.md 'How to inspect', SKILL.md 2.1/2.2/4.4/8 mark-purpose/15.3-15.7 + Split-stroke ownership + Revision preservation, structural-line-selection.md (Attachment is not construction, Split-stroke ownership, Four patterns, Worked constructions, Rounded constructions, Recovered tools), aahub-reference-index.md (Role-organized libraries, circle profile update, category pages); skills tree is at 54a56da, not the 716bedd named in the addendum (sections present as described)",
+  "lib:shapes 【円形・球】 (aa[2]-[148]): computed row count/width per entry to find 5-9-row candidates only (no art printed); opened #84, #135, #136, #77, #98, #99, #59, #116, #115, #107 natively",
+  "lib:shapes #99 rows 1-7 x40-150 -> rx-lib99-plain-round-7row (near miss: 93 x 88 px)",
+  "lib:shapes #98/#135/#136: same globe series as #99 with meridian lines (#135/#136 are turned, narrower outer rim) - interior features, not entered",
+  "lib:shapes #77: #99's rim with dotted interior bands, same cap/return spelling - not entered as a near-duplicate",
+  "lib:shapes #59: plain 5-row round, ink 86 x 84 px - under the xs envelope, not entered",
+  "lib:shapes #84: 6-row round made only of dot tone (no rim, dense lower half) - not a whole outline, not entered",
+  "lib:shapes #83/#110/#112/#113/#114/#120/#141/#87 (themed balls, cube-in-circle, ruled disk) and #3-#12 (very large circles) and #55/#56/#78/#100-#104 (11-30-row plain circles/ovals) viewed natively - outside size or with features; #82 is a ~7-row negative round in a 三 field (rim is tone contact) - not entered",
+  "circle profile (profile_circle_evidence.v1.json) passage list checked: no isolated 6-7-row plain round; entry-02/-40 (architecture), -22 (crescent), -32 (character with eyes), -44 (eye with pupil) opened natively, none entered",
+  "TRAIN headings: buki-02 【鉄球、モーニングスター】 resK-247..253 (spiked balls with tone) viewed - spikes/tone, not entered; te-komono-05 【モンスターボール】 resK-240 - themed band/button, not entered",
+  "attack-effect-sonota 【変化球】 resK-218/219/221/222 viewed; resK-222 rows 1-13: ball rim interleaved with motion arcs (contact, 9+ rows) - not entered",
+  "effect 【藤子アニメのオチ風演出用素材（アイリスアウト）】 resK-36..39 viewed; resK-39 rows 5-13 is an 8-row paper hole whose rim (`=- ‐ -=` / `／ ＼` / `l l` / `≧=- -=≦`) is the edge of 三 tone - contact on every side and an isolated example exists, not entered",
+  "te-komono-03 【コイン】 resK-212/215/216/220/228 viewed; resK-220 rows 1-9: double-rim coin held to a face, outer ring 8 rows, rim contacts hand/face - not entered",
+  "kaomoji 【絵文字】 resK-138..146 viewed: round emoji faces (features inside) - not entered; te-komono-04 【スイッチ・ボタン】 resK-330..361 sampled - no isolated round",
+  "goraku 【プラネタリウム】 resK-148 viewed - projector, no isolated round; sonota-tenpo 【占い屋】 resK-219 - no crystal ball",
+  "ROUND intake aahub_round_refs.v1.json: bakuhatsu-kemuri resK-72 opened rows 1-8 -> rx-smoke72-bubble-ring-8row; jitensha resK-01 (wheels attached to frame) and yasai-kudamono resK-185 (watermelon, 20+ rows) viewed, not entered",
+  "bakuhatsu-kemuri 【爆発】 neighbours of aa[72]: resK-65..68 and 73..75 viewed; resK-65 rows 1-7 -> rx-smoke65-hatch-rim-7row; resK-68 rows 1-7 -> rx-smoke68-dot-rim-7row; resK-66 (5 rows) and -67 (8 rows, 141 x 135 px) outside the envelope; resK-73 = aa[72] with a different inner bubble (near-duplicate); resK-74/75 inner overlapping round / attached bump - not entered",
+  "MLT a63dcababeb82cfbb99f0d7e14d74568 (index 'Sea and sky' link) opened for headings only: archived record is a Zoids page (【フロレシオス】...), not sea/sky - mismatch reported, no moons taken from it"
+ ],
+ "gaps": [
+  "whole_circle at the xs envelope (107 x 107 px) as a plain single-line outline: none found in the selected sources; the only plain line rounds near it are lib:shapes#99 (93 x 88, under) and bakuhatsu-kemuri aa[72] (129 x 121, over). ＿/￣-capped 7-row rounds are inherently ~88 px tall; a line-rim round that fits needs either 8 rows with low caps or 7 rows with top-sitting caps (⌒, -―-), and no such isolated example was found",
+  "moons, wheels and head outlines at 6-7 rows: no isolated, feature-free example located through TRAIN section headings (wheels are attached to frames; heads/emoji carry faces)",
+  "distinct cap/return spellings at xs: only two textured-rim spellings (i/l hatch, colon dots) actually fit; no γ⌒ヽ / 乂__ノ-family round exists at 6-7 rows in the sources opened"
+ ],
+ "entries": [
+  {
+   "id": "rx-lib99-plain-round-7row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 93,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "whole interior is paper; outside paper on all sides (two stray `.` at pen 0 on rows 5-6 lie 40+ px left of the slice)"
+   },
+   "native": {
+    "rows": [
+     "　　　＿＿",
+     "　 ､ ｀　　　` ､",
+     " /　　　　　　 ‘，",
+     " {　　　 　 　 　 }",
+     "‘，　　　　 　 /",
+     "　 ^ ､ 　 　 ､ `",
+     "　　　￣￣"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     40,
+     150
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44,
+     43,
+     47,
+     41,
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#99",
+    "label": "線・図形・図表 (lines/shapes) 【円形・球】 section, aa[99] (plain frame of the aa[98]/[135]/[136] globe series)",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "aahub-reference-index.md 'Role-organized component libraries' (shapes: circles/spheres section)"
+   },
+   "crop": "crops/rx-lib99-plain-round-7row.png",
+   "note": "Plain isolated 7-row round, ink 93 x 88 px (nonwhite bbox of the --png crop). Cap row 1 `＿＿` (sits at the bottom of its row), return row 7 `￣￣` (sits at the top), so ink is only ~5.2 rows tall: about 2 px under the 95 px width target and ~6 px under the 94 px height floor of the xs fit (107 px envelope, 0.75-row tolerance) - a near miss, recorded so Studio can test it; sparse lost-and-found rim of commas/ticks between brace flanks.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry in the skill-indexed shapes library circle section; not operator-approved; slightly under the xs envelope"
+   },
+   "inspection": "row 1 `＿＿`@77/93 flat cap; row 2 `､ ｀`@60/72 and `` ` ､``@113/125 shoulders; row 3 `/`@49 left and `‘，`@128/136 right; row 4 `{`@48 and `}`@138 flanks at the widest row; row 5 `‘，`@47/55 and `/`@131; row 6 `^ ､`@57/69 and `､ ``@113/125 lower shoulders; row 7 `￣￣`@77/93 return; interior all paper, each side a gap-separated chain of light marks",
+   "inspected_by": "rounds-xs agent"
+  },
+  {
+   "id": "rx-smoke65-hatch-rim-7row",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 112,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior is mostly paper with ~12 sparse scattered marks (`‘.'`, `,.'`, `・,‘`) inside the ring; outside paper on all sides"
+   },
+   "native": {
+    "rows": [
+     "　　　　,,,,;;iiilliii;;;,,,",
+     "　 　 ,ilill''''\"\"\"'''llili,i",
+     "　　illii''　‘.'　　,.'　''iil'",
+     "　 illii'',　　.'　　　　''iill",
+     "　　iillil;; 　・,‘　　;;lilii",
+     "　　 '''iill;;,’　, .',;;llii''''",
+     "　　 　 ''''llliiliillli''''"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     131
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-65.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-65 (AAHub aa[65]) under section heading 【爆発】 (res0); AA-003 TRAIN slug",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "aahub-reference-index.md category page E (Explosions and smoke); neighbour of the ROUND-intake ring aa[72] in the same 【爆発】 section"
+   },
+   "crop": "crops/rx-smoke65-hatch-rim-7row.png",
+   "note": "Whole 7-row round whose rim is a thick band of vertical hatch `i`/`l` with `,`/`;` and `'`/`\"` fringes rather than a single line; ink 112 x 113 px, inside the xs envelope. Cap row 1 `,,,,;;iiilliii;;;,,,` thickening to row 2 `,ilill''''\"\"\"'''llili,i`; return row 7 `''''llliiliillli''''`. Interior light scatter is part of the piece (explosion/energy-ball frame), noted not removed.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry located via its own section heading; not operator-approved; texture-rim round, not a thin outline"
+   },
+   "inspection": "row 1 `,,,,;;iiilliii;;;,,,`@44-101 cap whose `i`/`l` stand in the middle and thin to commas at both ends; row 2 `,ilill`@32-47 and `llili,i`@95-113 shoulders bridged by a `''''\"\"\"'''` underside @50-92; rows 3-5 left band `illii''`@22, `illii'',`@16, `iillil;;`@22 and right `''iil'`@110, `''iill`@112, `;;lilii`@103 keep the hatch on the outer edge with quotes/semicolons facing inward; row 6 `'''iill;;,’`@27 / `,;;llii''''`@90 lower shoulders; row 7 `''''llliiliillli''''`@43-100 return; inside: sparse `‘.'`, `.'`, `・,‘`, `, .'` marks with open paper",
+   "inspected_by": "rounds-xs agent"
+  },
+  {
+   "id": "rx-smoke68-dot-rim-7row",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 113,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior is mostly paper with ~12 sparse scattered marks; outside paper on all sides"
+   },
+   "native": {
+    "rows": [
+     "　　　　　,,,;;,,,",
+     "　　.:;:;;''''\"\"\"''';;:;:.;",
+     "　 :;;::　‘.'　　,.'　: :;;'.",
+     "　:;;:: ,　　.'　　　　 ::;;:",
+     "　 ::;;:;　　・,‘　　 ;:;::",
+     "　　'''::;;..’　, .' .;;::''''",
+     "　　　 '''';;;::;::;;;:''''"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     127
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-68.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-68 (AAHub aa[68]) under section heading 【爆発】 (res0); AA-003 TRAIN slug",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "aahub-reference-index.md category page E (Explosions and smoke); same 【爆発】 section as the ROUND-intake ring aa[72]"
+   },
+   "crop": "crops/rx-smoke68-dot-rim-7row.png",
+   "note": "Same round as rx-smoke65 but the rim band is colon/semicolon dots (`:;;::`) instead of i/l hatch: a light, soft-edged 7-row round, ink 113 x 111 px, inside the xs envelope. Cap row 1 `,,,;;,,,` over row 2 `.:;:;;''''\"\"\"''';;:;:.;`; return row 7 `'''';;;::;::;;;:''''`.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry located via its own section heading; not operator-approved; dotted-band rim, not a thin outline"
+   },
+   "inspection": "row 1 `,,,;;,,,`@55-76 short cap; row 2 `.:;:;;`@22-37 and `;;:;:.;`@85-103 shoulders joined by `''''\"\"\"'''`@40-82; rows 3-5 left `:;;::`@16, `:;;::`@11, `::;;:;`@16 and right `: :;;'.`@98, `::;;:`@111, `;:;::`@102 as 5-6-dot bands at the flanks; row 6 `'''::;;..’`@22 / `.;;::''''`@87 lower shoulders; row 7 `'''';;;::;::;;;:''''`@38-95 return; interior sparse `‘.'`, `,.'`, `・,‘`, `, .'` scatter with open paper",
+   "inspected_by": "rounds-xs agent"
+  },
+  {
+   "id": "rx-smoke72-bubble-ring-8row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 129,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior paper except a small inner round (rows 2-3) against the upper-right rim; left flank is open for one row (row 6) and the lower-right return breaks before `´`"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　 -―-",
+     "　　　　／　　　　　, ⌒ヽ.",
+     "　　　/　　　　　　 ヽ.　_,ハ",
+     "　 　 |　　　　　 　 　 　 　 l",
+     "　 　 |　　　　　 　 　 　 　 |",
+     "　　　　　　　　　　　　　　/",
+     "　　　　＼　　　　　　　／",
+     "　　　　　　　 ‐--‐　 ´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     0,
+     165
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-72.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-72 (AAHub aa[72]) under 【爆発】; AA-003 TRAIN slug",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "explorer aahub_round_refs.v1.json round-ring-resK-72 (the earlier ROUND intake named in aahub-reference-index.md)"
+   },
+   "crop": "crops/rx-smoke72-bubble-ring-8row.png",
+   "note": "Lost-and-found 8-row ring with a small inner round at upper right; ink 129 x 121 px - OVER the xs fit (max ~118 x 120), recorded as the nearest skill-cited line-rim round and for its distinct spelling: cap row 1 `-―-`, return row 8 `‐--‐ ´`, diagonal `／`/`/` and `＼`/`／` shoulders, `|`/`l` flanks.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-indexed ROUND-intake source; not operator-approved; larger than the xs envelope"
+   },
+   "inspection": "row 1 `-―-`@82/90/106 shallow cap; row 2 `／`@44 left shoulder, `, ⌒ヽ`@115/123/139 caps the inner round and `.`@151 is the outer shoulder dot; row 3 `/`@33 left, `ヽ.`@112/124 and `_,`@138/143 return the inner round, `ハ`@146 splits (see split_stroke); rows 4-5 `|`@32 and `l`/`|`@160 flanks; row 6 only `/`@154 (left flank left open); row 7 `＼`@44 and `／`@137; row 8 `‐--‐`@82-106 return with `´`@130 after a gap",
+   "split_stroke": [
+    {
+     "glyph": "ハ",
+     "row": 3,
+     "pen_x": 146,
+     "serves": [
+      "left stroke: right side of the small inner round, curving down into `,`@143 / `_`@138",
+      "right stroke: the outer ring's upper-right shoulder, continuing from `.`@151 (row 2) down to `l`@160 (row 4)"
+     ],
+     "depth": "the small round sits inside the ring against its upper-right rim; open paper between the two strokes of ハ and the inner round's own cap `⌒ヽ` keep the two curves separate",
+     "reading": "in the zoomed crop the two strokes of ハ diverge with paper between them; each lines up with a different curve (inner round vs outer rim), so one glyph articulates two forms without a physical join",
+     "binding": "agent_reading"
+    }
+   ],
+   "inspected_by": "rounds-xs agent"
+  }
+ ]
+}
