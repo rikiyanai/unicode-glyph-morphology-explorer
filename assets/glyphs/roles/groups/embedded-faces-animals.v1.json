@@ -1,0 +1,1949 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "embedded-faces-animals",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings",
+  "dotted_rim": "round boundary drawn as a run of leader/dot glyphs (… ‥ ．) stepping around the form, distinct from a solid contour and from a tone field",
+  "texture_edge": "rounded contour articulated by a column/run of directional texture marks (fur ﾐ ミ 彡 シ ヾ, 爻) that turns with the form, often with an interior tone field stopping against it; no single traced line. Differs from texture_boundary (where a texture field simply ends against sky)",
+  "thick_rim_band": "rounded rim drawn as two cooperating contours, or a stroke-dot-stroke band (e.g. `!:|`), that turns with a large eye or lid; thickness belongs to that form, not to every round (architectural bands are arch_band)"
+ },
+ "inspection_log": [
+  "read: laneB_brief_rounds_embedded.md, laneB_brief_common.md, laneB_brief_addendum.md; trueff-shallot AGENTS.md 'How to inspect'; ascii-art-authoring SKILL.md (working tree HEAD 54a56da, newer than the 716bedd named in the addendum) sections Revision preservation and authorship gate, 2.1, 2.2, Split-stroke ownership, 4.4, 8 Mark-purpose test, 15.3-15.7; structural-line-selection.md 'Attachment is not construction', 'Split-stroke ownership', 'Four important AA construction patterns', 'Worked multi-row constructions', 'Rounded constructions beyond one circle spelling', 'Recovered AA tools'; aahub-reference-index.md role-organized libraries + operator circle profile update; roles/schema.json; existing groups' entry lists (to avoid re-entering sh-mlt47 eye rows, sh-mlt33 body, sa-church105/106/107 paired lobes, fc- eye/ear library entries)",
+  "selection: operator circle-profile positions in scope (47/48/49 dogs, 35 corpse face, 43/44 large eyes) via aahub-reference-index.md; crop 04 via operator_reference_sources.v1.json; outside the profile, cat page 猫 section 【ネコ（猫）】 (text locator for `γ..ヽ` over `乂/ゝ..ノ`, hits aa[134], aa[159] only) and 足・脚02 section 【裸足】 (round-glyph count per row; aa[43] picked). No page sweeps",
+  "text check: archive MLT aa[95]/aa[108]/aa[145] (犬), aa[101] (死体), aa[115]/aa[117] (顔・表情02) equal profile-circle-20261026 entry-47/48/49/35/43/44.txt except the trailing newline; church aa[105] rows 5-9 equal operator-constructions/church-105.txt; crop-04 excerpt `（(⌒Y⌒)）` / `)Ｉi(` is rows 6-7 there (matches the doc)",
+  "犬 aa[95] rows 12-14 x120-420 opened (both eyes `γ oヽ`/`乂 .ノ` and `γ oヽ`/`ゝ .ノｰ`, embedded in `: :` fur tone): not entered — sh-mlt47-eye-ring-pupil already covers these rows; the paper-side eye uses `ゝ .ノｰ`, the tone-side eye `乂 .ノ` (return glyph changes with what it meets)",
+  "犬 aa[95] rows 4-9 x40-280 (both ears), 4-19 x230-480 (head edge), 13-17 x190-330 (nose/muzzle) opened -> eb-dog95-ear-cap-wide, -ear-cap-narrow, -ear-head-meeting, -head-fur-edge, -nose-2r, -muzzle-dot-return",
+  "犬 aa[108] rows 1-16 x0-170, 1-6 x95-180, 1-6 x225-365, 9-16 x120-330, 11-15 x100-180 and x270-340 opened -> eb-dog108-ear-left-fold, -ear-right-dotted, -nose-2r, -lip-paired-lobes, -cheek-dot-arc, -jowl-fur-edge, -eye-1r; right-side jowl (mirror ﾐ/シ edge) seen in the 9-16 crop, not entered (duplicate of the left)",
+  "犬 aa[145] whole rows 1-31 rendered once at 1x only to locate parts (not counted as inspection); rows 13-19 x240-350, 6-9 x290-420, 7-9 x470-540, 17-20 x315-420 opened -> eb-dog145-haunch-brace-flank, -ear-edge-shoulder, -hindpaw-cap; forepaw `r'⌒)`/`ノ ／` (rows 8-9) opened, not entered (same `⌒)` cap as the hind paw); body underside return row 24 not opened",
+  "死体 aa[101] whole rows 1-15 rendered at 1x to locate; rows 5-10 x55-145 and 6-12 x240-345 opened -> eb-face101-eye-socket-tone, eb-face101-open-eye-dot-return (re-sliced to rows 7-10 x258-335)",
+  "顔・表情02 aa[115] whole rows 1-9 rendered to locate; rows 1-9 x60-320 and 3-7 x145-240 opened -> eb-eye115-iris-5r, -thick-rim-left, -lower-lid-band; right eye (mirror) not entered",
+  "顔・表情02 aa[117] rows 10-16 x90-300 opened -> eb-eye117-iris-4r, eb-eye117-nested-open-eye",
+  "church-105.txt rows 4-9 x15-110 opened (crop-04 motif) -> eb-ch105-lobes-pinched, eb-ch105-lower-round-2r (role split; sa-church105/106/107 already hold rows 5-8 as one rim_cap)",
+  "猫 aa[159] whole rows 1-31 rendered to locate; rows 8-13 x270-400 opened -> eb-cat159-eye-far-2r, eb-cat159-eye-near-3r (same eye construction at two sizes); paws rows 28-31 not opened",
+  "猫 aa[134] whole rows 1-20 rendered to locate; rows 5-10 x80-290 opened -> eb-cat134-eye-right-3r; left eye rows 6-8 x95-158 opened and viewed but NOT entered (kept the count at 30; described in the right eye's note)",
+  "足・脚02 aa[43] rows 9-17 rendered to locate; rows 13-16 x90-235 and 14-17 x460-605 opened -> eb-foot43-toe-chain-returns, eb-foot43-toe-pads; aa[8] (row 9 toes) listed by the count but not opened",
+  "split_stroke: none recorded. Candidates looked at and rejected: `Y` in crop 04 and `Y`@254 in cat134 (generic Y junctions), `乂` eye returns (crossing of one contour, not two forms), `ﾉ`@316 in dog145 r18 (one continuous leg contour)",
+  "method note: every entry's crop + 4-6x zoom were viewed together as one composite image with the exact slice rows and absolute pens; entry native fields are re-sliced by build.py with role_crop.slice_rows (the checker's own function)"
+ ],
+ "gaps": [
+  "same animal eye/nose construction at 3+ sizes in one drawing: only two sizes found (cat159 near/far eye); the 2/4/5-row eye series in this file comes from different drawings (cat159, eye117, eye115), so it is a cross-drawing family, not a proven LOD sequence",
+  "noses at 3+ rows: none found in the opened dog/cat faces (both noses are 2 rows)",
+  "rounded human body parts other than feet/toes (knee, shoulder, breast, buttock, human cheek): not searched for lack of a heading that selects them; the hand is covered by sk- entries",
+  "thick-arch band turns (ｲﾆア゜, /ﾆｱ, 寸ム, 寸ﾊ, Ⅵｉ) in animal/face subjects: not seen; the nearest analogue is the eye115 stroke-dot-stroke rim (thick_rim_band)",
+  "ellipse-like animal rounds (muzzle seen from the front as a closed oval, round paw pads as closed rings): only dotted/partial versions found (dog108 cheek dots, foot43 pads)",
+  "cat page 【デフォルメ】 (aa 267-381, round deformed heads) and dog/cat 【犬と猫】 not opened; likely sources for whole round heads at 6-8 rows",
+  "dog145 long body underside return (row 24 `` `ー―― '''\"´`ー---‐''\" ``) and dog95 lower body/paws (rows 21-30) not opened"
+ ],
+ "entries": [
+  {
+   "id": "eb-dog95-ear-cap-wide",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "texture_edge"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 87,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "above the cap and outside both ﾐ flanks; the ear interior is `:` dot tone, not paper"
+   },
+   "native": {
+    "rows": [
+     "　　　 ,､　　　　",
+     " ,x'^´｀:.`ヾ,　　",
+     ",ﾐ : : : : : : :ﾐ､,､"
+    ],
+    "row_numbers": [
+     4,
+     6
+    ],
+    "x_px": [
+     44,
+     130
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44
+    ]
+   },
+   "ports": {
+    "left": "texture_edge",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 (汎用AA/動植物/動物/犬) aa[95], dog in a room: left ear",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-ear-cap-wide.png",
+   "note": "Ear-lobe cap built from small accent marks, not ⌒: `x` corner + `'^` apex + `´｀` widening + `ヾ,` shoulder, standing on ﾐ fur flanks. SCALING: same family as eb-dog95-ear-cap-narrow (same drawing): the narrow cap row is `x'^`ヾ` (pens 202-238, ~36 px); this one inserts `´｀` and `:.` between `^` and `ヾ` (pens 49-113, ~64 px) and adds a `,､` tip above the apex.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r5 `,x'^´｀:.`ヾ,`: `x`@52 left corner, `'^`@59/62 apex, `´｀`@69/77 widen the crown, `:.`@85/88 inner dots, ``ヾ,`@91-110 right shoulder; r4 `,､`@82/85 tiny tip over the apex; r6 flanks `ﾐ`@47 and `ﾐ`@110 with `:` dots @59-107 between; `､,､`@117-127 begins the head-top fur row; paper above",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog95-ear-cap-narrow",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 54,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "above the 5-glyph cap and right of the ﾐ flank"
+   },
+   "native": {
+    "rows": [
+     "x'^`ヾ　　　",
+     ": : : :`ﾐ　　",
+     ": : ;;;;;;,:`ﾐ"
+    ],
+    "row_numbers": [
+     4,
+     6
+    ],
+    "x_px": [
+     195,
+     262
+    ],
+    "row_pen_x": [
+     202,
+     208,
+     203
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "texture_edge",
+    "up": "paper",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 aa[95]: right ear",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-ear-cap-narrow.png",
+   "note": "Narrow member of the dog95 ear-cap family: `x'^`ヾ` alone is the whole cap (~36 px). Its left side lands on the `爻` meeting stack (eb-dog95-ear-head-meeting), its right side becomes the ﾐ head edge (eb-dog95-head-fur-edge); the ear base carries a dense `;;;;;;` strip.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r4 `x'^`ヾ`: `x`@202, `'`@209, `^`@212, backtick@219, `ヾ`@226 = whole cap; r5 `:`@208-232 dots then ``ﾐ`@235/242 starts the right flank; r6 `;;;;;;`@219-234 dense strip at the ear base, ``ﾐ`@243/250 flank steps right",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog95-ear-head-meeting",
+   "role": "contact_junction",
+   "also_roles": [
+    "periodic_band",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 112,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "concave",
+    "inside": "below",
+    "paper": "the sky gap above the `､,､` row between the two ears"
+   },
+   "native": {
+    "rows": [
+     "ヾ,　　　　　 　 ,爻",
+     ": :ﾐ､,､,､,､,､,､,､,爻:",
+     ";; 爻: : : : : : : : : : :",
+     ";爻 : : : : : : : : : : : ",
+     ": : : : : : : : : : : : :"
+    ],
+    "row_numbers": [
+     5,
+     9
+    ],
+    "x_px": [
+     95,
+     205
+    ],
+    "row_pen_x": [
+     98,
+     99,
+     95,
+     96,
+     108
+    ]
+   },
+   "ports": {
+    "left": "rim_cap",
+    "right": "rim_cap",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 aa[95]: head top between the ears",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-ear-head-meeting.png",
+   "note": "Ears overlap the head with `爻` (cross-stroke fur glyph) as the meeting mark instead of a line; the dip between ears is a shallow wavy fur row `､,､,...` (8 pairs), not a ⌒ arc. A dense `;` strip sits on the ear side of the left 爻 stack.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r6 `､,`x8 @117-184 low wavy crown row ending in `爻`@187 (r6) / `爻`@192 (r5) where the right ear's flank lands; left ear's inner edge comes back down-left `ﾐ`@110 (r6) → `爻`@106 (r7) → `爻`@99 (r8) with `;;`@95/98 and `;`@96 on its ear side; `:` dots fill the head below from r7; paper above r6",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog95-head-fur-edge",
+   "role": "texture_edge",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 14,
+    "px_wide": 90,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "right of the ﾐ column (outside the head), apart from a short `:::` fur strip on rows 15-18"
+   },
+   "native": {
+    "rows": [
+     ":`ﾐ",
+     ";; :ﾐ,",
+     ": `xﾐ,",
+     ": :`x<",
+     ": : : :.ﾐ､",
+     " : : : : : ﾐ",
+     "oヽ: : : :ﾐ",
+     " .ノｰ : : ﾐ",
+     "､　,　 　 ﾐ 　ヽ",
+     "i} 　:,　　ﾐ::　　　　",
+     " _,,ﾉ　 ﾐ:::}　　}　　",
+     "´　　 ﾐ:::,′",
+     " 　 ﾐ':::ｲ＼ ノ　 　",
+     "__彡´ 　 　 ＼　　"
+    ],
+    "row_numbers": [
+     6,
+     19
+    ],
+    "x_px": [
+     240,
+     345
+    ],
+    "row_pen_x": [
+     240,
+     243,
+     240,
+     244,
+     241,
+     240,
+     244,
+     243,
+     240,
+     240,
+     246,
+     245,
+     247,
+     243
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 aa[95]: right side of the head",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-head-fur-edge.png",
+   "note": "14-row rounded head contour carried only by a column of ﾐ fur strokes that steps out (r6-r11) and back (r15-r19); interior `:` tone stops at it; `x`/`x<` mark the ear-base corner; the lower turn closes with `__彡´`, a fur glyph, not ノ.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "ﾐ column: ``ﾐ`@243/250 (r6) → `ﾐ`@257 → `xﾐ`@255/262 → `x<`@262/269 (r9) → `ﾐ､`@271/278 → `ﾐ`@285/291/293/293 (r11-14, widest) → `ﾐ::`@291 (r15) → `ﾐ:::}`@286-302 → `ﾐ:::,′`@280-299 → ``ﾐ':::ｲ`@268-287 (r18) → `__彡´`@243-269 (r19); `:` dots fill left up to the ﾐ (r10-13); from r15 a `:::` strip runs on the outside of the ﾐ",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog95-nose-2r",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_core",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 55,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "muzzle paper all round: above `===`, right of `i}`, below `(ﾆﾆﾆ`"
+   },
+   "native": {
+    "rows": [
+     "　 ===､　,　",
+     " (ﾆﾆﾆi} 　"
+    ],
+    "row_numbers": [
+     14,
+     15
+    ],
+    "x_px": [
+     200,
+     262
+    ],
+    "row_pen_x": [
+     200,
+     200
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 aa[95]: nose",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-nose-2r.png",
+   "note": "Small dark rounded nose made of fill glyphs: cap `===` (not ⌒) with `､` rounding the top-right corner, body `ﾆﾆﾆ` hatch closed by `(` and `i}`. Tone and outline are the same marks.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r14 `===`@216-232 dark doubled bars sitting high, `､`@240 right shoulder; r15 `(`@205 left round, `ﾆﾆﾆ`@210-230 body, `i}`@240/243 right side; ~45 px x 2 rows; `,`@258 belongs to the muzzle rim, not the nose",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog95-muzzle-dot-return",
+   "role": "return_base",
+   "also_roles": [
+    "dotted_rim"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 51,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "W",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "inside the muzzle between nose and dots, and outside the dots up to the ﾐ head edge"
+   },
+   "native": {
+    "rows": [
+     " .ノｰ : : ",
+     "､　,　 　 ",
+     "i} 　:,　　",
+     " _,,ﾉ　 ﾐ",
+     "´　　 ﾐ:"
+    ],
+    "row_numbers": [
+     13,
+     17
+    ],
+    "x_px": [
+     238,
+     290
+    ],
+    "row_pen_x": [
+     243,
+     240,
+     240,
+     246,
+     245
+    ]
+   },
+   "ports": {
+    "left": "return_base",
+    "right": "paper",
+    "up": "closed_ring",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#95",
+    "label": "犬 aa[95]: muzzle right contour under the eye",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 47 (Dogs aa[95]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (profile47-48)"
+   },
+   "crop": "crops/eb-dog95-muzzle-dot-return.png",
+   "note": "Lost-and-found return: the upper half of the rounded muzzle contour is two rows of dots (`,` / `:,`) that harden into `_,,ﾉ` and `´` as the curve turns under and hands left to the jaw line (`ｦ´`, `,,,,,｡r≦` on r17).",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 47); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "under the eye's `ノｰ`@251/262 (r13): `,`@258 (r14), `:,`@263/266 (r15) dot rim; `_,,ﾉ`@251-262 (r16) solid return; `´`@245 (r17) continues left; `ﾐ`@280/286 (r16-17) is the head edge beyond paper; `i}`@240/243 (r15) is the nose's right side",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-ear-left-fold",
+   "role": "rim_cap",
+   "also_roles": [
+    "texture_edge",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 88,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the ear between the ﾐ flank and the `ヾヽ` folds, and above the flat `-‐` cap"
+   },
+   "native": {
+    "rows": [
+     " 　,.　-‐ ､　　",
+     " ﾐ　　　　`､　",
+     " ﾐ　　 ヾヽ　ﾞ:",
+     " ﾐ　 ヽヾ 　''\"｀",
+     "ﾐ｀シﾞ　　　　　",
+     "ﾞ　　　　　　　"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     95,
+     180
+    ],
+    "row_pen_x": [
+     99,
+     103,
+     99,
+     97,
+     96,
+     102
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "texture_edge"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108], dog face close-up: left ear",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-ear-left-fold.png",
+   "note": "Ear with a flat `,.　-‐ ､` cap, a stepped ﾐ fur stack as the outer flank and short open fold strokes `ヾヽ` / `ヽヾ` inside; the base `ﾐ｀シﾞ` turns into the cheek fur. Compare its mirror partner eb-dog108-ear-right-dotted.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r1 `,.`@115/118 `-‐`@132/140 `､`@153 flat cap; outer flank `ﾐ`@108 → @104 → @102 → @96 (r2-5) stepping left; inner side ``､`@159/166 (r2) → `ﾞ:`@173/177 (r3) → `''\"｀`@165-179 (r4, head-top row); folds `ヾヽ`@138/150 (r3), `ヽヾ`@125/137 (r4) open-ended; base `ﾐ｀シﾞ`@96-125 (r5)",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-ear-right-dotted",
+   "role": "rim_cap",
+   "also_roles": [
+    "dotted_rim",
+    "texture_edge"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 118,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the ear between the dot pairs and the ﾐ、 flank"
+   },
+   "native": {
+    "rows": [
+     "　　 　　 ､-‐ 、",
+     "　 　 ､:｀　　　 ﾐ、",
+     "　 　,:ﾞ,:ﾞ 　　　　ﾐ、",
+     "\"\" ´　'' ,:ﾞ ,,.シ{ _ﾐ、",
+     "　　　　　　　　　｀ヾ、"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     225,
+     365
+    ],
+    "row_pen_x": [
+     226,
+     228,
+     227,
+     232,
+     228
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "texture_edge",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: right ear",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-ear-right-dotted.png",
+   "note": "Same size and cap family as the left ear (`､-‐ 、`) but not a mirror spelling: the inner flank toward the face is `,:ﾞ` dot pairs instead of `ヾヽ` folds, and the outer flank is `ﾐ、` with a trailing 、. Dots replace the line on the face side.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r1 `､-‐ 、`@280-308 cap; inner side `､:｀`@260-270 (r2) → `,:ﾞ,:ﾞ`@254-270 (r3) → `,:ﾞ`@283-289 (r4); outer `ﾐ、`@316/323 → `ﾐ、`@323/330 → `_ﾐ、`@330-342 (r2-4) → ``ヾ、`@327-347 (r5); base `,,.シ{`@298-321 (r4) meets the head; `\"\" ´ ''`@232-275 (r4) is the head-top row",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-nose-2r",
+   "role": "paired_aperture",
+   "also_roles": [
+    "whole_circle",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 29,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "around the nose; the `;;;人;;;` row directly below is the philtrum, not part of the nose ring"
+   },
+   "native": {
+    "rows": [
+     "　 　ﾊYﾊ",
+     "　 辷ヲ"
+    ],
+    "row_numbers": [
+     11,
+     12
+    ],
+    "x_px": [
+     168,
+     222
+    ],
+    "row_pen_x": [
+     168,
+     178
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: nose",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-nose-2r.png",
+   "note": "2-row nose: `ﾊ` `ﾊ` nostrils flank a central `Y` (top of the groove) and `辷ヲ` closes it below (left-lower and right-lower turns). Contrast eb-dog95-nose-2r (`===` / `(ﾆﾆﾆi}`, a filled nose).",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r11 `ﾊ`@195 `Y`@205 `ﾊ`@214; r12 `辷`@194 `ヲ`@210 close the bottom; ~30 px x 2 rows; r13 `人`@198 hangs from it (outside slice)",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-lip-paired-lobes",
+   "role": "contact_junction",
+   "also_roles": [
+    "small_mouth",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 146,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside both lip lobes and the open mouth between the `T` fangs; outside the jaw diagonals"
+   },
+   "native": {
+    "rows": [
+     ",,__ 　　;;;人;;;　　 __,, 　 :!　",
+     " ＼｀¨T¨　　¨T¨´／　 ,:ﾞ　",
+     "　 ＼乂＿_乂／　　,:ﾞ　　"
+    ],
+    "row_numbers": [
+     13,
+     15
+    ],
+    "x_px": [
+     140,
+     295
+    ],
+    "row_pen_x": [
+     146,
+     142,
+     150
+    ]
+   },
+   "ports": {
+    "left": "dotted_rim",
+    "right": "dotted_rim",
+    "up": "paired_aperture",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: upper lips and mouth",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-lip-paired-lobes.png",
+   "note": "Paired-lobe construction in an animal face (cf. crop 04 `（(⌒Y⌒)）`): a shared central `人` with dense `;;;` on both sides divides two lip lobes; each lobe's return crosses the jaw diagonal with `乂`, and `＿_` is the chin between.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r13 `,,__`@146-157 and `__,,`@250-263 lip tops, `;;;人;;;`@189-220 central meeting; r14 `＼`@147 / `／`@251 jaw diagonals, `｀¨T¨`@163-188 and `¨T¨´`@218-243 lobes with `T` fangs; r15 `＼乂＿_乂／`@166-235: `乂`@182/219 cross the lobe returns with the diagonals, `＿_`@198/214 between; `:!`@287 and `,:ﾞ`@273-289 are the right dotted muzzle edge",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-cheek-dot-arc",
+   "role": "dotted_rim",
+   "also_roles": [
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 65,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "between the dotted edge and the jaw diagonal `＼`, and left of the dots"
+   },
+   "native": {
+    "rows": [
+     "　　　　,:ﾞ　",
+     ":! 　　,,__ 　",
+     "ﾞ:, 　 ＼｀",
+     "　ﾞ:, 　　 ＼"
+    ],
+    "row_numbers": [
+     12,
+     15
+    ],
+    "x_px": [
+     112,
+     170
+    ],
+    "row_pen_x": [
+     113,
+     112,
+     116,
+     113
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: left muzzle edge",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-cheek-dot-arc.png",
+   "note": "The rounded muzzle's outer edge is drawn only with punctuation (`:!`, `ﾞ:,`, `ﾞ:,`) drifting right as it descends; a separate short dotted crease `,:ﾞ` sits over the lip top. The solid lines are kept for the mouth.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "`:!`@112/115 (r13) → `ﾞ:,`@116-123 (r14) → `ﾞ:,`@124-131 (r15); `,:ﾞ`@157-163 (r12) above the lip top `,,__`@146-157 (r13); `＼`@147/166 (r14-15) jaw diagonal stays separate with paper between",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-jowl-fur-edge",
+   "role": "texture_edge",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 62,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "left of the edge (outside the head) and right of it up to the brow mark"
+   },
+   "native": {
+    "rows": [
+     "　 ___彡　　",
+     "　ヾ､　　　",
+     " ,,.ノ　　 　",
+     " ヾ、　　_,､",
+     ",,.彡　　　　",
+     "　｀ミ　　　 ",
+     " ,.シ　　　　",
+     "ヾ　　　　　"
+    ],
+    "row_numbers": [
+     9,
+     16
+    ],
+    "x_px": [
+     15,
+     82
+    ],
+    "row_pen_x": [
+     22,
+     22,
+     22,
+     22,
+     22,
+     16,
+     22,
+     22
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "texture_edge",
+    "down": "texture_edge"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: left jowl",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-jowl-fur-edge.png",
+   "note": "Jowl contour as a zigzag of different fur hooks (彡/ヾ/ノ/ミ/シ) with comma lead-ins; the bulge is in the `,,.` lead-in shifts (x 22-53), not in a drawn arc.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "`___彡`@38-53 (r9) → `ヾ､`@33/45 → `,,.ノ`@27-36 → `ヾ、`@27/39 → `,,.彡`@22-31 → ``ミ`@27/35 → `,.シ`@27-33 → `ヾ`@22 (r16); `_,､`@72-80 (r12) is the brow mark, separated by paper",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog108-eye-1r",
+   "role": "closed_ring",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 58,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "above and below the single row; the muzzle paper below"
+   },
+   "native": {
+    "rows": [
+     "　ー=fぴゞ´　　　"
+    ],
+    "row_numbers": [
+     10,
+     10
+    ],
+    "x_px": [
+     100,
+     210
+    ],
+    "row_pen_x": [
+     107
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#108",
+    "label": "犬 aa[108]: left eye (1 row)",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 48 (Dogs aa[108]); structural-line-selection.md 'Rounded constructions': 'Curvature carried by texture' (fur ﾐ/シ/彡; mouth 乂＿_乂 a different feature)"
+   },
+   "crop": "crops/eb-dog108-eye-1r.png",
+   "note": "1-row round eye: `ぴ` supplies the bowl and its own dot highlight, `f` the left rim, `ゞ´` the right corner, `ー=` a corner tail (~58 px with the tail). Its partner on the same row is mirrored as `｀fぴゞ=ー`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 48); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r10 `ー`@118 `=`@133 tail, `f`@141 left rim, `ぴ`@146 eye bowl, `ゞ`@161 `´`@172 right corner",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog145-haunch-brace-flank",
+   "role": "flank",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 96,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "inside the haunch (the body is open paper) and right of the braces"
+   },
+   "native": {
+    "rows": [
+     " ,　'\"´￣｀ヽ 　　",
+     "　　　　　　 } 　　",
+     "　　　　　　　}　　　",
+     "　 　 　 　 　 } 　　",
+     "　　　　　　 }　 　",
+     " 　 　 　 　 ﾉ-‐ \"",
+     "　　　　　 / 　 ／"
+    ],
+    "row_numbers": [
+     13,
+     19
+    ],
+    "x_px": [
+     240,
+     350
+    ],
+    "row_pen_x": [
+     250,
+     253,
+     246,
+     242,
+     250,
+     247,
+     245
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#145",
+    "label": "犬 aa[145], lying dog: haunch",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 49 (Dogs aa[145]); structural-line-selection.md 'Rounded constructions': 'Long, lost-and-found round envelope' (profile49 body/ear/neck arcs)"
+   },
+   "crop": "crops/eb-dog145-haunch-brace-flank.png",
+   "note": "Rounded haunch built like church57's `{　　　}` flank: cap `'\"´￣｀ヽ`, four single `}` braces drifting 1 px left per row, `ﾉ` return into the leg. Height grows by adding `}` rows.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 49); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r13 `,`@255 then `'\"´`@269-280 climb into `￣`@288 and `｀ヽ`@304/312 (cap + right shoulder ~65 px); r14-17 `}`@324/323/322/321; r18 `ﾉ`@316 returns, `-‐ \"`@324-345 runs right; r19 `/`@305 and `／`@334 are the leg edges below",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog145-ear-edge-shoulder",
+   "role": "shoulder",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 104,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between the two parallel lines and right of the `＼` descent up to the `{` foreleg"
+   },
+   "native": {
+    "rows": [
+     " ＼_彡'⌒丶、　{　　　",
+     "／´￣￣｀丶＼,{　 　",
+     "　　　　　　　 ＼;{ 　 "
+    ],
+    "row_numbers": [
+     7,
+     9
+    ],
+    "x_px": [
+     290,
+     420
+    ],
+    "row_pen_x": [
+     291,
+     294,
+     294
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "paper",
+    "up": "texture_edge",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#145",
+    "label": "犬 aa[145]: ear lower edge over the cheek",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 49 (Dogs aa[145]); structural-line-selection.md 'Rounded constructions': 'Long, lost-and-found round envelope' (profile49 body/ear/neck arcs)"
+   },
+   "crop": "crops/eb-dog145-ear-edge-shoulder.png",
+   "note": "Small cap inside a long line: `'⌒` rises and `丶、` steps down; the parallel line below `／´￣￣｀丶＼` turns down through `丶＼` → `＼` — two shoulders of the same turn give the ear thickness.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 49); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r7 `＼_彡`@296-317 corner, `'⌒`@333/336 cap, `丶、`@352/368 descent; r8 `／´￣￣｀丶＼`@294-374 parallel line turning down; r9 `＼`@376; `{`@390/393/395 (r7-9) is the foreleg edge beyond paper and `,`/`;`@390/392",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-dog145-hindpaw-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 109,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between the leg's two parallel `／` edges and under the cap"
+   },
+   "native": {
+    "rows": [
+     " }　 　 人 　 　 ／",
+     "ﾉ-‐ \"／⌒)ｰ'\"",
+     "　 ／　 ／",
+     "　　／"
+    ],
+    "row_numbers": [
+     17,
+     20
+    ],
+    "x_px": [
+     315,
+     420
+    ],
+    "row_pen_x": [
+     316,
+     316,
+     318,
+     326
+    ]
+   },
+   "ports": {
+    "left": "return_base",
+    "right": "flank",
+    "up": "contact_junction",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f4/f452585ab8d54d61a7f6701f85934209.json.gz#145",
+    "label": "犬 aa[145]: hind leg end",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 49 (Dogs aa[145]); structural-line-selection.md 'Rounded constructions': 'Long, lost-and-found round envelope' (profile49 body/ear/neck arcs)"
+   },
+   "crop": "crops/eb-dog145-hindpaw-cap.png",
+   "note": "A limb end capped by `⌒)` on two parallel diagonals; the same `⌒)` cap closes the forepaw (`r'⌒)` over `ノ ／`, rows 8-9, not entered). Cap width follows the diagonal spacing (cap ~35 px).",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 49); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r18 `／`@353 rises into `⌒`@369 and `)`@385 turns it down, `ｰ'\"`@390-403 continue right; r19 `／`@334/366, r20 `／`@348 are the leg's two edges with paper between; `人`@357 (r17) is where haunch return and far leg meet; `ﾉ-‐ \"`@316-345 (r18) is the haunch return arriving",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-face101-eye-socket-tone",
+   "role": "closed_ring",
+   "also_roles": [
+    "tone_core",
+    "tone_mid",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 82,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "outside the `:` ring; no paper inside"
+   },
+   "native": {
+    "rows": [
+     "　,:::､´ /_;;::::.　｀",
+     "i:::;;ｭ|||||_i::::　　",
+     "　',:::;_i|||||i_}:::　　",
+     "　 ',::;,{||||||_i:::　",
+     "　　'::;;||||||/::　　",
+     "　　　 '￣'´　　"
+    ],
+    "row_numbers": [
+     5,
+     10
+    ],
+    "x_px": [
+     55,
+     145
+    ],
+    "row_pen_x": [
+     55,
+     65,
+     55,
+     55,
+     55,
+     55
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/d0/d08548555a8be6fa373d54ff8925cd03.json.gz#101",
+    "label": "死体 (汎用AA) aa[101], tilted face: left eye socket",
+    "aahub_url": "https://aahub.org/mlt/d08548555a8be6fa373d54ff8925cd03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 35 (Corpse aa[101], identical text Human/mob10 aa[261]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-face101-eye-socket-tone.png",
+   "note": "Tone-built round socket: a dark `|` hatch core, an inner rim of `_ i } { ｭ`, and a `:`/`;` ring thinning outward to `'`/`,` tips. The round is made by nested tone groups; cap `/_;;::::.` and return `'￣'´` are short.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 35); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "core `|`x5-6 @91-113 (r6-9); inner rim right `_i`@111/116, `i_}`@112-120, `_i`@117/122, `/`@116; left `ｭ`@83, `_i`@84/89, `{`@89; outer ring `i:::;;`@65-80 (r6) / `',:::;`@66-81 / `',::;,`@71-86 / `'::;;`@77-89 left and `::::`@119-131 right, tips `'` `,`; top `,:::､´ /_;;::::.`@66-129 (r5); bottom `'￣'´`@93-115 (r10)",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-face101-open-eye-dot-return",
+   "role": "closed_ring",
+   "also_roles": [
+    "dotted_rim",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 64,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the eye (open white) and between the doubled right flanks"
+   },
+   "native": {
+    "rows": [
+     "_　　　　 　 ",
+     "}_＞-ヾ_-　　",
+     "}　　 　 i} }　",
+     "',::..__ ノ' /　"
+    ],
+    "row_numbers": [
+     7,
+     10
+    ],
+    "x_px": [
+     258,
+     335
+    ],
+    "row_pen_x": [
+     265,
+     263,
+     264,
+     268
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "fold_crease",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/d0/d08548555a8be6fa373d54ff8925cd03.json.gz#101",
+    "label": "死体 aa[101]: right eye",
+    "aahub_url": "https://aahub.org/mlt/d08548555a8be6fa373d54ff8925cd03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 35 (Corpse aa[101], identical text Human/mob10 aa[261]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-face101-open-eye-dot-return.png",
+   "note": "Open eye ring of a tilted face: solid lid with `＞` inner corner, brace flanks (`}` left, `i} }` doubled right), and a return whose first half is dots `',::..` before `__ ノ'` — the same dot-to-line return as eb-dog95-muzzle-dot-return.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 35); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r7 `_`@265 tiny cap; r8 `}_＞-ヾ_-`@263-313 lid with `＞`@272 inner corner and `ヾ`@296 crease; r9 `}`@264, `i} }`@311-323; r10 `',::..`@268-283 dots → `__`@286/291 → `ノ'`@301/312; `/`@320 outside",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-eye115-iris-5r",
+   "role": "closed_ring",
+   "also_roles": [
+    "whole_circle",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 57,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "around the iris inside the eye white"
+   },
+   "native": {
+    "rows": [
+     "　　 __　　　",
+     ".,ｨ::::::::::ヽ　",
+     "i:::::::::::::::::i　",
+     "ヾ:::::::::::ノ　",
+     "　 ｀　´　　"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     148,
+     216
+    ],
+    "row_pen_x": [
+     148,
+     151,
+     152,
+     152,
+     152
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/dd/ddd5a07a469de526bc78d56073e70b03.json.gz#115",
+    "label": "顔・表情02（大型：目・瞳） aa[115], large eye pair: left iris",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 43 (Large eyes aa[115]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-eye115-iris-5r.png",
+   "note": "Complete composed round at 5 rows (~57 px): `__` cap / `ｨ … ヽ` shoulders / `i … i` flanks / `ヾ … ノ` return / `｀ ´` open tails, with `:` tone core. SCALING: eb-eye117-iris-4r is the 4-row version (`__` / `,´ ヾ` / `{ l` / `ゞ__ .ﾉ`), the cat eyes the 2-row version (`γ … ヽ` / `乂 … ﾉ`).",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 43); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r3 `__`@175/180 cap; r4 `.,ｨ`@151-157 and `ヽ`@194 shoulders with `:`@164-191; r5 `i`@152 and `i`@206 flanks, `:`@155-203; r6 `ヾ`@152 `ノ`@197 return; r7 `｀`@168 `´`@187 tails",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-eye115-thick-rim-left",
+   "role": "thick_rim_band",
+   "also_roles": [
+    "flank",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 91,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "between the sparse outer line and the dense inner band (rows 4-7), and inside the eye white"
+   },
+   "native": {
+    "rows": [
+     " 　 _,. ,ィｾ:;ｱ―",
+     "　 ／´,'::/　　　",
+     ", '　　.i::;′ 　 ",
+     "　 | 　.!:|　　　 ",
+     " 　 ',　 !:!　　　 ",
+     " 　 ',　';:､　 　 ",
+     " 　 　 ヽ. ﾏ＞..."
+    ],
+    "row_numbers": [
+     2,
+     8
+    ],
+    "x_px": [
+     60,
+     150
+    ],
+    "row_pen_x": [
+     65,
+     66,
+     66,
+     64,
+     60,
+     66,
+     60
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/dd/ddd5a07a469de526bc78d56073e70b03.json.gz#115",
+    "label": "顔・表情02 aa[115]: left eye outer rim",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 43 (Large eyes aa[115]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-eye115-thick-rim-left.png",
+   "note": "Thick eye rim as two cooperating contours: a sparse outer line (`'` `,` `|`) and a dense inner band (`!:|`, `!:!`: two strokes with `:` between) that turns from `,ィｾ:;ｱ―` at the top to `ﾏ＞...` at the bottom. Thickness belongs to this large eye.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 43); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "outer `_,.`@86-94 → `／´`@82/98 → `, '`@66/74 → `|`@80 → `',`@81/84 → `',`@87/90 → `ヽ.`@97/109 (r2-8); inner `,ィｾ:;ｱ―`@102-141 → `,'::/`@106-118 → `.i::;′`@99-114 → `.!:|`@100-110 → `!:!`@103-110 → `';:､`@104-113 → `ﾏ＞...`@117-149",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-eye115-lower-lid-band",
+   "role": "return_base",
+   "also_roles": [
+    "thick_rim_band",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 177,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "above the `＿＿＿` run (eye white) and between the two bands at their ends"
+   },
+   "native": {
+    "rows": [
+     " ヽ. ﾏ＞...､＿＿＿,...ィﾀ::/ , .ィ　　　",
+     " 　 ｀｀ﾞ ‐-＝==＝ -‐ ﾞ´´　　　　　　"
+    ],
+    "row_numbers": [
+     8,
+     9
+    ],
+    "x_px": [
+     85,
+     310
+    ],
+    "row_pen_x": [
+     92,
+     93
+    ]
+   },
+   "ports": {
+    "left": "thick_rim_band",
+    "right": "thick_rim_band",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/dd/ddd5a07a469de526bc78d56073e70b03.json.gz#115",
+    "label": "顔・表情02 aa[115]: left eye lower lid",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 43 (Large eyes aa[115]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-eye115-lower-lid-band.png",
+   "note": "Wide (~170 px) two-row lower return: `...` dot runs carry the corners where the straight `＿＿＿` turns up into `ﾏ＞` and `ィﾀ`; `＝==＝` below thickens the lid and rises with `｀｀` / `´´`. Width is set by the `＿` count.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 43); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r8 `ヽ.`@97/109 `ﾏ＞`@117/127 `...､`@143-152 `＿＿＿`@159-191 `,...ィﾀ`@207-229 `::/`@238-244 `, .ィ`@257-268; r9 `｀｀ﾞ`@114-130 `‐-＝==＝`@139-187 `-‐ ﾞ´´`@208-241",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-eye117-iris-4r",
+   "role": "closed_ring",
+   "also_roles": [
+    "whole_circle",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 76,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the iris around the solid `●` pupil, and between iris and outer eye opening"
+   },
+   "native": {
+    "rows": [
+     "　__￣｀ヽ",
+     ",´　　 ヾ　ゝ",
+     "{　 ●　 l　 ｀",
+     "ゞ__ 　.ﾉ　 i"
+    ],
+    "row_numbers": [
+     12,
+     15
+    ],
+    "x_px": [
+     160,
+     236
+    ],
+    "row_pen_x": [
+     168,
+     164,
+     160,
+     165
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/dd/ddd5a07a469de526bc78d56073e70b03.json.gz#117",
+    "label": "顔・表情02 aa[117], partial face: iris",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 44 (Large eyes aa[117]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-eye117-iris-4r.png",
+   "note": "4-row iris (~55 px between `{`@160 and `l`@212): `__` / `,´ … ヾ` / `{ … l` / `ゞ__ .ﾉ` with paper interior and a solid pupil. The return is broken (`__`, gap, `.ﾉ`), a lost-and-found lower edge.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 44); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r12 `__`@179/184 cap; r13 `,´`@164/167 and `ヾ`@202 shoulders; r14 `{`@160 and `l`@212 flanks around `●`@180; r15 `ゞ__`@165-181 and `.ﾉ`@202/205 return; `￣｀ヽ`@189-213, `ゝ`@225, `｀`@231, `i`@229 belong to the outer eye opening",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-eye117-nested-open-eye",
+   "role": "closed_ring",
+   "also_roles": [
+    "opening_paper_gap",
+    "dotted_rim",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 140,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the outer opening and the iris ring; face tone `:` stops at the outer rim"
+   },
+   "native": {
+    "rows": [
+     "　　 -‐‐=＝＝ 、;;::::::..　 　 　",
+     " ´,　-__=＝-　　:::::::::::.",
+     " ,　´　　__￣｀ヽ",
+     " ,　 　 ,´　　 ヾ　ゝ",
+     "l　　 {　 ●　 l　 ｀、",
+     " ゜、　ゞ__ 　.ﾉ　 i",
+     "::::;;, 、＿ __ -‐..'....,,"
+    ],
+    "row_numbers": [
+     10,
+     16
+    ],
+    "x_px": [
+     120,
+     300
+    ],
+    "row_pen_x": [
+     122,
+     130,
+     130,
+     124,
+     130,
+     130,
+     122
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "periodic_band",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/dd/ddd5a07a469de526bc78d56073e70b03.json.gz#117",
+    "label": "顔・表情02 aa[117]: whole eye in face tone",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update': profile 44 (Large eyes aa[117]); structural-line-selection.md 'Nested eye / iris / pupil / highlight'"
+   },
+   "crop": "crops/eb-eye117-nested-open-eye.png",
+   "note": "Nested eye in a partial face: two lid bands, an open outer ring with gaps, the iris ring (eb-eye117-iris-4r) and pupil; the outer ring's lower-right quarter is dots, and the surrounding `:` face tone stops at the opening.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile list membership (profile 44); region reading is this agent's, not an operator rectangle label; not operator-approved"
+   },
+   "inspection": "r10 `-‐‐=＝＝ 、`@149-218 and r11 `´, -__=＝-`@135-199 lid bands; left side `,`@135 → `,`@129 → `l`@130 → `゜、`@135/143 (r12-15); right `ヽ`@213 → `ゝ`@225 → `｀ 、`@231/239 → `i`@229; r16 `、＿ __ -‐`@148-203 then dots `..'....,,`@211-235; face tone `;;::::::..`@229-256 (r10-11), `::::;;,`@122-140 (r16)",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-ch105-lobes-pinched",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 60,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under `⌒`, and the open lower outer corners after `｀` / `´`"
+   },
+   "native": {
+    "rows": [
+     " 　_)i(_ 　　",
+     "（(⌒Y⌒)） ",
+     "｀　)Ｉi(　´　"
+    ],
+    "row_numbers": [
+     5,
+     7
+    ],
+    "x_px": [
+     30,
+     100
+    ],
+    "row_pen_x": [
+     38,
+     32,
+     38
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-105.txt",
+    "label": "教会・礼拝堂 (church page) aa[105] 結婚式, small figure ornament: paired lobes",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions' (paired-lobe `（(⌒Y⌒)）` example) and 'Recovered AA tools' (church105/106/107 rows 6-7 share the motif); laneB_brief_rounds_embedded 'Paired lobes: crop 04'"
+   },
+   "crop": "crops/eb-ch105-lobes-pinched.png",
+   "note": "Role split of crop 04: the concave `)(` pair appears above (`_)i(_`) and below (`)Ｉi(`) the lobes, so the paired lobes read as a pinched form; `Y` is the shared meeting and `Ｉi` the stem; doubled `（(` / `)）` flanks give thickness.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop-04 motif; operator_reference_sources.v1.json: 'shared AAHub motif matched; unique full-artwork variant unresolved (105/106/107)'. This entry slices the aa[105] text (rows 5-9 identical in 106/107) and does not identify which variant the crop came from; region split is this agent's reading"
+   },
+   "inspection": "r6 `（(`@32/40 doubled left flank, `⌒`@45 and `⌒`@70 caps meeting at `Y`@61, `)）`@86/91 doubled right flank; r5 `_)i(_`@54-72 pinch above; r7 `)Ｉi(`@57-69 pinch below the `Y` stem; ticks `｀`@38 / `´`@85 (r7) leave the lobes open at the lower outer corners",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-ch105-lower-round-2r",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 34,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the `《 》` pair except one `.`; outside on both sides"
+   },
+   "native": {
+    "rows": [
+     "《´.｀》 　",
+     " ｀.ﾟ´ 　"
+    ],
+    "row_numbers": [
+     8,
+     9
+    ],
+    "x_px": [
+     45,
+     90
+    ],
+    "row_pen_x": [
+     48,
+     49
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-105.txt",
+    "label": "church page aa[105] 結婚式: small round under the paired lobes",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions' (paired-lobe `（(⌒Y⌒)）` example) and 'Recovered AA tools' (church105/106/107 rows 6-7 share the motif); laneB_brief_rounds_embedded 'Paired lobes: crop 04'"
+   },
+   "crop": "crops/eb-ch105-lower-round-2r.png",
+   "note": "Tiny 2-row round (~35 px) closed by tick-dot-tick (`｀.ﾟ´`) instead of ノ/乂: the doubled `《 》` flanks carry the weight; the return is implied by marks.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop-04 motif; operator_reference_sources.v1.json: 'shared AAHub motif matched; unique full-artwork variant unresolved (105/106/107)'. This entry slices the aa[105] text (rows 5-9 identical in 106/107) and does not identify which variant the crop came from; region split is this agent's reading"
+   },
+   "inspection": "r8 `《`@48 and `》`@75 doubled flanks, `´`@56 and `｀`@67 inner shoulders, `.`@64 in the paper; r9 `｀`@54 `.`@62 `ﾟ`@65 `´`@69 return; directly under `)Ｉi(` (r7)",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-cat159-eye-far-2r",
+   "role": "closed_ring",
+   "also_roles": [
+    "whole_circle",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 28,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "left half of the eye (light side) and around it"
+   },
+   "native": {
+    "rows": [
+     "γ::ヽ　",
+     "乂::ﾉ　"
+    ],
+    "row_numbers": [
+     9,
+     10
+    ],
+    "x_px": [
+     274,
+     312
+    ],
+    "row_pen_x": [
+     275,
+     278
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/5d/5dfb557c4138ea56596d790fc095936b.json.gz#159",
+    "label": "猫 aa[159], sitting cat: far eye",
+    "aahub_url": "https://aahub.org/mlt/5dfb557c4138ea56596d790fc095936b",
+    "cited_by": "not cited by the skill; page 猫 (汎用AA/動植物/動物/猫) section 【ネコ（猫）】 (heading aa[0]); located by a text search for a `γ..ヽ` row over a `乂/ゝ/弋..ノ/ﾉ` row on this page only, then opened"
+   },
+   "crop": "crops/eb-cat159-eye-far-2r.png",
+   "note": "2-row eye `γ::ヽ` / `乂::ﾉ` (~28 px ink): `γ` cap and left shoulder, `乂` crossing return, `:` tone only in the right half. SCALING: the near eye of the same cat (eb-cat159-eye-near-3r) is the same construction widened.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading + text locator; not operator-approved"
+   },
+   "inspection": "r9 `γ`@275 `::`@291/294 `ヽ`@297; r10 `乂`@278 `::`@294/297 `ﾉ`@300; left interior paper",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-cat159-eye-near-3r",
+   "role": "closed_ring",
+   "also_roles": [
+    "whole_circle",
+    "tone_core",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "left half of the eye and between the `__` lid and the ring"
+   },
+   "native": {
+    "rows": [
+     "　　__　　",
+     "γ´:::::ヽ　",
+     " 乂_::::ノ　"
+    ],
+    "row_numbers": [
+     9,
+     11
+    ],
+    "x_px": [
+     333,
+     390
+    ],
+    "row_pen_x": [
+     336,
+     335,
+     333
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/5d/5dfb557c4138ea56596d790fc095936b.json.gz#159",
+    "label": "猫 aa[159]: near eye",
+    "aahub_url": "https://aahub.org/mlt/5dfb557c4138ea56596d790fc095936b",
+    "cited_by": "not cited by the skill; page 猫 (汎用AA/動植物/動物/猫) section 【ネコ（猫）】 (heading aa[0]); located by a text search for a `γ..ヽ` row over a `乂/ゝ/弋..ノ/ﾉ` row on this page only, then opened"
+   },
+   "crop": "crops/eb-cat159-eye-near-3r.png",
+   "note": "Same construction as the far eye at ~1.6x (~44 px ink vs 28): `γ´:::::ヽ` / `乂_::::ノ` — width grows by `´` after γ, `_` after 乂 and three more `:`; the larger eye gains a separate `__` lid row above.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading + text locator; not operator-approved"
+   },
+   "inspection": "r9 `__`@358/363 lid; r10 `γ`@335 `´`@351 `:::::`@359-371 `ヽ`@374; r11 `乂`@338 `_`@354 `::::`@359-368 `ノ`@371",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-cat134-eye-right-3r",
+   "role": "closed_ring",
+   "also_roles": [
+    "contact_junction",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 83,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "a thin paper ring between the eye marks and the surrounding fur dots"
+   },
+   "native": {
+    "rows": [
+     "γ 示　Y: : :",
+     " . 乂v:::ﾉ ﾉ . . ",
+     ".〉:. . ｀¨. . . : : "
+    ],
+    "row_numbers": [
+     6,
+     8
+    ],
+    "x_px": [
+     196,
+     282
+    ],
+    "row_pen_x": [
+     206,
+     196,
+     198
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/5d/5dfb557c4138ea56596d790fc095936b.json.gz#134",
+    "label": "猫 aa[134], cat face in dot-tone fur: right eye",
+    "aahub_url": "https://aahub.org/mlt/5dfb557c4138ea56596d790fc095936b",
+    "cited_by": "not cited by the skill; page 猫 (汎用AA/動植物/動物/猫) section 【ネコ（猫）】 (heading aa[0]); located by a text search for a `γ..ヽ` row over a `乂/ゝ/弋..ノ/ﾉ` row on this page only, then opened"
+   },
+   "crop": "crops/eb-cat134-eye-right-3r.png",
+   "note": "Cat eye inside dot fur: one heavy glyph (`示`) gives the lid weight, `Y` makes the outer corner meeting and `ﾉ ﾉ` doubles the right return. The left eye of the same face (r6-8 @97-141, opened, not entered) is built differently — `γ云ヽ` / `{ {:o:::ﾘ` / `ゞ.ｲ` with a doubled `{ {` left rim — as the head is turned.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading + text locator; not operator-approved"
+   },
+   "inspection": "r6 `γ`@206 cap, `示`@227 heavy lid, `Y`@254 outer corner; r7 `乂`@209 return crossing, `v`@225 pupil, `:::`@233-239, `ﾉ`@242 and second `ﾉ`@255 under the `Y`; r8 ``¨`@228/236 under-lid marks; fur `: :`@263-279 / `. .`@198-276 stops at the ring",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-foot43-toe-chain-returns",
+   "role": "return_base",
+   "also_roles": [
+    "contact_junction",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 128,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside each toe between its two `/` edges and below the toe tips"
+   },
+   "native": {
+    "rows": [
+     "j　、　　　　　　.. 　　}　",
+     "{　ﾉ｀ /= /__ Y___　 /　",
+     "乂{__/　/　　/　　 /　　",
+     "　　 └人__ノヽ.__ノ　　"
+    ],
+    "row_numbers": [
+     13,
+     16
+    ],
+    "x_px": [
+     90,
+     235
+    ],
+    "row_pen_x": [
+     99,
+     99,
+     99,
+     99
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "fold_crease",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/69/695f2734d5490b8b0e17a59343ee0168.json.gz#43",
+    "label": "足・脚02 aa[43], two bare feet: left foot toes from above",
+    "aahub_url": "https://aahub.org/mlt/695f2734d5490b8b0e17a59343ee0168",
+    "cited_by": "not cited by the skill; page 足・脚02 (汎用AA/体/足・脚) section 【裸足】 (heading aa[0]); located by counting round-turn glyphs per row in that section only, then opened"
+   },
+   "crop": "crops/eb-foot43-toe-chain-returns.png",
+   "note": "Chained toe tips: neighbouring rounded ends share their meeting glyph (`人`) and each return is `__ノ` or `.__ノ`; the big toe uses `{__/` with `乂` where it meets the foot edge. No toe is a separate closed stamp (cf. profile31 chained scallops).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading + text locator; not operator-approved"
+   },
+   "inspection": "toe edges `/`@135/156/219 (r14), `/`@129/148/178/213 (r15); r16 chain `└`@126 `人`@142 `__ノ`@158-168 `ヽ`@179 `.__ノ`@191-204; big toe `ﾉ｀`@114/122 (r14), `{__/`@115-129 (r15), `乂`@99 (r15) under `{`@99 (r14) / `j`@99 (r13); `=`@143 and `__ Y___`@164-198 (r14) are nails/toe tops",
+   "inspected_by": "embedded-faces-animals agent"
+  },
+  {
+   "id": "eb-foot43-toe-pads",
+   "role": "rim_cap",
+   "also_roles": [
+    "dotted_rim",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 133,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each toe and between toes"
+   },
+   "native": {
+    "rows": [
+     "/　　　　 ::{　:.、:.、 ＼",
+     " 　 ⌒＼　 ヽ　ヽ　i　i",
+     "＼　⌒　) 　 ｝　}__ﾉノ",
+     "　　　｀¨¨　 ￣ ￣"
+    ],
+    "row_numbers": [
+     14,
+     17
+    ],
+    "x_px": [
+     460,
+     605
+    ],
+    "row_pen_x": [
+     460,
+     462,
+     461,
+     462
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "tone_fringe",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/69/695f2734d5490b8b0e17a59343ee0168.json.gz#43",
+    "label": "足・脚02 aa[43]: right foot toes from the sole side",
+    "aahub_url": "https://aahub.org/mlt/695f2734d5490b8b0e17a59343ee0168",
+    "cited_by": "not cited by the skill; page 足・脚02 (汎用AA/体/足・脚) section 【裸足】 (heading aa[0]); located by counting round-turn glyphs per row in that section only, then opened"
+   },
+   "crop": "crops/eb-foot43-toe-pads.png",
+   "note": "Toes as short caps/braces on flat `￣` bases; the big toe stacks two `⌒` (nail over pad) with `)` turning the pad and a dotted `｀¨¨` base where the pad meets the floor.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by section heading + text locator; not operator-approved"
+   },
+   "inspection": "big toe `⌒＼`@483/499 (r15) over `⌒ )`@488/515 (r16), base `｀¨¨`@495-511 (r17); toes `ヽ`@531/554 (r15) → `｝`@541, `}__ﾉノ`@560-582 (r16) with `￣`@535/556 (r17); little toe `i`@577/591 (r15) → `ﾉノ`@574/582; `:.、`@538-561 (r14) tone ticks; `／`@460, `＼`@461 foot edge",
+   "inspected_by": "embedded-faces-animals agent"
+  }
+ ]
+}
