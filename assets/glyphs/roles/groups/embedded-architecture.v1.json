@@ -1,0 +1,1514 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "embedded-architecture",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings",
+  "arch_band": "thick architectural arch/vault band drawn as two or more cooperating parallel strokes (often with ﾆ/二 fill between) that turns from crown to flank; thickness belongs to the architectural form, not to every round subject",
+  "ellipse_rim": "perspective rim of a round opening, end face or plane (vessel mouth, cylinder end, altar) recorded with its near/far or inner/outer edges and thickness, not a cap alone",
+  "dotted_rim": "round boundary drawn as a run of leader/dot glyphs (… ‥ ．) stepping around the form, distinct from a solid contour and from a tone field"
+ },
+ "inspection_log": [
+  "Read: trueff-shallot AGENTS.md 'How to inspect'; claude-skills-private ascii-art-authoring (working tree at 54a56da, which is newer than the brief's 716bedd) SKILL.md 2.1, 2.2, 4.4, 8, 15.2-15.7, 'Split-stroke ownership', 'Revision preservation and authorship gate'; references/structural-line-selection.md (whole file, including 'Attachment is not construction', 'Four important AA construction patterns', 'Worked multi-row constructions', 'Rounded constructions beyond one circle spelling', 'Recovered AA tools'); references/aahub-reference-index.md; roles/schema.json; role_lookup_check.py; laneB common brief, addendum and rounds-embedded brief.",
+  "Checked existing groups first so as not to duplicate them: sr-p11-* (church73 inner arch), sa-basement073-*, sa-assisi036, sa-church121, sa-church105/106/107, sh-mlt08 (church57 three-row round), sh-mlt05 (church52 dome cap) and the sk-/sa- church99/101/104/126 entries already cover those regions, so they are not re-entered here.",
+  "church aa[161] rows 9-16 x 150-420 (wide context, operator crop 01) -> three entries (ea-c161-*). Rows 11-13 text matches the skill's quoted `ｧ宀v` / `弋__人`. The round sits under the gable rafter quotes. Row 15 `>'⌒ヾ` is a separate small arch, not entered.",
+  "church aa[73] full rows 1-26 printed (one selected entry). Outer vault rows 2-13 x 0-150, then rows 3-12 x 0-120 -> ea-c73-outer-vault-band-edge. The inner arch (operator rows 7-17) is not re-entered because sr-p11-* cover it.",
+  "church aa[57] rows 6-16 x 430-589 and x 0-200 (context) -> the right figure group's rounds (ea-c57-two-row-round, -brace-side-row, -crossed-return). The left figure (`ｆ⌒Y＿`, `ｘ=ミ`/`λ＿,ﾉ`) is a seated figure's body, outside this group's scope and not entered. Rows 2-10 x 200-340 portal -> ea-c57-portal-archivolt-caps. Rows 16-19 x 150-330: `|／￣＼|` is a flat-topped trapezoid door head and `∩∩∩` is a row of tiny arches. Neither was entered; the trapezoid is not a round.",
+  "church aa[165] rows 1-14 printed; rows 2-15 x 0-140 and 6-11 x 30-145 -> ea-c165-column-cap-rings (operator crop 02 rows 7-10 plus context). Text matches the quoted `jI斗-─--ミ`.",
+  "church aa[135] all 27 rows printed. Rows 17-23 x 0-230 arcade, rows 11-22 x 380-617 windows, rows 2-7 x 540-720 dome -> four entries. Rows 18-19 x 390-470 (`ィ=ﾐY＾Y`, `x=x`) were seen in context only.",
+  "church aa[133] all rows printed; rows 7-14 x 220-560 context -> ea-c133-thick-arch-3row and ea-c133-hatched-oval-window. The second hatched window (`{///////ﾘ`/`寸////ｱ` @304-) is the same construction and was not duplicated.",
+  "実験室 aa[26] rows 8-20 x 610-800 -> ea-lab26-round-recess-cut-rim (profile 40).",
+  "街並み04 aa[217] rows 2-12 x 0-200 -> ea-ruins217-tilted-pipe-mouth (profile 42).",
+  "街並み07 【橋・歩道橋】 section: entry titles listed (headings only). aa[133] text printed and rejected: it is clouds and a sun face, not a bridge arch. aa[145] (Rainbow Bridge) text printed: its `γ⌒ヽ`/`乂__乂` is ambiguous (crown? ornament?), so it was not entered. aa[156] Segovia rows 8-19 x 0-420 -> two entries.",
+  "地形（洞窟） page: entry titles listed. aa[55] 伊世賀美隧道 all rows printed, rows 9-21 x 150-520 -> three entries.",
+  "街並み08 【並木道】 section: entries 184-198 summarised by size/glyph counts only. aa[189] all rows printed, whole native crop viewed, rows 6-13 x 190-330 -> ea-v189-canopy-lobe-chain.",
+  "Split-stroke: looked for it in every crop and recorded none. Closest candidate: aa[55] row 10 `乂`@472, whose upper arm continues the lamp round's side and whose lower-left foot lands on the brick mortar line `＿_`@451/467 behind the round. It reads as an occlusion T-meeting, and no crop shows one glyph's ink clearly serving two forms, so it was not recorded."
+ ],
+ "gaps": [
+  "Same construction at two sizes was found for: γ⌒ヽ rounds (church57: two-row 乂__ソ vs three-row {　　　}/乂__乂, same ~44 px width); thick arch band (church73 nine-row band vs Hagia Sophia three-row ｲｱ/心/寸 arch); one-row arch heads (church135 ＾/⌒/´　｀ by bay width; Segovia ⌒ → ´ ｀ → ＾ → ^ → n/ｍ with distance); column-cap rings (Karnak, two widths). No second size was found for the crop 01 ｧ宀v/弋__人 family: it occurs only once on the opened page.",
+  "Bridge arch seen from the side as a concave underside (stone bridge over water with reflection, e.g. 皇居二重橋 aa[91], 碓氷峠第三鉄橋 aa[147]): titles located but not opened in this pass. Only the Segovia arcade is recorded.",
+  "Door and window openings from 扉・ドア / 窓・ベランダ・庭 / 門 pages: section headings listed but no entry opened, so a stand-alone arched door or window at 4-8 rows (γ⌒ヽ with long side rows) is missing.",
+  "Hills and other concave or convex building tops in distant scenery (遠景 pages): not opened. Tree crown edges are covered only by the canopy lobe chain here; crown texture edges are left to the annotations and skill-examples groups (T#7, T#14 ...).",
+  "Onion or pointed domes and conical tower roofs (洋風の城 pages): not opened.",
+  "Cup-style coupled tone on an architectural round: the only coupled tone recorded is the tunnel mouth's hatch and light strip and the lab recess fill. No rim-following graded dots on a dome were found in the regions opened."
+ ],
+ "entries": [
+  {
+   "id": "ea-c161-shrine-round-whole",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 40,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the round's interior (only the small tick of 弋 enters it) and the full spaces that separate it from the gable rafter ends `.`/`｀` on row 11 and `'`/`､` on row 12"
+   },
+   "native": {
+    "rows": [
+     ". 　ｧ宀v　｀",
+     "'　弋__人　､",
+     "　　∧　　　"
+    ],
+    "row_numbers": [
+     11,
+     13
+    ],
+    "x_px": [
+     270,
+     340
+    ],
+    "row_pen_x": [
+     272,
+     271,
+     275
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#161",
+    "label": "宗教施設（教会・その他） aa[161] 'ＭＴＧ 神なき祭壇' (Godless Shrine); operator crop 01 = rows 11-13",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (crop 01 ｧ宀v above 弋__人); operator_reference_sources operator-curve-crop-01; laneB rounds-embedded brief"
+   },
+   "crop": "crops/ea-c161-shrine-round-whole.png",
+   "note": "Operator crop 01: a two-row round with no γ⌒ヽ. ｧ and v are the shoulders and 宀 is a flat lidded crown. 弋 hooks down as the left flank into `__`, and 人 closes the right side while its outer leg flares. A ∧ stand hangs under the return. The round sits in a gable apex, under the rafter quotes.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop 01 region (rows 11-13) cited as a non-⌒ヽ cap family; no operator rejection; the crop record does not approve the rest of the artwork, and its creation workflow is unverified"
+   },
+   "inspection": "row 11 `ｧ`@291 upper-left shoulder, `宀`@299 flat lid with centre tick, `v`@315 upper-right shoulder; row 12 `弋`@285 hook curls into `_`@301 `_`@306, `人`@311 left stroke closes the lower right, right leg flares to ~327; row 13 `∧`@297 stands under the `__`; rafter ends `.`@272 / `｀`@334 (row 11) and `'`@271 / `､`@338 (row 12) stay a full space away",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c161-lidded-cap-1row",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 32,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "below the lid (the round's inside); small gaps between ｧ, 宀 and v are left open, not joined into one stroke"
+   },
+   "native": {
+    "rows": [
+     "ｧ宀v　"
+    ],
+    "row_numbers": [
+     11,
+     11
+    ],
+    "x_px": [
+     285,
+     330
+    ],
+    "row_pen_x": [
+     291
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#161",
+    "label": "宗教施設（教会・その他） aa[161] 'ＭＴＧ 神なき祭壇' (Godless Shrine); operator crop 01 = rows 11-13",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (crop 01 ｧ宀v above 弋__人); operator_reference_sources operator-curve-crop-01; laneB rounds-embedded brief"
+   },
+   "crop": "crops/ea-c161-lidded-cap-1row.png",
+   "note": "One-row rim cap with shoulders built in. The ｧ and v diagonals turn down at each side, and 宀 gives a flat lid with a finial tick. It sits over a one-row return (ea-c161-return-to-stand). This is a one-row cap example, which the index lists as a gap.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop 01 region (rows 11-13) cited as a non-⌒ヽ cap family; no operator rejection; the crop record does not approve the rest of the artwork, and its creation workflow is unverified"
+   },
+   "inspection": "row 11 only: `ｧ`@291 (diagonal descends to its lower left), `宀`@299 (flat top, centre tick, short legs), `v`@315 (left arm descends); FULLSP@323 after v keeps paper before the rafter `｀`@334",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c161-return-to-stand",
+   "role": "return_base",
+   "also_roles": [
+    "flank",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 42,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the round above `__`; open wedge between 人's flaring right leg and the ∧ stand"
+   },
+   "native": {
+    "rows": [
+     "弋__人　",
+     "　∧　　"
+    ],
+    "row_numbers": [
+     12,
+     13
+    ],
+    "x_px": [
+     280,
+     335
+    ],
+    "row_pen_x": [
+     285,
+     286
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#161",
+    "label": "宗教施設（教会・その他） aa[161] 'ＭＴＧ 神なき祭壇' (Godless Shrine); operator crop 01 = rows 11-13",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (crop 01 ｧ宀v above 弋__人); operator_reference_sources operator-curve-crop-01; laneB rounds-embedded brief"
+   },
+   "crop": "crops/ea-c161-return-to-stand.png",
+   "note": "Return of crop 01. 弋's hook is the left flank and the start of the base, `__` is the bottom, and 人 rises to close the right side. The ∧ stand meets the base under the `__`, so 人 is the right-side meeting and not a branch. 弋's crossbar sticks out past the flank to the left.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop 01 region (rows 11-13) cited as a non-⌒ヽ cap family; no operator rejection; the crop record does not approve the rest of the artwork, and its creation workflow is unverified"
+   },
+   "inspection": "row 12 `弋`@285 (crossbar runs left of the flank, hook turns down-right) `_`@301 `_`@306 `人`@311 (left stroke rises to the cap's v, right leg flares to ~327); row 13 `∧`@297 apex under the `__` gap, FULLSP either side",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c73-outer-vault-band-edge",
+   "role": "arch_band",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 120,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "the open vault to the lower right of the ア゜ edge, crossed only by one parallel `: : :` run; the `‐_‐_` dashed rows at the far left are another surface"
+   },
+   "native": {
+    "rows": [
+     "‐_‐_‐_‐_,.ィ(二二二",
+     "‐_‐_-イニニニニニ",
+     "‐_-ニニニニニﾆア",
+     "ｲ二二二二ニアﾟ　　",
+     "ニニニニﾆアﾟ: : :　　",
+     "ニニニﾆア : :.　　　",
+     "ニニﾆ>'゜ : :　　　　／",
+     "二ﾆｱ゜: : :. 　 　 ,.:ﾞ　",
+     ";ﾆｱ゜: : :.　　　 , ′　",
+     "ｱ゜: : :　　　　 ′　 　"
+    ],
+    "row_numbers": [
+     3,
+     12
+    ],
+    "x_px": [
+     0,
+     120
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "arch_band",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#73",
+    "label": "宗教施設（教会・その他） aa[73] 'Fate/stay night 言峰教会地下実験場'; outer vault band, rows 3-12, left of operator crop 06 (rows 7-17)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Profile11 thick turning arch band); structural-line-selection.md 'Recovered AA tools' (Basement church073 rows7-17)"
+   },
+   "crop": "crops/ea-c73-outer-vault-band-edge.png",
+   "note": "Same band vocabulary as the inner thick arch (sr-p11-left-flank: ,ｲ二㌃゜ → ,ｲﾆア゜ → /ﾆｱ → /ﾆ'′), but here it is the big outer vault edge running as a near-straight diagonal over ten rows. ア゜/ｱ゜ end the ニ/二 fill on every row, the fill shrinks from five glyphs to one, and a colon run follows just outside. Scaling: the turn in the small arch comes from the leading glyph (ｲ → /) and dropping ゜, not from ア゜ itself.",
+   "status": {
+    "state": "retained",
+    "reason": "same artwork as operator crop 06 and Profile11 (catalog member); these rows lie outside the crop's rows 7-17 and carry no operator label"
+   },
+   "inspection": "rows 3-4 `,.ィ(`@52-68 / `-イ`@26-34 turn the band's upper edge (row 4's `≫''゜` at 122-144 lies just right of this slice); edge tokens row 5 `ﾆア`@96/106, row 6 `アﾟ`@88/102, row 7 `アﾟ`@70/84, row 8 `ア`@55, row 9 `>'゜`@40-51, rows 10-12 `ｱ゜`@26, @13, @0; ニ/二 fill 5 glyphs (rows 4-5) down to 1 (row 11); `: : :` 4-20 px right of the edge from row 7 to row 12; `／`@119 (row 9), `,.:ﾞ`@103-112 (row 10), `, ′`@91-99 (row 11), `′`@86 (row 12) are a separate dotted diagonal of the inner arch's surround",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c57-two-row-round",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the round (only ヽ's short inner tick enters it); a little paper between the round's right side and the altar frame `＼`/`／`"
+   },
+   "native": {
+    "rows": [
+     ":: i||:|__(__)_:::_",
+     ":::｢｢:γ⌒ヽ＼",
+     "_|_|__乂__ソ／"
+    ],
+    "row_numbers": [
+     12,
+     14
+    ],
+    "x_px": [
+     405,
+     480
+    ],
+    "row_pen_x": [
+     406,
+     406,
+     407
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "side",
+    "up": "whole_circle",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#57",
+    "label": "宗教施設（教会・その他） aa[57] 'ポーランド クラクフ 聖マリア教会' (Kraków St Mary's); operator crops 07 (rows 12-14) and 08 (rows 9-14)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Profile08: γ⌒ヽ → {　　　} → 乂__乂; separately (__) and γ⌒ヽ → 乂__ソ)"
+   },
+   "crop": "crops/ea-c57-two-row-round.png",
+   "note": "Operator crop 07: the γ⌒ヽ family at its two-row size. There is no side row: the cap hands straight to 乂__ソ. 乂 crosses only on the left, where its outer leg lands on the drawn ground line `__|_|`. A one-row `(__)` round is stacked on top. Compare ea-c57-brace-side-row: the width stays ~44 px, and the taller version only adds `{　　　}` side rows and swaps ソ for 乂.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crops 07/08 and circle-profile member; skill-cited; no operator rejection; whole-picture approval not implied"
+   },
+   "inspection": "row 13 `γ`@432 `⌒`@448 `ヽ`@464 cap (`＼`@476 is the altar frame); row 14 `乂`@435 `_`@451 `_`@456 `ソ`@461 return, `乂`'s lower-left leg meets `__|_|`@407-430 and `／`@474 is the frame; row 12 `(`@445 `__`@450/455 `)`@460 one-row round on the same baseline above the cap; `::` dot tone at the far left",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c57-brace-side-row",
+   "role": "flank",
+   "also_roles": [
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 41,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "three full spaces between { and } stay empty while `::::` dot tone presses on both outsides"
+   },
+   "native": {
+    "rows": [
+     "::::{　　　}::::／"
+    ],
+    "row_numbers": [
+     10,
+     10
+    ],
+    "x_px": [
+     505,
+     575
+    ],
+    "row_pen_x": [
+     507
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#57",
+    "label": "宗教施設（教会・その他） aa[57] 'ポーランド クラクフ 聖マリア教会' (Kraków St Mary's); operator crops 07 (rows 12-14) and 08 (rows 9-14)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Profile08: γ⌒ヽ → {　　　} → 乂__乂; separately (__) and γ⌒ヽ → 乂__ソ)"
+   },
+   "crop": "crops/ea-c57-brace-side-row.png",
+   "note": "Side row of the three-row round (rows 9-11; the whole round is already sh-mlt08-brace-flank-3row). One `{　　　}` row grows the two-row form (ea-c57-two-row-round) into this one, so add one brace row per extra row of height. The dot ground stops at the braces, which means braces plus tone edge carry the sides.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crops 07/08 and circle-profile member; skill-cited; no operator rejection; whole-picture approval not implied"
+   },
+   "inspection": "row 10 `::::`@507-516 `{`@519 FULLSP×3 `}`@556 `::::`@560-569 `／`@572; the braces sit just inside γ@515 / ヽ@547 (row 9) and line up with the 乂@519 / 乂@545 legs (row 11)",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c57-crossed-return",
+   "role": "return_base",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 42,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside above `__`; the dot tone continues outside both 乂"
+   },
+   "native": {
+    "rows": [
+     "::::乂__乂:∧"
+    ],
+    "row_numbers": [
+     11,
+     11
+    ],
+    "x_px": [
+     505,
+     575
+    ],
+    "row_pen_x": [
+     507
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "flank",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#57",
+    "label": "宗教施設（教会・その他） aa[57] 'ポーランド クラクフ 聖マリア教会' (Kraków St Mary's); operator crops 07 (rows 12-14) and 08 (rows 9-14)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Profile08: γ⌒ヽ → {　　　} → 乂__乂; separately (__) and γ⌒ヽ → 乂__ソ)"
+   },
+   "crop": "crops/ea-c57-crossed-return.png",
+   "note": "Crossed return 乂__乂 on the taller round. Each 乂's inner stroke carries the side down into `__`, and the outer stroke flares out into the dotted ground. The two-row round uses 乂__ソ instead and crosses only where it meets a drawn ground line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crops 07/08 and circle-profile member; skill-cited; no operator rejection; whole-picture approval not implied"
+   },
+   "inspection": "row 11 `乂`@519 `_`@535 `_`@540 `乂`@545 then `:`@561 and `∧`@564 (a neighbouring figure's leg); dot tone `::::`@507-516 on the left; both 乂 cross at about half the row height",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c57-portal-archivolt-caps",
+   "role": "rim_cap",
+   "also_roles": [
+    "dotted_rim",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 90,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between the solid ／ ＼ archivolt diagonals and each punctuation crown, and inside each crown above the cross / rosette"
+   },
+   "native": {
+    "rows": [
+     "／､>'^｀｀`ヽ、＼",
+     "／/━╋━ V＼",
+     ": / :／┃＼.:.∨",
+     "/／＞╂＜＼〈",
+     "／､>'^｀`丶､＼",
+     "／ ｡o个c｡　＼"
+    ],
+    "row_numbers": [
+     2,
+     7
+    ],
+    "x_px": [
+     245,
+     340
+    ],
+    "row_pen_x": [
+     247,
+     247,
+     247,
+     247,
+     250,
+     251
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "arch_band",
+    "up": null,
+    "down": "rim_cap"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#57",
+    "label": "宗教施設（教会・その他） aa[57] 'ポーランド クラクフ 聖マリア教会' (Kraków St Mary's); operator crops 07 (rows 12-14) and 08 (rows 9-14)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Profile08: γ⌒ヽ → {　　　} → 乂__乂; separately (__) and γ⌒ヽ → 乂__ソ)"
+   },
+   "crop": "crops/ea-c57-portal-archivolt-caps.png",
+   "note": "Gothic portal archivolts. Each round crown is spelled in light punctuation (､ > ' ^ ｀ ヽ) and nested inside solid ／ ＼ pointed diagonals, so the inner round reads lighter than the frame. The second crown repeats one step narrower, with one ｀ dropped and ヽ → 丶. Under it, `｡o个c｡` is a one-row rosette cap that grows ｡ → o and shrinks c → ｡.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crops 07/08 and circle-profile member; skill-cited; no operator rejection; whole-picture approval not implied"
+   },
+   "inspection": "row 2 `／`@247, crown `､>'^｀｀`ヽ、`@263-323, `＼`@334; row 6 `／`@250, crown `､>'^｀`丶､`@266-322, `＼`@329; rows 3-5 solid `／/`, `＼V`, `／ ＼` diagonals between the two crowns (the cross ━╋━ is a separate ornament); row 7 `｡`@272 `o`@279 `个`@287 `c`@303 `｡`@311 between `／`@251 and `＼`@329",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c165-column-cap-rings",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "no fully empty field: the `:,` carving texture runs between and under both rings; the rings read by line continuity, and the column's `|` edges bound the texture"
+   },
+   "native": {
+    "rows": [
+     ":,　:|､＼: |:,　/ :, ヽ|",
+     ";ヽﾉ-─…‐‐-､:,　|",
+     ",扞:,　:,　:,　:,　＼|",
+     ":::| jI斗-─--ミ:,　|:",
+     " | i{:,　:,　:,　:,　:,ヽ|:",
+     " | i{-=x:,　:, :, :::::l^|:"
+    ],
+    "row_numbers": [
+     6,
+     11
+    ],
+    "x_px": [
+     30,
+     145
+    ],
+    "row_pen_x": [
+     31,
+     31,
+     38,
+     30,
+     32,
+     30
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "tone_mid",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#165",
+    "label": "宗教施設（教会・その他） aa[165] 'エジプト カルナック神殿' (Karnak); operator crop 02 = rows 7-10",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling' (shallow `jI斗-─--ミ` cap); operator_reference_sources operator-curve-crop-02"
+   },
+   "crop": "crops/ea-c165-column-cap-rings.png",
+   "note": "Operator crop 02: two stacked shallow column-capital rings at two widths, the upper `ヽﾉ-─…‐‐-､` (~85 px) and the lower `jI斗-─--ミ` (~65 px). Each crown is a flat dash run with `…` dots at the top of the upper ring. A dedicated left shoulder glyph (ﾉ / 斗) and right shoulder glyph (､ / ミ) hand to a steeper `＼` / `ヽ` that meets the column edge.",
+   "status": {
+    "state": "retained",
+    "reason": "operator crop 02 region (rows 7-10) plus one row of context either side; skill-cited; no operator rejection"
+   },
+   "inspection": "row 7 `ヽﾉ`@34/46, crown `-─…‐‐-`@54-110, `､`@118, row 8 `＼`@125 down to `|`@141; row 9 `jI斗`@48/52/56, crown `-─--`@72-104, `ミ`@112, row 10 `ヽ`@127 to `|`@139; rows 10-11 `i{`@46/49 and @44/47 continue the shaft's left edge under 斗; `:,` texture fills between the rings",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c135-arch-heads-three-widths",
+   "role": "rim_cap",
+   "also_roles": [
+    "periodic_band",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 145,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "window openings under each crown (rows 21 and 23) and the crown gap left open between ´ and ｀ in the widest arch"
+   },
+   "native": {
+    "rows": [
+     ":Ｙ Y＾Y＾Y Y＾Y＾Y Y＾ＹＹ||ﾆ||ﾆ||",
+     "┘└┴┘└┴┘└┘|:||ﾆ||ﾆ||",
+     ".ＹＹ´　｀ＹＹ⌒Ｙ Ｙ⌒YY}┬┬rr─",
+     "::| |￣￣| :| |;;;;;|| |￣ | |{ﾆ{ﾆi{l_lY"
+    ],
+    "row_numbers": [
+     20,
+     23
+    ],
+    "x_px": [
+     0,
+     195
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "side",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#135",
+    "label": "宗教施設（教会・その他） aa[135] 'シリア ダマスカスのウマイヤド・モスク' (Umayyad Mosque)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' positions 21,29 (church 135: shared arch bays)"
+   },
+   "crop": "crops/ea-c135-arch-heads-three-widths.png",
+   "note": "One-row arch heads at three widths in one facade: a ＾ crown for ~17 px bays, ⌒ for ~26 px and, for ~37 px, open ´　｀ shoulders with the crown left out (抜き). Y is the shared springer and pier meeting throughout (doubled ＹＹ at the wide bays). The crown glyph changes with bay width; nothing is stretched.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (positions 21/29); no operator region label; list membership is not whole-picture approval"
+   },
+   "inspection": "row 20 `Y＾Y＾Y` arcade: ＾@27/44/75/92/123 between shared Y@18/35/52/66/83/100/114 (17 px pitch); row 21 `┘└┴┘└┴┘└┘`@0-128 closes the windows below; row 22 wide `ＹＹ´　｀ＹＹ` (´@23, FULLSP@31, ｀@42) and narrower `Ｙ⌒Ｙ` (⌒@70 between Ｙ@60/86; ⌒@111 between Ｙ@101/Y@127); row 23 `| |￣￣|` jambs under them",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c135-bifora-nested-arches",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 82,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "under the big crown `__` (row 20) and inside the small arches (row 22); the bays stay open"
+   },
+   "native": {
+    "rows": [
+     ",ィ=ミ　//⌒Y ",
+     "/＿_ヽⅣ＿,,|_,",
+     "　 __　 :| |: 　 |　",
+     "Y´　｀Y| |: 　 |　",
+     ":｀Y＾Y´| |¨￣|　"
+    ],
+    "row_numbers": [
+     18,
+     22
+    ],
+    "x_px": [
+     480,
+     575
+    ],
+    "row_pen_x": [
+     487,
+     485,
+     482,
+     482,
+     482
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#135",
+    "label": "宗教施設（教会・その他） aa[135] 'シリア ダマスカスのウマイヤド・モスク' (Umayyad Mosque)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' positions 21,29 (church 135: shared arch bays)"
+   },
+   "crop": "crops/ea-c135-bifora-nested-arches.png",
+   "note": "Nested window: a large round arch whose crown sits a row higher as `__`, over `Y´　｀Y` shoulders. Under it, `｀Y＾Y´` hangs a small pointed arch and two half arches from the same Y springers, so the Ys are the meetings. Above are two more heads: `,ィ=ミ` over `/＿_ヽ` (an oblique domed cap) and `//⌒Y`, an arch with a doubled ／ shoulder that gives it thickness.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (positions 21/29); no operator region label; list membership is not whole-picture approval"
+   },
+   "inspection": "row 20 `__`@498/503; row 21 `Y`@482 `´`@491 FULLSP `｀`@510 `Y`@518; row 22 `｀`@485 `Y`@493 `＾`@502 `Y`@510 `´`@519; rows 18-19 `,ィ=ミ`@487-508 over `/＿_ヽ`@485-514, and `//⌒Y`@530-562 over `Ⅳ＿,,|`@526-564; pier `| |` @527/536 between them",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c135-minaret-dome-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 35,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the cap above the drum; the cap is open on the right (ヽ stops short of the tower edge)"
+   },
+   "native": {
+    "rows": [
+     "　　　 |＿__/",
+     "　　　f⌒ヽ|_",
+     "　　　{ﾆﾆﾆ}i",
+     "　　 |　　:|　"
+    ],
+    "row_numbers": [
+     11,
+     14
+    ],
+    "x_px": [
+     540,
+     617
+    ],
+    "row_pen_x": [
+     548,
+     544,
+     543,
+     552
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "side",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#135",
+    "label": "宗教施設（教会・その他） aa[135] 'シリア ダマスカスのウマイヤド・モスク' (Umayyad Mosque)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' positions 21,29 (church 135: shared arch bays)"
+   },
+   "crop": "crops/ea-c135-minaret-dome-cap.png",
+   "note": "Small dome cap `f⌒ヽ` sitting on a thick drum band `{ﾆﾆﾆ}` (the cap-on-flat-base construction of Profile05, with a ﾆ-filled band as the base). f's stem is the left shoulder, and ヽ leaves the right side open. The shaft `|　　:|` continues under the drum.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (positions 21/29); no operator region label; list membership is not whole-picture approval"
+   },
+   "inspection": "row 12 `f`@577 `⌒`@582 `ヽ`@598, tower edge `|`@610; row 13 `{`@576 `ﾆﾆﾆ`@580-600 `}`@610; row 14 shaft `|`@579 `:|`@605/608; row 11 `|＿__/`@586-616 is the roof line above",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c135-main-dome-dotted-crown",
+   "role": "rim_cap",
+   "also_roles": [
+    "dotted_rim",
+    "arch_band",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the dome surface between the open shoulders (ィ´ … ヽ ｀ヽ) and the crown; between the ∩ windows in the drum"
+   },
+   "native": {
+    "rows": [
+     " 　 　 0",
+     "　　_§...,,,_",
+     "ィ´　|　ヽ　 ｀ヽ",
+     " / ｡o≦三三三ミ､",
+     "=ﾆ二_,,|_∩　∩　|: ＼",
+     "_,,.. -''\"| ≧s｡| |　| |||||　　　　"
+    ],
+    "row_numbers": [
+     2,
+     7
+    ],
+    "x_px": [
+     540,
+     720
+    ],
+    "row_pen_x": [
+     544,
+     550,
+     550,
+     544,
+     541,
+     542
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "paper",
+    "up": "paper",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#135",
+    "label": "宗教施設（教会・その他） aa[135] 'シリア ダマスカスのウマイヤド・モスク' (Umayyad Mosque)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' positions 21,29 (church 135: shared arch bays)"
+   },
+   "crop": "crops/ea-c135-main-dome-dotted-crown.png",
+   "note": "Main dome as lost-and-found pieces. The crown is a dot run `_§...,,,_` (dots stand in for the top line). The shoulders `ィ´` and `ヽ　｀ヽ` are separated by gaps, and the base is a thick band `｡o≦三三三ミ､` whose left end grows from ｡ to o into ≦. One-row `∩　∩` round-headed windows sit in the drum, with `≧s｡` turning the lower band end.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (positions 21/29); no operator region label; list membership is not whole-picture approval"
+   },
+   "inspection": "row 2 `0`@581 finial; row 3 `_`@572 `§`@577 `...,,,`@593-608 `_`@611; row 4 `ィ`@550 `´`@560 `|`@579 `ヽ`@594 `｀`@622 `ヽ`@630 (gaps between them); row 5 `/`@549 `｡`@562 `o`@569 `≦`@577 `三三三`@593-625 `ミ`@641 `､`@652; row 6 `∩`@595 `∩`@622 between `|`@586/649; row 7 `≧s｡`@595-618",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c133-thick-arch-3row",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 125,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the arch opening under `'´￣｀`'` down to row 9's springers; paper between this arch and the outer ／ / diagonals"
+   },
+   "native": {
+    "rows": [
+     "￣￣＞''\"￣＿￣｀　.　 　",
+     "　　 ／　,ｨ沙'´￣｀`'マ心､　",
+     "　/　 ,ｲｱ　　　　　　　 寸i,　"
+    ],
+    "row_numbers": [
+     7,
+     9
+    ],
+    "x_px": [
+     330,
+     500
+    ],
+    "row_pen_x": [
+     345,
+     333,
+     338
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "side",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#133",
+    "label": "宗教施設（教会・その他） aa[133] 'トルコ イスタンブール アヤ・ソフィア大聖堂' (Hagia Sophia)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' position 18 (church 133: dome/arch bands)"
+   },
+   "crop": "crops/ea-c133-thick-arch-3row.png",
+   "note": "The thick-arch family of church 73 (,ｲﾆア゜ / 寸ム / 寸ﾊ / 心) at a three-row size, as a scaling counterpart to the nine-row sr-p11 band. Left: `,ｨ沙` shoulder → `,ｲｱ` springer, with no ﾆ fill at this size. Crown: soft `'´￣｀`'`. Right: `マ心､` shoulder → `寸i,`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (position 18); no operator region label"
+   },
+   "inspection": "row 8 `,ｨ沙`@387-397 `'´`@413/416 `￣`@424, then ｀@440, ASCII grave @448 and '@455, `マ`@458 `心`@472 `､`@488; row 9 `,ｲｱ`@373-385 and `寸i,`@477-496 springers, seven full spaces of paper between; row 7 `￣￣＞''\"￣＿￣｀`@345-455 is the cornice above; `／`@360 / `/`@349 outer diagonals",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-c133-hatched-oval-window",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_core",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 48,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "none inside: the window is filled with `/` hatch (dark glass); paper between it and the `f⌒li⌒i` arch pair and its `||` piers"
+   },
+   "native": {
+    "rows": [
+     "　γ´/｀ヽﾆﾆﾆﾆﾆﾆﾆﾆ｡o00o",
+     "　 {/////}Yf⌒li⌒i　//////",
+     "　 {////ﾞﾘ ||　 ||　 || {//////",
+     "　 寸//ｱ　||　 ||　 ||　寸///"
+    ],
+    "row_numbers": [
+     11,
+     14
+    ],
+    "x_px": [
+     170,
+     350
+    ],
+    "row_pen_x": [
+     174,
+     174,
+     174,
+     174
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "rim_cap",
+    "up": "periodic_band",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#133",
+    "label": "宗教施設（教会・その他） aa[133] 'トルコ イスタンブール アヤ・ソフィア大聖堂' (Hagia Sophia)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "aahub-reference-index.md 'Operator circle profile update' position 18 (church 133: dome/arch bands)"
+   },
+   "crop": "crops/ea-c133-hatched-oval-window.png",
+   "note": "Oval window with hatched glass. Cap `γ´/｀ヽ` (the hatch reaches into the cap), sides `{/////}` and `{////ﾞﾘ`, and a return of `寸//ｱ`. The thick-arch turn glyphs 寸 and ｱ are reused, rotated in role, as the lower return. Beside it, `Yf⌒li⌒i` gives one-row ⌒ arch heads on `||` piers.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (position 18); no operator region label"
+   },
+   "inspection": "row 11 `γ`@185 `´`@201 `/`@209 `｀`@217 `ヽ`@225 then `ﾆ` band; row 12 `{`@190 `/////`@194-226 `}`@234; row 13 `{`@190 `////`@194-218 `ﾞﾘ`@226/230; row 14 `寸`@190 `//`@206/214 `ｱ`@222; arch pair row 12 `Y`@238 `f`@247 `⌒`@252 `li`@268/271 `⌒`@274 `i`@290 over `||`@243/247, @267/271, @291/295",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-lab26-round-recess-cut-rim",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_core",
+    "dotted_rim",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 150,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "none inside: the recess is filled with `::::` tone (dark hole); a one-glyph gap of paper or lighter dots rides just outside the rim on the left"
+   },
+   "native": {
+    "rows": [
+     ":::::|: :,．' ´::::::::::::::::｀ヽ、: : : : ",
+     ":::::| /:::::::::::::::::::::::::::::::::::＼: : :",
+     "::::|:,ﾞ:::::::::::::::::::::::::::::::::::::::::‘，: ",
+     ":::| |::::::::::::::::::::::::::::::::::::::::::::::'.",
+     "::| :|:::::::::::::::::::::::::::::::::::::::::::::: |:",
+     ":| :‘，:::::::::::::::::::::::::::::::::::::::::: |:",
+     "|: : : ＼::::::::::::::::::::::::::::::::::::::/: ",
+     "ﾆ=-　_:＼:::::::::::::::::::::::::::／: : ",
+     "::::::::::::¨ﾆ=-　_──=彡: : : : "
+    ],
+    "row_numbers": [
+     9,
+     17
+    ],
+    "x_px": [
+     618,
+     790
+    ],
+    "row_pen_x": [
+     621,
+     618,
+     618,
+     618,
+     618,
+     618,
+     618,
+     618,
+     620
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "tone_mid",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f2/f2c6919c2b6efd385116f35e107987b9.json.gz#26",
+    "label": "汎用AA/背景・風景/実験室 aa[26] '研究所跡の廃墟'; identical text also 街並み04 aa[141]",
+    "aahub_url": "https://aahub.org/mlt/f2c6919c2b6efd385116f35e107987b9",
+    "cited_by": "aahub-reference-index.md profile position 40 ('Large round recess, wall depth and interrupted lower rim'); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (Crescent or broken/occluded round)"
+   },
+   "crop": "crops/ea-lab26-round-recess-cut-rim.png",
+   "note": "Large round recess about 9 rows by 150 px. Straight strokes (`/` `＼` `|` `／`) carry the steep parts of the rim, and the diagonal turns are dot pairs (`,．'´`, `,ﾞ`, `‘，`, `'.`), so dots stand in for the line where it turns. The lower rim is cut by the floor's `ﾆ=-　_` streaks and ends in `─=彡`, leaving the round open at the base.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (position 40); no operator region label"
+   },
+   "inspection": "row 9 `,．'´`@651-673 upper-left turn, `｀ヽ、`@729-749 upper-right; row 10 `/`@642 `＼`@755; row 11 `,ﾞ`@637/640 and `‘，`@767/775; row 12 `|`@636, `'.`@778/781; row 13 `|`@636 `|`@783; row 14 `‘，`@633/641, `|`@783; row 15 `＼`@646 `/`@776; row 16 `ﾆ=-`@618-636 `_`@655 `＼`@663 `／`@760; row 17 `¨ﾆ=-　_──=彡`@656-746 cuts across the base; `::::` fills the inside of every row",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-ruins217-tilted-pipe-mouth",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "dotted_rim",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 140,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "right",
+    "paper": "the mouth's centre between the inner punctuation rings stays empty; tone only on the left inner wall"
+   },
+   "native": {
+    "rows": [
+     "　　　＿_　　　　　 ＞ ",
+     "　／: _　　　｀ ヽ　　　 　",
+     " ,'::::: :　｀　、　　 ｀ 、　　",
+     " |:::::::　　 　 ' .、　　 ' ,　",
+     " |::::::::.'　、.　 　' ,　 　.',　",
+     " ';:::::::::.　' , 　 　 ',　　 |　",
+     "　 ﾏ:::::::..　i　　 　.!　　.!　",
+     "　　＼::::... 　 　 ,.' 　 / ",
+     "　　　　＞.、＿＿ ,　'　　"
+    ],
+    "row_numbers": [
+     3,
+     11
+    ],
+    "x_px": [
+     40,
+     185
+    ],
+    "row_pen_x": [
+     50,
+     43,
+     43,
+     43,
+     43,
+     46,
+     43,
+     46,
+     43
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/85/8510df5d530fcc44cb6b6fac937b4c27.json.gz#217",
+    "label": "汎用AA/背景・風景/街並み04（路地裏・スラム・廃墟・下水道） aa[217]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "aahub-reference-index.md profile position 42 ('tilted wall opening'); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (broken/occluded round)"
+   },
+   "crop": "crops/ea-ruins217-tilted-pipe-mouth.png",
+   "note": "Tilted round opening (it reads as a pipe or tunnel mouth on this alley/sewer page). The outer rim is mostly solid (`／`, `,'`, `|`, `ﾏ`, `＼`, `＞.、＿＿`). The inner, receding rims are made almost only of punctuation (｀ ヽ 、 ' . , i !), so dots stand in for lines. A `::::` tone band fills only the left inner wall, bounded by the outer rim and thinning to `...` at the bottom.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle-profile member (position 42); no operator region label; the pipe/tunnel reading is the agent's"
+   },
+   "inspection": "outer rim: row 3 `＿_`@83/99, row 4 `／`@54, row 5 `,'`@48/51, rows 6-7 `|`@48, row 8 `'`@51, row 9 `ﾏ`@59, row 10 `＼`@68, row 11 `＞.、＿＿`@87-133; inner rings: row 4 `｀ ヽ`@116/129, row 5 `｀　、`@88/107 and `｀ 、`@145/158, row 6 `' .、`@116-127 and `' ,`@165/173, row 7 `.'　、.`@76-104 and `.',`@172-178, row 8 `' ,`@98/106 and `',`@146/149, row 9 `i`@107 `.!`@148 `.!`@177, row 10 `,.'`@142-148 `/`@172; `::::` rows 5-10 between the outer rim and ~x 90, thinning to `...`",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-b156-near-arch-heads",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 130,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the bays under each head; `:` stone texture fills the piers, not the bays"
+   },
+   "native": {
+    "rows": [
+     "|:: ||:|:::::|_|斗r≦γ⌒ヽ",
+     "|::斗rx=ﾐ:Y´ ｀Y:|: :: Ｙ",
+     "⌒Y/::::::|::|::::::::|::|::::::::|"
+    ],
+    "row_numbers": [
+     13,
+     15
+    ],
+    "x_px": [
+     255,
+     385
+    ],
+    "row_pen_x": [
+     255,
+     255,
+     255
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "paper",
+    "up": "arch_band",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f2/f21ac3d63ab4c641ac673955776e8045.json.gz#156",
+    "label": "汎用AA/背景・風景/街並み07 section 【橋・歩道橋】 aa[156] 'スペイン セゴビアのローマ時代の水道橋'",
+    "aahub_url": "https://aahub.org/mlt/f21ac3d63ab4c641ac673955776e8045",
+    "cited_by": "selected by section heading 【橋・歩道橋】 and title; not cited by the skill"
+   },
+   "crop": "crops/ea-b156-near-arch-heads.png",
+   "note": "Near (large) end of a receding aqueduct arcade, with arch heads at three sizes in two rows: `γ⌒ヽ` (~45 px), `Y´ ｀Y` (~35 px, crown omitted) and `⌒Y`, where the previous arch's crown wraps the row start. `斗r≦` / `斗rx=ﾐ` is the thick spandrel band between tiers, and the Y glyphs are the springers. Compare ea-b156-far-arch-heads for the small end of the same arcade.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by section heading and title; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 13 `斗r≦`@313-335 then `γ`@351 `⌒`@367 `ヽ`@383; row 14 `斗rx=ﾐ`@265-302 `:`, `Y`@312 `´`@321 halfsp `｀`@334 `Y`@342, `Ｙ`@377; row 15 `⌒`@255 `Y`@271 `/`@280 then the `|::|` pier and bay rhythm",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-b156-far-arch-heads",
+   "role": "periodic_band",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 140,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "NE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "tiny bays under each ＾/^ crown; the `,.ィi〔` parapet line above stays a single edge"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　 　 ,.ィi〔_ｎY＾Ｙ",
+     "　　　　　_,ィｉ〔ｎ'＾Y::|::||:::|",
+     "　　_,.ィf〔n^Y |:|:::i|:::|::||:::|",
+     ",ｨf「 n^i＾i |:::|::|:|:::i|:::|_」x=",
+     "≧s｡::|:|::|_|_」ｍn'Y^Y^'l|:",
+     "　|:::|_」ｍ^i＾l::|::|:|:|i:::|i:::||:"
+    ],
+    "row_numbers": [
+     14,
+     19
+    ],
+    "x_px": [
+     0,
+     150
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "periodic_band",
+    "up": "arch_band",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/f2/f21ac3d63ab4c641ac673955776e8045.json.gz#156",
+    "label": "汎用AA/背景・風景/街並み07 section 【橋・歩道橋】 aa[156] 'スペイン セゴビアのローマ時代の水道橋'",
+    "aahub_url": "https://aahub.org/mlt/f21ac3d63ab4c641ac673955776e8045",
+    "cited_by": "selected by section heading 【橋・歩道橋】 and title; not cited by the skill"
+   },
+   "crop": "crops/ea-b156-far-arch-heads.png",
+   "note": "Far end of the same arcade. Arch heads shrink to `ｎY＾Ｙ`, `ｎ'＾Y` and `n^Y` (fullwidth ＾ to halfwidth ^), then `n^i＾i` and `ｍ^i＾l`, where the piers thin from Y to i or l and n/ｍ become whole tiny arches. Scaling evidence: from near to far the crown goes ⌒ → ´ ｀ → ＾ → ^ → n/ｍ and the springer goes Y → i/l.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by section heading and title; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 14 `〔_ｎY＾Ｙ`@106-146; row 15 `〔ｎ'＾Y`@77-106; row 16 `f〔n^Y`@43-71; row 17 `「 n^i＾i`@15-54; row 18 `」ｍn'Y^Y^'l`@71-140; row 19 `」ｍ^i＾l`@33-74; parapet `,.ィi〔` / `_,ィｉ〔` / `_,.ィf〔` / `,ｨf「` steps down-left on rows 14-17",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-t55-voussoir-crown",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 200,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "none in the ring itself; the brick courses `＿}＿` outside and the hatched tunnel mouth inside are its neighbours"
+   },
+   "native": {
+    "rows": [
+     "＿}＿___j〕=-‐…･･…‐-=〔＿{＿＿",
+     "}＿,､＜⌒)ﾆ=- ─ -=ﾆ(⌒＞｡,＿",
+     ",xく⌒＞＜_j〕=-─-=〔_ ＞く⌒へ、"
+    ],
+    "row_numbers": [
+     10,
+     12
+    ],
+    "x_px": [
+     210,
+     420
+    ],
+    "row_pen_x": [
+     214,
+     214,
+     212
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/86/867a95d32dac8d0eb8fe4ffeef5af441.json.gz#55",
+    "label": "汎用AA/背景・風景/地形（洞窟） aa[55] '伊世賀美隧道(愛知県)' (brick tunnel portal)",
+    "aahub_url": "https://aahub.org/mlt/867a95d32dac8d0eb8fe4ffeef5af441",
+    "cited_by": "selected by page heading 【洞窟】 and title; not cited by the skill"
+   },
+   "crop": "crops/ea-t55-voussoir-crown.png",
+   "note": "Tunnel portal crown built as a three-course voussoir ring, not as one curve. Row 10 is a keystone and extrados line `j〕=-‐…･･…‐-=〔`, with dots at the lit top. Row 11 is a stone course with mirrored ends `､＜⌒)` / `(⌒＞｡`. Row 12 is the intrados `xく⌒＞＜_j〕=-─-=〔_ ＞く⌒へ、`. The paired spellings mirror around the keystone.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by title; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 10 `j〕`@265/269 `=-‐…･･…‐-=`@277-363 `〔`@371; row 11 `,､＜⌒)`@234-276 `ﾆ=- ─ -=ﾆ`@281-349 `(⌒＞｡,`@359-403; row 12 `,xく⌒＞＜`@212-263 `_j〕=-─-=〔_`@279-352 `＞く⌒へ、`@362-419",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-t55-portal-springers-dark-mouth",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "tone_core",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 230,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "none inside: the mouth is dark `////` hatch with a lighter `::::` strip along the right jamb thinning to `.:.:.:` at the floor"
+   },
+   "native": {
+    "rows": [
+     "__|＿／ヽ,アﾞヽ,､＜/////////＞｡,ノ>,_ノヽ",
+     "|_７＿ア＾ﾙ'’/////////////:::::::`'<心,＿",
+     "|√__7___ん////////////////::::::::∨ﾍ＿",
+     "|i＿,√,√//////////////////:::: ﾊﾆﾑ",
+     "|i＿,{ニ{////////////////////:::::::}二}",
+     "|i＿,{二{ﾉ/////口////////////::::: }二}",
+     "|i____{二{////////////////////::::::}二}",
+     "|i＿_{二{///////////////////.:.:.:.:}二}"
+    ],
+    "row_numbers": [
+     13,
+     20
+    ],
+    "x_px": [
+     165,
+     430
+    ],
+    "row_pen_x": [
+     168,
+     178,
+     178,
+     178,
+     178,
+     178,
+     178,
+     178
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "arch_band",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/86/867a95d32dac8d0eb8fe4ffeef5af441.json.gz#55",
+    "label": "汎用AA/背景・風景/地形（洞窟） aa[55] '伊世賀美隧道(愛知県)' (brick tunnel portal)",
+    "aahub_url": "https://aahub.org/mlt/867a95d32dac8d0eb8fe4ffeef5af441",
+    "cited_by": "selected by page heading 【洞窟】 and title; not cited by the skill"
+   },
+   "crop": "crops/ea-t55-portal-springers-dark-mouth.png",
+   "note": "Lower half of the tunnel portal. The voussoir ring turns down through `／ヽ,アﾞヽ,､＜` → `ア＾ﾙ'’` → `ん` → `√,√` on the left and `＞｡,ノ>,_ノヽ` → `<心,` → `∨ﾍ` → `ﾊﾆﾑ` on the right, then becomes vertical springer blocks `{ニ{` / `}二}`. The interior tone is coupled to the opening: `/` hatch for the dark tunnel and a `:::` band of light on the right inner wall, both stopping at the intrados.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by title; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 13 `／`@198 `ヽ,アﾞヽ,､＜`@214-269 and `＞｡,ノ>,_ノヽ`@357-421; row 14 `ア＾ﾙ'’`@214-250 and ASCII grave @383 then `'<心,`@390-417; row 15 `ん`@231, `∨ﾍ`@398/414; row 16 `√,√`@204-223, `ﾊﾆﾑ`@400-420; rows 17-20 `{ニ{`/`{二{`@204-226 and `}二}`@406-428; `////` fills between, `:::::` 6-8 glyphs wide against the right springer, `.:.:.:` on row 20",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-t55-lamp-round-on-pipe",
+   "role": "whole_circle",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the round; the pipe `| |` is not drawn through it (stops at the cap, resumes under the base)"
+   },
+   "native": {
+    "rows": [
+     "¨¨~¨¨| |¨¨¨",
+     "___γ⌒ヽ__",
+     "＿_乂__乂_,",
+     "______}_,| |＿__",
+     "＿|,＿_| |＿__"
+    ],
+    "row_numbers": [
+     8,
+     12
+    ],
+    "x_px": [
+     440,
+     520
+    ],
+    "row_pen_x": [
+     445,
+     453,
+     451,
+     442,
+     440
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "side",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/86/867a95d32dac8d0eb8fe4ffeef5af441.json.gz#55",
+    "label": "汎用AA/背景・風景/地形（洞窟） aa[55] '伊世賀美隧道(愛知県)' (brick tunnel portal)",
+    "aahub_url": "https://aahub.org/mlt/867a95d32dac8d0eb8fe4ffeef5af441",
+    "cited_by": "selected by page heading 【洞窟】 and title; not cited by the skill"
+   },
+   "crop": "crops/ea-t55-lamp-round-on-pipe.png",
+   "note": "A small two-row round, γ⌒ヽ over 乂__乂, set on a vertical pipe against the brick wall. The pipe stops at the cap and starts again below the base, so the round is read in front. The brick mortar lines `___` / `＿_` run up to the round's sides, and 乂's outer legs meet them. This is the same spelling as the church 57 crossed return, but without a side row.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by title; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 8 pipe `|`@484 `|`@493 ends; row 9 `___`@453-463 `γ`@468 `⌒`@484 `ヽ`@500 `__`@512/517; row 10 `＿_`@451/467 `乂`@472 `_`@488 `_`@493 `乂`@498 `_`@514 `,`@519; rows 11-12 `}`@472 and pipe `|`@484 `|`@493 resume under the base",
+   "inspected_by": "embedded-architecture agent"
+  },
+  {
+   "id": "ea-v189-canopy-lobe-chain",
+   "role": "rim_cap",
+   "also_roles": [
+    "dotted_rim",
+    "return_base",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "sky gap to the right of the chain (the open centre of the tree tunnel); paper inside each lobe above its dots"
+   },
+   "native": {
+    "rows": [
+     "＿　⌒　　　　　",
+     "　　　⌒:､　　　",
+     "　　／　⌒:.　　",
+     ". : ' ´　　__ノ,　　",
+     "　　　. . . : : :,　"
+    ],
+    "row_numbers": [
+     6,
+     10
+    ],
+    "x_px": [
+     205,
+     300
+    ],
+    "row_pen_x": [
+     206,
+     212,
+     214,
+     209,
+     211
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/c3/c3653b450b13714e3d6929f61ac881af.json.gz#189",
+    "label": "汎用AA/背景・風景/街並み08 section 【並木道】 aa[189] (tree tunnel over a road)",
+    "aahub_url": "https://aahub.org/mlt/c3653b450b13714e3d6929f61ac881af",
+    "cited_by": "selected by section heading 【並木道】; not cited by the skill"
+   },
+   "crop": "crops/ea-v189-canopy-lobe-chain.png",
+   "note": "Edge of a canopy mass facing the open sky of a tree tunnel. Three `⌒` caps step down and right about 12-18 px per row. Each lobe's right flank is only two dots (`:､`, `:.`), and the last lobe closes with `__ノ,`. A thin row of `. . . : : :,` dots underneath bounds the underside. The edge is made of caps plus dots, with no traced outline.",
+   "status": {
+    "state": "retained",
+    "reason": "category-page entry chosen by section heading; not cited by the skill; not operator-approved"
+   },
+   "inspection": "row 6 `⌒`@233 (and `＿`@206); row 7 `⌒`@245 `:､`@261/264; row 8 `／`@236 `⌒`@263 `:.`@279/282; row 9 `. : ' ´`@209-233 and `__ノ,`@263-284; row 10 `. . . : : :,`@244-287 under the last lobe",
+   "inspected_by": "embedded-architecture agent"
+  }
+ ]
+}
