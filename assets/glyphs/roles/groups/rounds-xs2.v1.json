@@ -1,0 +1,242 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "rounds-xs2",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings"
+ },
+ "inspection_log": [
+  "read laneB_brief_rounds_xs2, laneB_brief_common, laneB_brief_addendum; trueff-shallot AGENTS.md 'How to inspect'; SKILL.md Revision preservation, 2.1, 2.2, Split-stroke ownership, 4.4, 8 mark-purpose, 15.3-15.7; structural-line-selection.md (Attachment is not construction, Split-stroke ownership, Four patterns, Rounded constructions, Recovered tools); aahub-reference-index.md (Role-organized libraries, circle profile update, lookup workflow, role-lookup pointer); roles/schema.json; previous round rounds-xs.v1.json (entries, log, gaps)",
+  "selection method: AA-003 TRAIN slug files have no section headings (pieces_kept drops them), so I used the same pages in the MLT archive, which keep their 【】 headings. I listed headings only for pages whose names mean balls/coins/clocks/sky/space/effects, plus a heading-keyword search (丸/円/玉/球/月/泡/ボール/皿/時計/コイン/ボタン/フキダシ...) over 汎用AA/2ch pages. Then, inside the chosen sections only, I measured each 5-10-row entry's ink size and fit.py worst distance (numbers only, no art printed) and opened only the closest line-rim candidates natively",
+  "スポーツ用品 9791b908 【野球】 aa[1-65]: measured; aa[20] (121x112, worst 7.2) opened rows 1-7 -> rx2-baseball20-seam-round-7row; aa[19] (118x101, worst 10.1) opened rows 1-7 -> rx2-baseball19-seam-round-7row; aa[14] (136x131) is a hatched/filled ball - text checked, not opened as crop, not entered",
+  "スポーツ用品 【サッカー】/【テニス】/【バスケットボール】 aa[66-151]: measured; aa[73] soccer ball 93x94 (worst 10.9, under size, panel lines inside) and aa[87] 110x101 (worst 21.4, ball with shadow tail) text checked, not entered; aa[76]/[77]/[82]/[85] measured only (8-9 rows, 136-140 px wide, worst 12-15) - over the envelope, not opened",
+  "金融 64e12186 【お金】 aa[32-120]: measured; aa[85] (105x104, worst 8.6) opened rows 1-8 -> rx2-coin85-line-rim-8row; aa[88] 5-yen coin opened rows 1-7 (109x102, worst 8.5): its lower rim is a `三三三三` hatch band plus `三`/`川` texture and an inner `γ⌒ヽ`/`、＿ﾉ` hole - hatch-band rim, excluded by the owner rule, not entered; aa[82] 10-yen coin (116x111, worst 11.5) text checked - busy interior, over size",
+  "時計・観測 5652262e 【時計】 aa[1-49]: measured; aa[23] (127x116, worst 10.9) text checked - clock with hands/frame strokes crossing, not a plain round, not entered",
+  "宇宙 2ede1f34 【天体】 aa[1-101]: measured; every planet/moon is 17-40 rows (far over xs); only aa[21] is 7 rows (123x108, worst 25.7) and it is a hatched crescent - not entered. 【星座】/【隕石】 sizes listed only: no 6-9-row round",
+  "天候、自然現象 a1072593 【皆既日食】/【月食】 aa[210-216]: no entry in the 5-10-row / 80-150 px range",
+  "夜空、星座、オーロラ 41bbc385: aa[84] (11-row moon, 172x165, colon tone inside) text checked - over size, not entered",
+  "漫符 8565bc95 【フキダシ】/【ぐるぐる】/【豆電球】/【光】/【混乱/気絶】 measured; aa[601]/[602]/[603] (worst 8.5-14.8) are colon/dot-band rims - excluded by the owner rule (no dot-band rims); 【フキダシ】 aa[504]/[515] measured only (worst 18.6/22.2), not opened",
+  "other measured sections with no candidate under worst 15 px (line rim): 食器・調理器具 【器】; 機械類 【ボタン・スイッチ】/【メーター】; 手＋小道具04 【スイッチ・ボタン】; 手＋小道具03 【コイン】 (aa[228] 143x117); 手＋小道具06 【鏡】/【スポーツ】/【テーブルゲーム】/【玩具】; 食べ物01 【おにぎり】/【餅】; 背景 【井戸】/【結界】; 年中行事 【正月】; 天使の輪; 攻撃エフェクトその他 【魔法】 (aa[177] 116x114 worst 8.4 is a dot/`∞` sparkle ring, not a line rim); エフェクト 【アクション】/【その他】; ゲーム02 【ボードゲーム】; モンスターボール pages; 骨格・内臓 【眼球】",
+  "component libraries measured: lib:shapes circle section aa[2-148] - nearest are #31 (filled kanji tone ball, worst 2.7 but not a line rim), #24 (dot ring, 136x136), #87 (dash-filled disk); lib:patterns aa[0-150] and lib:faces-small aa[0-40] - none; lib:eyes-large aa[0-280]: only #165 in range (10 rows, 142x139, worst 15.3, an eye) - none",
+  "operator circle My MLT (profile_circle_evidence.v1.json, 45 drawings): read the family list (titles, focus forms, row spans) - every member is an architectural/vessel/eye/character construction or a 2-3-row compact round; none is an isolated 6-8-row line round, so none was opened again (rounds-xs already opened -02/-22/-32/-40/-44)",
+  "split_stroke: none identified in the three crops opened"
+ ],
+ "gaps": [
+  "whole_circle that FITS the xs sphere (worst <= 6 px) as a line rim: none found. Closest line-rim rounds: スポーツ用品 aa[20] baseball 121x112 worst 7.2 (sides carry a little `i;`/`从` texture), 金融 aa[85] coin 105x104 worst 8.6 (octagonal corners, busy interior), スポーツ用品 aa[19] baseball 118x101 worst 10.1; earlier: lib:shapes#99 93x88 worst 12.6, bakuhatsu-kemuri aa[72] 129x121",
+  "no plain (empty-interior) line round of 7-8 rows was found in the selected ball/coin/clock/space/effect sections: balls and coins at this size carry seams, designs or text inside; moons and planets are 11-40 rows",
+  "no 7-row round with high-sitting caps (⌒ / -―- / ,.-─-､) was found at ~107 px; the near misses use `ﾆ=ﾆ`, `＿__` and `＿＿_` caps"
+ ],
+ "entries": [
+  {
+   "id": "rx2-baseball20-seam-round-7row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 121,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "outside paper on all sides; interior paper is split by one seam curve (`'i/,` / `}i:}` / `'i/` / `/i'` / `〈i'`) running from the cap down to the lower left; right half of the interior is open paper"
+   },
+   "native": {
+    "rows": [
+     "　　　　　, ﾆ=ﾆ _",
+     "　　　ア⌒'i/,　　 '寸",
+     "　　 /　　　}i:}　 　 'i;V",
+     "　　.{ 　 　 'i/　　　 'i;}",
+     "　 从　　/i'　　　　　从",
+     "　　.公..〈i'　　　 　 ｲ",
+     "　　　　　≧=‐=≦"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     140
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/97/9791b9084dc9aea96c5bf10332f7e3c1.json.gz#20",
+    "label": "スポーツ用品 (汎用AA/小道具/娯楽系) section 【野球】 (heading aa[0]), aa[20]: a ball",
+    "aahub_url": "https://aahub.org/mlt/9791b9084dc9aea96c5bf10332f7e3c1",
+    "cited_by": "selected by section heading 【野球】 for the rounds-xs2 ball search; not cited by the skill"
+   },
+   "crop": "crops/rx2-baseball20-seam-round-7row.png",
+   "note": "NEAR MISS for the xs sphere: ink 121 x 112 px; fit.py `ink 121x112px  worst 7.2px  samples>6px 4%  no` (about 1.2 px over the 6 px limit; it is about 7-14 px too wide). Lost-and-found line rim. Cap `, ﾆ=ﾆ _` (row 1; the `ﾆ` pair sits high in the row) with `ア⌒` / `'寸` shoulders; return `≧=‐=≦` (row 7, sits low). The flanks carry small texture (`'i;V`, `'i;}`, `从`, `.公..`), so this is a line rim with a little hatch at the sides, not a pure single stroke. The interior seam curve is part of the ball (a strong interior feature, not a light mark).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by its section heading; not operator-approved; near miss (worst 7.2 px > 6 px), recorded for comparison only"
+   },
+   "inspection": "row 1 `, ﾆ=ﾆ _`@55-96 cap; row 2 `ア⌒`@33/47 left shoulder and `'寸`@107/110 right shoulder; rows 3-6 left flank `/`@27, `.{`@22/25, `从`@16, `.公..`@22-44 and right flank `'i;V`@114-123, `'i;}`@118-127, `从`@123, `ｲ`@115; row 7 `≧=‐=≦`@55-95 return; interior seam `'i/,`@63-77 > `}i:}`@68-78 > `'i/`@66-72 > `/i'`@54-65 > `〈i'`@47-58 curves from under the cap to the lower-left return; right interior open paper",
+   "inspected_by": "rounds-xs2 agent"
+  },
+  {
+   "id": "rx2-coin85-line-rim-8row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 105,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "outside paper on all sides; interior is NOT empty: a coin face design (`ｒ- ∩`, `＾i .U.`, `｀⌒ヽ`, `乂_乂`) and the inscription `平`/`年`/`成 ９` touching the lower rim"
+   },
+   "native": {
+    "rows": [
+     "　　　＿＿_",
+     "　／　ｒ- ∩ ＼",
+     " ´　　 ＾i .U.　　ヽ",
+     "|　　　｀⌒ヽ　 　 l",
+     "|　　　乂_乂　 　 !",
+     "ヽ平　　　　　年/",
+     "　＼　成　９ .／",
+     "　　　￣￣￣"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     90,
+     230
+    ],
+    "row_pen_x": [
+     99,
+     99,
+     99,
+     99,
+     99,
+     99,
+     99,
+     99
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/64/64e12186a7f2ec58edceafd32f1cdc47.json.gz#85",
+    "label": "金融 (汎用AA/小道具) section 【お金】 (heading aa[31]), aa[85]: a 10-yen coin (平成9年)",
+    "aahub_url": "https://aahub.org/mlt/64e12186a7f2ec58edceafd32f1cdc47",
+    "cited_by": "selected by section heading 【お金】 for the rounds-xs2 coin search; not cited by the skill"
+   },
+   "crop": "crops/rx2-coin85-line-rim-8row.png",
+   "note": "NEAR MISS for the xs sphere: ink 105 x 104 px (the right size); fit.py `ink 105x104px  worst 8.6px  samples>6px 3%  no`. 8-row single-stroke rim with a low-sitting cap `＿＿_` (row 1) and a high-sitting return `￣￣￣` (row 8), so the round is about 104 px tall. It misses because the rim reads as an octagon: long straight `／`/`＼` diagonals at the four corners and straight `|`/`l`/`!` sides. The interior holds a full coin face design and text, so it is not a plain round.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by its section heading; not operator-approved; near miss (worst 8.6 px), with a busy interior"
+   },
+   "inspection": "row 1 `＿＿_`@132-164 flat cap; row 2 `／`@110 and `＼`@177 diagonal shoulders; row 3 `´`@104 and `ヽ`@193; rows 4-5 `|`@99 straight left side and `l`@204 / `!`@205 right side; row 6 `ヽ`@99 and `/`@198 lower turn, with `平`@111 and `年`@182 just inside; row 7 `＼`@110 and `.／`@180/183; row 8 `￣￣￣`@132-164 return; interior `ｒ- ∩`, `＾i .U.`, `｀⌒ヽ`, `乂_乂`, `成`, `９` fill the centre; the corners are straight, so the outline is octagonal",
+   "inspected_by": "rounds-xs2 agent"
+  },
+  {
+   "id": "rx2-baseball19-seam-round-7row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 118,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "outside paper on all sides; interior paper is crossed by two stitched seam curves (`》` chain at the left, `《` chain at the right) with a paper lane between them"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　＿__",
+     "　　　x＜,　　　 ｀>､",
+     "　　〃 　 》　　　《 ハ",
+     "　 .{　　　》'　　　《　 }",
+     "　八　　》'　 　 　 《 ﾊ",
+     "　　 ヽ.》'　　　　　.ｲ",
+     "　　　　｀≧=‐ｧ≦"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     140
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/97/9791b9084dc9aea96c5bf10332f7e3c1.json.gz#19",
+    "label": "スポーツ用品 (汎用AA/小道具/娯楽系) section 【野球】 (heading aa[0]), aa[19]: a baseball with stitched seams",
+    "aahub_url": "https://aahub.org/mlt/9791b9084dc9aea96c5bf10332f7e3c1",
+    "cited_by": "selected by section heading 【野球】 for the rounds-xs2 ball search; not cited by the skill"
+   },
+   "crop": "crops/rx2-baseball19-seam-round-7row.png",
+   "note": "NEAR MISS for the xs sphere: ink 118 x 101 px; fit.py `ink 118x101px  worst 10.1px  samples>6px 15%  no` (too wide and a little flat). Clean line rim: cap `＿__` (row 1, sits low) with `x＜,` / `｀>､` shoulders, return `｀≧=‐ｧ≦` (row 7). The flanks are single strokes (`〃`, `.{`, `八`, `ヽ.` | `ハ`, `}`, `ﾊ`, `.ｲ`). The `》`/`《` stitch chains are a strong interior feature.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry located by its section heading; not operator-approved; near miss (worst 10.1 px)"
+   },
+   "inspection": "row 1 `＿__`@66-87 cap; row 2 `x＜,`@33-56 left shoulder and `｀>､`@97-113 right shoulder; rows 3-6 left flank `〃`@22, `.{`@16/19, `八`@11, `ヽ.`@27/39 and right flank `ハ`@113, `}`@124, `ﾊ`@121, `.ｲ`@108/111; row 7 `｀≧=‐ｧ≦`@44-92 return; seams `》`@59 > `》'`@56 > `》'`@49 > `》'`@42 bow left and `《`@100 > `《`@100 > `《`@108 bow right, with paper between the two seams",
+   "inspected_by": "rounds-xs2 agent"
+  }
+ ]
+}
