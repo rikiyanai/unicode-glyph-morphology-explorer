@@ -1,0 +1,2855 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "skill-examples",
+ "role_extensions": {
+  "texture_boundary": "edge of a form carried only by where a texture/punctuation field stops against paper, with no traced outline (structural-line-selection.md 'Texture-supported boundary')"
+ },
+ "inspection_log": [
+  "hand resK-154 rows 1-20 whole-entry render (x2) used only to locate regions inside this one selected entry",
+  "hand rows 7-11 x300-404 pinky cap -> sk-hand-pinky-cap",
+  "hand rows 9-14 x75-170 thumb + diagonal strip first crop; split into sk-hand-thumb-cap (x80-140) and sk-hand-diagonal-strip-return (x118-175)",
+  "hand rows 7-10 x228-275 `!__,!` -> sk-hand-middle-ring-web (first read as a fingertip return; flank positions r4-8 show it is the middle/ring web)",
+  "hand rows 2-7 x175-240 creases `ー`/`ｰ-` -> sk-hand-finger-crease-pair; rows 3-6 x250-310 (`ー-`, `-` in the ring finger) seen in the row text only, not turned into an entry (near-duplicate)",
+  "hand rows 8-12 x145-212 and 9-13 x290-350 `ヽノ` webs -> sk-hand-index-middle-web, sk-hand-ring-pinky-web",
+  "hand rows 4-7 x100-170 (parent sample region) deliberately not used",
+  "Madonna res424 rows 1-24 whole render (x2) to locate regions; rows 1-4, 6-10, 12-19, 13-18, 18-24, 19-24 cropped -> 6 entries",
+  "church aa[99] rows 1-51 whole render to locate; rows 45-51 left/right pews, 38-44 altar steps, 21-26 brick wall cropped -> 4 entries; rows 1-20 crosses/window frames not used (not cited roles)",
+  "church aa[101] rows 1-22 render; rows 1-6, 5-13, 12-18 cropped -> 3 entries; mirror column at right (x460-530) seen in text only, not duplicated",
+  "church aa[104] rows 1-22 text + rows 2-6 and 15-21 crops -> 2 entries; rows 7-14 altar body not cited, not used",
+  "church aa[126] rows 1-36 render; rows 15-25 x0-190 and 18-24 x300-450 cropped -> 2 entries",
+  "tree T aa[7] rows 1-13 text; rows 1-5, 3-7, 6-10, 9-12 cropped -> 4 entries; first trunk crop rows 5-12 x0-60 superseded by the two tighter crops",
+  "cup/plate aa[176] rows 1-21 render; rows 5-8, 8-12, 11-14, 15-21 cropped -> 4 entries; steam rows 1-4 not used",
+  "smoke manifest: res9->resK-09, res13->resK-13, res132->resK-132, res153->resK-153, res168->resK-168",
+  "smoke res153 rows 1-7 whole crop viewed then split into rows 1-3 x110-165 and rows 4-7 x0-135 (whole crop deleted)",
+  "smoke res132 rows 1-8 x75-160 -> sk-smoke132-ring",
+  "smoke res13 rows 1-23 render; rows 1-6 x0-140 (first crop rows 1-8 had an empty row 7, recropped) and rows 5-9 x240-420 -> 2 entries",
+  "smoke res168 rows 1-13 render; rows 1-5 x500-655, 3-9 x270-460, 1-7 x0-170 -> 3 entries",
+  "smoke res9 rows 1-23 render; rows 9-13 x60-160 and 14-17 x430-575 (first crop 13-16 lacked the base row, recropped) -> 2 entries"
+ ],
+ "gaps": [
+  "resK-231 (te-ude-03) and resK-431 (te-komono-02) are not cited by the current SKILL.md or references; not opened",
+  "structural-line-selection.md has no 'worked multi-row constructions' or 'recovered-aa-tools…' sections although aahub-reference-index.md links to them; cup/plate entries cite only the index row",
+  "15.5 idioms not found in context within the cited smoke pieces' inspected regions: `／￣＼`, `＼＿／`, `＿／`, `＼＿`, `彡` as smoke debris (only `彡` as cup tone in aa[176]), `从` as smoke debris (only tree root `从` in T aa[7]); not searched across the corpus by design",
+  "side role: only church/pew/wall sides; no rounded-form-free narrow side example from hand/Madonna",
+  "rim_cap xs (1 row) not found in the cited regions; smallest is the 3-row res153 puff and the 1-glyph `∧` inside a 5-row gable",
+  "shoulder s band (2-3 rows) not isolated; shoulders here are 4-8 rows",
+  "tone_fringe has no entry of its own as primary role (always paired with core/mid in the same crop)"
+ ],
+ "entries": [
+  {
+   "id": "sk-hand-pinky-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 104,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the pinky between left flank (|/l/〉/|) and right diagonal ヽ→ヽ、→l; also the parallel paper gap to the ring finger's flank at 305-309"
+   },
+   "native": {
+    "rows": [
+     " |　 　 /⌒ヽ",
+     " l　　 | 　 　ヽ",
+     " |　　 l 　 　 ヽ、",
+     "l　 　 〉-‐　　l",
+     "ヽ、　|　　 　 |"
+    ],
+    "row_numbers": [
+     7,
+     11
+    ],
+    "x_px": [
+     300,
+     404
+    ],
+    "row_pen_x": [
+     300,
+     301,
+     304,
+     309,
+     309
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+   },
+   "crop": "crops/sk-hand-pinky-cap.png",
+   "note": "Pinky tip whose cap hands off asymmetrically: the right side descends as a stepped ヽ/ヽ、 shoulder while the left drops straight; a knuckle `〉-‐` crease stays open.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited cooperating cap (second `/⌒ヽ`, row 7); not the parent's row-4 sample region; no operator rejection recorded"
+   },
+   "inspection": "row 7 `/⌒ヽ` (pens 341/349/365) caps the pinky; right side steps out `ヽ`@372 r8 → `ヽ、`@380/392 r9 → flank `l`@390 r10-11 (cap→shoulder→flank); left flank `|`@336 r8, `l`@340 r9 bulges to `〉`@344 r10 then `|`@343 r11; `-‐`@352-360 r10 is an open knuckle crease leaving the 〉 and stopping ~22px before the right flank; ring finger's right flank `|`/`l`@305-309 r7-10 runs parallel with paper between and turns `ヽ、`@309 r11 into the web",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-thumb-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the thumb under `⌒` and left of `）`; between the `人` legs"
+   },
+   "native": {
+    "rows": [
+     " /⌒ヽl 　",
+     " l〉 　 ）ヽ、",
+     "/　　人　ヽ",
+     "l 　　 　ヽ、",
+     "ヽ　　ノ　＼"
+    ],
+    "row_numbers": [
+     10,
+     14
+    ],
+    "x_px": [
+     80,
+     140
+    ],
+    "row_pen_x": [
+     82,
+     82,
+     82,
+     80,
+     82
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "flank",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+   },
+   "crop": "crops/sk-hand-thumb-cap.png",
+   "note": "Rounded cap on the thumb side whose right edge `）` forks at `人` into two continuing edges — a cap and a shared junction built in one column.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited (`l〉`, `人` rows 11–12); no operator rejection recorded"
+   },
+   "inspection": "row 10 `/⌒ヽ`@87/95/111 caps; left flank `l〉`@87/90 r11 (〉 = small outward knuckle bump) → `/`@82 r12 → `l`@80 r13 → `ヽ`@82 r14; right edge `）`@119 r11 descends into `人`@112 r12 whose left leg continues down to `ノ`@116 r14 and whose right leg joins the `ヽ、`@126 r13 diagonal; `l`@123 r10 beside the cap is the neighbouring finger's flank, kept separate by a 1px gap",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-diagonal-strip-return",
+   "role": "return_base",
+   "also_roles": [
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 57,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the narrow strip between the two parallel diagonals stays paper down to the `,/` tip"
+   },
+   "native": {
+    "rows": [
+     "l 　　 _!　　",
+     "l 　‐　＼",
+     "）ヽ、　 　",
+     "　ヽ、　　",
+     "ヽ、＼, 　",
+     "　＼,/　"
+    ],
+    "row_numbers": [
+     9,
+     14
+    ],
+    "x_px": [
+     118,
+     175
+    ],
+    "row_pen_x": [
+     119,
+     123,
+     119,
+     128,
+     126,
+     127
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "paper",
+    "up": "flank",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
+   },
+   "crop": "crops/sk-hand-diagonal-strip-return.png",
+   "note": "Two parallel stepped diagonals (ヽ、/＼) closed at the lower end by a 2-row `,/` return — an elongated form ended without a cap glyph.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited hand rows 9–13 region; reading as the thumb's folded segment is inference; no operator note"
+   },
+   "inspection": "upper diagonal `ヽ、`@127/139 r11 → `ヽ、`@139/151 r12 → `＼`@149 r13 → `,`@165 r13; lower diagonal `ヽ、`@126/138 r13 → `＼`@138 r14 → `,`@154 r14; `/`@157 r14 rises from the lower end to the upper `,`@165 — the tip return; `‐`@142 r10 is an open interior cue between `l`@123 and `＼`@161, `_!`@154/159 r9 the palm edge above",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-middle-ring-web",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 47,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the 20px gap between middle-finger right flank and ring-finger left flank is paper down to the `__` floor; palm below has only two dots"
+   },
+   "native": {
+    "rows": [
+     " |　 | 　　",
+     " |　 |　 　",
+     " !__,! ‐ ",
+     " .　. 　　"
+    ],
+    "row_numbers": [
+     7,
+     10
+    ],
+    "x_px": [
+     228,
+     275
+    ],
+    "row_pen_x": [
+     228,
+     229,
+     233,
+     233
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "fold_crease",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
+   },
+   "crop": "crops/sk-hand-middle-ring-web.png",
+   "note": "Web between two fingers drawn as a squared U `!__,!`: two flanks drop into one shallow floor; two dots below mark the knuckle line instead of a stroke.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited hand webbing (rows 9–13); no operator rejection recorded"
+   },
+   "inspection": "middle finger's right flank `|`@233-234 r7-8 and ring finger's left flank `|`@253-254 r7-8 descend in parallel; r9 `!__,!`@238/242/247/252/255 closes the gap (`!` posts narrower than `|`, `,` before the right post); `‐`@264 r9 is the ring finger's own crease; r10 `.`@238 and `.`@252 under each post — knuckle points, open paper between",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-index-middle-web",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 67,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the gap between the index finger's right flank and the middle finger's left flank stays empty down to the `ヽノ` turn"
+   },
+   "native": {
+    "rows": [
+     "l　　　 |　　",
+     " _!　　　|　　",
+     "　＼　　|, 　",
+     "　 　ヽノ 　",
+     "、　　　　　"
+    ],
+    "row_numbers": [
+     8,
+     12
+    ],
+    "x_px": [
+     145,
+     212
+    ],
+    "row_pen_x": [
+     151,
+     149,
+     150,
+     150,
+     151
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+   },
+   "crop": "crops/sk-hand-index-middle-web.png",
+   "note": "Asymmetric web: a long `＼` diagonal from one finger meets a short `ヽノ` hook from the other, so the valley bottom sits off-centre.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited `ヽノ` (rows 11–13); no operator rejection recorded"
+   },
+   "inspection": "index finger's right flank `l`@151 r8 → `_!`@154/159 r9 → `＼`@161 r10 slides into `ヽ`@177 r11; middle finger's left flank `|`@192/196/199 r8-10 (+`,`@203 r10) curls into `ノ`@189 r11 — `ヽノ` is the web floor; `、`@151 r12 belongs to the next form below and does not touch it",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-ring-pinky-web",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "gap between ring and pinky flanks above the `ヽノ`; palm paper to both sides of the `ノ/` crease"
+   },
+   "native": {
+    "rows": [
+     " |　　 l 　",
+     "　l　 　 〉",
+     " 　ヽ、　|　",
+     " 　 　ヽノ ",
+     "　ノ/　　"
+    ],
+    "row_numbers": [
+     9,
+     13
+    ],
+    "x_px": [
+     290,
+     350
+    ],
+    "row_pen_x": [
+     304,
+     298,
+     293,
+     293,
+     302
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+   },
+   "crop": "crops/sk-hand-ring-pinky-web.png",
+   "note": "Finger web `ヽ、`→`ヽノ` that continues downward as a `ノ/` palm crease: the join does not close, it hands off to an interior line.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited `ヽノ` row 12; no operator rejection recorded"
+   },
+   "inspection": "ring finger's right flank `|`@309 r9 / `l`@309 r10 turns `ヽ、`@309/321 r11 → `ヽ`@325 r12; pinky's left flank `l`@340 r9 → `〉`@344 r10 → `|`@343 r11 → `ノ`@337 r12 — the two meet as `ヽノ` r12; r13 `ノ/`@313/324 continues the meeting downward as two short palm creases, not a closed base",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-hand-finger-crease-pair",
+   "role": "fold_crease",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 65,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "between each crease and the right flank; between the two creases (rows 4-5)"
+   },
+   "native": {
+    "rows": [
+     "　| 　 　 |　",
+     "｜ー　｜ ",
+     "|　 　　|　",
+     "　|　 　 ｜ ",
+     "　| ｰ- 　| 　",
+     "　 |　　　 |　"
+    ],
+    "row_numbers": [
+     2,
+     7
+    ],
+    "x_px": [
+     175,
+     240
+    ],
+    "row_pen_x": [
+     176,
+     179,
+     184,
+     175,
+     176,
+     175
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "flank",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
+   },
+   "crop": "crops/sk-hand-finger-crease-pair.png",
+   "note": "Two short joint cues inside one finger, each attached to the left flank and left open on the right; the finger is otherwise two flanks and paper.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited interior cues rows 3/6 (`ー`, `ｰ-`); no operator rejection recorded"
+   },
+   "inspection": "middle finger flanks `|`/`｜` drift from 188/229 r2 to 191/233 r7; r3 `ー`@199 starts at the left flank `｜`@183's right edge and stops at 214 (11px short of `｜`@225); r6 `ｰ-`@196/206 likewise leaves the left `|`@187 and stops 16px before `|`@230; rows 4–5 have no interior mark",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-veil-crown-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 155,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between outer veil arc and inner hair arc on the right; face below the inner arc"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　_ ＿",
+     "　 　 , イ´　　　 ｀丶、",
+     "　 ／.: 　 　.＿ _　　　ヽ",
+     " / .::: .／　　 　 ｀ヽ i　 ﾊ"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     150,
+     305
+    ],
+    "row_pen_x": [
+     154,
+     154,
+     151,
+     154
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-veil-crown-cap.png",
+   "note": "Wide head cap built as two concentric open arcs (veil and hairline) with a dot band between them on the left only.",
+   "status": {
+    "state": "retained",
+    "reason": "same cited piece, but rows 1–4 lie above the skill's cited rows 9–24; included as the piece's cap, not as the cited dot strip"
+   },
+   "inspection": "outer arc `_ ＿`@220/230 r1 over `, イ´`@186-207 and `｀丶、`@253-277 r2, falling to `／`@167 r3 / `/`@159 r4 (left shoulder) and `ヽ`@283 r3 → `ﾊ`@295 r4 (right); inner arc `.＿ _`@221-245 r3 → `｀ヽ`@251/259 r4 sits ~17px lower, `／`@192 r4 its left end; `.:`@183 r3 and `.:::.`@172-189 r4 fill the left gap between the arcs; right gap stays paper except `i`@276 r4",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-veil-dense-strip",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "outside the strip: left of the outer veil edge and right of the inner `｜` (face)"
+   },
+   "native": {
+    "rows": [
+     " ,.: .::　l=",
+     " .l:::: :. ;'　",
+     " ｌ::::::::｜",
+     " ! :: : ｜",
+     " l :: ::　ﾄ､"
+    ],
+    "row_numbers": [
+     6,
+     10
+    ],
+    "x_px": [
+     140,
+     190
+    ],
+    "row_pen_x": [
+     146,
+     142,
+     143,
+     142,
+     140
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "tone_mid",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-veil-dense-strip.png",
+   "note": "Vertical veil strip whose single solid `::::::::` row is the core, with two-colon pairs thinning above and below, bounded by line edges on both sides.",
+   "status": {
+    "state": "retained",
+    "reason": "cited piece; rows 6–8 precede the cited rows 9–24 (rows 9–10 inside); no operator rejection recorded"
+   },
+   "inspection": "r8 `ｌ::::::::｜` packs eight `:`@152-173 edge to edge between outer `ｌ`@148 and inner `｜`@176; r7 `l:::: :.`@150-173 nearly full; r6 `,.: .::`@151-171 and r9 `! :: :`@147-167, r10 `l :: ::`@145-167 drop to separated pairs — the strip thins away from the core while its line edges (`l`/`!`/`｜`) persist",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-lower-veil-strips",
+   "role": "periodic_band",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 140,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "full-space gutters between colon columns; nothing outside the `/`→`ｌ`→`|` contour"
+   },
+   "native": {
+    "rows": [
+     " 　 /　.:　 .::　 .:　　:: l:",
+     "　 ./　.:　 .::　　:: 　 ::: |:",
+     " .,': .::　 .:::　　.::　　::: ﾄ",
+     " .,':: .:　 .::::　　.:: 　 .::: !　",
+     "..ｌ:: ::　 .::::: 　 :::.　 .:: ::l: ",
+     " ｌ:: ::　.::::::　　::::　 ::　::!:",
+     " |::::　.::::::　　 :::　.::: .:::}: "
+    ],
+    "row_numbers": [
+     18,
+     24
+    ],
+    "x_px": [
+     30,
+     170
+    ],
+    "row_pen_x": [
+     38,
+     32,
+     38,
+     33,
+     33,
+     33,
+     33
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "tone_fringe",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-lower-veil-strips.png",
+   "note": "Veil body as parallel colon strips separated by paper gutters; strips lengthen downward so the veil darkens toward the hem without any strip merging.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited rows 9–24 alternating strips with open paper; no operator rejection recorded"
+   },
+   "inspection": "left contour `/`@59 r18 → `./`@48/51 r19 → `.,'`@43-49 r20 → `.,'`@38-44 r21 → `..ｌ`@33-39 r22 → `ｌ`@38 r23 → `|`@38 r24 (diagonal turning vertical); inside, strips start as `.:`@78-81 / `.::`@100-106 r18 and grow to `.:::::`@76-91 r22 and `.::::::`@65-83 r24, each separated by full-space gutters; inner edge `l`/`|`/`ﾄ`/`!`/`}`@162-164 closes the field at right",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-right-shoulder-paper",
+   "role": "shoulder",
+   "also_roles": [
+    "opening_paper_gap",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 120,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "a wedge between the contour and the dot columns, widening to ~60px at rows 17–18; no dot touches the contour"
+   },
+   "native": {
+    "rows": [
+     " ::　ﾍ",
+     ": :　　ゝ、",
+     ": :. 　 　 ＼",
+     " ::.　 : :　　＼",
+     " :::　 :.:.　　　 ヽ",
+     " :::.　::　　　 　 ﾍ",
+     "　::::　:　　　　　　',",
+     "　 ::: .:　 :　　 : .　 ｌ"
+    ],
+    "row_numbers": [
+     12,
+     19
+    ],
+    "x_px": [
+     300,
+     420
+    ],
+    "row_pen_x": [
+     302,
+     301,
+     301,
+     306,
+     307,
+     309,
+     304,
+     303
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "shoulder",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-right-shoulder-paper.png",
+   "note": "Long veil shoulder (ﾍ ゝ、 ＼ ＼ ヽ ﾍ ', ｌ) separated from the interior dot columns by a deliberately empty wedge.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited open paper beside bounded strips (rows 9–24); no operator rejection recorded"
+   },
+   "inspection": "contour `ﾍ`@324 r12 → `ゝ、`@334/346 r13 → `＼`@352 r14 → `＼`@369 r15 → `ヽ`@387 r16 → `ﾍ`@397 r17 → `',`@407/410 r18 → `ｌ`@412 r19 turns from diagonal to vertical; dot columns `::`/`:::`@301-324 and `: :`/`:.:.`@336-346 stay left; rows 15-18 leave 25–70px paper between the last dot and the contour; only r19 lets sparse `:`@355/385 `.`@393 into the wedge near its foot",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-chin-fold",
+   "role": "fold_crease",
+   "also_roles": [
+    "tone_core",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 95,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside each hanging arc; between the arcs and the dense row 13"
+   },
+   "native": {
+    "rows": [
+     "!ﾘ::::::::::'　　　 ｌ　",
+     ";'ヽ::　　　　 ｲ,! ",
+     "l ::.、｀ - - ' / } ",
+     " ゝ、｀ｰ - イ / ",
+     "::　ﾄ､: : : ... ｲ　:",
+     " :: ﾉ:. ヽ イ.:人　"
+    ],
+    "row_numbers": [
+     13,
+     18
+    ],
+    "x_px": [
+     180,
+     275
+    ],
+    "row_pen_x": [
+     185,
+     184,
+     182,
+     180,
+     185,
+     181
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "tone_core",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-chin-fold.png",
+   "note": "Drape under the chin as two nested hanging arcs below a solid colon band, then a third, dotted arc whose tone thins along it.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited rows 9–24; no operator rejection recorded"
+   },
+   "inspection": "r13 `!ﾘ::::::::::'`@185-227 is a solid band (10 `:`@197-224); r14 `;'ヽ::`@184-205 starts the left side; arc 1 r15 `、｀ - - ' /`@199-257 ends in `}`@270; arc 2 r16 `ゝ、｀ｰ - イ /`@185-262 sits 1 row lower and wider; r17 `ﾄ､: : : ... ｲ`@202-254 repeats the arc as spaced dots; r18 `ﾉ:. ヽ イ.:人`@197-252 begins the clasped hands below; arcs are dashed (`-` with gaps), never solid",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-clasped-hands",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_crease",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "between `'Y'` and the posts; the seam column below is paper on both sides except the `,'`/`';` edges"
+   },
+   "native": {
+    "rows": [
+     ":::.　　.::　",
+     ":::.　　　",
+     " .:i'Y'l　",
+     ".::|'Y'|:. ",
+     "..::,'｜';:.",
+     " /　|　';:"
+    ],
+    "row_numbers": [
+     19,
+     24
+    ],
+    "x_px": [
+     200,
+     250
+    ],
+    "row_pen_x": [
+     202,
+     205,
+     209,
+     210,
+     204,
+     204
+    ]
+   },
+   "ports": {
+    "left": "tone_fringe",
+    "right": "tone_fringe",
+    "up": "tone_mid",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+   },
+   "crop": "crops/sk-madonna-clasped-hands.png",
+   "note": "Two stacked `'Y'` fingertip forks between posts, then a single `｜` seam where the palms meet: contact without closing the hands.",
+   "status": {
+    "state": "retained",
+    "reason": "cited Madonna rows 9–24; no operator rejection recorded"
+   },
+   "inspection": "r21 `.:i'Y'l`@214-238 and r22 `.::|'Y'|:.`@210-245: `Y`@226 (twice) between quotes is the fingertip fork, posts `i/|`@219-220 and `l/|`@238; r23 `,'｜';`@216-241 — the posts open outward as `,'` and `';` and a single `｜`@222 continues; r24 `/`@209 `|`@228 `';`@243-246; colon pairs `.:`/`.::`@202-216 and `:.`@242-247 thin outward beside the hands",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church99-pew-left",
+   "role": "contact_junction",
+   "also_roles": [
+    "side",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 100,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "straight",
+    "inside": "right",
+    "paper": "the floor between pew ends (each `|レi` / `|／` pair) and the aisle to the right"
+   },
+   "native": {
+    "rows": [
+     "￣￣￣￣||~`~",
+     " 　 　　 　 |レi　",
+     "￣￣||＿_.|／　",
+     "　 　 |レi　　　　",
+     "||＿_.|／　　　　",
+     " |レi　　　　　　　",
+     " |／　　　　　　 　"
+    ],
+    "row_numbers": [
+     45,
+     51
+    ],
+    "x_px": [
+     200,
+     300
+    ],
+    "row_pen_x": [
+     208,
+     208,
+     208,
+     208,
+     208,
+     203,
+     203
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "periodic_band",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+   },
+   "crop": "crops/sk-church99-pew-left.png",
+   "note": "Receding pew ends: `|レi` over `|／`, with the next pew's rail ending on a dot one glyph before the post — repeated rows join without merging.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited `|レi` rows 46/48/50; native-combination catalog lead, not operator approval"
+   },
+   "inspection": "r46 `|レi`@272/276/290 under `||~`~`@272-294; r47 `||＿_.|／`@240-276: next pew's rail `＿_`@248/264 ends at `.`@269 before the post `|`@272, and `／`@276 drops from the post; same unit repeats 32px left: r48 `|レi`@240-258, r49 `||＿_.|／`@208-244, r50 `|レi`@208-226, r51 `|／`@208/212; `レ` hooks into the post and `i` stands free as the armrest stile",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church99-pew-right",
+   "role": "contact_junction",
+   "also_roles": [
+    "side",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 90,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "the floor between pew ends and the aisle to the left"
+   },
+   "native": {
+    "rows": [
+     "`~`||￣￣￣￣",
+     "iヽ!|",
+     " ＼|.＿|| ￣￣",
+     " 　 　iヽ!|",
+     "　　 　＼|.＿||　",
+     " 　 　 　 iヽ!|",
+     "　　 　 　 ＼|"
+    ],
+    "row_numbers": [
+     45,
+     51
+    ],
+    "x_px": [
+     410,
+     500
+    ],
+    "row_pen_x": [
+     413,
+     419,
+     417,
+     414,
+     411,
+     420,
+     417
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "periodic_band",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+   },
+   "crop": "crops/sk-church99-pew-right.png",
+   "note": "Mirror pew ends spelled `iヽ!|` / `＼|.＿||` — not a literal glyph mirror of `|レi` (レ→ヽ, i→!), chosen for ink fit.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited `iヽ!|` opposite `|レi`; catalog lead, not operator approval"
+   },
+   "inspection": "r46 `iヽ!|`@419/422/434/438; r47 `＼|.＿||`@422-465: `＼`@422 under the stile, post `|`@438, then `.`@442 before the next rail `＿`@445 and its posts `||`@461/465; repeats 27px right: r48 `iヽ!|`@446-465, r49 `＼|.＿||`@449-492, r50 `iヽ!|`@473-492, r51 `＼|`@476/492; the dot-before-rail join mirrors the left side",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church99-altar-step-bands",
+   "role": "periodic_band",
+   "also_roles": [
+    "shoulder",
+    "side"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 72,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "straight",
+    "inside": "right",
+    "paper": "none inside the bands; the bands start one glyph inside each `／` riser"
+   },
+   "native": {
+    "rows": [
+     "　 　|:.:.|i_人",
+     "　 　| :.:.:.:.:.:",
+     "　 　|_;,;,;,;,;,;",
+     "　　　／:::::::",
+     "＿／;;::;;:;::::;",
+     "___|;;::;;:;::::;;;;;",
+     "／::::::::::::::::::"
+    ],
+    "row_numbers": [
+     38,
+     44
+    ],
+    "x_px": [
+     238,
+     310
+    ],
+    "row_pen_x": [
+     242,
+     242,
+     242,
+     242,
+     240,
+     240,
+     242
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+   },
+   "crop": "crops/sk-church99-altar-step-bands.png",
+   "note": "Altar steps where each tread is one alternating-punctuation band and each riser is a `／` or `＿／`/`___|` corner.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited punctuation bands on aa[99]; no operator rejection recorded"
+   },
+   "inspection": "r38 `|:.:.|i_人`@269-297 frieze; r39 `| :.:.:.`@269/278+ and r40 `|_;,;,;,`@269/273/278+ are two alternating bands (`:.` / `;,`); r41 `／`@275 then `::::`@291+; r42 `＿／`@240/256 then `;;::;;:;`@272+; r43 `___|`@240-255 then `;;::`@259+; r44 `／`@242 then `::::`@258+ — every band starts after its riser glyph's advance (4–16px from the riser's pen), never overlapping it",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church99-wall-brick-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "side"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 170,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "inside the gable `／..＼` openings (r22) only two dots each"
+   },
+   "native": {
+    "rows": [
+     "|___:|　　　　╋　　　　|;;:;:|　",
+     "|;;::;:|／..＼..┃..／..＼l＿|　",
+     "|＿i;;::;:＿i;;::;:＿i;;::;:＿i;;:;:|　",
+     "|;;::;:＿i;;::;:＿i;;::;:＿i;;::;:＿|　",
+     "|＿i;;::;:＿i;;::;:＿i;;::;:＿i;;:;:|　",
+     "|;;::;:＿i;;::;:＿i;;::;:＿i;;::;:＿|　"
+    ],
+    "row_numbers": [
+     21,
+     26
+    ],
+    "x_px": [
+     100,
+     270
+    ],
+    "row_pen_x": [
+     108,
+     108,
+     108,
+     108,
+     108,
+     108
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "side",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+   },
+   "crop": "crops/sk-church99-wall-brick-band.png",
+   "note": "Brick wall as a two-row unit `＿i;;::;:` whose rows alternate start so joints offset by half a brick (SKILL 8 copy-and-offset ground pattern).",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited punctuation band on aa[99]; no operator rejection recorded"
+   },
+   "inspection": "r23/25 `|＿i;;::;:＿i;;::;:…|`@108-265: unit = `＿`(16)+`i`+6 punctuation = 37px; r24/26 `|;;::;:＿i;;::;:…＿|` starts with the punctuation so `＿i` joints fall ~18px right; r21 `|___:|`@108-138 / `|;;:;:|`@246-265 are the side columns; r22 `／..＼..┃..／..＼`@142-230 sits on the band as two gables with `..` dots, `l＿|`@246-265 at right",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church101-pointed-apex",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 165,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the inner pointed arch; between the parallel rib strokes"
+   },
+   "native": {
+    "rows": [
+     " 　 -‐　　 ､＿＿,　　　‐-",
+     "　　　　　 l::::::::::l",
+     "　 　 　 .／／＼＼　　 　 　",
+     " 　 　 ／／　 　 ＼＼　　 　",
+     " 　 ／／　 　 　 　 ＼＼　　",
+     " ／／　　　　　　　 　 ＼＼"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     185,
+     350
+    ],
+    "row_pen_x": [
+     186,
+     195,
+     191,
+     189,
+     188,
+     186
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "shoulder"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#101",
+    "label": "church page 2f0353dc aa[101] (C#101)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "temporal-stroke-coherence.md 'Construction-preserving scale refinement' — static C#101 rows 1–24 vault/column/return relationships; aahub-reference-index.md Church aa[101] (static construction only, no animation behavior)"
+   },
+   "crop": "crops/sk-church101-pointed-apex.png",
+   "note": "Pointed vault apex: a colon-filled keystone with doubled `／／` / `＼＼` ribs whose inner pair meets directly beneath it.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited static construction; no operator rejection recorded. Static construction reference; establishes no temporal behavior."
+   },
+   "inspection": "r1 `､＿＿,`@250-289 lid; r2 `l::::::::::l`@255-288 keystone (10 `:`); r3 `.／／＼＼`@239-290: outer `／`@242 / `＼`@290 leave the keystone corners, inner `／`@258 + `＼`@274 meet as the apex; r4-6 both pairs descend 16-18px per row keeping a 16px rib width (`／／`@226/242 → @191/207; `＼＼`@290/306 → @321/337); `-‐`@207-215 and `‐-`@325-333 r1 are separate outer-vault ends",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church101-rib-shoulder-flank",
+   "role": "shoulder",
+   "also_roles": [
+    "flank",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 65,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the vault interior right of the rib"
+   },
+   "native": {
+    "rows": [
+     "　　　 　 ／",
+     " 　 　 ／／",
+     "　 　 /:::/　",
+     " 　 /:::/ 　",
+     "　 ,':::,'　　　",
+     "　l::::l　　　",
+     " l::::l　　　　",
+     " ｌ::::l　　　　",
+     " |::::|　　　　"
+    ],
+    "row_numbers": [
+     5,
+     13
+    ],
+    "x_px": [
+     150,
+     215
+    ],
+    "row_pen_x": [
+     155,
+     154,
+     150,
+     153,
+     151,
+     153,
+     155,
+     152,
+     150
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#101",
+    "label": "church page 2f0353dc aa[101] (C#101)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "temporal-stroke-coherence.md 'Construction-preserving scale refinement' — static C#101 rows 1–24 vault/column/return relationships; aahub-reference-index.md Church aa[101] (static construction only, no animation behavior)"
+   },
+   "crop": "crops/sk-church101-rib-shoulder-flank.png",
+   "note": "One rib turning from diagonal to vertical by changing glyph per slope: `／`→`/`→`,'`→`l`→`|`, with a colon core held between its two edges throughout.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited static vault/column relationship; no operator rejection recorded. Static construction reference; establishes no temporal behavior."
+   },
+   "inspection": "r5 `／`@209 and r6 `／／`@191/207 (16px/row); r7 `/:::/`@182-199 and r8 `/:::/`@174-191 (8px/row) introduce `:::` between the edges; r9 `,':::,'`@167-185; r10-12 `l::::l`@164-179 → `ｌ::::l`@157-173 (3-4px/row); r13 `|::::|`@155-171 vertical — the colon fill widens from 3 to 4 as the rib straightens",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church101-column-spring-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "tone_mid",
+    "side"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 135,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "right",
+    "paper": "between the wall diagonal and the column; right of the capital flare"
+   },
+   "native": {
+    "rows": [
+     ":　　　　 l:::: l　　　　　　",
+     ".　 　 　 !:::::l　　　　　　",
+     "＼　　　| :: |　 　 　 　 ",
+     "　 ＼　｜:::|　 　 　 　 ",
+     "　　　＼l＿|　 　 　 　 ",
+     "　 　 　 l__/\"\"　'''　‐- ",
+     "　　　　 | |　　 　　 　 　"
+    ],
+    "row_numbers": [
+     12,
+     18
+    ],
+    "x_px": [
+     0,
+     135
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "shoulder",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#101",
+    "label": "church page 2f0353dc aa[101] (C#101)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "temporal-stroke-coherence.md 'Construction-preserving scale refinement' — static C#101 rows 1–24 vault/column/return relationships; aahub-reference-index.md Church aa[101] (static construction only, no animation behavior)"
+   },
+   "crop": "crops/sk-church101-column-spring-junction.png",
+   "note": "Three members meet at one post: wall diagonal lands on the rib's foot, the rib closes with `l＿|`, and `l__/\"\"` flares the capital before the shaft continues.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited static column/return relationship; no operator rejection recorded. Static construction reference; establishes no temporal behavior."
+   },
+   "inspection": "rib `l:::: l`@52-72 r12 / `!:::::l`@51-70 r13 thins to `| :: |`@49-69 r14 and `｜:::|`@43-68 r15, then closes `l＿|`@49/52/68 r16; wall `＼`@0 r14 → @16 r15 → @33 r16 lands on that `l`@49; r17 `l__/\"\"`@48-77 flares right into the spring `'''`@96-102 / `‐-`@116-124; r18 `| |`@49/58 shaft; `:`/`.`@0 r12-13 are the wall's own tone",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church104-spire-apex",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the recess between the doubled inner posts; under the lintel"
+   },
+   "native": {
+    "rows": [
+     "　　　　∧",
+     "　　／|.￣ |＼",
+     " 　 |　||　　||　|",
+     "＿|　||　　||　|＿＿",
+     "_／￣￣￣￣＼＿"
+    ],
+    "row_numbers": [
+     2,
+     6
+    ],
+    "x_px": [
+     240,
+     350
+    ],
+    "row_pen_x": [
+     242,
+     242,
+     241,
+     246,
+     243
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "shoulder"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#104",
+    "label": "church page 2f0353dc aa[104] (C#104)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "temporal-stroke-coherence.md 'Construction-preserving scale refinement' — static C#104 rows 2–5 pointed upper construction and 15–21 framed altar panel; aahub-reference-index.md Church aa[104] (static construction only, no animation behavior)"
+   },
+   "crop": "crops/sk-church104-spire-apex.png",
+   "note": "Small `∧` over a `／|.￣ |＼` gable: cap, shoulders and doubled posts at 5 rows, plus a second `_／￣￣￣￣＼＿` shoulder pair at the base.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited static pointed upper construction (rows 2–5); no operator rejection recorded. Static construction reference; establishes no temporal behavior."
+   },
+   "inspection": "r2 `∧`@286 cap; r3 `／|.￣ |＼`@264-312: shoulders `／`@264 and `＼`@312 drop onto outer sides `|`@262 / `|`@326 r4-5, inner posts `||`@277/281 and `||`@307/311 frame a recess whose lintel `.￣`@284/287 stops short of the right post; r5 `＿|`@246 / `|＿＿`@326-346 side roofs; r6 `_／￣￣￣￣＼＿`@243-344 = `／￣` + `￣＼` shoulders carrying the base out",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church104-altar-panel-frame",
+   "role": "closed_ring",
+   "also_roles": [
+    "side",
+    "return_base",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 230,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the inner frame posts and the medallion; between outer posts and inner frame (only `.` dots)"
+   },
+   "native": {
+    "rows": [
+     " |　　　 　 ＿＿＿＿＿＿_ 　 　 　 | 　",
+     " |.　 　 　 | |￣＞―＜￣| |　 　 　 .| 　",
+     " |.　 　 　 | |／≧三≦＼| |　 　 　 .| 　",
+     " |.　 　 　 | ||≧≦ .≧≦|| |　 　 　 .| 　",
+     " |.　 　 　 | |＼≧三≦／| |　 　 　 .| 　",
+     " |.　 　 　 | |＿＞―＜＿| |　 　 　 .| 　",
+     "_|￣￣￣￣￣￣￣￣￣￣￣￣￣|＿"
+    ],
+    "row_numbers": [
+     15,
+     21
+    ],
+    "x_px": [
+     180,
+     410
+    ],
+    "row_pen_x": [
+     183,
+     183,
+     183,
+     183,
+     183,
+     183,
+     183
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "side",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#104",
+    "label": "church page 2f0353dc aa[104] (C#104)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "temporal-stroke-coherence.md 'Construction-preserving scale refinement' — static C#104 rows 2–5 pointed upper construction and 15–21 framed altar panel; aahub-reference-index.md Church aa[104] (static construction only, no animation behavior)"
+   },
+   "crop": "crops/sk-church104-altar-panel-frame.png",
+   "note": "Framed altar panel: double posts and lintel/sill around an octagonal medallion whose corners turn with `／＼` pairs and whose fill is `≧三≦`.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited static framed altar panel (rows 15–21); no operator rejection recorded. Static construction reference; establishes no temporal behavior."
+   },
+   "inspection": "r15 lintel `＿＿＿＿＿＿_`@246-342; double posts `| |`@243/252 and `| |`@336/345 r16-20; medallion r16 `￣＞―＜￣`@256-320 / r17 `／≧三≦＼`@256-320 / r18 `|≧≦ .≧≦|`@256-332 (centre `.`@297) / r19 `＼≧三≦／` / r20 `＿＞―＜＿` — octagon closed by `／＼` corners; r21 sill `￣`×13@192-384 under `_|`@183/188 and `|＿`@400/404; outer posts `|.`@188/192 and `.|`@397/400 carry one dot per row",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church126-diagonal-light-paper",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "tone_fringe",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 11,
+    "px_wide": 190,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "a broad diagonal wedge from the arches (upper right) down-left to rows 22–25, empty of dots"
+   },
+   "native": {
+    "rows": [
+     ":::/:::::::: ／￣＼:::|: :.:| `ｰ‐': :|: :|",
+     ":/:: :　 '⌒ヽ, 　^,|｀ﾆ=ｰー--|--",
+     ": : : 　 　 　 　 . :|: : :／⌒ヽ.:|: :|",
+     ": :　 : ｉ: .　　　　　 . :|　　　 | |: :|",
+     ": 　 :.j{: : : .　　　　　　　 . : | |: :|",
+     ":　.:::j{ 　 : |: .　　　　　　　 :| |: :|",
+     ":　 :j{　　 :|: :.ｉ: ..　　　 　 　　|: :|",
+     ".:.:.:j{:　　｜:::|:::| : . 　 　 　 　　:|",
+     ".:. j{　 　 |: : |:::|: : : ｉ: .　　　　　　",
+     "ﾞ::j{‐-　,,|:::: |:::|: : :.:|_:_:__ 　 　 　",
+     "::j{;:;:;:::: : ￣|:::|:.:: :.:|: ;:;: : : .　　　"
+    ],
+    "row_numbers": [
+     15,
+     25
+    ],
+    "x_px": [
+     0,
+     190
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after the four-pattern table (church 2f0353dc-126 bounded tone vs broad open diagonal paper, a lighting/negative-space analogy, not principal highlights); aahub-reference-index.md Church aa[126]"
+   },
+   "crop": "crops/sk-church126-diagonal-light-paper.png",
+   "note": "Ruin interior where a broad diagonal of open paper is kept by stopping every masonry/rubble group with thinning `: .`/`ｉ: ..` tails along its edge.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited contrast of bounded tone with open diagonal paper; lighting reading is the skill's analogy, not an operator region label"
+   },
+   "inspection": "arches `／￣＼`@46-78 r15, `'⌒ヽ,`@41-72 r16, `／⌒ヽ`@122-154 r17 bound the wedge's top; rubble edge `j{`@30→26→22→18→14→10→6 r19-25 steps down-left with `.:::`/`:.` beside it; lower masonry `|: : |:::|` rows 21-25 ends on the wedge side in thinning tails `: .`/`ｉ: ..`@72-93 r21, `ｉ: .`@115-127 r23, `: : .`@142-158 r25; column `|: :|`@172-187 rows 15-22 bounds the right; no punctuation inside the wedge",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-church126-ray-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "tone_mid",
+    "side"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 150,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "a few px before each `ﾞi,` / `‘i,` stroke; tone runs never cross a stroke"
+   },
+   "native": {
+    "rows": [
+     " | : ﾞi,: : ‘i,: : ∨∧",
+     "　|.:. ﾞi,.:.: ‘i,.:.:.:∨/",
+     " 　 |.:.:.ﾞi,.:.:.:‘i,.:.:. ∨",
+     " 　 |: : ﾞi,: :. ‘i, .:.: ∨",
+     "　　|.:.: ﾞi,.:.:. ‘i,.:.:.:.:",
+     "　 __|.:.:.:ﾞi,.:.:.:.‘i,.:.:.:",
+     ":.:.:.:.::|.: : ﾞi, .:.: ‘i,.:.:"
+    ],
+    "row_numbers": [
+     18,
+     24
+    ],
+    "x_px": [
+     300,
+     450
+    ],
+    "row_pen_x": [
+     308,
+     306,
+     300,
+     304,
+     307,
+     307,
+     307
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after the four-pattern table (church 2f0353dc-126 bounded tone vs broad open diagonal paper, a lighting/negative-space analogy, not principal highlights); aahub-reference-index.md Church aa[126]"
+   },
+   "crop": "crops/sk-church126-ray-band.png",
+   "note": "Diagonal stripes made of stepped `ﾞi,` / `‘i,` strokes with alternating dense `.:.:` and thinned `: :` rows between them.",
+   "status": {
+    "state": "retained",
+    "reason": "cited aa[126] colon/dot thinning; no operator rejection recorded"
+   },
+   "inspection": "three parallel diagonals step right ~4-6px/row: wall `|`@313 r18 → @337 r24, `ﾞi,`@330 → @360, `‘i,`@356 → @392; between them r19/20/22/23 use dense `.:.:.` runs and r18/21/24 thinned `: :` runs (e.g. r20 `.:.:.:`@350-365 vs r21 `: :.`@355-366); every run stops before the next stroke; `∨∧`/`∨/`/`∨`@386-410 r18-21 is a separate lattice at the band's upper right",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-tree7-crown-texture-edge",
+   "role": "texture_boundary",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 150,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "all sky beyond the last texture mark on each row; no outline glyph is placed there"
+   },
+   "native": {
+    "rows": [
+     "　\" \" ヾ　; \" ; \" ; ; ヾ",
+     "\"ゞ ; ; ; ゞ ; ;ヾ ; ; ヾ ;ゞ　",
+     "ヾ ; ;\";;/\" ; ;ヾ　;ヾ \"\"",
+     "; \"i \"; ;ヾ; ;ヾ; ;ﾒヾ　　　　",
+     "ii;, メｿ　ヾ; ;ゞ　\"　　　ﾞ"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     0,
+     150
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root)"
+   },
+   "crop": "crops/sk-tree7-crown-texture-edge.png",
+   "note": "Crown edge carried only by where `;`/`ヾ`/`ゞ`/quote texture stops against sky — no traced contour.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited texture-supported boundary (rows 1–5); T aa[7] is an annotated page but no region note was read for this entry"
+   },
+   "inspection": "r1 sparse `\" \" ヾ ; \" ; \" ; ; ヾ`@11-118; r2 densest `\"ゞ ; ; ; ゞ ; ;ヾ ; ; ヾ ;ゞ`@0-128; right edge recedes `ヾ`@118 r1 → `ゞ`@128 r2 → `\"\"`@117/125 r3 → `ﾒヾ`@89/97 r4 → `ゞ`@72 r5 with a detached `\"`@94 and `ﾞ`@135 (falling marks); `/`@42 r3 and `i`@16 r4 are branch hints inside; every row ends in full-space sky",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-tree7-trunk-dots",
+   "role": "tone_mid",
+   "also_roles": [
+    "side",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 25,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "column ~12–18px between the dot pair and the right edge `|`"
+   },
+   "native": {
+    "rows": [
+     "|i;, |ｿ",
+     "Il;: |",
+     "!ｉ;: |　",
+     "|!;; |",
+     "IＩ;; |"
+    ],
+    "row_numbers": [
+     6,
+     10
+    ],
+    "x_px": [
+     0,
+     25
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (tree rows 6–10 `|i;, |`, `Il;: |`)"
+   },
+   "crop": "crops/sk-tree7-trunk-dots.png",
+   "note": "Trunk as two edges with one uneven punctuation pair hugging the left edge — shading the cylinder, not filling it.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited dots-as-form trunk rows 6–10; no operator rejection recorded"
+   },
+   "inspection": "left edge is a doubled stroke respelled every row: `|i`@0/4 r6, `Il`@0/4 r7, `!ｉ`@0/4 r8, `|!`@0/4 r9, `IＩ`@0/4 r10; one punctuation pair right beside it: `;,`@7/10, `;:`@7/10, `;:`@8/11, `;;`@8/11, `;;`@8/11; right edge single `|`@18-19 r6-10; `ｿ`@22 r6 leaves the right edge as the branch; paper between pair and right edge every row",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-tree7-root-ground-contact",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 45,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "between `从` and `ゝ`; above the `\"\"\"\"` ground strip to the right of the roots"
+   },
+   "native": {
+    "rows": [
+     "|!;; |",
+     "IＩ;; |",
+     "从 ゝ,,",
+     "\"\"\"\""
+    ],
+    "row_numbers": [
+     9,
+     12
+    ],
+    "x_px": [
+     0,
+     45
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "tone_mid",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (tree row 11 `从 ゝ,,`)"
+   },
+   "crop": "crops/sk-tree7-root-ground-contact.png",
+   "note": "Trunk base with no closed bottom: left edge becomes a splayed `从`, right edge flares out as `ゝ` into `,,` ground flicker.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited row 11 `从 ゝ,,`; no operator rejection recorded"
+   },
+   "inspection": "r9-10 trunk `|!;; |` / `IＩ;; |` (edges @0/4 and @19); r11 `从`@0 replaces the doubled left edge with three splayed legs, `ゝ`@21 turns out of the right edge's line, `,,`@33/36 ground flicker continues right; r12 `\"\"\"\"`@0-24 ground strip under the roots; the gap 16-21 under the trunk interior is left open",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-tree7-branch-entry",
+   "role": "contact_junction",
+   "also_roles": [
+    "texture_boundary",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 50,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "NE",
+    "curvature": "inflection",
+    "inside": "left",
+    "paper": "between the forking `ｿ`/`メｿ` strokes and the crown texture; trunk interior right of the dot pair"
+   },
+   "native": {
+    "rows": [
+     "ヾ ; ;\";;/",
+     "; \"i \"; ;ヾ",
+     "ii;, メｿ　ヾ",
+     "|i;, |ｿ　　",
+     "Il;: |"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     0,
+     50
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "texture_boundary",
+    "up": "texture_boundary",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root)"
+   },
+   "crop": "crops/sk-tree7-branch-entry.png",
+   "note": "Trunk opens into the crown: right edge forks as `ｿ` → `メｿ` and dissolves into texture; the trunk top is never capped.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited rows 5–11 relating envelope to branch/trunk; no operator rejection recorded"
+   },
+   "inspection": "right edge `|`@18 r6-7 → `ｿ`@22 r6 → `メｿ`@17/29 r5 (two strokes forking right/up) → crown `ヾ`@43 r4 / `ヾ`@49 r5 and `/`@42 r3; left edge `Il`@0/4 r7 → `|i`@0/4 r6 → `ii;,`@0-9 r5 → `i`@16 r4 rises into `; \"` texture; no glyph caps the trunk between 4 and 18 on r5",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-cup176-cylinder-tone",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 111,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the left 25–50px inside the cup next to `}`/`ｉ`/`l`; the start of each ramp varies"
+   },
+   "native": {
+    "rows": [
+     "l　　　　 ￣...:;:彡|",
+     "}　　. . ...::::;:;;;;;彡{",
+     "ｉ　　　. . ...:::;;;;;彡|",
+     "} 　 . .....:::;::;:;;;;彡{",
+     "!,　　　 . .:.::;:;;;彡j::"
+    ],
+    "row_numbers": [
+     8,
+     12
+    ],
+    "x_px": [
+     284,
+     395
+    ],
+    "row_pen_x": [
+     286,
+     287,
+     286,
+     287,
+     288
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "cast_shadow_edge"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
+    "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+   },
+   "crop": "crops/sk-cup176-cylinder-tone.png",
+   "note": "Surface-following cylinder tone: each row ramps `. .`→`...`→`::::`→`;;;;`→`彡` toward the right silhouette, leaving the lit left side as paper.",
+   "status": {
+    "state": "retained",
+    "reason": "the cited surface-following tone; catalog/operator source binding per the index, not a region approval"
+   },
+   "inspection": "r9 `. . ...::::;:;;;;;彡{`: dots @313-335, `::::`@338-347, `;:;;;;;`@350-368, `彡`@371, side `{`@387; r10 starts later (@323), r11 earlier (@312), r12 later (@333) — uneven lit edge; `彡`@371-374 stacked on every row forms a dark band ~14px inside the right side `|`/`{`@387-388; left side `}`/`ｉ`/`!`@286-288 has paper beside it",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-cup176-rim-ellipse",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 111,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the liquid ellipse between `<` and `ン`; above the outer rim"
+   },
+   "native": {
+    "rows": [
+     "　 . -‐　） ‐- .",
+     ".´,.::::;;:... .　. _ 　`.",
+     "i ヾ<:;_　　　_,.ン |",
+     "l　　　　 ￣...:;:彡|"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     284,
+     395
+    ],
+    "row_pen_x": [
+     286,
+     286,
+     286,
+     286
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
+    "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+   },
+   "crop": "crops/sk-cup176-rim-ellipse.png",
+   "note": "Cup mouth as an outer rim broken by steam plus an inner liquid ellipse whose near edge returns as `ヾ<_ … _,.ン`.",
+   "status": {
+    "state": "retained",
+    "reason": "same cited piece; rim construction is not the cited surface-tone feature itself; no operator note"
+   },
+   "inspection": "r5 outer rim `. -‐`@302-318 and `‐- .`@350-371 broken by steam `）`@337; r6 shoulders `.´`@286/289 and `` `. ``@381/388 with far-wall dots `,.::::;;:...`@297-330; r7 inner ellipse `ヾ<`@294/306 turns, `:;_`@314-320 … `_,.ン`@358-369 returns; r8 `￣`@338 inner bottom; sides `i`/`l`@286 and `|`@388 drop from r7",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-cup176-plate-ellipse-return",
+   "role": "return_base",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 265,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "plate surface around the food; between the two stacked near-rim runs"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　 ＿,,,,,,,,,,,　　,,..,,,,,____　.　　　　　　",
+     "　　 ,, -'''\" . 　 　_,,..,,,,,,_　　　　　゛`'丶.､.......",
+     ".　 '´ 　 　　 　 / ,' 3　 `ヽｰっ　　　::::::...`.::::",
+     "　i 　 　 　　 　 l　　 ⊃　　⌒_つ　　.:::::::::　 ",
+     ".　ヽ､ 　 　　 　 `''ｰ---‐'''''\"　　　　　　　,: '",
+     "　　　 `=ｰ--､....,,,,,_＿＿＿＿_,,,,,...--‐=''´..:",
+     "　　　　　 ｀`\" '' 'ー───‐―‐' ''' \"´"
+    ],
+    "row_numbers": [
+     15,
+     21
+    ],
+    "x_px": [
+     0,
+     265
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "cast_shadow_edge",
+    "up": "paper",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
+    "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+   },
+   "crop": "crops/sk-cup176-plate-ellipse-return.png",
+   "note": "Wide plate ellipse: soft comma-run far rim, `'´`/`i`/`ヽ､` flank, and a near rim drawn as two stacked runs that are solid at centre and fade to commas/quotes at the ends.",
+   "status": {
+    "state": "retained",
+    "reason": "same cited piece; plate structure is context for the cited tone; no operator note"
+   },
+   "inspection": "r15 far rim `＿,,,,,,,,,,,`@71-117 / `,,..,,,,,____`@142-184; r16 shoulders `,, -'''\"`@27-55 and `゛`'丶.､`@198-235; flank `'´`@19/22 r17 → `i`@11 r18 → `ヽ､`@14/26 r19; near rim r20 `` `=ｰ--､....,,,,,_＿＿＿＿_,,,,,...--‐=''´ ``@38-249 over r21 `｀`\" '' 'ー───‐―‐' ''' \"´`@60-227 (rim thickness); food `/ ,' 3`, `⊃ ⌒_つ` inside with paper around; `::::::...`@217-244 r17 / `.:::::::::`@220-247 r18 is a tone field on the plate's right half",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-cup176-cast-shadow",
+   "role": "cast_shadow_edge",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 120,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "above row 12's start and right of the dot tapers"
+   },
+   "native": {
+    "rows": [
+     ";;;彡{",
+     ";;;彡j:::::::::::::::.......",
+     ":=:彳:::::::::::::::::::::::::::..",
+     ";;ジ.::::::::::::::::::::::"
+    ],
+    "row_numbers": [
+     11,
+     14
+    ],
+    "x_px": [
+     360,
+     480
+    ],
+    "row_pen_x": [
+     362,
+     362,
+     361,
+     362
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
+    "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+   },
+   "crop": "crops/sk-cup176-cast-shadow.png",
+   "note": "Cast shadow as solid colon runs starting at the cup's base and ending in `.......` tapers — no outline on either edge.",
+   "status": {
+    "state": "retained",
+    "reason": "same cited piece; shadow is adjacent to the cited surface tone; no operator note"
+   },
+   "inspection": "cup side ends `彡{`@371/387 r11, `彡j`@371/387 r12, `:=:彳`@361-375 r13, `;;ジ`@362-368 r14; shadow begins at `j`@387 r12 as `:`×15@391-433 tapering `.......`@436-454; r13 `:`×27@391-469 then `..`@472-475; r14 `.`@382 + `:`×22@385-448 (shorter); far edge is a dot taper, top edge the row-12 start",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke153-small-puff",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "return_base",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 55,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the whole lobe interior (full spaces only)"
+   },
+   "native": {
+    "rows": [
+     " 　/⌒)",
+     " （　　　）",
+     "ゝ__ノ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     110,
+     165
+    ],
+    "row_pen_x": [
+     110,
+     110,
+     120
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-153.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-153 <- res153 (AAHub smoke page aa[153], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (empty lobe interiors; blank between overlapping lobes separates them — res153) and 15.7.1 (a complete smoke piece can be its contour alone, res153); aahub-reference-index.md Smoke aa[153]"
+   },
+   "crop": "crops/sk-smoke153-small-puff.png",
+   "note": "Closed 3-row puff: `/⌒)` cap, `（ ）` flanks, `ゝ__ノ` base, interior empty — one stroke per side.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res153 contour-only piece. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r1 `/⌒)`@126/134/150 cap (the `/` starts 11px right of the flank below); r2 `（`@115 and `）`@156 bulge out as flanks with three full spaces between; r3 `ゝ__ノ`@120-142 returns 5–14px inside the flanks — the 15.5 lobe-base idiom; no interior glyph",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke153-lower-lobe",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "return_base",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 135,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "lobe interiors and the overlap seam between `,,ゝ` and `（`"
+   },
+   "native": {
+    "rows": [
+     "　　　　　／⌒て_",
+     "　 　　　,,ゝ　　　　￣）",
+     "　　　 （　　 　 　 ／",
+     "ー----´--‐‐～´"
+    ],
+    "row_numbers": [
+     4,
+     7
+    ],
+    "x_px": [
+     0,
+     135
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-153.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-153 <- res153 (AAHub smoke page aa[153], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (empty lobe interiors; blank between overlapping lobes separates them — res153) and 15.7.1 (a complete smoke piece can be its contour alone, res153); aahub-reference-index.md Smoke aa[153]"
+   },
+   "crop": "crops/sk-smoke153-lower-lobe.png",
+   "note": "Lower smoke mass of overlapping lobes: `／⌒て_` and `￣）` caps, a blank overlap seam, and the ground line as its open base.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res153 (blank between overlapping lobes separates them). Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r4 `／⌒て_`@55-101: `／`→`⌒` cap hooks into `て`, a lobe tucked behind; r5 `￣）`@111/127 caps the right lobe; r5 `,,ゝ`@49-55 is a notch where two left lobes overlap, r6 `（`@38 the lower-left lobe and `／`@105 the right side falling; r7 ground `ー----´--‐‐～´`@0-103 with `´`@47 and `～´`@87/103 where lobes meet ground — no closed lobe bottoms",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke132-ring",
+   "role": "flank",
+   "also_roles": [
+    "rim_cap",
+    "opening_paper_gap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 85,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "inflection",
+    "inside": "enclosed",
+    "paper": "the entire column interior; the gap between `／` and `⌒` at the top"
+   },
+   "native": {
+    "rows": [
+     "　／　 ⌒ヽ",
+     " 〔　　　　　ﾉ",
+     "　 ＼　　 (",
+     " 　 ﾉ　 　 ヽ",
+     "　 （_　　　 ノ",
+     "　　　つ （",
+     "　　 （　⌒",
+     "　　　 ヽ（"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     75,
+     160
+    ],
+    "row_pen_x": [
+     77,
+     75,
+     76,
+     82,
+     76,
+     77,
+     77,
+     77
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-132.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-132 <- res132 (AAHub smoke page aa[132], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (puff and ring interiors stay empty, each lobe only its contour — res132) and 15.5 idiom table; aahub-reference-index.md Smoke aa[132]"
+   },
+   "crop": "crops/sk-smoke132-ring.png",
+   "note": "Rising smoke column whose two flanks wave independently with paired idioms (`〔`/`ﾉ`, `(`/`ヽ`, `（_`/`ノ`) and an interior left wholly empty.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res132 puff/ring interiors empty. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "left flank `／`@88 r1 → `〔`@80 → `＼`@92 → `ﾉ`@103 → `（_`@92/100 → `つ`@110 → `（`@104 → `ヽ`@115 r8; right flank `⌒ヽ`@120/136 r1 → `ﾉ`@143 → `(`@135 → `ヽ`@143 → `ノ`@143 → `（`@130 → `⌒`@123 → `（`@127 r8; top is a shoulder `／` and a lobe `⌒ヽ` with paper between (not joined); column narrows from ~60px to ~12px; no interior glyph",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke13-outer-ring-turn",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 140,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "inside the ring (right/below the fringe dots)"
+   },
+   "native": {
+    "rows": [
+     "　　 　 　 　 . .:;:;:;:;:;:;:;:;:;",
+     "　　 　 　 ,:;:;:;:;:;:;:;:;:.:.:.:.:.",
+     "　　　　.:;:;:;:;:;:;:.:.:.:.:.:... .. ",
+     "　 　 .:;:;:;:;:;:.:.:.:.:.:.:... ..　　",
+     "　　 .:;:;:;:;:;:.:.:.:.. ..　　　　",
+     "　　.:;:;:;:;:.:.:.:... .　　　　　"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     0,
+     140
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-13.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-13 <- res13 (AAHub smoke page aa[13], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (A band is two alternating glyphs; `:.:.`/`;:;:` bands, thinned rims — res13); aahub-reference-index.md Smoke aa[13] (alternating band and rim-dot example; not a global recipe)"
+   },
+   "crop": "crops/sk-smoke13-outer-ring-turn.png",
+   "note": "Ring band turning a corner as alternating `;:` core on the outer side, `.:` mid, `.. .` fringe toward the inside — rim-weighted band with no outline.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res13 alternating band / rim dots; local treatment, not a global recipe. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "each row: `.:;:;:;…` core at the outer (left) end → `.:.:.:` mid → `... ..` fringe: r2 `,:;:;:;:;:;:;:;:;:.:.:.:.:.`@59, r3 `.:;:;:;:;:;:;:.:.:.:.:.:...`@44 + `..`@130, r4 starts @32 + `..`@118, r5 @27 + `..`@92, r6 @22 + `.`@84; row starts move left 15→12→5→5px as the band turns toward vertical; the `;` count of the core shrinks from 8 (r2) to 4 (r6) while the fringe stays 1–3 dots",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke13-inner-ring-top",
+   "role": "periodic_band",
+   "also_roles": [
+    "rim_cap",
+    "tone_mid",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 180,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the ring's hole below row 7; the centre of rows 8–9"
+   },
+   "native": {
+    "rows": [
+     ".....:;:;:;:;:;:;:;:;:;:;:;:;:;:;:;:;:;:..... 　 　 　",
+     ":;:;:;:;:;:;:;:.:;:..;:.:..:;:.:;:;:;:;:;:;:;:;:;:. .　　",
+     ":;:;:.:.:.:.:.. .:. .:. .:. ..:.:.:.:.:;:;:;:;:;:;:;:;:.",
+     ":.:.:... .. .. . .　.. .. .. ...:.:.:.:.:.:;:;:;:;:;:;",
+     ".:... ..　　　　 　 　 .. ...:.:.:.:.:.:.:;:;:"
+    ],
+    "row_numbers": [
+     5,
+     9
+    ],
+    "x_px": [
+     240,
+     420
+    ],
+    "row_pen_x": [
+     241,
+     242,
+     242,
+     240,
+     242
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "paper",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-13.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-13 <- res13 (AAHub smoke page aa[13], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (A band is two alternating glyphs; `:.:.`/`;:;:` bands, thinned rims — res13); aahub-reference-index.md Smoke aa[13] (alternating band and rim-dot example; not a global recipe)"
+   },
+   "crop": "crops/sk-smoke13-inner-ring-top.png",
+   "note": "Top of an inner ring made purely of band tone: a solid `:;:;` cap row, then the centre thins `.:. .:.` → `.. ..` → empty while the sides stay dense.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res13 band thinning by erasing members. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r5 `.....:;:;…;:.....`@241 — dots taper both ends of a solid `:;` run (the cap); r6 `:;:;…:.:;:..;:.:..:;:…`@242 mixes `.` into the centre; r7 `:;:;:.:.:.:.:..`@242 then spaced `.:.`@292/306/320 then dense again @334; r8 centre only `..`/`.` @269-335; r9 centre empty from ~270 to 349 — the hole opens by erasing band members, not by a lighter glyph",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke168-lobe-cap-right",
+   "role": "rim_cap",
+   "also_roles": [
+    "return_base",
+    "tone_mid",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 155,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the lower-right lobe (rows 3–4 between `｀ヽ` and `)`), and outside the contour at top right"
+   },
+   "native": {
+    "rows": [
+     ":::::::::::::_r'⌒(",
+     ":::: : ノ｀...:.:::::ヽ",
+     ": r'　.:　　　　　｀ヽ",
+     "::::).::.:.　　　.:.:.:::::::::)",
+     "く.:.　　　　.:.:.::::::　　⌒"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     500,
+     655
+    ],
+    "row_pen_x": [
+     502,
+     500,
+     504,
+     502,
+     501
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "paper",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-168.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-168 <- res168 (AAHub smoke page aa[168], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (`⌒ヽ` lobes bound to smoke contour, `::::` to smoke body — res168; band/rim thinning) and 15.5 idiom table; aahub-reference-index.md Smoke aa[168]"
+   },
+   "crop": "crops/sk-smoke168-lobe-cap-right.png",
+   "note": "Lobe idioms in place on the dense body's edge: `_r'⌒(` cap, `ノ｀` turn, `｀ヽ`/`)` lobe, with colon tone thinning to `.:.:` inside the lighter lobes.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res168 `⌒` lobes bound to smoke contour, `::::` to body. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r1 dense body `:::::::::::::`@502 ends in `_r'⌒(`@541-571 (cap entering from the body); r2 `ノ｀`@525/536 turns down, `...:.:::::`@543+ then `ヽ`@574; r3 `r'`@512/518 and `｀ヽ`@593/601 shoulder of a lower lobe; r4 `)`@514 and `)`@612 close two lobes; r5 `く`@501 and `⌒`@618 start the next; inside the lobes tone is `.:.:.:::::::::` — lighter than the `::::` body to the left",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke168-hollow-in-body",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "flank",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 190,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "none",
+    "paper": "the cavity under `ｒ‐‐‐--､` down to row 9, except the dotted inner puff on the right"
+   },
+   "native": {
+    "rows": [
+     "::::::::::::::::::::::::::: ｒ‐‐‐--､:::::::::::::::::",
+     "::::::::::::: -‐''''''´　　　　　ヽ_::::::::::",
+     "::: : ／　　　　　　　　　　　｀`-､",
+     ": !,:´　　　　　　::::::::::::::.　　　...:::",
+     ":::l　　　　　　　｀::::　:::::::::::::::::::::::",
+     "::j　　　　　　　　　　　　　　｀;:::::",
+     ": !／　　　　　　　.............:::::::::::　_"
+    ],
+    "row_numbers": [
+     3,
+     9
+    ],
+    "x_px": [
+     270,
+     460
+    ],
+    "row_pen_x": [
+     270,
+     272,
+     272,
+     272,
+     272,
+     271,
+     270
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "tone_core",
+    "up": "tone_core",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-168.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-168 <- res168 (AAHub smoke page aa[168], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (`⌒ヽ` lobes bound to smoke contour, `::::` to smoke body — res168; band/rim thinning) and 15.5 idiom table; aahub-reference-index.md Smoke aa[168]"
+   },
+   "crop": "crops/sk-smoke168-hollow-in-body.png",
+   "note": "Paper cavity cut into a solid `::::` smoke body: drawn cap/shoulder/left flank on top and left, density-shift boundary on the right.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res168 body/contour material binding. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r3 `ｒ‐‐‐--､`@356-402 caps the cavity inside `::::`; r4 `-‐''''''´`@316-350 (left shoulder) and `ヽ_`@413/425 (right); r5 `／`@294 and `｀`-､`@431-454; left flank `!,:´`@280-290 r6 → `l`@281 r7 → `j`@277 r8 → `!／`@278/282 r9, with `:`/`::` body outside; right side has no contour — `｀::::`@361 r7 / `｀;:::::`@435 r8 and the `.............:::`@375 r9 run mark it by density; `::::::::::::::.`@364 r6 is a dotted inner puff left unoutlined",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke168-left-lobe-flank",
+   "role": "flank",
+   "also_roles": [
+    "rim_cap",
+    "tone_core",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 170,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "left of the contour; a detached `｀::::` puff at rows 3–4 has paper around it"
+   },
+   "native": {
+    "rows": [
+     "'´　⌒｀`ヽ、::::::::::::::::::::::::::::::::",
+     "　　　　　　　ヽ:::::::::::::::::::::::::::",
+     "　　　:::　　　　 ）::::::::::::::::::::::::",
+     "　　　 ｀:::::::::::: ﾉ:::::::::::::::::::::::::",
+     "　　　　　　 ヽ,::::::::::::::::::::::::::::",
+     "　　　　　　　　--､::::::::::::::::::::",
+     "　　　　　　　　　　｀ヽ､:::::::::::"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     170
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_core",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-168.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-168 <- res168 (AAHub smoke page aa[168], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (`⌒ヽ` lobes bound to smoke contour, `::::` to smoke body — res168; band/rim thinning) and 15.5 idiom table; aahub-reference-index.md Smoke aa[168]"
+   },
+   "crop": "crops/sk-smoke168-left-lobe-flank.png",
+   "note": "Left edge of a dense smoke body drawn as a lobe chain (`'´ ⌒｀`ヽ、` → `ヽ` → `）` → `ﾉ` → `ヽ,` → `--､` → `｀ヽ､`) with `::::` body tone butting directly against it.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res168 `⌒ヽ` lobes to contour, `::::` to body. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r1 `'´`@0 then `⌒｀`ヽ、`@22+ cap (15.5 `⌒` + `｀ヽ`) with `::::`body immediately after; r2 `ヽ`@77; r3 `）`@91 bulges; r4 `ﾉ`@87 turns back; r5 `ヽ,`@71; r6 `--､`@88; r7 `｀ヽ､`@110 — each contour glyph is followed directly by the body's colons; r3 `:::`@33 and r4 `｀::::::::::::`@38 form a small detached puff with no outline",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke9-lit-wall-shoulder",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 100,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "straight",
+    "inside": "right",
+    "paper": "left of the `／` edge between the stacked `|||` posts and the wall"
+   },
+   "native": {
+    "rows": [
+     "..||| 　 .|iiiiiiiiiiiiiiii",
+     "|||　　 .|iiiiiiiiiiiiiiii",
+     "||| 　 ／iiiiiiiiiiiiiiiii",
+     "|._／iiiiiiiiiiiiiiiiiiiiiii",
+     "|.|iiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
+    ],
+    "row_numbers": [
+     9,
+     13
+    ],
+    "x_px": [
+     60,
+     160
+    ],
+    "row_pen_x": [
+     66,
+     66,
+     60,
+     63,
+     61
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-09.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-09 <- res9 (AAHub smoke page aa[9], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (material language: `iiii` lit wall, res9) and 15.6 ('the lit wall in res9'); aahub-reference-index.md Smoke aa[9]"
+   },
+   "crop": "crops/sk-smoke9-lit-wall-shoulder.png",
+   "note": "Lit building wall as rows of `iiii` (material binding) whose left edge widens through a `／` / `._／` diagonal.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited res9 `iiii` lit wall material; city construction on a smoke page — material binding only. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r9-10 `.|iiiiiiiiiiiiiiii`@105 wall rows sit right of separate `|||` posts @60-80; r11 `／`@93 begins the wall one glyph earlier; r12 `|._／`@63/67/70/75 lands the diagonal on the next post; r13 `|.|iiii…`@61 the wall reaches full width; each row is one unbroken `i` run (vertical ink), rows separated by the 17px line pitch only",
+   "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-smoke9-twin-dome-y",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 145,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "N",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "none inside the lobes (filled `::::`); only between `≧====´` and `｀====≦` under the bridge"
+   },
+   "native": {
+    "rows": [
+     " .,.=＝=､ lii,.=＝=､iiiiiiii",
+     ".//::::::::::::::Y:::::::::::::::ヽiiiii",
+     ".'i !:::::::::::::::il::::::::::::::::::l iiiii",
+     "≧====´il｀====≦ iiiiii"
+    ],
+    "row_numbers": [
+     14,
+     17
+    ],
+    "x_px": [
+     430,
+     575
+    ],
+    "row_pen_x": [
+     439,
+     433,
+     431,
+     436
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "periodic_band",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/bakuhatsu-kemuri/resK-09.txt",
+    "label": "爆発・煙 bakuhatsu-kemuri resK-09 <- res9 (AAHub smoke page aa[9], resolved by exact text bytes per the reference index)",
+    "aahub_url": "https://aahub.org/mlt/a60392576bd5eefca3ed22d55606b85f",
+    "cited_by": "SKILL.md 15.2 (material language: `iiii` lit wall, res9) and 15.6 ('the lit wall in res9'); aahub-reference-index.md Smoke aa[9]"
+   },
+   "crop": "crops/sk-smoke9-twin-dome-y.png",
+   "note": "Two filled oval lobes sharing one bridge: caps `.,.=＝=､` meet at `lii,` / `Y` / `il` / `´il｀`, bases `≧====` / `====≦` return.",
+   "status": {
+    "state": "retained",
+    "reason": "same cited piece (res9); this construction is not the cited lit-wall feature; no operator note. Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
+   },
+   "inspection": "r14 caps `.,.=＝=､`@444-485 and `,.=＝=､`@506-544 with `lii`@497-503 between; r15 `.//`@433-444 left side, `Y`@494 the shared bridge between `::::` fills, `ヽ`@548 right side; r16 `'i !`@434-445 / `il`@494/497 / `l`@554; r17 bases `≧====´`@436-484 and `｀====≦`@498-538 return to `il`@492/495 — a shared junction column (`lii`/`Y`/`il`/`il`) at ~494-503 on every row",
+   "inspected_by": "skill-examples agent"
+  }
+ ]
+}
