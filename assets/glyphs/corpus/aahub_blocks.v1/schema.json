@@ -1,0 +1,263 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aahub_blocks.v1",
+  "title": "AAHub AA-003 TRAIN native-metric block-window statistics",
+  "description": "Produced by scripts/aahub_block_mine.py. Ranks/validates glyph combinations; it never chooses glyphs for a drawing (construction comes from assets/glyphs/roles/role_lookup.v1.json). Pages are laid out in Saitamaar 16 px with natural (proportional) advances and a 17 px row pitch; the pen starts at x = 0 on every row. A window is N rows x m cells, a cell being 16 px of pen x on one row; N, m in 2..12. A window is counted only when its top row, bottom row, left column and right column each contain the pen of an inked glyph. Files: manifest.json (provenance + per-size summary), blocks_<N>x<m>.json.gz (one per size, schema $defs.size_file), vertical_continuation.json.gz ($defs.continuation_file).",
+  "$defs": {
+    "locator": {
+      "type": "object",
+      "required": [
+        "slug",
+        "file",
+        "row_start",
+        "row_end",
+        "x_px"
+      ],
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string",
+          "description": "ascii-art-archive path of the TXT (first occurrence in sorted slug/file order within the winning partition)"
+        },
+        "row_start": {
+          "type": "integer",
+          "description": "1-based"
+        },
+        "row_end": {
+          "type": "integer"
+        },
+        "x_px": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "pen-x range [x0, x1) from line start"
+        }
+      }
+    },
+    "pattern": {
+      "type": "object",
+      "required": [
+        "key",
+        "n",
+        "pages",
+        "slugs",
+        "rows",
+        "glyphs",
+        "locator"
+      ],
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "64-bit hex window key (text key or ink key)"
+        },
+        "ink_key": {
+          "type": "string",
+          "description": "text patterns only: ink key of the same window, to join text spellings that render to the same occupancy"
+        },
+        "n": {
+          "type": "integer",
+          "description": "occurrences (windows) in TRAIN"
+        },
+        "pages": {
+          "type": "integer",
+          "description": "distinct pages containing it"
+        },
+        "slugs": {
+          "type": "integer",
+          "description": "distinct slugs containing it"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "verbatim text of a representative occurrence: per row, every glyph (spaces included) whose pen lies in x_px. For ink patterns other spellings may share the key."
+        },
+        "glyphs": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            }
+          },
+          "description": "per row: [char, pen offset px from x0] for inked glyphs only"
+        },
+        "locator": {
+          "$ref": "#/$defs/locator"
+        }
+      }
+    },
+    "keyed_stats": {
+      "type": "object",
+      "required": [
+        "total_windows",
+        "distinct_patterns",
+        "singleton_patterns",
+        "patterns_on_ge2_pages",
+        "patterns_on_ge10_pages",
+        "top"
+      ],
+      "properties": {
+        "total_windows": {
+          "type": "integer"
+        },
+        "distinct_patterns": {
+          "type": "integer"
+        },
+        "singleton_patterns": {
+          "type": "integer",
+          "description": "patterns occurring exactly once"
+        },
+        "patterns_on_ge2_pages": {
+          "type": "integer"
+        },
+        "patterns_on_ge10_pages": {
+          "type": "integer"
+        },
+        "top": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pattern"
+          },
+          "description": "top-K by distinct pages, then occurrences, then key"
+        }
+      }
+    },
+    "size_file": {
+      "type": "object",
+      "required": [
+        "size",
+        "anchored_windows",
+        "text",
+        "ink",
+        "outline"
+      ],
+      "properties": {
+        "size": {
+          "type": "object",
+          "properties": {
+            "rows": {
+              "type": "integer"
+            },
+            "cells": {
+              "type": "integer"
+            },
+            "px_wide": {
+              "type": "integer"
+            },
+            "px_tall": {
+              "type": "integer"
+            }
+          }
+        },
+        "anchored_windows": {
+          "type": "integer"
+        },
+        "text": {
+          "$ref": "#/$defs/keyed_stats",
+          "description": "keyed by exact ink-glyph sequence: per cell, (char, pen offset) of every inked glyph whose pen is in the cell"
+        },
+        "ink": {
+          "$ref": "#/$defs/keyed_stats",
+          "description": "keyed by ink shape: per cell, 4x4 occupancy (x blocks of 4 px; y blocks 0-4, 4-8, 8-13, 13-17 px), including ink overhanging from glyphs whose pen lies outside"
+        },
+        "outline": {
+          "$ref": "#/$defs/keyed_stats",
+          "description": "text-keyed, restricted to counted windows whose inked glyphs outside FINE_TEXTURE (sjis_corpus_combos) span >= 2 different codepoints: constructions rather than tone fields or one repeated stroke. Ranked by pages; at larger sizes pose-variant pages of one piece can lead, so check slugs."
+        }
+      }
+    },
+    "continuation_file": {
+      "type": "object",
+      "required": [
+        "definition",
+        "pairs_total",
+        "distinct_pairs",
+        "glyphs"
+      ],
+      "properties": {
+        "definition": {
+          "type": "string"
+        },
+        "pairs_total": {
+          "type": "integer"
+        },
+        "distinct_pairs": {
+          "type": "integer"
+        },
+        "min_pair_count_listed": {
+          "type": "integer"
+        },
+        "per_glyph_topk": {
+          "type": "integer"
+        },
+        "glyphs": {
+          "type": "object",
+          "description": "glyph -> neighbours on the next row (below) and previous row (above) whose ink x-extent overlaps by >= 1 px",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "n_pairs": {
+                "type": "integer"
+              },
+              "below": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "lower": {
+                      "type": "string"
+                    },
+                    "n": {
+                      "type": "integer"
+                    },
+                    "mean_overlap_px": {
+                      "type": "number"
+                    },
+                    "dx_px_top": {
+                      "type": "array"
+                    }
+                  }
+                }
+              },
+              "above": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "upper": {
+                      "type": "string"
+                    },
+                    "n": {
+                      "type": "integer"
+                    },
+                    "mean_overlap_px": {
+                      "type": "number"
+                    },
+                    "dx_px_top": {
+                      "type": "array"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
