@@ -34,13 +34,18 @@
   "falling_accent": "isolated falling leaf/fruit/petal marks, each surrounded by paper, placed near or under the crown they fell from",
   "underside_view": "the lower edge of a crown/branch seen from below: hanging scallops or kana hooks that close the leaf mass over the trunk or branch",
   "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings",
-  "texture_boundary": "edge of a form carried only by where a texture/punctuation field stops against paper, with no traced outline (structural-line-selection.md 'Texture-supported boundary')"
+  "texture_boundary": "edge of a form carried only by where a texture/punctuation field stops against paper, with no traced outline (structural-line-selection.md 'Texture-supported boundary'); an image/occupancy boundary, not automatically a material seam on one surface",
+  "arch_band": "thick architectural arch/vault band drawn as two or more cooperating parallel strokes (often with ﾆ/二 fill between) that turns from crown to flank; thickness belongs to the architectural form, not to every round subject",
+  "ellipse_rim": "perspective rim of a round opening, end face or plane (vessel mouth, cylinder end, altar) recorded with its near/far or inner/outer edges and thickness, not a cap alone",
+  "dotted_rim": "round boundary drawn as a run of leader/dot glyphs (… ‥ ．) stepping around the form, distinct from a solid contour and from a tone field"
  },
  "groups": [
   "annotations",
   "faces",
   "shapes-circles",
-  "skill-examples"
+  "skill-amendments",
+  "skill-examples",
+  "skill-rounded"
  ],
  "deduplicated": [],
  "gaps": [
@@ -64,13 +69,78 @@
   "[shapes-circles] side (straight non-rounded edge) not covered here; only appears as context (ledge lines, pillars)",
   "[shapes-circles] mechanical round ball joint (circle inside a limb) not found in the three mechanical-parts entries opened",
   "[shapes-circles] 1-row (xs) circle constructions such as (　) or ○-like spellings were seen only as a component (sh-mlt13 row 4), not entered as their own xs entry",
+  "[skill-amendments] church036 rows 7-8: the bound operator screenshot crop-03 does not show this passage, so the Assisi entry rests on the skill citation + verified TXT, not on a matching operator crop",
+  "[skill-amendments] church073 thick band marks: covered by the skill-rounded group (sr-p11-crown-at-pillar, sr-p11-left-flank, sr-p11-right-flank); profile 11 = aa[73] [parent note]",
+  "[skill-amendments] No xs (one-row) rim_cap from an artwork in this group; the only one-row entries are Orinrin palette fragments",
+  "[skill-amendments] C#99 rows 1-8: no thinning within a band (the courses repeat at constant density); thinning tone for this pattern comes only from C#126 here",
+  "[skill-amendments] The cup's sparse-to-denser punctuation ramp has no new entry: sk-cup176-cylinder-tone already keys rows 8-12 as tone_core/tone_mid/tone_fringe",
   "[skill-examples] resK-231 (te-ude-03) and resK-431 (te-komono-02) are not cited by the current SKILL.md or references; not opened",
-  "[skill-examples] structural-line-selection.md has no 'worked multi-row constructions' or 'recovered-aa-tools…' sections although aahub-reference-index.md links to them; cup/plate entries cite only the index row",
   "[skill-examples] 15.5 idioms not found in context within the cited smoke pieces' inspected regions: `／￣＼`, `＼＿／`, `＿／`, `＼＿`, `彡` as smoke debris (only `彡` as cup tone in aa[176]), `从` as smoke debris (only tree root `从` in T aa[7]); not searched across the corpus by design",
   "[skill-examples] side role: only church/pew/wall sides; no rounded-form-free narrow side example from hand/Madonna",
   "[skill-examples] rim_cap xs (1 row) not found in the cited regions; smallest is the 3-row res153 puff and the 1-glyph `∧` inside a 5-row gable",
   "[skill-examples] shoulder s band (2-3 rows) not isolated; shoulders here are 4-8 rows",
-  "[skill-examples] tone_fringe has no entry of its own as primary role (always paired with core/mid in the same crop)"
+  "[skill-examples] tone_fringe has no entry of its own as primary role (always paired with core/mid in the same crop)",
+  "[skill-rounded] No 1-row (xs) example in these sources: every rounded construction here needs 2+ rows.",
+  "[skill-rounded] dotted_rim seen only on the stained-glass rose (Profile15); no smaller or perspective-ellipse dotted rim in these eight drawings.",
+  "[skill-rounded] arch_band at s size (2-3 rows, narrow) only as distant crowns (sr-p10-deep-crowns); no isolated small thick arch.",
+  "[skill-rounded] ellipse_rim far/back edge of a large ellipse seen from a low angle (rim disappearing behind the plane) not cleanly isolable in Profile28: ornaments crowd it.",
+  "[skill-rounded] Vessel contact with a table surface plus cast shadow: Profile37's pot shows `｀¨¨´` under the body but no separate shadow; contact/shadow role left uncertain."
+ ],
+ "revision_log": [
+  "[skill-examples] sk-hand-thumb-cap: also_roles [\"contact_junction\", \"flank\", \"fold_crease\"] -> [\"return_base\", \"contact_junction\", \"flank\", \"fold_crease\"] because Worked multi-row constructions / Hand (the `人`-left-leg → `ノ` r14 turn is the thumb return the counterexample protects)",
+  "[skill-examples] sk-hand-thumb-cap: note \"Rounded cap on the thumb side whose right edge `）` forks at `人` into two continuing ed…\" -> \"Rounded thumb cap `/⌒ヽ` whose right edge `）` forks at `人`: the left leg drops to the `…\" because Attachment is not construction (a cap is not a contact junction; contact is not intersection) + Four important AA construction patterns, Cooperating joins and caps (a branch-shaped glyph does not prove two surfaces intersect)",
+  "[skill-examples] sk-hand-thumb-cap: context.paper \"inside the thumb under `⌒` and left of `）`; between the `人` legs\" -> \"inside the thumb pad under `⌒`, left of `）` and above the `ノ` return; between the `人` …\" because Worked multi-row constructions / Hand (protected thumb/palm opening)",
+  "[skill-examples] sk-hand-thumb-cap: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand now cites rows 10–13 `/⌒ヽ`, `l〉`, `人`",
+  "[skill-examples] sk-hand-diagonal-strip-return: role \"return_base\" -> \"opening_paper_gap\" because Worked multi-row constructions / Hand (thumb/palm opening); crop shows the upper diagonal continues the index finger's left flank, so the strip is paper between two forms, not a form",
+  "[skill-examples] sk-hand-diagonal-strip-return: also_roles [\"flank\", \"fold_crease\"] -> [\"return_base\", \"contact_junction\", \"flank\", \"fold_crease\"] because Worked multi-row constructions / Hand (the `,/` floor returns the opening where thumb meets palm)",
+  "[skill-examples] sk-hand-diagonal-strip-return: context.paper \"the narrow strip between the two parallel diagonals stays paper down to the `,/` tip\" -> \"the narrow strip between the two parallel diagonals is the thumb/palm (thumb–index) op…\" because Worked multi-row constructions / Hand (protected paper; counterexample: bridging an intended web opening)",
+  "[skill-examples] sk-hand-diagonal-strip-return: note \"Two parallel stepped diagonals (ヽ、/＼) closed at the lower end by a 2-row `,/` return —…\" -> \"Thumb/palm opening: the upper diagonal (`ヽ、`→`ヽ、`→`＼`) continues the index finger's le…\" because Worked multi-row constructions / Hand (thumb/palm opening) — resolves the earlier agent's uncertain reading from the crop",
+  "[skill-examples] sk-hand-diagonal-strip-return: status.reason \"skill-cited hand rows 9–13 region; reading as the thumb's folded segment is inference;…\" -> \"skill-cited: Worked multi-row constructions, Hand rows 10–13 (thumb/palm opening) and …\" because Worked multi-row constructions / Hand; Revision preservation and authorship gate (entry kept and re-read, not deleted)",
+  "[skill-examples] sk-hand-diagonal-strip-return: inspection unchanged text + appended \"recheck 2026-10-27: index left flank `l`@119 r9 → `l`@123 r10 runs straight into the upper `ヽ、`@127 r11 (also seen in a context crop rows 6–15 x75–200: `|`@115 r8), while the lower `ヽ、`@126 r13 leaves the thumb's `人`@112 r12 — the strip is the gap between index/palm and thumb\" because Worked multi-row constructions / Hand (re-inspection line for the role change)",
+  "[skill-examples] sk-hand-diagonal-strip-return: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand now cites the thumb/palm opening",
+  "[skill-examples] sk-hand-pinky-cap: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand covers rows 10–13 of this region (finger webs / pinky knuckle)",
+  "[skill-examples] sk-hand-index-middle-web: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand covers rows 10–13 of this region (finger webs / pinky knuckle)",
+  "[skill-examples] sk-hand-ring-pinky-web: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand covers rows 10–13 of this region (finger webs / pinky knuckle)",
+  "[skill-examples] sk-hand-middle-ring-web: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening\" because Worked multi-row constructions / Hand covers rows 10–13 of this region (finger webs / pinky knuckle)",
+  "[skill-examples] sk-hand-finger-crease-pair: note \"Two short joint cues inside one finger, each attached to the left flank and left open …\" -> \"Two short joint cues inside one finger, each sitting nearer the left flank (≈10px ink …\" because Attachment is not construction (the crop shows no attachment) + Four important AA construction patterns, Sparse interior cues (surrounding paper keeps volumes separate)",
+  "[skill-examples] sk-madonna-lower-veil-strips: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper\" because Worked multi-row constructions / Veil cites rows 16–19 and rows 9–24 as context, which includes this region",
+  "[skill-examples] sk-madonna-right-shoulder-paper: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper\" because Worked multi-row constructions / Veil cites rows 16–19 and rows 9–24 as context, which includes this region",
+  "[skill-examples] sk-madonna-chin-fold: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper\" because Worked multi-row constructions / Veil cites rows 16–19 and rows 9–24 as context, which includes this region",
+  "[skill-examples] sk-madonna-clasped-hands: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper\" because Worked multi-row constructions / Veil cites rows 16–19 and rows 9–24 as context, which includes this region",
+  "[skill-examples] sk-madonna-veil-dense-strip: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper\" because Worked multi-row constructions / Veil cites rows 16–19 and rows 9–24 as context, which includes this region",
+  "[skill-examples] sk-church99-pew-left: source.cited_by + \"structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation\" because Four important AA construction patterns (updated) also cites C#99 rows 46–50 under Dots as form articulation",
+  "[skill-examples] sk-church99-pew-right: source.cited_by + \"structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation\" because Four important AA construction patterns (updated) also cites C#99 rows 46–50 under Dots as form articulation",
+  "[skill-examples] sk-church99-altar-step-bands: source.cited_by 'Cooperating joins and caps (rows 46/48/50 `|レi`)' -> piece-level index citation, rows 38–44 outside the cited rows because Four important AA construction patterns (updated) cites C#99 rows 1–8 and 46–50 only",
+  "[skill-examples] sk-church99-altar-step-bands: status.reason \"skill-cited punctuation bands on aa[99]; no operator rejection recorded\" -> \"same skill-cited piece (aa[99] punctuation bands); rows 38–44 are not among the skill'…\" because Four important AA construction patterns (updated row citations for C#99)",
+  "[skill-examples] sk-church99-wall-brick-band: source.cited_by 'Cooperating joins and caps (rows 46/48/50 `|レi`)' -> piece-level index citation, rows 21–26 outside the cited rows because Four important AA construction patterns (updated) cites C#99 rows 1–8 and 46–50 only",
+  "[skill-examples] sk-church99-wall-brick-band: status.reason \"skill-cited punctuation band on aa[99]; no operator rejection recorded\" -> \"same skill-cited piece (aa[99] punctuation bands); rows 21–26 are not among the skill'…\" because Four important AA construction patterns (updated row citations for C#99)",
+  "[skill-examples] sk-church126-diagonal-light-paper: source.cited_by 'paragraph after the four-pattern table' -> C#126 rows 16–28 paragraph + 'Attachment is not construction' because Four important AA construction patterns (updated) and Attachment is not construction",
+  "[skill-examples] sk-church126-ray-band: source.cited_by 'paragraph after the four-pattern table' -> C#126 rows 16–28 paragraph + 'Attachment is not construction' because Four important AA construction patterns (updated) and Attachment is not construction",
+  "[skill-examples] sk-church126-ray-band: note unchanged text + appended \"'Ray' in the id is a descriptive analogy only: the stripes are not a proven light shaft or highlight\" because Attachment is not construction (a light shaft is not proof of a highlight predicate)",
+  "[skill-examples] role_extensions.texture_boundary: definition + 'an image/occupancy boundary, not automatically a material seam' because Four important AA construction patterns (Texture-supported boundary) and Attachment is not construction",
+  "[skill-examples] sk-tree7-crown-texture-edge: context.paper \"all sky beyond the last texture mark on each row; no outline glyph is placed there\" -> \"all sky beyond the last texture mark on each row, plus the crown notches/gaps inside t…\" because Worked multi-row constructions / Tree (protected crown notches; counterexample: outlining every texture edge or filling crown gaps)",
+  "[skill-examples] sk-tree7-crown-texture-edge: note unchanged text + appended \"This is an image/occupancy boundary, not automatically a material seam\" because Four important AA construction patterns (Texture-supported boundary) + Attachment is not construction",
+  "[skill-examples] sk-tree7-crown-texture-edge: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact\" because Worked multi-row constructions / Tree rows 4–7 cite the crown envelope (rows 4–5 in this crop)",
+  "[skill-examples] sk-tree7-trunk-dots: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact\" because Worked multi-row constructions / Tree rows 4–7 and 10 include `|i;, |`, `Il;: |`, `IＩ;; |`",
+  "[skill-examples] sk-tree7-root-ground-contact: note unchanged text + appended \"The `从` legs meet the `\\\"\\\"\\\"\\\"` ground strip as a contact read; the branch-like glyph does not prove roots intersecting the ground surface. The patchy ground intervals of row 13 lie outside this crop\" because Attachment is not construction (contact is not intersection) + Four important AA construction patterns, Cooperating joins and caps",
+  "[skill-examples] sk-tree7-root-ground-contact: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact\" because Worked multi-row constructions / Tree rows 10–13 cite `从 ゝ,,`",
+  "[skill-examples] sk-tree7-branch-entry: note unchanged text + appended \"`メ` is a crossing-shaped glyph read here as branch strokes leaving the trunk; its shape alone does not prove two limbs intersect\" because Four important AA construction patterns, Cooperating joins and caps (a branch-shaped glyph does not prove two surfaces intersect) + Attachment is not construction",
+  "[skill-examples] sk-tree7-branch-entry: source.cited_by + \"structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact\" because Worked multi-row constructions / Tree rows 4–7 cite `メｿ` branch entry and branch-entry gaps",
+  "[skill-examples] sk-cup176-cylinder-tone: source.cited_by 'index row only (structural anchor absent)' -> 'Recovered AA tools … Transfer the drawing relationships' + 'Rounded constructions beyond one circle spelling' because those sections now exist and cite cup rows 5–14 / 15–21",
+  "[skill-examples] sk-cup176-rim-ellipse: source.cited_by 'index row only (structural anchor absent)' -> 'Recovered AA tools … Transfer the drawing relationships' + 'Rounded constructions beyond one circle spelling' because those sections now exist and cite cup rows 5–14 / 15–21",
+  "[skill-examples] sk-cup176-plate-ellipse-return: source.cited_by 'index row only (structural anchor absent)' -> 'Recovered AA tools … Transfer the drawing relationships' + 'Rounded constructions beyond one circle spelling' because those sections now exist and cite cup rows 5–14 / 15–21",
+  "[skill-examples] sk-cup176-cast-shadow: source.cited_by 'index row only (structural anchor absent)' -> 'Recovered AA tools … Transfer the drawing relationships' + 'Rounded constructions beyond one circle spelling' because those sections now exist and cite cup rows 5–14 / 15–21",
+  "[skill-examples] sk-cup176-cylinder-tone: note \"Surface-following cylinder tone: each row ramps `. .`→`...`→`::::`→`;;;;`→`彡` toward t…\" -> \"Surface-following cylinder tone: each row ramps `. .`→`...`→`::::`→`;;;;`→`彡` toward t…\" because Attachment is not construction (a pale paper passage is not a proven highlight)",
+  "[skill-examples] sk-cup176-cylinder-tone: status.reason \"the cited surface-following tone; catalog/operator source binding per the index, not a…\" -> \"skill-cited surface-following tone (cup rows 5–14); catalog/operator source binding pe…\" because Recovered AA tools: capability is not construction or attribution (keep its qualifications)",
+  "[skill-examples] sk-cup176-rim-ellipse: status.reason \"same cited piece; rim construction is not the cited surface-tone feature itself; no op…\" -> \"skill-cited: rows 5–8 rim are within the cited cup rows 5–14 (rim tied to tone, sides …\" because Recovered AA tools … Transfer the drawing relationships + Rounded constructions (vessel rim)",
+  "[skill-examples] sk-cup176-plate-ellipse-return: status.reason \"same cited piece; plate structure is context for the cited tone; no operator note\" -> \"skill-cited as plate/context (cup rows 15–21); no operator note; crop is a new Saitama…\" because Recovered AA tools … Transfer the drawing relationships (rows 15–21 plate/context)",
+  "[skill-examples] sk-cup176-cast-shadow: status.reason \"same cited piece; shadow is adjacent to the cited surface tone; no operator note\" -> \"skill-cited region (rows 11–14 within cup rows 5–14); the cast-shadow reading is an in…\" because Recovered AA tools … Transfer the drawing relationships; Attachment is not construction",
+  "[skill-examples] sk-cup176-cast-shadow: note unchanged text + appended \"Read as a caster (cup) / receiver (plate) lighting boundary, not a plate material seam\" because Attachment is not construction (cast-shadow boundaries are not fixed material seams)",
+  "[skill-examples] sk-smoke153-lower-lobe: split_stroke (none) -> `て` r4 @87 (bar → front lobe cap; curl → rear lobe start), binding agent_reading because Split-stroke ownership",
+  "[skill-examples] gaps: removed 'structural-line-selection.md has no worked multi-row / recovered-aa-tools sections' because both sections now exist (skill 716bedd)",
+  "[skill-examples] sk-madonna-veil-strip-stroke-passage: added (role fold_crease, rows 15–20) because Worked multi-row constructions / Veil rows 16–19 named a relationship no sk entry captured",
+  "[skill-examples] sk-madonna-kawa-veil-edge: added (role flank, rows 9–15) because Four important AA construction patterns (updated) names `川` and `!ﾘ`; no sk entry captured `川`",
+  "[skill-examples] sk-church99-column-punct-band: added (role periodic_band, rows 1–8) because Four important AA construction patterns (updated) cites C#99 rows 1–8 column punctuation bands; no sk entry covered them"
  ],
  "inspection_log": [
   "[annotations] T aa[14] (sha256 of rstripped value matches record c3987b84...) r4 'GREAT STRUCUTRAL JUNCTION EXAMPLE' rect rows 7-9 x[186,261): opened rows 6-10 x[170,262) -> an-t14-lobe-junction",
@@ -171,6 +241,16 @@
   "[shapes-circles] patterns #21, #23, #66, #102, #106, #94, #90, #92, #98, #100, #103, #125, #130 first rows printed; entered #103 (scale lattice of 乂/人 returns) and #21 (stacked ribbing) only",
   "[shapes-circles] effect-lines #58, #59, #62, #24, #12 printed; entered #58 and #24; #12 (scattered convergence ticks) not entered — too sparse to read as lines at native scale",
   "[shapes-circles] mechanical-parts #55, #24, #21 printed; entered #24 (segment/cuff V joint) and #55 rows 5-9 (finger-to-palm ┴ junction); #21 not entered (bent-arm outline, no circle joint)",
+  "[skill-amendments] C#99 mlt 2f0353dc aa[99] rows 1-10 full text printed once to locate the four columns; rows 1-8 x 100-265 and x 445-610 cropped and viewed (native + x5); doc excerpt `|;;::;:|` matches row 2/4/6/8 col1 exactly -> sa-church99-column-bands-left/right",
+  "[skill-amendments] C#126 aa[126] rows 16-28 full-width native preview (x2) viewed only to locate the wedge's lower end; rows 23-28 x 130-330 and 25-28 x 0-125 cropped/viewed -> two entries; rows 28-31 x 0-330 viewed for the down ports (stripe continues to the `￣￣￣￣` ground line r31). Existing sk-church126-diagonal-light-paper (r15-25, x0-190) and sk-church126-ray-band (r18-24, x300-450) not duplicated",
+  "[skill-amendments] Operator crops crop-03/04/06/08 PNGs viewed (crop-03/04 also x5): crop-06 matches church-073 rows 7-17 and crop-04 the `（(⌒Y⌒)）` motif; crop-03 does NOT match church-036 rows 7-8 (it shows `γ⌒ヽ` over `{   }` with `ヽ`/`'´` beside it). Text search of the church MLT for a `γ⌒ヽ` row followed by a brace row gave aa[42/43/52/57/64/121/134]; aa[121] rows 2-4 x 340-460 rendered and visually matches crop-03 -> sa-church121-brace-oculus; binding discrepancy reported, operator_reference_sources.v1.json not edited",
+  "[skill-amendments] church-036.txt rows 6-9 printed with pens and rows 6-9 x 250-470 cropped/viewed (x6) -> sa-assisi036-oculus-pediment (split_stroke on 乂@349 r8, agent reading). church-036.txt differs from church-036.raw.txt only by html entities; the unescaped txt equals archive aa[36]",
+  "[skill-amendments] church-073.txt rows 5-18 printed once; rows 7-17 x 100-560 viewed (x3) as overview, then rows 7-10 x 180-430 and 10-17 x 140-470 cropped/viewed -> crown + pillar/flanking paper entries. The thick left/right band marks (`ｲ二㌃゜`…`/ﾆ'′`, `寸ム`…`Ⅵｉ`) were NOT given their own entries: aa[73] is circle-profile position 11, which another agent covers",
+  "[skill-amendments] church-105/106/107.txt rows 4-9 printed; rows 5-8 x 0-130 cropped/viewed in all three (crops byte-identical) -> one entry per variant, each stating the crop does not identify one variant; the motif also repeats at ~pen 402 in each artwork (not entered)",
+  "[skill-amendments] Text verification against archive MLT 2f0353dc (html-unescaped): church-036/073/105/106/107.txt all identical to aa[36]/[73]/[105]/[106]/[107]; aramaki-cup-plate-176.txt identical to e8e2f681 aa[176]",
+  "[skill-amendments] Cup aramaki-cup-plate-176.txt rows 4-15 x 270-400 printed with pens; whole drawing viewed once (x2) to place regions; rows 7-12 x 340-405, 12-15 x 280-405 and 15-21 x 180-330 cropped/viewed -> three entries. Existing sk-cup176-rim-ellipse/cylinder-tone/cast-shadow/plate-ellipse-return not duplicated as primary roles. `彳`@375 r13 and `ジ`@368 r14 each combine contour and hatch strokes of the same cup: not flagged as split stroke (one form, not two)",
+  "[skill-amendments] Orinrin: windows_aa_patterns.v1.json palette_groups give group 22 `２２衝撃` lines 895-1000 and group 24 `２４怒り口` lines 1127-1436 (1-based rows of windows-aa/aalist.txt; CRLF stripped by the loader). Group 22 rows 895-937 printed (direction headings `**上`/`**右上`/`**右`; one-row alternatives); group 24 rows 1215-1240 printed around the code-provenance-cited `／⌒ヽ` sample. Cropped/viewed: 1224-1226, 1228-1230, 901, 935 -> four entries addressed exactly as txt: slices of the existing aalist.txt; no new files",
+  "[skill-amendments] Split-stroke search: flagged only 乂@349 row 8 in church-036 (oculus return vs cornice). Checked and not flagged: `｢`@258 r7 church-073 (band end at the pillar occlusion), `Y`@61 r6 church-105/106/107 (generic Y join, excluded by the addendum), `彳`/`ジ` in the cup (same form)",
   "[skill-examples] hand resK-154 rows 1-20 whole-entry render (x2) used only to locate regions inside this one selected entry",
   "[skill-examples] hand rows 7-11 x300-404 pinky cap -> sk-hand-pinky-cap",
   "[skill-examples] hand rows 9-14 x75-170 thumb + diagonal strip first crop; split into sk-hand-thumb-cap (x80-140) and sk-hand-diagonal-strip-return (x118-175)",
@@ -190,9 +270,414 @@
   "[skill-examples] smoke res132 rows 1-8 x75-160 -> sk-smoke132-ring",
   "[skill-examples] smoke res13 rows 1-23 render; rows 1-6 x0-140 (first crop rows 1-8 had an empty row 7, recropped) and rows 5-9 x240-420 -> 2 entries",
   "[skill-examples] smoke res168 rows 1-13 render; rows 1-5 x500-655, 3-9 x270-460, 1-7 x0-170 -> 3 entries",
-  "[skill-examples] smoke res9 rows 1-23 render; rows 9-13 x60-160 and 14-17 x430-575 (first crop 13-16 lacked the base row, recropped) -> 2 entries"
+  "[skill-examples] smoke res9 rows 1-23 render; rows 9-13 x60-160 and 14-17 x430-575 (first crop 13-16 lacked the base row, recropped) -> 2 entries",
+  "[skill-examples] recheck 2026-10-27 (skill 716bedd): all 42 entries reopened with role_crop.py show --glyphs + crop/view PNGs (crops byte-identical to the repo copies); doc excerpts verified against the archive: tree T#7 rows 4–7/10–13, hand rows 10–13, Madonna rows 16–19, C#99 rows 1–8 `|;;::;:|` and 46–50 `|レi`/`iヽ!|`, C#126 rows 16–28, cup aa[176] = explorer aramaki-cup-plate-176.txt — no mismatches",
+  "[skill-examples] recheck context crops (not entries): hand rows 1–20 whole render and rows 6–15 x75–200 / 8–17 x60–260 to trace index flank → strip upper diagonal and thumb return `ノ` r14; Madonna rows 9–15 x140–290 for `川`/`!ﾘ`; smoke res153 rows 3–6 x40–140 at 8x for `て`",
+  "[skill-examples] recheck new crops: Madonna rows 15–20 x40–215 -> sk-madonna-veil-strip-stroke-passage; Madonna rows 9–15 x140–235 -> sk-madonna-kawa-veil-edge; C#99 rows 1–8 x95–270 -> sk-church99-column-punct-band",
+  "[skill-examples] split-stroke candidates considered and NOT bound: hand `人` r12@112 (generic 人 fork; no depth cue strong enough), Madonna `川` r11@180 (forms of the diverging lines undecided), tree `メ` r5@17 (shape-only), smoke9 `Y` r15@494 (side-by-side lobes, no depth order)",
+  "[skill-rounded] Read: trueff-shallot AGENTS.md 'How to inspect' rule; SKILL.md 2.1, 2.2, 4.4, 8 mark-purpose, 15.3-15.7, Split-stroke ownership, Revision preservation gate (skills repo 716bedd = origin/main for the rounded section, diffed identical); structural-line-selection.md incl. Rounded constructions, Attachment is not construction, Split-stroke ownership, Four patterns, Recovered AA tools; aahub-reference-index.md circle profile update + role-organized libraries + role-lookup pointer; schema.json incl. split_stroke.",
+  "[skill-rounded] Numbering: profile_circle_evidence.v1.json families profile-circle-07/10/11/15/23/28/37/41 each have profile_entry_indices [N] and text_path entry-NN.txt; archive matches church aa[54]/58/73/120/151/166, Japanese room aa[55], ruins aa[165] agree with the reference index table. None of these eight entries was in the merged table (only 03,04,05,08,13,14,19,25,31,33,34,39,45,46,47 were).",
+  "[skill-rounded] entry-07 rows 12-16 x70-215, rows 13-15 x112-190, rows 12-16 x480-644: three entries (frame arch, nested medallion, halfwidth mirror medallion). Did not split inner round vs bracket ring into two entries: at 3 rows they read only together.",
+  "[skill-rounded] entry-10 rows 2-14 full width (locating view, x3), then rows 2-6 x100-330, rows 9-12 x130-300, rows 2-9 x255-360: three entries. Left-side flank region and the lower nave piers (rows 13-21) not used: piers are straight sides, not rounded construction.",
+  "[skill-rounded] entry-11 rows 6-17 x100-460 (locating view), then rows 6-9 x180-430 (first tried x255-440, rejected because it cut the left half of the crown), rows 10-14 x140-225, rows 10-15 x385-480: three entries. The inner smaller arch (`／`, `V/` rows 12-15) not used: thin and fragmentary, adds nothing beyond the band flanks.",
+  "[skill-rounded] entry-15 rows 3-33 full (locating view, x2), then rows 6-12 x150-420, rows 3-9 x60-330, rows 13-24 x0-70, rows 21-29 x120-420: four entries (cell with shared returns, dotted rim crest, dotted rim flank, rosette + inner-ring returns).",
+  "[skill-rounded] entry-23 rows 5-12 x140-460 (locating view), then rows 5-7 x220-405 and rows 7-12 x205-275: two entries. Right flank (`'く⌒心`, `∨￣}`, `_￣j}`) is the mirror and was not duplicated; the `ﾉ＿＿_乂` base return (row 12) is a squared foot, not used.",
+  "[skill-rounded] entry-28 rows 6-20 full (locating view, x2), rows 9-14 x85-400, rows 10-13 x205-420, rows 16-20 x55-500: two entries (inner ellipse lip, near thick rim). Left rim end (rows 10-17, `ｘf〔`, `寸三≫`) viewed in the x85-400 crop but not entered: it is crowded with 《》 ornaments and its strands are hard to separate from the stairs/props.",
+  "[skill-rounded] entry-37 rows 16-24 x0-330, rows 18-21 x200-300, rows 21-24 x10-125: two vessel entries (small vase, lidded pot).",
+  "[skill-rounded] entry-41 rows 1-15 full (locating view, x2), rows 1-5 x195-330, rows 3-10 x0-180, rows 4-15 x180-420: three entries (upright end, tilted end, frontal drum end). The right-hand broken cylinder (x>420) not entered; its ends are interrupted by debris and add no new orientation.",
+  "[skill-rounded] split_stroke: flagged only sr-p41-upright-end `┴`@295 row 5. Considered and declined: 乂 tails in sr-p37-vase-rim-lobes (outer tails meet the shelf line; reads as a contact with the shelf, which is a junction, not split ownership); `7`@159 row 6 in entry-41 (rim and side wall of the same cylinder, not two forms); `《＿》` on the altar rim (pedestal foot occluding the rim, separate glyphs); `У` in entry-23 (cannot tell from the crop whether its arms serve two forms)."
  ],
  "entries": [
+  {
+   "id": "sr-p10-deep-crowns",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 170,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the narrow paper inside each small distant crown and the gaps to the flank ticks"
+   },
+   "native": {
+    "rows": [
+     "､丶`_､丶`　＿＿＿｀`丶､ ",
+     "　／'´,､ヽ`｀＞ー‐＜ ＾`丶＼",
+     "/,:ﾟ ／,､丶`＞ー‐＜ ｀`ヽ､",
+     "ﾟ,ﾊ´:／／､丶｀￣￣__｀`ヽ、"
+    ],
+    "row_numbers": [
+     9,
+     12
+    ],
+    "x_px": [
+     130,
+     300
+    ],
+    "row_pen_x": [
+     136,
+     133,
+     134,
+     130
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "arch_band",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-deep-crowns.png",
+   "note": "Most distant bands of the same vault: small crowns ＞ー‐＜ twice over ＿＿＿ / ￣￣__; at this size a band reduces to a chevron-capped short bar plus ､丶` ticks.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 9 `＿＿＿` (212-244) over row 10 `＞ー‐＜` (208-247) and row 11 `＞ー‐＜` (206-245) above row 12 `￣￣__` (221-258); flanking ticks `,､ヽ`` row 10 @171-193 left and `＾`丶＼` row 10 @268-299 right; left `／`@144 (row 10) / @157 (row 11) are the nearer bands' flanks",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-crown-at-pillar",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 250,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "open regions under the band on both sides of the pillar; the pillar's dotted face is tone, not paper"
+   },
+   "native": {
+    "rows": [
+     "､丶`　　　　　_三二二三- ‐　　　　　　　",
+     "　 　 　,｡s≦｢|:::::::::::::::::::::|¨≧s｡,　　　　　",
+     " 　 x≪ニ二ﾆ|:::::::::::::::::::::|二二ﾆ≫ｘ　　　",
+     "／二-＞''~ : |:::::::::::::::::::::|　~`'' ＜二≫,、"
+    ],
+    "row_numbers": [
+     6,
+     9
+    ],
+    "x_px": [
+     180,
+     430
+    ],
+    "row_pen_x": [
+     183,
+     182,
+     180,
+     183
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "arch_band",
+    "up": null,
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-crown-at-pillar.png",
+   "note": "Thick band crown meeting the central pillar: ,｡s≦｢ / ¨≧s｡, shoulders, x≪ニ二ﾆ / 二二ﾆ≫ｘ double band, ／二-＞''~ / ~`'' ＜二≫,、 turning down; the band stops at the pillar's | edges.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `_三二二三-` (268-337) cap over the pillar; row 7 `,｡s≦｢|` (225-265) and `|¨≧s｡,` (332-374); row 8 `x≪ニ二ﾆ|` (201-265) / `|二二ﾆ≫ｘ` (332-394); row 9 `／二-＞''~` (183-245) / `~`'' ＜二≫,、` (347-423); pillar edges `|`@265 and `|`@332 with `:` tone between",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-left-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 85,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the open region right of the band; paper between the band and the inner `／` arch"
+   },
+   "native": {
+    "rows": [
+     "　 　,ｲ二㌃゜　",
+     "　,ｲﾆア゜　 　",
+     " /ﾆｱ　　 　 ,　",
+     "/ﾆ'′　　／　",
+     "　　　 　 ′　　"
+    ],
+    "row_numbers": [
+     10,
+     14
+    ],
+    "x_px": [
+     140,
+     225
+    ],
+    "row_pen_x": [
+     143,
+     148,
+     145,
+     142,
+     142
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "arch_band",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-left-flank.png",
+   "note": "Left descent of the thick band in four rows: ,ｲ二㌃゜ → ,ｲﾆア゜ → /ﾆｱ → /ﾆ'′; outer stroke, ﾆ/二 band fill and inner hook move together, steepening each row.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `,ｲ二㌃゜` (170-214); row 11 `,ｲﾆア゜` (159-195); row 12 `/ﾆｱ` (150-168); row 13 `/ﾆ'′` (142-163); each row shifts ~10 px left as the band steepens; `,`@221 row 12 and `／`@201 row 13 are the separate inner arch",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p10-receding-crowns",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 230,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "thin paper between successive band crowns; the vault interior below"
+   },
+   "native": {
+    "rows": [
+     "　¨￣＞ ' ´｡o--o｡｀` ' ＜ ￣｀`ヽ、　",
+     " 　 ／,､　´＿__＿＿｀`丶､ ｀ヽ、　　 ＼",
+     " ／／'\"´￣　 ＿＿＿ ￣｀`ヽ、｀ヽ、　",
+     "／　_､　´￣_二ﾆ=‐=ﾆ二_｀`ヽ､＼　＼",
+     "　／､丶^⌒＞-‐……‐-＜⌒^ヽ、＼"
+    ],
+    "row_numbers": [
+     2,
+     6
+    ],
+    "x_px": [
+     100,
+     330
+    ],
+    "row_pen_x": [
+     107,
+     102,
+     100,
+     103,
+     101
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": null,
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-receding-crowns.png",
+   "note": "Five rows of vault crowns receding: each band is its own crown spelling (´｡o--o｡｀, ´＿__＿＿｀, ￣ ＿＿＿ ￣, ´￣_二ﾆ=‐=ﾆ二_｀, ^⌒＞-‐……‐-＜⌒^) and its own ｀`ヽ、 shoulder.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 2 `´｡o--o｡｀` (171-225) keystone crown; row 3 `´＿__＿＿｀` (160-226) with `丶､ ｀ヽ、`; row 4 `￣ ＿＿＿ ￣` double crown (156-241) and paired shoulders `｀`ヽ、｀ヽ、` (257-315); row 5 thick `´￣_二ﾆ=‐=ﾆ二_｀` (153-263); row 6 `^⌒＞-‐……‐-＜⌒^` (151-286) lobed crown; left flanks `／／` (105/121) run down-left; paper strips between crowns",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p23-stepped-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "side"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 70,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the opening inside the band (right of the / / strokes)"
+   },
+   "native": {
+    "rows": [
+     "′,ｲ⌒>'ﾟ,.イ",
+     "　√_У,ｲニ",
+     "√./ /ニニ",
+     "√/_/ニニ",
+     " |_Ｌ＿L＿＿",
+     "_|　　　　　　"
+    ],
+    "row_numbers": [
+     7,
+     12
+    ],
+    "x_px": [
+     205,
+     275
+    ],
+    "row_pen_x": [
+     207,
+     206,
+     215,
+     211,
+     206,
+     206
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "periodic_band",
+    "up": "rim_cap",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-23.txt",
+    "label": "operator circle My MLT profile 23 = entry-23.txt; Ajanta carved layered arch; original church page aa[151]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (profile23 adds carved crown lobes)"
+   },
+   "crop": "crops/sr-p23-stepped-flank.png",
+   "note": "Left flank of the carved arch: three stacked √ steps describe receding carved layers while / / strokes carry the band down to |_Ｌ＿ base.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 7 `,ｲ⌒>'ﾟ,.イ` lobe (223-272); rows 8-10 `√`@217, `√`@215, `√`@211 stepping outward, with band strokes `У,ｲ`@238-257, `/ /`@234/247, `/_/`@227-240 and ニ fill to the right; row 11 `|_Ｌ＿L＿＿` (211-271) base; row 12 `_|`@206/211",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-right-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 95,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the open region left of the band (toward the pillar)"
+   },
+   "native": {
+    "rows": [
+     "｀'くﾆ心、　　　",
+     "　　`寸ム　　　",
+     "　　　　寸ﾊ　　",
+     "　　　　 ∨i,　　",
+     "　　　 　 Ⅵｉ　",
+     "　　　　　　 'ﾆ　"
+    ],
+    "row_numbers": [
+     10,
+     15
+    ],
+    "x_px": [
+     385,
+     480
+    ],
+    "row_pen_x": [
+     391,
+     391,
+     388,
+     393,
+     395,
+     386
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "arch_band",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-right-flank.png",
+   "note": "Right descent of the same band uses different marks: ｀'くﾆ心、 → `寸ム → 寸ﾊ → ∨i, → Ⅵｉ → 'ﾆ; the band thins into a near-vertical double stroke.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `｀'くﾆ心、` (391-437); row 11 `寸ム` (420/436); row 12 `寸ﾊ` (432/448); row 13 `∨i,` (442/458/461); row 14 `Ⅵｉ` (449/465); row 15 `'ﾆ` (457/460); the band shifts right ~10 px per row then turns vertical at rows 14-15",
+   "inspected_by": "skill-rounded agent"
+  },
   {
    "id": "an-t7-branch-into-leaf",
    "role": "branch_entry",
@@ -577,13 +1062,13 @@
     "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
     "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
     "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
-    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+    "cited_by": "structural-line-selection.md 'Recovered AA tools: capability is not construction or attribution' → 'Transfer the drawing relationships' (cup aa[176] rows 5–14 rim, sparse-to-denser punctuation, `彡` sides, `彳`/`ジ` returns; rows 15–21 plate/context; exact original native PNG not packaged); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (cup's elliptical rim and surface-following `彡` → `彳`/`ジ` returns; preserve inner/outer rim, side wall and contact); aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]"
    },
    "crop": "crops/sk-cup176-cast-shadow.png",
-   "note": "Cast shadow as solid colon runs starting at the cup's base and ending in `.......` tapers — no outline on either edge.",
+   "note": "Cast shadow as solid colon runs starting at the cup's base and ending in `.......` tapers — no outline on either edge. Read as a caster (cup) / receiver (plate) lighting boundary, not a plate material seam.",
    "status": {
     "state": "retained",
-    "reason": "same cited piece; shadow is adjacent to the cited surface tone; no operator note"
+    "reason": "skill-cited region (rows 11–14 within cup rows 5–14); the cast-shadow reading is an interpretation; no operator note; crop is a new Saitamaar render of MLT aa[176] (text verified identical to explorer assets/glyphs/contextual/aramaki-cup-plate-176.txt), not the unpackaged original native PNG; the recovered-tool audit establishes no production tool or attribution"
    },
    "inspection": "cup side ends `彡{`@371/387 r11, `彡j`@371/387 r12, `:=:彳`@361-375 r13, `;;ジ`@362-368 r14; shadow begins at `j`@387 r12 as `:`×15@391-433 tapering `.......`@436-454; r13 `:`×27@391-469 then `..`@472-475; r14 `.`@382 + `:`×22@385-448 (shorter); far edge is a dot taper, top edge the row-12 start",
    "inspected_by": "skill-examples agent"
@@ -1897,10 +2382,10 @@
     "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
     "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
     "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (tree row 11 `从 ゝ,,`)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (tree row 11 `从 ゝ,,`); structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact (T#7 rows 4–7 and 10–13) — `从 ゝ,,` root contact"
    },
    "crop": "crops/sk-tree7-root-ground-contact.png",
-   "note": "Trunk base with no closed bottom: left edge becomes a splayed `从`, right edge flares out as `ゝ` into `,,` ground flicker.",
+   "note": "Trunk base with no closed bottom: left edge becomes a splayed `从`, right edge flares out as `ゝ` into `,,` ground flicker. The `从` legs meet the `\"\"\"\"` ground strip as a contact read; the branch-like glyph does not prove roots intersecting the ground surface. The patchy ground intervals of row 13 lie outside this crop.",
    "status": {
     "state": "retained",
     "reason": "skill-cited row 11 `从 ゝ,,`; no operator rejection recorded"
@@ -1960,7 +2445,7 @@
     "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
     "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
     "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm); structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
    },
    "crop": "crops/sk-hand-middle-ring-web.png",
    "note": "Web between two fingers drawn as a squared U `!__,!`: two flanks drop into one shallow floor; two dots below mark the knuckle line instead of a stroke.",
@@ -2153,10 +2638,10 @@
     "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
     "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
     "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root); structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact (T#7 rows 4–7 and 10–13) — `メｿ` branch entry"
    },
    "crop": "crops/sk-tree7-branch-entry.png",
-   "note": "Trunk opens into the crown: right edge forks as `ｿ` → `メｿ` and dissolves into texture; the trunk top is never capped.",
+   "note": "Trunk opens into the crown: right edge forks as `ｿ` → `メｿ` and dissolves into texture; the trunk top is never capped. `メ` is a crossing-shaped glyph read here as branch strokes leaving the trunk; its shape alone does not prove two limbs intersect.",
    "status": {
     "state": "retained",
     "reason": "skill-cited rows 5–11 relating envelope to branch/trunk; no operator rejection recorded"
@@ -2218,7 +2703,7 @@
     "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
     "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
     "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]; structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
    },
    "crop": "crops/sk-hand-ring-pinky-web.png",
    "note": "Finger web `ヽ、`→`ヽノ` that continues downward as a `ノ/` palm crease: the join does not close, it hands off to an interior line.",
@@ -2283,7 +2768,7 @@
     "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
     "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
     "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]; structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
    },
    "crop": "crops/sk-hand-index-middle-web.png",
    "note": "Asymmetric web: a long `＼` diagonal from one finger meets a short `ヽノ` hook from the other, so the valley bottom sits off-centre.",
@@ -2870,7 +3355,7 @@
     "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
     "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
     "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]; structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (res424 rows 16–19; rows 9–24 wider veil context)"
    },
    "crop": "crops/sk-madonna-clasped-hands.png",
    "note": "Two stacked `'Y'` fingertip forks between posts, then a single `｜` seam where the palms meet: contact without closing the hands.",
@@ -3007,7 +3492,7 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
     "label": "church page 2f0353dc aa[99] (C#99)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction); structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (C#99 rows 46–50: opposing pew constructions)"
    },
    "crop": "crops/sk-church99-pew-right.png",
    "note": "Mirror pew ends spelled `iヽ!|` / `＼|.＿||` — not a literal glyph mirror of `|レi` (レ→ヽ, i→!), chosen for ink fit.",
@@ -3076,7 +3561,7 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
     "label": "church page 2f0353dc aa[99] (C#99)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction); structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (C#99 rows 46–50: opposing pew constructions)"
    },
    "crop": "crops/sk-church99-pew-left.png",
    "note": "Receding pew ends: `|レi` over `|／`, with the next pew's rail ending on a dot one glyph before the post — repeated rows join without merging.",
@@ -3156,6 +3641,153 @@
    },
    "inspection": "rib `l:::: l`@52-72 r12 / `!:::::l`@51-70 r13 thins to `| :: |`@49-69 r14 and `｜:::|`@43-68 r15, then closes `l＿|`@49/52/68 r16; wall `＼`@0 r14 → @16 r15 → @33 r16 lands on that `l`@49; r17 `l__/\"\"`@48-77 flares right into the spring `'''`@96-102 / `‐-`@116-124; r18 `| |`@49/58 shaft; `:`/`.`@0 r12-13 are the wall's own tone",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sr-p15-dotted-rim-top",
+   "role": "dotted_rim",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 270,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "a clear strip between the dotted rim and the cells' crosses/caps"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　　　　＿＿＿＿",
+     "　　　　　　　　 　　 ． ‥…………………",
+     "　　　　　　　．……‥‥　　＂＇＇＂　　　",
+     "　　　　 ．……　　　　　　＿　 -─‐-　＿　",
+     "　　 ．‥…　　　 _　-┼ｰ　／　　　 　 ＼ ‐",
+     " ．……　　 　-‐-┌￣.:.:.:/　　　　　　　　　",
+     "…… 　 　.／　 ／￣￣＼|　 　 　 　 　 　 |／"
+    ],
+    "row_numbers": [
+     3,
+     9
+    ],
+    "x_px": [
+     60,
+     330
+    ],
+    "row_pen_x": [
+     66,
+     66,
+     66,
+     66,
+     66,
+     66,
+     60
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "dotted_rim",
+    "up": null,
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-dotted-rim-top.png",
+   "note": "Outer rim of the rose drawn only with leader dots: ． ‥………… crown under a ＿＿＿＿ lintel, then ．……‥‥ / ．…… / ．‥… / ．…… steps down-left; no solid contour.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 3 `＿＿＿＿` (242-305) above row 4 `． ‥…………………` (186-329); rows 5-8 dot runs start at 143, 115, 93, 71 and row 9 `……`@60, each a short `．`+`…` step; row 5 `＂＇＇＂` (240-288) hangs under the crown; the cells' `-┼ｰ`, `┌￣.:.:.:/` begin ~40 px inside",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-dotted-rim-flank",
+   "role": "dotted_rim",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 70,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "a ~30 px paper strip between the dotted rim and the outer cells"
+   },
+   "native": {
+    "rows": [
+     "　 …‐　 　 ",
+     "　…‐　　 ／",
+     "...…　　　′",
+     ".…　　　:| 　",
+     "…　　　 ＼",
+     "…　　　／￣",
+     "…　　 :|　　",
+     "…　　　:.　　",
+     ".….　　　＼",
+     "..….　　　／",
+     ". …　　 /　",
+     "　…‐　 |　　"
+    ],
+    "row_numbers": [
+     13,
+     24
+    ],
+    "x_px": [
+     0,
+     70
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "dotted_rim",
+    "down": "dotted_rim"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-dotted-rim-flank.png",
+   "note": "Left side of the same dotted rim: one … per row stacked straight down with ‐ / . accents marking the turn ends; the outer cells' ／ ＼ | stay a fixed paper gap inside.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "rows 13-24 `…`@16,11,9,3,0,0,0,0,3,6,8,11 with `‐`@32/27 at rows 13-14 and 24 and `.` accents at rows 15-16, 21-23; cell contours `／`@62, `|`@55, `＼`@54, `／￣`@49, `|`@46, `/`@51 never touch the rim",
+   "inspected_by": "skill-rounded agent"
   },
   {
    "id": "fc-ear-flat-7r",
@@ -3473,6 +4105,116 @@
    "inspected_by": "faces agent"
   },
   {
+   "id": "sa-orinrin22-right-turn",
+   "role": "effect_line",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 45,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the `て` hook"
+   },
+   "native": {
+    "rows": [
+     "⌒ヾて"
+    ],
+    "row_numbers": [
+     935,
+     935
+    ],
+    "x_px": [
+     0,
+     45
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２２衝撃] (impact), under the `**右` heading (line 931), line 935",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin22-right-turn.png",
+   "note": "One-row impact turn fragment: a `⌒` cap, a `ヾ` tick and a `て` hook curling back. A one-row stored alternative, not a drawing.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r935 `⌒`@0 cap, `ヾ`@16 tick, `て`@28 whose top bar continues the cap level and hooks back down-left; siblings `)て`, `て＿＿`, `てノ(` in rows 933-936",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin22-up-turn",
+   "role": "effect_line",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 45,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "above the U turn"
+   },
+   "native": {
+    "rows": [
+     "ゞ乂ノ"
+    ],
+    "row_numbers": [
+     901,
+     901
+    ],
+    "x_px": [
+     0,
+     45
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２２衝撃] (impact), under the `**上` heading (line 895), line 901",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin22-up-turn.png",
+   "note": "One-row impact turn fragment: `ゞ` flick, `乂` crossing and `ノ` rising make a cupped U. Group 22 rows are one-row alternatives listed under direction headings, not adjacent rows of one drawing.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r901 `ゞ`@0 flick, `乂`@11 whose ＼ stroke curves into `ノ`@27 rising right = U turn; sibling alternatives `ゞ从ﾚ` r899, `ゞ火ノ` r900 directly above (not part of this slice)",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "sh-eff24-horizontal-speed",
    "role": "effect_line",
    "also_roles": [
@@ -3744,6 +4486,412 @@
    "inspected_by": "annotations agent"
   },
   {
+   "id": "sr-p37-vase-rim-lobes",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "contact_junction",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 100,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the vase's body between ｉ´ and ｀ｉ; dots .:.:.: only in the mouth"
+   },
+   "native": {
+    "rows": [
+     "|　　 　 ＴＴ　　 |",
+     "|＿＿ｉ´.:.:.:｀ｉ＿|",
+     "|＿＿乂_,,乂＿|",
+     "|＿＿＿＿＿＿"
+    ],
+    "row_numbers": [
+     18,
+     21
+    ],
+    "x_px": [
+     200,
+     300
+    ],
+    "row_pen_x": [
+     202,
+     202,
+     202,
+     202
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-37.txt",
+    "label": "operator circle My MLT profile 37 = entry-37.txt; Japanese room vessels; original Japanese room page aa[55]",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile37 vessels)"
+   },
+   "crop": "crops/sr-p37-vase-rim-lobes.png",
+   "note": "Small vase on a shelf: ｉ´.:.:.:｀ｉ rim with dotted mouth over paired 乂_,,乂 lower lobes whose outer tails land on the shelf ＿＿; ＴＴ above is a separate object.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 18 `ＴＴ`@249/259; row 19 `ｉ´.:.:.:｀ｉ` (238-276) rim with `.:.:.:` (250-265); row 20 `乂_,,乂` (238-265) return, outer tails meeting shelf `＿＿`@206-222 and `＿`@281; shelf sides `|`@202 and `|`@296-297; row 21 `＿＿＿＿＿＿` shelf front",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p37-pot-rim-wall",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 115,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the pot's body interior right of ;;;,, and the paper under its return"
+   },
+   "native": {
+    "rows": [
+     "| ,|_|,､-只-.、＿＿＿",
+     "/＿{｀¨¨¨¨´}＿＿＿",
+     "|｀ｉ乂;;;,,　 ノ ￣^||",
+     "|¨|: : :｀¨¨´ 　 　 ||"
+    ],
+    "row_numbers": [
+     21,
+     24
+    ],
+    "x_px": [
+     10,
+     125
+    ],
+    "row_pen_x": [
+     11,
+     11,
+     16,
+     16
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "cast_shadow_edge"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-37.txt",
+    "label": "operator circle My MLT profile 37 = entry-37.txt; Japanese room vessels; original Japanese room page aa[55]",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile37 vessels)"
+   },
+   "crop": "crops/sr-p37-pot-rim-wall.png",
+   "note": "Lidded pot: ,､-只-.、 lid, {｀¨¨¨¨´} elliptical mouth, ｉ乂;;;,,　 ノ wall-and-return with bounded lower-left tone, then ｀¨¨´ under it; inner rim, wall and base are distinct.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 21 `,､-只-.、` (36-81) lid; row 22 `{｀¨¨¨¨´}` (35-87) mouth ellipse with dotted far rim; row 23 `｀ｉ乂;;;,,　 ノ` (20-79): `乂`@32 turns the wall, `;;;,,`@48-60 bounded tone, `ノ`@79 right return; row 24 `｀¨¨´`@51-75 under the body; `|`@16 / `||`@118-122 are furniture",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p28-inner-ellipse-lip",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 215,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the enclosed elliptical plane above the lip (rows 10-12 centre) stays nearly empty"
+   },
+   "native": {
+    "rows": [
+     " ｛=-　　　　　｀´　　　　　‐=〕─‐}〉",
+     "`'マﾆ=-　　　　　＿-=ﾆ㌣─,ｧ’　",
+     "iト／｀`''ｰ-=こ＿＿＞＜　　／〈〉／",
+     "、⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒　 ｰ─"
+    ],
+    "row_numbers": [
+     10,
+     13
+    ],
+    "x_px": [
+     205,
+     420
+    ],
+    "row_pen_x": [
+     209,
+     220,
+     210,
+     214
+    ]
+   },
+   "ports": {
+    "left": "ellipse_rim",
+    "right": "ellipse_rim",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-28.txt",
+    "label": "operator circle My MLT profile 28 = entry-28.txt; altar: thick perspective ellipse; original church page aa[166]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile28 altar)"
+   },
+   "crop": "crops/sr-p28-inner-ellipse-lip.png",
+   "note": "Inner ellipse of the altar: ｛=- / ‐=〕─‐} far ends, `'マﾆ=- / ＿-=ﾆ㌣─,ｧ’ side bands, and a thick near lip ｰ-=こ＿＿＞＜ over ⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `｛=-`@214-230 and `‐=〕─‐}〉`@364-416 far rim ends; row 11 `｀'マﾆ=-`@220-262 / `＿-=ﾆ㌣─,ｧ’`@325-410; row 12 `／｀`''ｰ-=こ＿＿＞＜`@223-347; row 13 `⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒`@225-375 near lip; centre rows 10-12 paper except `｀´`@293",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p41-upright-end",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "side",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 135,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the cylinder's wall between the | sides; the top face between the two rims"
+   },
+   "native": {
+    "rows": [
+     " _ ,, -- ― -- ,, _",
+     " |¨≧＝==＝≦¨|　　　",
+     ".|　　　　　　　　 .|　　　",
+     ".|　 　 　 　 　 　 |　　　",
+     " 〉 ＝　===　＝.┴＜　"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     195,
+     330
+    ],
+    "row_pen_x": [
+     197,
+     196,
+     198,
+     198,
+     196
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "whole_circle",
+    "up": null,
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-upright-end.png",
+   "note": "Upright cylinder seen from above: far rim _ ,, -- ― -- ,, _ over thick near rim |¨≧＝==＝≦¨|, straight | walls, and a broken base ring 〉 ＝ === ＝.┴ whose right end runs into the rear drum's ＜.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 1 `_ ,, -- ― -- ,, _` (202-297) far rim; row 2 `|¨≧＝==＝≦¨|` (201-301) near rim with `¨` corners; rows 3-4 `|`@201 and `|`@301 walls with `.` ticks; row 5 `〉`@201, `＝ === ＝.`@214-292 base ring, `┴`@295 under the right wall, `＜`@311 opening the drum behind",
+   "split_stroke": [
+    {
+     "glyph": "┴",
+     "row": 5,
+     "pen_x": 295,
+     "serves": [
+      "vertical stroke and left arm: the upright cylinder's right wall landing on its base ring (continues | rows 2-4 and ＝. on row 5)",
+      "right arm: the visible start of the rear drum's top rim, which re-emerges as ＜@311 and continues ｀ヽ@331 on row 6"
+     ],
+     "depth": "the upright cylinder is in front; the drum's rim is hidden behind it between ＞@247 (row 6) and ＜@311, and the drum interior below row 5 stays paper",
+     "reading": "in the crop the ┴ bar extends past the wall into ＜ with no matching closure on the cylinder side, so the right arm reads as the rear rim emerging from behind the wall rather than as a joint of the cylinder",
+     "binding": "agent_reading"
+    }
+   ],
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p28-near-rim-thick",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 445,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the plane inside the rim, where the pedestal and 《 》 ornaments stand on paper"
+   },
+   "native": {
+    "rows": [
+     " ﾞ寸三≫､、｀'＜⌒　　　 《 》　　　　 ＼＿＿|＿_,/《》　　　　　 ⌒＞'’ ｘi",
+     "ゝ ｀''弌三らぅｓ｡~\"''～､、　　　　《 》　　＼＿＿/　　　　　_こ-　ﾟ_,.｡s个三",
+     "≪>ｘ　`'＜三三うぅゎ｡.,_｀`''　ｰ-=こ＿___＼,.厶=-　''\"´_　-こ三三ﾆ＞",
+     " ≫'’　≫､、｀`'' ＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=-　ﾞ｡s≦",
+     "'’　≫'’　 ⌒≧s｡..,,_｀`'' ｰ=こ三三三三三三三三二=-　'\"´_,.｡s≦⌒"
+    ],
+    "row_numbers": [
+     16,
+     20
+    ],
+    "x_px": [
+     55,
+     500
+    ],
+    "row_pen_x": [
+     56,
+     56,
+     64,
+     58,
+     58
+    ]
+   },
+   "ports": {
+    "left": "ellipse_rim",
+    "right": "ellipse_rim",
+    "up": "tone_mid",
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-28.txt",
+    "label": "operator circle My MLT profile 28 = entry-28.txt; altar: thick perspective ellipse; original church page aa[166]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile28 altar)"
+   },
+   "crop": "crops/sr-p28-near-rim-thick.png",
+   "note": "Near side of the outer altar rim as a thick multi-strand band: 弌三らぅｓ｡ / ＜三三うぅゎ｡ / ＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=- / ｰ=こ三三…二=-, strands converging toward the ends.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 17 `弌三らぅｓ｡~\"''～､、` (87-202); row 18 `＜三三うぅゎ｡.,_` (117-213) and `-こ三三ﾆ＞`@423-486; row 19 `＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=-` (161-456) with the pedestal foot `《＿》`@331; row 20 `⌒≧s｡..,,_` (123-181) and `ｰ=こ三三三三三三三三二=-` (212-395); strands separated by thin paper",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p41-tilted-end",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 180,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the end face inside ――＜ … ＜ ＿ ≧ and the side wall between the 7 chain and the lower return"
+   },
+   "native": {
+    "rows": [
+     "　　　　 .　――＜　　　　　　 ",
+     "　　　7〈　 　 　 　 　 ｀＞､　　",
+     "　　 7　`＜　　　　　 　 　 〉　",
+     "　　7.　　　 ｀　＜　＿ ≧ 7　 ",
+     "　 7　　　　 　 　 　 　 　 7.　 ",
+     "　7　　　　　　　 　 　 　 ﾉ　´　",
+     "..7　　　.､ _ , _,,　ｰ-、_ _-'　　　",
+     "7　　,´¨￣　　　ゞ　　　　　 　"
+    ],
+    "row_numbers": [
+     3,
+     10
+    ],
+    "x_px": [
+     0,
+     180
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": null,
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-tilted-end.png",
+   "note": "Cylinder lying tilted: its end ellipse ――＜ / 〈 ｀＞､ / `＜ 〉 / ｀ ＜ ＿ ≧ 7 faces up-left, a long dashed 7 chain is the side wall, and a broken ､ _ , _,, ｰ-、_ _-' line returns the far end.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 3 `――＜` (63-111); row 4 `〈`@41 and `｀＞､`@129-153; row 5 `` `＜``@46-53 and `〉`@161; row 6 `｀ ＜ ＿ ≧ 7` (71-159) near lip; side wall `7`@33,27,22,16,11,6,0 rows 4-10; row 9 `.､ _ , _,, ｰ-、_ _-'` (47-154) lower return; row 8 `ﾉ`@149 joins the end to that return",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
    "id": "an-t17-distant-falling-leaf",
    "role": "falling_accent",
    "also_roles": [
@@ -4003,6 +5151,74 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sa-cup176-hatch-flank",
+   "role": "flank",
+   "also_roles": [
+    "tone_core",
+    "side"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 65,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "outside the cup to the right of the side `|`/`{` stays empty on rows 7-11; the cast shadow starts only after `j` on row 12"
+   },
+   "native": {
+    "rows": [
+     "　_,.ン |",
+     "...:;:彡|",
+     ":::;:;;;;;彡{",
+     "..:::;;;;;彡|",
+     ":;::;:;;;;彡{",
+     ".:.::;:;;;彡j:::::"
+    ],
+    "row_numbers": [
+     7,
+     12
+    ],
+    "x_px": [
+     340,
+     405
+    ],
+    "row_pen_x": [
+     347,
+     354,
+     341,
+     342,
+     341,
+     341
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Cup original TXT, rows 5-14, ties rim, sparse-to-denser punctuation, `彡` sides and `彳`/`ジ` returns to one form\"; \"Rounded constructions beyond one circle spelling\" (surface-following `彡` → `彳`/`ジ` returns)"
+   },
+   "crop": "crops/sa-cup176-hatch-flank.png",
+   "note": "Shadow-side flank carried by a stacked column of `彡` whose curved strokes bend toward the silhouette, set just inside an alternating `|`/`{` side line. Existing sk-cup176-cylinder-tone covers the same rows as tone_core (flank only as also-role); this entry keys the `彡` side as the flank itself. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "`彡`@371-372 on every row 8-12 sits ~15 px inside the side, which alternates `|`@388 (r8, r10) and `{`@387 (r9, r11) and ends `j`@387 r12; each `彡`'s three strokes curve down-right toward the side and continue the left-to-right ramp `...:;:` → `;;;;;`; r7 `_,.ン`@358-369 inner-rim return sits above the first `彡`, side `|`@388 r7",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "an-t65-trunk-cylinder",
    "role": "flank",
    "also_roles": [
@@ -4073,6 +5289,76 @@
    "inspected_by": "annotations agent"
   },
   {
+   "id": "sk-madonna-kawa-veil-edge",
+   "role": "flank",
+   "also_roles": [
+    "fold_crease",
+    "tone_core",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 95,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "right",
+    "paper": "narrow gaps (≈6-9px) between the diverging stroke lines below `川`; left of the colon-pair column"
+   },
+   "native": {
+    "rows": [
+     " ! :: : ｜　 　.::}　",
+     " l :: ::　ﾄ､.　　::し",
+     ",' :: ::　川:. 、 ｀-",
+     "　:: :. ,' ｌ l ::::... -",
+     " :: :.l　!ﾘ::::::::::'　",
+     " :　:!: ;'ヽ::　　　",
+     " :　:l il ::.、｀ - "
+    ],
+    "row_numbers": [
+     9,
+     15
+    ],
+    "x_px": [
+     140,
+     235
+    ],
+    "row_pen_x": [
+     142,
+     140,
+     141,
+     141,
+     149,
+     150,
+     149
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_core",
+    "up": "flank",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna rows 9–24: veil boundaries, `::`/`.` strips, `川`, `!ﾘ` and open paper); 'Worked multi-row constructions' — Veil (rows 9–24 wider context)"
+   },
+   "crop": "crops/sk-madonna-kawa-veil-edge.png",
+   "note": "Inner veil boundary beside the face carried by multi-stroke glyphs: a single `｜` becomes `ﾄ､`, then `川` divides it — its left stroke continues down-left via `,'` into the `l`/`!` column, its other strokes into the `ｌ l` pair and `!ﾘ`, which ends against the solid under-chin colon band. Which form each line belongs to (veil fold vs cheek/neck) is not decided here; no split-stroke ownership is bound for `川`.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited glyphs `川` and `!ﾘ` (Madonna rows 9–24); interpretation of the lines is an agent reading; no operator rejection recorded"
+   },
+   "inspection": "r9 `｜`@175 single; r10 `ﾄ､`@181/188 + `.`@195; r11 `川`@180 (three strokes, the left one curving down-left) + `:.`@196/199; r12 `,'`@174/177 under the left stroke, `ｌ`@185 and `l`@194 under the others, `::::...`@202-220; r13 `l`@171, `!`@185, `ﾘ`@189 then `::::::::::`@197-224 `'`@227; r14 `!`@172, `;'ヽ`@184/187/190; r15 `l`@171, `il`@179/182; colon pairs `::`/`:.`@152-168 stay left of the lines every row",
+   "inspected_by": "skill-examples agent (recheck 2026-10-27)"
+  },
+  {
    "id": "an-t14-crown-left-outline",
    "role": "flank",
    "also_roles": [
@@ -4140,6 +5426,77 @@
    },
    "inspection": "row 11 `γ`@181, rows 12-13 `（`@181, row 14 `(`@192, row 15 `（`@198, row 16 `乂`@209 then `;;;`, row 17 `.~~\"`@219: lobe glyphs step 0/0/11/6/11 px right going down; 乂 closes the flank into the underside",
    "inspected_by": "annotations agent"
+  },
+  {
+   "id": "sa-cup176-plate-right-turn",
+   "role": "flank",
+   "also_roles": [
+    "cast_shadow_edge",
+    "tone_mid",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 150,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the narrow gap between the plate-top dots and the cast-shadow dots is the plate edge; it stays empty except `` ` ``, `!`, `,: '`"
+   },
+   "native": {
+    "rows": [
+     "_　.　　　　　　　　　　　 ￣",
+     "　゛`'丶.､.......",
+     "　　　::::::...`.::::::::....",
+     "つ　　.:::::::::　 !::::::::::::...",
+     "　　　　　　,: '.:::::::::",
+     "_,,,,,...--‐=''´..::::::",
+     "‐' ''' \"´"
+    ],
+    "row_numbers": [
+     15,
+     21
+    ],
+    "x_px": [
+     180,
+     330
+    ],
+    "row_pen_x": [
+     184,
+     187,
+     184,
+     183,
+     186,
+     182,
+     189
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": cup rows 15-21 plate/context"
+   },
+   "crop": "crops/sa-cup176-plate-right-turn.png",
+   "note": "Right end of the plate ellipse carried mostly by the gap between two dot fields (plate top vs. cast shadow) plus a few sparse rim marks. Complements sk-cup176-plate-ellipse-return (pens 0-265), which stops before this turn. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "far rim `゛`'丶.､`@198-235 r16 drops to the end; the edge itself is only `` ` ``@244 r17, `!`@266 r18 and `,: '`@252-263 r19, turning into the near rim `--‐=''´`@211-249 r20; plate-top tone `::::::...`@217-241 r17 and `.:::::::::`@220-247 r18 stays left; cast shadow `.......`@242-260 r16, `.::::::::....`@251-287 r17, `::::::::::::...`@270-312 r18, `.:::::::::`@266-293 r19, `..::::::`@257-278 r20 lies right; no outline on either shadow edge",
+   "inspected_by": "skill-amendments agent"
   },
   {
    "id": "sk-smoke168-left-lobe-flank",
@@ -4534,7 +5891,7 @@
     "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
    },
    "crop": "crops/sk-hand-finger-crease-pair.png",
-   "note": "Two short joint cues inside one finger, each attached to the left flank and left open on the right; the finger is otherwise two flanks and paper.",
+   "note": "Two short joint cues inside one finger, each sitting nearer the left flank (≈10px ink gap) and stopping ≈16–20px short of the right flank — neither end touches a flank; the finger is otherwise two flanks and paper.",
    "status": {
     "state": "retained",
     "reason": "skill-cited interior cues rows 3/6 (`ー`, `ｰ-`); no operator rejection recorded"
@@ -4599,7 +5956,7 @@
     "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
     "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
     "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]; structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (res424 rows 16–19; rows 9–24 wider veil context)"
    },
    "crop": "crops/sk-madonna-chin-fold.png",
    "note": "Drape under the chin as two nested hanging arcs below a solid colon band, then a third, dotted arc whose tone thins along it.",
@@ -4609,6 +5966,75 @@
    },
    "inspection": "r13 `!ﾘ::::::::::'`@185-227 is a solid band (10 `:`@197-224); r14 `;'ヽ::`@184-205 starts the left side; arc 1 r15 `、｀ - - ' /`@199-257 ends in `}`@270; arc 2 r16 `ゝ、｀ｰ - イ /`@185-262 sits 1 row lower and wider; r17 `ﾄ､: : : ... ｲ`@202-254 repeats the arc as spaced dots; r18 `ﾉ:. ヽ イ.:人`@197-252 begins the clasped hands below; arcs are dashed (`-` with gaps), never solid",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sk-madonna-veil-strip-stroke-passage",
+   "role": "fold_crease",
+   "also_roles": [
+    "periodic_band",
+    "tone_mid",
+    "opening_paper_gap",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 175,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "lighter full-space intervals between the slanted `.:`/`.::` strip columns, and between the strips and the `l:i`/`l:l`/`|:l` stroke pair; outside the `／`→`/`→`./` outer edge"
+   },
+   "native": {
+    "rows": [
+     "　 　 　 ／.:　:　　 :　:l il ::.、｀",
+     "　　 .／ .:　.::　　　:　,'.: ゝ、｀",
+     "　　/　.:　 .::　:. 　 :: l:i　::　ﾄ､",
+     "　 /　.:　 .::　 .:　　:: l:l . :: ﾉ:. ",
+     " ./　.:　 .::　　:: 　 ::: |:l　::（::::.　",
+     ".,': .::　 .:::　　.::　　::: ﾄ､ :. :）:::."
+    ],
+    "row_numbers": [
+     15,
+     20
+    ],
+    "x_px": [
+     40,
+     215
+    ],
+    "row_pen_x": [
+     43,
+     44,
+     44,
+     43,
+     43,
+     43
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "fold_crease",
+    "up": "tone_mid",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (rows 16–19; rows 9–24 wider context); 'Four important AA construction patterns' — Dots as form articulation (Madonna rows 9–24)"
+   },
+   "crop": "crops/sk-madonna-veil-strip-stroke-passage.png",
+   "note": "The worked veil passage: a doubled stroke with a colon held inside (`,'.:` → `l:i` → `l:l` → `|:l` → `ﾄ､`) runs down as a veil fold/edge beside slanted colon/dot strip columns that follow the outer `／` edge, with light paper intervals kept between every strip. Read as a fold/edge by context; no single punctuation string is a universal fold and the source does not prove a mathematical valley.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited worked example (veil rows 16–19, with rows 15 and 20 as one row of context each); interpretation is comparison guidance, not an operator label; no operator rejection recorded"
+   },
+   "inspection": "r16 `.／`@71/74 outer edge then strips `.:`@95/98, `.::`@112-118, `:`@154, `,'.:`@168-177 heading the stroke pair, `ゝ、`@185/197; r17 `/`@66, `.:`@85/88, `.::`@107-113, `:.`@127/130, `::`@154/157, `l:i`@165/168/171; r18 `/`@59, `.:`@78/81, `.::`@100-106, `.:`@125/128, `::`@153/156, `l:l`@164/167/170; r19 `./`@48/51, `.:`@70/73, `.::`@92-98, `::`@123/126, `:::`@150-156, `|:l`@164/168/171, `::（::::.`@185-211; r15 `:l il`@168-182 above and r20 `ﾄ､`@164/171 below continue the pair; strip columns shift ~5-7px left per row with the outer edge and never touch it or each other",
+   "inspected_by": "skill-examples agent (recheck 2026-10-27)"
   },
   {
    "id": "fc-eye-large-narrow-6r",
@@ -5113,6 +6539,75 @@
    "inspected_by": "faces agent"
   },
   {
+   "id": "sk-hand-diagonal-strip-return",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "return_base",
+    "contact_junction",
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 57,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the narrow strip between the two parallel diagonals is the thumb/palm (thumb–index) opening: it stays paper down to the `,/` floor and must not be bridged by a continuous stroke"
+   },
+   "native": {
+    "rows": [
+     "l 　　 _!　　",
+     "l 　‐　＼",
+     "）ヽ、　 　",
+     "　ヽ、　　",
+     "ヽ、＼, 　",
+     "　＼,/　"
+    ],
+    "row_numbers": [
+     9,
+     14
+    ],
+    "x_px": [
+     118,
+     175
+    ],
+    "row_pen_x": [
+     119,
+     123,
+     119,
+     128,
+     126,
+     127
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "paper",
+    "up": "flank",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
+    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
+    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm); structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
+   },
+   "crop": "crops/sk-hand-diagonal-strip-return.png",
+   "note": "Thumb/palm opening: the upper diagonal (`ヽ、`→`ヽ、`→`＼`) continues the index finger's left flank, the lower one (`ヽ、`→`＼`) continues the thumb's `人` right leg, and the paper strip between them is closed by a 2-row `,/` floor return. Id kept for stability: 'strip-return' names the opening and its floor, not an elongated form. The earlier tentative reading 'thumb's folded segment' is not supported by the crop, because the upper edge belongs to the index finger.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited: Worked multi-row constructions, Hand rows 10–13 (thumb/palm opening) and Sparse interior cues rows 9–13; the opening reading is an agent reading of flank continuity in the crop, not an operator label; no operator note"
+   },
+   "inspection": "upper diagonal `ヽ、`@127/139 r11 → `ヽ、`@139/151 r12 → `＼`@149 r13 → `,`@165 r13; lower diagonal `ヽ、`@126/138 r13 → `＼`@138 r14 → `,`@154 r14; `/`@157 r14 rises from the lower end to the upper `,`@165 — the tip return; `‐`@142 r10 is an open interior cue between `l`@123 and `＼`@161, `_!`@154/159 r9 the palm edge above; recheck 2026-10-27: index left flank `l`@119 r9 → `l`@123 r10 runs straight into the upper `ヽ、`@127 r11 (also seen in a context crop rows 6–15 x75–200: `|`@115 r8), while the lower `ヽ、`@126 r13 leaves the thumb's `人`@112 r12 — the strip is the gap between index/palm and thumb",
+   "inspected_by": "skill-examples agent"
+  },
+  {
    "id": "fc-mouth-open-teeth-6r",
    "role": "opening_paper_gap",
    "also_roles": [
@@ -5325,6 +6820,77 @@
    "inspected_by": "annotations agent"
   },
   {
+   "id": "sa-basement073-pillar-flank-paper",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "side",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 330,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "two open regions: left between the thick band (`,ｲﾆア゜`→`/ﾆ'′`) and the thin inner rib (`'゜`, `,､-:`, `｣`); right between the pillar marks (`/`, `∨/`, `V/`, `|`) and the band (`寸ム`, `寸ﾊ`, `Ⅵｉ`)"
+   },
+   "native": {
+    "rows": [
+     "　 　,ｲ二㌃゜　　 　 |:::::::::::::::::::::|　　　　　｀'くﾆ心、　　",
+     "　,ｲﾆア゜　 　 　__,,.|:::::::::::::::::::::|　　　　　　　`寸ム　　",
+     " /ﾆｱ　　 　 ,　'゜　 :|:::::::::::::::::::::|　/　　　　　　　寸ﾊ　　",
+     "/ﾆ'′　　／　　 ,､-:|:::::::::::::::::::::|∨/　　　　　　　 ∨i,　",
+     "　　　 　 ′　　,.:.:｣:::|:::::::::::::::::::::|: V/　　　　　　 　 Ⅵｉ　",
+     " 　 　 ;′ 　 /:::::|::::|:::::::::::::::::::::| : |　　　　　　　　　 'ﾆ",
+     ". : : : : |: : : :_ ‐二 : |:::::::::::::::::::::| :｜　:　:　.　　　　　 |ﾆ",
+     ": : : : : _l_:_-_:_:_:_: : : |:::::::::::::::::::::|　 l　:　:　:　:　.　.　.　|ﾆ"
+    ],
+    "row_numbers": [
+     10,
+     17
+    ],
+    "x_px": [
+     140,
+     470
+    ],
+    "row_pen_x": [
+     143,
+     148,
+     145,
+     142,
+     142,
+     149,
+     147,
+     143
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-073.txt",
+    "label": "church page 2f0353dc aa[73] (basement), operator-constructions/church-073.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"central pillar and flanking open regions cooperate\""
+   },
+   "crop": "crops/sa-basement073-pillar-flank-paper.png",
+   "note": "Central pillar as a dense colon-filled slab between two plain edges, with large empty regions kept on both sides between it and the arch band.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "pillar `|`@265 and `|`@332 with 21 `:` between on every row 10-17 (tone_core slab); left: band steps steeper `,ｲ二㌃゜`@170 r10 → `,ｲﾆア゜`@159 → `/ﾆｱ`@150 → `/ﾆ'′`@142 r13, a thin inner rib `__,,.`@246-262 r11, `,`@221 / `'゜`@235 r12, `／`@201 + `,､-:`@244-262 r13, `,.:.:｣:::`@234-262 r14 meets the pillar; right: `/`@347 r12, `∨/`@336-352 r13, `: V/`@336-354 r14, `: |`@341-349 r15, `:｜`@341 r16, `l`@352 r17 against band `寸ム`@420 r11, `寸ﾊ`@432, `∨i,`@442, `Ⅵｉ`@449, `'ﾆ`@457, `|ﾆ`@462; paper between these marks and the band stays empty; ground dots start only on rows 16-17",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "an-r41-protected-negative-shape",
    "role": "opening_paper_gap",
    "also_roles": [
@@ -5466,7 +7032,7 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
     "label": "church page 2f0353dc aa[126] (C#126)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md paragraph after the four-pattern table (church 2f0353dc-126 bounded tone vs broad open diagonal paper, a lighting/negative-space analogy, not principal highlights); aahub-reference-index.md Church aa[126]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — C#126 paragraph (rows 16–28: colon/dot tone thinning vs a broad open diagonal paper passage, read as light in comparison; lighting/negative-space analogy, not DeCarlo principal highlights) and 'Attachment is not construction' (a bright strip, pale paper passage or light shaft is not proof of a highlight predicate); aahub-reference-index.md Church aa[126]"
    },
    "crop": "crops/sk-church126-diagonal-light-paper.png",
    "note": "Ruin interior where a broad diagonal of open paper is kept by stopping every masonry/rubble group with thinning `: .`/`ｉ: ..` tails along its edge.",
@@ -5903,13 +7469,13 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
     "label": "church page 2f0353dc aa[99] (C#99)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction) — piece-level citation only; rows 21–26 are outside the rows structural-line-selection.md 'Four important AA construction patterns' cites for C#99 (rows 1–8 column punctuation bands, see sk-church99-column-punct-band; rows 46–50 pews)"
    },
    "crop": "crops/sk-church99-wall-brick-band.png",
    "note": "Brick wall as a two-row unit `＿i;;::;:` whose rows alternate start so joints offset by half a brick (SKILL 8 copy-and-offset ground pattern).",
    "status": {
     "state": "retained",
-    "reason": "skill-cited punctuation band on aa[99]; no operator rejection recorded"
+    "reason": "same skill-cited piece (aa[99] punctuation bands); rows 21–26 are not among the skill's cited rows; no operator rejection recorded"
    },
    "inspection": "r23/25 `|＿i;;::;:＿i;;::;:…|`@108-265: unit = `＿`(16)+`i`+6 punctuation = 37px; r24/26 `|;;::;:＿i;;::;:…＿|` starts with the punctuation so `＿i` joints fall ~18px right; r21 `|___:|`@108-138 / `|;;:;:|`@246-265 are the side columns; r22 `／..＼..┃..／..＼`@142-230 sits on the band as two gables with `..` dots, `l＿|`@246-265 at right",
    "inspected_by": "skill-examples agent"
@@ -5972,13 +7538,13 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
     "label": "church page 2f0353dc aa[99] (C#99)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (church 2f0353dc-99 rows 46/48/50 `|レi` opposite `iヽ!|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction)"
+    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' Church aa[99] (punctuation bands, cooperative column/pew construction) — piece-level citation only; rows 38–44 are outside the rows structural-line-selection.md 'Four important AA construction patterns' cites for C#99 (rows 1–8 column punctuation bands, see sk-church99-column-punct-band; rows 46–50 pews)"
    },
    "crop": "crops/sk-church99-altar-step-bands.png",
    "note": "Altar steps where each tread is one alternating-punctuation band and each riser is a `／` or `＿／`/`___|` corner.",
    "status": {
     "state": "retained",
-    "reason": "skill-cited punctuation bands on aa[99]; no operator rejection recorded"
+    "reason": "same skill-cited piece (aa[99] punctuation bands); rows 38–44 are not among the skill's cited rows; no operator rejection recorded"
    },
    "inspection": "r38 `|:.:.|i_人`@269-297 frieze; r39 `| :.:.:.`@269/278+ and r40 `|_;,;,;,`@269/273/278+ are two alternating bands (`:.` / `;,`); r41 `／`@275 then `::::`@291+; r42 `＿／`@240/256 then `;;::;;:;`@272+; r43 `___|`@240-255 then `;;::`@259+; r44 `／`@242 then `::::`@258+ — every band starts after its riser glyph's advance (4–16px from the riser's pen), never overlapping it",
    "inspected_by": "skill-examples agent"
@@ -6042,7 +7608,7 @@
     "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
     "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
     "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]; structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (res424 rows 16–19; rows 9–24 wider veil context)"
    },
    "crop": "crops/sk-madonna-lower-veil-strips.png",
    "note": "Veil body as parallel colon strips separated by paper gutters; strips lengthen downward so the veil darkens toward the hem without any strip merging.",
@@ -6111,16 +7677,229 @@
     "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
     "label": "church page 2f0353dc aa[126] (C#126)",
     "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
-    "cited_by": "structural-line-selection.md paragraph after the four-pattern table (church 2f0353dc-126 bounded tone vs broad open diagonal paper, a lighting/negative-space analogy, not principal highlights); aahub-reference-index.md Church aa[126]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — C#126 paragraph (rows 16–28: colon/dot tone thinning vs a broad open diagonal paper passage, read as light in comparison; lighting/negative-space analogy, not DeCarlo principal highlights) and 'Attachment is not construction' (a bright strip, pale paper passage or light shaft is not proof of a highlight predicate); aahub-reference-index.md Church aa[126]"
    },
    "crop": "crops/sk-church126-ray-band.png",
-   "note": "Diagonal stripes made of stepped `ﾞi,` / `‘i,` strokes with alternating dense `.:.:` and thinned `: :` rows between them.",
+   "note": "Diagonal stripes made of stepped `ﾞi,` / `‘i,` strokes with alternating dense `.:.:` and thinned `: :` rows between them. 'Ray' in the id is a descriptive analogy only: the stripes are not a proven light shaft or highlight.",
    "status": {
     "state": "retained",
     "reason": "cited aa[126] colon/dot thinning; no operator rejection recorded"
    },
    "inspection": "three parallel diagonals step right ~4-6px/row: wall `|`@313 r18 → @337 r24, `ﾞi,`@330 → @360, `‘i,`@356 → @392; between them r19/20/22/23 use dense `.:.:.` runs and r18/21/24 thinned `: :` runs (e.g. r20 `.:.:.:`@350-365 vs r21 `: :.`@355-366); every run stops before the next stroke; `∨∧`/`∨/`/`∨`@386-410 r18-21 is a separate lattice at the band's upper right",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sa-church99-column-bands-left",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 165,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "the nave interval between the two columns (pens ~143-228) stays empty except the banner cross; one half space separates each column body from its thin side-face `|`"
+   },
+   "native": {
+    "rows": [
+     "|___:| |　 　 　 　　　 | |;;:;:|　",
+     "|;;::;:| |　　 　 　 　 　| |___|　",
+     "|___:| |　 　 　 　　　 | |;;:;:|　",
+     "|;;::;:| |　　 　 　 　 　| |___|　",
+     "|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "|;;::;:| |　 ━╋━　　| |___|　",
+     "|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "|;;::;:| |　 　 ┃　　 　| |___|　"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     100,
+     265
+    ],
+    "row_pen_x": [
+     108,
+     108,
+     108,
+     108,
+     108,
+     108,
+     108,
+     108
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": null,
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99), top rows",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Four important AA construction patterns\" (updated 716bedd), \"Dots as form articulation\": church C#99 rows 1-8 column punctuation bands incl. `|;;::;:|`"
+   },
+   "crop": "crops/sa-church99-column-bands-left.png",
+   "note": "Two columns built from alternating courses: a `___` joint course and a punctuation course; the two columns run in opposite phase, and each has a separate thin side-face `|` turned toward the centre.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited dots-as-form-articulation witness; no operator rejection recorded"
+   },
+   "inspection": "col1 alternates `|___:|` (r1,3,5,7) and `|;;::;:|` (r2,4,6,8) @108-130, its `:`@127 always on the inner (right) edge; col2 runs in counter-phase `|;;:;:|`/`|___|` @238-257; thin side faces `|`@139 and `|`@229 face the centre with one half space of paper; banner `┃`@175 r5/7/8 and `━╋━`@159-191 r6 hang in the otherwise empty interval; the punctuation courses texture the column faces in rhythm with the joints, not as fill",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church99-column-bands-right",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 165,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "the interval between col3 and col4 (pens ~485-568) stays empty except the banner cross"
+   },
+   "native": {
+    "rows": [
+     " |___| |　 　　 　 　 　| |:;::;;|",
+     " |:;:;;| | 　 　 　 　　　| |:___|",
+     " |___| |　 　　 　 　 　| |:;::;;|",
+     " |:;:;;| | 　 　 　 　　　| |:___|",
+     " |___| |　 　　┃　 　 | |:;::;;|",
+     " |:;:;;| |　　━╋━ 　| |:___|",
+     " |___| |　 　　┃ 　 　| |:;::;;|",
+     " |:;:;;| | 　　　┃ 　 　| |:___|"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     445,
+     610
+    ],
+    "row_pen_x": [
+     446,
+     446,
+     446,
+     446,
+     446,
+     446,
+     446,
+     446
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": null,
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99), top rows",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Four important AA construction patterns\" (updated 716bedd), \"Dots as form articulation\": church C#99 rows 1-8 column punctuation bands incl. `|;;::;:|`"
+   },
+   "crop": "crops/sa-church99-column-bands-right.png",
+   "note": "Mirror pair of the left columns with different punctuation spellings (`:;:;;`, `:;::;;`) and the colon moved to the inner (left) edge of the outer column.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited dots-as-form-articulation witness; no operator rejection recorded"
+   },
+   "inspection": "col3 alternates `|___|` (odd rows) and `|:;:;;|` (even) @451-470; col4 counter-phase `|:;::;;|` (odd) / `|:___|` (even) @578-600 with the course colon `:`@582 on its inner (left) edge, mirroring col1 `___:`; side faces `|`@479 and `|`@569 face the centre; banner `┃`@521 r5/7/8, `━╋━`@505-537 r6",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sk-church99-column-punct-band",
+   "role": "periodic_band",
+   "also_roles": [
+    "side",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 175,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "the gap between each banded column and its separate outer post; the wall field around the cross between the columns"
+   },
+   "native": {
+    "rows": [
+     "　|___:| |　 　 　 　　　 | |;;:;:|　",
+     "　|;;::;:| |　　 　 　 　 　| |___|　",
+     "　|___:| |　 　 　 　　　 | |;;:;:|　",
+     "　|;;::;:| |　　 　 　 　 　| |___|　",
+     "　|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "　|;;::;:| |　 ━╋━　　| |___|　",
+     "　|___:| |　 　 ┃　　　 | |;;:;:|　",
+     "　|;;::;:| |　 　 ┃　　 　| |___|　"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     95,
+     270
+    ],
+    "row_pen_x": [
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97,
+     97
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": null,
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#99",
+    "label": "church page 2f0353dc aa[99] (C#99)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (C#99 rows 1–8: column punctuation bands including `|;;::;:|`); aahub-reference-index.md 'Other individually cited pieces' Church aa[99]"
+   },
+   "crop": "crops/sk-church99-column-punct-band.png",
+   "note": "Column built as stacked blocks: rows alternate an open `___:` block and a `;;::;:` punctuation block between two posts, and the opposite column runs the same alternation out of phase; a separate single post stands beside each banded column with paper between.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited C#99 rows 1–8 column punctuation bands; not operator-approved; no operator rejection recorded"
+   },
+   "inspection": "left column `|`@108 … `|`@130 holds `___:`@112-127 on r1/3/5/7 and `;;::;:`@112-127 on r2/4/6/8, separate post `|`@139; right column post `|`@229 then `|`@238 … `|`@257 holds `;;:;:`@242-254 on r1/3/5/7 and `___`@242-252 on r2/4/6/8 (opposite phase); cross `┃`@175 r5/7/8 and `━╋━`@159/175/191 r6 in the open wall between; the alternation continues below row 8 (rows 9–11 seen in text)",
+   "inspected_by": "skill-examples agent (recheck 2026-10-27)"
   },
   {
    "id": "sh-mlt04-full-round-ref",
@@ -6358,6 +8137,147 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sa-cup176-lower-return",
+   "role": "return_base",
+   "also_roles": [
+    "flank",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 125,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the lit lower-left of the cup between `ト ,` / `ヽ､..` and the dot ramp stays mostly empty; outside the base below `￣￣`"
+   },
+   "native": {
+    "rows": [
+     "!,　　　 . .:.::;:;;;彡j:::::",
+     "　 ト ,　 . ..,:;:;:=:彳:::::",
+     "　 ヽ､..　....::::;;;ジ.:::::::",
+     "　　　　 ￣￣"
+    ],
+    "row_numbers": [
+     12,
+     15
+    ],
+    "x_px": [
+     280,
+     405
+    ],
+    "row_pen_x": [
+     288,
+     282,
+     283,
+     280
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "cast_shadow_edge",
+    "up": "tone_core",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/aramaki-cup-plate-176.txt",
+    "label": "aramaki cup and plate, AAHub page e8e2f681 aa[176]; explorer original TXT aramaki-cup-plate-176.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": cup rows 5-14 `彳`/`ジ` returns"
+   },
+   "crop": "crops/sa-cup176-lower-return.png",
+   "note": "The cup base as one return seen from both sides: plain lit-side marks `!,` → `ト ,` → `ヽ､..` on the left, directional `彡j` → `=:彳` → `;;;ジ` on the shadow side, closing on `￣￣`. The exact original native PNG is not packaged; the crop is a new Saitamaar native render of the original TXT (as all crops are), not the original image.",
+   "status": {
+    "state": "retained",
+    "reason": "operator example drawing (operator_reference_sources.v1.json aramaki-cup-plate-surface-following-tone, whole-drawing note quoted); no written region label for this region; TXT verified identical to archive e8e2f681 aa[176]",
+    "operator_note": "its aperfect example of the ditehring but it sues both the sparse dots and multi stroke directional glyphs that huggs/ bends with surface"
+   },
+   "inspection": "left: `!,`@288-292 r12 → `ト ,`@298-313 r13 → `ヽ､..`@299-321 r14; right: `彡j`@371/387 r12 → `=:彳`@364-375 r13 (彳 stem steps ~12 px in from the side line) → `;;;ジ`@359-368 r14 → `￣￣`@329-345 r15; dots between thin from `;:;;;` at right to `. .` at left; shadow colons right of `j`/`彳`/`ジ` stay outside; `彳`/`ジ` strokes serve the same cup (contour + hatch), so not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-assisi036-oculus-pediment",
+   "role": "return_base",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 220,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the oculus (pens ~349-389, rows 7-8) and the empty pediment triangle around it; the cornice is absent between `乂` and `ノ`"
+   },
+   "native": {
+    "rows": [
+     "イﾆﾆヽ ／　　　　 　 　 　 ＼ﾆヽ",
+     "|　　 ／　　　　γ⌒ヽ　　　　＼|",
+     "|　／＿＿＿＿乂__ノ＿＿＿＿＼",
+     "|'´|¨¨|¨¨¨¨¨丁¨二二¨¨ﾞ[¨¨¨¨|¨:|"
+    ],
+    "row_numbers": [
+     6,
+     9
+    ],
+    "x_px": [
+     250,
+     470
+    ],
+    "row_pen_x": [
+     254,
+     254,
+     254,
+     252
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "shoulder",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-036.txt",
+    "label": "Assisi San Francesco, church page 2f0353dc aa[36], operator-constructions/church-036.txt (html-unescaped; verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Assisi church036 rows 7-8: changing `γ⌒ヽ` cap and `乂__ノ` lower return cooperate with their enclosed paper and surrounding architecture\""
+   },
+   "crop": "crops/sa-assisi036-oculus-pediment.png",
+   "note": "Small round window whose lower return `乂__ノ` is spelled inside the pediment's cornice run `／＿＿＿＿乂__ノ＿＿＿＿＼`: the ring interrupts the cornice instead of being drawn as a separate closed circle.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "r7 cap `γ⌒ヽ`@345-377 under the raking cornices `／`@285 / `＼`@433; r8 cornice `／＿＿＿＿`@269-333 → `乂`@349 → `__`@365-370 → `ノ`@375 → `＿＿＿＿＼`@386-450; in the crop `乂`'s left-to-right stroke continues the `γ` tail down into the window bottom `__`, its other stroke lands on the cornice end; paper kept inside the ring; r6 `イﾆﾆヽ ／` / `＼ﾆヽ` and r9 entablature `|¨¨|¨¨¨¨¨丁¨二二¨¨ﾞ[` frame it. Note: the bound screenshot crop-03 does not show these rows (see inspection_log)",
+   "inspected_by": "skill-amendments agent",
+   "split_stroke": [
+    {
+     "glyph": "乂",
+     "row": 8,
+     "pen_x": 349,
+     "serves": [
+      "left-to-right (＼) stroke -> lower-left flank/return of the oculus, continuing the `γ` tail into `__ノ`",
+      "lower-left foot of the right-to-left (ノ) stroke -> end of the pediment cornice `＿＿＿＿` arriving from the left"
+     ],
+     "depth": "oculus in front: the cornice stops at `乂` and resumes only after `ノ`@375, so it reads as passing behind the ring; the ring keeps its own enclosed paper",
+     "reading": "one intact glyph carries both the ring contour and the cornice arrival; on the right side the same meeting is spelled with a separate `ノ` and `＿`, which makes the left-side sharing visible. A plain tangent contact is also a possible reading",
+     "binding": "agent_reading"
+    }
+   ]
+  },
+  {
    "id": "sh-mlt33-large-return-base",
    "role": "return_base",
    "also_roles": [
@@ -6420,73 +8340,6 @@
    "inspected_by": "shapes-circles agent"
   },
   {
-   "id": "sk-hand-diagonal-strip-return",
-   "role": "return_base",
-   "also_roles": [
-    "flank",
-    "fold_crease"
-   ],
-   "size_band": {
-    "rows": 6,
-    "px_wide": 57,
-    "band": "m"
-   },
-   "context": {
-    "tangent_in": "NW",
-    "tangent_out": "NE",
-    "curvature": "convex",
-    "inside": "above",
-    "paper": "the narrow strip between the two parallel diagonals stays paper down to the `,/` tip"
-   },
-   "native": {
-    "rows": [
-     "l 　　 _!　　",
-     "l 　‐　＼",
-     "）ヽ、　 　",
-     "　ヽ、　　",
-     "ヽ、＼, 　",
-     "　＼,/　"
-    ],
-    "row_numbers": [
-     9,
-     14
-    ],
-    "x_px": [
-     118,
-     175
-    ],
-    "row_pen_x": [
-     119,
-     123,
-     119,
-     128,
-     126,
-     127
-    ]
-   },
-   "ports": {
-    "left": "contact_junction",
-    "right": "paper",
-    "up": "flank",
-    "down": "paper"
-   },
-   "source": {
-    "repo": "ascii-art-archive",
-    "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
-    "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
-    "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Sparse interior cues (hand resK-154 rows 3/6/7 `ー`, `ｰ-`, `-‐`; rows 9–13 webbing and thumb/palm)"
-   },
-   "crop": "crops/sk-hand-diagonal-strip-return.png",
-   "note": "Two parallel stepped diagonals (ヽ、/＼) closed at the lower end by a 2-row `,/` return — an elongated form ended without a cap glyph.",
-   "status": {
-    "state": "retained",
-    "reason": "skill-cited hand rows 9–13 region; reading as the thumb's folded segment is inference; no operator note"
-   },
-   "inspection": "upper diagonal `ヽ、`@127/139 r11 → `ヽ、`@139/151 r12 → `＼`@149 r13 → `,`@165 r13; lower diagonal `ヽ、`@126/138 r13 → `＼`@138 r14 → `,`@154 r14; `/`@157 r14 rises from the lower end to the upper `,`@165 — the tip return; `‐`@142 r10 is an open interior cue between `l`@123 and `＼`@161, `_!`@154/159 r9 the palm edge above",
-   "inspected_by": "skill-examples agent"
-  },
-  {
    "id": "sk-cup176-plate-ellipse-return",
    "role": "return_base",
    "also_roles": [
@@ -6545,16 +8398,90 @@
     "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
     "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
     "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
-    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+    "cited_by": "structural-line-selection.md 'Recovered AA tools: capability is not construction or attribution' → 'Transfer the drawing relationships' (cup aa[176] rows 5–14 rim, sparse-to-denser punctuation, `彡` sides, `彳`/`ジ` returns; rows 15–21 plate/context; exact original native PNG not packaged); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (cup's elliptical rim and surface-following `彡` → `彳`/`ジ` returns; preserve inner/outer rim, side wall and contact); aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]"
    },
    "crop": "crops/sk-cup176-plate-ellipse-return.png",
    "note": "Wide plate ellipse: soft comma-run far rim, `'´`/`i`/`ヽ､` flank, and a near rim drawn as two stacked runs that are solid at centre and fade to commas/quotes at the ends.",
    "status": {
     "state": "retained",
-    "reason": "same cited piece; plate structure is context for the cited tone; no operator note"
+    "reason": "skill-cited as plate/context (cup rows 15–21); no operator note; crop is a new Saitamaar render of MLT aa[176] (text verified identical to explorer assets/glyphs/contextual/aramaki-cup-plate-176.txt), not the unpackaged original native PNG; the recovered-tool audit establishes no production tool or attribution"
    },
    "inspection": "r15 far rim `＿,,,,,,,,,,,`@71-117 / `,,..,,,,,____`@142-184; r16 shoulders `,, -'''\"`@27-55 and `゛`'丶.､`@198-235; flank `'´`@19/22 r17 → `i`@11 r18 → `ヽ､`@14/26 r19; near rim r20 `` `=ｰ--､....,,,,,_＿＿＿＿_,,,,,...--‐=''´ ``@38-249 over r21 `｀`\" '' 'ー───‐―‐' ''' \"´`@60-227 (rim thickness); food `/ ,' 3`, `⊃ ⌒_つ` inside with paper around; `::::::...`@217-244 r17 / `.:::::::::`@220-247 r18 is a tone field on the plate's right half",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sr-p15-rosette-and-ring-return",
+   "role": "return_base",
+   "also_roles": [
+    "tone_mid",
+    "dotted_rim",
+    "whole_circle"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 300,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the large empty centre between the rosette's return and the inner ring's lower course"
+   },
+   "native": {
+    "rows": [
+     "　　　　　＼.:.:.:.:.: |　　　　　　 　 |.:.:.:.:.:／　　　 　 ",
+     "　　　　　　 丶、:::.　　　　　　　/.:.:,，'’　　　　　　",
+     "､　　　　　　 　 ｀¨^≧=‐-‐=≦^¨´　　　　　 　 　",
+     "＼　　　　　　　　　　　　　　　　　　　　　　　　／",
+     "　＼　　　　　　　　　 　 　 　 　 　 　 　 　 ／￣",
+     "　　　 丶、　　　　　　　　　　　　　　　　　／　　　",
+     " 　 　 |　 ::........　　　　　　　　　　　　　／ 　 |　　",
+     "＿__／￣　＼::::::....…ー--─…　　　　／￣＼＿",
+     "　　 /　　　　　 .:::／￣　＼::::／￣　＼/　　　　　"
+    ],
+    "row_numbers": [
+     21,
+     29
+    ],
+    "x_px": [
+     120,
+     420
+    ],
+    "row_pen_x": [
+     123,
+     126,
+     123,
+     130,
+     134,
+     124,
+     129,
+     127,
+     120
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "whole_circle",
+    "up": "whole_circle",
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-rosette-and-ring-return.png",
+   "note": "Two returns stacked: the central rosette closes with ｀¨^≧=‐-‐=≦^¨´ under dotted tone, and the larger inner ring comes round with ＼ / ／ diagonals into a dotted ::::::....…ー--─… lower course resting on the bottom cells' caps.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 21 `＼.:.:.:.:.:`@178 / `|.:.:.:.:.:／`@320-354 dotted cell tone; row 22 `丶、:::.`@197 / `/.:.:,，'’`@313; row 23 `｀¨^≧=‐-‐=≦^¨´` (217-327) closes the rosette; rows 24-27 inner ring `＼`@130, `＼`@145, `丶、`@162 and `／`@410, `／`@393, `／`@376, `／`@359; row 28 `＼::::::....…ー--─…` (196-305) is its dotted lower course over `＿__／￣　＼` (127-196) / `／￣＼＿` (365-413) cell caps",
+   "inspected_by": "skill-rounded agent"
   },
   {
    "id": "fc-eye-lid-pair-1r",
@@ -6912,6 +8839,67 @@
    "inspected_by": "faces agent"
   },
   {
+   "id": "sr-p23-carved-crown-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "arch_band",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 185,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the opening below the band (row 7 onward) and the small paper inside each ⌒ lobe"
+   },
+   "native": {
+    "rows": [
+     "ｧ'’　｡s个　{　　}　 个s｡　｀'<=",
+     "　 xく⌒＞-乂乂-＜⌒^'>､　寸",
+     ",ｲ⌒>'ﾟ,.イニニニﾐh､'く⌒心,　"
+    ],
+    "row_numbers": [
+     5,
+     7
+    ],
+    "x_px": [
+     220,
+     405
+    ],
+    "row_pen_x": [
+     223,
+     220,
+     223
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "arch_band",
+    "up": "paper",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-23.txt",
+    "label": "operator circle My MLT profile 23 = entry-23.txt; Ajanta carved layered arch; original church page aa[151]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (profile23 adds carved crown lobes)"
+   },
+   "crop": "crops/sr-p23-carved-crown-lobes.png",
+   "note": "Carved crown: the arch band's top is built from lobes xく⌒＞ / ＜⌒^'> meeting at a doubled 乂乂 keystone, with ｲ⌒> / 'く⌒心 lobes on the next row and 个 { } 个 finials above.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 5 `｡s个 { } 个s｡` (253-363) finials; row 6 `xく⌒＞-乂乂-＜⌒^'>､` (236-382) lobe chain with the 乂乂 keystone at 292/308; row 7 `,ｲ⌒>'ﾟ` (223-262) and `'く⌒心,` (352-396) shoulder lobes around the inner `,.イニニニﾐh､` band (266-345)",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
    "id": "an-t116-grass-rock",
    "role": "rim_cap",
    "also_roles": [
@@ -7093,16 +9081,205 @@
     "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
     "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
     "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
-    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+    "cited_by": "structural-line-selection.md 'Recovered AA tools: capability is not construction or attribution' → 'Transfer the drawing relationships' (cup aa[176] rows 5–14 rim, sparse-to-denser punctuation, `彡` sides, `彳`/`ジ` returns; rows 15–21 plate/context; exact original native PNG not packaged); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (cup's elliptical rim and surface-following `彡` → `彳`/`ジ` returns; preserve inner/outer rim, side wall and contact); aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]"
    },
    "crop": "crops/sk-cup176-rim-ellipse.png",
    "note": "Cup mouth as an outer rim broken by steam plus an inner liquid ellipse whose near edge returns as `ヾ<_ … _,.ン`.",
    "status": {
     "state": "retained",
-    "reason": "same cited piece; rim construction is not the cited surface-tone feature itself; no operator note"
+    "reason": "skill-cited: rows 5–8 rim are within the cited cup rows 5–14 (rim tied to tone, sides and returns); no operator note; crop is a new Saitamaar render of MLT aa[176] (text verified identical to explorer assets/glyphs/contextual/aramaki-cup-plate-176.txt), not the unpackaged original native PNG; the recovered-tool audit establishes no production tool or attribution"
    },
    "inspection": "r5 outer rim `. -‐`@302-318 and `‐- .`@350-371 broken by steam `）`@337; r6 shoulders `.´`@286/289 and `` `. ``@381/388 with far-wall dots `,.::::;;:...`@297-330; r7 inner ellipse `ヾ<`@294/306 turns, `:;_`@314-320 … `_,.ン`@358-369 returns; r8 `￣`@338 inner bottom; sides `i`/`l`@286 and `|`@388 drop from r7",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sa-church105-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-105.txt",
+    "label": "church page 2f0353dc aa[105], operator-constructions/church-105.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church105-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[105] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[105] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church106-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-106.txt",
+    "label": "church page 2f0353dc aa[106], operator-constructions/church-106.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church106-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[106] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[106] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-church107-paired-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "contact_junction",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe under its `⌒` and between the lobes' open lower ends and the stem; the lobes are not closed at the bottom"
+   },
+   "native": {
+    "rows": [
+     "　｜　 　_)i(_ 　　｜　",
+     "　｜ （(⌒Y⌒)） ｜　",
+     "　｜　｀　)Ｉi(　´　｜　",
+     "　｜ 　 《´.｀》 　 ｜　"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     0,
+     130
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "contact_junction",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-107.txt",
+    "label": "church page 2f0353dc aa[107], operator-constructions/church-107.txt (verified identical to the archive MLT text); one of three candidate variants",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Church105/106/107 rows 6-7 share the paired-lobe motif; the supplied crop does not uniquely identify one full-artwork variant. Preserve that uncertainty.\""
+   },
+   "crop": "crops/sa-church107-paired-lobes.png",
+   "note": "Crop-04 (operator_reference_sources.v1.json operator-curve-crop-04) does not identify one artwork variant: rows 5-8 at pens 0-130 are text-identical in church aa[105], aa[106] and aa[107], and each artwork repeats the motif at a second position (~pen 402) in the same rows. This entry binds aa[107] only for addressability; it is not the identified source of the crop. Motif: two `⌒` lobes sharing one `Y`, with doubled outer flanks `（(`/`)）`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label; crop does not identify one artwork variant (105/106/107)"
+   },
+   "inspection": "r6 `（(⌒Y⌒)）`: `（`@32 `(`@40 `⌒`@45 `Y`@61 `⌒`@70 `)`@86 `）`@91 — two caps share `Y`@61 whose stem points down to `)Ｉi(`@57-69 r7; doubled outer flanks; r7 ticks `｀`@38 / `´`@85 end the lobes open at their lower outer corners; r5 `_)i(_`@54-72 above, r8 `《´.｀》`@48-75 below; frame `｜`@11/@104 on every row; aa[107] text identical to the other two variants here; `Y` read as a shared cooperating join, not flagged as split stroke",
+   "inspected_by": "skill-amendments agent"
   },
   {
    "id": "sk-smoke153-lower-lobe",
@@ -7166,7 +9343,21 @@
     "reason": "skill-cited res153 (blank between overlapping lobes separates them). Smoke contour-first recipe (SKILL 15.7) is specific to outline-dominant smoke/lobe designs; still reference, no lifecycle/animation evidence."
    },
    "inspection": "r4 `／⌒て_`@55-101: `／`→`⌒` cap hooks into `て`, a lobe tucked behind; r5 `￣）`@111/127 caps the right lobe; r5 `,,ゝ`@49-55 is a notch where two left lobes overlap, r6 `（`@38 the lower-left lobe and `／`@105 the right side falling; r7 ground `ー----´--‐‐～´`@0-103 with `´`@47 and `～´`@87/103 where lobes meet ground — no closed lobe bottoms",
-   "inspected_by": "skill-examples agent"
+   "inspected_by": "skill-examples agent",
+   "split_stroke": [
+    {
+     "glyph": "て",
+     "row": 4,
+     "pen_x": 87,
+     "serves": [
+      "top bar -> continues the `／⌒` cap of the upper-left lobe (front form)",
+      "hooked curve and its tail -> the tucked-in start of the lower-right lobe, whose top runs on through `_` (r4) and `￣` to `）` (r5)"
+     ],
+     "depth": "upper-left lobe in front: its cap line runs straight over the curl; the right lobe's contour curls under the bar instead of meeting it, and paper inside the curl (below the bar, above `_`) keeps the two lobes from merging",
+     "reading": "in the 4x and 8x views the bar and the curve leave the glyph in different directions and connect to different neighbours (`⌒` vs `_`/`￣）`); this reads as the rear lobe tucked behind the front cap rather than a physical junction of two contours",
+     "binding": "agent_reading"
+    }
+   ]
   },
   {
    "id": "an-t56-root-bulge",
@@ -7296,6 +9487,69 @@
    "inspected_by": "skill-examples agent"
   },
   {
+   "id": "sa-church121-brace-oculus",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 230,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "enclosed by `γ⌒ヽ`, `{ }` and `ノ '､`, open at the bottom between `ノ` and `'､`; empty bays between the radiating ribs"
+   },
+   "native": {
+    "rows": [
+     "､　＿＿＿ヽγ⌒ヽ'´＿＿_　　,､丶` ",
+     "┘`ー‐‐--' {　　　 } ──‐'　└─‐ ",
+     "￣＞　　　 ノ　　　 '､　　　　＜￣￣ j",
+     "`　 　　 ／　　　　 　 ＼　　　 　｀ヽ､,'"
+    ],
+    "row_numbers": [
+     2,
+     5
+    ],
+    "x_px": [
+     290,
+     520
+    ],
+    "row_pen_x": [
+     290,
+     292,
+     293,
+     291
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "shoulder"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#121",
+    "label": "church page 2f0353dc aa[121], rows 2-5 (the passage operator crop-03 visibly shows; see note)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\"; operator_reference_sources.v1.json operator-curve-crop-03 (bound there to aa[36] rows 7-8)"
+   },
+   "crop": "crops/sa-church121-brace-oculus.png",
+   "note": "Hub where ribs converge: a `γ⌒ヽ` cap with `{`/`}` flanks that the horizontal ribs touch, open at the bottom into diverging `／ ＼` ribs. Binding discrepancy: operator_reference_sources.v1.json binds crop-03 to aa[36] rows 7-8, but the crop's pixels (`ヽγ⌒ヽ'´` over `-' {   } ─`, with `ノ`/`'､` below) match this passage by agent visual comparison; not resolved here.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "r2 `ヽγ⌒ヽ'´`@356-415 caps the hub, outer `ヽ`@356 and `'´`@412-415 meet the ribs `＿＿＿`@308-340 / `＿＿_`@423-455; r3 flanks `{`@370 and `}`@412 touched by `ー‐‐--'`@315-362 and `──‐'`@421-461; r4 `ノ`@363 and `'､`@412-415 turn inward but leave the bottom open; `＞`@309 / `＜`@466 converge from the sides; r5 `／`@341 and `＼`@422 diverge downward; paper inside the hub",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "sh-mlt33-large-cap-shoulders",
    "role": "rim_cap",
    "also_roles": [
@@ -7358,9 +9612,73 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sa-basement073-shallow-crown",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 250,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "between the band's outer and inner edges, and the open space below row 9 on both sides of the pillar"
+   },
+   "native": {
+    "rows": [
+     "　 　 　,｡s≦｢|:::::::::::::::::::::|¨≧s｡,　　　　　",
+     " 　 x≪ニ二ﾆ|:::::::::::::::::::::|二二ﾆ≫ｘ　　　",
+     "／二-＞''~ : |:::::::::::::::::::::|　~`'' ＜二≫,、",
+     "二㌃゜　　 　 |:::::::::::::::::::::|　　　　　｀'くﾆ心"
+    ],
+    "row_numbers": [
+     7,
+     10
+    ],
+    "x_px": [
+     180,
+     430
+    ],
+    "row_pen_x": [
+     182,
+     180,
+     183,
+     182
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/operator-constructions/church-073.txt",
+    "label": "church page 2f0353dc aa[73] (basement), operator-constructions/church-073.txt (verified identical to the archive MLT text)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"Transfer the drawing relationships, not a production story\": \"Basement church073 rows 7-17: shallow crown, changing sloped/steeper band marks, central pillar and flanking open regions cooperate\""
+   },
+   "crop": "crops/sa-basement073-shallow-crown.png",
+   "note": "Thick, very shallow arch crown (rises ~2 rows over ~240 px) spelled as outer edge, middle stripe and inner edge, cut at the apex by the pillar in front of it.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-supplied crop source; no written region label"
+   },
+   "inspection": "outer edge r7 `,｡s≦｢`@225-258 runs into the pillar `|`@265 and resumes `¨≧s｡,`@336-374; stripe r8 `x≪ニ二ﾆ`@201-255 / `二二ﾆ≫ｘ`@336-394; inner edge r9 `／二-＞''~`@183-245 / `~`'' ＜二≫,、`@347-423; r10 hands to the steeper band `二㌃゜`@182-214 and `｀'くﾆ心`@391-421; pillar `|:::...:|`@265-332 occludes the apex on every row; three edges = band thickness, which the skill says is not licence to multiply outlines on a plain sphere; no split stroke seen (`｢` reads as the band end at the occlusion)",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "sk-hand-thumb-cap",
    "role": "rim_cap",
    "also_roles": [
+    "return_base",
     "contact_junction",
     "flank",
     "fold_crease"
@@ -7375,7 +9693,7 @@
     "tangent_out": "S",
     "curvature": "convex",
     "inside": "below",
-    "paper": "inside the thumb under `⌒` and left of `）`; between the `人` legs"
+    "paper": "inside the thumb pad under `⌒`, left of `）` and above the `ノ` return; between the `人` legs; the thumb/palm opening begins right of the `人` right leg and must stay open"
    },
    "native": {
     "rows": [
@@ -7412,10 +9730,10 @@
     "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
     "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
     "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]; structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
    },
    "crop": "crops/sk-hand-thumb-cap.png",
-   "note": "Rounded cap on the thumb side whose right edge `）` forks at `人` into two continuing edges — a cap and a shared junction built in one column.",
+   "note": "Rounded thumb cap `/⌒ヽ` whose right edge `）` forks at `人`: the left leg drops to the `ノ` (r14) thumb return that closes the pad, the right leg continues as the lower edge of the thumb/palm opening (see sk-hand-diagonal-strip-return). The cap is not the junction; `人` is a contour fork in the picture plane, not proof that two surfaces intersect.",
    "status": {
     "state": "retained",
     "reason": "skill-cited (`l〉`, `人` rows 11–12); no operator rejection recorded"
@@ -7544,7 +9862,7 @@
     "src": "txt:collections/aahub/te-ude-03/resK-154.txt",
     "label": "手・腕03 te-ude-03 resK-154 (AAHub hand page aa[159]; resK-154 is a local filename, not an AAHub index)",
     "aahub_url": "https://aahub.org/mlt/d0b4ab5a7c00f0c7ffc3fea8b8a4e3b1",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Cooperating joins and caps (hand rows 4/7 `/⌒ヽ`, rows 11–13 `l〉`, `人`, `ヽノ`); aahub-reference-index.md 'Other individually cited pieces' Hand aa[159]; structural-line-selection.md 'Worked multi-row constructions' — Hand: webbing and thumb/palm opening (resK-154 rows 10–13 `/⌒ヽ`, `l〉`, `人`, `ヽノ` and diagonal continuations; protected finger-web recesses and thumb/palm opening; counterexample: bridging a web opening or removing the thumb return)"
    },
    "crop": "crops/sk-hand-pinky-cap.png",
    "note": "Pinky tip whose cap hands off asymmetrically: the right side descends as a stepped ヽ/ヽ、 shoulder while the left drops straight; a knuckle `〉-‐` crease stays open.",
@@ -7686,6 +10004,72 @@
    },
    "inspection": "r2 `∧`@286 cap; r3 `／|.￣ |＼`@264-312: shoulders `／`@264 and `＼`@312 drop onto outer sides `|`@262 / `|`@326 r4-5, inner posts `||`@277/281 and `||`@307/311 frame a recess whose lintel `.￣`@284/287 stops short of the right post; r5 `＿|`@246 / `|＿＿`@326-346 side roofs; r6 `_／￣￣￣￣＼＿`@243-344 = `／￣` + `￣＼` shoulders carrying the base out",
    "inspected_by": "skill-examples agent"
+  },
+  {
+   "id": "sr-p07-frame-arch",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "side",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 145,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the whole frame interior around the medallion; the arch is the frame's top, not a second circle"
+   },
+   "native": {
+    "rows": [
+     "Ｔﾆﾆア´￣￣｀弌ﾆニｈ",
+     " |　　|{　Ｙ⌒Ｙ　}｜　 | ",
+     " |　　|ﾍ 乂_ン /.::|　　| ",
+     " |　　|　 ≧=≦　 |　　| ",
+     "二二|￣￣￣￣￣|二二"
+    ],
+    "row_numbers": [
+     12,
+     16
+    ],
+    "x_px": [
+     70,
+     215
+    ],
+    "row_pen_x": [
+     77,
+     77,
+     77,
+     77,
+     70
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": null,
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-frame-arch.png",
+   "note": "Larger frame around the medallion: ア´￣￣｀弌 arches its top between ﾆﾆ bands, straight | sides drop to a ￣ sill; frame and medallion stay separate.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 12 `ア´￣￣｀弌` (pens 107/121/129/145/161/169) is the frame arch between `Ｔﾆﾆ` and `ﾆニｈ`; rows 13-15 `|`@108 and `|`@184 are the frame sides; row 16 `|￣￣￣￣￣|`@102-186 is the sill; the medallion (rows 13-15) sits inside without touching the arch",
+   "inspected_by": "skill-rounded agent"
   },
   {
    "id": "sk-smoke168-lobe-cap-right",
@@ -7882,6 +10266,77 @@
    "inspected_by": "annotations agent"
   },
   {
+   "id": "sr-p10-shoulder-flank-stack",
+   "role": "shoulder",
+   "also_roles": [
+    "flank",
+    "arch_band"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 105,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the diagonal paper strips between parallel band flanks"
+   },
+   "native": {
+    "rows": [
+     " ￣｀`ヽ、　 ＼",
+     "､ ｀ヽ、　　 ＼　 ∨",
+     "｀`ヽ、｀ヽ、　 ﾍ,　",
+     "_｀`ヽ､＼　＼　i|　",
+     "⌒^ヽ、＼　`ｉ|　",
+     "｀`～､、 ＼ ＼]|　",
+     "｀`ヽ､＼　ﾟ｡ ∨",
+     "｀`丶､ ＼＼ｉ|　|　"
+    ],
+    "row_numbers": [
+     2,
+     9
+    ],
+    "x_px": [
+     255,
+     360
+    ],
+    "row_pen_x": [
+     269,
+     257,
+     257,
+     258,
+     270,
+     258,
+     269,
+     260
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "side",
+    "up": null,
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-shoulder-flank-stack.png",
+   "note": "Right side of the receding vault: repeated ｀`ヽ、 / ｀`丶､ shoulder ticks each hand to a long ＼ flank; the bands stay parallel and separated by paper, so depth reads as repetition, not one thick line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "shoulder ticks `｀`ヽ、` row 2 @290-317, `､ ｀ヽ、` row 3 @257-289, doubled `｀`ヽ、｀ヽ、` row 4 @257-315, then rows 5-9 starting @258/270/258/269/260; each hands to a `＼` flank: row 2 @344, row 3 @327, row 5 @297/324, row 6 @316, row 7 @312/333, row 8 @303, row 9 @303/319; `ﾍ,`@342 row 4 and `∨`@359/346 rows 3/8 belong to the pier; paper strips between bands kept",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
    "id": "sk-madonna-right-shoulder-paper",
    "role": "shoulder",
    "also_roles": [
@@ -7941,7 +10396,7 @@
     "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
     "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
     "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]; structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (res424 rows 16–19; rows 9–24 wider veil context)"
    },
    "crop": "crops/sk-madonna-right-shoulder-paper.png",
    "note": "Long veil shoulder (ﾍ ゝ、 ＼ ＼ ヽ ﾍ ', ｌ) separated from the interior dot columns by a deliberately empty wedge.",
@@ -8437,6 +10892,128 @@
    "inspected_by": "faces agent"
   },
   {
+   "id": "sa-orinrin24-round-mouth",
+   "role": "small_mouth",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 70,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the ring; the ring is broken by half-space gaps at both lower corners"
+   },
+   "native": {
+    "rows": [
+     "　 ／⌒ヽ",
+     "　.i　　　　i",
+     "　 ヽ ＿ ノ"
+    ],
+    "row_numbers": [
+     1224,
+     1226
+    ],
+    "x_px": [
+     0,
+     70
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt (UTF-8 of aalist.txt.cp932), [ListName=２４怒り口] lines 1126-1436, blank-separated sample at lines 1224-1226",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin24-round-mouth.png",
+   "note": "Three-row round mouth from the palette: long `／` shoulder into a `⌒` cap, thin `i` flanks, and a `ヽ ＿ ノ` return with gaps. Palette entries are stored alternatives; this one is a complete blank-separated multi-row sample.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r1224 `／⌒ヽ`@16-48 (`／` shoulder longer than the right `ヽ`); r1225 `.i`@11-14 and `i`@61 flanks; r1226 `ヽ ＿ ノ`@16-54 with half spaces leaving both lower corners open; paper inside; blank rows 1223/1227 separate it from neighbouring samples",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
+   "id": "sa-orinrin24-brace-mouth",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 80,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the brace ring below the doubled `二二` top"
+   },
+   "native": {
+    "rows": [
+     "　 /二二ヽ",
+     "　｛　　　　｝",
+     "　 ヽ--- '′"
+    ],
+    "row_numbers": [
+     1228,
+     1230
+    ],
+    "x_px": [
+     0,
+     80
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/windows-aa/aalist.txt",
+    "label": "Orinrin editor bundled palette windows-aa/aalist.txt, [ListName=２４怒り口], blank-separated sample at lines 1228-1230",
+    "cited_by": "structural-line-selection.md \"Recovered AA tools\" > \"What the recovered mechanisms establish\": \"Palette group24 contains rounded mouth-like constructions; group22 has related turn fragments\"; docs/code-provenance.md \"Concrete preset evidence the earlier account missed\""
+   },
+   "crop": "crops/sa-orinrin24-brace-mouth.png",
+   "note": "Rounded angry-mouth variant: `/二二ヽ` top whose double strokes give a lip line plus an inner tooth line, `｛ ｝` flanks and a dashed `ヽ--- '′` base.",
+   "status": {
+    "state": "retained",
+    "reason": "tool palette text (Orinrin group24/22), not an AAHub artwork; no artist or attribution implied"
+   },
+   "inspection": "r1228 `/二二ヽ`@16-56 (two `二` = outer lip line over an inner line); r1229 `｛`@11 and `｝`@63 flanks; r1230 `ヽ--- '′`@16-60 base with a short `'′` right return; paper inside; blank rows 1227/1231 separate the sample",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "fc-mouth-open-tone-3r",
    "role": "small_mouth",
    "also_roles": [
@@ -8724,7 +11301,7 @@
     "tangent_out": "SE",
     "curvature": "convex",
     "inside": "below",
-    "paper": "all sky beyond the last texture mark on each row; no outline glyph is placed there"
+    "paper": "all sky beyond the last texture mark on each row, plus the crown notches/gaps inside the envelope; no outline glyph is placed there"
    },
    "native": {
     "rows": [
@@ -8761,10 +11338,10 @@
     "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
     "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
     "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Texture-supported boundary (tree 9636c240-7 rows 1–5; rows 5–11 relate envelope to branch/trunk/root); structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact (T#7 rows 4–7 and 10–13) — crown envelope"
    },
    "crop": "crops/sk-tree7-crown-texture-edge.png",
-   "note": "Crown edge carried only by where `;`/`ヾ`/`ゞ`/quote texture stops against sky — no traced contour.",
+   "note": "Crown edge carried only by where `;`/`ヾ`/`ゞ`/quote texture stops against sky — no traced contour. This is an image/occupancy boundary, not automatically a material seam.",
    "status": {
     "state": "retained",
     "reason": "skill-cited texture-supported boundary (rows 1–5); T aa[7] is an annotated page but no region note was read for this entry"
@@ -9008,7 +11585,7 @@
     "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
     "label": "神具・仏具・民芸品・像 legacy res424 (byte-matched to AAHub statue page aa[424] 'S#424 Madonna'; res424 remains a distinct locator)",
     "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (Madonna 61c3c2f5-424 rows 9–24: veil boundaries, alternating `::`/`.` strips, open paper); aahub-reference-index.md 'Other individually cited pieces' Madonna aa[424]; structural-line-selection.md 'Worked multi-row constructions' — Veil: strokes, dot strips and open paper (res424 rows 16–19; rows 9–24 wider veil context)"
    },
    "crop": "crops/sk-madonna-veil-dense-strip.png",
    "note": "Vertical veil strip whose single solid `::::::::` row is the core, with two-colon pairs thinning above and below, bounded by line edges on both sides.",
@@ -9074,13 +11651,13 @@
     "src": "mlt:collections/aahub-mlt/e8/e8e2f681204d649ea2033d2f62399a04.json.gz#176",
     "label": "荒巻スカルチノフ cup/plate page e8e2f681 aa[176]",
     "aahub_url": "https://aahub.org/mlt/e8e2f681204d649ea2033d2f62399a04",
-    "cited_by": "aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]: surface-following tone from an operator source binding (the linked structural-reference anchor 'recovered-aa-tools…' is absent from the current structural-line-selection.md)"
+    "cited_by": "structural-line-selection.md 'Recovered AA tools: capability is not construction or attribution' → 'Transfer the drawing relationships' (cup aa[176] rows 5–14 rim, sparse-to-denser punctuation, `彡` sides, `彳`/`ジ` returns; rows 15–21 plate/context; exact original native PNG not packaged); structural-line-selection.md 'Rounded constructions beyond one circle spelling' (cup's elliptical rim and surface-following `彡` → `彳`/`ジ` returns; preserve inner/outer rim, side wall and contact); aahub-reference-index.md 'Other individually cited pieces' — Cup/plate aa[176]"
    },
    "crop": "crops/sk-cup176-cylinder-tone.png",
-   "note": "Surface-following cylinder tone: each row ramps `. .`→`...`→`::::`→`;;;;`→`彡` toward the right silhouette, leaving the lit left side as paper.",
+   "note": "Surface-following cylinder tone: each row ramps `. .`→`...`→`::::`→`;;;;`→`彡` toward the right silhouette, leaving the left side as paper (lighter by reading, not a proven highlight).",
    "status": {
     "state": "retained",
-    "reason": "the cited surface-following tone; catalog/operator source binding per the index, not a region approval"
+    "reason": "skill-cited surface-following tone (cup rows 5–14); catalog/operator source binding per the index, not a region approval; crop is a new Saitamaar render of MLT aa[176] (text verified identical to explorer assets/glyphs/contextual/aramaki-cup-plate-176.txt), not the unpackaged original native PNG; the recovered-tool audit establishes no production tool or attribution"
    },
    "inspection": "r9 `. . ...::::;:;;;;;彡{`: dots @313-335, `::::`@338-347, `;:;;;;;`@350-368, `彡`@371, side `{`@387; r10 starts later (@323), r11 earlier (@312), r12 later (@333) — uneven lit edge; `彡`@371-374 stacked on every row forms a dark band ~14px inside the right side `|`/`{`@387-388; left side `}`/`ｉ`/`!`@286-288 has paper beside it",
    "inspected_by": "skill-examples agent"
@@ -9375,6 +11952,73 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sa-church126-wedge-thinning-tails",
+   "role": "tone_fringe",
+   "also_roles": [
+    "tone_mid",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 200,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "a diagonal paper stripe ~60-90 px wide stepping right ~15 px per row between the left rubble tails and the right masonry; no mark inside it"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　| 　 　 | : |:::| :::|:|　　 __",
+     ":__ 　 　 　 　 _ ___|::: |:::|::::::\"´:.:.:.:.",
+     ";: : : .　　　　　　 . :.::.:|:::|:::::: : : : : ",
+     ":;.::.: : : .　　　　　 　 ..:|:::|::::: : : : : :",
+     " : : : : :|: .　　　　　　　. :|::: : : : : : ",
+     " : : : : :|: :|: .　　　 　　 　 . . : : : : "
+    ],
+    "row_numbers": [
+     23,
+     28
+    ],
+    "x_px": [
+     130,
+     330
+    ],
+    "row_pen_x": [
+     130,
+     131,
+     131,
+     130,
+     132,
+     132
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "side",
+    "up": "opening_paper_gap",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126), lower middle",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after \"Four important AA construction patterns\": church C#126 rows 16-28 colon/dot tone thinning vs broad open diagonal paper (lighting/negative-space analogy, not principal highlights)"
+   },
+   "crop": "crops/sa-church126-wedge-thinning-tails.png",
+   "note": "Lower end of the open diagonal: both bounding tone fields stop in thinning tails (`: : .`, `|: .`, `..:|`, `. :|`, `. .`) instead of an outline, so the paper stripe reads as a light passage.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited aa[126] tone-thinning comparison; lighting reading is the skill's analogy, not an operator region label"
+   },
+   "inspection": "left tails step right: r25 `;: : : .`@131-158, r26 `: : : .`@148-172, r27 `|: .`@172-184, r28 `|: :|: .`@172-199; right edge: r24 `_ ___|`@213-238 then r25 `. :.::.:|`@232-258, r26 `..:|`@251-260, r27 `. :|`@264-275, r28 column ends and dissolves into `. . : :`@283-307; stripe between is empty; masonry right of it has dense `|:::|` slabs whose rows thin to `: : : :` to the right; rows 29-30 continue the stripe until the `￣￣￣￣` ground line on row 31",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "sh-lib31-sphere-halo-fringe",
    "role": "tone_fringe",
    "also_roles": [
@@ -9587,6 +12231,70 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sa-church126-rubble-tone-mid",
+   "role": "tone_mid",
+   "also_roles": [
+    "tone_core",
+    "tone_fringe",
+    "side"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 125,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "a ~14 px gap between the rubble field and the column `|:::|` on every row"
+   },
+   "native": {
+    "rows": [
+     "::j{;:;:;:::: : ￣|:::|:.:: :.:|: ",
+     "j{: : :::; : :　 |:::|.:.:.:.:.|: :",
+     ": : : : :;:;: :　|:::|.:. :.: |::; ",
+     ": : : :.:::;: :　|:::|.:.:.:.: |:::."
+    ],
+    "row_numbers": [
+     25,
+     28
+    ],
+    "x_px": [
+     0,
+     125
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "tone_mid",
+    "up": "opening_paper_gap",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/2f/2f0353dc8e23bde120d1c050746f937c.json.gz#126",
+    "label": "church page 2f0353dc aa[126] (C#126), lower left",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md paragraph after \"Four important AA construction patterns\": church C#126 rows 16-28 colon/dot tone thinning vs broad open diagonal paper (lighting/negative-space analogy, not principal highlights)"
+   },
+   "crop": "crops/sa-church126-rubble-tone-mid.png",
+   "note": "Three tone densities side by side: rubble ground as spaced `:` with one denser `:::;` cluster per row, a narrow column face packed with `:::`, and a wall face alternating `.:.:` and broken `: :.` rows.",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited aa[126] tone-thinning comparison; no operator region label"
+   },
+   "inspection": "r25 dense `;:;:;::::`@14-38 hugs the `j{`@6-10 edge, then `: ￣`@46-54; r26-28 rubble `:` at 8 px steps with one denser cluster each (`:::;`@24-33 r26, `:;:;:`@32-44 r27, `.:::;:`@27-42 r28) ending `: :` before a gap; column `|:::|`@64-83 dense on all rows; wall `|.:.:.:.:.|` r26/r28 vs `|:.:: :.:|` r25 and `|.:. :.: |` r27 alternate dense/broken; the field continues down to row 30 and the base `_,.⊥` on row 31",
+   "inspected_by": "skill-amendments agent"
+  },
+  {
    "id": "an-r28-rock-dots",
    "role": "tone_mid",
    "also_roles": [
@@ -9704,7 +12412,7 @@
     "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
     "label": "地形 terrain/trees page T aa[7] (9636c240-7)",
     "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
-    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (tree rows 6–10 `|i;, |`, `Il;: |`)"
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' — Dots as form articulation (tree rows 6–10 `|i;, |`, `Il;: |`); structural-line-selection.md 'Worked multi-row constructions' — Tree: texture boundary, branch entry and root contact (T#7 rows 4–7 and 10–13) — trunk-side punctuation"
    },
    "crop": "crops/sk-tree7-trunk-dots.png",
    "note": "Trunk as two edges with one uneven punctuation pair hugging the left edge — shading the cylinder, not filling it.",
@@ -10781,6 +13489,67 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sr-p07-nested-medallion",
+   "role": "whole_circle",
+   "also_roles": [
+    "return_base",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 78,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the inner Ｙ⌒Ｙ/乂_ン round, and the ring of paper between it and the outer {…} / ﾍ…/ frame"
+   },
+   "native": {
+    "rows": [
+     "{　Ｙ⌒Ｙ　}｜",
+     "ﾍ 乂_ン /.::|　",
+     "　 ≧=≦　 |　"
+    ],
+    "row_numbers": [
+     13,
+     15
+    ],
+    "x_px": [
+     112,
+     190
+    ],
+    "row_pen_x": [
+     112,
+     112,
+     112
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-nested-medallion.png",
+   "note": "Two nested rounds in three rows: inner Ｙ⌒Ｙ over 乂_ン, held by a wider bracket ring {…} → ﾍ … /.:: → ≧=≦ that closes below; the rings never touch.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 13 `Ｙ⌒Ｙ` (pens 127/137/153) caps the inner round inside `{`@112 / `}`@174; row 14 `乂_ン` (127/143/148) returns it while `ﾍ`@112 and `/.::`@167 turn the outer ring inward; row 15 `≧=≦` (128/144/152) closes the outer ring under the inner one; paper kept between the two rings; `｜`@178 / `|`@184 is the frame side",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
    "id": "sh-mlt08-brace-flank-3row",
    "role": "whole_circle",
    "also_roles": [
@@ -10971,6 +13740,142 @@
    "inspected_by": "shapes-circles agent"
   },
   {
+   "id": "sr-p07-medallion-halfwidth",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 164,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the compact Y⌒ Y / 乂_ン round and between it and the frame sides"
+   },
+   "native": {
+    "rows": [
+     "　|イﾆﾆTア´￣｀弌ﾆT",
+     "／ノ|　　|{ Y⌒ Y :}　 |",
+     "厂|　|　　|ﾍ乂_ン.:/　｜",
+     "|＾|　|　　|　≧=≦ |　 |",
+     "|_,|二二|￣￣￣￣|二二|"
+    ],
+    "row_numbers": [
+     12,
+     16
+    ],
+    "x_px": [
+     480,
+     644
+    ],
+    "row_pen_x": [
+     488,
+     487,
+     483,
+     487,
+     487
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-medallion-halfwidth.png",
+   "note": "Mirror medallion on the other tower: same nesting but a narrower spelling, halfwidth `{ Y⌒ Y :}` over `ﾍ乂_ン.:/`; not interchangeable with the fullwidth Ｙ⌒Ｙ version.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 13 `{ Y⌒ Y :}` (pens 544/553/562/583/597/600) caps with halfwidth Y and a half space; row 14 `ﾍ乂_ン.:/` (544/554/570/575/589/592/595) returns it with no gap before ﾍ; row 15 `≧=≦` (555/571/579) closes the ring; frame arch `ア´￣｀弌` row 12 (545-591) and sides `|`@540 / `|`@620",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-rounded-cell",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 270,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the central cell's interior and the gaps between neighbouring cells"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　＿　 -─‐-　＿　　　　　 ‥…‐",
+     "　 _　-┼ｰ　／　　　 　 ＼ ‐┼‐　_　　　　…",
+     "-‐-┌￣.:.:.:/　　　　　　　　　:.:.:.: ┐-- 　　　",
+     " ／￣￣＼|　 　 　 　 　 　 |／￣￣＼　＼ ",
+     "　　　　 　 ´,　　　 　 　 　 /　　　　　　'，　}",
+     "　　　　　　　 ＼＿＿＿,／　　　　　　　 　／",
+     "　　　　　　　 |／￣￣＼| 　　　　　　 　　|'.　"
+    ],
+    "row_numbers": [
+     6,
+     12
+    ],
+    "x_px": [
+     150,
+     420
+    ],
+    "row_pen_x": [
+     158,
+     158,
+     152,
+     154,
+     157,
+     154,
+     155
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "whole_circle",
+    "up": "dotted_rim",
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-rounded-cell.png",
+   "note": "One rounded cell of the rose with shared boundaries: -─‐- cap, ／ ＼ shoulders, side cells' ／￣￣＼ caps meet its | flanks, and its ＼＿＿＿,／ return sits directly over the next cell's ／￣￣＼.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `＿ -─‐- ＿` (224-307) caps the cell; row 7 `／`@235 / `＼`@305; row 9 side cells `／￣￣＼|`@159-223 and `|／￣￣＼`@323-375 share the `|` flanks; row 10 `´,`@222 / `/`@319; row 11 `＼＿＿＿,／` (236-303) returns it; row 12 `|／￣￣＼|` (237-305) is the next cell's cap directly beneath",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
    "id": "sh-lib57-circle-8row-whole",
    "role": "whole_circle",
    "also_roles": [
@@ -11122,31 +14027,135 @@
    },
    "inspection": "row 1 `＿`x6 + `─`x5 (268-428) flat cap; shoulders `-\"`@267/275, `／`@248, `/`@238 left and `｀ヽ､`@364/372/384, `ヽ`@394, `ヽ`@405 right; flanks `/`@230 `|`@231 `i`@232 `l`@236 left and `|`@418 `l`@416 `i`@415 `/`@408 right; returns `ヽ`@237 `＼`@250 `｀ー`@266/274 and `/`@398 `／`@379 `＿-‐ '`@337-374; `:` runs sit inside the rim",
    "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sr-p41-frontal-round-end",
+   "role": "whole_circle",
+   "also_roles": [
+    "ellipse_rim",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 240,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the large drum face, empty except a few .. ticks; the gap where the upright cylinder hides its top rim"
+   },
+   "native": {
+    "rows": [
+     "　 .|　 　 　 　 　 　 |　　　　 　 　 　 　 ∧",
+     " 　 〉 ＝　===　＝.┴＜　　　　　　　 /　",
+     "　 |　　　　＞ ´　　　　　｀ヽ　　　　 /　　",
+     "ヘ_!,､　 /　　　　　　　　　　ﾑ　 　 ム　　",
+     "- ヾ≧!　　　　　　 　　_ ＿ ﾑ_.∨　 ゝ､",
+     "　　　 ﾔ　　　　- ¨　　　　　 ﾑ/　　　　",
+     " 　 　 　 ﾔ ／　　　　　　　　　 ∧t____ノ",
+     "　　　　∧　 　 　 　 　 　 　 　 ∧　　　",
+     " 　 　 　 ∧　　　　　　 　_ 　 ― ∧　　",
+     "　　　　 ＿ヾ,,_　　_ 　¨　　　　　　f　　 ",
+     "　　　　　　　　｀ヽ、　 　 　 　 　 ｿ",
+     "　　　　　　　　　　　ー　＿ -　\""
+    ],
+    "row_numbers": [
+     4,
+     15
+    ],
+    "x_px": [
+     180,
+     420
+    ],
+    "row_pen_x": [
+     182,
+     180,
+     183,
+     180,
+     187,
+     190,
+     180,
+     188,
+     185,
+     187,
+     187,
+     187
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "ellipse_rim",
+    "up": "ellipse_rim",
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-frontal-round-end.png",
+   "note": "Large drum end seen nearly face-on behind the upright cylinder: rim ＞ ´ … ｀ヽ at top, a doubled right side ム/ム/ム∨/∧/∧/∧ f ｿ, ﾔ ﾔ ∧ ∧ left side, and a broken ー ＿ - \" bottom return.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `＞ ´`@247-268 and `｀ヽ`@331-339; right side `ﾑ`@348 and `ム`@391 row 7, `ﾑ_.∨`@356-375 row 8, `ﾑ/`@364-375 row 9, `∧t____ノ`@369-411 row 10, `∧`@376/383 rows 11-12, `f`@392 row 13, `ｿ`@386 row 14; left side `ﾔ`@228/233 rows 9-10, `∧`@232/238 rows 11-12; bottom `＿ヾ,,_`@236 row 13, `｀ヽ、`@275 row 14, `ー ＿ - \"`@308-374 row 15",
+   "inspected_by": "skill-rounded agent"
   }
  ],
- "parent_audit": {
-  "date": "2026-10-27",
-  "method": "parent opened each listed entry's native crop (3x nearest-neighbour view) with its native.rows and compared against the entry's inspection line; all 4 group files and this merge pass scripts/role_lookup_check.py (rows, row_pen_x and crops re-derived from source).",
-  "entries_checked": {
-   "sh-mlt03-compact-circle": "match: γ⌒ヽ cap over 乂__ノ, 乂 tail crosses onto the ledge ＿",
-   "sh-lib57-circle-8row-whole": "match: dashed cap, ／＼ shoulders, l l flanks, ､/＼／ lower shoulders, split ｀ｰ- -‐´ base",
-   "sh-lib60-circle-3row": "match: γ ⌒ヽ / i ｉ / ゝ ___,ノ",
-   "fc-eye-pair-3r-mirror": "match: ┌‐-ミ / 斗-‐┐ lids, Vソ irises, ｀¨´ returns, ' nose",
-   "fc-teeth-upper-gum-3r": "match: ｖ gum points sit over the incisor | separators",
-   "fc-eye-ring-3r": "match: x＝､ cap, 〈{::rj:} ring, ｀¨´ dotted return",
-   "an-t15-root-out-of-ground": "match: ノﾉ 人 ,;ヽ feet flare from trunk strokes onto offset ,,,,,, grass",
-   "an-t16-bad-root": "match (rejected): /ヽ and ＼/ hang detached below a ;:;: filled trunk",
-   "an-r28-mi-dense": "match (rejected): ﾐ; alternation with no gaps; rows sit just above the drawn rect as the label directs",
-   "sk-church101-rib-shoulder-flank": "match: ／／ diagonal rib straightens into |::::| column with widening colon fill",
-   "sk-hand-ring-pinky-web": "match: ヽ、 and 〉| flanks meet as ヽノ, ノ/ creases below",
-   "sk-tree7-trunk-dots": "match: doubled left stroke respelled per row, punctuation pair hugs it, paper before right |"
+ "parent_audits": [
+  {
+   "date": "2026-10-27",
+   "method": "parent opened each listed entry's native crop (3x nearest-neighbour view) with its native.rows and compared against the entry's inspection line; all 4 group files and this merge pass scripts/role_lookup_check.py (rows, row_pen_x and crops re-derived from source).",
+   "entries_checked": {
+    "sh-mlt03-compact-circle": "match: γ⌒ヽ cap over 乂__ノ, 乂 tail crosses onto the ledge ＿",
+    "sh-lib57-circle-8row-whole": "match: dashed cap, ／＼ shoulders, l l flanks, ､/＼／ lower shoulders, split ｀ｰ- -‐´ base",
+    "sh-lib60-circle-3row": "match: γ ⌒ヽ / i ｉ / ゝ ___,ノ",
+    "fc-eye-pair-3r-mirror": "match: ┌‐-ミ / 斗-‐┐ lids, Vソ irises, ｀¨´ returns, ' nose",
+    "fc-teeth-upper-gum-3r": "match: ｖ gum points sit over the incisor | separators",
+    "fc-eye-ring-3r": "match: x＝､ cap, 〈{::rj:} ring, ｀¨´ dotted return",
+    "an-t15-root-out-of-ground": "match: ノﾉ 人 ,;ヽ feet flare from trunk strokes onto offset ,,,,,, grass",
+    "an-t16-bad-root": "match (rejected): /ヽ and ＼/ hang detached below a ;:;: filled trunk",
+    "an-r28-mi-dense": "match (rejected): ﾐ; alternation with no gaps; rows sit just above the drawn rect as the label directs",
+    "sk-church101-rib-shoulder-flank": "match: ／／ diagonal rib straightens into |::::| column with widening colon fill",
+    "sk-hand-ring-pinky-web": "match: ヽ、 and 〉| flanks meet as ヽノ, ノ/ creases below",
+    "sk-tree7-trunk-dots": "match: doubled left stroke respelled per row, punctuation pair hugs it, paper before right |"
+   },
+   "accepted_decisions": [
+    "native.rows/row_pen_x were filled by each group's script calling role_crop.slice_rows on the exact region the agent viewed (a verbatim copy); selection, role, context, ports, note, status and inspection were written by hand",
+    "size_band.rows is the slice height; object size is given in the note",
+    "whole_circle extension accepted (closed_ring stays for eye/pupil rings)",
+    "entries from a cited piece but outside its cited rows/feature are kept; each says so in status.reason",
+    "the swipe-audit text_sha256 matches html-unescaped aa[index].value only after stripping trailing newlines (as the audit tool's pages.mjs does)"
+   ]
   },
-  "accepted_decisions": [
-   "native.rows/row_pen_x were filled by each group's script calling role_crop.slice_rows on the exact region the agent viewed (a verbatim copy); selection, role, context, ports, note, status and inspection were written by hand",
-   "size_band.rows is the slice height; object size is given in the note",
-   "whole_circle extension accepted (closed_ring stays for eye/pupil rings)",
-   "entries from a cited piece but outside its cited rows/feature are kept; each says so in status.reason",
-   "the swipe-audit text_sha256 matches html-unescaped aa[index].value only after stripping trailing newlines (as the audit tool's pages.mjs does)"
-  ]
- }
+  {
+   "date": "2026-10-27",
+   "skill_revision": "claude-skills-private 716bedd",
+   "method": "parent opened each listed crop (3-4x view) with its native.rows; all six group files pass scripts/role_lookup_check.py, including split_stroke row/pen verification",
+   "entries_checked": {
+    "sr-p07-nested-medallion": "match: Ｙ⌒Ｙ inner cap inside { }, 乂_ン return, ≧=≦ outer close, paper between rings",
+    "sr-p11-left-flank": "match: ,ｲ二㌃゜ / ,ｲﾆア゜ / /ﾆｱ / /ﾆ'′ band steps left as it steepens",
+    "sr-p41-upright-end": "split_stroke kept as agent_reading: in a wider rows 1-7 view, ┴'s right arm runs into ＜ where the rear drum rim re-emerges (｀ヽ row 6); the evidence is partly on row 6, outside the entry's 5-row crop",
+    "sk-hand-diagonal-strip-return": "re-role accepted: two parallel diagonals with protected paper, closed by the ,/ floor = thumb/palm opening",
+    "sk-smoke153-lower-lobe": "split_stroke kept as agent_reading: て top bar continues the front ／⌒ cap, tucked curl starts the rear lobe toward ￣）",
+    "sk-church99-column-punct-band": "match: out-of-phase ___: / ;;::;: blocks between paired posts on both columns",
+    "sa-church121-brace-oculus": "confirmed: operator crop-03 shows ヽγ⌒ヽ'´ over -' { } ─ = aa[121] rows 2-3, not aa[36] rows 7-8 (γ⌒ヽ over 乂__ノ) as operator_reference_sources.v1.json binds it",
+    "sa-assisi036-oculus-pediment": "split_stroke kept as agent_reading: 乂@349 one stroke closes the round's lower left, the other lands on the cornice ＿ line",
+    "sa-church126-wedge-thinning-tails": "match: colon/dot tails thin toward the empty diagonal wedge on both sides"
+   },
+   "accepted_decisions": [
+    "new extensions accepted: arch_band, ellipse_rim, dotted_rim",
+    "skill-examples ids kept stable across re-roles; the group's revision_log records each change",
+    "church105/106/107 paired lobes stay three candidate entries; the operator crop matches six identical locations",
+    "operator_reference_sources.v1.json crop-03 binding NOT edited here (operator evidence); flagged for the operator"
+   ]
+  }
+ ]
 }
