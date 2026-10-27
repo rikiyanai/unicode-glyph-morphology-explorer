@@ -1,0 +1,546 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "statue-kana",
+ "role_extensions": {
+  "t_junction": "one contour ends on, or branches from, a line that continues through: the glyph's main stroke carries the through-line and its side stroke starts/ends the abutting line (abutment/occlusion in the drawing; not proof of a physical intersection)",
+  "fold_start": "apex where a drapery fold, ridge or crease begins: two strokes diverge from one point, typically one continuing an outer contour or band edge and the other opening the fold's inner edge, with paper between the legs"
+ },
+ "inspection_log": [],
+ "gaps": [],
+ "entries": [
+  {
+   "id": "sk2-madonna-cheek-to",
+   "role": "t_junction",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "face interior between ﾄ､. and the nose し (r10) and below the eye line; the veil strand gap between 川 and the colon band at left"
+   },
+   "native": {
+    "rows": [
+     ":::｜`＝'ヽ　'´",
+     ": ｜　 　.::}　 ",
+     ":　ﾄ､.　　::し 　",
+     ":　川:. 、 ｀-´",
+     ". ,' ｌ l ::::... - ::"
+    ],
+    "row_numbers": [
+     8,
+     12
+    ],
+    "x_px": [
+     165,
+     245
+    ],
+    "row_pen_x": [
+     167,
+     167,
+     167,
+     166,
+     166
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "side",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-cheek-to.png",
+   "note": "ﾄ at a T-meeting: its stem continues the vertical face/veil edge (｜@176 r8, ｜@175 r9 -> ﾄ@181 r10 -> 川@180 r11) while its side tick plus ､@188 and .@195 launch the cheek contour inward to the SE toward the mouth 、@207 r11; above is the eye row `｜`=', left the veil colon band `: ::`, right paper and the nose し@226; protected paper = cheek interior to the right of the tick",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 8-12: vertical ｜@176/｜@175 (r8-9) runs straight into ﾄ@181 r10 whose stem continues as 川@180 r11 and ｌ/l r12; ﾄ's tick + ､@188 + .@195 start the cheek turning SE to 、@207 r11; open face paper between ﾄ､ and し@226",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-jaw-neck-i",
+   "role": "shoulder",
+   "also_roles": [
+    "t_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "neck/face paper to the left of the ｲ->| line; narrow veil strip between | and the inner veil !/ｌ stays dotted, not filled"
+   },
+   "native": {
+    "rows": [
+     " 　 　 .! :: ",
+     "　 　 /:! ::",
+     " 　.ｲ ::ｌ ::",
+     ":::: 　| :::| ::",
+     "　　 ｌ　::! :",
+     "　 ｲ,! 　:! "
+    ],
+    "row_numbers": [
+     9,
+     14
+    ],
+    "x_px": [
+     240,
+     300
+    ],
+    "row_pen_x": [
+     242,
+     243,
+     247,
+     241,
+     241,
+     241
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_mid",
+    "up": "flank",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-jaw-neck-i.png",
+   "note": "ｲ turns a diagonal into a vertical: the right jaw `/`@275 r10 continues as ｲ@266 r11's slant and ｲ's stem drops straight into the neck side |@269 r12, ｌ@268 r13, !@269 r14; a second ｲ@257 r14 sits at the neck foot where the neckline leaves the neck side to the lower left; right neighbours are the veil's inner edge !/ｌ@282-289 with `::` strips; left is open face/neck paper",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 9-14: `/`@275 r10 -> ｲ@266 r11 (slant continues the jaw, stem hands down) -> |@269 r12 -> ｌ@268 r13 -> !@269 r14; ｲ@257 r14 + ,@266 start the neckline off that side; veil strip `::ｌ`, `:::|` to the right; neck paper left",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-neck-ri",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 70,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SW",
+    "curvature": "concave",
+    "inside": "right",
+    "paper": "chin/neck paper right of ﾘ under the colon band; the gap between the 川 strands and the left veil edge l@171"
+   },
+   "native": {
+    "rows": [
+     "川:. 、 ｀-´",
+     ",' ｌ l ::::... - ",
+     "l　!ﾘ::::::::::'　",
+     "!: ;'ヽ::　　　",
+     "l il ::.、｀ - -"
+    ],
+    "row_numbers": [
+     11,
+     15
+    ],
+    "x_px": [
+     170,
+     240
+    ],
+    "row_pen_x": [
+     180,
+     174,
+     171,
+     172,
+     171
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "tone_mid",
+    "up": "flank",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-neck-ri.png",
+   "note": "ﾘ is where a vertical veil strand meets the chin-shadow band: the long right stroke continues strand l@194 r12 down and curls SW into `;'`@184-187 r14 (which with ヽ@190 makes the small collar peak), its short left stroke pairs with !@185; the colon band `::::::::::'` r13 starts immediately right of ﾘ, so the band is anchored on the strand rather than floating",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 11-15: strands 川@180 r11 -> ｌ@185/l@194 r12 -> !@185 ﾘ@189 r13; ﾘ's long stroke bends SW to ;'@184-187 r14 + ヽ@190 (collar peak); colon band ::::::::::'@197-227 r13 starts at ﾘ; left veil edge l@171 r13-15 stays separate with paper between",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-hair-part-hito",
+   "role": "fold_start",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "forehead paper on both sides of 人 and between its legs, inside the hair/veil arch .＿ _ / .／ ｀ヽ"
+   },
+   "native": {
+    "rows": [
+     ": 　 　.＿ _　　　ヽ",
+     ".／　　 　 ｀ヽ i　 ",
+     ",' 　 　 人　　 ｀l 　",
+     "l=-‐ ´ 　 ｀ ｰミl 　",
+     "　＿ 　　　＿｀ l 　"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     185,
+     295
+    ],
+    "row_pen_x": [
+     186,
+     189,
+     185,
+     185,
+     187
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-hair-part-hito.png",
+   "note": "人 alone in the forehead under the arch `.＿ _` r3 / `.／ ｀ヽ` r4: its stem is the meeting point and its two legs diverge down-left and down-right toward the brow lines `l=-‐ ´` and `｀ ｰミl` r6; it reads as the central parting/brow-ridge apex where left and right sweeps meet (which of the two is an agent reading); nothing touches it, all surrounding paper is kept",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 3-7: arch .＿ _@221-245 r3 and .／@189-192 / ｀ヽ@251-259 r4 cap the face; 人@228 r5 floats centrally with paper all round; its legs point to l=-‐ ´@185-217 and ｀ ｰミl@246-280 r6; ＿ ＿ r7 below",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-veil-edge-ha",
+   "role": "fold_start",
+   "also_roles": [
+    "flank",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 65,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "narrow paper ribbon between the inner veil line (i/l/l/l/!) and the outer edge (|/!) in r4-7; paper outside the outer edge"
+   },
+   "native": {
+    "rows": [
+     "、",
+     "　ヽ",
+     " i　 ﾊ",
+     "｀l 　 |",
+     "l 　 !",
+     " l 　ﾊ",
+     "　! :: :..',",
+     " .! :: ::｜",
+     " /:! :: ::ﾊ",
+     " ::ｌ :: ::　',"
+    ],
+    "row_numbers": [
+     2,
+     11
+    ],
+    "x_px": [
+     270,
+     335
+    ],
+    "row_pen_x": [
+     277,
+     272,
+     271,
+     271,
+     280,
+     276,
+     271,
+     274,
+     270,
+     275
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "shoulder"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-veil-edge-ha.png",
+   "note": "ﾊ repeated down the right veil edge as the start of each outward fold step: ﾊ@295 r4 is an apex whose right leg continues as the outer edge |@303 r5 / !@304 r6 while the left leg opens toward the inner line i@276/l@279; ﾊ@300 r7 restarts the edge, handing to `',`@311-314 r8 and ｜@308 r9; ﾊ@312 r10 steps out again to `',`@323 r11; each apex keeps paper between its legs",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 2-11: ヽ@283 r3 descends to ﾊ@295 r4 apex; right leg -> |@303 r5 -> !@304 r6; ﾊ@300 r7 -> ',@311 r8 -> ｜@308 r9 -> ﾊ@312 r10 -> ',@323 r11; inner veil line i@276 r4, l@279-281 r5-7, !@282 r8-9 parallel with paper between; colon strips appear only from r8",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-shoulder-he",
+   "role": "shoulder",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 75,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "everything right of and below the ﾍ -> ゝ、 -> ＼ -> ＼ slope is paper; the colon strips stay left of it"
+   },
+   "native": {
+    "rows": [
+     ":: ::ﾊ",
+     ":: ::　',",
+     ":: ::　ﾍ",
+     ":: :　　ゝ、",
+     " : :. 　 　 ＼",
+     "　 ::.　 : :　　＼"
+    ],
+    "row_numbers": [
+     10,
+     15
+    ],
+    "x_px": [
+     295,
+     370
+    ],
+    "row_pen_x": [
+     295,
+     295,
+     296,
+     298,
+     296,
+     295
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "flank",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-shoulder-he.png",
+   "note": "ﾍ is the small convex knuckle where the near-vertical outer veil edge (ﾊ@312 r10, `',`@323 r11) bends into the long shoulder slope: its short up-left stroke meets the `',` above and its long down-right stroke hands to ゝ、@334/346 r13 and ＼@352 r14 / ＼ r15; the dotted veil strips `:: ::` stay to the left. Overlaps sk-madonna-right-shoulder-paper (skill-examples) but is keyed on the ﾍ turn",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 10-15: ﾊ@312 r10 -> ',@323 r11 -> ﾍ@324 r12 (short stroke up-left, long stroke down-right) -> ゝ@334 、@346 r13 -> ＼@352 r14 -> ＼ r15; strips `:: ::`@295-310 to the left; paper outside",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-band-bracket-to-i",
+   "role": "contact_junction",
+   "also_roles": [
+    "tone_mid",
+    "t_junction"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 105,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "below",
+    "paper": "paper under the collar curves (r15-16) and the open chest paper below the dotted band (r19-20) except the bounded `::::` beside （/）"
+   },
+   "native": {
+    "rows": [
+     " ::.、｀ - - ' / } .::.",
+     "ゝ、｀ｰ - イ / .:　",
+     "::　ﾄ､: : : ... ｲ　::.　",
+     ":: ﾉ:. ヽ イ.:人　:..｜",
+     "::（::::.　　.::　　ヽ :.",
+     ". :）:::.　　　　 　 ）",
+     "ノ　 .:i'Y'l　　　（ :"
+    ],
+    "row_numbers": [
+     15,
+     21
+    ],
+    "x_px": [
+     185,
+     290
+    ],
+    "row_pen_x": [
+     185,
+     185,
+     185,
+     186,
+     185,
+     186,
+     187
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "fold_crease",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-band-bracket-to-i.png",
+   "note": "A dotted fold band `: : : ...` (r17) is bracketed by two kana that anchor it on contours: ﾄ@202 r17 (stem continues down the left sleeve line to ﾉ@197 r18 and （@191 r19, tick + ､ start the band) and ｲ@254 r17 (slant continues `/`@257 r15 / `/`@262 r16, stem points at 人@252 r18); the band thus spans between two attached ends rather than floating; collar curves ゝ、｀ｰ - イ r16 above",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 15-21: ﾄ@202 ､@209 r17 begin `: : : ...`@216-246 which ends at ｲ@254 r17; ﾄ stem over ﾉ@197 r18 -> （@191 r19 -> ）@197 r20 -> ノ@189 r21 (left sleeve); ｲ@254 under /@262 r16 above 人@252 r18; collar `｀ - - '` r15 and `ゝ、｀ｰ - イ` r16 above",
+   "inspected_by": "statue-kana agent"
+  },
+  {
+   "id": "sk2-madonna-mantle-fork-hito",
+   "role": "fold_start",
+   "also_roles": [
+    "t_junction"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 75,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper between 人's legs and below them (r19 except `.::`), and the dotted strip between ヽ/）and the outer |/! line"
+   },
+   "native": {
+    "rows": [
+     " - ' / } .::.|　",
+     " - イ / .:　|　",
+     " : ... ｲ　::.　!　",
+     " イ.:人　:..｜",
+     "　.::　　ヽ :. l ",
+     "　　　 　 ）::|"
+    ],
+    "row_numbers": [
+     15,
+     20
+    ],
+    "x_px": [
+     225,
+     300
+    ],
+    "row_pen_x": [
+     231,
+     226,
+     227,
+     228,
+     225,
+     228
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "flank",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "txt:collections/aahub/shingu-butsugu-mingeihin-zou/res424.txt",
+    "label": "神具・仏具・民芸品・像 aa[424] under heading 'マリア像' (local res424.txt = aa[424])",
+    "aahub_url": "https://aahub.org/mlt/61c3c2f5b2de9783de0981411fba022c",
+    "cited_by": "structural-line-selection.md 'Four important AA construction patterns' (Dots as form articulation: Madonna S#424 rows 9-24) and 'Worked multi-row constructions' Veil rows 16-19; aahub-reference-index.md aa[424]"
+   },
+   "crop": "crops/sk2-madonna-mantle-fork-hito.png",
+   "note": "人 forks one descending line into two: `/`@257 r15 -> `/`@262 r16 -> ｲ@254 r17 arrive at 人@252 r18; its right leg continues SE to ヽ@267 r19 and ）@282 r20 (outer sleeve/forearm curve) while the left leg dies into `.:`; a parallel inner chain イ@244 r16 -> イ@233 r18 runs left of it; outer mantle line |/!/｜/l/| at 287-293 stays separate with a `::` strip between",
+   "status": {
+    "state": "retained",
+    "reason": "skill-cited Madonna piece (S#424); region chosen inside it for the kana glyph; no operator rectangle label on this region"
+   },
+   "inspection": "rows 15-20: /@257 r15, /@262 r16, ｲ@254 r17 descend to 人@252 r18; 人 right leg -> ヽ@267 r19 -> ）@282 r20; left leg ends at .: r18; イ@244 r16 / イ@233 r18 inner chain; |@288 r15-16, !@290 r17, ｜@288 r18, l r19, | r20 outer line with :: strip",
+   "inspected_by": "statue-kana agent"
+  }
+ ]
+}
