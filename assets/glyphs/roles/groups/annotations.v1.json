@@ -1,0 +1,3036 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "annotations",
+ "role_extensions": {
+  "branch_entry": "the few strokes where a branch leaves a trunk or goes up into the crown/leaf mass (fork, twig tip, underside entry)",
+  "night_speckle": "isolated star/speck accents (☆ 。 ﾟ) spaced across blank night sky, distinct from tone and from a sunset gradient",
+  "grass_patch": "patchy grass: short runs of grass marks separated by deliberate empty intervals, so the field reads as clumps rather than a uniform band",
+  "falling_accent": "isolated falling leaf/fruit/petal marks, each surrounded by paper, placed near or under the crown they fell from",
+  "underside_view": "the lower edge of a crown/branch seen from below: hanging scallops or kana hooks that close the leaf mass over the trunk or branch"
+ },
+ "inspection_log": [
+  "T aa[14] (sha256 of rstripped value matches record c3987b84...) r4 'GREAT STRUCUTRAL JUNCTION EXAMPLE' rect rows 7-9 x[186,261): opened rows 6-10 x[170,262) -> an-t14-lobe-junction",
+  "T aa[14] r5 'GREAT JUNCTION EXAMPLE' rect rows 13-19 x[366,438): opened rows 13-18 x[340,440) incl. trunk -> an-t14-crown-notch-junction",
+  "T aa[14] r3 'GREAT OUTLINE EXAMPLE' rect rows 13-17 x[178,267): first opened x[255,300) by mistake (crown interior only; crop deleted), then rows 11-17 x[170,268) -> an-t14-crown-left-outline",
+  "T aa[14] r6 'GREAT EXAMPLE OF BRANCH' rect rows 16-20 x[312,382): opened rows 16-20 x[300,382) incl. trunk -> an-t14-branch-fork",
+  "T aa[14] r7 'GREAT NIGHT SPECKLE EXAMPLE' rect rows 1-10 x[478,626): opened rows 1-7 x[478,646) (first x1=626 clipped the right stars) -> an-t14-night-speckle",
+  "T aa[7] (sha match 3d63cfb4...) r1 'root plus patchy grass, good' rect rows 8-13 x[7,332): split into root rows 9-13 x[0,80) -> an-t7-root-ground and grass row 13 x[0,332) -> an-t7-patchy-grass-row",
+  "T aa[7] r2 'minimal glyphs showing branches going up into leaf' rect rows 3-7 x[5,66): opened rows 3-7 x[0,66) -> an-t7-branch-into-leaf",
+  "T aa[7] r3 'falling leaves , good' rect rows 3-7 x[119,277): first opened rows 3-8 x[100,300) (missed the leaf under the crown), then rows 4-8 x[30,345) -> an-t7-falling-leaves",
+  "T aa[15] (sha match 3ca9e2fb...) r2 'GREAT ROOT OUT OF GROUND EXAMPLE' rect rows 21-26 x[394,510): opened rows 22-26 x[390,520) -> an-t15-root-out-of-ground",
+  "T aa[15] r1 'GOOD FALLING LEAF/FRUITI EXAMPLE' rect rows 23-29 x[76,354): opened rows 24-29 x[100,354) -> an-t15-falling-fruit",
+  "T aa[15] r3 'GREAT ANOTEHR EXAMPLE OF PATCHY GREEASS' rect rows 26-29 x[371,594) (source rows end near x 531): opened rows 25-28 x[330,540) -> an-t15-patchy-grass",
+  "T aa[16] (verdict no; sha match 13bbca58...) r1 'BAD ROOT EXAMPLE' rect rows 20-24 x[313,439): opened rows 20-24 x[300,470) -> an-t16-bad-root (rejected)",
+  "T aa[16] r2 'BAD EXAMPLE OF REPEAATED UNDELIBERATE BRANCH AND DOT USE' rect rows 2-8 x[125,410): opened rows 3-7 x[180,420) -> an-t16-bad-branch-dots (rejected)",
+  "T aa[17] (sha match 8f7eaf1c...) r4 'GOOD EXAMPLE OF UNDERSIDE LOOK' rect rows 18-21 x[350,427): opened rows 17-21 x[330,470) -> an-t17-crown-underside",
+  "T aa[17] r2 'GOOD EXAMPLE OF DISTANT FALLING LEAF.' rect rows 22-26 x[429,700): opened rows 19-23 x[429,720) incl. crown edge -> an-t17-distant-falling-leaf",
+  "T aa[49] (sha match bca211ad...) r1 'GOOD UNDERSIDE EX' rect rows 10-14 x[37,159): opened rows 10-14 x[20,170) -> an-t49-underside-to-trunk",
+  "T aa[48] (sha match d372ae74...) r1 'GOOD USE OF KANA UNDERBRANCH' rect rows 4-6 x[287,343): opened rows 3-7 x[260,360) -> an-t48-kana-underbranch; r2 'SAME HERE,' rows 1-3 x[508,544) noted, not turned into an entry (same point, smaller)",
+  "T aa[36] (sha match 851bc2d7...) r1 'UNDERSIDE BRANCH GOOD THE STAR COTNRAST IS ALSO GOOD TOUCH' rect rows 7-13 x[178,280): opened rows 8-14 x[160,300) -> an-t36-underside-branch-stars",
+  "T aa[36] r2 \"GOOD 'TOP OF GRASS FIELD  HORIZON GHOST OF TSUSHIMA' LOOK\" rect rows 20-23 x[269,494): rows 19-20 empty in that range; opened rows 21-23 x[260,500) -> an-t36-tsushima-horizon",
+  "T aa[81] (note 'NOT GOOD DOT BUT GOOD ANGLE EXAMPLE'; sha match 2b148abc...) r2 'GREAT EXAMPLE OF SKILLFULLY USED JUNCTION' rect rows 1-6 x[420,482): opened rows 1-5 x[405,500) -> an-t81-ridge-junction",
+  "T aa[81] r3 'BAD DOTS BUT GOOD INNER CONCAVITY CONVEXITY STRUCTURAL LINE EXAMPLE' rect rows 1-4 x[509,562): opened rows 1-4 x[500,575) -> an-t81-inner-concavity",
+  "T aa[81] r1 'GOOD PERSPECTIVE MODE EXMAPLE FOR RECEDING FIELD OF GRASS LOOK' rect rows 4-7 x[0,108): opened rows 3-6 x[0,120) -> an-t81-receding-grass",
+  "T aa[86] (sha match 0b424122...) r2 'GOOD JUNCTION CHOICE' rect rows 12-14 x[150,192): opened rows 10-14 x[110,215) (a small cat-like ∧＿∧ figure on the terrain page) -> an-t86-hito-junction; r1 'GOOD ECONOMY CREATIVE' rows 8-10 x[286,386) not taken (economy label, no specific role)",
+  "T aa[94] (sha match 6d16b89b...) r2 'GOOD JUNCTION USE BAD DOT' rect rows 5-10 x[253,333): opened rows 5-9 x[260,340) -> an-t94-lobe-junction-dots; r1 'SEE LOD  COMMUNICATION? GOOD' rows 6-21 not taken (LOD, not a role)",
+  "T aa[65] (sha match 4abe8956...) r2 'HAVING TWO OR THREE LINES AT THE EDGE GIVES THE ILLUSION OF OF CURVATURE/CYLNDER OF TRUCK SHAPE' rect rows 2-5 x[175,219): opened rows 1-7 x[150,240) -> an-t65-trunk-cylinder; r1 'CURVE HUGGING AND ROOT AMAZING EXMPALE' rows 6-13 x[110,498) not separately cropped (large; root covered by t15/t7/t56 entries)",
+  "T aa[56] (sha match 46421eaa...) r2 'LOOK AT THE GLYPH CHOICES PERFECTLY HUGGING THE THE ROOT BULDGE LOOK' rect rows 27-29 x[292,416): opened rows 26-29 x[280,430) -> an-t56-root-bulge; r1 (no label) not used",
+  "T aa[63] (sha match 5736b5bd...) r3 'LOOK AT HOW CLOSELY IT HUGS THE CURVE, TEH GLYPSH ARE SO WELL CHOSE TO PRODUCE THE GRADUAL CURVE' rect rows 8-10 x[358,546): opened rows 8-10 x[350,550) -> an-t63-gradual-curve; r1 'GOOD, REMINDS. ME OF WHAT WE ARLEADY KINDA DO.' and r2 'SAME CONTOUR HUGGING PERFECTION EXAMPLE' not cropped (same point)",
+  "T aa[116] (sha match 45ddfcd4...) r3 'GREAT CONTOUR OF ROCK STICKING OUT' rect rows 16-20 x[299,405): opened rows 16-19 x[300,410) -> an-t116-rock-sticking-out; r1 'GOOD CONTOUR BAD DOTS' rows 8-21 x[122,622) not cropped whole (too large; the rock and grass entries are tight crops inside it); r2 'GREAT FLOWER DESIGNS, FOR LATELETTER' excluded (other project)",
+  "T aa[116] r5 'GREAT GRASS FILED WITH ROCK STICKING OUT LOOK' rect rows 17-20 x[574,643): opened rows 17-20 x[560,657) -> an-t116-grass-rock",
+  "T aa[116] r4 'SEE? WHEN THE  JUNCTION OR LINE ART CALLS FOR IT HIRAGANA LOOKS PERFCTLY IN PALCE' rect rows 22-24 x[20,102): opened rows 22-24 x[0,110) -> an-t116-hiragana-junction",
+  "T aa[126] (sha match c6d315a9...) r2 'PEFERCT DELIBERATE CHOICE. / PLACEMENT OF DOTS: MINIMAL BUT EARNS ITS PLACE' rect rows 1-13 x[266,718) (large): tight-cropped to the left lobe column rows 2-11 x[340,430) -> an-t126-deliberate-rim-dots; r1 'SAME' rows 19-23 not cropped (cross-reference)",
+  "T aa[74] (sha match f1a9e961...) r1 'EYE GOOD TONE DOTS BAD' rect rows 8-10 x[1,49) and r2 'BRANCH GOOD TONE DOT BAD' rows 4-7 x[5,65): opened together as rows 4-10 x[0,80) -> an-t74-rejected-tone-dots (dot fill rejected; eye and branch strokes retained)",
+  "T aa[188] (sha match f4045a52...) r1 'bad' rect rows 14-17 x[272,361) -> an-t188-bad-colon-field (rejected); r6 'good' rows 24-27 x[21,74): opened rows 23-27 x[0,110) -> an-t188-good-rim-edge; r2-r5 unlabelled, not interpreted",
+  "R aa[24] (sha match c3b1b82c...) r1 'perfect deliberate use of dots to communicate volume and 3 dimention' rect rows 6-13 x[284,517): opened rows 7-12 x[280,520) -> an-r24-cloud-volume-dots",
+  "R aa[28] (sha match 1870dce6...) r2 \"rocks good dots and 'mi' above this dense bad\" rect rows 23-27 x[11,218): split into rows 23-26 x[0,220) -> an-r28-rock-dots (retained) and the ﾐ rows 20-22 x[0,160) above it -> an-r28-mi-dense (rejected); r1 unlabelled, not used",
+  "R aa[37] (sha match e016eddf...) r1 'good - **junction compatibility**;' rect rows 2-4 x[223,302): row 2 empty in range; first opened rows 3-5 (row 5 outside the rect; crop deleted), then rows 3-4 x[215,310) -> an-r37-lobe-wisp-junction",
+  "R aa[41] (sha match afd207f4...) r1 'good**protected negative shape**' rect rows 5-24 x[525,778) (large): tight-cropped to the disc and the top of its reflection rows 6-15 x[525,790) -> an-r41-protected-negative-shape",
+  "T aa[97] (sha match 64ad36a6...) r1 'GOOD CONTOUR AND CONTRAST BETWEEN BLANK EMPTY INNER CLOUD BS BACKGROUND SKY,' rect rows 4-13 x[100,429): tight-cropped to the right cloud rows 4-11 x[300,430) -> an-t97-cloud-blank-interior",
+  "T aa[115] (sha match 47c99278...) r1 'EXPLOSION' rect rows 1-13 x[439,686): row 1 empty; opened rows 2-13 x[470,690) -> an-t115-explosion-burst",
+  "P aa[493] (sha match 3b8e43f6...) r1 'special effect cobination useful' rect rows 14-18 x[217,280): opened rows 13-18 x[200,260) -> an-p493-drop-chain",
+  "T aa[47] (sha match 77fa3ac5...) r1 'GOOD OUTLINE' rect rows 1-4 x[347,408): opened rows 1-5 x[330,420) -> an-t47-crown-outline; r2 'GOOD FOR LATELETTER NOT RELATED TO OUR SHALLOT THOUGH' excluded (other project)",
+  "T aa[73] (note-only, no rects; sha match 98edd2fc...): note retains sky dots thinning downward and rejects cloud dots; chose a cloud-free sky window rows 1-8 x[200,330) myself (my selection, not an operator rect) -> an-t73-sunset-sky-gradient",
+  "Excluded (other project, not Shallot): T #33 r1 'GOOD FOR LATE LETTER NOT RELATED TO US THOUGH', T #40 r5 'GOOD FOR LATELETTER NOT RELATED TO SHALLOT PORT', T #41 r1 'GOOD FOR LATELETTER NOT RELATED TO OUR SHALLOT THOUGH', T #47 r2 (same), T #51 r2 'ALSO GOOD FOR  LATELETERR', T #116 r2 'GREAT FLOWER DESIGNS, FOR LATELETTER', P #494 r1 yuzu/cranberry note - labels read only, no crops",
+  "Not used: unlabelled rects (T #17 r1, #32, #40 r1-3, #45, #56 r1, #62 r1, #92 r1-4, #118, #120 r1-3, #188 r2-5, R #28 r1, #31 r1-2, #74 r1-4) and bare 'GOOD'/'GD'/'YES'/'SAME' labels (T #61 r2, #62 r3, #107, #110 r1, #126 r1, #128) - no written rationale to bind a role to",
+  "Verification: for every record used, sha256 of aa[index].value with trailing newlines stripped (the audit tool's pages.mjs rule) matched the record's text_sha256; plain html-unescaped value without stripping does NOT match (trailing \\n). Rect->row conversion by role_crop.py rect (18 px rows, 8 px pad)."
+ ],
+ "gaps": [
+  "cast_shadow_edge: no written annotation label in T/V/R/P/E names a cast shadow; none authored",
+  "periodic_band at 1 row / narrow: only the Tsushima horizon (3 rows, 240 px) and grass rows; no fence/stitch-like band is labelled in these sources",
+  "fold_crease at xs/s band: only t81-inner-concavity (4 rows) and the ノ crease inside t116-rock; no short 1-2 row labelled crease",
+  "falling_accent motion/timing: all sources are stills; trajectories and tempo are not supplied",
+  "V page (vegetables/rice) labels are whole-piece notes ('AMAZING LEAF', 'GREASS', 'YES PERFECT DOT USE') without rects; not converted (no region to bind without inventing one)",
+  "E page: E #100 r1 refers back to an unresolved 'positive' predecessor; E #77 bare 'YES' - not used",
+  "R #10/#11/#13 sun-over-horizon negative space: not cropped (R #41 covers the same opening_paper_gap relationship at m/l size)"
+ ],
+ "entries": [
+  {
+   "id": "an-t14-lobe-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 92,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "sky left of the crown edge; the gap between the end of ／ and the lower γ hook stays open (no joining stroke)"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　γ",
+     "　 　　　　 ／　",
+     "　　　 γ　　　",
+     "　　　/ :::::::::::　",
+     "　　(　:::::: ;;;;;;　"
+    ],
+    "row_numbers": [
+     6,
+     10
+    ],
+    "x_px": [
+     170,
+     262
+    ],
+    "row_pen_x": [
+     176,
+     171,
+     176,
+     176,
+     176
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_mid",
+    "up": "rim_cap",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#14",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[14] (swipe audit T #14 r4)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #14 r4)"
+   },
+   "crop": "crops/an-t14-lobe-junction.png",
+   "note": "Crown-lobe junction: the γ curl ends one lobe and starts the next, and a single ／ hands down the edge between two γ cusps.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled junction region; the crown-interior colons are not covered by this label",
+    "operator_note": "GREAT STRUCUTRAL JUNCTION EXAMPLE"
+   },
+   "inspection": "row 6 `γ`@253 (upper lobe cusp) -> row 7 `／`@236 runs down-left -> row 8 `γ`@214 hooks into a new lobe -> row 9 `/`@209 -> row 10 `(`@198 continues the flank; colons `::::` on rows 9-10 sit inside, one space off the edge",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t14-crown-branch-exit",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 100,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "W",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "sky right of the ）/メ/） edge and below ＿ノ; the gap under ＿ノ separates the crown underside from the trunk branches"
+   },
+   "native": {
+    "rows": [
+     "::::::::: 　　　;;;;;;;;;;　",
+     "::: ;;;;;;;;　;;;;;;;;;;;;; ）",
+     ":::::::::　○;;　::: メ",
+     ",,、;;;;;::::::;;;.... ）",
+     "|　:::;;;;::;;;;＿ノ",
+     "|//\" '○"
+    ],
+    "row_numbers": [
+     13,
+     18
+    ],
+    "x_px": [
+     340,
+     440
+    ],
+    "row_pen_x": [
+     340,
+     341,
+     340,
+     342,
+     340,
+     340
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "flank",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#14",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[14] (swipe audit T #14 r5)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #14 r5)"
+   },
+   "crop": "crops/an-t14-crown-branch-exit.png",
+   "note": "Right crown edge: two ） lobes meet at a crossing メ notch, and the underside returns with ＿ノ toward the trunk.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled junction; dot fill inside is outside the label's claim",
+    "operator_note": "GREAT JUNCTION EXAMPLE"
+   },
+   "inspection": "row 14 `）`@434 lobe -> row 15 `メ`@425 crossing notch where the next lobe starts -> row 16 `）`@418 -> row 17 `＿ノ`@394/410 returns the underside left toward trunk `|`@340 (rows 17-18); dots stop one glyph inside the outline",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t14-crown-left-outline",
+   "role": "flank",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 98,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "sky left of the stacked parentheses; one full space kept between each ( and the colon fill"
+   },
+   "native": {
+    "rows": [
+     " γ　　:::::::::::: ;;;",
+     " （:::::::　;;;;;;;;;;;;::::",
+     " （　:::::::　　:::::::::",
+     "　 (　　:::::::: :::::::",
+     "　　（　:::::::○　:",
+     "　　　乂;;;　,,,;;;;:",
+     "　 　 　.~~\"　　　"
+    ],
+    "row_numbers": [
+     11,
+     17
+    ],
+    "x_px": [
+     170,
+     268
+    ],
+    "row_pen_x": [
+     176,
+     176,
+     176,
+     176,
+     176,
+     176,
+     176
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_mid",
+    "up": "contact_junction",
+    "down": "branch_entry"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#14",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[14] (swipe audit T #14 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #14 r3)"
+   },
+   "crop": "crops/an-t14-crown-left-outline.png",
+   "note": "Lobed crown flank built from stacked γ/（/(/（ stepping right, closed at the bottom by a crossing 乂 where the crown meets the branch line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled outline region",
+    "operator_note": "GREAT OUTLINE EXAMPLE"
+   },
+   "inspection": "row 11 `γ`@181, rows 12-13 `（`@181, row 14 `(`@192, row 15 `（`@198, row 16 `乂`@209 then `;;;`, row 17 `.~~\"`@219: lobe glyphs step 0/0/11/6/11 px right going down; 乂 closes the flank into the underside",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t14-branch-fork",
+   "role": "branch_entry",
+   "also_roles": [
+    "contact_junction",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 82,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "NE",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "open sky between the //\" twigs and the crown underside; no fill under the branches"
+   },
+   "native": {
+    "rows": [
+     ";;|＿,,,,、;;;;;:::",
+     "!;;l;:;:lilii|　:::;;;;::",
+     "!;;l;:::lilii|//\" '○",
+     ";;l;;::|liii|/ﾞ",
+     ";;l;;::||iii|"
+    ],
+    "row_numbers": [
+     16,
+     20
+    ],
+    "x_px": [
+     300,
+     382
+    ],
+    "row_pen_x": [
+     310,
+     300,
+     300,
+     303,
+     303
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "paper",
+    "up": "tone_mid",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#14",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[14] (swipe audit T #14 r6)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #14 r6)"
+   },
+   "crop": "crops/an-t14-branch-fork.png",
+   "note": "Branches leave the trunk's right edge as two short // strokes tipped by \" and ﾞ, plus a ＿,,,,、 run under the crown.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled branch region; trunk hatching (;;l;:) is context, not the labelled feature",
+    "operator_note": "GREAT EXAMPLE OF BRANCH"
+   },
+   "inspection": "trunk right edge `|`@340 rows 17-20; row 18 `|//\"`@340/344/352/360 forks two twigs up-right with a `\"` tip; row 19 `|/ﾞ`@340/344/352 a lower twig; row 16 `|＿,,,,、`@316/320/336-348 a horizontal branch under the crown; paper right of the twigs",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t14-night-speckle",
+   "role": "night_speckle",
+   "size_band": {
+    "rows": 7,
+    "px_wide": 168,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "every star sits in at least 3-4 full spaces of empty sky; no two marks touch"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　☆",
+     "　　。　　　　　　ﾟ",
+     "　　　　　　☆　　　　　　　ﾟ",
+     "　　　　　　　　　　　　。",
+     "　　　　　　　ﾟ",
+     "ﾟ　　　　　　　　　　　　☆",
+     "　　　　。　　　　　ﾟ"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     478,
+     646
+    ],
+    "row_pen_x": [
+     482,
+     484,
+     482,
+     488,
+     488,
+     488,
+     488
+    ]
+   },
+   "ports": {
+    "left": "night_speckle",
+    "right": null,
+    "up": null,
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#14",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[14] (swipe audit T #14 r7)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #14 r7); structural-line-selection.md 'Night sky is a separate transfer'"
+   },
+   "crop": "crops/an-t14-night-speckle.png",
+   "note": "Three-weight star field: ☆ (largest), 。 and ﾟ, scattered without a gradient and never adjacent.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled night speckle region",
+    "operator_note": "GREAT NIGHT SPECKLE EXAMPLE"
+   },
+   "inspection": "rows 1-7: `☆`@625 row1, @548 row3, @624 row6; `。`@506 row2, @620 row4, @532 row7; `ﾟ`@583, @641, @565, @488, @598; one mark per ~3-6 full spaces, mixed weights, no density ramp",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t7-root-ground",
+   "role": "contact_junction",
+   "also_roles": [
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "the gap between the trunk-right `|` and `ゝ` and the open paper between the ground run (row 12) and the patch row (row 13)"
+   },
+   "native": {
+    "rows": [
+     "|!;; |",
+     "IＩ;; |",
+     "从 ゝ,,",
+     "\"\"\"\"",
+     "　　　''\"\"\" \"\""
+    ],
+    "row_numbers": [
+     9,
+     13
+    ],
+    "x_px": [
+     0,
+     80
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "grass_patch",
+    "up": "side",
+    "down": "grass_patch"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[7] (swipe audit T #7 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #7 r1); structural-line-selection.md 'Cooperating joins and caps' (tree row11 `从 ゝ,,`)"
+   },
+   "crop": "crops/an-t7-root-ground.png",
+   "note": "Tiny root flare: the trunk pair `|`/`|` ends in 从 on the left and ゝ,, on the right, sitting on a short \"\"\"\" ground run.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled root/grass region; also skill-cited",
+    "operator_note": "root plus patchy grass, good"
+   },
+   "inspection": "rows 9-10 trunk edges `|`@0/`I`@0 and `|`@19 with `;;`@8-11 between; row 11 `从`@0 splays the left root, `ゝ`@21 curls the right root out to `,,`@33-36; row 12 `\"\"\"\"`@0-24 ground run; row 13 grass patch starts at `''`@33 offset right",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t7-patchy-grass-row",
+   "role": "grass_patch",
+   "also_roles": [
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 332,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "two full spaces (22 px) between patches; one half space inside a patch is a minor break, not a gap"
+   },
+   "native": {
+    "rows": [
+     "　　　''\"\"\" \"\"''\"\"\"''　　''\"\"\"\"\"\"''　　''\"\"\" \"\"\"\"''"
+    ],
+    "row_numbers": [
+     13,
+     13
+    ],
+    "x_px": [
+     0,
+     332
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": "paper",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[7] (swipe audit T #7 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #7 r1; G1 in the 2026-10-09 operator note review)"
+   },
+   "crop": "crops/an-t7-patchy-grass-row.png",
+   "note": "One-row distant grass: three patches each spelled '' + \"\"\"... + '', separated by two full spaces.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled patchy grass",
+    "operator_note": "root plus patchy grass, good"
+   },
+   "inspection": "row 13: patch A `''\"\"\" \"\"''\"\"\"''`@33-117, gap 117-142, patch B `''\"\"\"\"\"\"''`@142-199, gap 199-224, patch C `''\"\"\" \"\"\"\"''`@224-294; each patch opens and closes with low `''` and carries taller `\"` in the middle",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t7-branch-into-leaf",
+   "role": "branch_entry",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 66,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "NE",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "open paper between the メｿ fork and the right crown marks; the trunk right `|` is not continued above row 6"
+   },
+   "native": {
+    "rows": [
+     "ヾ ; ;\";;/\" ;",
+     "; \"i \"; ;ヾ; ;",
+     "ii;, メｿ　ヾ; ",
+     "|i;, |ｿ　　 \"",
+     "Il;: |"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     0,
+     66
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "tone_fringe",
+    "up": "tone_fringe",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[7] (swipe audit T #7 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #7 r2; T4 in the operator note review)"
+   },
+   "crop": "crops/an-t7-branch-into-leaf.png",
+   "note": "Trunk right edge `|` becomes ｿ then メｿ, and a lone `/\"` higher up: three glyphs carry the branch up into the leaf texture.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled branch entry",
+    "operator_note": "minimal glyphs showing branches going up into leaf"
+   },
+   "inspection": "row 7 `|`@18 trunk edge -> row 6 `|ｿ`@18/22 the edge kinks up-right -> row 5 `メｿ`@17/29 crossing fork -> row 3 `/\"`@42/50 a single branch tip inside the `ヾ ; ;` crown texture; leaf marks `;` `\"` `ヾ` surround with gaps",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t7-falling-leaves",
+   "role": "falling_accent",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 315,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "each ﾞ is surrounded by 4+ full spaces; none touches the crown edge"
+   },
+   "native": {
+    "rows": [
+     "; ;ヾ; ;ヾ; ;ﾒヾ　　　　　　　　　ﾞ　　　　　　　　⊂⊃",
+     "　ヾ; ;ゞ　\"　　　ﾞ",
+     "　　 \"\"　　　　　　　　　　　　　　　　　　　　　　　ﾞ",
+     "",
+     " ﾞ"
+    ],
+    "row_numbers": [
+     4,
+     8
+    ],
+    "x_px": [
+     30,
+     345
+    ],
+    "row_pen_x": [
+     32,
+     38,
+     31,
+     null,
+     34
+    ]
+   },
+   "ports": {
+    "left": "tone_fringe",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#7",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[7] (swipe audit T #7 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #7 r3; T5 in the operator note review)"
+   },
+   "crop": "crops/an-t7-falling-leaves.png",
+   "note": "Four single ﾞ leaves drifting right and down from the crown, spaced far apart; the crown's ヾ ; texture stops before them.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled falling leaves",
+    "operator_note": "falling leaves , good "
+   },
+   "inspection": "crown edge `ﾒヾ`@89/97 row 4; leaves `ﾞ`@208 row 4, `ﾞ`@135 row 5, `ﾞ`@327 row 6, `ﾞ`@39 row 8 (below crown, right of trunk); `⊂⊃`@300 row 4 is a separate cloud/sky mark, not a leaf",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t15-root-out-of-ground",
+   "role": "contact_junction",
+   "also_roles": [
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 130,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "SW",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "paper between ﾉ and 人 (one full space) and between the root row and the grass run below; no ground line is drawn under the roots"
+   },
+   "native": {
+    "rows": [
+     " 　 ;||｜|　i",
+     "　　 || |　i│ﾞ",
+     " 　 ||　ｌ　| i",
+     "　ノﾉ　人,;ヽ",
+     "　　,,,,,,　\""
+    ],
+    "row_numbers": [
+     22,
+     26
+    ],
+    "x_px": [
+     390,
+     520
+    ],
+    "row_pen_x": [
+     395,
+     390,
+     395,
+     395,
+     398
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "side",
+    "down": "grass_patch"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#15",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[15] (swipe audit T #15 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #15 r2; T2 in the operator note review: left foot ノﾉ, centre 人, right ヽ)"
+   },
+   "crop": "crops/an-t15-root-out-of-ground.png",
+   "note": "Trunk of 2-3 vertical strokes ends in ノﾉ (left foot), 人 (centre root) and ,;ヽ (right foot); grass commas below stand in for the ground.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled root-to-ground region",
+    "operator_note": "GREAT ROOT OUT OF GROUND EXAMPLE"
+   },
+   "inspection": "rows 22-24 trunk edges `||`@419-423 and `|`@443-450, inner `i`@458-459; row 25 `ノﾉ`@406/417 sweep the left foot down-left, `人`@436 splits the centre root, `,;ヽ`@452/455/458 kick the right foot out; row 26 `,,,,,,`@420-435 grass, one row below and offset right",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t15-falling-fruit",
+   "role": "falling_accent",
+   "also_roles": [
+    "grass_patch"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 254,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "each fruit is a closed paren pair with 2+ full spaces around it; grass comma runs never touch a fruit"
+   },
+   "native": {
+    "rows": [
+     " 　 　 　 (;）　　　　、　　　　　　 　、　　　",
+     "　 ,,,,　　　　　　　（;）　　　　　　 （ノ)　　　",
+     "　　、　,,,,,,　　 　\" 　 　 　 　 　 　 、　　　",
+     "　（ﾉ）　　 　 　 　 \"　 　,,,,　(ゝ） ,,,　\"　、",
+     "　,,,　　ﾞ　　　　　,,,,,,　　、　\"　　　　　（/)",
+     "　　　　,,,,,　　\"　　　　（ゞ)　　　　　,,,,"
+    ],
+    "row_numbers": [
+     24,
+     29
+    ],
+    "x_px": [
+     100,
+     354
+    ],
+    "row_pen_x": [
+     107,
+     110,
+     104,
+     110,
+     110,
+     110
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "grass_patch",
+    "up": "paper",
+    "down": "grass_patch"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#15",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[15] (swipe audit T #15 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #15 r1)"
+   },
+   "crop": "crops/an-t15-falling-fruit.png",
+   "note": "Fallen fruit spelled as small closed (;）/（ノ)/(ゝ）/（/)/（ゞ) parentheses, some with a 、 stem tick on the row above, scattered among short comma grass runs.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled falling leaf/fruit region",
+    "operator_note": "GOOD FALLING LEAF/FRUITI EXAMPLE"
+   },
+   "inspection": "row 24 `(;）`@160; row 25 `（;）`@215 under row-24 `、`@220, `（ノ)`@305 under row-24 `、`@313; row 27 `（ﾉ）`@121 under row-26 `、`@126, `(ゝ）`@278; row 28 `（/)`@336; row 29 `（ゞ)`@243; comma runs `,,,,`/`,,,,,,` of 3-6 commas in the gaps",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t15-patchy-grass",
+   "role": "grass_patch",
+   "also_roles": [
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 210,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "three full spaces between comma runs; runs on row 27 are staggered against row 26 so no column lines up"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　ノﾉ　人,;ヽ",
+     "　　,,,,,,,,,,　　　,,,,,,　\"",
+     "　、　　,,,,,　　　,,,,,　　　　,,,,,,,,　\"",
+     "（/)"
+    ],
+    "row_numbers": [
+     25,
+     28
+    ],
+    "x_px": [
+     330,
+     540
+    ],
+    "row_pen_x": [
+     340,
+     335,
+     336,
+     336
+    ]
+   },
+   "ports": {
+    "left": "falling_accent",
+    "right": null,
+    "up": "contact_junction",
+    "down": null
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#15",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[15] (swipe audit T #15 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #15 r3; G1 'PATCHY GRASS' ,,,,,,　　　,,,,,,)"
+   },
+   "crop": "crops/an-t15-patchy-grass.png",
+   "note": "Two staggered rows of comma patches (10/6 commas, then 5/5/8) with 3-full-space gaps, under the root flare.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled patchy grass",
+    "operator_note": "GREAT ANOTEHR EXAMPLE OF PATCHY GREEASS "
+   },
+   "inspection": "row 26 `,,,,,,,,,,`@357-384, gap, `,,,,,,`@420-435, `\"`@449; row 27 `、`@347, `,,,,,`@380-392, `,,,,,`@428-440, `,,,,,,,,`@487-508, `\"`@522; row 25 root `ノﾉ　人,;ヽ` above; patches staggered, never aligned",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t16-bad-root",
+   "role": "contact_junction",
+   "also_roles": [
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 170,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "left",
+    "paper": "none protected: the trunk interior is filled with a uniform ;:;: screen right up to the edge, and the root strokes float below it"
+   },
+   "native": {
+    "rows": [
+     ";:;:;:;:;|",
+     ";:;:;:;:;|＿,,,",
+     ": : : : :;:;:;:;ヽ ''\"\"'~\"^^ ''\"\"'~ ",
+     " /ヽ: : : : ,:;,ヘ ヽ",
+     "　　　＼/"
+    ],
+    "row_numbers": [
+     20,
+     24
+    ],
+    "x_px": [
+     300,
+     470
+    ],
+    "row_pen_x": [
+     302,
+     302,
+     303,
+     302,
+     303
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "grass_patch",
+    "up": "side",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#16",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[16] (swipe audit T #16 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #16 r1 negative exemplar)"
+   },
+   "crop": "crops/an-t16-bad-root.png",
+   "note": "Anti-example: the trunk edge just stops in a ＿,,, step and the roots (/ヽ, ヘ ヽ, ＼/) are detached zigzags under a uniform ;:;: fill; no flare joins trunk to ground.",
+   "status": {
+    "state": "rejected",
+    "reason": "operator labels this root region bad (piece verdict no)",
+    "operator_note": "BAD ROOT EXAMPLE "
+   },
+   "inspection": "rows 20-21 trunk edge `|`@329 with `;:;:;:;:;`@302-326 fill; row 21 `＿,,,`@333/349-355 a flat step; row 22 `ヽ`@359 then a ground run `''\"\"'~\"^^`@376+; row 23 `/ヽ`@307/315 and `ヘ ヽ`@371/391 and row 24 `＼/`@336/352 hang below without touching the trunk edge",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t16-bad-branch-dots",
+   "role": "branch_entry",
+   "also_roles": [
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 240,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "N",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "only a few cells between the stumps; everything else is a constant ::: field"
+   },
+   "native": {
+    "rows": [
+     ":::::::::::::::::::::::/|:::::::::::::::::::::::::::::::::::::::::::::::::::::",
+     ":::::|＼:::::::/　|:::::::／| 　／|::::::::::::::::::::::::::",
+     " ヽ|　 ヽ/ 　 |ﾞｉ,/ 　.|,/ 　 |＿::::::::::::::::::::",
+     "　　 　　　　　　　　　　 ｀__ ＿ﾞｉ:::::::::::::::::",
+     ":|　　　　　　: : : : :;:;:;:;:;:;| :::::::::::::::::::::::::,.-"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     180,
+     420
+    ],
+    "row_pen_x": [
+     181,
+     186,
+     184,
+     180,
+     182
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "tone_core",
+    "up": "tone_core",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#16",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[16] (swipe audit T #16 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #16 r2 negative exemplar); SKILL.md section 8 mark-purpose test"
+   },
+   "crop": "crops/an-t16-bad-branch-dots.png",
+   "note": "Anti-example: four near-identical |＼ / | / | stumps repeated at equal spacing inside an unbroken ::: screen; neither the branches nor the dots describe a form.",
+   "status": {
+    "state": "rejected",
+    "reason": "operator labels the repeated branches and dots undeliberate (piece verdict no)",
+    "operator_note": "BAD EXAMPLE OF REPEAATED UNDELIBERATE BRANCH AND DOT USE "
+   },
+   "inspection": "row 3 `/|`@250/258 in a run of 23+ `:` each side; row 4 `|＼`@201/205, `/`@242, `|`@261, `／|`@286/302, `／|`@322/338 - the same V-stump four times ~40 px apart; row 5 repeats `|`, `/` below each; colons at a constant 3 px pitch fill rows 3-7",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t17-crown-underside",
+   "role": "underside_view",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 140,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "open paper under the ゞ;;ノ;ノ scallops and right of the trunk `|`; the scallops do not touch the trunk line"
+   },
+   "native": {
+    "rows": [
+     "ii::\"彡 ;彡~y У彡ﾉ彡:",
+     "ii::::::ゞ;;ノ;ノ　 ゞ:ヾ彡 ;彡",
+     "ii:　 :::ゞ;;ノ;ノ″,,ヾ ;\";ヾ",
+     "ii.::::::::: |　　　　　　　　　",
+     "ii:　 ..::::|,　 　 　 `　　　　"
+    ],
+    "row_numbers": [
+     17,
+     21
+    ],
+    "x_px": [
+     330,
+     470
+    ],
+    "row_pen_x": [
+     331,
+     330,
+     332,
+     332,
+     331
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "tone_fringe",
+    "up": "tone_mid",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#17",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[17] (swipe audit T #17 r4)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #17 r4; T3 in the operator note review `ゞ;;ノ;ノ″`)"
+   },
+   "crop": "crops/an-t17-crown-underside.png",
+   "note": "Crown underside as two stacked ゞ;;ノ;ノ scallop runs ending in ″,, — hooks open downward over the trunk edge `|`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled underside region",
+    "operator_note": "GOOD EXAMPLE OF UNDERSIDE LOOK "
+   },
+   "inspection": "row 18 `ゞ;;ノ;ノ`@354-385 then `ゞ:ヾ彡`@412-438; row 19 the same `ゞ;;ノ;ノ`@366-397 shifted 12 px right plus `″,,ヾ`@408-430; rows 20-21 trunk right edge `|`@373-374 rises into the gap under the scallops; row 17 above is 彡/У leaf texture",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t17-distant-falling-leaf",
+   "role": "falling_accent",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 291,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "each ` sits alone in 5-10 full spaces under the crown edge"
+   },
+   "native": {
+    "rows": [
+     "ヾ ;\";ヾ,,ヾ ;\";ヾ; ;ゞ ;\" \"ゞ ; 　 `",
+     "　　　　　 　 　 　 　 　 　 　 `",
+     "`　　　　　　　`",
+     "　　　　　`",
+     " 　 `　　　　　　　　　`　　　　 `"
+    ],
+    "row_numbers": [
+     19,
+     23
+    ],
+    "x_px": [
+     429,
+     720
+    ],
+    "row_pen_x": [
+     430,
+     432,
+     429,
+     433,
+     439
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "underside_view",
+    "down": "grass_patch"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#17",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[17] (swipe audit T #17 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #17 r2)"
+   },
+   "crop": "crops/an-t17-distant-falling-leaf.png",
+   "note": "Distant falling leaves as single backticks ` (lighter than ﾞ), one or two per row, falling below the ヾ;\"; crown fringe.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled distant falling leaf",
+    "operator_note": "GOOD EXAMPLE OF DISTANT FALLING LEAF. "
+   },
+   "inspection": "row 19 crown fringe `ヾ ;\";ヾ,,ヾ`@430-479 ... `ゞ ;`@573-589, `\\``@613; row 20 `\\``@604; row 21 `\\``@429, @513; row 22 `\\``@488; row 23 `\\``@470, @566, @622 - single 7 px marks spaced ~50-140 px apart",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t49-underside-to-trunk",
+   "role": "underside_view",
+   "also_roles": [
+    "contact_junction",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 150,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "the open wedge right of the trunk and under ＿;/ and ゞ;;ノ;ノ″ (rows 12-14); one ` leaf floats in it"
+   },
+   "native": {
+    "rows": [
+     "y.ﾉゞ ; ;ヾ ; ;:_/ヾ ;\" \"ゞ; ",
+     "; ;\";;;;\"\"ゞヾ:;;＿;/\"ゞ ; ;\"",
+     ";;; ; ;ゞ;;ノ;ノ″ 　　　　`　",
+     ";;;;.....:::/　　　　`　　　　　",
+     ";::::;i;..ii|　　　　　　　　　　"
+    ],
+    "row_numbers": [
+     10,
+     14
+    ],
+    "x_px": [
+     20,
+     170
+    ],
+    "row_pen_x": [
+     20,
+     24,
+     20,
+     23,
+     21
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_fringe",
+    "up": "tone_mid",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#49",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[49] (swipe audit T #49 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #49 r1; T3 in the operator note review `:_/ヾ ;`, `＿;/`)"
+   },
+   "crop": "crops/an-t49-underside-to-trunk.png",
+   "note": "Underside closes into the trunk as a stair: :_/ヾ, then ＿;/, then ゞ;;ノ;ノ″, then :::/ meeting the trunk edge `|`.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled underside region",
+    "operator_note": "GOOD UNDERSIDE EX "
+   },
+   "inspection": "row 10 `:_/ヾ`@94/97/102/110; row 11 `＿;/\"`@103/119/122/130; row 12 `ゞ;;ノ;ノ″`@45-87 hooks down-left; row 13 `/`@59 ends the colon run; row 14 trunk edge `|`@57 directly below it - each row's underside stroke steps down-left until it lands on the trunk",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t48-kana-underbranch",
+   "role": "branch_entry",
+   "also_roles": [
+    "underside_view",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 100,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "open paper between the ___ top edge and the ￣ lower edge of the branch, and below ヽ.､"
+   },
+   "native": {
+    "rows": [
+     "　;\"\"　;\"\"　;ヾゞ",
+     "ゞヾ___　　|..::;ii;;　",
+     "ﾌ　　　ヽﾅ　::.;;;ii",
+     "ﾉ　　￣ヽ.､　..:;;",
+     " 　 　 　 Y.::;::;;i:."
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     260,
+     360
+    ],
+    "row_pen_x": [
+     267,
+     265,
+     262,
+     266,
+     267
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "tone_fringe",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#48",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[48] (swipe audit T #48 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #48 r1; structural-line-selection.md 'Kana are useful geometric strokes')"
+   },
+   "crop": "crops/an-t48-kana-underbranch.png",
+   "note": "A branch seen from below: ___ on top and ￣ on the bottom meet the trunk through the katakana ﾅ, with ヽ.､ hanging under it and ﾌ/ﾉ closing the far end.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled kana underbranch",
+    "operator_note": "GOOD USE OF KANA UNDERBRANCH "
+   },
+   "inspection": "row 4 `ゞヾ___`@265/276/288-298 branch top, trunk edge `|`@325; row 5 `ﾌ`@262 far end, `ヽﾅ`@304/316 - ﾅ's cross is the joint with the trunk; row 6 `ﾉ`@266 and `￣ヽ.､`@296/312/324/327 the underside line returning to the trunk; row 7 `Y`@320 a fork lower on the trunk",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t36-underside-branch-stars",
+   "role": "branch_entry",
+   "also_roles": [
+    "underside_view",
+    "night_speckle"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 140,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "NE",
+    "curvature": "straight",
+    "inside": "left",
+    "paper": "gaps in the ヾ;\" leaf texture where * stars show; the space right of the ／ branches stays open sky"
+   },
+   "native": {
+    "rows": [
+     " ;ヾ ;ヾ;_\" 　; ;\";ヾ *／",
+     "* ;ヾ ;ヾ ;\";ヾ ;*ヾ;* .／",
+     "ヾ ;ヾ *;ヾ;\" 　\"ヾ;\" \"; ",
+     ";\";ヾ ;ヾ* ; / ' \"",
+     ";\";ヾ ; ; //;ヾ;\"",
+     ";\";ヾ ;ヾ／",
+     "iii;;;;;;::::,:|"
+    ],
+    "row_numbers": [
+     8,
+     14
+    ],
+    "x_px": [
+     160,
+     300
+    ],
+    "row_pen_x": [
+     166,
+     160,
+     164,
+     168,
+     168,
+     161,
+     160
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#36",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[36] (swipe audit T #36 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #36 r1; structural-line-selection.md 'Night sky is a separate transfer')"
+   },
+   "crop": "crops/an-t36-underside-branch-stars.png",
+   "note": "Branches rise from the trunk top as ／ and // diagonals through the underside of the leaf mass; * stars sit in leaf gaps for contrast.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled underside branch + star contrast",
+    "operator_note": "UNDERSIDE BRANCH GOOD THE STAR COTNRAST IS ALSO GOOD TOUCH "
+   },
+   "inspection": "row 14 trunk `|`@205; row 13 `／`@207 leaves it up-right; row 12 `//`@215/223; row 11 `/`@235; rows 8-9 `*／`@277/285 and `.／`@283/286 continue to the crown edge; `*`@160, @201, @214, @247, @270 sit in gaps between `;ヾ` leaf marks",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t36-tsushima-horizon",
+   "role": "periodic_band",
+   "also_roles": [
+    "grass_patch"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 240,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "sky above row 21 untouched; full-space breaks between repeats and a long empty stretch in row 23"
+   },
+   "native": {
+    "rows": [
+     "　　;;.,..._,,..._,,,.　;;;._,,,..._,,,..,..._,,,.　;;;._,,,..._,,",
+     ",,,.　;;;._,,,..._,,,.., ..._,,,. ;;;._",
+     ".._,,,..,　　　　　　　　　　　　..._,,,.　;;;._,,,..._"
+    ],
+    "row_numbers": [
+     21,
+     23
+    ],
+    "x_px": [
+     260,
+     500
+    ],
+    "row_pen_x": [
+     268,
+     263,
+     262
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": "paper",
+    "down": "grass_patch"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#36",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[36] (swipe audit T #36 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #36 r2; G2 in the operator note review: horizon `;;.,..._,,..._,,,.`)"
+   },
+   "crop": "crops/an-t36-tsushima-horizon.png",
+   "note": "Far grass-field top: the unit `;;;._,,,...` repeated with small variations, broken by full spaces, three staggered rows deep.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled grass-field horizon",
+    "operator_note": "GOOD 'TOP OF GRASS FIELD  HORIZON GHOST OF TSUSHIMA' LOOK "
+   },
+   "inspection": "row 21 `;;.,..._,,..._,,,.`@290-345, `;;;._,,,..._,,,..,..._,,,.`@359-440, `;;;._,,,..._,,`@454-497; row 22 `,,,.`@263-272 then `;;;._,,,..._,,,..,`@286-341 ...; row 23 `.._,,,..,`@262-288, 130 px of paper, `..._,,,.`@423-446; `_` at 5 px is the low dip, `;`/`,` the blade tips",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t81-ridge-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 95,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "S",
+    "curvature": "concave",
+    "inside": "below",
+    "paper": "sky above the ─v'´ ridge; the ;' texture leaves a column of paper beside the | drop"
+   },
+   "native": {
+    "rows": [
+     " 　 　 　 _　　　",
+     ", -─v'´;';＼___",
+     ";';';';';'､|;';';';';';.､;.;",
+     ";';';_;.斗---､､.._",
+     ":::::::::::::.:.:.:.::::::::: ."
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     405,
+     500
+    ],
+    "row_pen_x": [
+     411,
+     410,
+     407,
+     409,
+     407
+    ]
+   },
+   "ports": {
+    "left": "rim_cap",
+    "right": "rim_cap",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#81",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[81] (swipe audit T #81 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #81 r2; structural-line-selection.md 'Few exact lines explain volume and attachment')"
+   },
+   "crop": "crops/an-t81-ridge-junction.png",
+   "note": "Two terrain masses meet: the flat ─ ridge dips into a v notch, a vertical | drops from the notch, and 斗 ties that vertical into the lower horizontal ---.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled junction; the piece note rejects its dots (\"NOT GOOD DOT\"), so the ;' texture here is context, not a transfer",
+    "operator_note": "GREAT EXAMPLE OF SKILLFULLY USED JUNCTION"
+   },
+   "inspection": "row 2 `, -─v'´`@415-458: ─@426 runs flat into `v`@442, then `'´`@450/453 climb to the `_`@464 (row 1) and `＼___`@470-496 descend; row 3 `|`@444 drops under the v; row 4 `斗`@435 crosses it with `---`@451-467; dots `;'` on rows 3-4 are the rejected tone",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t81-inner-concavity",
+   "role": "fold_crease",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 75,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "inflection",
+    "inside": "below",
+    "paper": "none kept: the ;' dots fill around the creases (the operator rejects those dots)"
+   },
+   "native": {
+    "rows": [
+     "　 ＿_____",
+     "／;';'/;';i;';';｀;",
+     ".;';／;';';'l;';';';';",
+     "_;';';';';';';';､_;';';"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     500,
+     575
+    ],
+    "row_pen_x": [
+     502,
+     501,
+     500,
+     500
+    ]
+   },
+   "ports": {
+    "left": "fold_crease",
+    "right": "tone_mid",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#81",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[81] (swipe audit T #81 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #81 r3)"
+   },
+   "crop": "crops/an-t81-inner-concavity.png",
+   "note": "Inner structure of a rock mass: parallel ／ diagonals, a short / and stacked i/l verticals under a ＿_____ top edge describe faces turning in and out.",
+   "status": {
+    "state": "retained",
+    "reason": "operator retains the structural lines; the ;' dots in the same rows are rejected and must not be transferred",
+    "operator_note": "BAD DOTS BUT GOOD INNER CONCAVITY CONVEXITY STRUCTURAL LINE EXAMPLE "
+   },
+   "inspection": "row 1 `＿_____`@518-554 top edge; row 2 `／`@501 outer slope, `/`@529, `i`@546, `｀`@564; row 3 `／`@512 a second parallel slope, `l`@546 under the i; row 4 `､_`@550/557 closes the bottom; `;'` alternate at 3 px between all of them (rejected dots)",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t81-receding-grass",
+   "role": "grass_patch",
+   "also_roles": [
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 120,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "small paper pockets inside each x/X/乂 tuft; the row of tufts sits on the :. ground below"
+   },
+   "native": {
+    "rows": [
+     ";';';';.､_;.;.;／　.;';';';';';';",
+     ";';';'ノ ,,,　´'-､_;';';';';';'",
+     "_,､xX乂Xx､,,,,,＞'⌒",
+     ":.:.:.:.:.:.:.:.:.:.:.:.:.:.:. : . : ."
+    ],
+    "row_numbers": [
+     3,
+     6
+    ],
+    "x_px": [
+     0,
+     120
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "rim_cap",
+    "up": "tone_mid",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#81",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[81] (swipe audit T #81 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #81 r1; G3 in the operator note review `_,､xX乂Xx､,,,,,＞'⌒`)"
+   },
+   "crop": "crops/an-t81-receding-grass.png",
+   "note": "Receding grass edge: tufts grow x -> X -> 乂 -> X -> x and then shrink to ,,,,, before a ＞'⌒ turn, so size change carries the perspective.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled receding grass field; the piece note rejects the dots, the :.: ground band is context only",
+    "operator_note": "GOOD PERSPECTIVE MODE EXMAPLE FOR RECEDING FIELD OF GRASS LOOK "
+   },
+   "inspection": "row 5 `_,､`@0-8, `x`@15, `X`@22, `乂`@32 (largest, 16 px), `X`@48, `x`@58, `､,,,,,`@65-84, `＞'⌒`@87/103/106; row 4 `ノ`@18 and `,,,`@34-40 sit just above the tufts; row 6 `:.:.` ground run",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t86-hito-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 105,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "the body interior above ___人__ stays empty; paper between the front paw （,.,__） and the hind leg"
+   },
+   "native": {
+    "rows": [
+     " ∧＿∧　　)ﾉノ",
+     "（・∀・ ,,）　　　　　",
+     "､,;-､　　ヽ　　　　",
+     "ﾉ　,___人__）　　　",
+     "（,.,__）　　　　　　　"
+    ],
+    "row_numbers": [
+     10,
+     14
+    ],
+    "x_px": [
+     110,
+     215
+    ],
+    "row_pen_x": [
+     110,
+     110,
+     113,
+     114,
+     110
+    ]
+   },
+   "ports": {
+    "left": "return_base",
+    "right": "flank",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#86",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[86] (swipe audit T #86 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #86 r2)"
+   },
+   "crop": "crops/an-t86-hito-junction.png",
+   "note": "One 人 splits the seated body's bottom line ,___ / __） into two legs; the junction is a single glyph inside a flat underside run.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled junction choice",
+    "operator_note": "GOOD JUNCTION CHOICE "
+   },
+   "inspection": "row 13 `,___`@133-146 body underside, `人`@151 the leg split, `__）`@167/172/177 hind leg returns up; row 12 `ヽ`@163 is the hip flank above the 人's right stroke; row 14 `（,.,__）`@110-137 front paw closed separately",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t94-lobe-junction-dots",
+   "role": "contact_junction",
+   "also_roles": [
+    "flank",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 80,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "right of the lobes (rows 6-8) is empty paper; the .:.: field fills the left side (rejected)"
+   },
+   "native": {
+    "rows": [
+     "⌒＼.:.:.:.: : : ",
+     ".:.(　　´′　,,_",
+     ".:.:⌒>　　　　",
+     ":.:.:.:.:乂　　　　",
+     ".:.:.:.:.:.:.:｀\"⌒¨"
+    ],
+    "row_numbers": [
+     5,
+     9
+    ],
+    "x_px": [
+     260,
+     340
+    ],
+    "row_pen_x": [
+     263,
+     261,
+     261,
+     260,
+     261
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#94",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[94] (swipe audit T #94 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #94 r2)"
+   },
+   "crop": "crops/an-t94-lobe-junction-dots.png",
+   "note": "Bush edge of stacked lobes (⌒＼, (, ⌒>, then 乂) where the 乂 crossing ties the last lobe into the ｀\"⌒¨ base; the .:.: fill around it is the rejected part.",
+   "status": {
+    "state": "retained",
+    "reason": "operator keeps the junction; the .:.: dots in the same rows are labelled bad and are not part of the transfer",
+    "operator_note": "GOOD JUNCTION USE BAD DOT "
+   },
+   "inspection": "row 5 `⌒＼`@263/279 top lobe; row 6 `(`@270; row 7 `⌒>`@273/289 a lobe closing to a point; row 8 `乂`@287 crosses where that lobe meets the base; row 9 `｀\"⌒¨`@303/311/319/335 base line; `.:.:` at 3 px pitch fills left of every lobe (rejected)",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t65-trunk-cylinder",
+   "role": "flank",
+   "also_roles": [
+    "side",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 90,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "paper right of the 2-3 edge strokes (rows 5-6 the interior right of `l` is blank); no centre line"
+   },
+   "native": {
+    "rows": [
+     " 　 　 ､ 　 　＿",
+     "　 　 !\\二二,.",
+     " , 　 　|li::; ;. .. （",
+     "::,;\";;､, ||l: : ;; 　",
+     " ;;; :::;　|li::;;　　　",
+     ":: :: ;::;, ||l　　　 ",
+     "ii　　 丿::;;;,!j　;"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     150,
+     240
+    ],
+    "row_pen_x": [
+     154,
+     159,
+     152,
+     152,
+     152,
+     152,
+     152
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "branch_entry",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#65",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[65] (swipe audit T #65 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #65 r2; T1 in the operator note review)"
+   },
+   "crop": "crops/an-t65-trunk-cylinder.png",
+   "note": "Trunk turning as a cylinder: two or three thin parallel strokes at the edge (| l i, | | l) with a few colons, and blank trunk inside.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled cylinder edge",
+    "operator_note": "HAVING TWO OR THREE LINES AT THE EDGE GIVES THE ILLUSION OF OF CURVATURE/CYLNDER OF TRUCK SHAPE "
+   },
+   "inspection": "row 3 `|li`@192/196/199; row 4 `||l`@193/197/201; row 5 `|li`@194/198/201; row 6 `||l`@194/198/202 - the edge is 3 strokes 3-4 px apart, alternating i/l; colons `::;` follow 3 px further; row 2 `!\\二二`@191/195/203/219 caps the top, row 7 `丿`@185 flares the foot",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t56-root-bulge",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 150,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the hollow under ｿ⌒ヾ and above ｀ヾ=-ｭ stays empty; ground colons begin only past { and ﾐ､"
+   },
+   "native": {
+    "rows": [
+     "ﾊ､__ｿ⌒ヾ　/// ｨ￣￣",
+     "ヽ　　　 ｀ヾ=-ｭ｀＝-､ｊ/ｊ",
+     " :｀''ー--{　ｲ彡 ﾐ､: : : :￣",
+     " : : : : : : :｀ｰ=､''　ヾ,､: : : "
+    ],
+    "row_numbers": [
+     26,
+     29
+    ],
+    "x_px": [
+     280,
+     430
+    ],
+    "row_pen_x": [
+     287,
+     282,
+     280,
+     282
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#56",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[56] (swipe audit T #56 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #56 r2; structural-line-selection.md 'Glyph ink closely hugs bulges and gradual curves')"
+   },
+   "crop": "crops/an-t56-root-bulge.png",
+   "note": "Root bulge capped by ｿ⌒ヾ and undercut by ｀ヾ=-ｭ / ｀''ー--{: each glyph's ink sits on the bulge's curve rather than on a grid line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled contour-hugging root bulge",
+    "operator_note": "LOOK AT THE GLYPH CHOICES PERFECTLY HUGGING THE THE ROOT BULDGE LOOK "
+   },
+   "inspection": "row 26 `ﾊ､__ｿ⌒ヾ`@287-339 rises, caps with ⌒@323 and drops with ヾ@339; row 27 `｀ヾ=-ｭ`@332-368 and `｀＝-､ｊ/ｊ`@376-427 the underside; row 28 `｀''ー--{`@288-333 a lower root meeting the ground at {; row 29 `｀ｰ=､''`@338-374 the last root edge into the `: : :` ground",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t63-gradual-curve",
+   "role": "shoulder",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 200,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "paper above the ￣ ￣ dashes and between the two ｀`～､ runs"
+   },
+   "native": {
+    "rows": [
+     "･･･…‐-/∟,,_　￣　￣　￣　￣",
+     "ﾐ彡ﾍー--､: : : ｀`～､、　　｀`～､",
+     ",ﾉ;;;;/⌒'㍉　;';';';'ﾐtx: : : : ≧s｡　　"
+    ],
+    "row_numbers": [
+     8,
+     10
+    ],
+    "x_px": [
+     350,
+     550
+    ],
+    "row_pen_x": [
+     354,
+     351,
+     352
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#63",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[63] (swipe audit T #63 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #63 r3)"
+   },
+   "crop": "crops/an-t63-gradual-curve.png",
+   "note": "Gradual falling curve spelled as a sub-cell stair: ‐-/∟,,_ then ﾍー--､ then ｀`～､、 - every step is a different glyph height, no repeated glyph.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled gradual curve",
+    "operator_note": "LOOK AT HOW CLOSELY IT HUGS THE CURVE, TEH GLYPSH ARE SO WELL CHOSE TO PRODUCE THE GRADUAL CURVE"
+   },
+   "inspection": "row 8 `‐-/∟,,_`@391-437 climbs to a corner; row 9 `ﾍー--､`@374-415 a flat crest, `｀`～､、`@446-484 eases down in 5 glyphs (top tick, mid tick, wave, low tick), repeated `｀`～､`@517-548; row 10 `/⌒'㍉`@375-402 a second lobe below",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t116-rock-sticking-out",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "return_base",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "rock interior between ／￣}＼ and ＿_ノ＿__ stays empty; the ground dots stop at the outline"
+   },
+   "native": {
+    "rows": [
+     ",､: : : : :｀`～､、~\"",
+     ": : ／￣}＼. : :｀`～",
+     ": /＿_ノ＿__>.:.:.:.:.",
+     "__.:.:.:.:.:.:.:.:.: : : .ｰ‐‐"
+    ],
+    "row_numbers": [
+     16,
+     19
+    ],
+    "x_px": [
+     300,
+     410
+    ],
+    "row_pen_x": [
+     303,
+     302,
+     301,
+     300
+    ]
+   },
+   "ports": {
+    "left": "tone_fringe",
+    "right": "tone_fringe",
+    "up": "paper",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#116",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[116] (swipe audit T #116 r3)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #116 r3; M3 in the operator note review `／￣￣ヽ` over a ground line)"
+   },
+   "crop": "crops/an-t116-rock-sticking-out.png",
+   "note": "Rock protruding from ground: ／￣ shoulder, a } notch for a face break, ＼ down, closed by /＿_ノ＿__> with ノ marking a second face.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled rock contour; the piece-level rect r1 rejects the dots around it",
+    "operator_note": "GREAT CONTOUR OF ROCK STICKING OUT "
+   },
+   "inspection": "row 17 `／￣}＼`@318/334/350/354 top: shoulder, flat cap, } face break, falling side; row 18 `/`@309 left side, `＿_ノ`@317/333/338 base with the ノ crease meeting the } above, `＿__>`@349-375 base ending in a point; ground `. :` dots outside only",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t116-grass-rock",
+   "role": "rim_cap",
+   "also_roles": [
+    "grass_patch",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 97,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the rock interior under ／￣￣ is blank; the bottom edge is not drawn - grass marks ´´\"\"'' stand in front of it"
+   },
+   "native": {
+    "rows": [
+     ":.:.:.:.:: : : : : : : : :",
+     ",_／￣￣ヽ: : . .",
+     ". .´´\"\"''ｰ'′. .",
+     ".:.:.:.:.:.:.:: : : : : :"
+    ],
+    "row_numbers": [
+     17,
+     20
+    ],
+    "x_px": [
+     560,
+     657
+    ],
+    "row_pen_x": [
+     562,
+     561,
+     561,
+     561
+    ]
+   },
+   "ports": {
+    "left": "grass_patch",
+    "right": "tone_fringe",
+    "up": "tone_fringe",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#116",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[116] (swipe audit T #116 r5)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #116 r5)"
+   },
+   "crop": "crops/an-t116-grass-rock.png",
+   "note": "Small rock in a grass field: ,_／￣￣ヽ cap, and its base replaced by a row of grass ticks ´´\"\"''ｰ'′ so the rock reads as sticking out of grass.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled grass-with-rock",
+    "operator_note": "GREAT GRASS FILED WITH ROCK STICKING OUT LOOK "
+   },
+   "inspection": "row 18 `,_／￣￣ヽ`@561/564/569/585/601/617: ground tick, shoulder, two-cell flat top, falling turn; row 19 `´´\"\"''ｰ'′`@572-623 grass ticks where the base would be; rows 17/20 `.:.:` field dots above and below",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t116-hiragana-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 110,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "paper inside か and between Ｖ( and か, so the hiragana reads as crossing stems, not a letter in a word"
+   },
+   "native": {
+    "rows": [
+     ". :.〈∨〉*. : ´´＿__",
+     "＿＿Ｖ( か.:く_､‐''",
+     "⌒＼＾∨〉／〉ｙｗｖ"
+    ],
+    "row_numbers": [
+     22,
+     24
+    ],
+    "x_px": [
+     0,
+     110
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "shoulder",
+    "up": "tone_fringe",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#116",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[116] (swipe audit T #116 r4)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #116 r4; structural-line-selection.md 'Kana are useful geometric strokes, not decoration')"
+   },
+   "crop": "crops/an-t116-hiragana-junction.png",
+   "note": "Hiragana か used as crossing plant stems at a ground edge, between Ｖ( and く_､‐'' and above a ⌒＼＾∨〉／〉ｙｗｖ base run.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled kana junction",
+    "operator_note": "SEE? WHEN THE  JUNCTION OR LINE ART CALLS FOR IT HIRAGANA LOOKS PERFCTLY IN PALCE "
+   },
+   "inspection": "row 23 `＿＿Ｖ(`@0/16/32/43 a ground line into a V stem, `か`@53 crossing stems, `く_､‐''`@75-107 a leaf turning right; row 22 `〈∨〉*`@14-46 a bud above; row 24 `⌒＼＾∨〉／〉ｙｗｖ`@0-108 the zigzag base under it",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t126-deliberate-rim-dots",
+   "role": "tone_fringe",
+   "also_roles": [
+    "tone_mid",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 90,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "everything right of the 3-5 dot run inside each lobe stays empty; dots never cross into the next lobe"
+   },
+   "native": {
+    "rows": [
+     "　　 ,.:⌒ヽ　　　",
+     "　 （.:::　　　　'　",
+     "　　ゝ.::　　　　｀",
+     "　(.:::: 　　　　　",
+     "(.::::　　　　(:::⌒",
+     "::::　　　　　　　",
+     "（.:::::　　　　　　",
+     "　ゝ.::::　　　　　",
+     "...(.:::　　　　　　",
+     "　.:.:(.:::　　　　　"
+    ],
+    "row_numbers": [
+     2,
+     11
+    ],
+    "x_px": [
+     340,
+     430
+    ],
+    "row_pen_x": [
+     341,
+     341,
+     341,
+     341,
+     341,
+     341,
+     341,
+     340,
+     344,
+     341
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#126",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[126] (swipe audit T #126 r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #126 r2; structural-line-selection.md 'Dots work through purpose and surrounding contrast')"
+   },
+   "crop": "crops/an-t126-deliberate-rim-dots.png",
+   "note": "Rim-following dots: every lobe's ( or ゝ is followed by a short .:: / .:::: run (one . then colons) that hugs the inside of the rim and stops, leaving the lobe interior as paper.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled deliberate dot placement",
+    "operator_note": "PEFERCT DELIBERATE CHOICE. / PLACEMENT OF DOTS: MINIMAL BUT EARNS ITS PLACE "
+   },
+   "inspection": "row 3 `（.:::`@357/365-374; row 4 `ゝ.::`@363/375-381; row 5 `(.::::`@352/357-369; row 6 `(.::::`@341/346-358 and a second lobe `(:::⌒`@405-419; row 8 `（.:::::`@341-364; row 10 `...(.:::`@344-367; each run is 1 `.` + 2-5 `:` at 3 px pitch directly after the rim glyph, then 30+ px paper",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t74-rejected-tone-dots",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 80,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "none: the ;:;:'' fill occupies every cell between the branch strokes and around the eye"
+   },
+   "native": {
+    "rows": [
+     ":;ヾ､;..,\",,ノ''\"ヾ",
+     "　 /:/''ヾ,:;`//",
+     ";:;/:/:;;:;:i\",:;ﾞ,:;`",
+     "　'':;,:;;:;:'|//''\"",
+     "　.;,:;;:;:'':i/　　",
+     ":((.,,);:'':;:|　　　",
+     "　 ,:;:'':;:;,i"
+    ],
+    "row_numbers": [
+     4,
+     10
+    ],
+    "x_px": [
+     0,
+     80
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "side",
+    "up": "branch_entry",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#74",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[74] (swipe audit T #74 r1+r2)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #74 r1-r2)"
+   },
+   "crop": "crops/an-t74-rejected-tone-dots.png",
+   "note": "Anti-example: a uniform ;:;:'' screen packed between the / / branch strokes, the trunk | and the ((.,,) eye; the strokes are kept, the dots are not.",
+   "status": {
+    "state": "rejected",
+    "reason": "operator rejects the tone dots in both labelled regions while keeping the eye and branch",
+    "operator_note": "EYE GOOD TONE DOTS BAD  /  BRANCH GOOD TONE DOT BAD "
+   },
+   "inspection": "rows 6-10 `;:;:'':;:` runs at 3 px pitch, e.g. row 7 `'':;,:;;:;:'`@11-44 up to `|`@47, row 9 `;:'':;:`@27-45 between eye `((.,,)`@3-22 and `|`@48; branch strokes `/:/`@16-27 row 5, `/:/`@9-20 row 6, `|//`@47-59 row 7 are the retained part",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t188-bad-colon-field",
+   "role": "tone_core",
+   "size_band": {
+    "rows": 4,
+    "px_wide": 89,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "none - every cell in the rect is a colon or semicolon"
+   },
+   "native": {
+    "rows": [
+     "::::::::::::::::::::::::::::::",
+     ":::::::::::::::::::::::::::::",
+     ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+     ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;"
+    ],
+    "row_numbers": [
+     14,
+     17
+    ],
+    "x_px": [
+     272,
+     361
+    ],
+    "row_pen_x": [
+     273,
+     274,
+     274,
+     272
+    ]
+   },
+   "ports": {
+    "left": "tone_core",
+    "right": "tone_core",
+    "up": "tone_core",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#188",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[188] (swipe audit T #188 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #188 r1; structural-line-selection.md 'Ground forms: desert, cracks and craters')"
+   },
+   "crop": "crops/an-t188-bad-colon-field.png",
+   "note": "Anti-example: a solid block of 29-30 colons per row switching abruptly to 29-30 semicolons - a density field with no edge, thinning or direction.",
+   "status": {
+    "state": "rejected",
+    "reason": "operator labels this region bad; reading as rejected repeated colon/semicolon fill follows the skill's interpretation of #188 r1 vs r6",
+    "operator_note": "bad "
+   },
+   "inspection": "rows 14-15 `:` x29-30 at 3 px pitch from @273/@274 to @361; rows 16-17 `;` x29-30 at the same pitch; no gap, no stroke, no change in spacing across the rect",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t188-good-rim-edge",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "tone_core",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 110,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the ground left and below the rim (rows 24-27 left of ／ / ﾉ) stays open with only a few . \" ticks"
+   },
+   "native": {
+    "rows": [
+     "　　　　　_,,＿ -ｰ''",
+     "　　 .／゛:::::::::::::::::::",
+     "　 / i、:::::::::::::::::;;;;;;",
+     ". \" .ﾉ　/''ｰﾆｯui;;;;;",
+     "　　　 .゛　　!　 .′"
+    ],
+    "row_numbers": [
+     23,
+     27
+    ],
+    "x_px": [
+     0,
+     110
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "tone_core",
+    "up": "paper",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#188",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[188] (swipe audit T #188 r6)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #188 r6; structural-line-selection.md 'Ground forms: desert, cracks and craters')"
+   },
+   "crop": "crops/an-t188-good-rim-edge.png",
+   "note": "Crater lip: .／゛ and / i、 climb to a _,,＿ -ｰ'' rim, a lower lip /''ｰﾆｯui closes the face, and the colon tone sits only behind the rim, not on the open ground.",
+   "status": {
+    "state": "retained",
+    "reason": "bare operator label 'good'; per the skill's #188 reading it approves an edge passage that itself includes some tone",
+    "operator_note": "good "
+   },
+   "inspection": "row 23 `_,,＿ -ｰ''`@55-108 rim top; row 24 `.／゛`@27/30/46 the left lip rising, colons start @54; row 25 `/ i、`@16/29/32 a second shorter face stroke, colons @43+; row 26 `.ﾉ　/''ｰﾆｯui`@21-93 the lower lip curling right into `;;;;`@96+; row 27 `.゛ ! .′`@38-94 sparse ground ticks",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-r24-cloud-volume-dots",
+   "role": "tone_mid",
+   "also_roles": [
+    "tone_fringe",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 240,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the upper part of every cloud lobe under its ⌒ cap is blank; dots gather only in the lower/shadow part and between lobes"
+   },
+   "native": {
+    "rows": [
+     ".:.:.:.:.:.:.:ノ⌒⌒＼.:.:ノ＾ヽ(⌒　　　　　　　",
+     ":.:.:ノ⌒ヽ　　　　)'⌒　　＼　　',.: : .　　　",
+     "'’　　　　. : : .　　　. . : : :　　 }'⌒　　　",
+     "　　　　　　.:.:; : . .⌒＼: : : .　ノ　. . . : : ",
+     "　　　　　.:.:.:ノ: : : . .　　)'⌒　　　 ).:.:.:.:.: ",
+     ". .　　.:.:.:.: : : : : . . .　　　　　　　　⌒⌒ヽ"
+    ],
+    "row_numbers": [
+     7,
+     12
+    ],
+    "x_px": [
+     280,
+     520
+    ],
+    "row_pen_x": [
+     280,
+     282,
+     290,
+     284,
+     280,
+     280
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/3c/3c33aa91ad5a95d68ec09a85919643be.json.gz#24",
+    "label": "地形（海・砂浜・島） R aa[24] (swipe audit R #24 r1)",
+    "aahub_url": "https://aahub.org/mlt/3c33aa91ad5a95d68ec09a85919643be",
+    "cited_by": "annotation-transfer-index.md 'Current packaged-record supplement' R rows (R #24 r1: 'important positive bounded-tone witness; not an instruction to fill every cloud')"
+   },
+   "crop": "crops/an-r24-cloud-volume-dots.png",
+   "note": "Cloud volume by placement: ⌒/ノ⌒ヽ caps stay clean, while sparse . : : . runs (spaced 8 px) sit low in each lobe and thin to single dots at the edges.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled deliberate dots communicating volume",
+    "operator_note": "perfect deliberate use of dots to communicate volume and 3 dimention "
+   },
+   "inspection": "row 7 `ノ⌒⌒＼`@322-365 and `ノ＾ヽ(⌒`@393-429 caps with no dots under them on row 8; row 9 `. : : .`@345-369 and `. . : : :`@405-437 low in the lobes; row 10 `.:.:; : . .⌒＼`@350-405; row 12 `.:.:.:.: : : : : . . .`@313-390 thinning from 3 px to 8 px pitch toward the right",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-r28-rock-dots",
+   "role": "tone_mid",
+   "also_roles": [
+    "side",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 220,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "enclosed",
+    "paper": "parts of each block face are left blank (e.g. inside {   } row 25 and under ハ row 24); dots do not cross the } { edges"
+   },
+   "native": {
+    "rows": [
+     "ミX^Y⌒.:/＼　　}:: : : ::}::.　 }_.:./^ヽ.:",
+     ":: : : :}__..:/::.　}::　ハ　:/^ヽ　　}:{___j_}",
+     "::　/:{ 　 }:::::}/:../　 }_/::::... }--' ﾆ　　",
+     ":;　..::{::.._」-┴‐'--'´└--‐'.:.:.:.: : : . . "
+    ],
+    "row_numbers": [
+     23,
+     26
+    ],
+    "x_px": [
+     0,
+     220
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_fringe",
+    "up": "tone_core",
+    "down": "tone_fringe"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/3c/3c33aa91ad5a95d68ec09a85919643be.json.gz#28",
+    "label": "地形（海・砂浜・島） R aa[28] (swipe audit R #28 r2)",
+    "aahub_url": "https://aahub.org/mlt/3c33aa91ad5a95d68ec09a85919643be",
+    "cited_by": "annotation-transfer-index.md 'Current packaged-record supplement' R rows (R #28 r2: 'Rock dots retained while denser material above is rejected')"
+   },
+   "crop": "crops/an-r28-rock-dots.png",
+   "note": "Stacked rock blocks outlined by } { ハ /^ヽ ┴ └, with short ::/.:: runs inside some faces only - the dots shade faces, the brackets carry the edges.",
+   "status": {
+    "state": "retained",
+    "reason": "operator keeps the rock dots in r2 (the 'mi' material above is rejected separately)",
+    "operator_note": "rocks good dots and 'mi' above this dense bad "
+   },
+   "inspection": "row 23 `}:: : : ::}::.`@105-152 a dotted face between two } edges; row 24 `}__..:/::.`@30-67, `ハ`@102 unshaded; row 25 `{ 　 }`@28/53 an empty face next to `}:::::}`@53-72 a shaded one; row 26 `_」-┴‐'--'´└--‐'`@45-160 base line with `.:.:` only after it",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-r28-mi-dense",
+   "role": "tone_core",
+   "also_roles": [
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 160,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "none - ﾐ; repeats edge to edge"
+   },
+   "native": {
+    "rows": [
+     "ヾ;:ﾐ:ﾐ;ﾐ;ﾐ;ﾐ;ヾ;:ﾐ:ﾞ;ﾞ;ﾞ;X‐‐‐‐‐",
+     "ﾐ;ﾐ;ﾝくﾐ;ﾐ;ﾐ;ﾐ;ﾐ;)ｙﾞ;ﾞ;ﾞ;ﾝ￣ >",
+     "ﾐ;ﾐ;ﾐ;ﾐ;ﾝくﾐ;ﾐ;ﾐ;ﾐ;)ｙ'＾^＼/　"
+    ],
+    "row_numbers": [
+     20,
+     22
+    ],
+    "x_px": [
+     0,
+     160
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "side",
+    "up": "tone_core",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/3c/3c33aa91ad5a95d68ec09a85919643be.json.gz#28",
+    "label": "地形（海・砂浜・島） R aa[28] (swipe audit R #28 r2 (above))",
+    "aahub_url": "https://aahub.org/mlt/3c33aa91ad5a95d68ec09a85919643be",
+    "cited_by": "annotation-transfer-index.md 'Current packaged-record supplement' R rows (R #28 r2)"
+   },
+   "crop": "crops/an-r28-mi-dense.png",
+   "note": "Anti-example: the ﾐ;ﾐ;ﾐ; material band directly above the good rocks, repeated at a fixed 10 px pitch with ﾝく/)ｙ breaks - the operator calls it dense.",
+   "status": {
+    "state": "rejected",
+    "reason": "operator's r2 label names the 'mi' area above the rocks as dense/bad; crop is the rows directly above the rect",
+    "operator_note": "rocks good dots and 'mi' above this dense bad "
+   },
+   "inspection": "row 21 `ﾐ;ﾐ;ﾝくﾐ;ﾐ;ﾐ;ﾐ;ﾐ;)ｙﾞ;ﾞ;ﾞ;`@0-119; row 22 `ﾐ;ﾐ;ﾐ;ﾐ;ﾝくﾐ;ﾐ;ﾐ;ﾐ;)ｙ`@0-103: ﾐ and ; alternate every 10 px with no gap; row 20 `ヾ;:ﾐ:ﾐ;ﾐ;...X‐‐‐‐‐`@0-159 caps it",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-r37-lobe-wisp-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 95,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "no gap between ) and ～: the lobe end and the wisp share one joint; paper under the ⌒ cap"
+   },
+   "native": {
+    "rows": [
+     "　⌒)～　_.:.:.:.",
+     "　　　　　　｀ ' '"
+    ],
+    "row_numbers": [
+     3,
+     4
+    ],
+    "x_px": [
+     215,
+     310
+    ],
+    "row_pen_x": [
+     225,
+     222
+    ]
+   },
+   "ports": {
+    "left": "rim_cap",
+    "right": "tone_fringe",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/3c/3c33aa91ad5a95d68ec09a85919643be.json.gz#37",
+    "label": "地形（海・砂浜・島） R aa[37] (swipe audit R #37 r1)",
+    "aahub_url": "https://aahub.org/mlt/3c33aa91ad5a95d68ec09a85919643be",
+    "cited_by": "annotation-transfer-index.md 'Current packaged-record supplement' R rows (R #37 r1: junction compatibility)"
+   },
+   "crop": "crops/an-r37-lobe-wisp-junction.png",
+   "note": "A cloud lobe ⌒) ends and hands straight into a ～ wisp, then a _ and a .:.:. dotted band continue the same horizontal - three materials joined without a seam.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled junction compatibility",
+    "operator_note": "good - **junction compatibility**;"
+   },
+   "inspection": "row 3 `⌒`@236 cap, `)`@252 closes the lobe, `～`@257 starts at the paren's foot, `_`@284 then `.:.:.:.`@289-307; row 4 `｀ ' '`@288/301/309 ticks under the dotted band",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-r41-protected-negative-shape",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "tone_fringe",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 265,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "a dome of blank paper carved out of the : : sky field by stepping each row's dots back, continued as a blank channel through the ＿ ＝ 三 water lines below"
+   },
+   "native": {
+    "rows": [
+     ": : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : ",
+     ": : : : : 　　　　　　　　　 　 : : : : : : : : : : : : : ",
+     ": : : 　　　　　　　　　　　　　 : : : : : : : : : : : :",
+     ": :　　　　　　　　　　　　　　　　: : : : : : : : : :",
+     ": 　　　　　　　　　　　　　　　　　: : : : : : : : :",
+     "　　　　　　　　　　　　　　　　 　 : : : : : : : : :",
+     "＿ _ ＿. 　　　　 　　　　 _ ＿.＿_,,_＿ _ ＿.",
+     "　　-　=　　　　　　　　　二　_　=　　　　￣三",
+     "　三二 　　　　　　　 ＿三二　≡　三ミｯ",
+     "￣三─　　　　　　　　　　＿　　　 ＿　　　　"
+    ],
+    "row_numbers": [
+     6,
+     15
+    ],
+    "x_px": [
+     525,
+     790
+    ],
+    "row_pen_x": [
+     528,
+     528,
+     528,
+     528,
+     528,
+     528,
+     527,
+     526,
+     539,
+     526
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/3c/3c33aa91ad5a95d68ec09a85919643be.json.gz#41",
+    "label": "地形（海・砂浜・島） R aa[41] (swipe audit R #41 r1)",
+    "aahub_url": "https://aahub.org/mlt/3c33aa91ad5a95d68ec09a85919643be",
+    "cited_by": "annotation-transfer-index.md 'Current packaged-record supplement' R rows (R #41 r1: protected negative shape)"
+   },
+   "crop": "crops/an-r41-protected-negative-shape.png",
+   "note": "No outline at all: the sun/disc is the hole left when the : : sky field steps back row by row (5, 3, 2, 1, 0 colons on the left), and the water's dash rows keep a matching empty channel.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled protected negative shape",
+    "operator_note": "good**protected negative shape**"
+   },
+   "inspection": "row 6 full `: :` field @528-784; left edge of the hole: row 7 colons stop @560, row 8 @544, row 9 @536, row 10 @528, row 11 none; right edge: row 7 resumes @688, row 8 @700, row 9 @715, row 10 @723, row 11 @725; rows 12-15 water `＿ _ ＿.`@527-574 and `_ ＿.＿_,,_＿`@680-788 leave x~580-670 empty",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t97-cloud-blank-interior",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "rim_cap",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 130,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "the whole cloud interior inside ノ⌒¨⌒ヽ / ( / ノ⌒ / -( / __ﾉ is empty; the ::. sky dots stop exactly at the outline"
+   },
+   "native": {
+    "rows": [
+     "::.::.::.::.::.::.::.::.::.::.::.::.::.::.::",
+     "::.::.::.::.::.:ノ⌒¨⌒ヽ.::.::.",
+     "::.::.::.::.ノ　　　　　　).::.",
+     ".:.:.:.:.:(　　　　　ノ⌒＾丶",
+     ".:.:.:ノ⌒　　　　　　　　",
+     "-(　　　　　　　　　__ﾉ",
+     "　⌒＼　　:'⌒\"⌒　　",
+     "　　　　丿"
+    ],
+    "row_numbers": [
+     4,
+     11
+    ],
+    "x_px": [
+     300,
+     430
+    ],
+    "row_pen_x": [
+     300,
+     300,
+     300,
+     301,
+     302,
+     301,
+     301,
+     310
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#97",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[97] (swipe audit T #97 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #97 r1; structural-line-selection.md 'Landscape lines and empty masses organize the scene')"
+   },
+   "crop": "crops/an-t97-cloud-blank-interior.png",
+   "note": "Cloud as a lobed outline (ノ⌒¨⌒ヽ, ノ, (, ノ⌒, -() with a completely blank interior set against a ::. dotted sky; the contrast, not fill, gives the cloud its mass.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled contour + blank-interior contrast",
+    "operator_note": "GOOD CONTOUR AND CONTRAST BETWEEN BLANK EMPTY INNER CLOUD BS BACKGROUND SKY, "
+   },
+   "inspection": "row 5 `ノ⌒¨⌒ヽ`@348-399 cap, sky `::.` up to @345 and after @411; row 6 `ノ`@336 ... `)`@413; row 7 `(`@331, `ノ⌒＾丶`@391-426 a right lobe; row 8 `ノ⌒`@320/331; row 9 `-(`@301/309 and `__ﾉ`@413-423; row 10 `⌒＼`@312/328 and `'⌒\"⌒`@369-396 the base lobes; no glyph inside",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t115-explosion-burst",
+   "role": "effect_line",
+   "also_roles": [
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 220,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "enclosed",
+    "paper": "a blank flash core at the convergence point (rows 6-7 between ´/､ and ｀/,); no ray reaches the centre"
+   },
+   "native": {
+    "rows": [
+     "　 　 　 　 　 　 || 　 　 /",
+     " 　 　 ＼　　　 l ! 　.//　　／",
+     "　　　　ヽ＼　　| |　//　／",
+     " 　 　 　 ＼＼ | | //／",
+     " 　 ―＝ﾆ二´　 ｀二ﾆ＝‐",
+     "――＝ﾆ二､　　,二ﾆ＝――",
+     " 　 　 　 ／／ | |＼＼",
+     " 　 　 ／／//｜!　 ＼＼",
+     " 　 　 ／　//.　| !　　　 ヽ＼",
+     " 　 ／ 　 // 　 l ! 　 　 　 　 ＼",
+     "／ 　 　 /　 　 ||",
+     "　　　　 　 　 　 |"
+    ],
+    "row_numbers": [
+     2,
+     13
+    ],
+    "x_px": [
+     470,
+     690
+    ],
+    "row_pen_x": [
+     473,
+     476,
+     473,
+     477,
+     478,
+     483,
+     477,
+     476,
+     473,
+     472,
+     476,
+     474
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#115",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[115] (swipe audit T #115 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #115 r1: 'static shape reference, not lifecycle or whole-page approval')"
+   },
+   "crop": "crops/an-t115-explosion-burst.png",
+   "note": "Radial burst: paired rays (|| , //, ＼＼, ―＝ﾆ二) converge on an empty core; horizontal rays thicken ―→＝→ﾆ→二 toward the centre and end in ´ ｀ ､ , ticks.",
+   "status": {
+    "state": "retained",
+    "reason": "operator identifies the region only as 'EXPLOSION'; transfer is limited to this static burst shape (no lifecycle)",
+    "operator_note": "EXPLOSION"
+   },
+   "inspection": "rows 6-7 `―＝ﾆ二´`@499-557 and `――＝ﾆ二､`@483-557 left rays thicken inward, `｀二ﾆ＝‐`@581-631 and `,二ﾆ＝――`@586-647 mirror right; core x~560-580 blank; verticals `||`@569/573 row 2, `| |`@567/576 rows 4-5 and 8; diagonals `//／`@585-601 row 5 and `／／`@530/546 row 8 radiate in pairs",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-p493-drop-chain",
+   "role": "effect_line",
+   "also_roles": [
+    "falling_accent"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "each mark has paper above and below; row 17 is a full empty row before the largest ○"
+   },
+   "native": {
+    "rows": [
+     "';';'_;' 彡",
+     "‐` ´　.",
+     "　　　ﾟ。",
+     "　　　　о",
+     "",
+     "　　　○"
+    ],
+    "row_numbers": [
+     13,
+     18
+    ],
+    "x_px": [
+     200,
+     260
+    ],
+    "row_pen_x": [
+     200,
+     201,
+     210,
+     200,
+     null,
+     209
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "tone_fringe",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/7a/7a9ec10846347e9f3860befc2d7b0ffc.json.gz#493",
+    "label": "その他植物 P aa[493] (swipe audit P #493 r1)",
+    "aahub_url": "https://aahub.org/mlt/7a9ec10846347e9f3860befc2d7b0ffc",
+    "cited_by": "annotation-transfer-index.md supplement P #493 r1 ('its label alone does not define a lifecycle or motion effect')"
+   },
+   "crop": "crops/an-p493-drop-chain.png",
+   "note": "Size-graded drop trail: . -> ﾟ。 -> о -> (gap) -> ○, each mark larger than the last as it falls away from the plant, giving direction without a line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator calls this effect combination useful; static still only, no timing",
+    "operator_note": "special effect cobination useful "
+   },
+   "inspection": "row 14 `.`@240 under the leaf `‐` ´`; row 15 `ﾟ。`@243/247; row 16 `о`@244; row 17 empty; row 18 `○`@242 - a vertical column within 5 px, marks growing 3->7->9->16 px",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t47-crown-outline",
+   "role": "rim_cap",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 90,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "sky right of ⌒彡 / ） / ／; the crown interior holds only sparse ゞ ; marks with gaps"
+   },
+   "native": {
+    "rows": [
+     " \"ゞ ; ゞ　　　　",
+     "ゝ\"ゞ⌒彡",
+     "ゝ; ;ヾ冫、）",
+     "\" ゞ;` ／　　　",
+     " ; ;ヾ /　　　　"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     330,
+     420
+    ],
+    "row_pen_x": [
+     332,
+     338,
+     332,
+     339,
+     339
+    ]
+   },
+   "ports": {
+    "left": "tone_fringe",
+    "right": "paper",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#47",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[47] (swipe audit T #47 r1)",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #47 r1; T3 in the operator note review `ゝ\"ゞ⌒彡`)"
+   },
+   "crop": "crops/an-t47-crown-outline.png",
+   "note": "Crown edge: ⌒ caps the top, 彡 feathers its right end, then a ） lobe and ／ / strokes turn the edge down and in toward the trunk.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-labelled outline",
+    "operator_note": "GOOD OUTLINE "
+   },
+   "inspection": "row 2 `ゝ\"ゞ⌒彡`@338-385: ⌒@369 cap, 彡@385 feathered end; row 3 `冫、）`@367/383/394 the lobe turning down; row 4 `／`@378 and row 5 `/`@372 carry the edge down-left; texture `ゞ ;` @345-371 inside stays sparse",
+   "inspected_by": "annotations agent"
+  },
+  {
+   "id": "an-t73-sunset-sky-gradient",
+   "role": "tone_mid",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 130,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "n/a",
+    "inside": "above",
+    "paper": "gaps widen row by row toward the bottom; the cloud interior at the right edge (rows 5-6 `(`, `(⌒`) gets no sky dots"
+   },
+   "native": {
+    "rows": [
+     ".　... ..　　.... .. ..:.:.:.:.:.:.:",
+     "　.. .......:.:.:.:.:. .:.:.:.:.:.... .",
+     "..　. :. .:.:.:.:. . . .....:.:.:.:.:.",
+     "　　..:.:.: .....:.:.:.:.:.　.:.:.:...",
+     ".:.:.:.:.... ....　.. ... ....:.:.:.: (",
+     ". ... .　 　 .. .:.:.: ...　 (⌒",
+     "　......　 ... ....　 　 ...　　",
+     "　 　 .　.. .　　 ... ....　 "
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     200,
+     330
+    ],
+    "row_pen_x": [
+     202,
+     204,
+     203,
+     200,
+     200,
+     203,
+     201,
+     201
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "opening_paper_gap",
+    "up": null,
+    "down": "paper"
+   },
+   "source": {
+    "repo": "ascii-art-archive",
+    "src": "mlt:collections/aahub-mlt/96/9636c2401facd04b90778f4bfea720c3.json.gz#73",
+    "label": "地形（木・草原・荒野・砂漠・地割れ・クレーター） T aa[73] (swipe audit T #73 note (region chosen by agent))",
+    "aahub_url": "https://aahub.org/mlt/9636c2401facd04b90778f4bfea720c3",
+    "cited_by": "annotation-transfer-index.md T rows; structural-line-selection.md 'Annotation evidence and transfer boundaries' (T #73 note); structural-line-selection.md 'T #73's specific transfer'"
+   },
+   "crop": "crops/an-t73-sunset-sky-gradient.png",
+   "note": "Sunset sky: rows 1-5 mix .:.:. runs with . . . runs; rows 6-8 drop to short single-period runs with wider gaps, so density falls toward the horizon. Not a night-sky or cloud recipe.",
+   "status": {
+    "state": "retained",
+    "reason": "operator note approves the downward-thinning sky dots (the cloud dots in the same piece are rejected and are outside this window)",
+    "operator_note": "GREAT DISTANCE LOOK THE CLOUD OUTLINES ARE ALSO GREAT EXCEPT THE DOTS BUT THE DOTS IN SKY IS GOOD IN ITS LESSENING IN DENSITY TOWARD THE BOTTOM, GIVING THE SUNDSET/ SKY GRADIENT LOOK."
+   },
+   "inspection": "rows 1-4 `..:.:.:.:.:.:.:` / `.......:.:.:.:.:.` runs 40-70 px long with colons (two-tier); row 5 `.:.:.:.:....` then `(`@327 cloud edge (`(⌒`@319 row 6); rows 6-8 only `.`/`...`/`....` runs of 3-20 px separated by full spaces, no colons - density falls monotonically downward; cloud `(⌒` row 6 stays empty inside",
+   "inspected_by": "annotations agent"
+  }
+ ]
+}
