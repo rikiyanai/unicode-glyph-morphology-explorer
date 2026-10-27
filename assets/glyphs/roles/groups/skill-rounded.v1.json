@@ -1,0 +1,1524 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "skill-rounded",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings",
+  "arch_band": "thick architectural arch/vault band drawn as two or more cooperating parallel strokes (often with ﾆ/二 fill between) that turns from crown to flank; thickness belongs to the architectural form, not to every round subject",
+  "ellipse_rim": "perspective rim of a round opening, end face or plane (vessel mouth, cylinder end, altar) recorded with its near/far or inner/outer edges and thickness, not a cap alone",
+  "dotted_rim": "round boundary drawn as a run of leader/dot glyphs (… ‥ ．) stepping around the form, distinct from a solid contour and from a tone field"
+ },
+ "inspection_log": [
+  "Read: trueff-shallot AGENTS.md 'How to inspect' rule; SKILL.md 2.1, 2.2, 4.4, 8 mark-purpose, 15.3-15.7, Split-stroke ownership, Revision preservation gate (skills repo 716bedd = origin/main for the rounded section, diffed identical); structural-line-selection.md incl. Rounded constructions, Attachment is not construction, Split-stroke ownership, Four patterns, Recovered AA tools; aahub-reference-index.md circle profile update + role-organized libraries + role-lookup pointer; schema.json incl. split_stroke.",
+  "Numbering: profile_circle_evidence.v1.json families profile-circle-07/10/11/15/23/28/37/41 each have profile_entry_indices [N] and text_path entry-NN.txt; archive matches church aa[54]/58/73/120/151/166, Japanese room aa[55], ruins aa[165] agree with the reference index table. None of these eight entries was in the merged table (only 03,04,05,08,13,14,19,25,31,33,34,39,45,46,47 were).",
+  "entry-07 rows 12-16 x70-215, rows 13-15 x112-190, rows 12-16 x480-644: three entries (frame arch, nested medallion, halfwidth mirror medallion). Did not split inner round vs bracket ring into two entries: at 3 rows they read only together.",
+  "entry-10 rows 2-14 full width (locating view, x3), then rows 2-6 x100-330, rows 9-12 x130-300, rows 2-9 x255-360: three entries. Left-side flank region and the lower nave piers (rows 13-21) not used: piers are straight sides, not rounded construction.",
+  "entry-11 rows 6-17 x100-460 (locating view), then rows 6-9 x180-430 (first tried x255-440, rejected because it cut the left half of the crown), rows 10-14 x140-225, rows 10-15 x385-480: three entries. The inner smaller arch (`／`, `V/` rows 12-15) not used: thin and fragmentary, adds nothing beyond the band flanks.",
+  "entry-15 rows 3-33 full (locating view, x2), then rows 6-12 x150-420, rows 3-9 x60-330, rows 13-24 x0-70, rows 21-29 x120-420: four entries (cell with shared returns, dotted rim crest, dotted rim flank, rosette + inner-ring returns).",
+  "entry-23 rows 5-12 x140-460 (locating view), then rows 5-7 x220-405 and rows 7-12 x205-275: two entries. Right flank (`'く⌒心`, `∨￣}`, `_￣j}`) is the mirror and was not duplicated; the `ﾉ＿＿_乂` base return (row 12) is a squared foot, not used.",
+  "entry-28 rows 6-20 full (locating view, x2), rows 9-14 x85-400, rows 10-13 x205-420, rows 16-20 x55-500: two entries (inner ellipse lip, near thick rim). Left rim end (rows 10-17, `ｘf〔`, `寸三≫`) viewed in the x85-400 crop but not entered: it is crowded with 《》 ornaments and its strands are hard to separate from the stairs/props.",
+  "entry-37 rows 16-24 x0-330, rows 18-21 x200-300, rows 21-24 x10-125: two vessel entries (small vase, lidded pot).",
+  "entry-41 rows 1-15 full (locating view, x2), rows 1-5 x195-330, rows 3-10 x0-180, rows 4-15 x180-420: three entries (upright end, tilted end, frontal drum end). The right-hand broken cylinder (x>420) not entered; its ends are interrupted by debris and add no new orientation.",
+  "split_stroke: flagged only sr-p41-upright-end `┴`@295 row 5. Considered and declined: 乂 tails in sr-p37-vase-rim-lobes (outer tails meet the shelf line; reads as a contact with the shelf, which is a junction, not split ownership); `7`@159 row 6 in entry-41 (rim and side wall of the same cylinder, not two forms); `《＿》` on the altar rim (pedestal foot occluding the rim, separate glyphs); `У` in entry-23 (cannot tell from the crop whether its arms serve two forms)."
+ ],
+ "gaps": [
+  "No 1-row (xs) example in these sources: every rounded construction here needs 2+ rows.",
+  "dotted_rim seen only on the stained-glass rose (Profile15); no smaller or perspective-ellipse dotted rim in these eight drawings.",
+  "arch_band at s size (2-3 rows, narrow) only as distant crowns (sr-p10-deep-crowns); no isolated small thick arch.",
+  "ellipse_rim far/back edge of a large ellipse seen from a low angle (rim disappearing behind the plane) not cleanly isolable in Profile28: ornaments crowd it.",
+  "Vessel contact with a table surface plus cast shadow: Profile37's pot shows `｀¨¨´` under the body but no separate shadow; contact/shadow role left uncertain."
+ ],
+ "entries": [
+  {
+   "id": "sr-p07-nested-medallion",
+   "role": "whole_circle",
+   "also_roles": [
+    "return_base",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 78,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the inner Ｙ⌒Ｙ/乂_ン round, and the ring of paper between it and the outer {…} / ﾍ…/ frame"
+   },
+   "native": {
+    "rows": [
+     "{　Ｙ⌒Ｙ　}｜",
+     "ﾍ 乂_ン /.::|　",
+     "　 ≧=≦　 |　"
+    ],
+    "row_numbers": [
+     13,
+     15
+    ],
+    "x_px": [
+     112,
+     190
+    ],
+    "row_pen_x": [
+     112,
+     112,
+     112
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-nested-medallion.png",
+   "note": "Two nested rounds in three rows: inner Ｙ⌒Ｙ over 乂_ン, held by a wider bracket ring {…} → ﾍ … /.:: → ≧=≦ that closes below; the rings never touch.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 13 `Ｙ⌒Ｙ` (pens 127/137/153) caps the inner round inside `{`@112 / `}`@174; row 14 `乂_ン` (127/143/148) returns it while `ﾍ`@112 and `/.::`@167 turn the outer ring inward; row 15 `≧=≦` (128/144/152) closes the outer ring under the inner one; paper kept between the two rings; `｜`@178 / `|`@184 is the frame side",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p07-frame-arch",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder",
+    "side",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 145,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the whole frame interior around the medallion; the arch is the frame's top, not a second circle"
+   },
+   "native": {
+    "rows": [
+     "Ｔﾆﾆア´￣￣｀弌ﾆニｈ",
+     " |　　|{　Ｙ⌒Ｙ　}｜　 | ",
+     " |　　|ﾍ 乂_ン /.::|　　| ",
+     " |　　|　 ≧=≦　 |　　| ",
+     "二二|￣￣￣￣￣|二二"
+    ],
+    "row_numbers": [
+     12,
+     16
+    ],
+    "x_px": [
+     70,
+     215
+    ],
+    "row_pen_x": [
+     77,
+     77,
+     77,
+     77,
+     70
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": null,
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-frame-arch.png",
+   "note": "Larger frame around the medallion: ア´￣￣｀弌 arches its top between ﾆﾆ bands, straight | sides drop to a ￣ sill; frame and medallion stay separate.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 12 `ア´￣￣｀弌` (pens 107/121/129/145/161/169) is the frame arch between `Ｔﾆﾆ` and `ﾆニｈ`; rows 13-15 `|`@108 and `|`@184 are the frame sides; row 16 `|￣￣￣￣￣|`@102-186 is the sill; the medallion (rows 13-15) sits inside without touching the arch",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p07-medallion-halfwidth",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "side"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 164,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the compact Y⌒ Y / 乂_ン round and between it and the frame sides"
+   },
+   "native": {
+    "rows": [
+     "　|イﾆﾆTア´￣｀弌ﾆT",
+     "／ノ|　　|{ Y⌒ Y :}　 |",
+     "厂|　|　　|ﾍ乂_ン.:/　｜",
+     "|＾|　|　　|　≧=≦ |　 |",
+     "|_,|二二|￣￣￣￣|二二|"
+    ],
+    "row_numbers": [
+     12,
+     16
+    ],
+    "x_px": [
+     480,
+     644
+    ],
+    "row_pen_x": [
+     488,
+     487,
+     483,
+     487,
+     487
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-07.txt",
+    "label": "operator circle My MLT profile 07 = entry-07.txt; St Paul's nested medallions; original church page aa[54]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested framed medallion' (Profile07)"
+   },
+   "crop": "crops/sr-p07-medallion-halfwidth.png",
+   "note": "Mirror medallion on the other tower: same nesting but a narrower spelling, halfwidth `{ Y⌒ Y :}` over `ﾍ乂_ン.:/`; not interchangeable with the fullwidth Ｙ⌒Ｙ version.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 13 `{ Y⌒ Y :}` (pens 544/553/562/583/597/600) caps with halfwidth Y and a half space; row 14 `ﾍ乂_ン.:/` (544/554/570/575/589/592/595) returns it with no gap before ﾍ; row 15 `≧=≦` (555/571/579) closes the ring; frame arch `ア´￣｀弌` row 12 (545-591) and sides `|`@540 / `|`@620",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p10-receding-crowns",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 230,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "thin paper between successive band crowns; the vault interior below"
+   },
+   "native": {
+    "rows": [
+     "　¨￣＞ ' ´｡o--o｡｀` ' ＜ ￣｀`ヽ、　",
+     " 　 ／,､　´＿__＿＿｀`丶､ ｀ヽ、　　 ＼",
+     " ／／'\"´￣　 ＿＿＿ ￣｀`ヽ、｀ヽ、　",
+     "／　_､　´￣_二ﾆ=‐=ﾆ二_｀`ヽ､＼　＼",
+     "　／､丶^⌒＞-‐……‐-＜⌒^ヽ、＼"
+    ],
+    "row_numbers": [
+     2,
+     6
+    ],
+    "x_px": [
+     100,
+     330
+    ],
+    "row_pen_x": [
+     107,
+     102,
+     100,
+     103,
+     101
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": null,
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-receding-crowns.png",
+   "note": "Five rows of vault crowns receding: each band is its own crown spelling (´｡o--o｡｀, ´＿__＿＿｀, ￣ ＿＿＿ ￣, ´￣_二ﾆ=‐=ﾆ二_｀, ^⌒＞-‐……‐-＜⌒^) and its own ｀`ヽ、 shoulder.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 2 `´｡o--o｡｀` (171-225) keystone crown; row 3 `´＿__＿＿｀` (160-226) with `丶､ ｀ヽ、`; row 4 `￣ ＿＿＿ ￣` double crown (156-241) and paired shoulders `｀`ヽ、｀ヽ、` (257-315); row 5 thick `´￣_二ﾆ=‐=ﾆ二_｀` (153-263); row 6 `^⌒＞-‐……‐-＜⌒^` (151-286) lobed crown; left flanks `／／` (105/121) run down-left; paper strips between crowns",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p10-shoulder-flank-stack",
+   "role": "shoulder",
+   "also_roles": [
+    "flank",
+    "arch_band"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 105,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the diagonal paper strips between parallel band flanks"
+   },
+   "native": {
+    "rows": [
+     " ￣｀`ヽ、　 ＼",
+     "､ ｀ヽ、　　 ＼　 ∨",
+     "｀`ヽ、｀ヽ、　 ﾍ,　",
+     "_｀`ヽ､＼　＼　i|　",
+     "⌒^ヽ、＼　`ｉ|　",
+     "｀`～､、 ＼ ＼]|　",
+     "｀`ヽ､＼　ﾟ｡ ∨",
+     "｀`丶､ ＼＼ｉ|　|　"
+    ],
+    "row_numbers": [
+     2,
+     9
+    ],
+    "x_px": [
+     255,
+     360
+    ],
+    "row_pen_x": [
+     269,
+     257,
+     257,
+     258,
+     270,
+     258,
+     269,
+     260
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "side",
+    "up": null,
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-shoulder-flank-stack.png",
+   "note": "Right side of the receding vault: repeated ｀`ヽ、 / ｀`丶､ shoulder ticks each hand to a long ＼ flank; the bands stay parallel and separated by paper, so depth reads as repetition, not one thick line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "shoulder ticks `｀`ヽ、` row 2 @290-317, `､ ｀ヽ、` row 3 @257-289, doubled `｀`ヽ、｀ヽ、` row 4 @257-315, then rows 5-9 starting @258/270/258/269/260; each hands to a `＼` flank: row 2 @344, row 3 @327, row 5 @297/324, row 6 @316, row 7 @312/333, row 8 @303, row 9 @303/319; `ﾍ,`@342 row 4 and `∨`@359/346 rows 3/8 belong to the pier; paper strips between bands kept",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p10-deep-crowns",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 170,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the narrow paper inside each small distant crown and the gaps to the flank ticks"
+   },
+   "native": {
+    "rows": [
+     "､丶`_､丶`　＿＿＿｀`丶､ ",
+     "　／'´,､ヽ`｀＞ー‐＜ ＾`丶＼",
+     "/,:ﾟ ／,､丶`＞ー‐＜ ｀`ヽ､",
+     "ﾟ,ﾊ´:／／､丶｀￣￣__｀`ヽ、"
+    ],
+    "row_numbers": [
+     9,
+     12
+    ],
+    "x_px": [
+     130,
+     300
+    ],
+    "row_pen_x": [
+     136,
+     133,
+     134,
+     130
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "arch_band",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-10.txt",
+    "label": "operator circle My MLT profile 10 = entry-10.txt; Canterbury receding arch bands; original church page aa[58]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile10 recedes through repeated arch bands)"
+   },
+   "crop": "crops/sr-p10-deep-crowns.png",
+   "note": "Most distant bands of the same vault: small crowns ＞ー‐＜ twice over ＿＿＿ / ￣￣__; at this size a band reduces to a chevron-capped short bar plus ､丶` ticks.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 9 `＿＿＿` (212-244) over row 10 `＞ー‐＜` (208-247) and row 11 `＞ー‐＜` (206-245) above row 12 `￣￣__` (221-258); flanking ticks `,､ヽ`` row 10 @171-193 left and `＾`丶＼` row 10 @268-299 right; left `／`@144 (row 10) / @157 (row 11) are the nearer bands' flanks",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-crown-at-pillar",
+   "role": "arch_band",
+   "also_roles": [
+    "rim_cap",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 250,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "open regions under the band on both sides of the pillar; the pillar's dotted face is tone, not paper"
+   },
+   "native": {
+    "rows": [
+     "､丶`　　　　　_三二二三- ‐　　　　　　　",
+     "　 　 　,｡s≦｢|:::::::::::::::::::::|¨≧s｡,　　　　　",
+     " 　 x≪ニ二ﾆ|:::::::::::::::::::::|二二ﾆ≫ｘ　　　",
+     "／二-＞''~ : |:::::::::::::::::::::|　~`'' ＜二≫,、"
+    ],
+    "row_numbers": [
+     6,
+     9
+    ],
+    "x_px": [
+     180,
+     430
+    ],
+    "row_pen_x": [
+     183,
+     182,
+     180,
+     183
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "arch_band",
+    "up": null,
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-crown-at-pillar.png",
+   "note": "Thick band crown meeting the central pillar: ,｡s≦｢ / ¨≧s｡, shoulders, x≪ニ二ﾆ / 二二ﾆ≫ｘ double band, ／二-＞''~ / ~`'' ＜二≫,、 turning down; the band stops at the pillar's | edges.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `_三二二三-` (268-337) cap over the pillar; row 7 `,｡s≦｢|` (225-265) and `|¨≧s｡,` (332-374); row 8 `x≪ニ二ﾆ|` (201-265) / `|二二ﾆ≫ｘ` (332-394); row 9 `／二-＞''~` (183-245) / `~`'' ＜二≫,、` (347-423); pillar edges `|`@265 and `|`@332 with `:` tone between",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-left-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 85,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "SW",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the open region right of the band; paper between the band and the inner `／` arch"
+   },
+   "native": {
+    "rows": [
+     "　 　,ｲ二㌃゜　",
+     "　,ｲﾆア゜　 　",
+     " /ﾆｱ　　 　 ,　",
+     "/ﾆ'′　　／　",
+     "　　　 　 ′　　"
+    ],
+    "row_numbers": [
+     10,
+     14
+    ],
+    "x_px": [
+     140,
+     225
+    ],
+    "row_pen_x": [
+     143,
+     148,
+     145,
+     142,
+     142
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "arch_band",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-left-flank.png",
+   "note": "Left descent of the thick band in four rows: ,ｲ二㌃゜ → ,ｲﾆア゜ → /ﾆｱ → /ﾆ'′; outer stroke, ﾆ/二 band fill and inner hook move together, steepening each row.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `,ｲ二㌃゜` (170-214); row 11 `,ｲﾆア゜` (159-195); row 12 `/ﾆｱ` (150-168); row 13 `/ﾆ'′` (142-163); each row shifts ~10 px left as the band steepens; `,`@221 row 12 and `／`@201 row 13 are the separate inner arch",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p11-right-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 95,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "the open region left of the band (toward the pillar)"
+   },
+   "native": {
+    "rows": [
+     "｀'くﾆ心、　　　",
+     "　　`寸ム　　　",
+     "　　　　寸ﾊ　　",
+     "　　　　 ∨i,　　",
+     "　　　 　 Ⅵｉ　",
+     "　　　　　　 'ﾆ　"
+    ],
+    "row_numbers": [
+     10,
+     15
+    ],
+    "x_px": [
+     385,
+     480
+    ],
+    "row_pen_x": [
+     391,
+     391,
+     388,
+     393,
+     395,
+     386
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "arch_band",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-11.txt",
+    "label": "operator circle My MLT profile 11 = entry-11.txt; Basement thick turning arch band; original church page aa[73] (also cited as 'Basement church073 rows7-17' in Recovered AA tools)",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (Profile11)"
+   },
+   "crop": "crops/sr-p11-right-flank.png",
+   "note": "Right descent of the same band uses different marks: ｀'くﾆ心、 → `寸ム → 寸ﾊ → ∨i, → Ⅵｉ → 'ﾆ; the band thins into a near-vertical double stroke.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `｀'くﾆ心、` (391-437); row 11 `寸ム` (420/436); row 12 `寸ﾊ` (432/448); row 13 `∨i,` (442/458/461); row 14 `Ⅵｉ` (449/465); row 15 `'ﾆ` (457/460); the band shifts right ~10 px per row then turns vertical at rows 14-15",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-rounded-cell",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 270,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the central cell's interior and the gaps between neighbouring cells"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　＿　 -─‐-　＿　　　　　 ‥…‐",
+     "　 _　-┼ｰ　／　　　 　 ＼ ‐┼‐　_　　　　…",
+     "-‐-┌￣.:.:.:/　　　　　　　　　:.:.:.: ┐-- 　　　",
+     " ／￣￣＼|　 　 　 　 　 　 |／￣￣＼　＼ ",
+     "　　　　 　 ´,　　　 　 　 　 /　　　　　　'，　}",
+     "　　　　　　　 ＼＿＿＿,／　　　　　　　 　／",
+     "　　　　　　　 |／￣￣＼| 　　　　　　 　　|'.　"
+    ],
+    "row_numbers": [
+     6,
+     12
+    ],
+    "x_px": [
+     150,
+     420
+    ],
+    "row_pen_x": [
+     158,
+     158,
+     152,
+     154,
+     157,
+     154,
+     155
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "whole_circle",
+    "up": "dotted_rim",
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-rounded-cell.png",
+   "note": "One rounded cell of the rose with shared boundaries: -─‐- cap, ／ ＼ shoulders, side cells' ／￣￣＼ caps meet its | flanks, and its ＼＿＿＿,／ return sits directly over the next cell's ／￣￣＼.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `＿ -─‐- ＿` (224-307) caps the cell; row 7 `／`@235 / `＼`@305; row 9 side cells `／￣￣＼|`@159-223 and `|／￣￣＼`@323-375 share the `|` flanks; row 10 `´,`@222 / `/`@319; row 11 `＼＿＿＿,／` (236-303) returns it; row 12 `|／￣￣＼|` (237-305) is the next cell's cap directly beneath",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-dotted-rim-top",
+   "role": "dotted_rim",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 270,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "a clear strip between the dotted rim and the cells' crosses/caps"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　　　　＿＿＿＿",
+     "　　　　　　　　 　　 ． ‥…………………",
+     "　　　　　　　．……‥‥　　＂＇＇＂　　　",
+     "　　　　 ．……　　　　　　＿　 -─‐-　＿　",
+     "　　 ．‥…　　　 _　-┼ｰ　／　　　 　 ＼ ‐",
+     " ．……　　 　-‐-┌￣.:.:.:/　　　　　　　　　",
+     "…… 　 　.／　 ／￣￣＼|　 　 　 　 　 　 |／"
+    ],
+    "row_numbers": [
+     3,
+     9
+    ],
+    "x_px": [
+     60,
+     330
+    ],
+    "row_pen_x": [
+     66,
+     66,
+     66,
+     66,
+     66,
+     66,
+     60
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "dotted_rim",
+    "up": null,
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-dotted-rim-top.png",
+   "note": "Outer rim of the rose drawn only with leader dots: ． ‥………… crown under a ＿＿＿＿ lintel, then ．……‥‥ / ．…… / ．‥… / ．…… steps down-left; no solid contour.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 3 `＿＿＿＿` (242-305) above row 4 `． ‥…………………` (186-329); rows 5-8 dot runs start at 143, 115, 93, 71 and row 9 `……`@60, each a short `．`+`…` step; row 5 `＂＇＇＂` (240-288) hangs under the crown; the cells' `-┼ｰ`, `┌￣.:.:.:/` begin ~40 px inside",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-dotted-rim-flank",
+   "role": "dotted_rim",
+   "also_roles": [
+    "flank"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 70,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "a ~30 px paper strip between the dotted rim and the outer cells"
+   },
+   "native": {
+    "rows": [
+     "　 …‐　 　 ",
+     "　…‐　　 ／",
+     "...…　　　′",
+     ".…　　　:| 　",
+     "…　　　 ＼",
+     "…　　　／￣",
+     "…　　 :|　　",
+     "…　　　:.　　",
+     ".….　　　＼",
+     "..….　　　／",
+     ". …　　 /　",
+     "　…‐　 |　　"
+    ],
+    "row_numbers": [
+     13,
+     24
+    ],
+    "x_px": [
+     0,
+     70
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "paper",
+    "up": "dotted_rim",
+    "down": "dotted_rim"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-dotted-rim-flank.png",
+   "note": "Left side of the same dotted rim: one … per row stacked straight down with ‐ / . accents marking the turn ends; the outer cells' ／ ＼ | stay a fixed paper gap inside.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "rows 13-24 `…`@16,11,9,3,0,0,0,0,3,6,8,11 with `‐`@32/27 at rows 13-14 and 24 and `.` accents at rows 15-16, 21-23; cell contours `／`@62, `|`@55, `＼`@54, `／￣`@49, `|`@46, `/`@51 never touch the rim",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p15-rosette-and-ring-return",
+   "role": "return_base",
+   "also_roles": [
+    "tone_mid",
+    "dotted_rim",
+    "whole_circle"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 300,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the large empty centre between the rosette's return and the inner ring's lower course"
+   },
+   "native": {
+    "rows": [
+     "　　　　　＼.:.:.:.:.: |　　　　　　 　 |.:.:.:.:.:／　　　 　 ",
+     "　　　　　　 丶、:::.　　　　　　　/.:.:,，'’　　　　　　",
+     "､　　　　　　 　 ｀¨^≧=‐-‐=≦^¨´　　　　　 　 　",
+     "＼　　　　　　　　　　　　　　　　　　　　　　　　／",
+     "　＼　　　　　　　　　 　 　 　 　 　 　 　 　 ／￣",
+     "　　　 丶、　　　　　　　　　　　　　　　　　／　　　",
+     " 　 　 |　 ::........　　　　　　　　　　　　　／ 　 |　　",
+     "＿__／￣　＼::::::....…ー--─…　　　　／￣＼＿",
+     "　　 /　　　　　 .:::／￣　＼::::／￣　＼/　　　　　"
+    ],
+    "row_numbers": [
+     21,
+     29
+    ],
+    "x_px": [
+     120,
+     420
+    ],
+    "row_pen_x": [
+     123,
+     126,
+     123,
+     130,
+     134,
+     124,
+     129,
+     127,
+     120
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "whole_circle",
+    "up": "whole_circle",
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-15.txt",
+    "label": "operator circle My MLT profile 15 = entry-15.txt; stained-glass rose; original church page aa[120]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Nested rings of rounded cells' (Profile15)"
+   },
+   "crop": "crops/sr-p15-rosette-and-ring-return.png",
+   "note": "Two returns stacked: the central rosette closes with ｀¨^≧=‐-‐=≦^¨´ under dotted tone, and the larger inner ring comes round with ＼ / ／ diagonals into a dotted ::::::....…ー--─… lower course resting on the bottom cells' caps.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 21 `＼.:.:.:.:.:`@178 / `|.:.:.:.:.:／`@320-354 dotted cell tone; row 22 `丶、:::.`@197 / `/.:.:,，'’`@313; row 23 `｀¨^≧=‐-‐=≦^¨´` (217-327) closes the rosette; rows 24-27 inner ring `＼`@130, `＼`@145, `丶、`@162 and `／`@410, `／`@393, `／`@376, `／`@359; row 28 `＼::::::....…ー--─…` (196-305) is its dotted lower course over `＿__／￣　＼` (127-196) / `／￣＼＿` (365-413) cell caps",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p23-carved-crown-lobes",
+   "role": "rim_cap",
+   "also_roles": [
+    "arch_band",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 185,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the opening below the band (row 7 onward) and the small paper inside each ⌒ lobe"
+   },
+   "native": {
+    "rows": [
+     "ｧ'’　｡s个　{　　}　 个s｡　｀'<=",
+     "　 xく⌒＞-乂乂-＜⌒^'>､　寸",
+     ",ｲ⌒>'ﾟ,.イニニニﾐh､'く⌒心,　"
+    ],
+    "row_numbers": [
+     5,
+     7
+    ],
+    "x_px": [
+     220,
+     405
+    ],
+    "row_pen_x": [
+     223,
+     220,
+     223
+    ]
+   },
+   "ports": {
+    "left": "arch_band",
+    "right": "arch_band",
+    "up": "paper",
+    "down": "arch_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-23.txt",
+    "label": "operator circle My MLT profile 23 = entry-23.txt; Ajanta carved layered arch; original church page aa[151]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (profile23 adds carved crown lobes)"
+   },
+   "crop": "crops/sr-p23-carved-crown-lobes.png",
+   "note": "Carved crown: the arch band's top is built from lobes xく⌒＞ / ＜⌒^'> meeting at a doubled 乂乂 keystone, with ｲ⌒> / 'く⌒心 lobes on the next row and 个 { } 个 finials above.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 5 `｡s个 { } 个s｡` (253-363) finials; row 6 `xく⌒＞-乂乂-＜⌒^'>､` (236-382) lobe chain with the 乂乂 keystone at 292/308; row 7 `,ｲ⌒>'ﾟ` (223-262) and `'く⌒心,` (352-396) shoulder lobes around the inner `,.イニニニﾐh､` band (266-345)",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p23-stepped-flank",
+   "role": "arch_band",
+   "also_roles": [
+    "flank",
+    "side"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 70,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "the opening inside the band (right of the / / strokes)"
+   },
+   "native": {
+    "rows": [
+     "′,ｲ⌒>'ﾟ,.イ",
+     "　√_У,ｲニ",
+     "√./ /ニニ",
+     "√/_/ニニ",
+     " |_Ｌ＿L＿＿",
+     "_|　　　　　　"
+    ],
+    "row_numbers": [
+     7,
+     12
+    ],
+    "x_px": [
+     205,
+     275
+    ],
+    "row_pen_x": [
+     207,
+     206,
+     215,
+     211,
+     206,
+     206
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "periodic_band",
+    "up": "rim_cap",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-23.txt",
+    "label": "operator circle My MLT profile 23 = entry-23.txt; Ajanta carved layered arch; original church page aa[151]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Thick turning arch band' (profile23 adds carved crown lobes)"
+   },
+   "crop": "crops/sr-p23-stepped-flank.png",
+   "note": "Left flank of the carved arch: three stacked √ steps describe receding carved layers while / / strokes carry the band down to |_Ｌ＿ base.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 7 `,ｲ⌒>'ﾟ,.イ` lobe (223-272); rows 8-10 `√`@217, `√`@215, `√`@211 stepping outward, with band strokes `У,ｲ`@238-257, `/ /`@234/247, `/_/`@227-240 and ニ fill to the right; row 11 `|_Ｌ＿L＿＿` (211-271) base; row 12 `_|`@206/211",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p28-inner-ellipse-lip",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 215,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the enclosed elliptical plane above the lip (rows 10-12 centre) stays nearly empty"
+   },
+   "native": {
+    "rows": [
+     " ｛=-　　　　　｀´　　　　　‐=〕─‐}〉",
+     "`'マﾆ=-　　　　　＿-=ﾆ㌣─,ｧ’　",
+     "iト／｀`''ｰ-=こ＿＿＞＜　　／〈〉／",
+     "、⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒　 ｰ─"
+    ],
+    "row_numbers": [
+     10,
+     13
+    ],
+    "x_px": [
+     205,
+     420
+    ],
+    "row_pen_x": [
+     209,
+     220,
+     210,
+     214
+    ]
+   },
+   "ports": {
+    "left": "ellipse_rim",
+    "right": "ellipse_rim",
+    "up": "paper",
+    "down": "contact_junction"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-28.txt",
+    "label": "operator circle My MLT profile 28 = entry-28.txt; altar: thick perspective ellipse; original church page aa[166]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile28 altar)"
+   },
+   "crop": "crops/sr-p28-inner-ellipse-lip.png",
+   "note": "Inner ellipse of the altar: ｛=- / ‐=〕─‐} far ends, `'マﾆ=- / ＿-=ﾆ㌣─,ｧ’ side bands, and a thick near lip ｰ-=こ＿＿＞＜ over ⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 10 `｛=-`@214-230 and `‐=〕─‐}〉`@364-416 far rim ends; row 11 `｀'マﾆ=-`@220-262 / `＿-=ﾆ㌣─,ｧ’`@325-410; row 12 `／｀`''ｰ-=こ＿＿＞＜`@223-347; row 13 `⌒≧s｡..,,｣｣＿＿｣L｡s≦⌒`@225-375 near lip; centre rows 10-12 paper except `｀´`@293",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p28-near-rim-thick",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 445,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "NE",
+    "tangent_out": "NW",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the plane inside the rim, where the pedestal and 《 》 ornaments stand on paper"
+   },
+   "native": {
+    "rows": [
+     " ﾞ寸三≫､、｀'＜⌒　　　 《 》　　　　 ＼＿＿|＿_,/《》　　　　　 ⌒＞'’ ｘi",
+     "ゝ ｀''弌三らぅｓ｡~\"''～､、　　　　《 》　　＼＿＿/　　　　　_こ-　ﾟ_,.｡s个三",
+     "≪>ｘ　`'＜三三うぅゎ｡.,_｀`''　ｰ-=こ＿___＼,.厶=-　''\"´_　-こ三三ﾆ＞",
+     " ≫'’　≫､、｀`'' ＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=-　ﾞ｡s≦",
+     "'’　≫'’　 ⌒≧s｡..,,_｀`'' ｰ=こ三三三三三三三三二=-　'\"´_,.｡s≦⌒"
+    ],
+    "row_numbers": [
+     16,
+     20
+    ],
+    "x_px": [
+     55,
+     500
+    ],
+    "row_pen_x": [
+     56,
+     56,
+     64,
+     58,
+     58
+    ]
+   },
+   "ports": {
+    "left": "ellipse_rim",
+    "right": "ellipse_rim",
+    "up": "tone_mid",
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-28.txt",
+    "label": "operator circle My MLT profile 28 = entry-28.txt; altar: thick perspective ellipse; original church page aa[166]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile28 altar)"
+   },
+   "crop": "crops/sr-p28-near-rim-thick.png",
+   "note": "Near side of the outer altar rim as a thick multi-strand band: 弌三らぅｓ｡ / ＜三三うぅゎ｡ / ＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=- / ｰ=こ三三…二=-, strands converging toward the ends.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 17 `弌三らぅｓ｡~\"''～､、` (87-202); row 18 `＜三三うぅゎ｡.,_` (117-213) and `-こ三三ﾆ＞`@423-486; row 19 `＜三三三二ﾆ=ｚｚｚｚ-----《＿》=≦三三三こ=-` (161-456) with the pedestal foot `《＿》`@331; row 20 `⌒≧s｡..,,_` (123-181) and `ｰ=こ三三三三三三三三二=-` (212-395); strands separated by thin paper",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p37-vase-rim-lobes",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "return_base",
+    "contact_junction",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 100,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the vase's body between ｉ´ and ｀ｉ; dots .:.:.: only in the mouth"
+   },
+   "native": {
+    "rows": [
+     "|　　 　 ＴＴ　　 |",
+     "|＿＿ｉ´.:.:.:｀ｉ＿|",
+     "|＿＿乂_,,乂＿|",
+     "|＿＿＿＿＿＿"
+    ],
+    "row_numbers": [
+     18,
+     21
+    ],
+    "x_px": [
+     200,
+     300
+    ],
+    "row_pen_x": [
+     202,
+     202,
+     202,
+     202
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-37.txt",
+    "label": "operator circle My MLT profile 37 = entry-37.txt; Japanese room vessels; original Japanese room page aa[55]",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile37 vessels)"
+   },
+   "crop": "crops/sr-p37-vase-rim-lobes.png",
+   "note": "Small vase on a shelf: ｉ´.:.:.:｀ｉ rim with dotted mouth over paired 乂_,,乂 lower lobes whose outer tails land on the shelf ＿＿; ＴＴ above is a separate object.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 18 `ＴＴ`@249/259; row 19 `ｉ´.:.:.:｀ｉ` (238-276) rim with `.:.:.:` (250-265); row 20 `乂_,,乂` (238-265) return, outer tails meeting shelf `＿＿`@206-222 and `＿`@281; shelf sides `|`@202 and `|`@296-297; row 21 `＿＿＿＿＿＿` shelf front",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p37-pot-rim-wall",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 115,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the pot's body interior right of ;;;,, and the paper under its return"
+   },
+   "native": {
+    "rows": [
+     "| ,|_|,､-只-.、＿＿＿",
+     "/＿{｀¨¨¨¨´}＿＿＿",
+     "|｀ｉ乂;;;,,　 ノ ￣^||",
+     "|¨|: : :｀¨¨´ 　 　 ||"
+    ],
+    "row_numbers": [
+     21,
+     24
+    ],
+    "x_px": [
+     10,
+     125
+    ],
+    "row_pen_x": [
+     11,
+     11,
+     16,
+     16
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "cast_shadow_edge"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-37.txt",
+    "label": "operator circle My MLT profile 37 = entry-37.txt; Japanese room vessels; original Japanese room page aa[55]",
+    "aahub_url": "https://aahub.org/mlt/0bd77d32b9d0101dd0eb6a3104ae4e15",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (Profile37 vessels)"
+   },
+   "crop": "crops/sr-p37-pot-rim-wall.png",
+   "note": "Lidded pot: ,､-只-.、 lid, {｀¨¨¨¨´} elliptical mouth, ｉ乂;;;,,　 ノ wall-and-return with bounded lower-left tone, then ｀¨¨´ under it; inner rim, wall and base are distinct.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 21 `,､-只-.、` (36-81) lid; row 22 `{｀¨¨¨¨´}` (35-87) mouth ellipse with dotted far rim; row 23 `｀ｉ乂;;;,,　 ノ` (20-79): `乂`@32 turns the wall, `;;;,,`@48-60 bounded tone, `ノ`@79 right return; row 24 `｀¨¨´`@51-75 under the body; `|`@16 / `||`@118-122 are furniture",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p41-upright-end",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "side",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 135,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the cylinder's wall between the | sides; the top face between the two rims"
+   },
+   "native": {
+    "rows": [
+     " _ ,, -- ― -- ,, _",
+     " |¨≧＝==＝≦¨|　　　",
+     ".|　　　　　　　　 .|　　　",
+     ".|　 　 　 　 　 　 |　　　",
+     " 〉 ＝　===　＝.┴＜　"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     195,
+     330
+    ],
+    "row_pen_x": [
+     197,
+     196,
+     198,
+     198,
+     196
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "whole_circle",
+    "up": null,
+    "down": "whole_circle"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-upright-end.png",
+   "note": "Upright cylinder seen from above: far rim _ ,, -- ― -- ,, _ over thick near rim |¨≧＝==＝≦¨|, straight | walls, and a broken base ring 〉 ＝ === ＝.┴ whose right end runs into the rear drum's ＜.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 1 `_ ,, -- ― -- ,, _` (202-297) far rim; row 2 `|¨≧＝==＝≦¨|` (201-301) near rim with `¨` corners; rows 3-4 `|`@201 and `|`@301 walls with `.` ticks; row 5 `〉`@201, `＝ === ＝.`@214-292 base ring, `┴`@295 under the right wall, `＜`@311 opening the drum behind",
+   "split_stroke": [
+    {
+     "glyph": "┴",
+     "row": 5,
+     "pen_x": 295,
+     "serves": [
+      "vertical stroke and left arm: the upright cylinder's right wall landing on its base ring (continues | rows 2-4 and ＝. on row 5)",
+      "right arm: the visible start of the rear drum's top rim, which re-emerges as ＜@311 and continues ｀ヽ@331 on row 6"
+     ],
+     "depth": "the upright cylinder is in front; the drum's rim is hidden behind it between ＞@247 (row 6) and ＜@311, and the drum interior below row 5 stays paper",
+     "reading": "in the crop the ┴ bar extends past the wall into ＜ with no matching closure on the cylinder side, so the right arm reads as the rear rim emerging from behind the wall rather than as a joint of the cylinder",
+     "binding": "agent_reading"
+    }
+   ],
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p41-tilted-end",
+   "role": "ellipse_rim",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 180,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the end face inside ――＜ … ＜ ＿ ≧ and the side wall between the 7 chain and the lower return"
+   },
+   "native": {
+    "rows": [
+     "　　　　 .　――＜　　　　　　 ",
+     "　　　7〈　 　 　 　 　 ｀＞､　　",
+     "　　 7　`＜　　　　　 　 　 〉　",
+     "　　7.　　　 ｀　＜　＿ ≧ 7　 ",
+     "　 7　　　　 　 　 　 　 　 7.　 ",
+     "　7　　　　　　　 　 　 　 ﾉ　´　",
+     "..7　　　.､ _ , _,,　ｰ-、_ _-'　　　",
+     "7　　,´¨￣　　　ゞ　　　　　 　"
+    ],
+    "row_numbers": [
+     3,
+     10
+    ],
+    "x_px": [
+     0,
+     180
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": null,
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-tilted-end.png",
+   "note": "Cylinder lying tilted: its end ellipse ――＜ / 〈 ｀＞､ / `＜ 〉 / ｀ ＜ ＿ ≧ 7 faces up-left, a long dashed 7 chain is the side wall, and a broken ､ _ , _,, ｰ-、_ _-' line returns the far end.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 3 `――＜` (63-111); row 4 `〈`@41 and `｀＞､`@129-153; row 5 `` `＜``@46-53 and `〉`@161; row 6 `｀ ＜ ＿ ≧ 7` (71-159) near lip; side wall `7`@33,27,22,16,11,6,0 rows 4-10; row 9 `.､ _ , _,, ｰ-、_ _-'` (47-154) lower return; row 8 `ﾉ`@149 joins the end to that return",
+   "inspected_by": "skill-rounded agent"
+  },
+  {
+   "id": "sr-p41-frontal-round-end",
+   "role": "whole_circle",
+   "also_roles": [
+    "ellipse_rim",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 12,
+    "px_wide": 240,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the large drum face, empty except a few .. ticks; the gap where the upright cylinder hides its top rim"
+   },
+   "native": {
+    "rows": [
+     "　 .|　 　 　 　 　 　 |　　　　 　 　 　 　 ∧",
+     " 　 〉 ＝　===　＝.┴＜　　　　　　　 /　",
+     "　 |　　　　＞ ´　　　　　｀ヽ　　　　 /　　",
+     "ヘ_!,､　 /　　　　　　　　　　ﾑ　 　 ム　　",
+     "- ヾ≧!　　　　　　 　　_ ＿ ﾑ_.∨　 ゝ､",
+     "　　　 ﾔ　　　　- ¨　　　　　 ﾑ/　　　　",
+     " 　 　 　 ﾔ ／　　　　　　　　　 ∧t____ノ",
+     "　　　　∧　 　 　 　 　 　 　 　 ∧　　　",
+     " 　 　 　 ∧　　　　　　 　_ 　 ― ∧　　",
+     "　　　　 ＿ヾ,,_　　_ 　¨　　　　　　f　　 ",
+     "　　　　　　　　｀ヽ、　 　 　 　 　 ｿ",
+     "　　　　　　　　　　　ー　＿ -　\""
+    ],
+    "row_numbers": [
+     4,
+     15
+    ],
+    "x_px": [
+     180,
+     420
+    ],
+    "row_pen_x": [
+     182,
+     180,
+     183,
+     180,
+     187,
+     190,
+     180,
+     188,
+     185,
+     187,
+     187,
+     187
+    ]
+   },
+   "ports": {
+    "left": "whole_circle",
+    "right": "ellipse_rim",
+    "up": "ellipse_rim",
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-41.txt",
+    "label": "operator circle My MLT profile 41 = entry-41.txt; cylinder debris, elliptical ends in different orientations; original ruins/alleys page aa[165]",
+    "aahub_url": "https://aahub.org/mlt/8510df5d530fcc44cb6b6fac937b4c27",
+    "cited_by": "structural-line-selection.md 'Rounded constructions beyond one circle spelling', table row 'Broad perspective ellipse / vessel rim' (profile41 cylinder ends change orientation)"
+   },
+   "crop": "crops/sr-p41-frontal-round-end.png",
+   "note": "Large drum end seen nearly face-on behind the upright cylinder: rim ＞ ´ … ｀ヽ at top, a doubled right side ム/ム/ム∨/∧/∧/∧ f ｿ, ﾔ ﾔ ∧ ∧ left side, and a broken ー ＿ - \" bottom return.",
+   "status": {
+    "state": "retained",
+    "reason": "operator circle My MLT member, cited by the skill's rounded-constructions table; no operator region label"
+   },
+   "inspection": "row 6 `＞ ´`@247-268 and `｀ヽ`@331-339; right side `ﾑ`@348 and `ム`@391 row 7, `ﾑ_.∨`@356-375 row 8, `ﾑ/`@364-375 row 9, `∧t____ノ`@369-411 row 10, `∧`@376/383 rows 11-12, `f`@392 row 13, `ｿ`@386 row 14; left side `ﾔ`@228/233 rows 9-10, `∧`@232/238 rows 11-12; bottom `＿ヾ,,_`@236 row 13, `｀ヽ、`@275 row 14, `ー ＿ - \"`@308-374 row 15",
+   "inspected_by": "skill-rounded agent"
+  }
+ ]
+}
