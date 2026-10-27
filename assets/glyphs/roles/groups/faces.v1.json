@@ -1,0 +1,2645 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "faces",
+ "inspection_log": [
+  "lib:ears#10 r1 `耳舐め` (pens 0-32): a text label, not an ear construction; not used",
+  "lib:ears#2 r1-10 full width: whole compact ear; used fc-ear-whole-10r",
+  "lib:ears#3 r1-14 and lib:ears#4 r1-14 full width: right- and left-opening ears; used as fc-ear-right-14r / fc-ear-left-14r; they are opposite-handed re-authorings, not glyph-exact mirrors (259 vs 257 px)",
+  "lib:ears#12, lib:ears#13 (22 rows, both 309 px): TXT rows only, no crop viewed; ear + tongue (耳舐め) scene, not a mirrored ear pair despite equal widths; not used",
+  "lib:ears#8 r1-7 full and r1-3 x[95,280): flat wide ear and its double helix cap; used fc-ear-flat-7r, fc-ear-helix-cap-3r",
+  "lib:faces-small#2, #15 (【目・瞳：小型】/【1行】) r1: closed-eye and lid-band pairs; used",
+  "lib:faces-small#9 r1 `斗==＝＝ … ＝＝ =l=`: TXT+show run but PNG not viewed; not used",
+  "lib:faces-small#17 r1-2 x[140,255), #31 r1-2 (【2行】): mirrored and 3/4-view 2-row eye pairs; used",
+  "lib:faces-small#68 r1-3 x[130,264), #104 r1-3 (full and x[11,56)) (【3行】): mirrored 3-row pairs; used",
+  "lib:faces-small#219 r1-4 (【4行】): asymmetric 4-row pair; used",
+  "lib:faces-small#257 r1-5 (【5行】) and #265 r1-6 (【6行】): viewed; head-tilt layouts where each eye is only 2-3 rows staggered vertically, so the 5/6-row count is layout, not eye size; not used",
+  "lib:faces-small#296, #298, #300 (【その他】) TXT only: tiny eye variants, no nostrils; not used",
+  "lib:faces-small#295, #297, #299, #302, #304, #305 (【その他】) TXT only, searched for nostrils/noses: eye variants only; not used",
+  "lib:faces-small#432, #436 (【顔：小型】) TXT only: #432 repeats #433's eyes with a hatched blush row; #436 is 7 rows with hair (outside the 1-6 row small_face band); not used",
+  "lib:faces-small#433 r1-3 and r3 x[40,100), #434 r1-6: small faces; used",
+  "lib:faces-small#337, #344, #364, #389, #395, #425 (【口：小型】) viewed: used; #425 also sliced r1-3 x[30,180)",
+  "lib:faces-small#404 r1-4 viewed: wide grin of dashes `ｰ─ｰ　ｰ─ｰ` with no tooth separation; ambiguous between teeth and lip, not used",
+  "lib:faces-small#319, #370, #380, #409 TXT only: further small mouths, not needed after the viewed set; not used",
+  "lib:mouths-large#2 r1-2, #10 r1-6 and r2-3 x[20,147), #13 r1-7 / r1-3 / r4-7 x[6,110), #16 r1-5 / r1-2 x[160,330) / r3-4 x[120,330), #4 r1-5: viewed and used",
+  "lib:mouths-large#3 r1-2 viewed: closed mouth `､ _＿ ＿_ ,` / `` `ﾟ 二 ´`` near-duplicate of #2; not used",
+  "lib:mouths-large#157, #160 TXT only: mouths with tongues/drool, no clear tooth row; not used",
+  "lib:mouths-large#88, #89 TXT only: 4-row 395 px variants are dotted cheek/chin fragments, not mouths in isolation; not used",
+  "lib:mouths-large#239, #240, #241, #249 (【顔：大型】) TXT only, searched for nostrils: #239 nose bridge `ﾊ ヽ` only, #241 a lid/mouth parts sheet, #249 a tone-field face; no paired nostrils; not used",
+  "lib:eyes-large#3 r1-4 full and r1-3 x[14,152): mirrored-lid pair; used",
+  "lib:eyes-large#136 r1-8 full, r1-2 x[84,230), r3-7 x[70,152), r4-6 x[90,140), r7-8 x[0,185): large almond eye and its sub-roles; used",
+  "lib:eyes-large#72 r1-6, #52 r1-4 and r1-3 x[40,112), #56 r1-5: viewed and used",
+  "lib:eyes-large#24, #25 TXT only: 6-row 583 px pairs (closed `(｀Y´)` vs open variants) with very dense kanji lids; not used",
+  "Locator search (not inspection): one regex pass over the four libraries for paired small-ring glyphs (ﾟﾟ, ゜゜, °°, oo, ｏｏ, 〇〇, ∩∩) returned only eyes-large#131 rows 5/15 (unopened); used only to look for nostrils"
+ ],
+ "gaps": [
+  "paired_aperture (nostrils): none found in faces-small, eyes-large, mouths-large or ears; the catalogs draw noses as a single tick (`'`) or a bridge (`ﾊ ヽ`, `丶､__.ノ`); no entry written",
+  "small_face at 1 and 2 rows: the 【顔：小型】 section starts at 3 rows; 1-2 row faces would have to be composed from 1-row eyes (faces-small#2/#15) plus 1-row mouths (#337/#344); not authored here",
+  "small_face 4-5 rows: only 3-row (#433) and 6-row (#434) faces were written up",
+  "ear at 1-6 rows: smallest real ear construction in the catalog is 7 rows (ears#8); ears#10 (1 row) is a text label",
+  "lower_tooth_row below 2 rows / in a small (faces-small) mouth: not found among the viewed small mouths; both lower-row entries come from mouths-large",
+  "highlight paper as a separate sub-role: the viewed large eyes carry highlights as `rj`/`r` glyph pairs (faces-small#104) or not at all (eyes-large#136 uses a slit pupil); no clean paper-only highlight region was isolated",
+  "brow fold_crease as a standalone slice: brows appear only inside whole-eye entries (eyes-large#72 r1-2)"
+ ],
+ "entries": [
+  {
+   "id": "fc-ear-whole-10r",
+   "role": "ear",
+   "also_roles": [
+    "rim_cap",
+    "fold_crease",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 167,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the outer helix flank (right `‘:,`/`|`/`/` run) and the inner concha; paper kept inside the bowl under `ノ⌒ヽ`"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　---ミ",
+     "　　　　　/　 --ミ　｀`",
+     "　　　　,/ 〈::::::::}:::‘:, 　 ‘:,",
+     "　　　　 　 ‘,::ノ⌒ヽ:,. 　 |",
+     "　　　　　　 ‘,:::｀`:,.,:‘:, 　|",
+     "　　 　 　 r:､ ヽ, 　 }::/　 ′",
+     "　　　　　 }:::}____）ノ:/　,/",
+     "　　　　 r'^´　　,￣　／",
+     "　　 　 ∧　　　　 ／",
+     "　　　　　 ≧=‐＜"
+    ],
+    "row_numbers": [
+     1,
+     10
+    ],
+    "x_px": [
+     0,
+     167
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:ears#2",
+    "label": "耳 (ears) aa[2] — 【耳】",
+    "aahub_url": "https://aahub.org/mlt/9af1cf9526781e5a9a08a3ad5a6fcdad",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-ear-whole-10r.png",
+   "note": "Compact whole ear (10 rows): open helix stroke on the right, inner antihelix/concha built from `ノ⌒ヽ`, `}____）ノ` and dotted `:` tone; lobe closes with `≧=‐＜`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "rows 1-2 `---ミ` twice stack as the helix top cap; right flank `‘:,`@r3 -> `|`@r4-5 -> `′`/`,/`/`／` r6-9 descends open; inner concha `ノ⌒ヽ`@r4 over `}:::}____）ノ`@r7 encloses paper; `〈::::::::}` r3 is a dotted fold band; lobe return `≧=‐＜` r10 meets `／` r9",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-ear-right-14r",
+   "role": "ear",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "return_base",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 14,
+    "px_wide": 244,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "helix channel between outer rim (dotted `‘:,` run at right) and the antihelix fold; paper below `＼＿＿／` lobe edge"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　＿＿＿＿",
+     "　　　　 .／　　＿　　　　｀`丶、",
+     "　　　　/:.　／:::::::::::＞ミ　 　 　 :、",
+     "　　 　 |:　/::::::::::: /＿: : :｀`ヽ,　 ‘:,",
+     "　　 　 |:　}:::::::::::::{　　　｀`ヽ: ‘:,　 ‘:,",
+     "　　　ﾞ人　＼:::: ノ __,,..　-ミ ＼‘:, 　‘,",
+     "　　　　　　　 ｀'＜::::::::::::: : : ｀ヽ:.‘,..　‘,",
+     "　　　　　　　　　　 ￣￣￣｀`ヽ}: :}　　|",
+     "　　　　　　　　　　　__ 　 　 ,／: :/　　:|",
+     "　　　　　　　　　　(::::::ハ　,/ ゝ'^　　　|",
+     "　　　　　　　　　＼ ｀ヽ,_∨　　　　　　,",
+     "　　　 　 　 　 　 　 ＼　　　　　　　　 ′",
+     "　　　　　　　　　 　 　 ＼　　　　　　/",
+     "　　　　　　　　　　　　　　＼＿＿／"
+    ],
+    "row_numbers": [
+     1,
+     14
+    ],
+    "x_px": [
+     0,
+     244
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:ears#3",
+    "label": "耳 (ears) aa[3] — 【耳】",
+    "aahub_url": "https://aahub.org/mlt/9af1cf9526781e5a9a08a3ad5a6fcdad",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-ear-right-14r.png",
+   "note": "Large whole ear with helix opening to the right (outer rim on the right side); mirror counterpart of ears#4 (not a glyph-exact mirror).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "row 1 `＿＿＿＿` + row 2 `.／`…`｀`丶、` cap the helix; outer rim runs as `‘:,` dots r4-7 then `|`@r8-10 and `′` r12, returning via `＼` r11-13 into `＼＿＿／` r14 lobe base; inner antihelix `／:::::::::::＞ミ`/`{`/`ノ __,,..` r3-6 is a dotted fold band; tragus `(::::::ハ`@r10",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-ear-left-14r",
+   "role": "ear",
+   "also_roles": [
+    "rim_cap",
+    "flank",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 14,
+    "px_wide": 242,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "helix channel between the left `|` flanks (two parallel bars r6-8) and the inner folds; paper inside the concha"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　 　 　 　 　 　 　 ＿",
+     "　　　　　　　 　 　 　 　 ／　 ＿｀`丶",
+     "　 　 　 　 　 　 　 　 ／　'^´::::::::::ヽ ‘:,",
+     "　　　　　　 　 　 　 /　/__/ ｛:::::::::::{　 ‘,",
+     "　　　　　　　　　　/　.:′　　 ￣￣{",
+     "　　　　　　　　 　 |　 |〉　　 ＿／::/",
+     "　　　　　　　　 　 |　 |　　/＼::_／",
+     "　　　　　　　　 　 |　 |　　}￣ ／::::ヽ",
+     "　　 　 　 　 　 　 ‘:, ‘:,::. 乂/／￣｛＿",
+     "　　　 　 　 　 　 　 ‘:, ‘:,::.　丶　　　　 }",
+     "　　　　 　 　 　 　 　 ‘:, ‘:,::. 　 ≧=‐'^",
+     "　　　　　　　　　　　　　＼ ＾ー‐",
+     "　　　　　　　 　 　 　 　 　 ＼",
+     "　　　　　　　　　　　　　　　　 ≧=‐'^´"
+    ],
+    "row_numbers": [
+     1,
+     14
+    ],
+    "x_px": [
+     0,
+     242
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:ears#4",
+    "label": "耳 (ears) aa[4] — 【耳】",
+    "aahub_url": "https://aahub.org/mlt/9af1cf9526781e5a9a08a3ad5a6fcdad",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-ear-left-14r.png",
+   "note": "Left-opening counterpart of ears#3: outer helix on the left as two parallel `|` flanks with a dotted `‘:, ‘:,::.` return; not a glyph mirror, the artist re-authored the fold glyphs.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "row 1 `＿` + row 2 `／ ＿｀`丶` cap; helix flanks `/` r3-5 -> `|　 |` double bar r6-8 -> `‘:, ‘:,::.` dotted return r9-11 -> `＼` r12-13 -> `≧=‐'^´` r14 lobe; inner folds `{:::::::::::{`/`￣￣{`/`＿／::/`/`/＼::_／` r4-7 hold paper. Mirror check vs ears#3: `／`<->`＼` swaps hold at the cap, but widths differ (259 vs 257 px) and inner glyphs are not swapped one-for-one",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-ear-flat-7r",
+   "role": "ear",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 301,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the outer arch and the nested inner arch, and inside the two `{::::::＼`/`|/⌒ヽ` hollows"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　　--‐‐‐--ミ",
+     "　　　　　　　　　　 ／　　　　　　　　 ｀`丶,",
+     "　　　　 　 　 　 ／　　'^´￣￣￣￣｀`丶　＼",
+     "　　　　　　　　/　 / 　 　 　 ∠￣￣＼　ヽ　 ＼",
+     "　　　　　　 　 l 　 |/⌒ヽ.　/::/　/: :{ 　 :,. 　 　 ‘,",
+     "　　　 　 　 　 　 ,人:::::::: ∨::/　 {:::::::＼ ,}　　　　:}",
+     "　　　　　　　 　＼　 ≧=‐'^　　　￣｀ｰ '^　 　 ／"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     301
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:ears#8",
+    "label": "耳 (ears) aa[8] — 【耳】",
+    "aahub_url": "https://aahub.org/mlt/9af1cf9526781e5a9a08a3ad5a6fcdad",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-ear-flat-7r.png",
+   "note": "Wide, short ear (7 rows x 301 px): nested arches over two hollows; shows how an ear reduces to arch + inner arch + two dotted pockets.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "outer arch `--‐‐‐--ミ`@154-210 r1 with `／`@115/@97 and `/`@88 shoulder r2-4 left and `｀`丶,`@224 / `＼`@259 / `＼`@276 / `‘,`@288 r2-5 right; inner arch `'^´￣￣￣￣｀`丶`@135-232 r3 and `∠￣￣＼`@173-221 r4; pockets `|/⌒ヽ.`@111-151 + `人::::::::`@105-142 r5-6 and `/: :{`@198-217 + `{:::::::＼`@196-221 r5-6; base `≧=‐'^`@125-160 / `￣｀ｰ '^`@200-242 r7",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-ear-helix-cap-3r",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 185,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "band between the outer `--‐‐‐--ミ` arch and the inner `'^´￣￣￣￣｀`丶` arch (helix channel)"
+   },
+   "native": {
+    "rows": [
+     "　　　　　--‐‐‐--ミ",
+     "　 ／　　　　　　　　 ｀`丶,",
+     "／　　'^´￣￣￣￣｀`丶　＼"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     95,
+     280
+    ],
+    "row_pen_x": [
+     99,
+     99,
+     97
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:ears#8",
+    "label": "耳 (ears) aa[8] — 【耳】",
+    "aahub_url": "https://aahub.org/mlt/9af1cf9526781e5a9a08a3ad5a6fcdad",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-ear-helix-cap-3r.png",
+   "note": "Double helix cap: a dashed outer arch over a solid inner arch, with stepping shoulders `／` (left) and `｀`丶,`/`＼` (right); the dashed run makes the outer rim lighter than the inner fold.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `--‐‐‐--ミ`@154-210 caps; r2 `／`@115 left shoulder and `｀`丶,`@224-255 right step; r3 `／`@97 continues the left flank, inner arch `'^´￣￣￣￣｀`丶`@135-232 parallels the cap one row lower, `＼`@259 continues right; paper kept between the two arches",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-closed-pair-1r",
+   "role": "fold_crease",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 78,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "large gap (two full + half space) between the eyes; nothing below the lid arcs"
+   },
+   "native": {
+    "rows": [
+     "Y⌒　　 ⌒Y"
+    ],
+    "row_numbers": [
+     1,
+     1
+    ],
+    "x_px": [
+     0,
+     78
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#2",
+    "label": "顔・表情01（小型） (faces-small) aa[2] — 【目・瞳：小型】/【1行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-closed-pair-1r.png",
+   "note": "Closed eyes in one row: `⌒` lid arc plus a `Y` lash cluster at the outer corner; exact mirror pair `Y⌒` / `⌒Y`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `Y⌒`@0-9 and `⌒Y`@52-68 separated by `　　 ` (27 px); lid `⌒` reads as a closed-eye crease, `Y` as outer lashes; mirror is a pure order swap, widths identical (Y 9 + ⌒ 16 each side)",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-lid-pair-1r",
+   "role": "rim_cap",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 168,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the row below (eye white/iris not drawn at this size); gap of three full+half spaces between eyes"
+   },
+   "native": {
+    "rows": [
+     "ィ＝＝ミ,　 　 　 ,ィ＝＝ミ､"
+    ],
+    "row_numbers": [
+     1,
+     1
+    ],
+    "x_px": [
+     0,
+     168
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#15",
+    "label": "顔・表情01（小型） (faces-small) aa[15] — 【目・瞳：小型】/【1行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-lid-pair-1r.png",
+   "note": "One-row open-eye lid band `ィ＝＝ミ,`: inner corner `ィ`, doubled `＝` lid, `ミ` outer lashes. Not mirrored: both eyes use the same left-to-right spelling (`,ィ＝＝ミ､` on the right only adds edge ticks).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 left `ィ＝＝ミ,`@0-53, right `,ィ＝＝ミ､`@104-160; `＝＝` carries the thick upper lid, `ミ` ends it with lash flicks, `,`/`､` tick the outer corner; no mirror swap applied",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-pair-2r",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 115,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between `Vリ` iris and the lid row; gap between eyes ~33 px"
+   },
+   "native": {
+    "rows": [
+     "灯ぅミ　　　 .ｨぅ灯",
+     "　 Vリ　 　 　 Vリ"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     140,
+     255
+    ],
+    "row_pen_x": [
+     143,
+     140
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#17",
+    "label": "顔・表情01（小型） (faces-small) aa[17] — 【目・瞳：小型】/【2行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-pair-2r.png",
+   "note": "Two-row eye pair: lid row `灯ぅミ` / `.ｨぅ灯` mirrors the lash side (`ミ` outside-right vs `.ｨ` inside-left) while the lower `Vリ` iris is copied unmirrored.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `灯ぅミ`@143-169 and `.ｨぅ灯`@218-238: `灯` stays on each eye's outer side, `ミ`<->`.ｨ` swap (11 vs 3+7 px); r2 `Vリ`@156 and @226 is the same iris spelling under both lids, `V` = pupil wedge, `リ` = right iris edge",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-pair-2r-asym",
+   "role": "closed_ring",
+   "also_roles": [
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 105,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "gap of ~33 px between eyes; paper inside `ﾋ:ﾘ`"
+   },
+   "native": {
+    "rows": [
+     "　rう卞､　　 ｨ=、",
+     "　弋少　　　ﾋ:ﾘ"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     0,
+     105
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#31",
+    "label": "顔・表情01（小型） (faces-small) aa[31] — 【目・瞳：小型】/【2行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-pair-2r-asym.png",
+   "note": "Asymmetric 2-row pair for a 3/4 view: near eye `rう卞､/弋少` is wide and dark (kanji ink as iris mass), far eye `ｨ=、/ﾋ:ﾘ` is narrow with a paper interior.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `rう卞､`@11-44 lid+iris top, r2 `弋少`@11-27 iris bottom (dense kanji ink = dark iris); far eye r1 `ｨ=、`@78-93, r2 `ﾋ:ﾘ`@76-87 with `:` as pupil inside an open ring; widths 40 vs 28 px",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-ring-3r",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 45,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "highlight paper between `r` and `j` inside `{::rj:}`; paper below `｀¨´`"
+   },
+   "native": {
+    "rows": [
+     "　x＝､　",
+     " 〈{::rj:} ",
+     " ｀¨´　"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     11,
+     56
+    ],
+    "row_pen_x": [
+     11,
+     11,
+     19
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#104",
+    "label": "顔・表情01（小型） (faces-small) aa[104] — 【目・瞳：小型】/【3行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-ring-3r.png",
+   "note": "Three-row small eye: `x＝､` lid cap, `〈{::rj:}` iris ring with `::` tone and `rj` highlight/pupil, `｀¨´` lower return. Right eye is the mirror with `〈` moved outside as `〉`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `x＝､`@22-45 cap; r2 `〈`@16 outer corner, ring `{`@24 … `}`@47 with `::`@28-31 tone and `rj`@34-40; r3 `｀¨´`@24-40 closes the ring bottom (¨ = two dots as the lower lid return). Mirror (right eye @85-115): `〈{::rj:}` -> `{::rj:}〉`, ring glyphs unchanged, only the corner glyph swaps side",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-pair-3r-mirror",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 134,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside each `┌‐-ミ`/`Vソ`/`｀¨´` box; between the eyes only a `'` nose tick"
+   },
+   "native": {
+    "rows": [
+     "┌‐-ミ　　　 斗-‐┐",
+     "八 Vソ　　　　Vソ ﾉ",
+     "　 ｀¨´　　 '　　｀¨´"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     130,
+     264
+    ],
+    "row_pen_x": [
+     134,
+     132,
+     132
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#68",
+    "label": "顔・表情01（小型） (faces-small) aa[68] — 【目・瞳：小型】/【3行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-pair-3r-mirror.png",
+   "note": "Three-row eye pair with an exact mirror swap table: `┌‐-ミ`<->`斗-‐┐`, `八 `<->` ﾉ`; `Vソ` irises and `｀¨´` returns are copied. A single `'` between them serves as the nose.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `┌‐-ミ`@134-166 / `斗-‐┐`@215-247 (┌<->┐ corners, ミ<->斗 lashes; 43 vs 48 px, rebalanced by the r1 gap `　　　 `); r2 `八 Vソ`@132-163 / `Vソ ﾉ`@220-248 outer lash 八<->ﾉ; r3 `｀¨´`@148 and @224 returns, nose `'`@199",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-pair-4r-asym",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 134,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside `《! i心` near eye; between the eyes ~4 full spaces"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　__",
+     "　 　 ,zミ　 　 　 /示ﾐ",
+     "　　 《! i心　　　　ﾄィf}",
+     "　　　` ヒﾘ　　　　`¨´"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     134
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#219",
+    "label": "顔・表情01（小型） (faces-small) aa[219] — 【目・瞳：小型】/【4行】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-pair-4r-asym.png",
+   "note": "Four-row eye pair in 3/4 view: near eye `,zミ/《! i心/` ヒﾘ` with `《` lashes; far eye `__`/`/示ﾐ`/`ﾄィf}`/``¨´` with a separate `__` lid crease above.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "near eye r2 `,zミ`@32-42 cap, r3 `《`@27 lashes + `! i心`@35-47 iris, r4 `` ` ヒﾘ``@33-57 return; far eye r1 `__`@110-115 is a lid crease floating one row above, r2 `/示ﾐ`@101-125, r3 `ﾄィf}`@107-129 ring, r4 `` `¨´``@109-124 return; asymmetric widths, no mirror swap",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-face-3r",
+   "role": "small_face",
+   "also_roles": [
+    "rim_cap",
+    "small_mouth"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 158,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "wide paper between eyes and around the `'` nose; blush ovals stand free"
+   },
+   "native": {
+    "rows": [
+     "代弋Z歹　　　　 弋Z歹ｱ",
+     "⊂⊃　　 　 '　　 　 ⊂⊃",
+     "　　　　､＿,、__,"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     158
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#433",
+    "label": "顔・表情01（小型） (faces-small) aa[433] — 【顔：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-face-3r.png",
+   "note": "Three-row face: thick lid bands `代弋Z歹`/`弋Z歹ｱ`, blush `⊂⊃` under each eye, one `'` nose tick and a notched mouth `､＿,、__,`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded); `⊂⊃` under the eyes is blush, not nostrils"
+   },
+   "inspection": "r1 lids `代弋Z歹`@0-41 and `弋Z歹ｱ`@106-147 (代 vs ｱ outer lash = mirror end-caps); r2 `⊂⊃`@0-16 and @121-137 blush pairs, nose `'`@75; r3 mouth `､＿,、__,`@44-91 below the nose, centred between the eyes",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-face-6r",
+   "role": "small_face",
+   "also_roles": [
+    "periodic_band",
+    "small_mouth",
+    "closed_ring"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 145,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "open mouth interior between `r`/`∨` and `⌒ヽ`/`_ﾉ`; the eyes' iris paper"
+   },
+   "native": {
+    "rows": [
+     "x‐ミi　　　　厶イ⌒ヾ",
+     "{{　 心　　〃 r'ﾊ　　 }}",
+     "　　Vﾘ　　　　 Vｿ _,",
+     "／／／／／／／／／",
+     "　　　 r　　　⌒ヽ",
+     "　　 　 ∨　　　 _ﾉ"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     0,
+     145
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#434",
+    "label": "顔・表情01（小型） (faces-small) aa[434] — 【顔：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-face-6r.png",
+   "note": "Six-row face: two 3-row eyes, a full-width `／／／…` blush band, and an open mouth drawn only by its two corners (`r ∨` left, `⌒ヽ _ﾉ` right) leaving the interior as paper.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1-3 left eye `x‐ミi`@0-26/`{{ 心`@0-24/`Vﾘ`@22-32, right eye `厶イ⌒ヾ`/`〃 r'ﾊ … }}`/`Vｿ _,`; r4 `／／／／／／／／／` periodic blush band; r5 `r`@38 and `⌒ヽ`@77-93, r6 `∨`@43 and `_ﾉ`@97-102 bracket an unfilled mouth",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-tiny-1r",
+   "role": "small_mouth",
+   "size_band": {
+    "rows": 1,
+    "px_wide": 17,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "concave",
+    "inside": "below",
+    "paper": "none: two ticks only"
+   },
+   "native": {
+    "rows": [
+     "´｀"
+    ],
+    "row_numbers": [
+     1,
+     1
+    ],
+    "x_px": [
+     0,
+     17
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#337",
+    "label": "顔・表情01（小型） (faces-small) aa[337] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-tiny-1r.png",
+   "note": "Smallest mouth: `´｀` (17 px), two ticks rising to a centre peak — a pouting/frown mark.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `´`@0 + `｀`@8: two short opposite slants meeting high in the middle; no interior",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-wide-1r",
+   "role": "small_mouth",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 76,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "E",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "inside the ⊂ ⊃ end caps around the `ー....´` line"
+   },
+   "native": {
+    "rows": [
+     "⊂=ー....´⊃"
+    ],
+    "row_numbers": [
+     1,
+     1
+    ],
+    "x_px": [
+     0,
+     76
+    ],
+    "row_pen_x": [
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#344",
+    "label": "顔・表情01（小型） (faces-small) aa[344] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-wide-1r.png",
+   "note": "One-row wide mouth (76 px) closed by end-caps `⊂ … ⊃`; the lip line `=ー` breaks into `....´` (drool/tremble) before the right cap.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `⊂`@0 cap, `=ー`@16-24 lip line, `....`@39-48 dotted break, `´`@51, `⊃`@59 cap",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-notch-1r",
+   "role": "small_mouth",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 1,
+    "px_wide": 60,
+    "band": "xs"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "gap `　` between the two halves (none drawn); below the mouth"
+   },
+   "native": {
+    "rows": [
+     "､＿,、__,"
+    ],
+    "row_numbers": [
+     3,
+     3
+    ],
+    "x_px": [
+     40,
+     100
+    ],
+    "row_pen_x": [
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#433",
+    "label": "顔・表情01（小型） (faces-small) aa[433] — 【顔：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-notch-1r.png",
+   "note": "One-row cat-like mouth `､＿,、__,`: two shallow bowls meeting at a raised centre `,、`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r3 `､`@44 + `＿`@51 + `,`@67 left bowl, `、`@70 + `__`@81-86 + `,`@91 right bowl; the `,、` pair is the centre notch",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-teeth-2r",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 64,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between `r＝ｰ` and `￣`ー'`: the open interior below the teeth band"
+   },
+   "native": {
+    "rows": [
+     "　 r＝ｰ ､",
+     "　　￣`ー'"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     0,
+     64
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#364",
+    "label": "顔・表情01（小型） (faces-small) aa[364] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-teeth-2r.png",
+   "note": "Two-row open mouth: `r` corner, `＝` double bar as the upper teeth band, lower lip `￣`ー'` curving up to the right corner `､`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `r`@16 corner + `＝ｰ`@22-38 upper lip/teeth (two stacked bars) + `､`@53; r2 `￣`ー'`@22-60 lower contour stepping up under `､`; paper inside",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-open-tone-3r",
+   "role": "small_mouth",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 88,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "lower half inside `{＿_　ノ` stays paper; dotted band only in the upper interior"
+   },
+   "native": {
+    "rows": [
+     "　　 ノ⌒＞ ､",
+     "　 〈ｰr:::::::::::::｝",
+     "　　ヽ{＿_　ノ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     88
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#389",
+    "label": "顔・表情01（小型） (faces-small) aa[389] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-open-tone-3r.png",
+   "note": "Three-row open mouth: `ノ⌒＞ ､` lip cap, `〈ｰr:::::::::::::｝` interior with a dotted band (teeth/tongue tone) bounded by `r` and `｝`, `ヽ{＿_ ノ` return base.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `ノ⌒＞`@27-54 cap, `､`@75; r2 `〈`@16 left corner, `ｰr`@24-34 then `:`x13 @40-76 band to `｝`@79; r3 `ヽ{＿_`@22-54 + `ノ`@70 base; paper kept between the band and the base",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-open-paper-4r",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "small_mouth",
+    "return_base",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 84,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the whole mouth interior (rows 1-4, ~60 px) is paper; the contour is broken at upper-left"
+   },
+   "native": {
+    "rows": [
+     "　ヽ　　　　　_",
+     "　　　　　´ 　|",
+     "　 く　　　　 /",
+     "　　丶 __ ／"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     84
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#395",
+    "label": "顔・表情01（小型） (faces-small) aa[395] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-open-paper-4r.png",
+   "note": "Four-row wide-open mouth drawn almost entirely as paper: sparse contour `ヽ`, `く`, `丶 __ ／`, right side `_ | /` — the open interior is the subject.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `ヽ`@11 top-left and `_`@78 top-right; r2 `´`@55 and `|`@79 right flank; r3 `く`@16 left corner and `/`@74; r4 `丶 __ ／`@22-58 base return; no glyph inside",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-fanged-7r",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "flank",
+    "return_base",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 177,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the 4-row interior below the fangs is paper"
+   },
+   "native": {
+    "rows": [
+     "　　 　 ,＿＿＿＿＿＿＿",
+     "　　 Yヽ　/＼／ヽ /ヽ /､/i",
+     "　 　 |　　　　　　　　　 　 　 !",
+     "　 　 l　　　　　　　　　　　　 |",
+     "　　　＼　　　　　　 　 　 　 ﾉ",
+     "　　　 　 ｀　 ,　　 　 　 ,　 '",
+     "　　　 　 　 　 ｀　‐- ' ´"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     177
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#425",
+    "label": "顔・表情01（小型） (faces-small) aa[425] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-fanged-7r.png",
+   "note": "Seven-row screaming mouth: straight lip `,＿＿＿＿＿＿＿`, fang row `Yヽ /＼／ヽ /ヽ /､/i`, straight flanks, and a dotted lower contour; interior left empty.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `,＿…＿`@43-142 lip; r2 fangs `Yヽ`@27-36, `/＼／`@59-83, `ヽ /ヽ /､/i`@99-164 hang from it; flanks `|`@32 r3, `l`@32 r4, `＼`@33 r5 left and `!`/`|`@172, `ﾉ`@168 right; r6-7 `｀ , , '`@54-159 + `｀ ‐- ' ´`@86-134 dotted bowl return; paper r3-6",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-fangs-3r",
+   "role": "upper_tooth_row",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 150,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "below the fang tips (the mouth interior)"
+   },
+   "native": {
+    "rows": [
+     " ,＿＿＿＿＿＿＿",
+     "ヽ　/＼／ヽ /ヽ /､/i",
+     "|　　　　　　　　　 　 　 !"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     30,
+     180
+    ],
+    "row_pen_x": [
+     38,
+     36,
+     32
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:faces-small#425",
+    "label": "顔・表情01（小型） (faces-small) aa[425] — 【口：小型】",
+    "aahub_url": "https://aahub.org/mlt/aa4a08aa52d30eb30ac42f64f068c157",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-fangs-3r.png",
+   "note": "Upper tooth row as pointed fangs hanging from a straight `＿` lip: `/＼／` V-tooth and `/ヽ` pairs alternate, ending in `/､/i`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `,＿＿＿＿＿＿＿`@43-142 lip; r2 `ヽ`@36, `/＼／`@59-83 (one V), `ヽ /ヽ /､/i`@99-164 more teeth; r3 `|`@32 and `!`@172 show the flanks starting under the tooth row",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-closed-wide-2r",
+   "role": "small_mouth",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 128,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "gap in the lip line at centre (`　` 11 px) and under it, above the `､___,` chin crease"
+   },
+   "native": {
+    "rows": [
+     "　　`ー―-　-―― '",
+     "　　　　　 ､___,"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     0,
+     128
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#2",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[2] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-closed-wide-2r.png",
+   "note": "Two-row closed wide mouth (128 px): lip line `ー―-　-――` with corner ticks `` ` ``/`'`, centre gap, and a separate lower-lip crease `､___,` below.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `` ` ``@22 corner, `ー―-`@29-60, gap 68-79, `-――`@79-103, `'`@124 corner; r2 `､___,`@60-82 short bowl under the centre = lower lip fold",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-upper-block-2r",
+   "role": "upper_tooth_row",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 127,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "interior under the tooth row (rows 3-5) is paper"
+   },
+   "native": {
+    "rows": [
+     "ｨ' イ工工工工ミヽ",
+     "|コ\"　　　　　　｀└|"
+    ],
+    "row_numbers": [
+     2,
+     3
+    ],
+    "x_px": [
+     20,
+     147
+    ],
+    "row_pen_x": [
+     27,
+     22
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#10",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[10] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-upper-block-2r.png",
+   "note": "One-row upper tooth row `イ工工工工ミヽ`: each `工` is one incisor (top bar, stem, bottom bar); `ｨ' イ` and `ミヽ` turn the row into the corners `|コ\"` / `｀└|`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r2 `ｨ'`@27-34, `イ`@42, `工工工工`@55-103, `ミ`@119, `ヽ`@130; r3 `|コ\"`@22-39 left corner and `｀└|`@113-137 right corner drop into flanks; paper under the teeth",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-open-teeth-6r",
+   "role": "opening_paper_gap",
+   "also_roles": [
+    "small_mouth",
+    "upper_tooth_row",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 147,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the open interior (rows 3-5, between `|:::` and `::::::::::|`) is paper apart from short dotted shading at each side"
+   },
+   "native": {
+    "rows": [
+     "　　 　　　 ′",
+     "　 　ｨ' イ工工工工ミヽ",
+     "　　|コ\"　　　　　　｀└|",
+     "　i |:::　　　　　　　::::::::::|i",
+     "　i {:〉-一 … 　 ─ -〈:}",
+     "　、`ー… 　 　 　─- '"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     0,
+     147
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#10",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[10] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-open-teeth-6r.png",
+   "note": "Six-row open mouth with upper teeth and a large paper interior; the lower lip `{:〉-一 … ─ -〈:}` is broken by `…` dots and `　` gaps.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r2 `イ工工工工ミヽ` teeth; r3-5 flanks `|`@19 / `|`@139 with `:::`@23-29 and `::::::::::`@109-136 shading only at the sides; r5 `{:〉-一 …`@19-63 + `─ -〈:}`@100-140 lower lip; r6 `、`ー…`/`─- '` chin return",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-upper-gum-3r",
+   "role": "upper_tooth_row",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 104,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "none at this size: the slice sits in a `:::` skin-tone field; the interior below is a dotted band"
+   },
+   "native": {
+    "rows": [
+     "::::::イ￣｢￣｢｀ヽ:::",
+     "/ , ‐ｖｰｖ ‐ｖ-､,ﾊ",
+     "i^{＿|＿|＿|＿}^i"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     6,
+     110
+    ],
+    "row_pen_x": [
+     6,
+     6,
+     6
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "rim_cap",
+    "down": "tone_core"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#13",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[13] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-upper-gum-3r.png",
+   "note": "Boxed upper teeth: lip `イ￣｢￣｢｀ヽ`, gum line `‐ｖｰｖ ‐ｖ-､` (each `ｖ` = gap between teeth), then incisors `{＿|＿|＿|＿}` with `|` separators.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `イ￣｢￣｢｀ヽ`@24-91 upper lip cap with `｢` dividers; r2 `/ , ‐ｖｰｖ ‐ｖ-､,ﾊ`@6-100 gum scallop, `ｖ`@35/53/74 align over r3 `|`@36/56/76; r3 `{＿|＿|＿|＿}`@16-96 four incisors, `^i` corners",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-lower-round-4r",
+   "role": "lower_tooth_row",
+   "also_roles": [
+    "return_base",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 104,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "none drawn as paper: the mouth interior row 4 is a dense `:` band between `〔` `〕`"
+   },
+   "native": {
+    "rows": [
+     "〔 :::::::::::::::::::::::::::::〕",
+     ":｢｀Y⌒Y⌒Y⌒ｿ:",
+     ":八,人_,人_,人ｨ::::",
+     ":::::.ヾ=====彡::::::"
+    ],
+    "row_numbers": [
+     4,
+     7
+    ],
+    "x_px": [
+     6,
+     110
+    ],
+    "row_pen_x": [
+     6,
+     6,
+     6,
+     6
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_core",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#13",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[13] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-lower-round-4r.png",
+   "note": "Lower teeth as rounded crowns: `｢｀Y⌒Y⌒Y⌒ｿ` (⌒ = crown top, Y = divider) over `八,人_,人_,人ｨ` (人 = roots meeting), closed by the lower lip `ヾ=====彡`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r4 `〔`@6 … `〕`@106 with `::::`@19-103 dark interior band; r5 `｢｀`@9-16 + `Y⌒Y⌒Y⌒`@24-83 + `ｿ`@99; r6 `八`@9 `,人_,人_,人`@25-76 `ｨ`@92 — `人` stems sit under each `Y`; r7 `ヾ=====彡`@24-76 lower lip return",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-teeth-7r",
+   "role": "small_mouth",
+   "also_roles": [
+    "upper_tooth_row",
+    "lower_tooth_row",
+    "rim_cap",
+    "return_base",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 7,
+    "px_wide": 115,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "no paper inside: the mouth sits in a `:` tone field; the bite gap is a dotted band"
+   },
+   "native": {
+    "rows": [
+     "::::::::イ￣｢￣｢｀ヽ:::",
+     "::/ , ‐ｖｰｖ ‐ｖ-､,ﾊ:",
+     "::i^{＿|＿|＿|＿}^i:",
+     "::〔 :::::::::::::::::::::::::::::〕",
+     ":::｢｀Y⌒Y⌒Y⌒ｿ::",
+     ":::八,人_,人_,人ｨ:::::",
+     ":::::::.ヾ=====彡:::::::"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     115
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "tone_mid"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#13",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[13] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-teeth-7r.png",
+   "note": "Whole grimace with both tooth rows on a dotted skin field: box-top incisors above, round-crowned lower teeth below, dark `〔::::〕` bite band between.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 lip cap, r2-3 upper teeth `{＿|＿|＿|＿}`, r4 `〔 ::::: 〕` band, r5-6 lower `Y⌒Y⌒Y⌒`/`人_,人_,人`, r7 `ヾ=====彡`; the `:` field at both sides (pens 0-21 and 99-113) stops at the contour",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-upper-clenched-2r",
+   "role": "upper_tooth_row",
+   "also_roles": [
+    "rim_cap"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 170,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "none: the bite line itself (row 2/3 boundary) separates upper and lower teeth"
+   },
+   "native": {
+    "rows": [
+     ", :'\":┬- :､｀二´, ィ:―rミ｀丶",
+     "j､_ﾉー┴―'^'―'ー 'ヽ_ノゝ"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     160,
+     330
+    ],
+    "row_pen_x": [
+     161,
+     171
+    ]
+   },
+   "ports": {
+    "left": "upper_tooth_row",
+    "right": "upper_tooth_row",
+    "up": "rim_cap",
+    "down": "lower_tooth_row"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#16",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[16] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-upper-clenched-2r.png",
+   "note": "Upper teeth of a wide clenched grin: `┬-`/`二`/`ィ:―rミ` tooth tops with dividers, biting edge `ﾉー┴―'^'―'ー 'ヽ_ノゝ` (┴ and `^` are the gaps between teeth).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `┬-`@186-202 divider, `｀二´`@225-249, `ィ:―rミ`@265-300 tooth tops; r2 `j､_ﾉ`@171-187 left corner then `ー┴―'^'―'ー`@195-274 biting edge, `┴`@210 under `┬`@186; right end `'ヽ_ノゝ`@294-325 turns down",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-teeth-lower-clenched-2r",
+   "role": "lower_tooth_row",
+   "also_roles": [
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 210,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "above",
+    "paper": "none inside; below row 4 the chin paper"
+   },
+   "native": {
+    "rows": [
+     ",r‐ア-r―v‐''‐ｙ'\"~`l'\"^`Y^ヽr'^ヽ,",
+     "｀~ﾞﾞﾞ` '―'^'―'^'―┴─┴─'＝''\""
+    ],
+    "row_numbers": [
+     3,
+     4
+    ],
+    "x_px": [
+     120,
+     330
+    ],
+    "row_pen_x": [
+     120,
+     121
+    ]
+   },
+   "ports": {
+    "left": "lower_tooth_row",
+    "right": "lower_tooth_row",
+    "up": "upper_tooth_row",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#16",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[16] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-teeth-lower-clenched-2r.png",
+   "note": "Lower teeth of the same clenched grin: crowns `r―v‐''‐ｙ'\"~`l'\"^`Y^ヽr'^ヽ` (`v`/`ｙ`/`Y`/`l` dividers) over a base `'―'^'―'^'―┴─┴─'＝` whose `┴` dividers rise into the crowns.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r3 `,r‐ア-r―v‐''‐ｙ`@120-211, `'\"~`l'\"^`Y^ヽr'^ヽ,`@219-328 crown tops with dividers; r4 `'―'^'―'^'―`@160-221 and `┴─┴─`@237-285 base, `┴`@237/269 under r3 `l`@244/`Y`@272; `'＝''\"` ends right",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-mouth-smile-creases-5r",
+   "role": "small_mouth",
+   "also_roles": [
+    "fold_crease",
+    "upper_tooth_row",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 242,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "between the lip band and the philtrum `丶､__.ノ`; inside the `:.:.:.` band only dots"
+   },
+   "native": {
+    "rows": [
+     "　 ,、　　　　　　　　　 |　　　　　　　 ,.ｨﾘ",
+     "　 ヾ':､、　　　　 丶､__.ノ　 ,＿_,. -ァﾂ",
+     "　 　 ヽ亡ニ＝==､　 　 ,∠ｴr-‐ﾁﾝ'",
+     "　　 　 丶｀ヽ:.:.:.:.:. ｀￣´　 　 ,.ｨヲ",
+     "　　　　　　　｀`'＝=====＝'''\""
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     0,
+     242
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mouths-large#4",
+    "label": "顔・表情03（大型：その他） (mouths-large) aa[4] — 【口：大型】",
+    "aahub_url": "https://aahub.org/mlt/af6646eda0c94b59a270d543e6b8c209",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-mouth-smile-creases-5r.png",
+   "note": "Wide smile (5 rows x 242 px) whose ends are cheek creases: `,、`/`ヾ':､、` left and `,.ｨﾘ`/`-ァﾂ`/`,.ｨヲ` right; philtrum `|`+`丶､__.ノ` above; side teeth `ヽ亡ニ＝==､` / `∠ｴr-‐ﾁﾝ'`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `,、`@16-19 and `|`@134 philtrum, `,.ｨﾘ`@220-233; r2 `ヾ':､、`@16-41 crease, `丶､__.ノ`@101-137 nose base, `,＿_,. -ァﾂ`@164-219; r3 `ヽ亡ニ＝==､`@32-107 / `,∠ｴr-‐ﾁﾝ'`@146-216 lip with teeth glyphs ニ/ｴ; r4 `丶｀ヽ`@43-67 + `:.:.:.:.:.`@79-106 interior dots + `｀￣´`@114-138; r5 `｀`'＝=====＝'''\"` lower lip return",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-pair-4r-mirror",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 138,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "~50 px between the eyes; below the lid lines no ring is closed (kanji masses carry the iris)"
+   },
+   "native": {
+    "rows": [
+     "--― ´　　　　｀ ―--",
+     "孑ｒｆ斥 　 　 　 仗ぅ，",
+     "　 込j　　　 　　ｔ炒′"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     14,
+     152
+    ],
+    "row_pen_x": [
+     16,
+     16,
+     16
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#3",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[3] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-pair-4r-mirror.png",
+   "note": "Large eye pair whose lids are an exact mirror (`--― ´` <-> `｀ ―--`), while the irises are re-authored per side (`孑ｒｆ斥`/`込j` vs `仗ぅ，`/`ｔ炒′`).",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `--―`@16-32 + `´`@53 vs `｀`@105 + `―--`@118-142: ´<->｀ swap and run order reversed, both 45 px; r2 `孑ｒｆ斥`@16-43 vs `仗ぅ，`@112-138; r3 `込j`@32-48 vs `ｔ炒′`@112-133 — dense kanji ink = dark iris, no paper highlight",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-lid-cap",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 146,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "eye white under the lid (row 3 between the lid and the iris ring)"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　＿",
+     "_,.　- ' ´　　￣￣ 三ァ"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     84,
+     230
+    ],
+    "row_pen_x": [
+     88,
+     88
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "opening_paper_gap"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#136",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[136] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-lid-cap.png",
+   "note": "Upper lid of a large eye: shallow stair `_,. - ' ´` rising to a flat `￣￣` run that is doubled by a `＿` one row above (4.2 occlusion stack), ending in `三ァ` lashes.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `＿`@154; r2 `_,.`@88-96, `-`@110, `'`@123, `´`@131 stair, `￣￣`@161-177 under the r1 `＿`, `三ァ`@198-214 outer lashes",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-iris-ring",
+   "role": "closed_ring",
+   "also_roles": [
+    "tone_mid",
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 82,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "ring of paper between the iris contour and the dotted pupil field"
+   },
+   "native": {
+    "rows": [
+     " ,. -―- ､　　",
+     " /　...::{!::.._ ヽ",
+     "{　 ...:::||-::..　}",
+     " ､　.:::{!::.　 /　",
+     "　｀ ー‐ ' ´　"
+    ],
+    "row_numbers": [
+     3,
+     7
+    ],
+    "x_px": [
+     70,
+     152
+    ],
+    "row_pen_x": [
+     79,
+     71,
+     71,
+     74,
+     77
+    ]
+   },
+   "ports": {
+    "left": "opening_paper_gap",
+    "right": "opening_paper_gap",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#136",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[136] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-iris-ring.png",
+   "note": "Five-row iris ring: `,. -―- ､` cap, `/`…`ヽ` shoulders, `{` `}` sides, `､`…`/` lower shoulders, `｀ ー‐ ' ´` base — an octagonal closed ring built from caps and returns.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r3 `,. -―- ､`@84-132; r4 `/`@76 … `ヽ`@140; r5 `{`@71 … `}`@148; r6 `､`@79 … `/`@142; r7 `｀ ー‐ ' ´`@88-137; inside, dotted pupil field `...::{!::..` keeps ~10 px paper to the ring",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-pupil-tone",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "closed_ring"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 50,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "enclosed",
+    "paper": "paper between the dot bands and the iris ring"
+   },
+   "native": {
+    "rows": [
+     "...::{!::.._ ",
+     "...:::||-::..　",
+     ".:::{!::.　 "
+    ],
+    "row_numbers": [
+     4,
+     6
+    ],
+    "x_px": [
+     90,
+     140
+    ],
+    "row_pen_x": [
+     95,
+     91,
+     97
+    ]
+   },
+   "ports": {
+    "left": "opening_paper_gap",
+    "right": "opening_paper_gap",
+    "up": "closed_ring",
+    "down": "closed_ring"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#136",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[136] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-pupil-tone.png",
+   "note": "Slit pupil `{!`/`||-`/`{!` (vertical core) with dot bands `...::` / `::..` thinning outward on both sides — bounded iris tone, not fill.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r4 `...::`@95-107 `{!`@110-114 `::.._`@118-130; r5 `...:::`@91-106 `||-`@109-117 `::..`@125-134; r6 `.:::`@97-106 `{!`@109-113 `::.`@117-123; dots shorten to the right and toward r6",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-lower-lid",
+   "role": "return_base",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 185,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "NE",
+    "curvature": "concave",
+    "inside": "above",
+    "paper": "eye white between the lower lid and the iris base `｀ ー‐ ' ´`"
+   },
+   "native": {
+    "rows": [
+     "　‐ -　､_　　　｀ ー‐ ' ´　　／",
+     "　　　　　　｀　- .. ＿ .. - '´"
+    ],
+    "row_numbers": [
+     7,
+     8
+    ],
+    "x_px": [
+     0,
+     185
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "flank",
+    "up": "closed_ring",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#136",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[136] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-lower-lid.png",
+   "note": "Lower lid of the large eye: broken `‐ -　､_` inner corner and a dotted bowl `｀　- .. ＿ .. - '´` returning up into the right flank `／`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r7 `‐ -`@11-24 + `､_`@43-50 left corner, iris base `｀ ー‐ ' ´`@88-137, `／`@167 right flank; r8 `｀`@66, `- ..`@85-101, `＿`@109, `.. - '´`@130-157 bowl return",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-whole-8r",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "flank",
+    "opening_paper_gap",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 227,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "eye white between outer almond and iris ring on all sides"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　　＿",
+     "　　　　　　　　_,.　- ' ´　　￣￣ 三ァ",
+     "　　　　　 .／ ,. -―- ､　　　　　　 /",
+     "　　　　／　 /　...::{!::.._ ヽ　　　　./",
+     "　　／　　　{　 ...:::||-::..　}　　　 /",
+     "　/　　　　　 ､　.:::{!::.　 /　　　/",
+     "　‐ -　､_　　　｀ ー‐ ' ´　　／",
+     "　　　　　　｀　- .. ＿ .. - '´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     0,
+     227
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#136",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[136] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-whole-8r.png",
+   "note": "Whole 8-row almond eye: outer contour (lid cap r1-2, long `／`/`/` flanks, lower-lid bowl r7-8), iris ring r3-7, slit pupil with dot tone; eye white kept as paper.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "outer: `＿`/`_,. - ' ´ ￣￣ 三ァ` r1-2, left flank `.／`@60 r3 -> `／`@44 -> `／`@22 -> `/`@11, right flank `/`@210 -> `./`@196 -> `/`@190 -> `/`@183 -> `／`@167, base `｀ - .. ＿ .. - '´` r8; iris ring r3-7 inside; paper between",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-narrow-6r",
+   "role": "fold_crease",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "closed_ring"
+   ],
+   "size_band": {
+    "rows": 6,
+    "px_wide": 222,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "eye white between `|l|` bars and the iris `{ilij`; the band between the two lid lines"
+   },
+   "native": {
+    "rows": [
+     "　　　 　 　 　 ゛゛二 ニﾆ= ..,,__",
+     "　　　 ,.､ ----―――-- ､、_　｀゛'、",
+     "　　　 ilｧ===＝z-――-ｷ三三ﾆz .,ﾞ",
+     "　　　　ｉz　　　|l|　 {ilij　 |ll| 　　　｀゛",
+     "　　　　 l!､.　　iz、 ` '' ､'ッ _＿",
+     "　　　　 ｀ミ_三三三三三ﾆ=一'"
+    ],
+    "row_numbers": [
+     1,
+     6
+    ],
+    "x_px": [
+     0,
+     222
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#72",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[72] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-narrow-6r.png",
+   "note": "Narrow glaring eye built from bands: brow `゛゛二 ニﾆ=`, lid `,.､ ----―――--` over thick `ilｧ===＝z-――-ｷ三三ﾆz`, iris shown by two bar groups `|l|`/`|ll|` around `{ilij`, lower lid `｀ミ_三三三三三ﾆ=一'`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `゛゛二 ニﾆ= ..,,__`@86-178 brow crease; r2 `,.､ ----―――-- ､、_`@38-175 lid crease; r3 `ilｧ===＝z-――-ｷ三三ﾆz`@38-199 thick upper lid; r4 `|l|`@88-95, `{ilij`@115-128, `|ll|`@148-158 iris sides + pupil; r5 `iz、`/`` ` '' ､'ッ``; r6 `｀ミ_三三三三三ﾆ=一'`@49-187 lower lid band",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-pair-4r-pupil",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "fold_crease",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 319,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the outer `く`/`>` corners and the iris box; ~60 px between eyes"
+   },
+   "native": {
+    "rows": [
+     "　 　, -‐/: : : : : ヽ､　　　 　　 　 　 　 ,ｨ: : : : : :､ヽ",
+     "　 く　　l': :（●）: |. ＼　　　　　　　 ／ |: :（●）:::l　 >",
+     "　　 ＼ ヽ,: :'''': :,ﾘ,,,,,,/　　　　　　 /.,,,,,,,|: : :''''' : ﾘ／",
+     "　　　　ミ三二ニ二彡　　　　 　 ヾﾐﾐ三三ニ彡'"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     319
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#52",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[52] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-pair-4r-pupil.png",
+   "note": "Four-row large eye pair with filled `（●）` pupils; outer corners mirror `く`<->`>` and `＼`<->`／`, lower lids `ミ三二ニ二彡` / `ヾﾐﾐ三三ニ彡'` are re-spelled per side.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `, -‐/: : : : : ヽ､`@27-111 / `,ｨ: : : : : :､ヽ`@231-291; r2 `く`@16 vs `>`@310, `＼`@116 vs `／`@214, pupils `（●）`@64-88 and @250-274; r3 `ヽ,: :'''': :,ﾘ,,,,,,/`@48-126 vs `/.,,,,,,,|: : :''''' : ﾘ／`@205-296; r4 `ミ三二ニ二彡` vs `ヾﾐﾐ三三ニ彡'` lid bands. Widths: left eye 16-132, right 199-318 (rebalanced by r2 spacing); r4 lid bands 44-118 vs 199-288",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-iris-dotted-3r",
+   "role": "closed_ring",
+   "also_roles": [
+    "tone_mid",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 72,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "paper ring inside `（ ）` around the filled `●`, and between the `: :` dots"
+   },
+   "native": {
+    "rows": [
+     "‐/: : : : : ヽ､",
+     "l': :（●）: |. ",
+     " ヽ,: :'''': :,ﾘ,,"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     40,
+     112
+    ],
+    "row_pen_x": [
+     43,
+     47,
+     43
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "flank",
+    "up": "rim_cap",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#52",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[52] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-iris-dotted-3r.png",
+   "note": "Iris as a dotted box: top `‐/: : : : : ヽ､`, sides `l'`/`|.`, base `ヽ,: :'''': :,ﾘ,,`, with a filled `●` pupil inside a `（ ）` ring — tone dots read as iris colour, not fill.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `‐/`@43-51 + `: : : : :`@59-91 + `ヽ､`@99-111; r2 `l'`@47-50, `: :`@53-61, `（●）`@64-88, `:`@96, `|.`@104-108; r3 `ヽ,`@48-60, `: :'''': :`@63-94, `,ﾘ,,`@97-111",
+   "inspected_by": "faces agent"
+  },
+  {
+   "id": "fc-eye-large-pair-5r",
+   "role": "closed_ring",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "tone_mid",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 284,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "between the outer almond (`／`/`《`/`ヾ`/`^ー──‐`) and the iris `{:::i:::::i:::}`"
+   },
+   "native": {
+    "rows": [
+     "　　　＿＿__　　　　　　　　　　　 　 ＿＿_",
+     "　 ／　/::，:::卞、　　　　　　　　 ,坏::::::::ヽ ＼",
+     "　《　　{:::i:::::i:::}　ヽ　　　　　　　/　{:::i:::::i:::}　∥",
+     "　 ヾ　 ゞﾆﾆ\"'　　　　　　　　 　 　 ゞﾆ ’''　 ″",
+     "　　 ^ー──‐　　　　　　　　　　　───'^"
+    ],
+    "row_numbers": [
+     1,
+     5
+    ],
+    "x_px": [
+     0,
+     284
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:eyes-large#56",
+    "label": "顔・表情02（大型：目・瞳） (eyes-large) aa[56] — 【目・瞳：大型】",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "component-library catalog listing assets/glyphs/contextual/component_libraries.v1.json (selected by section heading + row count)"
+   },
+   "crop": "crops/fc-eye-large-pair-5r.png",
+   "note": "Five-row eye pair, near-mirror: outer `／`<->`＼`, `《`<->`∥`, `ヾ`<->`″`, base `^ー──‐`<->`───'^`; iris `{:::i:::::i:::}` copied unmirrored on both sides.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved (component-library membership only, no operator note recorded)"
+   },
+   "inspection": "r1 `＿＿__`@33-70 / `＿＿_`@217-249 lid caps; r2 `／`@16 vs `＼`@257 shoulders, `/::，:::卞、` vs `,坏::::::::ヽ`; r3 `《`@11 vs `∥`@265, iris `{:::i:::::i:::}`@41-84 and @207-250 identical; r4 `ゞﾆﾆ\"'` vs `ゞﾆ ’''`; r5 `^ー──‐`@27-81 vs `───'^`@210-261 (^ end swapped side)",
+   "inspected_by": "faces agent"
+  }
+ ]
+}

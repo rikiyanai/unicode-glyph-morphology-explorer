@@ -1,0 +1,2592 @@
+{
+ "schema": "role_lookup.group.v1",
+ "group": "shapes-circles",
+ "role_extensions": {
+  "whole_circle": "a complete drawn round (cap, sides and return together) recorded as one construction, distinct from closed_ring, which is kept for eye/pupil rings"
+ },
+ "inspection_log": [
+  "read profile_circle_evidence.v1.json (all 45 families: titles, focus_forms, interpretation; every passage has operator_label null) and scripts/profile_circle_intake.py header before selecting",
+  "MLT entry-03 rows 6-9 printed to locate; rows 6 and 9 dropped (gable/frieze noise); kept rows 7-8 x330-405 -> sh-mlt03-compact-circle",
+  "MLT entry-05 rows 10-11 x335-400 -> sh-mlt05-dome-flat-base",
+  "MLT entry-25 rows 15-16 x150-245 -> sh-mlt25-compact-return",
+  "MLT entry-19 rows 25-27 x200-275 -> sh-mlt19-medallion-3row",
+  "MLT entry-47 rows 12-14 x125-275 (both dog eyes) -> sh-mlt47-eye-ring-pupil",
+  "MLT entry-08 rows 9-12 x495-580 (right-hand round) -> sh-mlt08-brace-flank-3row; the page's λ＿,ﾉ / (__) / 乂__ソ rounds were located but not cropped (similar spellings already covered)",
+  "MLT entry-46 rows 3-4 x205-270 -> sh-mlt46-highlight-ring",
+  "MLT entry-13 rows 4-6 x355-420 -> sh-mlt13-oval-on-round",
+  "MLT entry-45 rows 1-11 first cropped x215-480 (included unrelated background on the right), recropped x215-440 -> sh-mlt45-large-round-edge-tone; sub-crop rows 2-10 x215-300 -> sh-mlt45-rim-tone-band-left",
+  "MLT entry-33 rows 1-4 x70-335, rows 4-13 x300-420, rows 14-17 x60-380 -> three large-body entries (cap/shoulders, right flank, open return)",
+  "MLT entry-39 rows 5-8 x25-160 -> sh-mlt39-cherry-side-tone",
+  "MLT entry-14 rows 13-15 first x225-470 (cut the left brace), recropped x210-462 -> sh-mlt14-round-frieze",
+  "MLT entry-31 rows 1-3 first x60-290 (cut the lowest γ), recropped x40-290 -> sh-mlt31-shared-lobe-caps",
+  "MLT entry-34 rows 4-6 first x150-300 (missed the cluster), relocated and recropped x80-200 -> sh-mlt34-cluster-x-junction",
+  "MLT entry-04 rows 14-19 x290-410 printed; kept rows 17-18 x310-385 -> sh-mlt04-occluded-half-round; rows 7-8 x185-255 -> sh-mlt04-full-round-ref",
+  "MLT entries 38, 24, 30, 37, 41 not opened beyond the evidence passage listing: vessel/ellipse rims belong to perspective ellipses, not circles; left for a vessel/ellipse group",
+  "shapes #66, #67 (2 rows), #60, #63, #65 (3 rows), #61, #62, #64 (4 rows) printed; #61 not entered (same i-flank construction as #60 with a lone `_` cap); others entered",
+  "shapes #24, #30, #57, #13, #23, #28, #31, #14(absent at rows 1-13 request), #26, #29, #2 printed; entered #57 (whole + 3 role regions), #28, #31, #23, #24",
+  "shapes #13 / #2 / #26 / #29 / #30 not entered: thick kanji-texture rims (#2, #13), uniform ｉ: hatch disk (#26) and dense-kanji disks (#29, #30) duplicate the #28 / #31 tone reads without a cleaner gradient",
+  "shapes #153 (DNA helix) and #158 (box-drawing polyhedron) in 【その他立体】 printed while looking for a sphere cast shadow: neither has one",
+  "shapes #108 (row of chained tall ovals sharing `ｌ ｌ` walls) and #106 (single 7-row narrow oval) and #98 printed; not entered for time — #108 is a good periodic_band/contact_junction candidate for a later pass",
+  "patterns #21, #23, #66, #102, #106, #94, #90, #92, #98, #100, #103, #125, #130 first rows printed; entered #103 (scale lattice of 乂/人 returns) and #21 (stacked ribbing) only",
+  "effect-lines #58, #59, #62, #24, #12 printed; entered #58 and #24; #12 (scattered convergence ticks) not entered — too sparse to read as lines at native scale",
+  "mechanical-parts #55, #24, #21 printed; entered #24 (segment/cuff V joint) and #55 rows 5-9 (finger-to-palm ┴ junction); #21 not entered (bent-arm outline, no circle joint)"
+ ],
+ "gaps": [
+  "cast_shadow_edge: no sphere or circle with a cast shadow found in the selected shapes entries (【円形・球】 sampled #2/#13/#23/#24/#26/#28-#31/#57, 【その他立体】 #153/#158) or in the circle MLT passages opened",
+  "sphere with a highlight + terminator (lit sphere, light-to-dark across the form) not found; the toned spheres found are uniform-dark disks (#28 graded centre-out, #31) or rim bands (#23, MLT 45)",
+  "shoulder as a separate small-size entry (2-3 rows): at that size cap and shoulder are one glyph pair (γ⌒ / ⌒ヽ), so no separate shoulder entry is recorded for s band",
+  "side (straight non-rounded edge) not covered here; only appears as context (ledge lines, pillars)",
+  "mechanical round ball joint (circle inside a limb) not found in the three mechanical-parts entries opened",
+  "1-row (xs) circle constructions such as (　) or ○-like spellings were seen only as a component (sh-mlt13 row 4), not entered as their own xs entry"
+ ],
+ "entries": [
+  {
+   "id": "sh-mlt03-compact-circle",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 46,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the whole interior between ⌒ and __ stays empty; paper above the cap inside the gable"
+   },
+   "native": {
+    "rows": [
+     "　γ⌒ヽ　　",
+     "＿乂__ノ＿＿"
+    ],
+    "row_numbers": [
+     7,
+     8
+    ],
+    "x_px": [
+     330,
+     405
+    ],
+    "row_pen_x": [
+     334,
+     333
+    ]
+   },
+   "ports": {
+    "left": "contact_junction",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-03.txt",
+    "label": "Riki circle My MLT entry 03 (Assisi: compact cap and return); My MLT circle entry 3; original aa[36]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt03-compact-circle.png",
+   "note": "Two-row oculus: γ⌒ヽ over 乂__ノ, with 乂's crossing tail landing on the gable base line so the circle sits ON the ledge.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 7 `γ⌒ヽ` (pens 345/361/377) caps the round; row 8 `乂__ノ` (349/365/370/375) returns it: 乂's crossed tail runs out left onto the base `＿`@333 and `ノ`@375 meets `＿`@386 on the right; interior paper empty; ~44 px wide",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt05-dome-flat-base",
+   "role": "rim_cap",
+   "also_roles": [
+    "side",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "S",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside the dome between the braces; nothing below the flat base"
+   },
+   "native": {
+    "rows": [
+     " γ⌒ヽ　　",
+     "　{＿＿}　"
+    ],
+    "row_numbers": [
+     10,
+     11
+    ],
+    "x_px": [
+     335,
+     400
+    ],
+    "row_pen_x": [
+     339,
+     339
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-05.txt",
+    "label": "Riki circle My MLT entry 05 (Aachen: dome cap and flat base); My MLT circle entry 5; original aa[52]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt05-dome-flat-base.png",
+   "note": "Domed cap that terminates on a flat base: the same γ⌒ヽ cap as the 2-row circle, but braces + ＿＿ make a dome, not a circle.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 10 `γ⌒ヽ` (344/360/376) is the dome cap; row 11 `{＿＿}` (350/354/370/386): the braces turn the cap ends straight down and ＿＿ closes flat; compare sh-mlt03 where 乂__ノ curves the base instead",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt25-compact-return",
+   "role": "return_base",
+   "also_roles": [
+    "whole_circle",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the round; the half-space gap inside `._ ノ` is part of the return"
+   },
+   "native": {
+    "rows": [
+     " γ⌒ヽ　　　　",
+     "　 ゝ._ ノ＿＿＿"
+    ],
+    "row_numbers": [
+     15,
+     16
+    ],
+    "x_px": [
+     150,
+     245
+    ],
+    "row_pen_x": [
+     157,
+     151
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "rim_cap",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-25.txt",
+    "label": "Riki circle My MLT entry 25 (Necrovalley altar: another compact return); My MLT circle entry 25; original aa[162]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt25-compact-return.png",
+   "note": "A looser 2-row return: ゝ._ ノ breaks the lower arc into dot + short underscore and hands right into the support line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 15 `γ⌒ヽ` (162/178/194); row 16 `ゝ._ ノ` (167/179/182/192): ゝ turns the left side in, `.`+`_` with a half-space make a broken lower arc, `ノ`@192 closes right and continues into `＿＿＿`@203-235 (support); compare 乂__ノ of sh-mlt03",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt19-medallion-3row",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "return_base",
+    "tone_mid"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 43,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the medallion's waist row is filled with `:`; paper only inside the cap row and return row"
+   },
+   "native": {
+    "rows": [
+     ".:.:.γ⌒ヽ￣",
+     "ｉ: {:::::::::::}:ｉ＾",
+     "::乂__:ノ::|_,"
+    ],
+    "row_numbers": [
+     25,
+     27
+    ],
+    "x_px": [
+     200,
+     275
+    ],
+    "row_pen_x": [
+     200,
+     207,
+     211
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "flank",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-19.txt",
+    "label": "Riki circle My MLT entry 19 (Hagia Sophia: medallions on a dome interior); My MLT circle entry 19; original aa[134]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt19-medallion-3row.png",
+   "note": "Three-row medallion: the extra middle row uses `{ }` braces as flanks, and a colon band fills the waist, matching the toned vault around it.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 25 `γ⌒ヽ`@215/231/247 cap; row 26 `{`@219 and `}`@256 are the flanks with `:` x11 between them; row 27 `乂__:ノ`@217/233/238/243/246 returns (a colon breaks the base before ノ); `.:` tone outside both flanks and `ｉ`@263 pillar to the right",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt47-eye-ring-pupil",
+   "role": "closed_ring",
+   "also_roles": [
+    "small_face"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 41,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside each ring around the pupil; the fur colon field stops at the left ring"
+   },
+   "native": {
+    "rows": [
+     ": : : : : : : : : : : :.:γ oヽ: :",
+     "::γ oヽ　　　　　ゝ .ノｰ ",
+     ": :乂 .ノ　　 　 ===､　,　 "
+    ],
+    "row_numbers": [
+     12,
+     14
+    ],
+    "x_px": [
+     125,
+     275
+    ],
+    "row_pen_x": [
+     126,
+     129,
+     127
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "tone_mid",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-47.txt",
+    "label": "Riki circle My MLT entry 47 (Dog: rounded eyes inside textured head); My MLT circle entry 47; original aa[95]",
+    "aahub_url": "https://aahub.org/mlt/f452585ab8d54d61a7f6701f85934209",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt47-eye-ring-pupil.png",
+   "note": "Eye rings: the same γ…ヽ cap with an `o` pupil inside, closed by 乂 .ノ (left) or ゝ .ノ (right) — the pupil carries the eye read, not the ring.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "left eye row 13 `γ oヽ` (135/156/164) over row 14 `乂 .ノ` (138/159/162); right eye one row higher, row 12 `γ oヽ` (223/244/252) over row 13 `ゝ .ノ` (231/248/251) then `ｰ`@262; `o` sits in the cap row, a `.` in the return row; colons end at the left eye's γ",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt08-brace-flank-3row",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 45,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "empty interior (row 10 is three full spaces); colon wall tone outside"
+   },
+   "native": {
+    "rows": [
+     "::::::γ⌒ヽ::::::",
+     ":::::{　　　}::::／",
+     "/::::乂__乂:∧",
+     "＿＿＿＿＿"
+    ],
+    "row_numbers": [
+     9,
+     12
+    ],
+    "x_px": [
+     495,
+     580
+    ],
+    "row_pen_x": [
+     497,
+     504,
+     499,
+     500
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "tone_mid",
+    "up": "tone_mid",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-08.txt",
+    "label": "Riki circle My MLT entry 08 (Krakow: three different rounded constructions); My MLT circle entry 8; original aa[57]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt08-brace-flank-3row.png",
+   "note": "Three-row round inside a toned wall: braces for the flank row and 乂__乂, whose two crossings tick both lower corners outward into the wall.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 9 `γ⌒ヽ` (515/531/547); row 10 `{`@519 `}`@556 with empty paper between; row 11 `乂__乂` (519/535/540/545): both lower corners cross outward into the `:` wall; row 12 `＿` run below is the ledge; the 2-row form adds exactly one brace row",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt46-highlight-ring",
+   "role": "closed_ring",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 40,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the ring; the space between the `/` envelope and 乂"
+   },
+   "native": {
+    "rows": [
+     "　〃⌒Y　",
+     " /乂__ノ　　"
+    ],
+    "row_numbers": [
+     3,
+     4
+    ],
+    "x_px": [
+     205,
+     270
+    ],
+    "row_pen_x": [
+     208,
+     207
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-46.txt",
+    "label": "Riki circle My MLT entry 46 (Eye: tiny round highlight inside a large envelope); My MLT circle entry 46; original aa[220]",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt46-highlight-ring.png",
+   "note": "Two-row eye highlight ring whose left shoulder is a double tick 〃 and right shoulder a Y stub; a separate `/` belongs to the larger eye envelope.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 3 `〃⌒Y` (219/235/251): 〃 replaces γ at the left shoulder, Y opens the right shoulder into a stub; row 4 `/`@212 then `乂__ノ` (220/236/241/246) — the `/` is the outer envelope's flank, not part of the ring",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt13-oval-on-round",
+   "role": "whole_circle",
+   "also_roles": [
+    "contact_junction",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 33,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "E",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "inside the 1-row oval and inside the round; no paper row between them"
+   },
+   "native": {
+    "rows": [
+     "- ::(　)　_　",
+     ":::::/⌒Ｙ辷",
+     "::::乂__ﾉ＿_"
+    ],
+    "row_numbers": [
+     4,
+     6
+    ],
+    "x_px": [
+     355,
+     420
+    ],
+    "row_pen_x": [
+     358,
+     357,
+     357
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "contact_junction",
+    "up": "paper",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-13.txt",
+    "label": "Riki circle My MLT entry 13 (Interior: stacked rounded figure and arch); My MLT circle entry 13; original aa[97]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt13-oval-on-round.png",
+   "note": "A 1-row oval `(　)` stacked directly on a 2-row round whose left shoulder is `/` and whose right shoulder Ｙ opens into an attachment.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 4 `(`@377 `)`@393 a one-row oval; row 5 `/⌒Ｙ` (372/380/396) — `/` shoulder instead of γ, Ｙ@396 opens right where `辷`@406 attaches; row 6 `乂__ﾉ` (369/385/390/395) returns and `＿_`@403/419 continues as ground",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt45-large-round-edge-tone",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "flank",
+    "return_base",
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 11,
+    "px_wide": 196,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the centre (rows 4-9, x≈270-360) is open paper; the tone band breaks at left rows 7-8 and right row 6"
+   },
+   "native": {
+    "rows": [
+     "　　 　 ＿＿＿＿＿＿─────",
+     "　 - 　 -\":::::::::::::::::::::::::::｀ヽ､　　　　　",
+     "　　　／:::::::　:::　::　:　::　::::::::::ヽ　　　　",
+     " 　/:::::::::　:　　　　　　　:::::　:::::ヽ 　 　",
+     " /::::::::　　　　　　　　　:　　　:::::::|　　",
+     "　|:::::::::　　　　　　　　　　　　　　l　.　",
+     "　 i　　　 　　　　 　　　　　　:::::::::i 　 　",
+     "　l　　　　　　　　　　　　　　:::::/ 　 　",
+     " 　 ヽ:::::::　　　　　　　　　　::::::/　　　　",
+     "　　 ＼:::::::: :::　::　　::::::::::::／　　　　 ",
+     "　 　 　｀ー::::::::::::::::＿-‐ '　　　　　　"
+    ],
+    "row_numbers": [
+     1,
+     11
+    ],
+    "x_px": [
+     215,
+     440
+    ],
+    "row_pen_x": [
+     225,
+     222,
+     215,
+     222,
+     225,
+     220,
+     216,
+     225,
+     216,
+     223,
+     223
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-45.txt",
+    "label": "Riki circle My MLT entry 45 (Large eye: broad round with edge-bound tone); My MLT circle entry 45; original aa[219]",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt45-large-round-edge-tone.png",
+   "note": "Large 11-row round: flat ＿/─ cap, three-step shoulders, single-glyph flanks (/ | i l), and a `:` band that hugs only the inside of the rim.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 1 `＿`x6 + `─`x5 (268-428) flat cap; shoulders `-\"`@267/275, `／`@248, `/`@238 left and `｀ヽ､`@364/372/384, `ヽ`@394, `ヽ`@405 right; flanks `/`@230 `|`@231 `i`@232 `l`@236 left and `|`@418 `l`@416 `i`@415 `/`@408 right; returns `ヽ`@237 `＼`@250 `｀ー`@266/274 and `/`@398 `／`@379 `＿-‐ '`@337-374; `:` runs sit inside the rim",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt45-rim-tone-band-left",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe",
+    "flank"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 85,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "right",
+    "paper": "centre of the round to the right of the band; the gap beside `i`/`l` at rows 7-8"
+   },
+   "native": {
+    "rows": [
+     "　 - 　 -\"::::::",
+     "　　　／:::::::　::",
+     " 　/:::::::::　:　　",
+     " /::::::::　　　　",
+     "　|:::::::::　　　　",
+     "　 i　　　 　　　",
+     "　l　　　　　　",
+     " 　 ヽ:::::::　　　",
+     "　　 ＼:::::::: ::"
+    ],
+    "row_numbers": [
+     2,
+     10
+    ],
+    "x_px": [
+     215,
+     300
+    ],
+    "row_pen_x": [
+     222,
+     215,
+     222,
+     225,
+     220,
+     216,
+     225,
+     216,
+     223
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-45.txt",
+    "label": "Riki circle My MLT entry 45 (Large eye: broad round with edge-bound tone); My MLT circle entry 45; original aa[219]",
+    "aahub_url": "https://aahub.org/mlt/ddd5a07a469de526bc78d56073e70b03",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt45-rim-tone-band-left.png",
+   "note": "Rim-following tone: 6-9-colon runs packed against the left shoulder/flank, absent where the flank is most vertical, and ragged toward the empty centre.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "rows 3-6 `:` runs (x7, x9, x8, x9) start 8 px right of `／`@248 `/`@238 `/`@230 `|`@231 — the core; rows 7-8 beside `i`@232 `l`@236 have no tone (paper lets the flank turn); rows 9-10 resume beside `ヽ`@237 `＼`@250; inner ends ragged (row 3 `:::::::` then `:::` after a gap; row 4 a lone `:`@284) — fringe",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt33-large-cap-shoulders",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 246,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "the crown gap between `_,,,` and `,,,_` and the wide interior below"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　 _,,,　　　,,,_",
+     "　　　　　 ＜　　　　　　　 　｀ 　 ､",
+     "　　 ィ　　　　　　　　　　　　　　　 ヘ",
+     "／　　　　　　　　　　　　　　　　　　　 ＼"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     70,
+     335
+    ],
+    "row_pen_x": [
+     77,
+     77,
+     77,
+     77
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-33.txt",
+    "label": "Riki circle My MLT entry 33 (Round character: long lost-and-found envelope); My MLT circle entry 33; original aa[315]",
+    "aahub_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt33-large-cap-shoulders.png",
+   "note": "Large (17-row body) lost-and-found cap: `_,,,` … `,,,_` leave the crown open; shoulders step out one sparse glyph per row (＜/ィ/／ vs ｀ ､/ヘ/＼).",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 1 `_,,,`@170-181 and `,,,_`@217-226 with a 3-full-space crown gap; row 2 `＜`@137 left, `｀`@246 `､`@275 right; row 3 `ィ`@104 / `ヘ`@284; row 4 `／`@77 / `＼`@307 — each shoulder step is one glyph with ~25-35 px of paper between steps",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt33-large-right-flank",
+   "role": "flank",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 70,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "NW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "left",
+    "paper": "row 5 is empty (lost edge); everything left of the flank is the body's interior"
+   },
+   "native": {
+    "rows": [
+     " ＼",
+     "",
+     "　 　 ﾑ",
+     "　　　　ﾊ",
+     "　 　 　 ',",
+     "　　　　　}",
+     " 　 　 　 i",
+     "　　　　 ゝ",
+     " 　 　 　 　 ＼",
+     "　　　　,、　　 ヽ"
+    ],
+    "row_numbers": [
+     4,
+     13
+    ],
+    "x_px": [
+     300,
+     420
+    ],
+    "row_pen_x": [
+     302,
+     null,
+     304,
+     302,
+     308,
+     307,
+     308,
+     310,
+     307,
+     308
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "shoulder",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-33.txt",
+    "label": "Riki circle My MLT entry 33 (Round character: long lost-and-found envelope); My MLT circle entry 33; original aa[315]",
+    "aahub_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt33-large-right-flank.png",
+   "note": "Sparse, varied large flank: ＼ … ﾑ ﾊ ', } i ゝ ＼ ヽ — one small glyph per row, a lost row at 5, and the drift of the pen x carries the bulge.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 4 `＼`@307, row 5 empty, then `ﾑ`@336 `ﾊ`@346 `',`@356/359 `}`@362 `i`@361 `ゝ`@359 (rows 6-11, outermost at row 9 `}`) and `＼`@376 `ヽ`@393 (rows 12-13) turning out to the arm `,、`@352",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt33-large-return-base",
+   "role": "return_base",
+   "also_roles": [
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 240,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the base is left open between `＜`@117 and `＞`@265 — the body continues into legs below"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　　　　　　　　　　　　　　　　　　　/ ｀ '' ",
+     " ﾍ　　　　　　　　 　 　 　 　 　 　 　 　 　 ／",
+     "　 ヘ",
+     "　　　 ｀ ＜　　　　　　　　　　　　＞ ´"
+    ],
+    "row_numbers": [
+     14,
+     17
+    ],
+    "x_px": [
+     60,
+     380
+    ],
+    "row_pen_x": [
+     70,
+     66,
+     66,
+     66
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-33.txt",
+    "label": "Riki circle My MLT entry 33 (Round character: long lost-and-found envelope); My MLT circle entry 33; original aa[315]",
+    "aahub_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt33-large-return-base.png",
+   "note": "Large open return: ﾍ/ヘ step in on the left, ／ on the right, and `｀ ＜ … ＞ ´` turn both sides inward without a bottom line.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 15 `ﾍ`@71 and `／`@318; row 16 `ヘ`@82; row 17 `｀ ＜`@104/117 and `＞ ´`@265/286 — the two returns stop ~150 px apart, leaving the bottom open (no `＿` run); right side reaches up to the arm `/ ｀ ''`@345-374 on row 14",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt39-cherry-side-tone",
+   "role": "tone_mid",
+   "also_roles": [
+    "return_base",
+    "contact_junction",
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 103,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "W",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "upper-left of each cherry is paper (lit side); tone only along the lower/right inside rim"
+   },
+   "native": {
+    "rows": [
+     "　 　 _,|　/ ゝ⌒ヽ",
+     "／　⊥｀ヽ　　::::::!",
+     "|　　　:::::::|､ ..:::,ノ",
+     "ヽ､_..::::::ノ"
+    ],
+    "row_numbers": [
+     5,
+     8
+    ],
+    "x_px": [
+     25,
+     160
+    ],
+    "row_pen_x": [
+     27,
+     33,
+     33,
+     33
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "contact_junction",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-39.txt",
+    "label": "Riki circle My MLT entry 39 (Cherries: two overlapping shaded rounds); My MLT circle entry 39; original aa[144]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt39-cherry-side-tone.png",
+   "note": "Two overlapping 3-4-row cherries: colon tone bounded to the lower-right inside of each rim; the front cherry's right flank `|` cuts the back cherry's return.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 6 `::::::!`@118-136 inside the back cherry's right side; row 7 `:::::::|`@70-91 inside the front cherry, then `､ ..:::,ノ`@95-125 back return; row 8 `ヽ､_..::::::ノ`@33-81 front return carries the tone along its base; `|`@91 row 7 is the contact where front occludes back",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt14-round-frieze",
+   "role": "periodic_band",
+   "also_roles": [
+    "whole_circle",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 235,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "inside each 2-row round; the `=-=` connectors separate rounds without filling"
+   },
+   "native": {
+    "rows": [
+     "{ー=f⌒Y=-=Y⌒Y=-=Y⌒Y=-=f⌒Y=} ",
+     "{ー=乂乂=-=乂乂=-=乂乂=-=乂乂=} ",
+     "l|ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ^ﾟ＾ﾟ:| "
+    ],
+    "row_numbers": [
+     13,
+     15
+    ],
+    "x_px": [
+     210,
+     462
+    ],
+    "row_pen_x": [
+     220,
+     220,
+     220
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "paper",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-14.txt",
+    "label": "Riki circle My MLT entry 14 (Interior altar: repeated cap/return frieze); My MLT circle entry 14; original aa[98]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt14-round-frieze.png",
+   "note": "Frieze of four 2-row rounds: `f⌒Y`/`Y⌒Y` caps over paired `乂乂` returns, linked by `=-=`, on a `ﾟ^` dotted band.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 13 `f⌒Y`@247/252/268, `Y⌒Y`@301/310/326 and @359/368/384, `f⌒Y`@417/422/438 with `=-=` between; row 14 `乂乂` pairs @247/263, 303/319, 359/375, 415/431 return each cap; row 15 `ﾟ^` x~20 band from 227; braces `{`@220 `}`@455 frame it",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt31-shared-lobe-caps",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 230,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each lobe; the shared Ｙ has no paper between the two caps"
+   },
+   "native": {
+    "rows": [
+     "　 　 　 　 γ⌒ヽ 　 γ⌒Ｙ⌒ﾝ´｀ヽ",
+     "　 　 γ⌒ｿ　　　}　　{　　　 　 　 　 }",
+     "γ⌒ｿ　　　　 γ⌒ヽ!　 l　 / 　 　 ﾘ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     40,
+     290
+    ],
+    "row_pen_x": [
+     44,
+     44,
+     44
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "flank",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-31.txt",
+    "label": "Riki circle My MLT entry 31 (Rounded character: chained scallops and shared returns); My MLT circle entry 31; original aa[76]",
+    "aahub_url": "https://aahub.org/mlt/f3983b8012cde80d6c7219f390569b84",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt31-shared-lobe-caps.png",
+   "note": "Chained lobes: γ⌒ｿ steps up in a staircase, and `γ⌒Ｙ⌒ﾝ` shares one Ｙ between two caps — lobe-to-lobe junction without a gap.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 3 `γ⌒ｿ`@44/60/76, row 2 `γ⌒ｿ`@76/92/108, row 1 `γ⌒ヽ`@108/124/140 — each ｿ hands up into the next γ; row 1 `γ⌒Ｙ⌒ﾝ´｀ヽ`@173-256: Ｙ@205 joins two caps; `{`@176 `}`@266 row 2 flanks; row 3 `γ⌒ヽ!`@134-178 a lower lobe",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt34-cluster-x-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 112,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside each small berry; no paper between touching berries"
+   },
+   "native": {
+    "rows": [
+     ",ｨ=-<⌒X⌒ヽ／　",
+     ">‐く⌒k__｀Y´_)ぇ　",
+     "人__ﾉこX⌒Y⌒ヽﾚ"
+    ],
+    "row_numbers": [
+     4,
+     6
+    ],
+    "x_px": [
+     80,
+     200
+    ],
+    "row_pen_x": [
+     88,
+     88,
+     82
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-34.txt",
+    "label": "Riki circle My MLT entry 34 (Fruit clusters: overlapping small rounded units); My MLT circle entry 34; original aa[65]",
+    "aahub_url": "https://aahub.org/mlt/af2d0567b491b61bd90183e58b2bb1bf",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt34-cluster-x-junction.png",
+   "note": "Berry cluster: `⌒X⌒` and `X⌒Y⌒` meet adjacent caps with X/Y; `人__ﾉ` and `k__｀Y´` are the shared lower returns.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 4 `<⌒X⌒ヽ`@114/122/138/148/164: X joins two caps; row 5 `く⌒k__｀Y´_)`@104-176: k and Y´ split lower returns between berries; row 6 `人__ﾉこX⌒Y⌒ヽ`@82-180: 人 opens a return, X and Y join three caps",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt04-occluded-half-round",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 32,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "inside the visible left half; the pillar `|` hides the right half — no ヽ/ノ drawn"
+   },
+   "native": {
+    "rows": [
+     ".:|.:.:γ⌒|: : |",
+     ". |.: 乂___,|: : "
+    ],
+    "row_numbers": [
+     17,
+     18
+    ],
+    "x_px": [
+     310,
+     385
+    ],
+    "row_pen_x": [
+     310,
+     310
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "tone_mid",
+    "down": "side"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-04.txt",
+    "label": "Riki circle My MLT entry 04 (Notre Dame: round and partially hidden rounds); My MLT circle entry 4; original aa[48]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt04-occluded-half-round.png",
+   "note": "Partly hidden round: γ⌒ and 乂___, run straight into a pillar `|`; the right shoulder/return are omitted, not closed.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 17 `γ⌒`@332/348 stops at `|`@364; row 18 `乂___,`@333/349/354/359/364 ends with `,`@364 against `|`@367 — no ヽ or ノ; dotted tone `.:` and pillars `|`@316/318 left; compare the full round sh-mlt04-full-round-ref of the same page",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mlt04-full-round-ref",
+   "role": "return_base",
+   "also_roles": [
+    "whole_circle"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "inside the round; colon tone only to the left"
+   },
+   "native": {
+    "rows": [
+     ": :γ⌒ヽ　 ",
+     ": 弋＿ノ　　"
+    ],
+    "row_numbers": [
+     7,
+     8
+    ],
+    "x_px": [
+     185,
+     255
+    ],
+    "row_pen_x": [
+     187,
+     189
+    ]
+   },
+   "ports": {
+    "left": "tone_mid",
+    "right": "paper",
+    "up": "rim_cap",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "txt:assets/glyphs/contextual/profile-circle-20261026/entry-04.txt",
+    "label": "Riki circle My MLT entry 04 (Notre Dame: round and partially hidden rounds); My MLT circle entry 4; original aa[48]",
+    "aahub_url": "https://aahub.org/mlt/2f0353dc8e23bde120d1c050746f937c",
+    "cited_by": "operator-curated circle My MLT https://aahub.org/mlts/6zbpnrsgp96r (profile_circle_evidence.v1.json)"
+   },
+   "crop": "crops/sh-mlt04-full-round-ref.png",
+   "note": "Same page's full round closes with `弋＿ノ`: 弋's bar reaches left as a short tick — a third 2-row return spelling beside 乂__ノ and ゝ._ ノ.",
+   "status": {
+    "state": "retained",
+    "reason": "operator-curated circle My MLT member (https://aahub.org/mlts/6zbpnrsgp96r); the list carries no region label for this passage, so the region choice is this agent's reading"
+   },
+   "inspection": "row 7 `γ⌒ヽ`@198/214/230; row 8 `弋＿ノ`@197/213/229: 弋 makes the left lower turn and its crossbar ticks left toward the `:`@189 tone; one `＿` and `ノ` close the base",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib66-circle-2row",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior; gap after ゝ (half space) is part of the return"
+   },
+   "native": {
+    "rows": [
+     "　γ⌒ヽ",
+     "　 ゝ __ノ"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     0,
+     60
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#66",
+    "label": "線・図形・図表 【円形・球】 aa[66]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib66-circle-2row.png",
+   "note": "Catalog 2-row circle: γ⌒ヽ / ゝ __ノ — the isolated reference spelling of the MLT's compact rounds.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `γ⌒ヽ`@11/27/43; row 2 `ゝ`@16 then a half space and `__ノ`@33/38/43 — ゝ turns in, the base is two half-width underscores, ノ closes under ヽ; 44 px wide",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib67-circle-2row-tiny",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 2,
+    "px_wide": 35,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the tiny interior; dots `..,` take the place of a left shoulder"
+   },
+   "native": {
+    "rows": [
+     ".., ‐:､",
+     "弋_丿"
+    ],
+    "row_numbers": [
+     1,
+     2
+    ],
+    "x_px": [
+     0,
+     40
+    ],
+    "row_pen_x": [
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#67",
+    "label": "線・図形・図表 【円形・球】 aa[67]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib67-circle-2row-tiny.png",
+   "note": "Smallest catalog circle (~35 px): `‐:､` cap with `..,` dot shoulder over `弋_丿` — dots and 弋's bar make it read soft rather than inked.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `..,`@0/3/6 dots, `‐`@14 cap, `:､`@22/25 right shoulder; row 2 `弋`@0 (its bar sticks left), `_`@16, `丿`@21 closes; no γ — dots replace the left shoulder at this size",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib60-circle-3row",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 52,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior; wide paper between the two `i` flanks on row 2"
+   },
+   "native": {
+    "rows": [
+     "　γ ⌒ヽ",
+     "　 i　　　　ｉ",
+     "　 ゝ ___,ノ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     70
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#60",
+    "label": "線・図形・図表 【円形・球】 aa[60]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib60-circle-3row.png",
+   "note": "Catalog 3-row circle: the 2-row form plus one flank row of thin `i ｉ`; base `ゝ ___,ノ` widens with three underscores and a comma.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `γ ⌒ヽ`@11/32/48 (half space after γ widens the cap); row 2 `i`@16 and `ｉ`@63 flanks; row 3 `ゝ`@16 `___,ノ`@33-51 — the comma steps the base up into ノ",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib65-circle-3row-brace",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 44,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior"
+   },
+   "native": {
+    "rows": [
+     "　 ,r― ､",
+     "　{ 　 　 }",
+     "　乂＿ノ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     60
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#65",
+    "label": "線・図形・図表 【円形・球】 aa[65]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib65-circle-3row-brace.png",
+   "note": "Catalog 3-row circle with a flat `r―` cap and `{ }` brace flanks over 乂＿ノ — a squarer-reading 3-row alternative.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `,r―､`@16/19/25/46: r gives a square-ish left shoulder and ― a flat cap; row 2 `{`@11 `}`@52 brace flanks; row 3 `乂＿ノ`@11/27/43: 乂 crosses outward at lower left",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib63-circle-3row-soft",
+   "role": "whole_circle",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 47,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior; small gaps between dots are part of the soft rim"
+   },
+   "native": {
+    "rows": [
+     "　,:\"⌒ '.;.",
+     "　; 　　 　;",
+     "　ヽ、_.,,ノ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     62
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#63",
+    "label": "線・図形・図表 【円形・球】 aa[63]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib63-circle-3row-soft.png",
+   "note": "Soft/fuzzy 3-row circle: punctuation shoulders `,:\"` and `'.;.`, `;` flanks, and a broken `ヽ、_.,,ノ` base.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `,:\"`@11/14/17 ⌒@25 `'.;.`@46-55; row 2 `;`@11 and `;`@57 flanks; row 3 `ヽ、_.,,ノ`@11-48 — the only solid stroke is ⌒; everything else is dots, giving a fuzzy rim",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib64-circle-4row",
+   "role": "whole_circle",
+   "also_roles": [
+    "flank",
+    "rim_cap",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "interior; open paper between the flanks rows 2-3"
+   },
+   "native": {
+    "rows": [
+     "　　　_、-- .,_",
+     "　　 ,'　 　 　 ',",
+     "　　 ',　 　 　 ,'",
+     "　　　ﾞ' --- '゛"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     90
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#64",
+    "label": "線・図形・図表 【円形・球】 aa[64]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib64-circle-4row.png",
+   "note": "Catalog 4-row circle built from tiny quote/comma pairs: `,'`/`',` flanks mirror into `',`/`,'` on the next row to turn the side.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `_、-- .,_`@33-76 cap; row 2 `,'`@27/30 and `',`@81/84; row 3 `',`@27/30 and `,'`@81/84 (pairs swap order to reverse the slope); row 4 `ﾞ' --- '゛`@33-77 base",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib62-circle-4row-dotted",
+   "role": "whole_circle",
+   "also_roles": [
+    "opening_paper_gap"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 60,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "large gaps on the left (rows 2-3) and lower right are lost edges"
+   },
+   "native": {
+    "rows": [
+     "　 , ´ ￣ ヽ",
+     "　.　　 　 　 ,",
+     "　ﾟ 　 　 　 ﾉ",
+     "　　`　-　´"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     80
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#62",
+    "label": "線・図形・図表 【円形・球】 aa[62]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib62-circle-4row-dotted.png",
+   "note": "Lost-and-found 4-row circle: only `, ´ ￣ ヽ` cap, single dots `.`/`ﾟ` on the left and `, ﾉ` on the right, `` ` - ´ `` base.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `,´￣ヽ`@16/24/37/58; row 2 `.`@11 and `,`@73; row 3 `ﾟ`@11 and `ﾉ`@68; row 4 `` ` ``@22 `-`@40 `´`@59 — the left side is two dots, gaps carry the rest of the rim",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib57-circle-8row-whole",
+   "role": "whole_circle",
+   "also_roles": [
+    "rim_cap",
+    "shoulder",
+    "flank",
+    "return_base"
+   ],
+   "size_band": {
+    "rows": 8,
+    "px_wide": 132,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the whole interior is paper"
+   },
+   "native": {
+    "rows": [
+     "　　　,.　-─-　 、",
+     "　 ／　　　　　 　 ＼",
+     " /　 　 　 　 　 　 　｀、",
+     " l　　　　　　　　 　 　 l",
+     " l　　　　　　　　 　 　 l",
+     " ､　　　　　　　　 　 /",
+     "　 ＼　　　　　　　／",
+     "　　 ｀ ｰ- 　 -‐´"
+    ],
+    "row_numbers": [
+     1,
+     8
+    ],
+    "x_px": [
+     50,
+     200
+    ],
+    "row_pen_x": [
+     55,
+     54,
+     55,
+     52,
+     52,
+     57,
+     52,
+     58
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#57",
+    "label": "線・図形・図表 【円形・球】 aa[57]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib57-circle-8row-whole.png",
+   "note": "Clean 8-row circle with each role spelled once: dashed cap, ／ ＼ and / ｀、 shoulders, `l l` flanks, ､ / and ＼ ／ lower shoulders, `｀ ｰ- -‐´` base.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `,.`@88/91 `-─-`@105/113/129 `、`@153; rows 2-3 `／`@70 `/`@60 and `＼`@162 `｀、`@175/183; rows 4-5 `l`@57 and `l`@185; rows 6-7 `､`@62 `＼`@68 and `/`@178 `／`@161; row 8 `｀ ｰ-`@85-108 and `-‐´`@137-153 with a gap at bottom centre",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib57-cap-shoulders",
+   "role": "rim_cap",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 132,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "SE",
+    "curvature": "convex",
+    "inside": "below",
+    "paper": "inside under the cap; the half/full-space gaps between `,.` and `-─-` and before `、`"
+   },
+   "native": {
+    "rows": [
+     "　　　,.　-─-　 、",
+     "　 ／　　　　　 　 ＼",
+     " /　 　 　 　 　 　 　｀、"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     50,
+     200
+    ],
+    "row_pen_x": [
+     55,
+     54,
+     55
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "paper",
+    "down": "flank"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#57",
+    "label": "線・図形・図表 【円形・球】 aa[57]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib57-cap-shoulders.png",
+   "note": "8-row circle's cap and shoulders: a dashed `-─-` crown, `,.`/`、` cap ends, then one ／＼ row and a / ｀、 row before the flanks.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `,.`@88/91 `-─-`@105-129 `、`@153 — the crown is three dashes with a gap at each end; row 2 `／`@70 `＼`@162; row 3 `/`@60 (steeper) and `｀、`@175/183 (two small marks for the right shoulder)",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib57-flanks",
+   "role": "flank",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 132,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "the interior between the two flanks"
+   },
+   "native": {
+    "rows": [
+     " /　 　 　 　 　 　 　｀、",
+     " l　　　　　　　　 　 　 l",
+     " l　　　　　　　　 　 　 l",
+     " ､　　　　　　　　 　 /"
+    ],
+    "row_numbers": [
+     3,
+     6
+    ],
+    "x_px": [
+     50,
+     200
+    ],
+    "row_pen_x": [
+     55,
+     52,
+     52,
+     57
+    ]
+   },
+   "ports": {
+    "left": "shoulder",
+    "right": "shoulder",
+    "up": "shoulder",
+    "down": "return_base"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#57",
+    "label": "線・図形・図表 【円形・球】 aa[57]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib57-flanks.png",
+   "note": "8-row circle's flanks: two rows of thin `l` on each side between steep `/` / `｀、` above and `､` / `/` below.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 3 `/`@60 and `｀、`@175/183; rows 4-5 `l`@57 and `l`@185 (vertical, 4 px advance); row 6 `､`@62 and `/`@178 — the side is just two `l` rows; compare the 3-row circles where one `i`/`{` row is the whole flank",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib57-return-base",
+   "role": "return_base",
+   "also_roles": [
+    "shoulder"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 132,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "N",
+    "curvature": "convex",
+    "inside": "above",
+    "paper": "the gap between `ｰ-` and `-‐` at the bottom centre"
+   },
+   "native": {
+    "rows": [
+     " ､　　　　　　　　 　 /",
+     "　 ＼　　　　　　　／",
+     "　　 ｀ ｰ- 　 -‐´"
+    ],
+    "row_numbers": [
+     6,
+     8
+    ],
+    "x_px": [
+     50,
+     200
+    ],
+    "row_pen_x": [
+     57,
+     52,
+     58
+    ]
+   },
+   "ports": {
+    "left": "flank",
+    "right": "flank",
+    "up": "flank",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#57",
+    "label": "線・図形・図表 【円形・球】 aa[57]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib57-return-base.png",
+   "note": "8-row circle's return: ､ / → ＼ ／ → `｀ ｰ-  -‐´`, the bottom drawn as two short dashes with a centre gap.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 6 `､`@62 `/`@178; row 7 `＼`@68 `／`@161; row 8 `｀`@85 `ｰ`@98 `-`@108 … `-`@137 `‐`@145 `´`@153 — ~29 px gap at bottom centre; mirror of the cap row",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib28-dark-sphere-tone",
+   "role": "tone_core",
+   "also_roles": [
+    "tone_mid",
+    "tone_fringe",
+    "whole_circle"
+   ],
+   "size_band": {
+    "rows": 11,
+    "px_wide": 176,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "outside the sphere only; the rim is the `淡`/`:` edge, not a drawn line"
+   },
+   "native": {
+    "rows": [
+     "　　　 　 　 .,.,.,,,.,.,.",
+     " 　 　 ,g:'戀戀戀戀'g:.、",
+     " 　 ,g必戀戀戀戀戀:沁;,",
+     "　 ,犇:ji戀戀鑾鑾戀戀ｉ:犇,",
+     "　;淡:i戀戀鑾鬱鑾戀戀i:淡;",
+     " 淡:戀戀鑾鬱鬱鑾戀戀:淡",
+     " ‘黍:i戀戀鑾鬱鑾戀戀i:淡’",
+     "　 '淡:i戀:戀鑾鑾戀:戀i:淡'",
+     " 　 ‘鳰戀戀戀戀戀戀炒’",
+     " 　 　 ‘'%:戀戀戀戀:沙'ﾞ",
+     " 　 　 　 ｀¨“““““¨´"
+    ],
+    "row_numbers": [
+     1,
+     11
+    ],
+    "x_px": [
+     75,
+     260
+    ],
+    "row_pen_x": [
+     77,
+     80,
+     81,
+     77,
+     77,
+     81,
+     78,
+     76,
+     75,
+     75,
+     79
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#28",
+    "label": "線・図形・図表 【円形・球】 aa[28]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib28-dark-sphere-tone.png",
+   "note": "Dark sphere graded by glyph density: `鬱` core at rows 5-8 centre, `鑾`/`戀` mid ring, `淡`/`犇`/`:` fringe at the rim, punctuation cap `.,.,` and base `｀¨“““´`.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `.,.,.,,,.,.,.` cap; rows 2-3 `,g:'戀…` / `,g必戀…沁;,`; rows 5-8 `鬱` (1-2 per row) at centre flanked by `鑾`, then `戀`, then `i:` and `淡` at the rim; rows 9-10 `‘鳰戀…炒’` / `‘'%:戀…沙'ﾞ` taper; row 11 `｀¨“““““¨´` base — darkest centre, lighter rim, no outline",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib31-sphere-halo-fringe",
+   "role": "tone_fringe",
+   "also_roles": [
+    "tone_core"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 150,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "none",
+    "paper": "the gap column between the dark disk and the `: .` halo"
+   },
+   "native": {
+    "rows": [
+     "　　　 　,,...........,,",
+     " 　 . : ,g鍛㍼㍼℡., : .",
+     " . ;..gi鑾㍼㍼㍼㍼℡, : .",
+     " . :崖㍼㍼㍼㍼㍼ii亀 : .",
+     ". : ㍾㍼㍼㍼㍼㍼ii㍾ : .",
+     ". : 腎㍼㍼㍼㍼㍼ii腎 : .",
+     ". : 萄㍼i㍼i㍼㍼ii緲 : .",
+     "　. :‘守㍼㍼㍼i參’ : .",
+     "　　　 ｀¨““““¨´"
+    ],
+    "row_numbers": [
+     1,
+     9
+    ],
+    "x_px": [
+     95,
+     255
+    ],
+    "row_pen_x": [
+     104,
+     99,
+     99,
+     99,
+     99,
+     99,
+     104,
+     99,
+     104
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#31",
+    "label": "線・図形・図表 【円形・球】 aa[31]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib31-sphere-halo-fringe.png",
+   "note": "Dark disk with a detached `. :` halo: the fringe is a separate two-dot column outside the disk, separated by a one-space gap.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "rows 2-8 `. :` (or `:` + `.`) at ~x99-110 left and `: .` right of the disk, one half/full space away from the disk edge glyphs (`崖`, `㍾`, `腎`, `萄`); disk body `㍼` repeated with `ii` near the right edge; row 1 `,,....,,` cap, row 9 `｀¨““““¨´` base",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib23-rim-dot-band",
+   "role": "tone_mid",
+   "also_roles": [
+    "flank",
+    "whole_circle"
+   ],
+   "size_band": {
+    "rows": 10,
+    "px_wide": 143,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "the centre (rows 3-8) is open paper"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　　＿",
+     " 　 　 }ゞ'´:.:.:.:.:.:.:.:.}is。",
+     " 　 ,:.:.　　　　　　　　:.心,",
+     "　/:.:　　　　　　　　　 :.:ﾊ",
+     "　,:.:.　　　　　　　　　　:.:.:.}",
+     "　 ,:.:.　　　　　　　　　 　:.ﾘ",
+     "　∨:.:.　　　　　　　 .:.:.∨",
+     " 　 ヽ:.:.:.:.　　　　 .:.:.:.:.ｲ",
+     " 　 　 }is。,,:.:.:.:.:.:.。イ",
+     " 　 　 　 　 ｀￣´"
+    ],
+    "row_numbers": [
+     1,
+     10
+    ],
+    "x_px": [
+     30,
+     195
+    ],
+    "row_pen_x": [
+     33,
+     30,
+     33,
+     36,
+     33,
+     30,
+     36,
+     36,
+     35,
+     36
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#23",
+    "label": "線・図形・図表 【円形・球】 aa[23]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib23-rim-dot-band.png",
+   "note": "10-row ring whose band is `:.` alternation inside thin edge glyphs (/ ∨ ヽ ﾊ } ﾘ ∨ ｲ), with `}is。` knots at upper-left and lower-left.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 2 `}ゞ'´:.:.…:.}is。`@67-155 top band; rows 3-8 left `,:.:.`/`/:.:`/`∨:.:.`/`ヽ:.:.:.:.` and right `:.心,`/`:.:ﾊ`/`:.:.:.}`/`:.ﾘ`/`.:.:.∨`/`.:.:.:.:.ｲ`; row 9 `}is。,,:.:.…。イ` base band; the band thickens at the lower left and lower right",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-lib24-dotted-ring",
+   "role": "closed_ring",
+   "also_roles": [
+    "tone_fringe"
+   ],
+   "size_band": {
+    "rows": 9,
+    "px_wide": 138,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "none",
+    "tangent_out": "none",
+    "curvature": "closed",
+    "inside": "enclosed",
+    "paper": "everything between the dots; spacing is the outline"
+   },
+   "native": {
+    "rows": [
+     "　　　　　　..",
+     "　　　.　　　　　　.",
+     "　.　　　　　　　　　　.",
+     ".　　　　　　　　　　　　.",
+     ":　　　　　　　　　　　　:",
+     ".　　　　　　　　　　　　.",
+     "　.　　　　　　　　　　.",
+     "　　　.　　　　　　.",
+     "　　　　　　.."
+    ],
+    "row_numbers": [
+     1,
+     9
+    ],
+    "x_px": [
+     0,
+     145
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "paper",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:shapes#24",
+    "label": "線・図形・図表 【円形・球】 aa[24]",
+    "aahub_url": "https://aahub.org/mlt/a7065b14a8fb85fd61e0a2e01e91501b",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-lib24-dotted-ring.png",
+   "note": "Pure-dot 9-row ring: one `.` per side per row (`:` at the equator), placed on a circle — a dotted guide ring, no strokes.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `..`@66/69; rows 2-4 `.`@33/11/0 left and @102/124/135 right; row 5 `:`@0 and `:`@135; rows 6-8 mirror rows 4-2; row 9 `..`@66/69 — pen x alone draws the circle",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-pat103-cross-lattice",
+   "role": "periodic_band",
+   "also_roles": [
+    "return_base",
+    "contact_junction"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 157,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "inside each scale arc"
+   },
+   "native": {
+    "rows": [
+     "__乂__人__乂__人__乂__人",
+     "人__乂__人__乂__人__乂__",
+     "__乂__人__乂__人__乂__人"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     160
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:patterns#103",
+    "label": "模様・グラデーション・幾何学模様 【幾何学模様】 aa[103]",
+    "aahub_url": "https://aahub.org/mlt/88f4fa069651e1b1172f26a9a9bf409e",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-pat103-cross-lattice.png",
+   "note": "Scale pattern made from circle-return glyphs: `__乂__人` offset by half a period each row, so each arc is a 乂…人 return.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `__乂__人__乂__人__乂__人` from 0; row 2 `人__乂__人__乂__人__乂__` (offset half a period); row 3 = row 1 — 乂 and 人 each start a return arc and the `__` are the arc bottoms; same 乂 that closes sh-mlt03/sh-lib65",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-pat21-vi-band",
+   "role": "periodic_band",
+   "size_band": {
+    "rows": 3,
+    "px_wide": 136,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "n/a",
+    "inside": "none",
+    "paper": "between the Ｖ and ｉ columns"
+   },
+   "native": {
+    "rows": [
+     "ＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉ",
+     "ＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉ",
+     "ＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉＶｉ"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     140
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "periodic_band",
+    "right": "periodic_band",
+    "up": "periodic_band",
+    "down": "periodic_band"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:patterns#21",
+    "label": "模様・グラデーション・幾何学模様 【模様】 aa[21]",
+    "aahub_url": "https://aahub.org/mlt/88f4fa069651e1b1172f26a9a9bf409e",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-pat21-vi-band.png",
+   "note": "Plain stacked `ＶｉＶｉ` band: identical rows stacked with no offset — a vertical-rib texture, contrast with the offset scale pattern.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "rows 1-3 `ＶｉＶｉ…` x9 from 0, no row offset: Ｖ and ｉ columns line up vertically, reading as ribbing rather than scales",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-eff58-diagonal-wedge",
+   "role": "effect_line",
+   "size_band": {
+    "rows": 7,
+    "px_wide": 161,
+    "band": "l"
+   },
+   "context": {
+    "tangent_in": "SW",
+    "tangent_out": "NE",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "upper-left triangle above the wedge"
+   },
+   "native": {
+    "rows": [
+     "　 　 　 　 　 　 　 　 　 ／",
+     "　 　 　 　 　 　 　 ／／",
+     "　 　 　 　 　 ／／／",
+     "　 　 　 　 ／／／",
+     "　 　 ／／／／",
+     "　 ／／／／／",
+     "／／／／／／"
+    ],
+    "row_numbers": [
+     1,
+     7
+    ],
+    "x_px": [
+     0,
+     165
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": null,
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:effect-lines#58",
+    "label": "効果線 【効果線】 aa[58]",
+    "aahub_url": "https://aahub.org/mlt/c1802704629a0f9e68ec8ed766fb5cc4",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-eff58-diagonal-wedge.png",
+   "note": "Diagonal speed-line wedge: runs of `／` growing by one per row from the upper right, staggered by spaces so lines read as parallel strokes.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `／` alone at far right; rows 2-7 `／／`, `／／／`, `／／／`, `／／／／`, `／／／／／`, `／／／／／／` each starting further left — line count grows toward the lower-left",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-eff24-horizontal-speed",
+   "role": "effect_line",
+   "also_roles": [
+    "periodic_band"
+   ],
+   "size_band": {
+    "rows": 3,
+    "px_wide": 260,
+    "band": "s"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "straight",
+    "inside": "none",
+    "paper": "the full-space gaps in row 3"
+   },
+   "native": {
+    "rows": [
+     "＿＿―＿＿＿＿＿￣￣￣￣‐―￣￣―",
+     "――￣￣＿＿＿￣―＝＝＝━＿＿＿￣",
+     "＿＿―＿＿＿＿＿￣￣￣￣‐―　　　―"
+    ],
+    "row_numbers": [
+     1,
+     3
+    ],
+    "x_px": [
+     0,
+     260
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": null,
+    "right": "effect_line",
+    "up": null,
+    "down": null
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:effect-lines#24",
+    "label": "効果線 【効果線】 aa[24]",
+    "aahub_url": "https://aahub.org/mlt/c1802704629a0f9e68ec8ed766fb5cc4",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-eff24-horizontal-speed.png",
+   "note": "Horizontal speed lines: three rows of ＿/―/￣/＝ mixed at different heights so each row has several line levels; full-space gaps break row 3.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `＿＿―＿＿＿＿＿￣￣￣￣‐―￣￣―`; row 2 `――￣￣＿＿＿￣―＝＝＝━＿＿＿￣`; row 3 `＿＿―＿＿＿＿＿￣￣￣￣‐―` then 3 full spaces and `―` — mixing ＿ ― ￣ puts lines at 3 heights per row",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mech24-cylinder-cuff-junction",
+   "role": "contact_junction",
+   "also_roles": [
+    "rim_cap",
+    "return_base",
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 4,
+    "px_wide": 200,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "W",
+    "tangent_out": "E",
+    "curvature": "convex",
+    "inside": "enclosed",
+    "paper": "inside each rounded segment; the ribbed cuff's slots"
+   },
+   "native": {
+    "rows": [
+     "　 γ￣￣￣γ´￣￣ .ｌ¨「¨「¨ｌ¨ｌ",
+     "　　ｌ　　　　　 |　　　 Γ| │ | │.|",
+     "　　ｌ　　　　　 ゝ､＿__|＿_」__|__|__|",
+     "　　ゝ､＿＿__＿＿ノ＼＿(＿＿}"
+    ],
+    "row_numbers": [
+     1,
+     4
+    ],
+    "x_px": [
+     0,
+     210
+    ],
+    "row_pen_x": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "ports": {
+    "left": "paper",
+    "right": "side",
+    "up": "paper",
+    "down": "paper"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mechanical-parts#24",
+    "label": "ロボット02（パーツ） 【腕・拳】 aa[24]",
+    "aahub_url": "https://aahub.org/mlt/22a982ab68a83aa73b812d855eb686ac",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-mech24-cylinder-cuff-junction.png",
+   "note": "Mechanical forearm: two rounded segments (γ￣ cap corner, ゝ､＿ base corner) and a ribbed cuff; the joint is `ノ＼＿(＿＿}` — a V where segment base meets the cuff.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 1 `γ￣￣￣`@16-64 and `γ´￣￣`@80-120 rounded caps; row 2 `ｌ`@22 `|`@86 sides; row 3 `ゝ､＿__|`@86-131 second segment's base meets the cuff's `|`@131; row 4 `ゝ､＿＿__＿＿ノ`@22-115 then `＼＿(＿＿}`@126-195 — ノ/＼ make the V contact under the cuff",
+   "inspected_by": "shapes-circles agent"
+  },
+  {
+   "id": "sh-mech55-knuckle-crease",
+   "role": "contact_junction",
+   "also_roles": [
+    "fold_crease"
+   ],
+   "size_band": {
+    "rows": 5,
+    "px_wide": 107,
+    "band": "m"
+   },
+   "context": {
+    "tangent_in": "N",
+    "tangent_out": "S",
+    "curvature": "straight",
+    "inside": "below",
+    "paper": "between finger columns rows 5; the open palm rows 8-9"
+   },
+   "native": {
+    "rows": [
+     "|　|　|　|.　|",
+     "ﾄ┴┴┴-|,＿",
+     "{.----<¨￣i.r'ｭ",
+     "| 　　　 ￣|￣¨1",
+     "|.フ￣`.､,人　　|i"
+    ],
+    "row_numbers": [
+     5,
+     9
+    ],
+    "x_px": [
+     25,
+     140
+    ],
+    "row_pen_x": [
+     33,
+     33,
+     33,
+     33,
+     33
+    ]
+   },
+   "ports": {
+    "left": "side",
+    "right": "side",
+    "up": "side",
+    "down": "fold_crease"
+   },
+   "source": {
+    "repo": "unicode-glyph-morphology-explorer",
+    "src": "lib:mechanical-parts#55",
+    "label": "ロボット02（パーツ） 【腕・拳】 aa[55]",
+    "aahub_url": "https://aahub.org/mlt/22a982ab68a83aa73b812d855eb686ac",
+    "cited_by": "component_libraries.v1.json catalog listing (selected by section heading + row count)"
+   },
+   "crop": "crops/sh-mech55-knuckle-crease.png",
+   "note": "Robot fist: finger columns `| | | |` meet the palm at `ﾄ┴┴┴-|` (T-junction glyphs), and `{.----<` is the thumb crease.",
+   "status": {
+    "state": "retained",
+    "reason": "catalog entry; not operator-approved"
+   },
+   "inspection": "row 5 `|`@33/48/63/78/96 finger edges; row 6 `ﾄ┴┴┴-|`@33-96: ┴ closes each finger onto the palm line; row 7 `{.----<`@33-72 thumb crease pointing in; row 9 `.､,人`@76-89 a small fold",
+   "inspected_by": "shapes-circles agent"
+  }
+ ]
+}

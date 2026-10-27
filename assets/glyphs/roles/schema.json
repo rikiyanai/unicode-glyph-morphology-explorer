@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "role_lookup.v1",
+  "title": "AAHub role lookup table (hand-authored)",
+  "description": "Each entry is written by hand after opening the native-scale PNG crop of one region together with its exact TXT rows (trueff-shallot AGENTS.md inspection rule, 2026-10-27). Entries decide construction; corpus frequencies (aahub_blocks.v1) may only rank or validate them. A file is either a merged table (entries + taxonomy) or one source group's entry file.",
+  "type": "object",
+  "required": ["schema", "entries"],
+  "properties": {
+    "schema": {"enum": ["role_lookup.v1", "role_lookup.group.v1"]},
+    "group": {"type": "string"},
+    "font": {"type": "string"},
+    "font_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "metrics": {"type": "string"},
+    "taxonomy": {"type": "object", "additionalProperties": {"type": "string"}},
+    "role_extensions": {
+      "description": "Roles a source demanded that are not in the base taxonomy: name -> one-line definition.",
+      "type": "object", "additionalProperties": {"type": "string"}
+    },
+    "inspection_log": {"type": "array", "items": {"type": "string"}},
+    "gaps": {"type": "array", "items": {"type": "string"}},
+    "entries": {"type": "array", "items": {"$ref": "#/$defs/entry"}}
+  },
+  "$defs": {
+    "dir": {"enum": ["E", "NE", "N", "NW", "W", "SW", "S", "SE", "none"]},
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "role", "size_band", "context", "native", "ports", "source", "crop", "note", "status", "inspection"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+        "role": {"type": "string", "description": "Base taxonomy name or a declared role_extensions name."},
+        "also_roles": {"type": "array", "items": {"type": "string"}, "description": "Other roles the same rows demonstrate."},
+        "size_band": {
+          "type": "object", "additionalProperties": false,
+          "required": ["rows", "px_wide"],
+          "properties": {
+            "rows": {"type": "integer", "minimum": 1},
+            "px_wide": {"type": "integer", "minimum": 1},
+            "band": {"enum": ["xs", "s", "m", "l"], "description": "xs: 1 row; s: 2-3 rows; m: 4-6 rows; l: 7+ rows"}
+          }
+        },
+        "context": {
+          "type": "object", "additionalProperties": false,
+          "required": ["tangent_in", "tangent_out", "curvature", "inside", "paper"],
+          "properties": {
+            "tangent_in": {"$ref": "#/$defs/dir", "description": "Screen direction the stroke arrives from, travelling left-to-right / top-to-bottom along the feature."},
+            "tangent_out": {"$ref": "#/$defs/dir"},
+            "curvature": {"enum": ["convex", "concave", "straight", "inflection", "closed", "n/a"], "description": "Sign relative to the inside of the form."},
+            "inside": {"enum": ["above", "below", "left", "right", "enclosed", "none"], "description": "Which side of the mark is the form's inside."},
+            "paper": {"type": "string", "description": "Where protected paper/negative space sits and must stay empty."}
+          }
+        },
+        "native": {
+          "type": "object", "additionalProperties": false,
+          "required": ["rows", "row_numbers", "x_px", "row_pen_x"],
+          "properties": {
+            "rows": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "Verbatim slices: every glyph (U+3000 / U+0020 spaces included) whose pen lies in x_px, per source row."},
+            "row_numbers": {"type": "array", "items": {"type": "integer", "minimum": 1}, "minItems": 2, "maxItems": 2, "description": "1-based first and last source row."},
+            "x_px": {"type": "array", "items": {"type": "integer", "minimum": 0}, "minItems": 2, "maxItems": 2, "description": "Pen-x range [x0, x1) in px from line start, Saitamaar 16 px."},
+            "row_pen_x": {"type": "array", "items": {"type": ["integer", "null"]}, "description": "Absolute pen x of each slice's first glyph (null for an empty slice); subtract x_px[0] for offsets."}
+          }
+        },
+        "ports": {
+          "type": "object", "additionalProperties": false,
+          "required": ["left", "right", "up", "down"],
+          "properties": {
+            "left": {"type": ["string", "null"]}, "right": {"type": ["string", "null"]},
+            "up": {"type": ["string", "null"]}, "down": {"type": ["string", "null"]}
+          },
+          "description": "Role (or 'paper') each side connects to in the source drawing; null = drawing edge / nothing."
+        },
+        "source": {
+          "type": "object", "additionalProperties": false,
+          "required": ["repo", "src", "label"],
+          "properties": {
+            "repo": {"enum": ["ascii-art-archive", "unicode-glyph-morphology-explorer"]},
+            "src": {"type": "string", "description": "role_crop.py SRC spec, repo-relative path: txt:<path> | mlt:<path.json.gz>#<aa index> | lib:<library-id>#<aa index>"},
+            "label": {"type": "string", "description": "Human locator: page / aa[index] / resK name / catalog section."},
+            "aahub_url": {"type": "string"},
+            "cited_by": {"type": "string", "description": "Skill/reference/annotation that cites this source (e.g. structural-line-selection.md 'Cooperating joins'; swipe audit T #14 r4)."}
+          }
+        },
+        "crop": {"type": "string", "pattern": "^crops/[a-z0-9-]+\\.png$"},
+        "note": {"type": "string", "description": "One line: why this is a good (or instructive bad) example."},
+        "status": {
+          "type": "object", "additionalProperties": false,
+          "required": ["state"],
+          "properties": {
+            "state": {"enum": ["retained", "rejected"]},
+            "reason": {"type": "string"},
+            "operator_note": {"type": "string", "description": "Verbatim operator label/note text that decides the state, when one exists."}
+          }
+        },
+        "inspection": {"type": "string", "description": "The AGENTS.md step-3 line: glyphs, rows and relationship actually observed in the crop+TXT."},
+        "inspected_by": {"type": "string"}
+      }
+    }
+  }
+}
