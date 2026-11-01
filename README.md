@@ -1,5 +1,11 @@
 # Unicode Glyph Morphology Explorer
 
+## License
+
+Original project code is available under the [MIT License](LICENSE).
+
+Bundled fonts, source artwork, reference data and other third party material retain their respective terms. See [font provenance](docs/font-provenance.md), [code provenance](docs/code-provenance.md) and `docs/licenses/`.
+
 Unicode Glyph Morphology Explorer is a terminal browser for finding Unicode
 characters by how they look.
 
